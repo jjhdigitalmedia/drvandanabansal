@@ -89,31 +89,16 @@ function NavigationB() {
                                         License
                                     </a>
                                 </MenuItem>
-                                <form action="#" method="POST">
-                                    <MenuItem>
-                                        <button
-                                            type="submit"
-                                            className="block w-full px-4 py-2 text-left text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                                        >
-                                            Sign out
-                                        </button>
-                                    </MenuItem>
-                                </form>
                             </div>
                         </MenuItems>
                     </Menu>
                 </div>
                 <div>
-                    <button onClick={() => { setTheme(!theme) }} className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
+                    <a href='/bookappointment'>
+                    <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
                         Book Appointment
                     </button>
-                        {/* <a href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Book Appoinment
-                        </a> */}
+                    </a>
                 </div>
             </div>
         </nav>

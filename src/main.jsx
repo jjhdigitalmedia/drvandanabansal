@@ -14,6 +14,7 @@ import Glaucoma from './Pages/Glaucoma.jsx'
 import AgeRelated from './Pages/AgeRelated.jsx'
 import EyeDry from './Pages/EyeDry.jsx'
 import Diabetic from './Pages/Diabetic.jsx'
+import BookAppointment from './Component/BookAppointment.jsx'
 
 
 const router = createBrowserRouter([
@@ -69,6 +70,11 @@ const router = createBrowserRouter([
   {
     path: '/surgicaloncology',
     element: <Diabetic />,
+    children: []
+  },
+  {
+    path: '/bookappointment',
+    element: <BookAppointment/>,
     children: []
   }
 ])
