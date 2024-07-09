@@ -46,7 +46,7 @@ const Contact = () => {
               <button class="flex mx-auto text-white bg-blue-700 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a class="text-indigo-500">drarpitbansal@email.com</a>
+              <a class="text-indigo-500">drmoolnarayanverma@email.com</a>
               <p class="leading-normal my-5">ROOM NO 22, JEEVAN JYOTI HOSPITAL CAMPUS, 162, Himmat Ganj, Bai Ka Bagh, Prayagraj, Uttar Pradesh 211003
               </p>
               <span class="inline-flex">

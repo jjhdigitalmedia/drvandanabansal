@@ -23,6 +23,64 @@ const BookAppointment = () => {
                     src={nn}
                 />
             </div>
+            <div className='mx-40 my-8 flex justify-center'>
+                <div className='ms-5 text-left'>
+                    <h1 className='font-bold text-3xl mb-3'>Expertise</h1>
+                    <ul>
+                        <li type='circle'>Comprehensive Eye Exams</li>
+                        <li type='circle'>Cataract Surgery</li>
+                        <li type='circle'>LASIK and Refractive Surgery</li>
+                        <li type='circle'>Glaucoma Management</li>
+                        <li type='circle'>Pediatric Ophthalmology</li>
+                        <li type='circle'>Treatment of Macular Degeneration</li>
+                        <li type='circle'>Diabetic Eye Care</li>
+                    </ul>
+                </div>
+                <div className='ms-5 text-left'>
+                    <h1 className='font-bold text-3xl mb-3'>Achievements</h1>
+                    <ul>
+                        <li type='circle'>
+                            🏆  ICMR Project “Ocular Involvement in Leprosy” 1981 to 1986
+                        </li>
+                        <li type='circle'>
+                            🏆  MCH Awareness Generation Training Programme: New Delhi, 1999
+                        </li>
+                        <li type='circle'>
+                            🏆 Electrotherapy Training: at Jaipur, 2000 </li>
+                        <li type='circle'>
+                            🏆 NABH POI Course 5th Edition October 2022, NABH New Delhi, 2022
+                        </li>
+                        <li type='circle'>
+                            🏆 Materials Management in Hospitals at National Academy of Indian Railways: Vadodara, 2010
+                        </li>
+                    </ul>
+                </div>
+                <div className='ms-5 text-left'>
+                    <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
+                    <ul>
+                        <li type='circle'>
+                            Indian Medical Association – Life- 1990, 12531/UP/452/57/L
+                        </li>
+                        <li type='circle'>
+                            All Indian Ophthalmological Society – Life- 1994, M-2917
+                        </li>
+                        <li type='circle'>
+                            UP State Ophthalmological Society - Life </li>
+                        <li type='circle'>
+                            Delhi Ophthalmological Society - Life – 1997, N-541
+                        </li>
+                        <li type='circle'>
+                            Indian Red Cross Society - Life -1999
+                        </li>
+                        <li type='circle'>
+                            Indian Public Health Association- Life -2008
+                        </li>
+                        <li type='circle'>
+                            Association of Indian Occupational Health -Life - 2011
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }

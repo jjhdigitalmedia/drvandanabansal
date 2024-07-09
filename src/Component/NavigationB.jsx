@@ -8,11 +8,12 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className="themess fixed shadow-md w-full bg-blue-500 z-30 flex items-center justify-between flex-wrap p-3 md:bg-white md:shadow-sm">
+        <nav className={`themess fixed shadow-md w-full bg-white z-30 flex items-center justify-between flex-wrap p-3 md:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
                 <span className=' font-bold md:text-slate-950'>Best Eye Specialist</span>
             </div>
-            <div className="block lg:hidden">
+            <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-blue-500"}`}>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
@@ -34,19 +35,19 @@ function NavigationB() {
                 </button>
             </div>
             <div
-                className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
+                className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-blue-200 rounded-xl" : "hidden bg-blue-100 rounded-xl shadow-md"}`}
             >
                 <div className="text-sm lg:flex-grow p-1">
-                    <a href="/" className="block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4">
+                    <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Home
                     </a>
-                    <a href="#about" className="block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4">
+                    <a href="#about" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         About
                     </a>
-                    <a href="#achievements" className="block align mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4">
+                    <a href="#achievements" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Achievements
                     </a>
-                    <a href="#contact" className="block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4">
+                    <a href="#contact" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Contact
                     </a>
 
@@ -91,13 +92,16 @@ function NavigationB() {
                         </MenuItems>
                     </Menu>
                 </div>
-                <div>
-                    {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
+                <div className="mb-3 md:text-right">
+                    <h1 className="font-bold text-xl">Medical Council Registration </h1>
+                    <p>UPMCI Registration No: <span className="text-blue-800">24503</span>  </p>
+                </div>
+                {/* <div> */}
+                {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
                         <a href="bookappointment"></a>
                         Book Appointment
                     </button> */}
-                    
-                </div>
+                {/* </div> */}
             </div>
         </nav>
     );
