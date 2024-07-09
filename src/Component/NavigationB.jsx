@@ -1,9 +1,7 @@
-// import React from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import '../Style/neonStyle.css'
 
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
@@ -94,14 +92,11 @@ function NavigationB() {
                     </Menu>
                 </div>
                 <div>
-                    {/* <Link to='bookappointment'> */}
-                    {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white"> */}
-                        {/* <span className='className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white"'></span> */}
-                        <a  href="bookappointment" className='className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white'>
+                    {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
+                        <a href="bookappointment"></a>
                         Book Appointment
-                        </a>
-                    {/* </button> */}
-                    {/* </Link> */}
+                    </button> */}
+                    
                 </div>
             </div>
         </nav>

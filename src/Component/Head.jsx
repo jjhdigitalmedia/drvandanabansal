@@ -1,6 +1,7 @@
 import React from "react";
 // bg-gradient-to-r from-blue-500
 import nn from "../assets/nn.jpg";
+import { Link } from "react-router-dom";
 const Head = () => {
   return (
     <>
@@ -10,7 +11,7 @@ const Head = () => {
             <h1 class="title-font sm:text-4xl md:text-left text-3xl mb-3 font-medium text-gray-900">
               Best Eye Specialist Doctor
             </h1>
-              <span className="font-bold mb-2 text-red-700">Retired Chief Medical Superintendent 
+            <span className="font-bold mb-2 text-red-700">Retired Chief Medical Superintendent
               Indian Railways </span>
             <p class="mb-2 leading-relaxed md:text-left">
               To deliver diagnostic, surgical, and medical services to all inpatients
@@ -19,6 +20,11 @@ const Head = () => {
             </p>
             <span className="font-bold text-blue-800 my-3">25 years of hospital administration experience, 17 years
               in government and 8 years in private hospital</span>
+            <Link to='bookappointment' className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
+              <button>
+                book Appointment
+              </button>
+            </Link>
           </div>
 
           <div class="lg:max-w-lg lg:w-full md:px-14 mb-10 md:mb-0">

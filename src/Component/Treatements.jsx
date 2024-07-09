@@ -1,6 +1,5 @@
 import React from "react";
 import RefractiveErrors3 from "../assets/icons/Treatment/RefractiveErrors3.png";
-import operatingroom from "../assets/icons/Treatment/operatingroom.png";
 import AgeRelated from "../assets/icons/Treatment/AgeRelated.png";
 import glaucoma from "../assets/icons/Treatment/glaucoma.png";
 import cataract from "../assets/icons/Treatment/cataract.png";
