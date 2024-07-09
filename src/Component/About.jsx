@@ -7,8 +7,8 @@ const About = () => {
         <>
             <section id='about' class="text-gray-600 mt-14 body-font">
                 <h1 className='mx-16 ml-32 font-bold text-4xl'>About me</h1>
-                <div class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <div class="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
+                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
                         <img class="object-cover object-center rounded" alt="hero" src={Naryanverma} />
                     </div>
                     <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
@@ -23,7 +23,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='mx-5 md:mx-40 my-8 flex flex-wrap justify-left md:justify-center'>
-                    <div className='ms-5'>
+                    <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Expertise</h1>
                         <ul>
                             <li type='circle'>Comprehensive Eye Exams</li>
@@ -35,7 +35,7 @@ const About = () => {
                             <li type='circle'>Diabetic Eye Care</li>
                         </ul>
                     </div>
-                    <div className='ms-5'>
+                    <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Achievements</h1>
                         <ul>
                             <li type='circle'>🏆 Comprehensive Eye Exams</li>
@@ -43,17 +43,17 @@ const About = () => {
                             <li type='circle'>🏆 LASIK and Refractive Surgery</li>
                         </ul>
                     </div>
-                    <div className='ms-5'>
+                    <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
                         <ul>
-                            <li type='circle'>MS/Ophthalmology,1984, Govt Medical College, Gorakhpur, UP
+                            <li type='circle'><span className='font-bold'>MS/Ophthalmology</span>,1984, Govt Medical College, Gorakhpur, UP
                             </li>
                             <li type='circle'>
-                                MBBS,1979, Govt. Medical College, Gorakhpur, UP
+                            <span className='font-bold'>MBBS</span>,1979, Govt. Medical College, Gorakhpur, UP
                             </li>
                         </ul>
                     </div>
-                    <div className='ms-5 text-left'>
+                    <div className='ms-5 text-left p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
                         <ul>
                             <li type='circle'>

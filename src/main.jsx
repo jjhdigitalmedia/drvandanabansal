@@ -15,6 +15,7 @@ import AgeRelated from './Pages/AgeRelated.jsx'
 import EyeDry from './Pages/EyeDry.jsx'
 import Diabetic from './Pages/Diabetic.jsx'
 import BookAppointment from './Component/BookAppointment.jsx'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 
 const router = createBrowserRouter([
@@ -34,10 +35,6 @@ const router = createBrowserRouter([
       }, {
         path: '/experience',
         element: <About />,
-        children: []
-      }, {
-        path: '/achievements',
-        element: <Achievements />,
         children: []
       }
     ]
@@ -76,13 +73,21 @@ const router = createBrowserRouter([
     path: '/bookappointment',
     element: <BookAppointment/>,
     children: []
+  },
+  {
+    path: '/achievements',
+    element: <Achievements/>,
+    children: []
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <ParallaxProvider>
+
     <NavigationB/>
     <RouterProvider router={router} />
     <Footer/>
+    </ParallaxProvider>
   </React.StrictMode>,
 )
