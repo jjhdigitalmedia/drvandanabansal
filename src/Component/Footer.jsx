@@ -58,7 +58,7 @@ const Footer = () => {
               </nav>
             </div>
             <div>
-              <a href='/bookappointment'>
+              <a href='bookappointment'>
                 <button className='bg-blue-700 text-white p-3 rounded-md'>
                   Book Appointment
                 </button>
