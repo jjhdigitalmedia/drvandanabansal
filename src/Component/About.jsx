@@ -17,7 +17,7 @@ const About = () => {
                         <p class="mb-8 text-left leading-relaxed"> Passionate Eye Specialist dedicated to providing top-notch vision care and promoting eye health. With over [X] years of experience, I specialize in diagnosing and treating a wide range of eye conditions, from routine eye exams to advanced surgical procedures.</p>
                         <div class="flex justify-center">
                             <Link to='bookappointment'>
-                            <button class="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">Book Appoinment</button>
+                                <button class="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">Book Appoinment</button>
                             </Link>
                         </div>
                     </div>
@@ -43,31 +43,41 @@ const About = () => {
                             <li type='circle'>🏆 LASIK and Refractive Surgery</li>
                         </ul>
                     </div>
+                    <div className='ms-5'>
+                        <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
+                        <ul>
+                            <li type='circle'>MS/Ophthalmology,1984, Govt Medical College, Gorakhpur, UP
+                            </li>
+                            <li type='circle'>
+                                MBBS,1979, Govt. Medical College, Gorakhpur, UP
+                            </li>
+                        </ul>
+                    </div>
                     <div className='ms-5 text-left'>
-                    <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
-                    <ul>
-                        <li type='circle'>
-                            Indian Medical Association – Life- 1990, 12531/UP/452/57/L
-                        </li>
-                        <li type='circle'>
-                            All Indian Ophthalmological Society – Life- 1994, M-2917
-                        </li>
-                        <li type='circle'>
-                            UP State Ophthalmological Society - Life </li>
-                        <li type='circle'>
-                            Delhi Ophthalmological Society - Life – 1997, N-541
-                        </li>
-                        <li type='circle'>
-                            Indian Red Cross Society - Life -1999
-                        </li>
-                        <li type='circle'>
-                            Indian Public Health Association- Life -2008
-                        </li>
-                        <li type='circle'>
-                            Association of Indian Occupational Health -Life - 2011
-                        </li>
-                    </ul>
-                </div>
+                        <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
+                        <ul>
+                            <li type='circle'>
+                                Indian Medical Association – Life- 1990, 12531/UP/452/57/L
+                            </li>
+                            <li type='circle'>
+                                All Indian Ophthalmological Society – Life- 1994, M-2917
+                            </li>
+                            <li type='circle'>
+                                UP State Ophthalmological Society - Life </li>
+                            <li type='circle'>
+                                Delhi Ophthalmological Society - Life – 1997, N-541
+                            </li>
+                            <li type='circle'>
+                                Indian Red Cross Society - Life -1999
+                            </li>
+                            <li type='circle'>
+                                Indian Public Health Association- Life -2008
+                            </li>
+                            <li type='circle'>
+                                Association of Indian Occupational Health -Life - 2011
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </>

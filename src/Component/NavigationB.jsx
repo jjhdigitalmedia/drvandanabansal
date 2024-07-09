@@ -35,7 +35,7 @@ function NavigationB() {
                 </button>
             </div>
             <div
-                className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-blue-200 rounded-xl" : "hidden bg-blue-100 rounded-xl shadow-md"}`}
+                className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-blue-200 rounded-xl" : "hidden"}`}
             >
                 <div className="text-sm lg:flex-grow p-1">
                     <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
@@ -93,8 +93,8 @@ function NavigationB() {
                     </Menu>
                 </div>
                 <div className="mb-3 md:text-right">
-                    <h1 className="font-bold text-xl">Medical Council Registration </h1>
-                    <p>UPMCI Registration No: <span className="text-blue-800">24503</span>  </p>
+                    {/* <h1 className="font-bold text-xl">Medical Council Registration </h1> */}
+                    <p className='font-bold'>UPMCI Registration No: <span className="text-blue-800">24503</span>  </p>
                 </div>
                 {/* <div> */}
                 {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
