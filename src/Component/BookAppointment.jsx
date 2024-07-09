@@ -7,7 +7,7 @@ const BookAppointment = () => {
             <div className='bg-amber-100 p-4 m-3 text-center'>
                 <div className='m-auto w-fit mb-2'> <span className='mb-2'>Book Your Appointment through this mobile no. - </span>
                     <h1 className=' text-center relative flex h-3 w-3'>
-                        <span className='text-red-700 font-bold m-auto animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 bot'>8527175870</span>
+                        <span className='text-red-700 font-bold m-auto absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 bot'>8527175870</span>
                     </h1>
                 </div>
             </div>

@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Head />
-      <Achievements/>
+      {/* <Achievements/> */}
       <Outlet />
       <Treatements />
       <FAQ />
