@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
-import RefractiveErrors3 from "../assets/icons/Treatment/RefractiveErrors3.png";
-import AgeRelated from "../assets/icons/Treatment/AgeRelated.png";
-import glaucoma from "../assets/icons/Treatment/glaucoma.png";
-import cataract from "../assets/icons/Treatment/cataract.png";
 import fertilization from "../assets/icons/Treatment/fertilization.png";
-import diabetic from "../assets/icons/Treatment/diabetic.png";
-import dryEye from "../assets/icons/Treatment/dryEye.png";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
@@ -201,7 +195,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={diabetic}
+                  src={fertilization}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Pregnancy-Related Services:</h2>
                 <p class="leading-relaxed">Places</p>
@@ -214,7 +208,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={diabetic}
+                  src={fertilization}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Contraception and Family Planning:</h2>
                 <p class="leading-relaxed">Places</p>
@@ -227,7 +221,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={diabetic}
+                  src={fertilization}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Infection and STD Treatment</h2>
                 <p class="leading-relaxed">Places</p>
@@ -240,7 +234,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={diabetic}
+                  src={fertilization}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">46</h2>
                 <p class="leading-relaxed">Places</p>

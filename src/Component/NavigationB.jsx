@@ -10,9 +10,9 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-black text-white opacity-40 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-black text-white bg-opacity-25 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
-                <span className=' font-bold text-white'>Best Gynaecologist</span>
+                <span className=' font-bold text-2xl text-gray-700'>Best Gynaecologist</span>
             </div>
             <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-pink-500"}`}>
                 <button
@@ -39,24 +39,24 @@ function NavigationB() {
                 className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-blue-200 rounded-xl" : "hidden"}`}
             >
                 <div className="text-sm lg:flex-grow p-1">
-                    <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-white mr-4 ${isOpen ? "py-2" : ""}`}>
                         Home
                     </a>
-                    <a href="#about" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#about" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         About
                     </a>
-                    <a href="achievements" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="achievements" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Achievements
                     </a>
-                    <a href="#contact" className={`block mt-0 lg:inline-block lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#contact" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Contact
                     </a>
 
                     <Menu as="div" className="relative inline-block text-left">
                         <div>
-                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-black ring-1 ring-inset ring-pink-950 hover:bg-gray-50">
+                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-pink-800 ring-1 ring-inset ring-white hover:bg-gray-50 text-pink-800">
                                 Options
-                                <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-pink-950" />
+                                <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-white" />
                             </MenuButton>
                         </div>
 

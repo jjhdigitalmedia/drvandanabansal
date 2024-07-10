@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <footer class="text-gray-600 body-font bg-gradient-to-b from-pink-200">
+      <footer class="text-gray-600 body-font bg-gradient-to-b from-pink-100">
         <div class="container px-5 py-16 mx-auto ">
           <div class="flex flex-wrap md:text-left text-center order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="bg-slate-300">
+        <div class="bg-gray-300">
           <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a class="text-pink-700 flex title-font font-medium items-center md:justify-start justify-center">
 

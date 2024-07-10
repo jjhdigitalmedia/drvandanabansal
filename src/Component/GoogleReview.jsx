@@ -18,7 +18,7 @@ const divStyle = {
 };
 const slideImages = [
   {
-    url: "",
+    url: "https://i.postimg.cc/5yY2VhNg/VANDANAREVIEW.png",
     caption: "Slide 1",
   },
   {
@@ -41,8 +41,8 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="bg-pink-100">
-      <div className="slide-container w-11/12 m-auto text-center">
+    <div className="">
+      <div className="slide-container w-4/5 m-auto text-center">
         <Slide>
           {slideImages.map((slideImage, index) => (
             <div key={index}>
@@ -52,7 +52,7 @@ const GoogleReview = () => {
                   backgroundImage: `url(${slideImage.url})`,
                 }}
               >
-                <span style={spanStyle}>{slideImage.caption}</span>
+                {/* <span style={spanStyle}>{slideImage.caption}</span> */}
               </div>
             </div>
           ))}

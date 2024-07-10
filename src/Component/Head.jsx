@@ -7,10 +7,10 @@ import '../Style/Style.css'
 const Head = () => {
   return (
     <>
-      <section class="text-gray-600 body-font bg-[url('https://i.postimg.cc/VvDTNpSr/1000-F-264297711-91-Vqw-PTSgsd-Vjhtannyo-IYIBw-TRj-N5-MM.jpg')] bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
+      <section class="text-gray-600 body-font bg-[url('https://i.postimg.cc/15W218N9/bgvandana1.png')] bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
         <div class="container mx-auto w-11/12 flex px-2 pt-28 pb-36 md:pt-32 md:pb-16 lg:pt-40 lg:w-4/5 md:flex-row text-center flex-col items-center">
-          <div class="pr-0 w-11/12 m-auto text-center flex flex-col md:w-1/2 md:pr-8 lg-pr-8 md:items-start lg:flex-grow lg:pl-4">
-            <h1 class="title-font sm:text-4xl md:text-left text-3xl mb-3 font-medium text-pink-500 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_40%)]">
+          <div class="pr-0 w-11/12 m-auto text-center flex flex-col md:w/2 md:pr-8 lg-pr-8 md:items-start lg:flex-grow lg:pl-4">
+            <h1 class="title-font sm:text-4xl md:text-left text-3xl mb-3 text-pink-700 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
               Best Gynaecologist in Allahabad
             </h1>
             <span className="font-bold mb-2 text-white text-xl md: text-left">Retired Chief Medical Superintendent
