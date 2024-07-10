@@ -10,9 +10,9 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-4 md:p-2 bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-black text-white opacity-40 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
-                <span className=' font-bold md:text-slate-950'>Best Gynaecologist</span>
+                <span className=' font-bold text-white'>Best Gynaecologist</span>
             </div>
             <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-pink-500"}`}>
                 <button
@@ -54,9 +54,9 @@ function NavigationB() {
 
                     <Menu as="div" className="relative inline-block text-left">
                         <div>
-                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-pink-700 ring-1 ring-inset ring-pink-700 hover:bg-gray-50">
+                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-black ring-1 ring-inset ring-pink-950 hover:bg-gray-50">
                                 Options
-                                <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-pink-700" />
+                                <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-pink-950" />
                             </MenuButton>
                         </div>
 
@@ -95,7 +95,7 @@ function NavigationB() {
                 </div>
                 <div className="md:text-right">
                    
-                    <p className='font-bold'>UPMCI Registration No: <span className="text-blue-800">24503</span>  </p>
+                    <p className='font-bold'>UPMCI Registration No: <span className="text-white">24503</span>  </p>
                 </div>
                 {/* <div> */}
                 {/* <button className="rounded-lg inline-flex items-center bg-blue-700 border-0 py-2 px-4 text-white">
