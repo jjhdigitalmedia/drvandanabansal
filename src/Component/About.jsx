@@ -1,5 +1,5 @@
 import React from 'react'
-import Naryanverma from '../assets/Naryanverma.png'
+import vandanaphotos1 from '../assets/vandanaphotos1.png'
 import { Link } from 'react-router-dom'
 
 const About = () => {
@@ -8,16 +8,16 @@ const About = () => {
             <section id='about' class="text-gray-600 mt-14 body-font">
                 <h1 className='mx-16 ml-32 font-bold text-4xl'>About me</h1>
                 <div class="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
-                        <img class="object-cover object-center rounded" alt="hero" src={Naryanverma} />
+                    <div class="lg:max-w-lg lg:w-full p-5 md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+                        <img class="object-cover object-center rounded" alt="hero" src={vandanaphotos1} />
                     </div>
                     <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Dr. Mool Narayan Verma
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Dr. Vandana Bansal
                         </h1>
                         <p class="mb-8 text-left leading-relaxed"> Passionate Eye Specialist dedicated to providing top-notch vision care and promoting eye health. With over [X] years of experience, I specialize in diagnosing and treating a wide range of eye conditions, from routine eye exams to advanced surgical procedures.</p>
                         <div class="flex justify-center">
                             <Link to='bookappointment'>
-                                <button class="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">Book Appoinment</button>
+                                <button class="inline-flex text-white bg-pink-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">Book Appoinment</button>
                             </Link>
                         </div>
                     </div>

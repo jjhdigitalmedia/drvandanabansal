@@ -2,16 +2,17 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import 'aos/dist/aos.css'
+import '../Style/Style.css'
 
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess fixed shadow-md w-full bg-white z-30 flex items-center justify-between flex-wrap p-3 md:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
-
+        <nav data-aos='fade-don' className={`themess top-0 transition ease-in-out fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
-                <span className=' font-bold md:text-slate-950'>Best Eye Specialist</span>
+                <span className=' font-bold md:text-slate-950'>Best Gynaecologist</span>
             </div>
             <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-blue-500"}`}>
                 <button
@@ -53,9 +54,9 @@ function NavigationB() {
 
                     <Menu as="div" className="relative inline-block text-left">
                         <div>
-                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 border-sm border-blue-950 ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                            <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-pink-700 ring-1 ring-inset ring-pink-700 hover:bg-gray-50">
                                 Options
-                                <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
+                                <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-pink-700" />
                             </MenuButton>
                         </div>
 
@@ -92,8 +93,8 @@ function NavigationB() {
                         </MenuItems>
                     </Menu>
                 </div>
-                <div className="mb-3 md:text-right">
-                    {/* <h1 className="font-bold text-xl">Medical Council Registration </h1> */}
+                <div className="md:text-right">
+                   
                     <p className='font-bold'>UPMCI Registration No: <span className="text-blue-800">24503</span>  </p>
                 </div>
                 {/* <div> */}

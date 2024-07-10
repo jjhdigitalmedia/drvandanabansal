@@ -41,8 +41,8 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="bg-cyan-200">
-      <div className="slide-container w-4/5 m-auto text-center">
+    <div className="bg-pink-100">
+      <div className="slide-container w-11/12 m-auto text-center">
         <Slide>
           {slideImages.map((slideImage, index) => (
             <div key={index}>
