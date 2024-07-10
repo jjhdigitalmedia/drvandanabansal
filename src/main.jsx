@@ -85,7 +85,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ParallaxProvider>
 
-    <NavigationB/>
+    {/* <NavigationB/> */}
     <RouterProvider router={router} />
     <Footer/>
     </ParallaxProvider>

@@ -10,11 +10,11 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav data-aos='fade-don' className={`themess top-0 transition ease-in-out fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
                 <span className=' font-bold md:text-slate-950'>Best Gynaecologist</span>
             </div>
-            <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-blue-500"}`}>
+            <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-pink-500"}`}>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
