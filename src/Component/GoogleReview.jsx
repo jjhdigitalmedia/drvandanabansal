@@ -41,9 +41,9 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="">
-      <div className="slide-container w-4/5 m-auto text-center">
-        <Slide>
+    <div className="h-96 p-5 mx-5 overflow-scroll border-1 bg-blue-300 border-gray-200 rounded-md">
+      {/* <div className="slide-container w-4/5 m-auto text-center"> */}
+        {/* <Slide>
           {slideImages.map((slideImage, index) => (
             <div key={index}>
               <div
@@ -52,12 +52,12 @@ const GoogleReview = () => {
                   backgroundImage: `url(${slideImage.url})`,
                 }}
               >
-                {/* <span style={spanStyle}>{slideImage.caption}</span> */}
               </div>
             </div>
           ))}
-        </Slide>
-      </div>
+        </Slide> */}
+        <div class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
+      {/* </div> */}
     </div>
   );
 };

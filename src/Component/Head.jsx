@@ -8,7 +8,7 @@ const Head = () => {
   return (
     <>
     {/* https://i.postimg.cc/15W218N9/bgvandana1.png */}
-      <section class="text-gray-600 body-font bg-[url(https://i.postimg.cc/52gCJzf7/nn.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed" style ={ { backgroundImage: "https://i.postimg.cc/52gCJzf7/nn.jpg')" } }>
+      <section class="text-gray-600 body-font bg-[url(../images/googlereviww.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed" >
         <div class="container mx-auto w-11/12 flex px-2 pt-28 pb-36 md:pt-32 md:pb-16 lg:pt-40 lg:w-4/5 md:flex-row text-center flex-col items-center">
           <div class="pr-0 w-11/12 m-auto text-center flex flex-col md:w/2 md:pr-8 lg-pr-8 md:items-start lg:flex-grow lg:pl-4">
             <h1 class="title-font sm:text-4xl md:text-left text-3xl mb-3 text-rose-600 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">

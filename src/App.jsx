@@ -21,6 +21,7 @@ function App() {
       <FAQ />
       <About />
       <GoogleReview />
+      {/* <div class='sk-ww-google-reviews' data-embed-id='25436027'></div> */}
       <Contact />
     </>
   )
