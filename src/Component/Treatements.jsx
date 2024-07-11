@@ -1,5 +1,12 @@
 import React, { useEffect } from "react";
-import fertilization from "../assets/icons/Treatment/fertilization.png";
+import fertilization1 from "../assets/icons/Treatment/fertilization1.png";
+import PreventingScreening from "../assets/icons/Treatment/PreventingScreening.png";
+import hormonal1 from "../assets/icons/Treatment/hormonal1.png";
+import pregnency2 from "../assets/icons/Treatment/pregnency2.png";
+import family1 from "../assets/icons/Treatment/family1.png";
+import pelvicpain2 from "../assets/icons/Treatment/pelvicpain2.png";
+import genetics1 from "../assets/icons/Treatment/genetics1.png";
+import infectionss1 from "../assets/icons/Treatment/infectionss1.png";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
@@ -143,20 +150,20 @@ const Treatements = () => {
 
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      <div class="container px-1 md:px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-10">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Dr. Vandan Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
         </div>
-        <div class="flex flex-wrap -m-4 text-center">
+        <div class="flex flex-wrap m-0 md:m-4 text-center">
 
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
             <Link to='advanceLaparoscopy'>
-              <div class="border-2 border-gray-200 px-4 rounded-lg">
+              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={PreventingScreening}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Preventive Screenings:</h2>
                 <p class="leading-relaxed">Downloads</p>
@@ -169,7 +176,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={fertilization1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Fertility Treatments:</h2>
                 <p class="leading-relaxed">Users</p>
@@ -182,9 +189,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={hormonal1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900"> Routine Exams and Screenings</h2>
+                <h2 class="title-font font-medium text-md text-gray-900"> Hormonal disorder</h2>
                 <p class="leading-relaxed">Files</p>
               </div>
             </Link>
@@ -195,9 +202,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={pregnency2}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Pregnancy-Related Services:</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Pregnancy & child birth</h2>
                 <p class="leading-relaxed">Places</p>
               </div>
             </Link>
@@ -208,7 +215,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={family1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Contraception and Family Planning:</h2>
                 <p class="leading-relaxed">Places</p>
@@ -221,7 +228,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={infectionss1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Infection and STD Treatment</h2>
                 <p class="leading-relaxed">Places</p>
@@ -234,10 +241,23 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization}
+                  src={genetics1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">46</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Genetic Counseling</h2>
                 <p class="leading-relaxed">Places</p>
+              </div>
+            </Link>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='flip-right'>
+            <Link to='advanceLaparoscopy'>
+              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <img
+                  alt="ecommerce"
+                  class="object-cover object-center p-4 w-full h-full block"
+                  src={pelvicpain2}
+                />
+                <h2 class="title-font font-medium text-md text-gray-900">Chronic Pelvic Pain:</h2>
+                <p class="leading-relaxed">View more</p>
               </div>
             </Link>
           </div>

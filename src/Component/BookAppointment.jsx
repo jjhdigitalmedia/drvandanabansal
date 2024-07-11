@@ -1,5 +1,5 @@
 import React from 'react'
-import nn from "../assets/nn.jpg";
+import mool from "../assets/mool.jpg";
 
 const BookAppointment = () => {
     return (
@@ -20,7 +20,7 @@ const BookAppointment = () => {
                 <img
                     class="border-2 w-full mb-10 border-blue-950 object-cover object-center rounded-2xl md:rounded-full"
                     alt="hero"
-                    src={nn}
+                    src={mool}
                 />
             </div>
             <div className='mx-40 my-8 flex justify-center'>

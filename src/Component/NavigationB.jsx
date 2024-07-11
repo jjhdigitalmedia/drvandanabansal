@@ -10,7 +10,7 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-black text-white bg-opacity-25 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess bg-black text-white fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-opacity-25 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
                 <span className=' font-bold text-2xl text-gray-700'>Best Gynaecologist</span>
             </div>

@@ -27,7 +27,7 @@ const Footer = () => {
               <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                  <a class="text-gray-600  hover:text-gray-800">First Link</a>
                 </li>
                 <li>
                   <a class="text-gray-600 hover:text-gray-800">Second Link</a>
@@ -70,9 +70,9 @@ const Footer = () => {
           <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
             <a class="text-pink-700 flex title-font font-medium items-center md:justify-start justify-center">
 
-              <span class="ml-3 text-xl">Best Eye Specialist Doctor</span>
+              <span class="ml-3 text-xl">Best Gynaecologist in Prayagraj</span>
             </a>
-            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0">© 2024 All rights reserved by Dr. Mool Narayan Verma
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0">© 2024 All rights reserved by Dr. Vandana Bansal
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 justify-center sm:justify-start">
               <a href='https://www.facebook.com/drmoolnarayan/' target='_blank' class="text-pink-700">
