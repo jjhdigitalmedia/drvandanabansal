@@ -2,6 +2,8 @@ import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 // import Arpit2 from "../assets/drapitPhotos/Arpit2.png";
+import 'aos/dist/aos.css'
+import '../Style/Style.css'
 
 const spanStyle = {
   padding: "20px",
@@ -41,7 +43,7 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="h-96 p-5 mx-5 md: m-0 overflow-scroll border-1 bg-blue-300 border-gray-200 rounded-md">
+    <div data-aos='fade-left' className="h-96  p-2 md:mx-5 m-0 overflow-scroll border-1 bg-red-300 border-gray-200 rounded-md">
       {/* <div className="slide-container w-4/5 m-auto text-center"> */}
         {/* <Slide>
           {slideImages.map((slideImage, index) => (
@@ -56,7 +58,7 @@ const GoogleReview = () => {
             </div>
           ))}
         </Slide> */}
-        <div class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
+        <div  class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
       {/* </div> */}
     </div>
   );
