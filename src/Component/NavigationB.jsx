@@ -10,11 +10,11 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess bg-black text-white fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 bg-opacity-25 md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess bg-white md:text-white text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 lg:bg-opacity-25 lg:bg-white md:shadow-sm ${isOpen ? " shadow-xl" : ""}`}>
             <div className="flex items-center flex-shrink-0 mr-6 lg:mr-72">
                 <span className=' font-bold text-2xl text-gray-700'>Best Gynaecologist</span>
             </div>
-            <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-pink-500"}`}>
+            <div className={`block lg:hidden ${isOpen ? "bg-slate-200" : "bg-rose-300 rounded-md"}`}>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
@@ -39,16 +39,16 @@ function NavigationB() {
                 className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-blue-200 rounded-xl" : "hidden"}`}
             >
                 <div className="text-sm lg:flex-grow p-1">
-                    <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-white mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 md:text-white text-black mr-4 ${isOpen ? "py-2" : ""}`}>
                         Home
                     </a>
-                    <a href="#about" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#about" className={`block mt-0 lg:inline-block md:text-white text-black lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         About
                     </a>
-                    <a href="achievements" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="achievements" className={`block mt-0 lg:inline-block md:text-white text-black lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Achievements
                     </a>
-                    <a href="#contact" className={`block mt-0 lg:inline-block text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#contact" className={`block mt-0 lg:inline-block md:text-white text-black lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
                         Contact
                     </a>
 
