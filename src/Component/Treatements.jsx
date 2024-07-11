@@ -165,7 +165,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={PreventingScreening}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Preventive Screenings:</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Preventive Screenings</h2>
                 <p class="leading-relaxed">Downloads</p>
               </div>
             </Link>
@@ -178,7 +178,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={fertilization1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Fertility Treatments:</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Fertility Treatments</h2>
                 <p class="leading-relaxed">Users</p>
               </div>
             </Link>

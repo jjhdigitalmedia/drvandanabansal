@@ -9,13 +9,13 @@ const Head = () => {
     <>
     {/* md:bg-[url(https://i.postimg.cc/bNnz1Sr6/bgfinal6.png)] bg-[url(https://i.postimg.cc/2yDfw2V2/bg.jpg)] */}
     {/* https://i.postimg.cc/15W218N9/bgvandana1.png */}
-      <section class="text-gray-600 body-font  md:bg-[url(https://i.postimg.cc/zXwQmTfH/collage-4-1.jpg)] bg-[url(https://i.postimg.cc/zXwQmTfH/collage-4-1.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed bg-red-50" >
+      <section class=" body-font md:bg-[url(https://i.postimg.cc/zXwQmTfH/collage-4-1.jpg)] bg-[url(https://i.postimg.cc/zXwQmTfH/collage-4-1.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed" >
         <div class="container mx-auto w-11/12 flex px-2 pt-28 pb-36 md:pt-32 md:pb-16 lg:pt-32 lg:w-4/5 md:flex-row text-center flex-col items-center">
 
           <div data-aos='fade-right' class="pr-0 w-11/12 m-auto text-center flex flex-col bg-gradient-to-r from-black bg-opacity-50 md:w/2 md:pr-8 md:items-start lg:pr-24 lg:flex-grow lg:pl-8 lg:py-5 lg: rounded-lg">
 
             <h1 class="title-font sm:text-4xl md:text-left text-3xl mb-3 text-rose-50 md:text-rose-100 font-bold [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
-              Best Gynaecologist in Allahabad
+              Best Gynaecologist in Prayagraj
             </h1>
             <span className="font-bold mb-2 text-white text-xl md: text-left">Retired Chief Medical Superintendent
               Indian Railways </span>
