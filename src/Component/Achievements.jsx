@@ -1,6 +1,6 @@
 import React from 'react'
 // import Arpit6 from '../assets/drapitPhotos/Arpit6.png'
-import Naryanverma from '../assets//Naryanverma.png'
+import vandana1 from '../assets//vandana1.jpg'
 import { Link } from 'react-router-dom'
 
 const Achievements = () => {
@@ -9,7 +9,7 @@ const Achievements = () => {
       <h1 className='mx-16 ml-32 font-bold text-4xl'>About me</h1>
       <div class="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
-          <img class="object-cover object-center rounded" alt="hero" src={Naryanverma} />
+          <img class="object-cover object-center rounded" alt="hero" src={vandana1} />
         </div>
         <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Dr. Mool Narayan Verma

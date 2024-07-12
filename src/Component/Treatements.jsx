@@ -147,15 +147,13 @@ const Treatements = () => {
     </section> */}
 
 
-
-
     <section class="text-gray-600 body-font">
       <div class="container px-1 md:px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Dr. Vandan Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
         </div>
-        <div class="flex flex-wrap m-0 md:m-4 text-center">
+        <div class="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
             <Link to='advanceLaparoscopy'>
@@ -191,7 +189,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={hormonal1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900"> Hormonal disorder</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Hormonal disorder</h2>
                 <p class="leading-relaxed">Files</p>
               </div>
             </Link>

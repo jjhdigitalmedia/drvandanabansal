@@ -8,6 +8,7 @@ import Achievements from './Component/Achievements.jsx'
 import Treatements from './Component/Treatements.jsx'
 import GoogleReview from './Component/GoogleReview.jsx'
 import { FAQ } from './Component/FAQ.jsx'
+import { Rewards } from './Component/Rewards.jsx'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Head />
+      <Rewards/>
       {/* <Achievements/> */}
       <Outlet />
       <Treatements />
