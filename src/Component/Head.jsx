@@ -12,14 +12,13 @@ const Head = () => {
       <section className=" body-font md:bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5" >
         <div className="container md:mx-20 md:w-3/5 flex text-center flex-col items-center px-2 pt-28 pb-36 md:pt-32 md:pb-16 md:flex-row lg:pt-20 lg:pb-24 lg:w-3/5 lg:pr-32">
 
-          <div data-aos='fade-right' className="pr-0 md:w-3/5 m-auto text-center flex flex-col  md:w/2 md:pr-8 md:items-start lg:w-72 lg:flex-grow lg:pl-8 lg:py-10 lg: rounded-lg">
+          <div className="pr-0 md:w-3/5 m-auto text-center flex flex-col  md:w/2 md:pr-8 md:items-start lg:w-72 lg:flex-grow lg:pl-8 lg:py-10 lg: rounded-lg">
 
-            <h1 className="title-font font-serif sm:text-4xl md:text-left lg:text-4xl mb-4 text-rose-50 md:text-rose-100 font-thin [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
+            <h1 data-aos='fade-right' className="title-font font-serif sm:text-4xl md:text-left lg:text-4xl mb-4 text-rose-50 md:text-rose-100 font-thin [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
               Best Gynaecologist in Prayagraj
             </h1>
-            <span className="font-bold mb-2 text-white text-lg md: text-left">Retired Chief Medical Superintendent
-              Indian Railways </span>
-            <p className="mb-2 text-sm leading-relaxed md:text-left text-white">
+            <span data-aos='fade-right' className="font-bold mb-2 text-white text-lg md: text-left">DR. VANDANA BANSAL – MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP is one of the renowned and Senior Gynaecologists and Obstetricians of the state of Uttar Pradesh. </span>
+            <p data-aos='fade-right' className="mb-2 text-sm leading-relaxed md:text-left text-white">
               To deliver diagnostic, surgical, and medical services to all inpatients
               and outpatients, manage hospital administration, and establish protocols for
               comprehensive patient care.
@@ -29,7 +28,7 @@ const Head = () => {
               <h1 className="font-bold text-xl text-white">Medical Council Registration </h1>
               <p className="text-white">UP State Medical Council Registration No: <span className="">24503</span>  </p>
             </div> */}
-            <Link to='bookappointment' className="rounded-lg inline-flex items-center bg-rose-600 border-0 py-2 px-4 text-white">
+            <Link to='bookappointment' className="rounded-lg animate-bounce inline-flex items-center bg-rose-700 border-0 py-2 px-4 text-white">
               <button>
                 book Appointment
               </button>

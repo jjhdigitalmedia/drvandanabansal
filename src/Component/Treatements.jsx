@@ -3,10 +3,10 @@ import IVFet1 from "../assets/icons/Treatment/IVFet1.jpg";
 import iui1 from "../assets/icons/Treatment/iui1.png";
 import icsi1 from "../assets/icons/Treatment/icsi1.png";
 import ivm1 from "../assets/icons/Treatment/ivm1.png";
-import family1 from "../assets/icons/Treatment/family1.png";
-import pelvicpain2 from "../assets/icons/Treatment/pelvicpain2.png";
-import genetics1 from "../assets/icons/Treatment/genetics1.png";
-import infectionss1 from "../assets/icons/Treatment/infectionss1.png";
+import IMSI1 from "../assets/icons/Treatment/IMSI1.png";
+import laproo1 from "../assets/icons/Treatment/laproo1.png";
+import lasehatching from "../assets/icons/Treatment/lasehatching.png";
+import embryo1 from "../assets/icons/Treatment/embryo1.png";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
@@ -18,135 +18,6 @@ const Treatements = () => {
   })
 
   return (<>
-    {/* <section class="text-gray-950 body-font">
-      <div class="containe px-1 py-8-auto">
-        <div className="">
-          <h1 className="text-4xl md:text-5xl mx-24 my-3 font-bold">Treatments</h1>
-        </div>
-        <div class=" flex flex-wrap w-full justify-center">
-
-          <div class="m-2 lg:w-1/4 md:w-64 md:h-64 p-3 py-2 w-full shadow-md rounded-3xl  bg-gradient-to-b from-pink-200">
-
-            <Link to='advanceLaparoscopy'>
-              <div to='advanceLaparoscopy' class="block relative w-44 rounded p-3 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={RefractiveErrors3}
-                />
-              </div>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Infection and STD Treatment
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-
-          </div>
-
-          <div class="m-2 lg:w-1/4 md:w-1/2 p-3 w-full shadow-md rounded-3xl bg-gradient-to-b from-pink-200">
-            <Link to='generalSurery'>
-              <Link to='generalSurery' class="block relative h- rounded p-5 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={cataract}
-                />
-              </Link>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Contraception and Family Planning:
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-          </div>
-          <div class="m-2 lg:w-1/4 md:w-1/2 p-3 w-full shadow-md rounded-3xl tt bg-gradient-to-b from-pink-200">
-            <Link to='lasersurgery'>
-              <Link to='lasersurgery' class="block relative h- rounded p-5 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={glaucoma}
-                />
-              </Link>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Pregnancy-Related Services:
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-          </div>
-          <div class="m-2 lg:w-1/4 md:w-1/2 p-3 w-full shadow-md rounded-3xl tt bg-gradient-to-b from-pink-200">
-            <Link to='bariaticweightloss'>
-              <Link to='bariaticweightloss' class="block relative h- rounded p-5 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={AgeRelated}
-                />
-              </Link>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Routine Exams and Screenings
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-          </div>
-          <div class="m-2 lg:w-1/4 md:w-1/2 p-3 w-full shadow-md rounded-3xl tt bg-gradient-to-b from-pink-200">
-            <Link to='breastclinic'>
-              <Link to='breastclinic' class="block relative h- rounded p-5 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={dryEye}
-                />
-              </Link>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Fertility Treatments:
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-          </div>
-          <div class=" m-2 lg:w-1/4 border md:w-1/2 p-3 w-full shadow-md rounded-3xl tt bg-gradient-to-b from-pink-200">
-            <Link to='surgicaloncology'>
-              <Link to='surgicaloncology' class="block relative h- rounded p-5 overflow-hidden">
-                <img
-                  alt="ecommerce"
-                  class="object-cover object-center w-full h-full block"
-                  src={diabetic}
-                />
-              </Link>
-              <div class="mt-4 text-center">
-                <h2 class="text-gray-900 title-font text-lg font-medium">
-                  Preventive Screenings:
-                </h2>
-                <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                  View more
-                </h3>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section> */}
-
-
     <section class="text-gray-600 body-font">
       <div class="container px-1 md:px-5 py-6 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
@@ -164,7 +35,7 @@ const Treatements = () => {
                   src={iui1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
-                <p class="leading-relaxed">Downloads</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -177,7 +48,7 @@ const Treatements = () => {
                   src={IVFet1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
-                <p class="leading-relaxed">Users</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -190,7 +61,7 @@ const Treatements = () => {
                   src={icsi1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
-                <p class="leading-relaxed">Files</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -203,7 +74,7 @@ const Treatements = () => {
                   src={ivm1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
-                <p class="leading-relaxed">Places</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -213,10 +84,10 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={family1}
+                  src={IMSI1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
-                <p class="leading-relaxed">Places</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -226,10 +97,10 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={infectionss1}
+                  src={embryo1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
-                <p class="leading-relaxed">Places</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -239,10 +110,10 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={genetics1}
+                  src={lasehatching}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
-                <p class="leading-relaxed">Places</p>
+                <p class="leading-relaxed">read</p>
               </div>
             </Link>
           </div>
@@ -252,7 +123,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={pelvicpain2}
+                  src={laproo1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Laproscopy</h2>
                 <p class="leading-relaxed">View more</p>

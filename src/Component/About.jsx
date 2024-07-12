@@ -23,18 +23,17 @@ const About = () => {
                     </div>
                 </div>
                 <div className='mx-5 md:mx-40 my-8 flex flex-wrap justify-left md:justify-center'>
-                    <div className='ms-5  p-5'>
-                        <h1 className='font-bold text-3xl mb-3'>Expertise</h1>
+                <div className='ms-5  p-5'>
+                        <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
                         <ul>
-                            <li type='circle'>Comprehensive Eye Exams</li>
-                            <li type='circle'>Cataract Surgery</li>
-                            <li type='circle'>LASIK and Refractive Surgery</li>
-                            <li type='circle'>Glaucoma Management</li>
-                            <li type='circle'>Pediatric Ophthalmology</li>
-                            <li type='circle'>Treatment of Macular Degeneration</li>
-                            <li type='circle'>Diabetic Eye Care</li>
+                            <li type='circle'>MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP
+                            </li>
+                            <li type='circle'>
+                            MS, D.Phil (Gold Medalist) FCGP
+                            </li>
                         </ul>
                     </div>
+                   
                     <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Achievements</h1>
                         <ul>
@@ -55,37 +54,39 @@ const About = () => {
                         </ul>
                     </div>
                     <div className='ms-5  p-5'>
-                        <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
+                        <h1 className='font-bold text-3xl mb-3'>Expertise</h1>
                         <ul>
-                            <li type='circle'><span className='font-bold'>MS/Ophthalmology</span>,1984, Govt Medical College, Gorakhpur, UP
-                            </li>
-                            <li type='circle'>
-                            <span className='font-bold'>MBBS</span>,1979, Govt. Medical College, Gorakhpur, UP
-                            </li>
+                            <li type='circle'>Comprehensive Eye Exams</li>
+                            <li type='circle'>Cataract Surgery</li>
+                            <li type='circle'>LASIK and Refractive Surgery</li>
+                            <li type='circle'>Glaucoma Management</li>
+                            <li type='circle'>Pediatric Ophthalmology</li>
+                            <li type='circle'>Treatment of Macular Degeneration</li>
+                            <li type='circle'>Diabetic Eye Care</li>
                         </ul>
                     </div>
                     <div className='ms-5 text-left p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
                         <ul>
                             <li type='circle'>
-                                Indian Medical Association – Life- 1990, 12531/UP/452/57/L
+                            Life member of Indian Medical Association based at AMA Allahabad. Allahabad Membership No. UP/2611/1/34/44396/95-96/CL, Patna Membership No. BHR/4405/80/154/81330/2000-01/L.
                             </li>
                             <li type='circle'>
-                                All Indian Ophthalmological Society – Life- 1994, M-2917
+                            She is associate member of the Royal Society of Health (AMRSH), London from March-1991.
                             </li>
                             <li type='circle'>
-                                UP State Ophthalmological Society - Life </li>
+                            She is Indian Society for Prenatal Diagnosis and Therapy & International Integration and Growth Society, New Delhi.</li>
                             <li type='circle'>
-                                Delhi Ophthalmological Society - Life – 1997, N-541
+                            She is also active member of FOGSI.
                             </li>
                             <li type='circle'>
-                                Indian Red Cross Society - Life -1999
+                            She is member of Association of Gynaecological Endoscopists.
                             </li>
                             <li type='circle'>
-                                Indian Public Health Association- Life -2008
+                            She is member of Rotary Club of Allahabad-East.
                             </li>
                             <li type='circle'>
-                                Association of Indian Occupational Health -Life - 2011
+                            She is member of Indian Society For Assisted Reproduction.
                             </li>
                         </ul>
                     </div>
