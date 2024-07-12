@@ -23,7 +23,7 @@ const Head = () => {
               and outpatients, manage hospital administration, and establish protocols for
               comprehensive patient care.
             </p>
-            <span className="font-bold text-xl text-rose-300 my-3 [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">40 years of experience</span>
+            <span className="font-bold text-xl text-rose-300 my-3 [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">37 years of experience</span>
             {/* <div className="mb-3">
               <h1 className="font-bold text-xl text-white">Medical Council Registration </h1>
               <p className="text-white">UP State Medical Council Registration No: <span className="">24503</span>  </p>

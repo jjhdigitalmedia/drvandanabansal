@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import speaker1 from '../assets/speaker1.jpg'
-import vandana1 from '../assets/vandana1.jpg'
+import vandanapc from '../assets/vandanapc.jpg'
 import patientweb from '../assets/icons/patientweb.png'
 
 
@@ -42,7 +42,7 @@ export const Rewards = () => {
                         <img
                             alt="ecommerce"
                             class="object-cover rounded-lg object-center p-3 w-full h-full block"
-                            src={vandana1}
+                            src={vandanapc}
                         />
                         <h2 class="title-font font-medium text-md text-white">Fertility Treatments</h2>
                         <p class="leading-relaxed text-white">Know more</p>
