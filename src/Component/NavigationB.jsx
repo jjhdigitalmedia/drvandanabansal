@@ -10,9 +10,10 @@ function NavigationB() {
     const [theme, setTheme] = useState(false)
     console.log(theme)
     return (
-        <nav className={`themess bg-lack md:text-white text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2  lg:bg-rose-400 md:shadow-sm lg:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess bg-lack md:text-white bg-rose-100 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 md:bg-rose-400 lg:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
+
             <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-                <span className=' font-bol font-thin text-2xl md:text-3xl text-white [text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>Best Gynaecologist</span>
+                <span className=' font-bol font-thin text-2xl md:text-3xl text-rose-400 md:text-white md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>Best Gynaecologist</span>
             </div>
             <div className={`block lg:hidden ${isOpen ? "bg-rose-100" : "bg-rose-100 rounded-md"}`}>
                 <button

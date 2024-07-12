@@ -26,7 +26,7 @@ const Head = () => {
               comprehensive patient care.
             </p>
             <span className="font-bold text-xl text-rose-300 my-3 [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">37 years of experience</span>
-            <Link to='bookappointment' className="rounded-lg animate-bounce inline-flex items-center bg-rose-700 border-0 py-2 px-4 text-white">
+            <Link to='bookappointment' className="rounded-lg animate-bounce items-center bg-rose-700 border-0 py-2 px-4 w-3/4 md:w-1/2 text-center text-white">
               <button>
                 book Appointment
               </button>

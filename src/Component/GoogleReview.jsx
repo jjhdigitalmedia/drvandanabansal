@@ -1,8 +1,8 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import 'aos/dist/aos.css'
-import '../Style/Style.css'
+import "aos/dist/aos.css";
+import "../Style/Style.css";
 
 const spanStyle = {
   padding: "20px",
@@ -42,24 +42,35 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div data-aos='fade-up' className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md">
-      <div  class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
-      {/* <div className="slide-container w-4/5 m-auto text-center"> */}
+    <>
+      <div className="my-4">
+        <h1 className="text-center text-xl md:text-4xl text-black">Give your valuable Review</h1>
+      </div>
+      <div
+        data-aos="fade-up"
+        className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md"
+      >
+        <div
+          class="sk-ww-google-reviews bg-blue-300"
+          data-embed-id="25436027"
+        ></div>
+        {/* <div className="slide-container w-4/5 m-auto text-center"> */}
         {/* <Slide>
           {slideImages.map((slideImage, index) => (
             <div key={index}>
               <div
-                style={{
-                  ...divStyle,
-                  backgroundImage: `url(${slideImage.url})`,
+              style={{
+                ...divStyle,
+                backgroundImage: `url(${slideImage.url})`,
                 }}
-              >
-              </div>
-            </div>
+                >
+                </div>
+                </div>
           ))}
         </Slide> */}
-      {/* </div> */}
-    </div>
+        {/* </div> */}
+      </div>
+    </>
   );
 };
 export default GoogleReview;

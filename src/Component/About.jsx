@@ -6,10 +6,10 @@ const About = () => {
     return (
         <>
             <section id='about' class="text-gray-600 mt-14 body-font">
-                <h1 className='mx-16 ml-32 font-bold text-4xl'>About me</h1>
+                {/* <h1 className='mx-16 ml-32 font-bold text-4xl'>About me</h1> */}
                 <div class="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
                     <div class="lg:max-w-lg lg:w-full p-5 md:w-1/2 w-5/6 mb-10 md:mb-0 ">
-                        <img class="object-cover object-center rounded" alt="hero" src={aboutvandana} />
+                        <img class="object-cover object-center rounded-2xl" alt="hero" src={aboutvandana} />
                     </div>
                     <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center text-center">
                         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Dr. Vandana Bansal
@@ -22,7 +22,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mx-5 md:mx-40 my-8 flex flex-wrap justify-left md:justify-center'>
+                {/* <div className='mx-5 md:mx-40 my-8 flex flex-wrap justify-left md:justify-center'>
                     <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
                         <ul>
@@ -89,7 +89,7 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     )
