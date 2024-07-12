@@ -38,9 +38,20 @@ const About = () => {
                     <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Achievements</h1>
                         <ul>
-                            <li type='circle'>🏆 Comprehensive Eye Exams</li>
-                            <li type='circle'>🏆 Cataract Surgery</li>
-                            <li type='circle'>🏆 LASIK and Refractive Surgery</li>
+                        <li type='circle'>
+                            🏆  First IVF Triplet Baby of Allahabad 7 February 2002
+                        </li>
+                        <li type='circle'>
+                            🏆  First Test Tube Baby of Allahabad 27 November 2000
+                        </li>
+                        <li type='circle'>
+                            🏆 First Blastocyst transfer of Allahabad 20 August 2007 </li>
+                        <li type='circle'>
+                            🏆First Frozen Embryo Transfer (vitrification) Baby of Allahabad 23 June 2008
+                        </li>
+                        <li type='circle'>
+                            🏆 First Surrogate mother delivered baby in Allahabad on 18 April 2008
+                        </li>
                         </ul>
                     </div>
                     <div className='ms-5  p-5'>

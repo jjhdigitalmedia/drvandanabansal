@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import fertilization1 from "../assets/icons/Treatment/fertilization1.png";
-import PreventingScreening from "../assets/icons/Treatment/PreventingScreening.png";
-import hormonal1 from "../assets/icons/Treatment/hormonal1.png";
-import pregnency2 from "../assets/icons/Treatment/pregnency2.png";
+import IVFet1 from "../assets/icons/Treatment/IVFet1.jpg";
+import iui1 from "../assets/icons/Treatment/iui1.png";
+import icsi1 from "../assets/icons/Treatment/icsi1.png";
+import ivm1 from "../assets/icons/Treatment/ivm1.png";
 import family1 from "../assets/icons/Treatment/family1.png";
 import pelvicpain2 from "../assets/icons/Treatment/pelvicpain2.png";
 import genetics1 from "../assets/icons/Treatment/genetics1.png";
@@ -151,7 +151,7 @@ const Treatements = () => {
       <div class="container px-1 md:px-5 py-6 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Dr. Vandan Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Dr. Vandana Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
         </div>
         <div class="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
@@ -161,9 +161,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={PreventingScreening}
+                  src={iui1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Preventive Screenings</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
                 <p class="leading-relaxed">Downloads</p>
               </div>
             </Link>
@@ -174,9 +174,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={fertilization1}
+                  src={IVFet1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Fertility Treatments</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
                 <p class="leading-relaxed">Users</p>
               </div>
             </Link>
@@ -187,9 +187,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={hormonal1}
+                  src={icsi1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Hormonal disorder</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
                 <p class="leading-relaxed">Files</p>
               </div>
             </Link>
@@ -200,9 +200,9 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   class="object-cover object-center p-4 w-full h-full block"
-                  src={pregnency2}
+                  src={ivm1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Pregnancy & child birth</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
                 <p class="leading-relaxed">Places</p>
               </div>
             </Link>
@@ -215,7 +215,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={family1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Contraception and Family Planning:</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
                 <p class="leading-relaxed">Places</p>
               </div>
             </Link>
@@ -228,7 +228,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={infectionss1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Infection and STD Treatment</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
                 <p class="leading-relaxed">Places</p>
               </div>
             </Link>
@@ -241,7 +241,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={genetics1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Genetic Counseling</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
                 <p class="leading-relaxed">Places</p>
               </div>
             </Link>
@@ -254,7 +254,7 @@ const Treatements = () => {
                   class="object-cover object-center p-4 w-full h-full block"
                   src={pelvicpain2}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Chronic Pelvic Pain:</h2>
+                <h2 class="title-font font-medium text-md text-gray-900">Laproscopy</h2>
                 <p class="leading-relaxed">View more</p>
               </div>
             </Link>
