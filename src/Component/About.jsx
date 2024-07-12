@@ -23,34 +23,33 @@ const About = () => {
                     </div>
                 </div>
                 <div className='mx-5 md:mx-40 my-8 flex flex-wrap justify-left md:justify-center'>
-                <div className='ms-5  p-5'>
+                    <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Qualification</h1>
                         <ul>
                             <li type='circle'>MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP
                             </li>
                             <li type='circle'>
-                            MS, D.Phil (Gold Medalist) FCGP
+                                MS, D.Phil (Gold Medalist) FCGP
                             </li>
                         </ul>
                     </div>
-                   
                     <div className='ms-5  p-5'>
                         <h1 className='font-bold text-3xl mb-3'>Achievements</h1>
                         <ul>
-                        <li type='circle'>
-                            🏆  First IVF Triplet Baby of Allahabad 7 February 2002
-                        </li>
-                        <li type='circle'>
-                            🏆  First Test Tube Baby of Allahabad 27 November 2000
-                        </li>
-                        <li type='circle'>
-                            🏆 First Blastocyst transfer of Allahabad 20 August 2007 </li>
-                        <li type='circle'>
-                            🏆First Frozen Embryo Transfer (vitrification) Baby of Allahabad 23 June 2008
-                        </li>
-                        <li type='circle'>
-                            🏆 First Surrogate mother delivered baby in Allahabad on 18 April 2008
-                        </li>
+                            <li type='circle'>
+                                🏆  First IVF Triplet Baby of Allahabad 7 February 2002
+                            </li>
+                            <li type='circle'>
+                                🏆  First Test Tube Baby of Allahabad 27 November 2000
+                            </li>
+                            <li type='circle'>
+                                🏆 First Blastocyst transfer of Allahabad 20 August 2007 </li>
+                            <li type='circle'>
+                                🏆First Frozen Embryo Transfer (vitrification) Baby of Allahabad 23 June 2008
+                            </li>
+                            <li type='circle'>
+                                🏆 First Surrogate mother delivered baby in Allahabad on 18 April 2008
+                            </li>
                         </ul>
                     </div>
                     <div className='ms-5  p-5'>
@@ -69,24 +68,24 @@ const About = () => {
                         <h1 className='font-bold text-3xl mb-3'>Memberships</h1>
                         <ul>
                             <li type='circle'>
-                            Life member of Indian Medical Association based at AMA Allahabad. Allahabad Membership No. UP/2611/1/34/44396/95-96/CL, Patna Membership No. BHR/4405/80/154/81330/2000-01/L.
+                                Life member of Indian Medical Association based at AMA Allahabad. Allahabad Membership No. UP/2611/1/34/44396/95-96/CL, Patna Membership No. BHR/4405/80/154/81330/2000-01/L.
                             </li>
                             <li type='circle'>
-                            She is associate member of the Royal Society of Health (AMRSH), London from March-1991.
+                                She is associate member of the Royal Society of Health (AMRSH), London from March-1991.
                             </li>
                             <li type='circle'>
-                            She is Indian Society for Prenatal Diagnosis and Therapy & International Integration and Growth Society, New Delhi.</li>
+                                She is Indian Society for Prenatal Diagnosis and Therapy & International Integration and Growth Society, New Delhi.</li>
                             <li type='circle'>
-                            She is also active member of FOGSI.
+                                She is also active member of FOGSI.
                             </li>
                             <li type='circle'>
-                            She is member of Association of Gynaecological Endoscopists.
+                                She is member of Association of Gynaecological Endoscopists.
                             </li>
                             <li type='circle'>
-                            She is member of Rotary Club of Allahabad-East.
+                                She is member of Rotary Club of Allahabad-East.
                             </li>
                             <li type='circle'>
-                            She is member of Indian Society For Assisted Reproduction.
+                                She is member of Indian Society For Assisted Reproduction.
                             </li>
                         </ul>
                     </div>

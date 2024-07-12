@@ -1,5 +1,4 @@
 import React from 'react'
-// import Arpit6 from '../assets/drapitPhotos/Arpit6.png'
 import vandana1 from '../assets//vandana1.jpg'
 import { Link } from 'react-router-dom'
 

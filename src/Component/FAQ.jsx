@@ -1,12 +1,12 @@
 import React from "react";
+import '../Style/Style.css'
+import 'aos/dist/aos.css'
+import '../Style/Style.css'
 import {
     Accordion,
     AccordionHeader,
     AccordionBody,
 } from "@material-tailwind/react";
-import '../Style/Style.css'
-import 'aos/dist/aos.css'
-import '../Style/Style.css'
 
 function Icon({ id, open }) {
     return (
@@ -25,7 +25,6 @@ function Icon({ id, open }) {
 
 export function FAQ() {
     const [open, setOpen] = React.useState(0);
-
     const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
     return (

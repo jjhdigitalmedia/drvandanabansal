@@ -1,7 +1,6 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-// import Arpit2 from "../assets/drapitPhotos/Arpit2.png";
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
 
@@ -44,6 +43,7 @@ const slideImages = [
 const GoogleReview = () => {
   return (
     <div data-aos='fade-up' className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md">
+      <div  class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
       {/* <div className="slide-container w-4/5 m-auto text-center"> */}
         {/* <Slide>
           {slideImages.map((slideImage, index) => (
@@ -58,7 +58,6 @@ const GoogleReview = () => {
             </div>
           ))}
         </Slide> */}
-        <div  class='sk-ww-google-reviews bg-blue-300' data-embed-id='25436027'></div>
       {/* </div> */}
     </div>
   );
