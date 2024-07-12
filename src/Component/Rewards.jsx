@@ -8,7 +8,7 @@ import patientweb from '../assets/icons/patientweb.png'
 export const Rewards = () => {
     return (
         <div className='text-center w-4/5 mx-auto flex erflow-scroll md:justify-center -mt-24 mb-20'>
-            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2 ">
+            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2" data-aos='flip-right'>
                 <Link to='advanceLaparoscopy'>
                     <div class="px-4 py-6">
                         <img
@@ -22,7 +22,7 @@ export const Rewards = () => {
                     </div>
                 </Link>
             </div>
-            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2 w-full">
+            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2 w-full" data-aos='flip-right'>
                 <Link to='advanceLaparoscopy'>
                     <div class="px-4 py-6">
                         <img
@@ -36,7 +36,7 @@ export const Rewards = () => {
                     </div>
                 </Link>
             </div>
-            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2 w-full">
+            <div class="m-4 mx-1 md:mx-4 rounded-2xl bg-stone-800 border-4 border-white md:w-1/4 sm:w-1/2 w-full" data-aos='flip-right'>
                 <Link to='advanceLaparoscopy'>
                     <div class="px-4 py-6 ">
                         <img
