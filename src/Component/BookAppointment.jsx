@@ -13,7 +13,7 @@ const BookAppointment = () => {
                             08105075429
                         </button>
                         <span
-                            class="absolute min-w-[25px] min-h-[25px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center top-[4%] right-[2%] translate-x-2/4 -translate-y-2/4 bg-rose-700 text-white">
+                            class="absolute min-w-[25px] min-h-[25                              px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center top-[4%] right-[2%] translate-x-2/4 -translate-y-2/4 bg-rose-700 text-white">
                         </span>
                     </div>
                 </div>
