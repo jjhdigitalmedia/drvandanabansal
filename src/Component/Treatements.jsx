@@ -27,7 +27,7 @@ const Treatements = () => {
         <div class="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='advanceLaparoscopy'>
+            {/* <Link to='advanceLaparoscopy'> */}
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -37,7 +37,7 @@ const Treatements = () => {
                 <h2 class="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
                 <p class="leading-relaxed">read</p>
               </div>
-            </Link>
+            {/* </Link> */}
           </div>
           <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
             <Link to='advanceLaparoscopy'>

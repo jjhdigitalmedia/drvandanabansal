@@ -16,6 +16,7 @@ import EyeDry from './Pages/EyeDry.jsx'
 import Diabetic from './Pages/Diabetic.jsx'
 import BookAppointment from './Component/BookAppointment.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { PatientReviewVideo } from './Component/Reviews/PatientReviewVideo.jsx'
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,8 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />,
         children: []
-      }, {
+      },
+       {
         path: '/experience',
         element: <About />,
         children: []
@@ -77,6 +79,11 @@ const router = createBrowserRouter([
   {
     path: '/achievements',
     element: <Achievements/>,
+    children: []
+  },
+  {
+    path: '/patientsreview',
+    element: <PatientReviewVideo/>,
     children: []
   }
 ])

@@ -11,6 +11,7 @@ import '../Style/Style.css'
 const Head = () => {
   return (
     <>
+    {/* https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg */}
       <section className=" body-font md:bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5" >
         <div className="container md:mx-20 md:w-3/5 flex text-center flex-col items-center px-2 pt-28 pb-36 md:pt-32 md:pb-16 md:flex-row lg:pt-32 lg:pb-24 lg:w-3/5 lg:pr-32">
 

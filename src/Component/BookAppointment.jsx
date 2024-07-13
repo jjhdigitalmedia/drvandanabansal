@@ -5,10 +5,17 @@ const BookAppointment = () => {
     return (
         <div className='text-center pt-28'>
             <div className='bg-amber-100 p-4 m-3 text-center'>
-                <div className='m-auto w-fit mb-2'> <span className='mb-2'>Book Your Appointment through this mobile no. - </span>
-                    <h1 className=' text-center relative flex h-3 w-3'>
-                        <span className='text-rose-700 font-bold m-auto absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 bot'>08105075429</span>
-                    </h1>
+                <div className='m-auto w-fit mb-2'> <span className='mb-2'>Book Your Appointment through this Mobile No. - </span>
+                    <div class="relative inline-flex">
+                        <button
+                            class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xl py-3 px-6 rounded-lg bg-gray-700 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                            type="button">
+                            08105075429
+                        </button>
+                        <span
+                            class="absolute min-w-[25px] min-h-[25px] rounded-full py-1 px-1 text-xs font-medium content-[''] leading-none grid place-items-center top-[4%] right-[2%] translate-x-2/4 -translate-y-2/4 bg-rose-700 text-white">
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="lg:flex-grow mt-3 text-center m-auto md:w-4/5 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center">

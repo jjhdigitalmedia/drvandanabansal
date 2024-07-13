@@ -20,9 +20,9 @@ function App() {
       {/* <Achievements/> */}
       <Outlet />
       <Treatements />
-      <FAQ />
-      <About />
       <GoogleReview />
+      <About />
+      <FAQ />
       {/* <div class='sk-ww-google-reviews' data-embed-id='25436027'></div> */}
       <Contact />
     </>
