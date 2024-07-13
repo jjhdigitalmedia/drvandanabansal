@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import vandanapc1 from "../assets/vandanapc1.jpg";
-import labvandana from "../assets/labvandana.png";
+import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 
 export const Rewards = () => {
@@ -41,6 +41,36 @@ export const Rewards = () => {
         </div>
       </div>
 
+      <div class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
+          <img
+            src={lab}
+            alt="Mountain"
+            class="w-full h-64 object-cover"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+              IVF Treatments
+            </h2>
+            <p class="text-gray-700 leading-tight mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              eu sapien porttitor, blandit velit ac, vehicula elit. Nunc et ex
+              at turpis rutrum viverra.
+            </p>
+            {/* <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Avatar"
+                  class="w-8 h-8 rounded-full mr-2 object-cover"
+                />
+                <span class="text-gray-800 font-semibold">John Doe</span>
+              </div>
+              <span class="text-gray-600">2 hours ago</span>
+            </div> */}
+          </div>
+        </div>
+      </div>
 
       <div class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
@@ -74,36 +104,6 @@ export const Rewards = () => {
       </div>
 
 
-      <div class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
-          <img
-            src={labvandana}
-            alt="Mountain"
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
-              IVF Treatments
-            </h2>
-            <p class="text-gray-700 leading-tight mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eu sapien porttitor, blandit velit ac, vehicula elit. Nunc et ex
-              at turpis rutrum viverra.
-            </p>
-            {/* <div class="flex justify-between items-center">
-              <div class="flex items-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Avatar"
-                  class="w-8 h-8 rounded-full mr-2 object-cover"
-                />
-                <span class="text-gray-800 font-semibold">John Doe</span>
-              </div>
-              <span class="text-gray-600">2 hours ago</span>
-            </div> */}
-          </div>
-        </div>
-      </div>
 
     </div>
     // </div>
