@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
-import vandanapc1 from "../assets/vandanapc1.jpg";
+import IVFvideo from'../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 
@@ -150,7 +150,7 @@ export const Rewards = () => {
 
       <video data-aos='flip-left' class="h-11/12 w-11/12 rounded-md " controls>
         <source
-          src="src\assets\videos\IVF reel_2.mp4"
+          src={IVFvideo}
           type="video/mp4"
         />
         Your browser does not support the video tag.
