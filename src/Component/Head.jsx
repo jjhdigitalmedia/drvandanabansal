@@ -17,7 +17,7 @@ const Head = () => {
 
           <div className="pr-0 md:w-3/5 m-auto text-center flex flex-col  md:w/2 md:pr-8 md:items-start lg:w-72 lg:flex-grow lg:pl-8 lg:py-10 lg: rounded-lg">
 
-            <h1 data-aos='fade-right' className="title-font font-serif sm:text-4xl md:text-left lg:text-4xl mb-4 text-rose-50 md:text-rose-100 font-thin [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
+            <h1 data-aos='fade-right' className="title-font font-serif text-center sm:text-4xl md:text-left lg:text-4xl mb-4 text-rose-50 md:text-rose-100 font-thin [text-shadow:_0_2px_0_rgb(0_0_0_/_10%)]">
               Best Gynaecologist in Prayagraj
             </h1>
             <span data-aos='fade-right' className=" font-thin mb-2 text-white text-lg md: text-left"><span className="font-bold">DR. VANDANA BANSAL</span> – MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP is one of the renowned and Senior Gynaecologists and Obstetricians of the state of Uttar Pradesh. </span>
