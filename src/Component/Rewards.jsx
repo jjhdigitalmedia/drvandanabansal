@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import vandanapc1 from "../assets/vandanapc1.jpg";
+import labvandana from "../assets/labvandana.png";
 import patientweb from "../assets/icons/patientweb.png";
 
 export const Rewards = () => {
@@ -76,13 +77,13 @@ export const Rewards = () => {
       <div class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
           <img
-            src={vandanapc1}
+            src={labvandana}
             alt="Mountain"
             class="w-full h-64 object-cover"
           />
           <div class="p-6">
             <h2 class="text-2xl font-bold text-gray-800 mb-2">
-              News & Events
+              IVF Treatments
             </h2>
             <p class="text-gray-700 leading-tight mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
