@@ -8,7 +8,7 @@ import patientweb from "../assets/icons/patientweb.png";
 export const Rewards = () => {
   return (
     // <div className="text-center border-4 w-11/12 mx-auto flex justify-right -mt-24 mb-5 overflow-x-scroll md:justify-center ">
-    <div className="flex lg:justify-center flex-wrap bg-transparent lg:w-4/5 mx-auto -mt-20">
+    <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white  bg-gray-100 m-2 min-hscreen">
         <div class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
