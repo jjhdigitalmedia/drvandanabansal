@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
-import IVFvideo from'../assets/videos/IVFvideo.mp4';
+import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 
 export const Rewards = () => {
   return (
-    // <div className="text-center border-4 w-11/12 mx-auto flex justify-right -mt-24 mb-5 overflow-x-scroll md:justify-center ">
     <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white  bg-gray-100 m-2 min-hscreen">
@@ -24,23 +23,13 @@ export const Rewards = () => {
             <p class="text-gray-700 leading-tight mb-4">
               Rrenowned gynecologist who has gained international recognition for her expertise and contributions to women's health. With a distinguished career spanning several decades, she has become a sought-after guest speaker at conferences and seminars around the globe.
             </p>
-            {/* <div class="flex justify-between items-center">
-              <div class="flex items-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Avatar"
-                  class="w-8 h-8 rounded-full mr-2 object-cover"
-                />
-                <span class="text-gray-800 font-semibold">John Doe</span>
-              </div>
-              <span class="text-gray-600">2 hours ago</span>
-            </div> */}
           </div>
         </Link>
       </div>
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
         <Link to='guestspeaker' class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
+          ik
           <img
             src={lab}
             alt="Mountain"
@@ -53,17 +42,6 @@ export const Rewards = () => {
             <p class="text-gray-700 leading-tight mb-4">
               Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the women's ovaries and then fertilized by the husband's sperms in a petri dish or a test tube in a controlled laboratory environment.
             </p>
-            {/* <div class="flex justify-between items-center">
-              <div class="flex items-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Avatar"
-                  class="w-8 h-8 rounded-full mr-2 object-cover"
-                />
-                <span class="text-gray-800 font-semibold">John Doe</span>
-              </div>
-              <span class="text-gray-600">2 hours ago</span>
-            </div> */}
           </div>
         </Link >
       </div>
@@ -82,21 +60,11 @@ export const Rewards = () => {
             <p class="text-gray-700 leading-tight mb-4">
               At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.
             </p>
-            {/* <div class="flex justify-between items-center">
-              <div class="flex items-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Avatar"
-                  class="w-8 h-8 rounded-full mr-2 object-cover"
-                />
-                <span class="text-gray-800 font-semibold">John Doe</span>
-              </div>
-              <span class="text-gray-600">2 hours ago</span>
-            </div> */}
           </div>
         </Link>
       </div>
-     
+
+
       <div class="grid min-h-[140px] w-full text-2xl md:text-4xl place-items-center rounded-lg p-6 lg:overflow-visible">
         <div class="flex items-center gap-2 font-bold text-blue-gray-500">
           4.9
@@ -157,6 +125,5 @@ export const Rewards = () => {
       </video>
 
     </div>
-    // </div>
   );
 };
