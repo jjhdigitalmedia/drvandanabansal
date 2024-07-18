@@ -1,7 +1,7 @@
 import React from 'react'
 // import GoogleReview from '../GoogleReview'
 // import reviewVideo from'../../assets/videos/reviewVideo';
-// import Ptientsreiview from'../../assets/videos/Ptientsreiview';
+// import Ptientsreiview from '../../assets/videos/Ptientsreiview';
 // import patient from'../../assets/videos/patient';
 
 export const PatientReviewVideo = () => {
@@ -21,8 +21,8 @@ export const PatientReviewVideo = () => {
           type="video/mp4"
         />
         Your browser does not support the video tag.
-      </video>
-      <video class="h-96 w-96 m-1 inline-block rounded-md border-8 border-rose-100 round-2xl" controls>
+      </video> */}
+      {/* <video class="h-96 w-96 m-1 inline-block rounded-md border-8 border-rose-100 round-2xl" controls>
         <source
           src={patient}
           type="video/mp4"
