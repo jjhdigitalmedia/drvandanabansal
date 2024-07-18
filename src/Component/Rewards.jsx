@@ -11,7 +11,7 @@ export const Rewards = () => {
     <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white  bg-gray-100 m-2 min-hscreen">
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
+        <Link to="guestspeaker" class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
           <img
             src={speaker1}
             alt="Mountain"
@@ -36,11 +36,11 @@ export const Rewards = () => {
               <span class="text-gray-600">2 hours ago</span>
             </div> */}
           </div>
-        </div>
+        </Link>
       </div>
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
+        <Link to='guestspeaker' class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
           <img
             src={lab}
             alt="Mountain"
@@ -65,7 +65,7 @@ export const Rewards = () => {
               <span class="text-gray-600">2 hours ago</span>
             </div> */}
           </div>
-        </div>
+        </Link >
       </div>
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">

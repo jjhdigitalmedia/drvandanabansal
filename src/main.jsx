@@ -17,6 +17,7 @@ import Diabetic from './Pages/Diabetic.jsx'
 import BookAppointment from './Component/BookAppointment.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { PatientReviewVideo } from './Component/Reviews/PatientReviewVideo.jsx'
+import GuestSpeaker from './Component/GuestSpeaker/GuestSpeaker.jsx'
 
 
 const router = createBrowserRouter([
@@ -84,6 +85,11 @@ const router = createBrowserRouter([
   {
     path: '/patientsreview',
     element: <PatientReviewVideo/>,
+    children: []
+  },
+  {
+    path: '/guestspeaker',
+    element: <GuestSpeaker/>,
     children: []
   }
 ])
