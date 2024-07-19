@@ -7,8 +7,6 @@ import '../Style/Style.css'
 
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
-    const [theme, setTheme] = useState(false)
-    console.log(theme)
     return (
         <nav className={`themess bg-lack md:text-white bg-rose-300 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-2 md:p-2 md:bg-rose-400 lg:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
 

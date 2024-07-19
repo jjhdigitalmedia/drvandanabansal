@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "aos/dist/aos.css";
@@ -41,6 +41,11 @@ const slideImages = [
 ];
 
 const GoogleReview = () => {
+  const [a, setA] = useState(false);
+  // useEffect(() => {
+  //   setA(!a);
+  // }, [a])
+  console.log(a);
   return (
     <>
       <div className="my-4">
@@ -50,10 +55,12 @@ const GoogleReview = () => {
         data-aos="fade-up"
         className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md"
       >
-        <div
-          class="sk-ww-google-reviews bg-blue-300"
-          data-embed-id="25436027"
-        ></div>
+        {
+          a ===false ? (
+            <div class="sk-ww-google-reviews bg-blue-300"
+              data-embed-id="25436027"></div>
+          ) : null
+        }
         {/* <div className="slide-container w-4/5 m-auto text-center"> */}
         {/* <Slide>
           {slideImages.map((slideImage, index) => (

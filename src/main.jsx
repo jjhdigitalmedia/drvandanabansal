@@ -8,16 +8,20 @@ import Contact from './Component/Contact.jsx'
 import Achievements from './Component/Achievements.jsx'
 import NavigationB from './Component/NavigationB.jsx'
 import Footer from './Component/Footer.jsx'
-import Cataract from './Pages/Cataract.jsx'
-import RefractiveError from './Pages/RefractiveError.jsx'
-import Glaucoma from './Pages/Glaucoma.jsx'
-import AgeRelated from './Pages/AgeRelated.jsx'
-import EyeDry from './Pages/EyeDry.jsx'
-import Diabetic from './Pages/Diabetic.jsx'
-import BookAppointment from './Component/BookAppointment.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { PatientReviewVideo } from './Component/Reviews/PatientReviewVideo.jsx'
+
+import BookAppointment from './Component/BookAppointment.jsx'
 import GuestSpeaker from './Component/GuestSpeaker/GuestSpeaker.jsx'
+
+import Iui from './Pages/Iui.jsx'
+import Ivfet from './Pages/Ivfet.jsx'
+import Icsi from './Pages/Icsi.jsx'
+import Ivm from './Pages/Ivm.jsx'
+import Imsi from './Pages/Imsi.jsx'
+import Embryo from './Pages/Embryo.jsx'
+import LaserAssisted from './Pages/LaserAssisted.jsx'
+import Laparoscopy from './Pages/Laparoscopy.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,7 +39,7 @@ const router = createBrowserRouter([
         element: <Contact />,
         children: []
       },
-       {
+      {
         path: '/experience',
         element: <About />,
         children: []
@@ -43,53 +47,64 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: '/advanceLaparoscopy',
-    element: <Cataract />,
+    path: '/iuitreatment',
+    element: <Iui />,
     children: []
   },
   {
-    path: '/generalSurery',
-    element: <RefractiveError />,
+    path: '/ivfet',
+    element: <Ivfet />,
     children: []
   },
   {
-    path: '/lasersurgery',
-    element: <Glaucoma />,
+    path: '/icsi',
+    element: <Icsi />,
     children: []
   },
   {
-    path: '/bariaticweightloss',
-    element: <AgeRelated />,
+    path: '/ivmtreatment',
+    element: <Ivm />,
     children: []
   },
   {
-    path: '/breastclinic',
-    element: <EyeDry />,
+    path: '/imsitreatment',
+    element: <Imsi />,
     children: []
   },
   {
-    path: '/surgicaloncology',
-    element: <Diabetic />,
+    path: '/embryomonitoring',
+    element: <Embryo />,
+    children: []
+  },
+  {
+    path: '/laserassisted',
+    element: <LaserAssisted />,
+    children: []
+  },
+  {
+    path: '/laparoscopy',
+    element: <Laparoscopy />,
+    children: []
+  },
+
+  {
+    path: '/achievements',
+    element: <Achievements />,
     children: []
   },
   {
     path: '/bookappointment',
-    element: <BookAppointment/>,
-    children: []
-  },
-  {
-    path: '/achievements',
-    element: <Achievements/>,
-    children: []
-  },
-  {
-    path: '/patientsreview',
-    element: <PatientReviewVideo/>,
+    element: <BookAppointment />,
     children: []
   },
   {
     path: '/guestspeaker',
-    element: <GuestSpeaker/>,
+    element: <GuestSpeaker />,
+    children: []
+  },
+  {
+    path: '/patientsreview',
+    element: <PatientReviewVideo />,
     children: []
   }
 ])
@@ -98,9 +113,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ParallaxProvider>
 
-    <NavigationB/>
-    <RouterProvider router={router} />
-    <Footer/>
+      <NavigationB />
+      <RouterProvider router={router} />
+      <Footer />
     </ParallaxProvider>
   </React.StrictMode>,
 )

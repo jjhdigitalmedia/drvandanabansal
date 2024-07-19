@@ -29,7 +29,7 @@ export const Rewards = () => {
 
       <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
         <Link to='guestspeaker' class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
-          ik
+
           <img
             src={lab}
             alt="Mountain"
