@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ivfet = () => {
   return (
-    <div className='w-11/12 md:w-1/2 m-auto pt-48 pb-24'>
+    <div className='w-11/12 md:w-4/5 m-auto pt-40 pb-24'>
       <h1 className='font-bold text-3xl my-3'>IVF-ET Treatment</h1>
       <p className='my-8' >In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the women's ovaries and then fertilized by the husband's sperms in a petri dish or a test tube in a controlled laboratory environment. The resulting embryos are deposited into the women's uterus by embryo transfer. If the process is successful, one or more embryos will implant in the lining of the womb and the woman will become pregnant.
       </p>

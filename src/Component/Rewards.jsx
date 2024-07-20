@@ -37,7 +37,7 @@ export const Rewards = () => {
           />
           <div class="p-6">
             <h2 class="text-2xl font-bold text-gray-800 mb-2">
-              IVF Treatments
+              IVF Labs
             </h2>
             <p class="text-gray-700 leading-tight mb-4">
               Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the women's ovaries and then fertilized by the husband's sperms in a petri dish or a test tube in a controlled laboratory environment.

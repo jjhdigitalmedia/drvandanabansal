@@ -31,6 +31,7 @@ const Head = () => {
               <button>
                 book Appointment
               </button>
+              
             </Link>
           </div>
         </div>

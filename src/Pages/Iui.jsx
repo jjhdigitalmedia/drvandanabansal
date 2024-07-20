@@ -2,7 +2,7 @@ import React from 'react'
 
 const Iui = () => {
   return (
-    <div className='w-11/12 md:w-1/2 m-auto pt-48 pb-24'>
+    <div className='w-11/12 md:w-4/5 m-auto pt-40 pb-24'>
       <h1 className='font-bold text-3xl my-3'>IUI Treatment</h1>
       <p>IUI means Intra Uterine Insemination. This procedure relies on the natural ability of sperm to fertilize an egg within the reproductive tract. It is useful in cases where infertility is caused by Cervical Mucus Incompatibility, Elevated ASA, Low Sperm Survival, High Seminal Viscosity, Poor Sperm Morphology, Unexplained Infertility, Impotence or Premature Ejaculation.
       </p>

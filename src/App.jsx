@@ -1,6 +1,6 @@
 import './App.css'
 import { Outlet }
-from 'react-router-dom'
+  from 'react-router-dom'
 import Head from './Component/Head.jsx'
 import About from './Component/About.jsx'
 import Contact from './Component/Contact.jsx'
@@ -9,21 +9,22 @@ import Treatements from './Component/Treatements.jsx'
 import GoogleReview from './Component/GoogleReview.jsx'
 import { FAQ } from './Component/FAQ.jsx'
 import { Rewards } from './Component/Rewards.jsx'
+import NavigationB from './Component/NavigationB.jsx'
 
 
 function App() {
 
   return (
     <>
+      {/* <NavigationB /> */}
       <Head />
-      <Rewards/>
+      <Rewards />
       {/* <Achievements/> */}
       <Outlet />
       <Treatements />
       <GoogleReview />
       <About />
       <FAQ />
-      {/* <div class='sk-ww-google-reviews' data-embed-id='25436027'></div> */}
       <Contact />
     </>
   )

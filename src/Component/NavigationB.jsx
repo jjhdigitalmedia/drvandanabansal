@@ -92,16 +92,13 @@ function NavigationB() {
                         </MenuItems>
                     </Menu>
                 </div>
-                {/* <div className="md:text-right">
-                   
-                    <p className='font-bold text-gray-200'>UPMCI Registration No: <span className="text-rose-500">24503</span>  </p>
-                </div> */}
-                {/* <div> */}
+
                 <button className="rounded-lg inline-flex items-center bg-rose-700 border-0 py-2 px-4 text-white">
-                    <a href="bookappointment"></a>
-                    Book Appointment
+                    <a href="bookappointment">
+                        Book Appointment
+                    </a>
                 </button>
-                {/* </div> */}
+
             </div>
         </nav>
     );
