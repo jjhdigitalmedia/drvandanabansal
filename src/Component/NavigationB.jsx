@@ -8,7 +8,7 @@ import '../Style/Style.css'
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className={`themess bg-lack md:text-white bg-rose-300 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-400 bg-opacity-70 md:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess bg-lack md:text-white bg-rose-300 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-300 bg-opacity-70 md:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
 
             <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
                 <span className=' font-bol text-white md:font-thin text-2xl md:text-3xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>IVF Expert</span>
