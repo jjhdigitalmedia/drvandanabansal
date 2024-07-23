@@ -11,7 +11,7 @@ function NavigationB() {
         <nav className={`themess bg-lack md:text-white bg-rose-300 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-400 bg-opacity-70 md:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
 
             <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-                <span className=' font-bol font-thin text-2xl md:text-3xl text-roe-400 md:text-white [text-shadow:_0_2px_0_rgb(255_255_255_/_60%)] md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>IVF Expert</span>
+                <span className=' font-bol text-white md:font-thin text-2xl md:text-3xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>IVF Expert</span>
             </div>
             <div className={`block lg:hidden bg-opacity-30 ${isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"}`}>
                 <button
@@ -41,13 +41,13 @@ function NavigationB() {
                     <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""}`}>
                         Home
                     </a>
-                    <a href="#about" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#about" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""}`}>
                         About
                     </a>
-                    <a href="achievements" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="achievements" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
                         Achievements
                     </a>
-                    <a href="#contact" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 text-white-200 mr-4 ${isOpen ? "py-2" : ""}`}>
+                    <a href="#contact" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
                         Contact
                     </a>
 

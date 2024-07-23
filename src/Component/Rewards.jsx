@@ -65,7 +65,7 @@ export const Rewards = () => {
       </div>
 
 
-      <div class="grid min-h-[140px] w-full text-2xl md:text-4xl place-items-center rounded-lg p-6 lg:overflow-visible">
+      {/* <div class="grid min-h-[140px] w-full text-2xl md:text-4xl place-items-center rounded-lg p-6 lg:overflow-visible">
         <div class="flex items-center gap-2 font-bold text-blue-gray-500">
           4.9
           <div class="inline-flex items-center">
@@ -114,7 +114,7 @@ export const Rewards = () => {
             Based on 166 Reviews
           </p>
         </div>
-      </div>
+      </div> */}
 
       <video data-aos='flip-left' class="h-11/12 m-auto w-11/12 border-8 border-rose-100 rounded-3xl " controls>
         <source
