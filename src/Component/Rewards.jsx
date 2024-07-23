@@ -65,7 +65,7 @@ export const Rewards = () => {
       </div>
 
 
-      <div class="grid min-h-[140px] w-48 text-2xl md:text-4xl place-items-center rounded-lg p-6 lg:overflow-visible">
+      <div class="grid min-h-[140px] w-full text-2xl md:text-4xl place-items-center rounded-lg p-6 lg:overflow-visible">
         <div class="flex items-center gap-2 font-bold text-blue-gray-500">
           4.9
           <div class="inline-flex items-center">
