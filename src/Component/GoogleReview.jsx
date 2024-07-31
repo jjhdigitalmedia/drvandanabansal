@@ -41,43 +41,22 @@ const slideImages = [
 ];
 
 const GoogleReview = () => {
-  const [a, setA] = useState(false);
-  // useEffect(() => {
-  //   setA(!a);
-  // }, [a])
-  console.log(a);
   return (
-    <>
-      <div className="my-4">
+    <div className="body-font md:bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5 py-3 ">
+      {/* <div className="my-4">
         <h1 className="text-center text-xl md:text-4xl text-black">Give your valuable Review</h1>
-      </div>
-      <div
+        </div>
+        <div
         data-aos="fade-up"
         className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md"
-      >
-        {
-          a ===false ? (
-            <div class="sk-ww-google-reviews bg-blue-300"
-              data-embed-id="25436027"></div>
-          ) : null
-        }
-        {/* <div className="slide-container w-4/5 m-auto text-center"> */}
-        {/* <Slide>
-          {slideImages.map((slideImage, index) => (
-            <div key={index}>
-              <div
-              style={{
-                ...divStyle,
-                backgroundImage: `url(${slideImage.url})`,
-                }}
-                >
-                </div>
-                </div>
-          ))}
-        </Slide> */}
-        {/* </div> */}
-      </div>
-    </>
+        > */}
+      <div class="elfsight-app-7f209c6b-645c-45d0-83e8-5dc4afa3d79d" data-elfsight-app-lazy></div>
+
+      {/* </div> */}
+    </div>
   );
 };
 export default GoogleReview;
+
+{/* <div class="sk-ww-google-reviews bg-blue-300"
+  data-embed-id="25436027"></div> */}
