@@ -13,7 +13,7 @@ const Head = () => {
     <>
     {/* md:bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] */}
     {/* https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg */}
-      <section className=" body-font  bg-[url(https://i.postimg.cc/YSSTYvqh/vandanabgphoto.jpg)] bg-hero bg-no-repeat bg-cover bg-center bg-fied h-auto" >
+      <section className=" body-font bg-[url(https://i.postimg.cc/0NRx12fd/vandanabgphoto.jpg)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed h-3/5" >
         <div className="container md:mx-20 md:w-3/5 flex text-center flex-col items-center px-2 pt-28 pb-36 md:pt-32 lg:text-left md:pb-16 md:flex-row lg:pt-32 lg:pb-24 lg:w-3/5 lg:pr-32">
 
           <div className="pr-0 md:w-3/5 m-auto text-center lg:text-left flex flex-col md:pr-8 md:items-start lg:w-72 lg:flex-grow lg:pl-8 lg:py-10 lg:rounded-lg">

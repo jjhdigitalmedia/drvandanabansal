@@ -86,7 +86,7 @@ const Footer = () => {
                 </svg>
               </a>
               
-              <FontAwesomeIcon icon="fa-brands fa-youtube" />
+              {/* <FontAwesomeIcon icon="fa-brands fa-youtube" /> */}
 
               <a href='https://www.instagram.com/drvandanabansal_gynaecologist/' target='_blank' class="text-rose-700 ml-3 ">
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">

@@ -42,7 +42,7 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="body-font md:bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5 py-3 ">
+    <div className="body-font md:bg-[url(https://i.postimg.cc/zDtyZKRC/bg-Google-Review.jpg)] bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5 py-3 ">
       {/* <div className="my-4">
         <h1 className="text-center text-xl md:text-4xl text-black">Give your valuable Review</h1>
         </div>
