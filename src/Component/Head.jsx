@@ -35,7 +35,7 @@ const Head = () => {
               
             </Link>
           </div>
-        </div>
+        </div>       
       </section>
 
     </>

@@ -76,9 +76,9 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      <Document file={aa}>
-        <Page pageNumber={1} />
-      </Document>
+      <embed className=" h-screen border border-8 border-red-600" src="https://jeevanjyotihospital.com/images/pdf/hospital-profile.pdf" width="500" height="375"
+        type="application/pdf"></embed>
+
 
     </div>
   );
