@@ -5,7 +5,7 @@ import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 import { Document, Page } from 'react-pdf';
-import aa from './aa.pdf'
+
 
 
 export const Rewards = () => {
@@ -76,9 +76,16 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      <embed className=" h-screen border border-8 border-red-600" src="https://jeevanjyotihospital.com/images/pdf/hospital-profile.pdf" width="500" height="375"
-        type="application/pdf"></embed>
 
+      <embed className="h-screen" src="src\assets\PDFfile\hospitalProfileWebsite.pdf" width="500" height="375"
+        type="application/pdf"></embed>
+ <h3>Embedding the PDF file Using Object Tag</h3>
+    <object class="pdf" 
+            data=
+"src\assets\PDFfile\hospitalProfileWebsite.pdf"
+            width="800"
+            height="500">
+    </object>
 
     </div>
   );
