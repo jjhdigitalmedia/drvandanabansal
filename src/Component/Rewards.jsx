@@ -4,12 +4,13 @@ import speaker1 from "../assets/speaker1.jpg";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
-import { Document, Page } from 'react-pdf';
-
+import { Document, Page, pdfjs } from 'react-pdf';
+import HospitalProfile from './HospitalProfile.pdf'
+import { usePDF } from 'react-to-pdf';
 
 
 export const Rewards = () => {
-
+  const { toPDF, targetRef } = usePDF({ filename: 'HospitalProfile.pdf' });
   return (
     <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
@@ -76,16 +77,31 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-
       <embed className="h-screen" src="src\assets\PDFfile\hospitalProfileWebsite.pdf" width="500" height="375"
         type="application/pdf"></embed>
- <h3>Embedding the PDF file Using Object Tag</h3>
-    <object class="pdf" 
-            data=
-"src\assets\PDFfile\hospitalProfileWebsite.pdf"
-            width="800"
-            height="500">
-    </object>
+      {/* <h3>Embedding the PDF file Using Object Tag</h3>
+      <object class="pdf"
+        data=
+        "src\assets\PDFfile\hospitalProfileWebsite.pdf"
+        width="800"
+        height="500">
+      </object> */}
+
+      {/* <div>
+        <h2>pdf file embed</h2>
+        <Document
+        file={HospitalProfile}
+        >
+          <Page pageIndex={1}/>
+        </Document>
+      </div> */}
+
+      <div>
+        <button onClick={() => toPDF()}>Download PDF</button>
+        <div ref={targetRef}>
+          Content to be generated to PDF
+        </div>
+      </div>
 
     </div>
   );

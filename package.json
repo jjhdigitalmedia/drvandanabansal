@@ -14,7 +14,6 @@
     "@heroicons/react": "^2.1.4",
     "@material-tailwind/react": "^2.1.9",
     "@react-email/components": "^0.0.21",
-    "@react-pdf/renderer": "^3.4.4",
     "@sendgrid/mail": "^8.1.3",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
@@ -23,7 +22,8 @@
     "react-pdf": "^9.1.0",
     "react-router-dom": "^6.24.1",
     "react-scroll-parallax": "^3.4.5",
-    "react-slideshow-image": "^4.3.1"
+    "react-slideshow-image": "^4.3.1",
+    "react-to-pdf": "^1.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
