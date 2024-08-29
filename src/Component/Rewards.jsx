@@ -7,6 +7,8 @@ import patientweb from "../assets/icons/patientweb.png";
 import { Document, Page, pdfjs } from 'react-pdf';
 import HospitalProfile from './HospitalProfile.pdf'
 import { usePDF } from 'react-to-pdf';
+import { Carousel } from "@material-tailwind/react";
+import hospitalProfileWebsite0001 from '../assets/PDFfile/hospitalProfileWebsite0001.jpg'
 
 
 export const Rewards = () => {
@@ -77,8 +79,26 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      <embed className="h-screen" src={HospitalProfile} width="500" height="375"
+      <embed className="h-96 md:h-screen" src={HospitalProfile} width="500" height="375"
         type="application/pdf"></embed>
+
+      <div className="w-full h-screen overflow-hidden fle bg-red-50">
+        <div class="" >
+          <p>lfkgh</p>
+          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
+          <p>lfkgh</p>
+        </div>
+        <div class="" >
+          <p>lfkgh</p>
+          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
+          <p>lfkgh</p>
+        </div>
+        <div class="" >
+          <p>lfkgh</p>
+          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
+          <p>lfkgh</p>
+        </div>
+      </div>
 
     </div>
   );
