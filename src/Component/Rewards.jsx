@@ -5,7 +5,7 @@ import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 import { Document, Page, pdfjs } from 'react-pdf';
-// import HospitalProfile from './HospitalProfile.pdf'
+import HospitalProfile from './HospitalProfile.pdf'
 import { usePDF } from 'react-to-pdf';
 
 
@@ -77,8 +77,8 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* <embed className="h-screen" src="src\Component\HospitalProfile.pdf" width="500" height="375"
-        type="application/pdf"></embed> */}
+      <embed className="h-screen" src={HospitalProfile} width="500" height="375"
+        type="application/pdf"></embed>
 
     </div>
   );
