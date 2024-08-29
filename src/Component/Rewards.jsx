@@ -77,31 +77,8 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      <embed className="h-screen" src="src\Component\HospitalProfile.pdf" width="500" height="375"
-        type="application/pdf"></embed>
-      {/* <h3>Embedding the PDF file Using Object Tag</h3>
-      <object class="pdf"
-        data=
-        "src\assets\PDFfile\hospitalProfileWebsite.pdf"
-        width="800"
-        height="500">
-      </object> */}
-
-      {/* <div>
-        <h2>pdf file embed</h2>
-        <Document
-        file={HospitalProfile}
-        >
-          <Page pageIndex={1}/>
-        </Document>
-      </div> */}
-
-      {/* <div>
-        <button onClick={() => toPDF()}>Download PDF</button>
-        <div ref={targetRef}>
-          Content to be generated to PDF
-        </div>
-      </div> */}
+      {/* <embed className="h-screen" src="src\Component\HospitalProfile.pdf" width="500" height="375"
+        type="application/pdf"></embed> */}
 
     </div>
   );
