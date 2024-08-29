@@ -96,12 +96,12 @@ export const Rewards = () => {
         </Document>
       </div> */}
 
-      <div>
+      {/* <div>
         <button onClick={() => toPDF()}>Download PDF</button>
         <div ref={targetRef}>
           Content to be generated to PDF
         </div>
-      </div>
+      </div> */}
 
     </div>
   );
