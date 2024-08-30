@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
@@ -6,13 +7,51 @@ import lab from "../assets/lab.png";
 import patientweb from "../assets/icons/patientweb.png";
 import { Document, Page, pdfjs } from 'react-pdf';
 import HospitalProfile from './HospitalProfile.pdf'
-import { usePDF } from 'react-to-pdf';
-import { Carousel } from "@material-tailwind/react";
+
 import hospitalProfileWebsite0001 from '../assets/PDFfile/hospitalProfileWebsite0001.jpg'
+
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { RxDotFilled } from 'react-icons/rx';
 
 
 export const Rewards = () => {
-  const { toPDF, targetRef } = usePDF({ filename: 'HospitalProfile.pdf' });
+  const slides = [
+    {
+      url: "https://i.postimg.cc/mg2tNwfX/hospital-Profile-Website0001.jpg",
+    },
+    {
+      url: 'https://i.postimg.cc/vHXmBVgW/hospital-Profile-Website0002.jpg',
+    },
+    {
+      url: 'https://i.postimg.cc/q76BjDmL/hospital-Profile-Website0003.jpg',
+    },
+
+    {
+      url: 'https://i.postimg.cc/LXz9MYFg/hospital-Profile-Website0004.jpg',
+    },
+    {
+      url: 'https://i.postimg.cc/W3RNKmCP/hospital-Profile-Website0005.jpg',
+    },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevSlide = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const nextSlide = () => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
     <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
@@ -79,26 +118,36 @@ export const Rewards = () => {
         Your browser does not support the video tag.
       </video>
 
-      <embed className="h-96 md:h-screen" src={HospitalProfile} width="500" height="375"
-        type="application/pdf"></embed>
+      {/* <embed className="h-96 md:h-screen" src={HospitalProfile} width="500" height="375"
+        type="application/pdf"></embed> */}
 
-      <div className="w-full h-screen overflow-hidden fle bg-red-50">
-        <div class="" >
-          <p>lfkgh</p>
-          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
-          <p>lfkgh</p>
+
+      <div className='max-w-[350px] h-[520px] border-2 rounded-2xl border-rose-200 w-full m-auto py-0 px-0 relative group'>
+        <div
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+        ></div>
+        {/* Left Arrow */}
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
-        <div class="" >
-          <p>lfkgh</p>
-          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
-          <p>lfkgh</p>
+        {/* Right Arrow */}
+        <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
-        <div class="" >
-          <p>lfkgh</p>
-          <img src={hospitalProfileWebsite0001} class="w-4/ h-screen m-auto" alt="..." />
-          <p>lfkgh</p>
+        <div className='flex top-4 justify-center py-2'>
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className='text-2xl cursor-pointer'
+            >
+              <RxDotFilled />
+            </div>
+          ))}
         </div>
       </div>
+
 
     </div>
   );
