@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import lab from "../assets/lab.png";
-import patientweb from "../assets/icons/patientweb.png";
-import { Document, Page, pdfjs } from 'react-pdf';
-import HospitalProfile from './HospitalProfile.pdf'
-
-import hospitalProfileWebsite0001 from '../assets/PDFfile/hospitalProfileWebsite0001.jpg'
+import patientweb from "../assets/patientweb.png";
 
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -53,36 +49,35 @@ export const Rewards = () => {
   };
 
   return (
-    <div className="flex justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
+    <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
-      <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white  bg-gray-100 m-2 min-hscreen">
-        <Link to="guestspeaker" class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
+      {/* <div data-aos='fade-up' class="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to="guestspeaker" class="bg-whie m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
           <img
             src={speaker1}
             alt="Mountain"
-            class="w-full h-64 object-cover"
+            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          <div class="p-4">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">
               Guest Speaker
             </h2>
-            <p class="text-gray-700 leading-tight mb-4">
+            <p class="text-gray-700  leading-tight mb-4">
               Rrenowned gynecologist who has gained international recognition for her expertise and contributions to women's health. With a distinguished career spanning several decades, she has become a sought-after guest speaker at conferences and seminars around the globe.
             </p>
           </div>
         </Link>
-      </div>
+      {/* </div> */}
 
-      <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
-        <Link to='guestspeaker' class="bg-white rounded-2xl shadow-lg overflow-hidden max-w-80 w-full">
-
+      {/* <div data-aos='fade-up' class="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to="guestspeaker" class="bg-white m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
           <img
             src={lab}
             alt="Mountain"
-            class="w-full h-64 object-cover"
+            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          <div class="p-4">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">
               IVF Labs
             </h2>
             <p class="text-gray-700 leading-tight mb-4">
@@ -90,17 +85,17 @@ export const Rewards = () => {
             </p>
           </div>
         </Link >
-      </div>
+      {/* </div> */}
 
-      <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen">
-        <Link to='patientsreview' class="bg-white rounded-2xl shadow-lg overflow-hidden  max-w-80 w-full">
+      {/* <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to='patientsreview' class="bg-white m-2 rounded-2xl shadow-lg overflow-hidden  max-w-72">
           <img
             src={patientweb}
             alt="Mountain"
-            class="w-full h-64 object-cover"
+            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          <div class="p-4 pb-10">
+            <h2 class="text-xl font-bold text-gray-800 mb-2">
               Patient's satisfaction
             </h2>
             <p class="text-gray-700 leading-tight mb-4">
@@ -108,7 +103,7 @@ export const Rewards = () => {
             </p>
           </div>
         </Link>
-      </div>
+      {/* </div> */}
 
       <video data-aos='flip-left' class="h-11/12 m-auto w-11/12 border-8 border-rose-100 rounded-3xl " controls>
         <source

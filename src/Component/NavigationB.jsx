@@ -8,10 +8,10 @@ import '../Style/Style.css'
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className={`themess bg-lack md:text-white bg-rose-300 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-300 bg-opacity-70 md:bg-opacity-30 ${isOpen ? " shadow-xl" : ""}`}>
+        <nav className={`themess bg-lack md:text-white bg-rose-400 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-400 bg-opacity-70 md:bg-opacity-50 ${isOpen ? " shadow-xl" : ""}`}>
 
             <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-                <span className=' font-bol text-white md:font-thin text-2xl md:text-3xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>IVF Expert</span>
+                <span className=' font-bol text-white md:font-thin text-2xl md:text-2xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'>IVF Expert</span>
             </div>
             <div className={`block lg:hidden bg-opacity-30 ${isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"}`}>
                 <button
@@ -93,7 +93,7 @@ function NavigationB() {
                     </Menu> */}
                 </div>
 
-                <button className="rounded-lg inline-flex items-center bg-rose-700 border-0 py-2 px-4 text-white">
+                <button className="rounded-lg inline-flex text-xs items-center bg-rose-700 border-0 py-2 px-4 text-white">
                     <a href="bookappointment">
                         Book Appointment
                     </a>

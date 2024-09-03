@@ -47,6 +47,11 @@ const router = createBrowserRouter([
     ]
   },
   {
+    path: '/hospitalprofile',
+    element: <Iui />,
+    children: []
+  },
+  {
     path: '/iuitreatment',
     element: <Iui />,
     children: []
