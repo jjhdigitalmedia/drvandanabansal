@@ -33,13 +33,13 @@ export function FAQ() {
                 <h1 className="text-left ml-32 font-bold text-5xl text-slate-700">FAQs</h1>
                 <div className=" text-center m-auto rounded-3xl faq" >
                     <Accordion className="border-2 hover:bg-rose-200 border-none my-1 rounded-2xl px-3 border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 1} icon={<Icon id={1} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(1)}>What are the qualifications and specializations of the doctors available for consultation on this platform?</AccordionHeader>
-                        <AccordionBody>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(1)}>What are the qualifications and specializations of the doctors available for consultation on this platform?</AccordionHeader>
+                        <AccordionBody >
                         All doctors on our platform are highly qualified professionals with valid medical degrees and relevant certifications. They specialize in various fields, including general medicine, pediatrics, cardiology, dermatology, mental health, and more. Detailed profiles of each doctor, including their qualifications, experience, and areas of expertise, are available for you to review.
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-2xl px-3 border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 2} icon={<Icon id={2} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(2)}>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(2)}>
                         How do I book an appointment with a doctor through the website?
                         </AccordionHeader>
                         <AccordionBody>
@@ -47,7 +47,7 @@ export function FAQ() {
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-2xl px-3 border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 3} icon={<Icon id={3} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(3)}>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(3)}>
                         What is the process for obtaining a prescription after an online consultation?
                         </AccordionHeader>
                         <AccordionBody>
@@ -55,7 +55,7 @@ export function FAQ() {
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-2xl bg-gradient-to-r from-rose-200 px-3 border-b-slate-600" open={open === 4} data-aos='fade-up' icon={<Icon id={4} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(4)}>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(4)}>
                         Are there any privacy measures in place to protect my personal and medical information?
                         </AccordionHeader>
                         <AccordionBody>
@@ -63,7 +63,7 @@ export function FAQ() {
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-2xl bg-gradient-to-r from-rose-200 px-3 border-b-slate-600" data-aos='fade-up' open={open === 5} icon={<Icon id={5} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(5)}>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(5)}>
                         What types of consultations are offered (e.g., specialist consultations in Opthanmology / Eye, Dibetic Ratinopathy)?
                         </AccordionHeader>
                         <AccordionBody>
@@ -71,7 +71,7 @@ export function FAQ() {
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-2xl px-3 border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
-                        <AccordionHeader onClick={() => handleOpen(6)}>
+                        <AccordionHeader className="text-sm" onClick={() => handleOpen(6)}>
                         Is it possible to consult with a doctor outside of regular business hours or on weekends?
                         </AccordionHeader>
                         <AccordionBody>
