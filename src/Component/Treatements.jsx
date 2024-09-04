@@ -22,12 +22,12 @@ const Treatements = () => {
       <div class="container px-1 md:px-5 py-16 mx-auto">
         <div class="flex flex-col text-center w-full mb-10">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
-          <p class="lg:w-2/3 mx-auto text-sm leading-relaxed text-base">Dr. Vandana Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
+          <p class="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
         </div>
         <div class="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='iuitreatment'>
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='iuitreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -38,9 +38,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='ivfet'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='ivfet' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -51,9 +51,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='icsi'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='icsi' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -64,9 +64,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='ivmtreatment'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='ivmtreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -77,9 +77,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='imsitreatment'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='imsitreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -90,9 +90,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='embryomonitoring'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='embryomonitoring' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -103,9 +103,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='laserassisted'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='laserassisted' class="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -116,9 +116,9 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'>
-            <Link to='laparoscopy'>
+          {/* </div> */}
+          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='laparoscopy' class="p-4 md:w-1/4 sm:w-1/2 w-full ">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -129,7 +129,7 @@ const Treatements = () => {
                 <p class="leading-relaxed">know more</p>
               </div>
             </Link>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>
