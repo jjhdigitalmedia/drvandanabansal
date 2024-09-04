@@ -35,7 +35,7 @@ const Treatements = () => {
                   src={iui1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -48,7 +48,7 @@ const Treatements = () => {
                   src={IVFet1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -61,7 +61,7 @@ const Treatements = () => {
                   src={icsi1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -74,7 +74,7 @@ const Treatements = () => {
                   src={ivm1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -87,7 +87,7 @@ const Treatements = () => {
                   src={IMSI1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -100,7 +100,7 @@ const Treatements = () => {
                   src={embryo1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -113,7 +113,7 @@ const Treatements = () => {
                   src={lasehatching}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
-                <p class="leading-relaxed">read</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
@@ -126,7 +126,7 @@ const Treatements = () => {
                   src={laproo1}
                 />
                 <h2 class="title-font font-medium text-md text-gray-900">Laproscopy</h2>
-                <p class="leading-relaxed">View more</p>
+                <p class="leading-relaxed">know more</p>
               </div>
             </Link>
           </div>
