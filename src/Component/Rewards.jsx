@@ -51,61 +51,61 @@ export const Rewards = () => {
   return (
     <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
-      {/* <div data-aos='fade-up' class="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
-        <Link to="guestspeaker" class="bg-whie m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
+      {/* <div data-aos='fade-up' className="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to="guestspeaker" className="bg-whie m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
           <img
             src={speaker1}
             alt="Mountain"
-            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
+            className="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 mb-2">
+          <div className="p-4">
+            <h2 className="text-xl font-bold text-gray-800 mb-2">
               Guest Speaker
             </h2>
-            <p class="text-gray-700  leading-tight mb-4">
+            <p className="text-gray-700  leading-tight mb-4">
               Rrenowned gynecologist who has gained international recognition for her expertise and contributions to women's health. With a distinguished career spanning several decades, she has become a sought-after guest speaker at conferences and seminars around the globe.
             </p>
           </div>
         </Link>
       {/* </div> */}
 
-      {/* <div data-aos='fade-up' class="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
-        <Link to="guestspeaker" class="bg-white m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
+      {/* <div data-aos='fade-up' className="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to="guestspeaker" className="bg-white m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
           <img
             src={lab}
             alt="Mountain"
-            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
+            className="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 mb-2">
+          <div className="p-4">
+            <h2 className="text-xl font-bold text-gray-800 mb-2">
               IVF Labs
             </h2>
-            <p class="text-gray-700 leading-tight mb-4">
+            <p className="text-gray-700 leading-tight mb-4">
               Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the women's ovaries and then fertilized by the husband's sperms in a petri dish or a test tube in a controlled laboratory environment.
             </p>
           </div>
         </Link >
       {/* </div> */}
 
-      {/* <div data-aos='fade-up' class="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
-        <Link to='patientsreview' class="bg-white m-2 rounded-2xl shadow-lg overflow-hidden  max-w-72">
+      {/* <div data-aos='fade-up' className="flex flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
+        <Link to='patientsreview' className="bg-white m-2 rounded-2xl shadow-lg overflow-hidden  max-w-72">
           <img
             src={patientweb}
             alt="Mountain"
-            class="w-full h-60 object-cover border-8 border-white rounded-2xl"
+            className="w-full h-60 object-cover border-8 border-white rounded-2xl"
           />
-          <div class="p-4 pb-10">
-            <h2 class="text-xl font-bold text-gray-800 mb-2">
+          <div className="p-4 pb-10">
+            <h2 className="text-xl font-bold text-gray-800 mb-2">
               Patient's satisfaction
             </h2>
-            <p class="text-gray-700 leading-tight mb-4">
+            <p className="text-gray-700 leading-tight mb-4">
               At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.
             </p>
           </div>
         </Link>
       {/* </div> */}
 
-      <video data-aos='flip-left' class="h-11/12 m-auto w-11/12 border-8 border-rose-100 rounded-3xl " controls>
+      <video data-aos='flip-left' className="h-11/12 m-auto w-11/12 border-8 border-rose-100 rounded-3xl " controls>
         <source
           src={IVFvideo}
           type="video/mp4"

@@ -18,115 +18,115 @@ const Treatements = () => {
   })
 
   return (<>
-    <section class="text-gray-600 body-font">
-      <div class="container px-1 md:px-5 py-16 mx-auto">
-        <div class="flex flex-col text-center w-full mb-10">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
-          <p class="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
+    <section className="text-gray-600 body-font">
+      <div className="container px-1 md:px-5 py-16 mx-auto">
+        <div className="flex flex-col text-center w-full mb-10">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
+          <p className="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a distinguished medical professional renowned for his expertise and compassionate care. With a wealth of experience in his field, Dr. Vandana Bansal offers a comprehensive range of treatments, specializing in the latest medical advancements and personalized patient care. His approach integrates cutting-edge technology with a deep commitment to patient well-being, ensuring that each individual receives tailored treatment plans that address their specific needs. Dr. Bansal’s dedication to excellence and his empathetic approach have earned him a reputation for delivering high-quality healthcare, making him a trusted and respected figure in the medical community.</p>
         </div>
-        <div class="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
+        <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='iuitreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='iuitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={iui1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='ivfet' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='ivfet' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={IVFet1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='icsi' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='icsi' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={icsi1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='ivmtreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='ivmtreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={ivm1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='imsitreatment' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-8 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='imsitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-8 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={IMSI1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='embryomonitoring' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='embryomonitoring' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={embryo1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='laserassisted' class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='laserassisted' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={lasehatching}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}
-          {/* <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
-            <Link to='laparoscopy' class="p-4 md:w-1/4 sm:w-1/2 w-full ">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+          {/* <div className="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos='fade-up'> */}
+            <Link to='laparoscopy' className="p-4 md:w-1/4 sm:w-1/2 w-full ">
+              <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
-                  class="object-cover object-center p-4 w-full h-full block"
+                  className="object-cover object-center p-4 w-full h-full block"
                   src={laproo1}
                 />
-                <h2 class="title-font font-medium text-md text-gray-900">Laproscopy</h2>
-                <p class="leading-relaxed">know more</p>
+                <h2 className="title-font font-medium text-md text-gray-900">Laproscopy</h2>
+                <p className="leading-relaxed">know more</p>
               </div>
             </Link>
           {/* </div> */}

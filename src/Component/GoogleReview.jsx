@@ -50,7 +50,7 @@ const GoogleReview = () => {
         data-aos="fade-up"
         className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md"
         > */}
-      <div class="elfsight-app-7f209c6b-645c-45d0-83e8-5dc4afa3d79d" data-elfsight-app-lazy></div>
+      <div className="elfsight-app-7f209c6b-645c-45d0-83e8-5dc4afa3d79d" data-elfsight-app-lazy></div>
 
       {/* </div> */}
     </div>
@@ -58,5 +58,5 @@ const GoogleReview = () => {
 };
 export default GoogleReview;
 
-{/* <div class="sk-ww-google-reviews bg-blue-300"
+{/* <div className="sk-ww-google-reviews bg-blue-300"
   data-embed-id="25436027"></div> */}
