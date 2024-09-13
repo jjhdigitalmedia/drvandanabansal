@@ -93,7 +93,7 @@ function NavigationB() {
                     </Menu> */}
                 </div>
 
-                <button className="rounded-lg inline-flex text-xs items-center bg-rose-700 border-0 py-2 px-4 text-white">
+                <button className="rounded-3xl inline-flex text-xs items-center bg-rose-700 border-0 py-2 px-4 text-white">
                     <a href="bookappointment">
                         Book Appointment
                     </a>
