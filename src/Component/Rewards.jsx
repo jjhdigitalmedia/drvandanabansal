@@ -49,6 +49,7 @@ export const Rewards = () => {
   };
 
   return (
+    <>
     <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
 
       {/* <div data-aos='fade-up' className="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
@@ -57,7 +58,7 @@ export const Rewards = () => {
             src={speaker1}
             alt="Mountain"
             className="w-full h-60 object-cover border-8 border-white rounded-2xl"
-          />
+            />
           <div className="p-4">
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               Guest Speaker
@@ -75,7 +76,7 @@ export const Rewards = () => {
             src={lab}
             alt="Mountain"
             className="w-full h-60 object-cover border-8 border-white rounded-2xl"
-          />
+            />
           <div className="p-4">
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               IVF Labs
@@ -93,7 +94,7 @@ export const Rewards = () => {
             src={patientweb}
             alt="Mountain"
             className="w-full h-60 object-cover border-8 border-white rounded-2xl"
-          />
+            />
           <div className="p-4 pb-10">
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               Patient's satisfaction
@@ -105,45 +106,44 @@ export const Rewards = () => {
         </Link>
       {/* </div> */}
 
-      <video data-aos='flip-left' className="h-11/12 m-auto w-11/12 border-8 border-rose-100 rounded-3xl " controls>
+      </div>
+      <video className="h-11/12 m-auto w-screen border-rose-100 " controls>
         <source
           src={IVFvideo}
           type="video/mp4"
-        />
+          />
         Your browser does not support the video tag.
       </video>
 
       {/* <embed className="h-96 md:h-screen" src={HospitalProfile} width="500" height="375"
         type="application/pdf"></embed> */}
 
-
+{/* 
       <div className='max-w-[350px] h-[520px] border-2 rounded-2xl border-rose-200 w-full m-auto py-0 px-0 relative group'>
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-        ></div>
-        {/* Left Arrow */}
+          ></div>
         <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
           <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
-        {/* Right Arrow */}
         <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         <div className='flex top-4 justify-center py-2'>
           {slides.map((slide, slideIndex) => (
             <div
-              key={slideIndex}
-              onClick={() => goToSlide(slideIndex)}
-              className='text-2xl cursor-pointer'
+            key={slideIndex}
+            onClick={() => goToSlide(slideIndex)}
+            className='text-2xl cursor-pointer'
             >
               <RxDotFilled />
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
 
-    </div>
+          </>
   );
 };

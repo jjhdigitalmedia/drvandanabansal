@@ -47,6 +47,12 @@ function NavigationB() {
                     <a href="achievements" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
                         Achievements
                     </a>
+                    <a href="achievements" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
+                        Gallery
+                    </a>
+                    <a href="achievements" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
+                        Testimonials
+                    </a>
                     <a href="#contact" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""}`}>
                         Contact
                     </a>
