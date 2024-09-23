@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import 'aos/dist/aos.css'
+import slide01 from '../assets/slide01.jpg'
+import vandanabgphoto from '../assets/vandanabgphoto.jpg'
+import slide02 from '../assets/slide02.jpg'
+import slide03 from '../assets/slide03.jpg'
+import slide04 from '../assets/slide04.jpg'
+import slide05 from '../assets/slide05.jpg'
 import '../Style/Style.css'
 
 const Head = () => {
   return (
     <>
-      <section className=" body-font bg-[url(https://i.postimg.cc/0NRx12fd/vandanabgphoto.jpg)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed h-fit" >
+      {/* <section className=" body-font bg-[url(https://i.postimg.cc/0NRx12fd/vandanabgphoto.jpg)] bg-hero bg-no-repeat bg-cover bg-center bg-fixed h-fit" >
 
         <div className="container flex text-center flex-col items-center px-2 pt-28 pb-36 md:pt-20 md:mx-10 lg:text-left md:pb-16 md:flex-row md:w-3/5 lg:h2 lg:pt-20 lg:pb-24 lg:w-3/5 lg:pr-32">
 
@@ -29,7 +35,40 @@ const Head = () => {
           </div>
           
         </div>       
-      </section>
+      </section> */}
+
+      <div id="carouselExampleIndicators" class="carousel slide mt-30">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={slide01} class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
+            <img src={slide02} class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
+            <img src={slide03} class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
+            <img src={slide04} class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
+            <img src={slide05} class="d-block w-100" alt="..."/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     </>
   );
