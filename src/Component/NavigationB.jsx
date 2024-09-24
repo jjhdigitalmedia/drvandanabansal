@@ -4,36 +4,36 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
-import ATTBClogo from '../assets/ATTBClogo.png'
+import ATTBClogo1 from '../assets/ATTBClogo1.png'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
 
 function NavigationB() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
-            <div className='flex justify-between py-2 px-3 bg-orange-300'>
+            <div className='flex flex-wrap text-center justify-between py-1 px-3 bg-red-500'>
                 <div>
-                    <span className='pr-8'>Phone: 6390103002</span>
-                    <span>Email: arpitivf@gmail.com, arpitivf2015@gmail.com</span>
+                    <span className='pr-8 text-xs'>Phone: 6390103002 |   Email: arpitivf@gmail.com</span>
+                    {/* <span className='text-xs'>Email: arpitivf@gmail.com</span> */}
                 </div>
                 <div className='flex '>
                     <a href="https://www.instagram.com/drvandanabansal_gynaecologist/" target='_blank'>
-                        <FaInstagram className='mx-2 text-white text-xl' />
+                        <FaInstagram className='mx-2 text-white text-md' />
                     </a>
                     <a href="https://www.facebook.com/vandana.bansal.33" target='_blank'>
-                        <FaFacebook className='mx-2 text-white text-xl' />
+                        <FaFacebook className='mx-2 text-white text-md' />
                     </a>
                     <a href="https://www.youtube.com/@DrVandanaBansal" target='_blank'>
-                        <FaYoutube className='mx-2 text-white text-xl' />
+                        <FaYoutube className='mx-2 text-white text-md' />
                     </a>
                     <a href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/" target='_blank'>
-                        <FaLinkedinIn className='mx-2 text-white text-xl' />
+                        <FaLinkedinIn className='mx-2 text-white text-md' />
                     </a>
                 </div>
             </div>
-            <nav className={`themess bg-lack md:text-white bg-rose-400 text-black fixed shadow-md w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-rose-700 bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""}`}>
+            <nav className={`themess bg-lack md:text-white bg-rose-400 text-black fixd shadow-2xl w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""}`}>
                 <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-                    <span className=' font-bol text-white md:font-thin text-2xl md:text-2xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'><img src={ATTBClogo} class="d-block w-20" alt="..."/></span>
+                    <span className=' font-bol text-white md:font-thin text-2xl md:text-2xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]'><img src={ATTBClogo1} class="d-block shadow-md shadow-white w-14" alt="..."/></span>
                 </div>
                 <div className={`block lg:hidden bg-opacity-30 ${isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"}`}>
                     <button
@@ -60,7 +60,7 @@ function NavigationB() {
                     className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-rose-100 rounded-xl" : "hidden"}`}
                 >
                     <div className="text-sm lg:flex-grow p-1">
-                        <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""}`}>
+                        <a href="/" className={`block mt-0 lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""}`}>
                             Home
                         </a>
                         <a href="#about" className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""}`}>
@@ -127,7 +127,7 @@ function NavigationB() {
                         </Menu> */}
                     </div>
 
-                    <button className="rounded-3xl inline-flex text-xs items-center bg-orange-200 border-0 py-2 px-4 text-white">
+                    <button className="rounded-3xl inline-flex text-xs items-center bg-rose-600 border-0 py-2 px-4 text-white">
                         <a href="bookappointment">
                             Book Appointment
                         </a>

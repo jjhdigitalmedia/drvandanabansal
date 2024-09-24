@@ -33,49 +33,85 @@ export function FAQ() {
                 <h1 className="text-left ml-32 font-bold text-5xl text-slate-700">FAQs</h1>
                 <div className=" text-center m-auto rounded-3xl faq" >
                     <Accordion className="border-2 hover:bg-rose-200 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 1} icon={<Icon id={1} open={open} />}>
-                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(1)}>What are the qualifications and specializations of the doctors available for consultation on this platform?</AccordionHeader>
+                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(1)}>What is infertility?</AccordionHeader>
                         <AccordionBody >
-                        All doctors on our platform are highly qualified professionals with valid medical degrees and relevant certifications. They specialize in various fields, including general medicine, pediatrics, cardiology, dermatology, mental health, and more. Detailed profiles of each doctor, including their qualifications, experience, and areas of expertise, are available for you to review.
+                            Infertility is defined as the inability to conceive a child despite trying for one year.
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 2} icon={<Icon id={2} open={open} />}>
                         <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(2)}>
-                        How do I book an appointment with a doctor through the website?
+                            Is infertility a woman's problem?
                         </AccordionHeader>
                         <AccordionBody>
-                        Booking an appointment is easy and convenient. Simply create an account or log in to your existing account, browse through the list of available doctors, select your preferred doctor and available time slot, and confirm your appointment. You will receive a confirmation email or notification with the appointment details.
+                            It is a myth that infertility is always a "woman's problem." In 50% of all infertility case male is directly or indirectly responsible (referred to as male factors).
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 3} icon={<Icon id={3} open={open} />}>
                         <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(3)}>
-                        What is the process for obtaining a prescription after an online consultation?
+                            What causes infertility in men?
                         </AccordionHeader>
                         <AccordionBody>
-                        After your consultation, if the doctor determines that a prescription is necessary, they will electronically send a prescription to your account. You can download or print the prescription directly from the website. Some pharmacies also accept electronic prescriptions, allowing you to fill your prescription without a physical copy.
+                            Lifestyle can influence the number and quality of a man's sperm. Alcohol and drugs--including marijuana, nicotine, and certain medications--can temporarily reduce sperm quality. Also, environmental toxins, including pesticides and lead, may be to blame for some cases of infertility.
+
+                            The causes of sperm production problems can exist from birth or develop later as a result of severe medical illnesses, including mumps and some sexually transmitted diseases, or from a severe testicle injury, tumor, or other problem. Inability to ejaculate normally can prevent conception, too, and can be caused by many factors, including diabetes, surgery of the prostate gland or urethra, blood pressure medication, or impotence.
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-xl bg-gradient-to-r from-rose-200 border-b-slate-600" open={open === 4} data-aos='fade-up' icon={<Icon id={4} open={open} />}>
                         <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(4)}>
-                        Are there any privacy measures in place to protect my personal and medical information?
+                        What causes infertility in women?
                         </AccordionHeader>
                         <AccordionBody>
-                        Yes, we prioritize your privacy and have implemented robust security measures to protect your personal and medical information. Our website uses encryption protocols to secure data transmission, and we comply with all relevant data protection regulations. Only authorized personnel and your consulting doctor have access to your medical records.
+                        The other half of explained infertility cases are linked to female problems (called female factors), most commonly ovulation disorders. Without ovulation, eggs are not available for fertilization. Problems with ovulation are signaled by irregular menstrual periods or a lack of periods altogether (called amenorrhea).
+
+Simple lifestyle factors--including stress, diet, or athletic training--can affect a woman's hormonal balance.
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-200 border-none my-1 rounded-xl bg-gradient-to-r from-rose-200 border-b-slate-600" data-aos='fade-up' open={open === 5} icon={<Icon id={5} open={open} />}>
                         <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(5)}>
-                        What types of consultations are offered (e.g., specialist consultations in Opthanmology / Eye, Dibetic Ratinopathy)?
+                        What is endometriosis?
                         </AccordionHeader>
                         <AccordionBody>
-                        Our platform offers a wide range of consultation types, including Eye Specialist consultations (such as Opthanmology / Eye, Dibetic Ratinopathy ), nutritional counseling, and more. You can choose the type of consultation based on your needs and the available specialties.
+                        Endometriosis is a condition in which tissue similar to that normally lining the uterus is found outside of the uterus, usually in the ovaries, fallopian tubes, and other pelvic structures. Endometriosis has no single symptom that is diagnostic. Patients with endometriosis may have painful periods, pelvic pain and backache during menses, painful intercourse and infertility.
                         </AccordionBody>
                     </Accordion>
                     <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
                         <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(6)}>
-                        Is it possible to consult with a doctor outside of regular business hours or on weekends?
+                        What are uterine fibroids?
                         </AccordionHeader>
                         <AccordionBody>
-                        Yes, we offer flexible consultation hours to accommodate your schedule. Many doctors on our platform provide evening and weekend appointments. You can check the availability of doctors and book appointments that fit your timetable.
+                        Uterine fibroids are growth that develop from the cells that make up the muscle of the uterus. Thay are also called leiomyomas or myomas. Uterine fibroids are common, benign growths that occur quite often in women. About one in every four or five women has them. Fibroids are most common in women aged 30 - 40, but can occur at any age. Many women who have fibroids are not aware of them because the growth can remain small and not cause a problem. Some symptoms that may occur include bleeding, irregular periods, menstrual pain, abdominal pain, painful intercourse, constipation, miscarriage and infertility.
+                        </AccordionBody>
+                    </Accordion>
+                    <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
+                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(6)}>
+                        What is artificial insemination or IUI?
+                        </AccordionHeader>
+                        <AccordionBody>
+                        IUI or intra uterine insemination is an in-office procedure that is used to treat a variety of fertility conditions that may include cervical mucus problems, diminished sperm motility and ovulation dysfunction. The procedure involves ovulation monitoring by ultrasound examination, sperm washing and insemination. Sperm washing is done by using protein enhanced mediums and centrifuging - procedures to obtain the best possible motile sperms. The washed sperms are then placed in the uterine cavity for fertilization to occur within the body.
+                        </AccordionBody>
+                    </Accordion>
+                    <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
+                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(6)}>
+                        What is in vitro fertilization (IVF) or Test Tube baby?
+                        </AccordionHeader>
+                        <AccordionBody>
+                        It is one of the many treatment options available to infertile couples. In Vitro means "in glass" and refers to the fact that fertilization takes place outside of the woman's body. IVF makes it possible to combine sperm and eggs in a laboratory for a baby that is genetically related to one or both partners. The fertilization of eggs and sperms are done in the laboratory resulting in an embryo.
+                        </AccordionBody>
+                    </Accordion>
+                    <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
+                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(6)}>
+                        Can the IVF cycle be cancelled during a treatment cycle?
+                        </AccordionHeader>
+                        <AccordionBody>
+                        The aim of incentive monitoring program is to obtain a good number of healthy mature eggs. Thus if the cycle is unsatisfactory, it may be cancelled at any stage.
+                        </AccordionBody>
+                    </Accordion>
+                    <Accordion className=" border-2 hover:bg-rose-100 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-200" data-aos='fade-up' open={open === 6} icon={<Icon id={6} open={open} />}>
+                        <AccordionHeader className="text-xs md:text-sm p-3" onClick={() => handleOpen(6)}>
+                        What is the time required for IUI/IVF treatment?
+                        </AccordionHeader>
+                        <AccordionBody>
+                        IUI treatment is short and requires 2-5 visits during the follicular monitoring prior to IUI, after IUI patient can go home and take a 14 days general rest before a pregnancy test is done.
                         </AccordionBody>
                     </Accordion>
                 </div>

@@ -47,20 +47,6 @@ const Footer = () => {
             <div className="lg:w-1/4 md:w-1/2 w-full px-1">
               <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Info</h2>
               <nav className="list-none mb-10">
-                <div className="grid grid-cols-2 gap-">
-                  <li className='text-left '>
-                    <IoLocationSharp className='mx-2 text-rose-600 text-xl' />
-                    <MdOutlineWifiCalling3 className='mx-2 text-rose-600 text-xl' />
-                    <CgMail className='mx-2 text-rose-600 text-xl' />
-                  </li>
-                  <li className='text-left'>
-                    <a className="text-gray-600 hover:text-gray-800">JEEVAN JYOTI HOSPITAL CAMPUS, 162, Himmat Ganj, Bai Ka Bagh, Prayagraj, Uttar Pradesh 211003</a>
-                    <a className="text-gray-600 text-left hover:text-gray-800">+91 6390103002</a>
-                    <a className="text-gray-600 text-left hover:text-gray-800">bansal.drvandana@gmail.com</a>
-                  </li>
-                  {/* <li className='text-left'>
-                  </li> */}
-                </div>
                 <li>
                   <div className='flex m-auto w-fit'>
                     <a href="https://www.instagram.com/drvandanabansal_gynaecologist/" target='_blank'>

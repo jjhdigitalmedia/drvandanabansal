@@ -50,7 +50,7 @@ export const Rewards = () => {
 
   return (
     <>
-    <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto -mt-20">
+    <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto mt-10">
 
       {/* <div data-aos='fade-up' className="flex  flex-col justify-center rounded-3xl items-center border-8 border-white bg-gray-100 m-2 min-hscreen"> */}
         <Link to="guestspeaker" className="bg-whie m-2 rounded-2xl shadow-lg overflow-hidden max-w-72">
