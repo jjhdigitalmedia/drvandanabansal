@@ -110,7 +110,9 @@ function NavigationB() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
+                    <a href="about">
                   About
+                    </a>
                 </button>
                 <ul class="dropdown-menu">
                   <li>

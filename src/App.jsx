@@ -19,7 +19,6 @@ function App() {
       {/* <NavigationB /> */}
       <Head />
       <Rewards />
-      {/* <Achievements/> */}
       <Outlet />
       <Treatements />
       <GoogleReview />

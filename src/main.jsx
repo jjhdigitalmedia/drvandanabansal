@@ -22,6 +22,7 @@ import Imsi from './Pages/Imsi.jsx'
 import Embryo from './Pages/Embryo.jsx'
 import LaserAssisted from './Pages/LaserAssisted.jsx'
 import Laparoscopy from './Pages/Laparoscopy.jsx'
+import Head from './Component/Head.jsx'
 
 
 const router = createBrowserRouter([
@@ -119,6 +120,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ParallaxProvider>
 
       <NavigationB />
+      {/* <Head/> */}
       <RouterProvider router={router} />
       <Footer />
       
