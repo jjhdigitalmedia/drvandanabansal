@@ -45,7 +45,7 @@ function NavigationB() {
         </div>
       </div>
       <nav
-        className={`themess bg-lack md:text-white bg-rose-400 text-black fixd shadow-2xl w-full z-30 flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${
+        className={`themess bg-lack z-50 md:text-white bg-rose-400 text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${
           isOpen ? " shadow-xl" : ""
         }`}
       >
@@ -54,7 +54,7 @@ function NavigationB() {
             <img
               src={ATTBClogo1}
               class="d-block shadow-md shadow-white w-14"
-              alt="..."
+              alt="..."  
             />
           </span>
         </div>
@@ -151,7 +151,7 @@ function NavigationB() {
                     <a class="dropdown-item" href="#">
                       <div class="dropdown">
                         <button
-                          class="btn btn-secondary dropdown-toggle"
+                          class="btn dropdown-toggle"
                           type="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
