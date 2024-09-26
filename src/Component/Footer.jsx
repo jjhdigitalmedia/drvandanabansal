@@ -9,6 +9,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineWifiCalling3 } from "react-icons/md";
 import { CgMail } from "react-icons/cg";
 import { IoLocationSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -49,7 +50,7 @@ const Footer = () => {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600  hover:text-gray-800">Home</a>
+                  <a href='/' className="text-gray-600 hover:text-gray-800">Home</a>
                 </li>
                 <li>
                   <a className="text-gray-600 hover:text-gray-800">About</a>

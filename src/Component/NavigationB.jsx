@@ -45,23 +45,21 @@ function NavigationB() {
         </div>
       </div>
       <nav
-        className={`themess bg-lack z-50 md:text-white bg-rose-400 text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${
-          isOpen ? " shadow-xl" : ""
-        }`}
+        className={`themess bg-lack z-50 md:text-white bg-rose-400 text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
+          }`}
       >
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
           <span className=" font-bol text-white md:font-thin text-2xl md:text-2xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]">
             <img
               src={ATTBClogo1}
               class="d-block shadow-md shadow-white w-14"
-              alt="..."  
+              alt="..."
             />
           </span>
         </div>
         <div
-          className={`block lg:hidden bg-opacity-30 ${
-            isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"
-          }`}
+          className={`block lg:hidden bg-opacity-30 ${isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"
+            }`}
         >
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -84,41 +82,39 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block bg-rose-100 rounded-xl" : "hidden"
-          }`}
+          className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-rose-100 rounded-xl" : "hidden"
+            }`}
         >
           <div className="text-sm lg:flex-grow p-1">
-            <a
-              href="/"
-              className={`block mt-0 lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            <Link
+              to="/"
+              className={`block mt-0 lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Home
-            </a>
-            <a
-              href="#about"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            </Link>
+            <Link
+              to="about"
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               <div class="dropdown">
+
                 <button
                   class="btn dropdown-toggle"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                    <a href="about">
-                  About
-                    </a>
+                  <Link to="/about">
+                    About
+                  </Link>
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <Link class="dropdown-item" to="/about">
                       Our Profile
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#">
@@ -132,12 +128,11 @@ function NavigationB() {
                   </li>
                 </ul>
               </div>
-            </a>
+            </Link>
             <a
               href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               <div class="dropdown">
                 <button
@@ -194,90 +189,46 @@ function NavigationB() {
               </div>
             </a>
             <a
-              href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
-              Facilities
+              <Link to='/facilities'>
+                Facilities
+              </Link>
             </a>
-            <a
-              href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            <Link
+              to='achievements'
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Our Success Rate
-            </a>
-            <a
-              href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            </Link>
+            <Link
+              to="ivfteam"
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Our IVF Team
-            </a>
-            <a
-              href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            </Link>
+            <Link
+              to="patientsguide"
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Patient Guide
-            </a>
-            <a
-              href="#contact"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+            </Link>
+            <Link
+              to="contact"
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Contact
-            </a>
-
-            {/* <Menu as="div" className="relative inline-block text-left">
-                        <div>
-                        <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-transparent px-3 py-2 text-sm font-semibold border-sm border-pink-800 ring-1 ring-inset ring-white hover:bg-gray-50 md:text-white text-black">
-                        Options
-                        <ChevronDownIcon aria-hidden="true" className=" -mr-1 h-5 w-5 text-white" />
-                        </MenuButton>
-                        </div>
-                        
-                        <MenuItems
-                        transition
-                        className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
-                        >
-                        <div className="py-1">
-                        <MenuItem>
-                        <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                        Account settings
-                        </a>
-                        </MenuItem>
-                        <MenuItem>
-                        <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                        Support
-                        </a>
-                        </MenuItem>
-                        <MenuItem>
-                        <a
-                        href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900"
-                        >
-                        License
-                        </a>
-                        </MenuItem>
-                        </div>
-                        </MenuItems>
-                        </Menu> */}
+            </Link>
           </div>
 
           <button className="rounded-3xl inline-flex text-xs items-center bg-rose-600 border-0 py-2 px-4 text-white">
-            <a href="bookappointment">Book Appointment</a>
+            <Link to="bookappointment">Book Appointment</Link>
           </button>
         </div>
       </nav>

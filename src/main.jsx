@@ -22,39 +22,69 @@ import Imsi from './Pages/Imsi.jsx'
 import Embryo from './Pages/Embryo.jsx'
 import LaserAssisted from './Pages/LaserAssisted.jsx'
 import Laparoscopy from './Pages/Laparoscopy.jsx'
-import Head from './Component/Head.jsx'
+import Home from './Component/Home.jsx'
+import Layout from './Layout.jsx'
+import Facilities from './Component/Facilities.jsx'
+import IVFteam from './Component/IVFteam.jsx'
+import PatientsGuide from './Component/PatientsGuide.jsx'
+import Gallery from './Component/Gallery.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element:<> <App/></>,
     children: [
       {
-        path: '/about',
-        element: <About />,
-        children: []
+        path: '',
+        element: <Home />,
       },
       {
-        path: '/contact',
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'bookappointment',
+        element: <BookAppointment />,
+      },
+      {
+        path: 'facilities',
+        element: <Facilities />,
+      },
+      {
+        path: 'ivfteam',
+        element: <IVFteam />,
+      },
+      {
+        path: 'contact',
         element: <Contact />,
+      },
+      {
+        path: 'patientsguide',
+        element:<PatientsGuide /> ,
         children: []
       },
       {
-        path: '/experience',
-        element: <About />,
+        path: 'achievements',
+        element:<Achievements /> ,
+        children: []
+      },
+      {
+        path: 'gallery',
+        element:<Gallery /> ,
+        children: []
+      },
+      {
+        path: 'patientsreview',
+        element: <PatientReviewVideo />,
         children: []
       }
+      
     ]
   },
   {
-    path: '/hospitalprofile',
-    element: <Iui />,
-    children: []
-  },
-  {
     path: '/iuitreatment',
-    element: <Iui />,
+    element: <> <NavigationB /><Iui /> <Footer /></>,
     children: []
   },
   {
@@ -94,36 +124,20 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/achievements',
-    element: <Achievements />,
-    children: []
-  },
-  {
-    path: '/bookappointment',
-    element: <BookAppointment />,
-    children: []
-  },
-  {
     path: '/guestspeaker',
     element: <GuestSpeaker />,
     children: []
   },
-  {
-    path: '/patientsreview',
-    element: <PatientReviewVideo />,
-    children: []
-  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ParallaxProvider>
 
-      <NavigationB />
-      {/* <Head/> */}
+      {/* <NavigationB /> */}
       <RouterProvider router={router} />
-      <Footer />
-      
+      {/* <Footer /> */}
+
     </ParallaxProvider>
   </React.StrictMode>,
 )

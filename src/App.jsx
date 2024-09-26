@@ -10,21 +10,17 @@ import GoogleReview from './Component/GoogleReview.jsx'
 import { FAQ } from './Component/FAQ.jsx'
 import { Rewards } from './Component/Rewards.jsx'
 import NavigationB from './Component/NavigationB.jsx'
+import Home from './Component/Home.jsx'
+import Footer from './Component/Footer.jsx'
 
 
 function App() {
 
   return (
     <>
-      {/* <NavigationB /> */}
-      <Head />
-      <Rewards />
-      <Outlet />
-      <Treatements />
-      <GoogleReview />
-      <About />
-      <FAQ />
-      <Contact />
+      <NavigationB />
+      <Outlet /> 
+      <Footer />
     </>
   )
 }
