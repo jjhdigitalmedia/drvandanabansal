@@ -44,17 +44,22 @@ function NavigationB() {
           </a>
         </div>
       </div>
+
+
       <nav
         className={`themess bg-lack z-50 md:text-white bg-rose-400 text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
           }`}
       >
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-          <span className=" font-bol text-white md:font-thin text-2xl md:text-2xl text-roe-400 md:text-white  md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)]">
+          <span className=" font-bol flex md:font-thin text-roe-400 
+          ">
+            {/* md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)] */}
             <img
               src={ATTBClogo1}
-              class="d-block shadow-md shadow-white w-14"
+              class="d-block w-14"
               alt="..."
             />
+            <span className="text-red-600 font-semibold ml-2 text-xl">ARPIT TEST TUBE<br />BABY CENTRE</span>
           </span>
         </div>
         <div
@@ -134,6 +139,7 @@ function NavigationB() {
               className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
+              
               <div class="dropdown">
                 <button
                   class="btn dropdown-toggle"
@@ -212,23 +218,23 @@ function NavigationB() {
               Our IVF Team
             </Link>
             <Link
-              to="patientsguide"
+              to="gallery"
               className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
-              Patient Guide
+              Gallery
             </Link>
-            <Link
+            {/* <Link
               to="contact"
               className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
 
-          <button className="rounded-3xl inline-flex text-xs items-center bg-rose-600 border-0 py-2 px-4 text-white">
-            <Link to="bookappointment">Book Appointment</Link>
+          <button className="rounded-3xl inline-flex text-xs items-center bg-red-600 border-0 py-2 px-4 text-white">
+            <Link to="bookappointment">Contact US</Link>
           </button>
         </div>
       </nav>
