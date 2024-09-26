@@ -47,7 +47,7 @@ function NavigationB() {
 
 
       <nav
-        className={`themess bg-lack z-50 md:text-white bg-rose-400 text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
+        className={`themess bg-lack z-50 md:text-white text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
           }`}
       >
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
@@ -59,12 +59,11 @@ function NavigationB() {
               class="d-block w-14"
               alt="..."
             />
-            <span className="text-red-600 font-semibold ml-2 text-xl">ARPIT TEST TUBE<br />BABY CENTRE</span>
+            <span className="text-red-600 font-semibold ml-2">ARPIT TEST TUBE<br />BABY CENTRE</span>
           </span>
         </div>
         <div
-          className={`block lg:hidden bg-opacity-30 ${isOpen ? "bg-rose-400" : "bg-rose-400 rounded-md"
-            }`}
+          className={`block lg:hidden bg-opacity-30 text-xl`}
         >
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -87,7 +86,7 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block bg-rose-100 rounded-xl" : "hidden"
+          className={`w-full block text-center h-screen p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
             }`}
         >
           <div className="text-sm lg:flex-grow p-1">
