@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import 'aos/dist/aos.css'
-import slide01 from '../assets/slide01.jpg'
+import bannerweb from '../assets/bannerweb.png'
 import vandanabgphoto from '../assets/vandanabgphoto.jpg'
 import slide02 from '../assets/slide02.jpg'
 import slide03 from '../assets/slide03.jpg'
@@ -47,7 +47,7 @@ const Head = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={slide01} class="d-block w-100" alt="..."/>
+            <img src={bannerweb} class="d-block w-100" alt="..."/>
           </div>
           <div class="carousel-item">
             <img src={slide02} class="d-block w-100" alt="..."/>

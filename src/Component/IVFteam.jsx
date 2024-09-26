@@ -1,7 +1,9 @@
 import React from 'react'
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import gallery02 from '../assets/Gallery/gallery02.jpg';
-// import gallery03 from '../assets/Gallery/gallery03.jpg';
+import ArpitPic from '../assets/ArpitPic.png';
+import aboutvandana from '../assets/aboutvandana.jpg';
+import Anjula from '../assets/Anjula.jpg';
 import gallery04 from '../assets/Gallery/gallery04.jpg';
 
 const IVFteam = () => {
@@ -21,7 +23,7 @@ const IVFteam = () => {
                     </div>
                     <div class="p-2 md:w-1/3">
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery02} alt="blog" />
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={aboutvandana} alt="blog" />
                             <div class="p-2">
                                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Vandan Bansal</h1>
                                 <p class="leading-relaxed mb-3">MS, D.Phil (Gold Medalist), DGO, FCGP</p>
@@ -31,7 +33,7 @@ const IVFteam = () => {
                     </div>
                     <div class="p-2 md:w-1/3">
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={ArpitPic} alt="blog" />
                             <div class="p-2">
                                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Arpit Bansal</h1>
                                 <p class="leading-relaxed mb-3">MBBS, MS, FMAS, FCS</p>
@@ -42,7 +44,7 @@ const IVFteam = () => {
                     </div>
                     <div class="p-1 md:w-1/3">
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={Anjula} alt="blog" />
                             <div class="p-2">
                                 <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Anjula Sahay</h1>
                                 <p class="leading-relaxed mb-3">MBBS, DGO, FCPS</p>
