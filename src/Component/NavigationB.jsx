@@ -86,7 +86,7 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center h-screen p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
+          className={`w-full block text-center h-screen md:h-auto p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
             }`}
         >
           <div className="text-sm lg:flex-grow p-1">
