@@ -16,31 +16,31 @@ function NavigationB() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-500">
+      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-700">
         <div>
-          <span className="pr-8 text-xs">
-            Phone: 6390103002 | Email: arpitivf@gmail.com
+          <span className="pr-8 text-xs text-white">
+            Phone: +91 6390103002 | Email: arpitivf@gmail.com
           </span>
           {/* <span className='text-xs'>Email: arpitivf@gmail.com</span> */}
         </div>
-        <div className="flex ">
+        <div className="flex align-middle ">
           <a
             href="https://www.instagram.com/drvandanabansal_gynaecologist/"
             target="_blank"
           >
-            <FaInstagram className="mx-2 text-white text-md" />
+            <FaInstagram className="mx-2 text-white" />
           </a>
           <a href="https://www.facebook.com/vandana.bansal.33" target="_blank">
-            <FaFacebook className="mx-2 text-white text-md" />
+            <FaFacebook className="mx-2 text-white" />
           </a>
           <a href="https://www.youtube.com/@DrVandanaBansal" target="_blank">
-            <FaYoutube className="mx-2 text-white text-md" />
+            <FaYoutube className="mx-2 text-white" />
           </a>
           <a
             href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/"
             target="_blank"
           >
-            <FaLinkedinIn className="mx-2 text-white text-md" />
+            <FaLinkedinIn className="mx-2 text-white" />
           </a>
         </div>
       </div>
