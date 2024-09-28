@@ -9,6 +9,15 @@ const Layout = () => {
     <NavigationB/>
     <Outlet/>
     <Footer/>
+    {/* {
+     "routes": [
+        {
+            "src": "/[^.]+",
+            "dest": "/",
+            "status": 200
+        }
+     ]
+} */}
     </>
   )
 }
