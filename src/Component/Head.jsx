@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import 'aos/dist/aos.css'
 import bannerwebs01 from '../assets/bannerwebs01.png'
-import bannerweb02 from '../assets/bannerweb02.png'
+import bannerweb03 from '../assets/bannerweb03.png'
 import vandanabgphoto from '../assets/vandanabgphoto.jpg'
 import slide02 from '../assets/slide02.jpg'
-import slide03 from '../assets/slide03.jpg'
+import banner06 from '../assets/banner06.png'
+import banner05 from '../assets/banner05.png'
 import slide04 from '../assets/slide04.jpg'
 import slide05 from '../assets/slide05.jpg'
 import '../Style/Style.css'
@@ -48,16 +49,16 @@ const Head = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img src={bannerweb03} class="d-block w-100" alt="..."/>
+          </div>
+          <div class="carousel-item">
             <img src={bannerwebs01} class="d-block w-100" alt="..."/>
           </div>
           <div class="carousel-item">
-            <img src={bannerweb02} class="d-block w-100" alt="..."/>
+            <img src={banner06} class="d-block w-100" alt="..."/>
           </div>
           <div class="carousel-item">
-            <img src={slide03} class="d-block w-100" alt="..."/>
-          </div>
-          <div class="carousel-item">
-            <img src={slide04} class="d-block w-100" alt="..."/>
+            <img src={banner06} class="d-block w-100" alt="..."/>
           </div>
           <div class="carousel-item">
             <img src={slide05} class="d-block w-100" alt="..."/>

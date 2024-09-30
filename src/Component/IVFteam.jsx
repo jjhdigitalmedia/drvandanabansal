@@ -80,7 +80,7 @@ const IVFteam = () => {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
                             <div class="p-2">
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Harshit Bansal</h1>
                                 <p class="leading-relaxed mb-3">Photo booth  jianbing microdosing tousled waistcoat.</p>
                                 
                             </div>
@@ -90,7 +90,7 @@ const IVFteam = () => {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
                             <div class="p-2">
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Sakshi Bansal</h1>
                                 <p class="leading-relaxed mb-3">Photo s jianbing microdosing tousled waistcoat.</p>
                                 
                             </div>
@@ -100,7 +100,7 @@ const IVFteam = () => {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
                             <div class="p-2">
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Santosh Kumar Sigh</h1>
                                 <p class="leading-relaxed mb-3">Pcha tousled waistcoat.</p>
                                 
                             </div>
@@ -110,7 +110,7 @@ const IVFteam = () => {
                         <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                             <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={gallery01} alt="blog" />
                             <div class="p-2">
-                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Dr Zainab</h1>
                                 <p class="leading-relaxed mb-3">iracha leggings jianbing microdosing tousled waistcoat.</p>
                                 
                             </div>

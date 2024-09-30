@@ -42,19 +42,11 @@ const slideImages = [
 
 const GoogleReview = () => {
   return (
-    <div className="body-font md:bg-[url(https://i.postimg.cc/zDtyZKRC/bg-Google-Review.jpg)] bg-[url(https://i.postimg.cc/VLDN1zt3/bg-Google-Review.jpg)] bg-hero g-no-repeat bg-cover bg-center bg-fixed h-4/5 py-3 ">
-      {/* <div className="my-4">
-        <h1 className="text-center text-xl md:text-4xl text-black">Give your valuable Review</h1>
-        </div>
-        <div
-        data-aos="fade-up"
-        className="h-96 p-2 w-11/12 m-auto md:m-5 overflow-scroll border-1 bg-red-100 border-gray-200 rounded-md"
-        > */}
-      <div className="elfsight-app-7f209c6b-645c-45d0-83e8-5dc4afa3d79d" data-elfsight-app-lazy></div>
-
-      {/* </div> */}
+    <div>
+     <script src="https://static.elfsight.com/platform/platform.js" async></script>
+     <div class="elfsight-app-ad2e5e08-1de5-4fde-8a64-b8282d48abb7" data-elfsight-app-lazy></div>
     </div>
-  );
+    );
 };
 export default GoogleReview;
 

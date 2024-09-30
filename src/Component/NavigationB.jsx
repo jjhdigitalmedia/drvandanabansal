@@ -16,7 +16,7 @@ function NavigationB() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-700">
+      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-800">
         <div>
           <span className="pr-8 text-xs text-white">
             Phone: +91 6390103002 | Email: arpitivf@gmail.com
@@ -56,7 +56,7 @@ function NavigationB() {
             {/* md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)] */}
             <img
               src={ATTBClogo1}
-              class="d-block w-14"
+              class="d-block w-12"
               alt="..."
             />
             <span className="text-red-600 font-semibold ml-2">ARPIT TEST TUBE<br />BABY CENTRE</span>
@@ -92,29 +92,29 @@ function NavigationB() {
           <div className="text-sm lg:flex-grow p-1">
             <Link
               to="/"
-              className={`block mt-0 lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               Home
             </Link>
             <Link
               to="about"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               <div class="dropdown">
 
                 <button
-                  class="btn dropdown-toggle"
+                  class="btn dropdown-toggle font-semibold"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <Link to="/about">
+                  <Link to="/about" className=" hover:underline">
                     About
                   </Link>
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu font-semibold">
                   <li>
                     <Link class="dropdown-item" to="/about">
                       Our Profile
@@ -139,9 +139,9 @@ function NavigationB() {
                 }`}
             >
               
-              <div class="dropdown">
+              <div class="dropdown ">
                 <button
-                  class="btn dropdown-toggle"
+                  class="btn dropdown-toggle hover:underline font-semibold"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -181,12 +181,12 @@ function NavigationB() {
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item hover:underline font-semibold" href="#">
                       Test Evaluation
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item font-semibold" href="#">
                       Other Services
                     </a>
                   </li>
@@ -195,30 +195,30 @@ function NavigationB() {
             </a>
             <a
 
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
-              <Link to='/facilities'>
+              <Link to='/facilities' className="hover:underline">
                 Facilities
               </Link>
             </a>
             <Link
               to='achievements'
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               Our Success Rate
             </Link>
             <Link
               to="ivfteam"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               Our IVF Team
             </Link>
             <Link
               to="gallery"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
               Gallery
@@ -232,7 +232,7 @@ function NavigationB() {
             </Link> */}
           </div>
 
-          <button className="rounded-3xl inline-flex text-xs items-center bg-red-600 border-0 py-2 px-4 text-white">
+          <button className="rounded-3xl inline-flex text-xs hover:bg-red-700 items-center bg-red-600 border-0 py-2 px-4 text-white">
             <Link to="bookappointment">Contact US</Link>
           </button>
         </div>
