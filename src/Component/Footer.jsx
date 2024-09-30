@@ -14,65 +14,66 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="text-gray-600 body-font bg-gradient-to-b from-rose-100">
+    {/* bg-gradient-to-t from-slate-800 to-red-50 */}
+      <footer className="text-gray-600 body-font bg-stone-800">
         <div className="container px-5 py-16 mx-auto ">
           <div className="flex flex-wrap md:text-left  order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 Treatment
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-400 hover:text-white">
                     Preventive Screenings
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-400 hover:text-white">
                     Fertility Treatments
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-400 hover:text-white">
                     Hormonal disorder
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-400 hover:text-white">
                     Pregnancy & child birth
                   </a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 Important Links
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <a href='/' className="text-gray-600 hover:text-gray-800">Home</a>
+                  <a href='/' className="text-gray-400 hover:text-white">Home</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">About</a>
+                  <a className="text-gray-400 hover:text-white">About</a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">
+                  <a className="text-gray-400 hover:text-white">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-600 hover:text-gray-800">Facilities</a>
+                  <a className="text-gray-400 hover:tewhite">Facilities</a>
                 </li>
               </nav>
             </div>
             <div className="lg:w-1/4 md:w-1/2 w-full px-1">
-              <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
                 Contact Info
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <div className="my-4">
-                  <IoLocationOutline className="inline text-red-600 text-xl" /> 162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj
+                  <div className="my-4 text-gray-300">
+                  <IoLocationOutline className="inline text-gray-300 text-xl" />162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj
                     (Allahabad) UTTAR PRADESH, INDIA
                   </div>
                   <div className="flex m-auto w-fi">
@@ -80,25 +81,25 @@ const Footer = () => {
                       href="https://www.instagram.com/drvandanabansal_gynaecologist/"
                       target="_blank"
                     >
-                      <FaInstagram className="mx-2 text-rose-600 text-xl" />
+                      <FaInstagram className="mx-2 text-white text-xl" />
                     </a>
                     <a
                       href="https://www.facebook.com/vandana.bansal.33"
                       target="_blank"
                     >
-                      <FaFacebook className="mx-2 text-rose-600 text-xl" />
+                      <FaFacebook className="mx-2 text-white text-xl" />
                     </a>
                     <a
                       href="https://www.youtube.com/@DrVandanaBansal"
                       target="_blank"
                     >
-                      <FaYoutube className="mx-2 text-rose-600 text-xl" />
+                      <FaYoutube className="mx-2 text-white text-xl" />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/"
                       target="_blank"
                     >
-                      <FaLinkedinIn className="mx-2 text-rose-600 text-xl" />
+                      <FaLinkedinIn className="mx-2 text-white text-xl" />
                     </a>
                   </div>
                 </li>
@@ -106,16 +107,16 @@ const Footer = () => {
             </div>
             <div className="align-middle py-12 m-auto">
               <a href="bookappointment">
-                <button className="bg-rose-700  text-white py-2 px-6 rounded-3xl">
+                <button className="bg-red-800  text-white py-2 px-6 rounded-3xl">
                   Book Appointment
                 </button>
               </a>
             </div>
           </div>
         </div>
-        <div className="bg-slate-100">
+        <div className="bg-red-900">
           <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-            <a className="text-rose-700 flex title-font font-medium items-center md:justify-start justify-center">
+            <a className="text-white flex title-font font-medium items-center md:justify-start justify-center">
               <span className="ml-3 text-xl">Best IVF Centre in Prayagraj</span>
             </a>
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0">

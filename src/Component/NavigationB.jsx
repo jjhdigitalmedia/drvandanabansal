@@ -11,6 +11,7 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
 
 function NavigationB() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +20,17 @@ function NavigationB() {
       <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-800">
         <div>
           <span className="pr-8 text-xs text-white">
-            Phone: +91 6390103002 | Email: arpitivf@gmail.com
+            Phone: +91 6390103002        |       Email: arpitivf@gmail.com
           </span>
           {/* <span className='text-xs'>Email: arpitivf@gmail.com</span> */}
         </div>
-        <div className="flex align-middle ">
+        <div className="text-xs text-white">
+          {" "}
+          <IoLocationOutline className="inline text-white text-lg" />
+          162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
+          UTTAR PRADESH, INDIA
+        </div>
+        {/* <div className="flex align-middle ">
           <a
             href="https://www.instagram.com/drvandanabansal_gynaecologist/"
             target="_blank"
@@ -42,29 +49,29 @@ function NavigationB() {
           >
             <FaLinkedinIn className="mx-2 text-white" />
           </a>
-        </div>
+        </div> */}
       </div>
 
-
       <nav
-        className={`themess bg-lack z-50 md:text-white text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
-          }`}
+        className={`themess bg-lack z-50 md:text-white text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${
+          isOpen ? " shadow-xl" : ""
+        }`}
       >
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-          <span className=" font-bol flex md:font-thin text-roe-400 
-          ">
+          <span
+            className=" font-bol flex md:font-thin text-roe-400 
+          "
+          >
             {/* md:[text-shadow:_0_2px_0_rgb(0_0_0_/_30%)] */}
-            <img
-              src={ATTBClogo1}
-              class="d-block w-12"
-              alt="..."
-            />
-            <span className="text-red-600 font-semibold ml-2">ARPIT TEST TUBE<br />BABY CENTRE</span>
+            <img src={ATTBClogo1} class="d-block w-12" alt="..." />
+            <span className="text-red-600 font-semibold ml-2">
+              ARPIT TEST TUBE
+              <br />
+              BABY CENTRE
+            </span>
           </span>
         </div>
-        <div
-          className={`block lg:hidden bg-opacity-30 text-xl`}
-        >
+        <div className={`block lg:hidden bg-opacity-30 text-xl`}>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
@@ -86,24 +93,26 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center h-screen md:h-auto p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
-            }`}
+          className={`w-full block text-center h-screen md:h-auto p-2 flex-grow lg:flex lg:items-center lg:w-auto ${
+            isOpen ? "block h-screen bg-rose-50" : "hidden"
+          }`}
         >
           <div className="text-sm lg:flex-grow p-1">
             <Link
               to="/"
-              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
               Home
             </Link>
             <Link
               to="about"
-              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
               <div class="dropdown">
-
                 <button
                   class="btn dropdown-toggle font-semibold"
                   type="button"
@@ -135,10 +144,10 @@ function NavigationB() {
             </Link>
             <a
               href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
-              
               <div class="dropdown ">
                 <button
                   class="btn dropdown-toggle hover:underline font-semibold"
@@ -181,7 +190,10 @@ function NavigationB() {
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item hover:underline font-semibold" href="#">
+                    <a
+                      class="dropdown-item hover:underline font-semibold"
+                      href="#"
+                    >
                       Test Evaluation
                     </a>
                   </li>
@@ -194,32 +206,35 @@ function NavigationB() {
               </div>
             </a>
             <a
-
-              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
-              <Link to='/facilities' className="hover:underline">
+              <Link to="/facilities" className="hover:underline">
                 Facilities
               </Link>
             </a>
             <Link
-              to='achievements'
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              to="achievements"
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
               Our Success Rate
             </Link>
             <Link
               to="ivfteam"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
               Our IVF Team
             </Link>
             <Link
               to="gallery"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
+                isOpen ? "py-2" : ""
+              }`}
             >
               Gallery
             </Link>
