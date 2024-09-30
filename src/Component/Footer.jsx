@@ -73,7 +73,7 @@ const Footer = () => {
               <nav className="list-none mb-10">
                 <li>
                   <div className="my-4 text-gray-300">
-                  <IoLocationOutline className="inline text-gray-300 text-xl" />162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj
+                  <IoLocationOutline className="inline text-red-500 text-xl" />162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj
                     (Allahabad) UTTAR PRADESH, INDIA
                   </div>
                   <div className="flex m-auto w-fi">

@@ -26,7 +26,7 @@ function NavigationB() {
         </div>
         <div className="text-xs text-white">
           {" "}
-          <IoLocationOutline className="inline text-white text-lg" />
+          <IoLocationOutline className="inline text-white text-lg text-wrap" />
           162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
           UTTAR PRADESH, INDIA
         </div>
@@ -211,7 +211,7 @@ function NavigationB() {
               }`}
             >
               <Link to="/facilities" className="hover:underline">
-                Facilities
+                Patients Guide
               </Link>
             </a>
             <Link
