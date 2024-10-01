@@ -82,12 +82,18 @@ function NavigationB() {
             <div class="dropdown text-sm lg:flex-grow p-1">
               <button class="dropbtn">About US</button>
               <div class="dropdown-content">
-                <a class="" onClick={navClose}>
-                  Our Profile
-                </a>
-                <a class="" onClick={navClose}>
+                <Link to='ourfounder' class="" onClick={navClose}>
                   Our founders
-                </a>
+                </Link>
+                <Link to='ourprofile' class="" onClick={navClose}>
+                  Our Profile
+                </Link>
+                <Link to='ourvisionmission' class="" onClick={navClose}>
+                  Our Vision & Mission
+                </Link>
+                <Link to='spiritualjourney' class="" onClick={navClose}>
+                  Spiritual Journey
+                </Link>
               </div>
             </div>
 
@@ -97,31 +103,31 @@ function NavigationB() {
                 <a class="dropdownn">
                   <button class="dropbtnn">Treatments</button>
                   <div class="dropdown-contentt">
-                    <a href="#" onClick={navClose}>IUI</a>
-                    <a href="#" onClick={navClose}>IVF ET</a>
-                    <a href="#" onClick={navClose}>ICSI</a>
-                    <a href="#" onClick={navClose}>IVM</a>
-                    <a href="#" onClick={navClose}>IMSI</a>
-                    <a href="#" onClick={navClose}>Embryo Monitoring</a>
-                    <a href="#" onClick={navClose}>Laser Assisted Hatching</a>
+                    <Link to="iuitreatment" onClick={navClose}>IUI</Link>
+                    <Link to="ivfet" onClick={navClose}>IVF ET</Link>
+                    <Link to="icsi" onClick={navClose}>ICSI</Link>
+                    <Link to="ivmtreatment" onClick={navClose}>IVM</Link>
+                    <Link to="imsitreatment" onClick={navClose}>IMSI</Link>
+                    <Link to="embryomonitoring" onClick={navClose}>Embryo Monitoring</Link>
+                    <Link to="laserassisted" onClick={navClose}>Laser Assisted Hatching</Link>
                   </div>
                 </a>
                 <a class="dropdownn">
                   <button class="dropbtnn">Test & Evaluation</button>
                   <div class="dropdown-contentt">
-                    <a href="#" onClick={navClose}>Endocrine Profile</a>
-                    <a href="#" onClick={navClose}>Sonography</a>
-                    <a href="#" onClick={navClose}>HSG / SONO</a>
-                    <a href="#" onClick={navClose}>Semen Bank</a>
+                    <Link to="endocrine" onClick={navClose}>Endocrine Profile</Link>
+                    <Link to="sonography" onClick={navClose}>Sonography</Link>
+                    <Link to="hsgsono" onClick={navClose}>HSG / SONO</Link>
+                    <Link to="semenbank" onClick={navClose}>Semen Bank</Link>
                   </div>
                 </a>
                 <a class="dropdownn">
                   <button class="dropbtnn">Other Services</button>
                   <div class="dropdown-contentt">
-                    <a href="#" onClick={navClose}>Embryo Bank</a>
-                    <a href="#" onClick={navClose}>Blascyst Culture</a>
-                    <a href="#" onClick={navClose}>Egg Donation</a>
-                    <a href="#" onClick={navClose}>Cryopreservation</a>
+                    <Link to="embryobank" onClick={navClose}>Embryo Bank</Link>
+                    <Link to="blastocyst" onClick={navClose}>Blastocyst Culture</Link>
+                    <Link to="eggdonation" onClick={navClose}>Egg Donation</Link>
+                    <Link to="cryopreservation" onClick={navClose}>Cryopreservation</Link>
                   </div>
                 </a>
               </div>

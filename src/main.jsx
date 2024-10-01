@@ -28,12 +28,24 @@ import Facilities from './Component/Facilities.jsx'
 import IVFteam from './Component/IVFteam.jsx'
 import PatientsGuide from './Component/PatientsGuide.jsx'
 import Gallery from './Component/Gallery.jsx'
+import Endocrine from './Pages/Endocrine.jsx'
+import Sonography from './Pages/Sonography.jsx'
+import HSGSono from './Pages/HSGSono.jsx'
+import SemenBank from './Pages/SemenBank.jsx'
+import Blastocyst from './Pages/Blastocyst.jsx'
+import EggDonation from './Pages/EggDonation.jsx'
+import Cryopreservation from './Pages/Cryopreservation.jsx'
+import EmbryoBank from './Pages/EmbryoBank.jsx'
+import OurFounder from './Component/OurFounder.jsx'
+import OurProfile from './Component/OurProfile.jsx'
+import OurVisionMission from './Component/OurVisionMission.jsx'
+import Spiritual from './Component/Spiritual.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element:<> <App/></>,
+    element: <> <App /></>,
     children: [
       {
         path: '',
@@ -61,72 +73,132 @@ const router = createBrowserRouter([
       },
       {
         path: 'patientsguide',
-        element:<PatientsGuide /> ,
+        element: <PatientsGuide />,
         children: []
       },
       {
         path: 'achievements',
-        element:<Achievements /> ,
+        element: <Achievements />,
         children: []
       },
       {
         path: 'gallery',
-        element:<Gallery /> ,
+        element: <Gallery />,
         children: []
       },
       {
         path: 'patientsreview',
         element: <PatientReviewVideo />,
         children: []
-      }
-      
-    ]
-  },
-  {
-    path: '/iuitreatment',
-    element: <> <NavigationB /><Iui /> <Footer /></>,
-    children: []
-  },
-  {
-    path: '/ivfet',
-    element: <Ivfet />,
-    children: []
-  },
-  {
-    path: '/icsi',
-    element: <Icsi />,
-    children: []
-  },
-  {
-    path: '/ivmtreatment',
-    element: <Ivm />,
-    children: []
-  },
-  {
-    path: '/imsitreatment',
-    element: <Imsi />,
-    children: []
-  },
-  {
-    path: '/embryomonitoring',
-    element: <Embryo />,
-    children: []
-  },
-  {
-    path: '/laserassisted',
-    element: <LaserAssisted />,
-    children: []
-  },
-  {
-    path: '/laparoscopy',
-    element: <Laparoscopy />,
-    children: []
-  },
+      },
+      {
+        path: 'ourfounder',
+        element: <OurFounder />,
+        children: []
+      },
+      {
+        path: 'ourprofile',
+        element: <OurProfile />,
+        children: []
+      },
+      {
+        path: 'ourvisionmission',
+        element: <OurVisionMission />,
+        children: []
+      },
+      {
+        path: 'spiritualjourney',
+        element: <Spiritual />,
+        children: []
+      },
 
-  {
-    path: '/guestspeaker',
-    element: <GuestSpeaker />,
-    children: []
+      {
+        path: '/iuitreatment',
+        element: <Iui />,
+        children: []
+      },
+      {
+        path: '/ivfet',
+        element: <Ivfet />,
+        children: []
+      },
+      {
+        path: '/icsi',
+        element: <Icsi />,
+        children: []
+      },
+      {
+        path: '/ivmtreatment',
+        element: <Ivm />,
+        children: []
+      },
+      {
+        path: '/imsitreatment',
+        element: <Imsi />,
+        children: []
+      },
+      {
+        path: '/embryomonitoring',
+        element: <Embryo />,
+        children: []
+      },
+      {
+        path: '/laserassisted',
+        element: <LaserAssisted />,
+        children: []
+      },
+      {
+        path: '/laparoscopy',
+        element: <Laparoscopy />,
+        children: []
+      },
+      {
+        path: '/endocrine',
+        element: <Endocrine />,
+        children: []
+      },
+      {
+        path: '/sonography',
+        element: <Sonography />,
+        children: []
+      },
+      {
+        path: '/hsgsono',
+        element: <HSGSono />,
+        children: []
+      },
+      {
+        path: '/semenbank',
+        element: <SemenBank />,
+        children: []
+      },
+      {
+        path: '/embryobank',
+        element: <EmbryoBank />,
+        children: []
+      },
+      {
+        path: '/blastocyst',
+        element: <Blastocyst />,
+        children: []
+      },
+      {
+        path: '/eggdonation',
+        element: <EggDonation />,
+        children: []
+      },
+      {
+        path: '/cryopreservation',
+        element: <Cryopreservation />,
+        children: []
+      },
+
+      {
+        path: '/guestspeaker',
+        element: <GuestSpeaker />,
+        children: []
+      },
+    ]
   },
 ])
 
@@ -134,9 +206,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ParallaxProvider>
 
-      {/* <NavigationB /> */}
       <RouterProvider router={router} />
-      {/* <Footer /> */}
 
     </ParallaxProvider>
   </React.StrictMode>,
