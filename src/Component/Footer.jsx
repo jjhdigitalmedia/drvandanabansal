@@ -72,11 +72,11 @@ const Footer = () => {
               </h2>
               <nav className="list-none mb-10">
                 <li>
-                  <div className="my-4 text-gray-300">
+                  <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' className="my-4 text-gray-300" target="_blank">
                   <IoLocationOutline className="inline text-red-500 text-xl" />162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj
                     (Allahabad) UTTAR PRADESH, INDIA
-                  </div>
-                  <div className="flex m-auto w-fi">
+                  </a>
+                  <div className="flex m-auto my-4">
                     <a
                       href="https://www.instagram.com/drvandanabansal_gynaecologist/"
                       target="_blank"

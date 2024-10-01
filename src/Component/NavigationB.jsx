@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../Style/Style.css";
+import "../Style/neonStyle.css";
 import ATTBClogo1 from "../assets/ATTBClogo1.png";
 import {
   FaFacebook,
@@ -25,37 +26,17 @@ function NavigationB() {
           {/* <span className='text-xs'>Email: arpitivf@gmail.com</span> */}
         </div>
         <div className="text-xs text-white">
-          {" "}
+        <a  href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
           <IoLocationOutline className="inline text-white text-lg text-wrap" />
           162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
           UTTAR PRADESH, INDIA
+        </a>
         </div>
-        {/* <div className="flex align-middle ">
-          <a
-            href="https://www.instagram.com/drvandanabansal_gynaecologist/"
-            target="_blank"
-          >
-            <FaInstagram className="mx-2 text-white" />
-          </a>
-          <a href="https://www.facebook.com/vandana.bansal.33" target="_blank">
-            <FaFacebook className="mx-2 text-white" />
-          </a>
-          <a href="https://www.youtube.com/@DrVandanaBansal" target="_blank">
-            <FaYoutube className="mx-2 text-white" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/"
-            target="_blank"
-          >
-            <FaLinkedinIn className="mx-2 text-white" />
-          </a>
-        </div> */}
       </div>
 
       <nav
-        className={`themess bg-lack z-50 md:text-white text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${
-          isOpen ? " shadow-xl" : ""
-        }`}
+        className={`themess bg-lack z-50 bg-gray-100 md:text-white text-black fixd shadow-md w-full flex items-center justify-between flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
+          }`}
       >
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
           <span
@@ -93,122 +74,72 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center h-screen md:h-auto p-2 flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block h-screen bg-rose-50" : "hidden"
-          }`}
+          className={`w-full block text-center h-screen md:h-auto p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
+            }`}
         >
           <div className="text-sm lg:flex-grow p-1">
             <Link
               to="/"
-              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Home
             </Link>
-            <Link
-              to="about"
-              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0 mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
-            >
-              <div class="dropdown">
-                <button
-                  class="btn dropdown-toggle font-semibold"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <Link to="/about" className=" hover:underline">
-                    About
-                  </Link>
-                </button>
-                <ul class="dropdown-menu font-semibold">
-                  <li>
-                    <Link class="dropdown-item" to="/about">
-                      Our Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Our Founders
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Somet
-                    </a>
-                  </li>
-                </ul>
+
+
+            <div class="dropdown">
+              <button class="dropbtn">About US</button>
+              <div class="dropdown-content">
+                <a class="">
+                 Our Profile
+                </a>
+                <a class="">
+                 Our founders
+                </a>
               </div>
-            </Link>
-            <a
-              href="achievements"
-              className={`block mt-0 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
-            >
-              <div class="dropdown ">
-                <button
-                  class="btn dropdown-toggle hover:underline font-semibold"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Services
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Treatments
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              Action
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              Another action
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              Something else here
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item hover:underline font-semibold"
-                      href="#"
-                    >
-                      Test Evaluation
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item font-semibold" href="#">
-                      Other Services
-                    </a>
-                  </li>
-                </ul>
+            </div>
+
+
+            <div class="dropdown">
+              <button class="dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a class="dropdownn">
+                  <button class="dropbtnn">Treatments</button>
+                  <div class="dropdown-contentt">
+                    <a href="#">IUI</a>
+                    <a href="#">IVF ET</a>
+                    <a href="#">ICSI</a>
+                    <a href="#">IVM</a>
+                    <a href="#">IMSI</a>
+                    <a href="#">Embryo Monitoring</a>
+                    <a href="#">Laser Assisted Hatching</a>
+                  </div>
+                </a>
+                <a class="dropdownn">
+                  <button class="dropbtnn">Test & Evaluation</button>
+                  <div class="dropdown-contentt">
+                    <a href="#">Endocrine Profile</a>
+                    <a href="#">Sonography</a>
+                    <a href="#">HSG / SONO</a>
+                    <a href="#">Semen Bank</a>
+                  </div>
+                </a>
+                <a class="dropdownn">
+                  <button class="dropbtnn">Other Services</button>
+                  <div class="dropdown-contentt">
+                    <a href="#">Embryo Bank</a>
+                    <a href="#">Blascyst Culture</a>
+                    <a href="#">Egg Donation</a>
+                    <a href="#">Cryopreservation</a>
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
+
+           
             <a
-              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               <Link to="/facilities" className="hover:underline">
                 Patients Guide
@@ -216,25 +147,22 @@ function NavigationB() {
             </a>
             <Link
               to="achievements"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Our Success Rate
             </Link>
             <Link
               to="ivfteam"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Our IVF Team
             </Link>
             <Link
               to="gallery"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${
-                isOpen ? "py-2" : ""
-              }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}
             >
               Gallery
             </Link>
