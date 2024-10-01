@@ -16,6 +16,12 @@ import { IoLocationOutline } from "react-icons/io5";
 
 function NavigationB() {
   const [isOpen, setIsOpen] = useState(false);
+  const navClose = () => {
+    // if (isOpen===true){
+    setIsOpen(false)
+    console.log("fklghsfh")
+    // }
+  }
   return (
     <>
       <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-800">
@@ -26,11 +32,11 @@ function NavigationB() {
           {/* <span className='text-xs'>Email: arpitivf@gmail.com</span> */}
         </div>
         <div className="text-xs text-white">
-        <a  href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
-          <IoLocationOutline className="inline text-white text-lg text-wrap" />
-          162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
-          UTTAR PRADESH, INDIA
-        </a>
+          <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
+            <IoLocationOutline className="inline text-white text-lg text-wrap" />
+            162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
+            UTTAR PRADESH, INDIA
+          </a>
         </div>
       </div>
 
@@ -81,88 +87,91 @@ function NavigationB() {
             <Link
               to="/"
               className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
-                }`}
+                }`} onClick={navClose}
             >
               Home
             </Link>
 
 
-            <div class="dropdown">
+            <div class="dropdown text-sm lg:flex-grow p-1">
               <button class="dropbtn">About US</button>
               <div class="dropdown-content">
-                <a class="">
-                 Our Profile
+                <a class="" onClick={navClose}>
+                  Our Profile
                 </a>
-                <a class="">
-                 Our founders
+                <a class="" onClick={navClose}>
+                  Our founders
                 </a>
               </div>
             </div>
 
 
-            <div class="dropdown">
+            <div class="dropdown text-sm lg:flex-grow p-1">
               <button class="dropbtn">Services</button>
               <div class="dropdown-content">
                 <a class="dropdownn">
                   <button class="dropbtnn">Treatments</button>
                   <div class="dropdown-contentt">
-                    <a href="#">IUI</a>
-                    <a href="#">IVF ET</a>
-                    <a href="#">ICSI</a>
-                    <a href="#">IVM</a>
-                    <a href="#">IMSI</a>
-                    <a href="#">Embryo Monitoring</a>
-                    <a href="#">Laser Assisted Hatching</a>
+                    <a href="#" onClick={navClose}>IUI</a>
+                    <a href="#" onClick={navClose}>IVF ET</a>
+                    <a href="#" onClick={navClose}>ICSI</a>
+                    <a href="#" onClick={navClose}>IVM</a>
+                    <a href="#" onClick={navClose}>IMSI</a>
+                    <a href="#" onClick={navClose}>Embryo Monitoring</a>
+                    <a href="#" onClick={navClose}>Laser Assisted Hatching</a>
                   </div>
                 </a>
                 <a class="dropdownn">
                   <button class="dropbtnn">Test & Evaluation</button>
                   <div class="dropdown-contentt">
-                    <a href="#">Endocrine Profile</a>
-                    <a href="#">Sonography</a>
-                    <a href="#">HSG / SONO</a>
-                    <a href="#">Semen Bank</a>
+                    <a href="#" onClick={navClose}>Endocrine Profile</a>
+                    <a href="#" onClick={navClose}>Sonography</a>
+                    <a href="#" onClick={navClose}>HSG / SONO</a>
+                    <a href="#" onClick={navClose}>Semen Bank</a>
                   </div>
                 </a>
                 <a class="dropdownn">
                   <button class="dropbtnn">Other Services</button>
                   <div class="dropdown-contentt">
-                    <a href="#">Embryo Bank</a>
-                    <a href="#">Blascyst Culture</a>
-                    <a href="#">Egg Donation</a>
-                    <a href="#">Cryopreservation</a>
+                    <a href="#" onClick={navClose}>Embryo Bank</a>
+                    <a href="#" onClick={navClose}>Blascyst Culture</a>
+                    <a href="#" onClick={navClose}>Egg Donation</a>
+                    <a href="#" onClick={navClose}>Cryopreservation</a>
                   </div>
                 </a>
               </div>
             </div>
 
-           
+
             <a
               className={`block mt-0 font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}
             >
-              <Link to="/facilities" className="hover:underline">
+              <Link to="/facilities" className="hover:underline" onClick={navClose}>
                 Patients Guide
               </Link>
             </a>
             <Link
               to="achievements"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block
+                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`} onClick={navClose}
             >
               Our Success Rate
             </Link>
             <Link
               to="ivfteam"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline font-semibold lg:inline-block
+                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`} onClick={navClose}
             >
               Our IVF Team
             </Link>
             <Link
               to="gallery"
-              className={`block mt-0 hover:underline font-semibold lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}
+              className={`block mt-0 hover:underline font-semibold
+                 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`} onClick={navClose}
             >
               Gallery
             </Link>
@@ -176,7 +185,7 @@ function NavigationB() {
           </div>
 
           <button className="rounded-3xl inline-flex text-xs hover:bg-red-700 items-center bg-red-600 border-0 py-2 px-4 text-white">
-            <Link to="bookappointment">Contact US</Link>
+            <Link to="bookappointment" onClick={navClose}>Contact US</Link>
           </button>
         </div>
       </nav>
