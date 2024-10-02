@@ -40,6 +40,7 @@ import OurFounder from './Component/OurFounder.jsx'
 import OurProfile from './Component/OurProfile.jsx'
 import OurVisionMission from './Component/OurVisionMission.jsx'
 import Spiritual from './Component/Spiritual.jsx'
+import NewsImages from './Component/NewsImages.jsx'
 
 
 const router = createBrowserRouter([
@@ -109,6 +110,11 @@ const router = createBrowserRouter([
       {
         path: 'spiritualjourney',
         element: <Spiritual />,
+        children: []
+      },
+      {
+        path: 'newsimages',
+        element: <NewsImages />,
         children: []
       },
 
