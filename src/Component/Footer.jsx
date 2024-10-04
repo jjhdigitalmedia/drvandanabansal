@@ -6,15 +6,11 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineWifiCalling3 } from "react-icons/md";
-import { CgMail } from "react-icons/cg";
-import { IoLocationSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
     <>
-    {/* bg-gradient-to-t from-slate-800 to-red-50 */}
       <footer className="text-gray-600 body-font bg-red-100">
         <div className="container px-5 py-16 mx-auto ">
           <div className="flex flex-wrap md:text-left  order-first">

@@ -61,16 +61,17 @@ const router = createBrowserRouter([
         element: <BookAppointment />,
       },
       {
-        path: 'facilities',
-        element: <Facilities />,
-      },
-      {
         path: 'ivfteam',
         element: <IVFteam />,
       },
       {
         path: 'contact',
         element: <Contact />,
+      },
+      {
+        path: 'facilities',
+        element: <Facilities />,
+        children: []
       },
       {
         path: 'patientsguide',

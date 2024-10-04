@@ -2,7 +2,7 @@ import React from 'react'
 
 const Embryo = () => {
   return (
-    <div className='w-11/12 md:w-4/5 m-auto pt-40 pb-24'>
+    <div className='w-11/12 md:w-4/5 m-auto pt-10 pb-24'>
       <h1 className='font-bold text-3xl my-3'>Embryo Monitoring</h1>
       <p className='my-3' >Embryo monitoring, also known as embryo culture, is a crucial step in assisted reproductive technology (ART) procedures such as in vitro fertilization (IVF) and intracytoplasmic sperm injection (ICSI). It involves the careful observation and assessment of developing embryos in the laboratory to select the healthiest ones for transfer into the woman's uterus. Here's how embryo monitoring typically works:
       </p>

@@ -138,6 +138,14 @@ function NavigationB() {
                  text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
                 }`}>
               <Link to="/facilities" className="hover:underline" onClick={navClose}>
+                Facilities
+              </Link>
+            </a>
+            <a
+              className={`block mt-0 font-semibold lg:inline-block
+                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                }`}>
+              <Link to="/patientsguide" className="hover:underline" onClick={navClose}>
                 Patients Guide
               </Link>
             </a>
