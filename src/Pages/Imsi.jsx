@@ -3,29 +3,20 @@ import React from 'react'
 const Imsi = () => {
   return (
     <div className='w-11/12 md:w-4/5 m-auto pt-40 pb-24'>
-    <h1 className='font-bold text-3xl my-3'>IUI Treatment</h1>
-    <p>A new break through in IVF treatment- IMSI, now at Arpit Test Tube Baby Centre.
+    <h1 className='font-bold text-3xl my-3'>IMSI Treatment</h1>
+    <p>Intracytoplasmic morphologically selected sperm injection (IMSI) is an advanced form of intracytoplasmic sperm injection (ICSI) used in assisted reproductive technology (ART) to treat male infertility. IMSI involves the selection and injection of a single sperm into an egg for fertilization, but with a higher level of magnification and sperm selection compared to traditional ICSI. Here's how the IMSI treatment process generally works:
     </p>
-    <p className='my-5'>
-    Sperm morphology evaluation plays a crucial role in the diagnosis of male fertility potential and it has demonstrated a predictive value for fertilization and pregnancy outcomes in IVF treatments.
-    </p>
-    <p className='my-5'>A new technique has recently been developed within the in vitro fertilization (IVF) field. A new microscope that will allow infertility specialists to pick the best sperm while carrying out the specialized test-tube baby procedure of ICSI. The IMSI method was first developed in 2004 by a team led by Benjamin Bartoov, of Barilan University in Israel, who used IMSI to select those sperms with a shape and size that indicated good genetic quality. The pregnancy rate in patients jumped from 30 % to 66 %.</p>
-    <p className='my-5'>In ICSI technique, an egg is held and injected with a husband sperm, with the help of a machine called micromanipulator. If the husband has no sperms, then sperms are obtained by doing a testicular biopsy. The fertilization occurs outside the woman’s body. The embryo is created outside the body of the mother and then placed inside the mother’s womb.</p>
-    <p className='my-5'>Intra-Cytoplasmic Morphologically Selected Sperm Injection (IMSI) helps magnify the image of the sperm 7,200 times, thereby allowing doctors to pick the best quality sperms. The machine is an advanced version of the earlier technique of Intracytoplasmic Sperm Injection (ICSI), having the magnification capacity of 16 times higher than ICSI. IMSI is a real-time method where sperms are selected just before the microinjection takes place.</p>
-    <p className='my-5'>The higher rate of magnification allows for a view of the internal morphology of the sperms – invisible to conventional inverted microscopes – and makes it possible to avoid choosing those that show anomalies on this level and that might compromise the success of the treatme nt.</p>
-
-    <p className='my-5'>IMSI helps improve the success rate among men with the worst prognosis and is said to be more beneficial than ICSI in patients with previous IVF or ICSI failures. It is also useful in couples with unexplained infertility. It has been shown that IMSI resulted in better egg fertilization rates, better quality embryos, better rate of blastocyst formation and therefore better pregnancy rates.</p>
-
-    <p className='my-5'>The technique has been tested on men that have serious sperm anomalies and also in cases of repeated miscarriages as well as repeated IVF failures.</p>
-
-    <p className='my-5'>Studies have already demonstrated that patients who underwent IMSI obtained significantly better advantage of over the conventional IVF-ICSI procedure in terms of pregnancy rate and miscarriage rates. This will be a promising technique in daily IVF practice when applied to severe male infertility and repeated failure cases.</p>
-
-    <h2 className='font-bold my-3 text-2xl' >In short IMSI is:-</h2>
+    
     <ul>
-      <li type="1">Benificial for previous IVF failed patients</li>
-      <li type="1">IMSI results in a higher pregnancy rates</li>
-      <li type="1">Lower miscarriage rates</li>
+     <li>1.	Sperm Selection: Before the IMSI procedure, the sperm sample is collected from the male partner or donor. Unlike traditional ICSI, where sperm are selected at lower magnification, IMSI utilizes high-powered microscopy (up to 6,000 times magnification) to examine sperm morphology in greater detail.</li>
+     <li>2.	Sperm Assessment: With IMSI, sperm are assessed for various morphological abnormalities that may not be visible with standard ICSI techniques. This includes abnormalities such as vacuoles (tiny fluid-filled sacs) in the sperm head, which may be associated with DNA damage.</li>
+     <li>3.	Sperm Injection: Using the highly magnified images, embryologists select a morphologically normal sperm for injection into each mature egg retrieved from the woman's ovaries. This precise selection aims to improve the chances of successful fertilization and embryo development.</li>
+     <li>4.	Fertilization and Embryo Culture: After the sperm injection, the eggs are monitored for signs of fertilization. Once fertilization occurs, the resulting embryos are cultured in the laboratory for several days to allow them to develop and grow.</li>
+     <li>5.	Embryo Transfer: Typically, one or more of the healthiest embryos are selected for transfer into the woman's uterus. This is done using a thin catheter, guided by ultrasound, which is inserted through the cervix and into the uterus to place the embryos in the optimal location.</li>
+     <li>6.	Luteal Phase Support: Following embryo transfer, the woman may be prescribed medications such as progesterone to support the uterine lining and improve the chances of successful implantation.</li>
+     <li>7.	Pregnancy Test: About two weeks after the embryo transfer, a pregnancy test is performed to determine if implantation has occurred and if the IMSI cycle was successful.</li>
     </ul>
+    <p>IMSI aims to improve outcomes in couples with male factor infertility by selecting the highest quality sperm for fertilization. It may be recommended in cases where previous ICSI attempts have failed or when there are concerns about sperm quality or DNA integrity. </p>
   </div>
   )
 }

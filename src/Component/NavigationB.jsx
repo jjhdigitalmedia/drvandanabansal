@@ -15,7 +15,7 @@ function NavigationB() {
   }
   return (
     <>
-      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-red-800">
+      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-gray-600">
         <div>
           <span className="pr-8 text-xs text-white">
             Phone: +91 6390103002 | Email: arpitivf@gmail.com
@@ -24,7 +24,7 @@ function NavigationB() {
         <div className="text-xs text-white">
           <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
             <IoLocationOutline className="inline text-white text-lg text-wrap" />
-            <span className="hidden lg:visible">
+            <span className="">
             162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
             UTTAR PRADESH, INDIA
             </span>
@@ -165,7 +165,7 @@ function NavigationB() {
           </div>
 
           <button className="rounded-3xl inline-flex text-xs hover:bg-red-700
-           items-center bg-red-600 border-0 py-2 px-4 text-white">
+           items-center bg-red-700 border-0 py-2 px-4 text-white">
             <Link to="bookappointment" onClick={navClose}>Contact US</Link>
           </button>
         </div>

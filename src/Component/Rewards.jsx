@@ -107,13 +107,16 @@ export const Rewards = () => {
       {/* </div> */}
 
       </div>
-      <video className="h-11/12 m-auto w-screen border-rose-100 " controls>
+      <div className="w-full px-52 py-10 bg-red-50 my-5">
+
+      <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
         <source
           src={IVFvideo}
           type="video/mp4"
           />
         Your browser does not support the video tag.
       </video>
+          </div>
 
       {/* <embed className="h-96 md:h-screen" src={HospitalProfile} width="500" height="375"
         type="application/pdf"></embed> */}
