@@ -19,7 +19,14 @@ function App() {
   return (
     <>
       <NavigationB />
-      <Outlet /> 
+      <div className=" fixed top-52 -rotate-90 -ml-16 z-50">
+        <a href="bookappointment">
+          <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-6 rounded-3xl">
+            Book Appointment
+          </button>
+        </a>
+      </div>
+      <Outlet />
       <Footer />
     </>
   )
