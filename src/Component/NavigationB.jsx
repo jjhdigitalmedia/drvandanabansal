@@ -15,7 +15,7 @@ function NavigationB() {
   }
   return (
     <>
-      <div className="flex flex-wrap text-center justify-between py-1 px-3 bg-gray-600">
+      <div className="flex flex-wrap z-50 text-center justify-between py-1 px-3 bg-gray-600">
         <div>
           <span className="pr-8 text-xs text-white">
             Phone: +91 6390103002 | Email: arpitivf@gmail.com
