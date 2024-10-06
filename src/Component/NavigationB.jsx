@@ -83,7 +83,7 @@ function NavigationB() {
             // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
             >
               <button className="dropbtn">About US</button>
-              <div className="dropdown-content">
+              <div className="dropdown-content font-thin">
                 <Link to='ourfounder' className="" onClick={navClose}>
                   Our founders
                 </Link>
@@ -104,10 +104,10 @@ function NavigationB() {
             // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
             >
               <button className="dropbtn">Services</button>
-              <div className="dropdown-content">
+              <div className="dropdown-content font-thin">
                 <a className="dropdownn">
                   <button className="dropbtnn">Treatments</button>
-                  <div className="dropdown-contentt">
+                  <div className="dropdown-contentt font-thin">
                     <Link to="iuitreatment" onClick={navClose}>IUI</Link>
                     <Link to="ivfet" onClick={navClose}>IVF ET</Link>
                     <Link to="icsi" onClick={navClose}>ICSI</Link>
@@ -119,7 +119,7 @@ function NavigationB() {
                 </a>
                 <a className="dropdownn">
                   <button className="dropbtnn">Test & Evaluation</button>
-                  <div className="dropdown-contentt">
+                  <div className="dropdown-contentt font-thin">
                     <Link to="endocrine" onClick={navClose}>Endocrine Profile</Link>
                     <Link to="sonography" onClick={navClose}>Sonography</Link>
                     <Link to="hsgsono" onClick={navClose}>HSG / SONO</Link>
@@ -128,7 +128,7 @@ function NavigationB() {
                 </a>
                 <a className="dropdownn">
                   <button className="dropbtnn">Other Services</button>
-                  <div className="dropdown-contentt">
+                  <div className="dropdown-contentt font-thin">
                     <Link to="embryobank" onClick={navClose}>Embryo Bank</Link>
                     <Link to="blastocyst" onClick={navClose}>Blastocyst Culture</Link>
                     <Link to="eggdonation" onClick={navClose}>Egg Donation</Link>
