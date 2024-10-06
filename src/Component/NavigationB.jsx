@@ -33,7 +33,7 @@ function NavigationB() {
       </div>
 
       <nav
-        className={`themess bg-lack z-50 bg-gray-100 md:text-white
+        className={`themess bg-lack z-50 bg-gray-100 md:text-white sticky top-0
            text-black fixd shadow-md w-full flex items-center justify-between
             flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
           }`}>
