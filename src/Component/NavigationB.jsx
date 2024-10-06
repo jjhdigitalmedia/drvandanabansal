@@ -32,9 +32,9 @@ function NavigationB() {
       </div>
 
       <nav
-        className={`themess bg-lack z-50 bg-gray-100 md:text-white sticky top-0
+        className={`themess z-50 bg-gray-100 md:text-white sticky top-0
            text-black fixd shadow-md w-full flex items-center justify-between
-            flex-wrap md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
+            flex-wrap p-2 md:bg-white ${isOpen ? " shadow-xl" : ""
           }`}>
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
           <span
@@ -82,7 +82,7 @@ function NavigationB() {
                 }`}
             // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
             >
-              <button className="dropbtn p-0">About US</button>
+              <button className="dropbtn">About US</button>
               <div className="dropdown-content">
                 <Link to='ourfounder' className="" onClick={navClose}>
                   Our founders
