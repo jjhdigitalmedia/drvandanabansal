@@ -15,18 +15,17 @@ function NavigationB() {
   }
   return (
     <>
-      <div className="flex flex-wrap z-50 text-center justify-between py-1 px-3 bg-gray-600">
+      <div className="flex flex-wrap z-50 justify-between py-1 px-3 bg-neutral-800">
         <div>
           <span className="pr-8 text-xs text-white">
             Phone: +91 6390103002 | Email: arpitivf@gmail.com
           </span>
         </div>
-        <div className="text-xs text-white">
+        <div className="text-xs text-white md:mt-2 mt-0">
           <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
             <IoLocationOutline className="inline text-white text-lg text-wrap" />
             <span className="">
-            162 Bai Ka Bagh, Lowther Road, Pincode - 211003, Prayagraj (Allahabad)
-            UTTAR PRADESH, INDIA
+            162 Bai Ka Bagh, Lowther Road, (211003), Prayagraj, UP
             </span>
           </a>
         </div>
@@ -35,12 +34,12 @@ function NavigationB() {
       <nav
         className={`themess bg-lack z-50 bg-gray-100 md:text-white sticky top-0
            text-black fixd shadow-md w-full flex items-center justify-between
-            flex-wrap p-1 md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
+            flex-wrap md:p-2 md:bg-white bg-opacity-70 md:bg-opacity50 ${isOpen ? " shadow-xl" : ""
           }`}>
         <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
           <span
             className=" font-bol flex md:font-thin text-roe-400 ">
-            <img src={ATTBClogo1} class="d-block w-12" alt="..." />
+            <img src={ATTBClogo1} className="d-block w-12" alt="..." />
             <span className="text-red-600 font-semibold ml-2">
               ARPIT TEST TUBE
               <br />
@@ -68,41 +67,47 @@ function NavigationB() {
           </button>
         </div>
         <div
-          className={`w-full block text-center h-screen md:h-auto 
-            p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block h-screen bg-rose-50" : "hidden"
+          className={`w-full block text-center h-full md:h-auto 
+            p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block pb-20 bg-rose-50" : "hidden"
             }`}>
           <div className="text-sm lg:flex-grow p-1">
             <Link
               to="/"
-              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white mr-4 ${isOpen ? "py-2" : ""
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-4 ${isOpen ? "py-3" : ""
                 }`} onClick={navClose}>
               Home
             </Link>
 
-            <div class="dropdown text-sm lg:flex-grow p-1">
-              <button class="dropbtn">About US</button>
-              <div class="dropdown-content">
-                <Link to='ourfounder' class="" onClick={navClose}>
+            <div className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+                }`}
+            // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
+            >
+              <button className="dropbtn p-0">About US</button>
+              <div className="dropdown-content">
+                <Link to='ourfounder' className="" onClick={navClose}>
                   Our founders
                 </Link>
-                <Link to='ourprofile' class="" onClick={navClose}>
+                <Link to='ourprofile' className="" onClick={navClose}>
                   Our Profile
                 </Link>
-                <Link to='ourvisionmission' class="" onClick={navClose}>
+                <Link to='ourvisionmission' className="" onClick={navClose}>
                   Our Vision & Mission
                 </Link>
-                <Link to='spiritualjourney' class="" onClick={navClose}>
+                <Link to='spiritualjourney' className="" onClick={navClose}>
                   Spiritual Journey
                 </Link>
               </div>
             </div>
 
-            <div class="dropdown text-sm lg:flex-grow p-1">
-              <button class="dropbtn">Services</button>
-              <div class="dropdown-content">
-                <a class="dropdownn">
-                  <button class="dropbtnn">Treatments</button>
-                  <div class="dropdown-contentt">
+            <div className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+                }`}
+            // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
+            >
+              <button className="dropbtn">Services</button>
+              <div className="dropdown-content">
+                <a className="dropdownn">
+                  <button className="dropbtnn">Treatments</button>
+                  <div className="dropdown-contentt">
                     <Link to="iuitreatment" onClick={navClose}>IUI</Link>
                     <Link to="ivfet" onClick={navClose}>IVF ET</Link>
                     <Link to="icsi" onClick={navClose}>ICSI</Link>
@@ -112,18 +117,18 @@ function NavigationB() {
                     <Link to="laserassisted" onClick={navClose}>Laser Assisted Hatching</Link>
                   </div>
                 </a>
-                <a class="dropdownn">
-                  <button class="dropbtnn">Test & Evaluation</button>
-                  <div class="dropdown-contentt">
+                <a className="dropdownn">
+                  <button className="dropbtnn">Test & Evaluation</button>
+                  <div className="dropdown-contentt">
                     <Link to="endocrine" onClick={navClose}>Endocrine Profile</Link>
                     <Link to="sonography" onClick={navClose}>Sonography</Link>
                     <Link to="hsgsono" onClick={navClose}>HSG / SONO</Link>
                     <Link to="semenbank" onClick={navClose}>Semen Bank</Link>
                   </div>
                 </a>
-                <a class="dropdownn">
-                  <button class="dropbtnn">Other Services</button>
-                  <div class="dropdown-contentt">
+                <a className="dropdownn">
+                  <button className="dropbtnn">Other Services</button>
+                  <div className="dropdown-contentt">
                     <Link to="embryobank" onClick={navClose}>Embryo Bank</Link>
                     <Link to="blastocyst" onClick={navClose}>Blastocyst Culture</Link>
                     <Link to="eggdonation" onClick={navClose}>Egg Donation</Link>
@@ -133,40 +138,36 @@ function NavigationB() {
               </div>
             </div>
 
-            <a
-              className={`block mt-0 font-semibold lg:inline-block
-                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}>
-              <Link to="/facilities" className="hover:underline" onClick={navClose}>
-                Facilities
-              </Link>
-            </a>
-            <a
-              className={`block mt-0 font-semibold lg:inline-block
-                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
-                }`}>
-              <Link to="/patientsguide" className="hover:underline" onClick={navClose}>
-                Patients Guide
-              </Link>
-            </a>
+            <Link
+              to="/facilities"
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-4 ${isOpen ? "py-3" : ""
+                }`} onClick={navClose}>
+              Facilities
+            </Link>
+             <Link
+              to="/patientsguide"
+              className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-4 ${isOpen ? "py-3" : ""
+                }`} onClick={navClose}>
+              Paitents Guide
+            </Link>
             <Link
               to="achievements"
               className={`block mt-0 hover:underline font-semibold lg:inline-block
-                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                 text-black md:text-white lg:mt-0 md:mr-4 ${isOpen ? "py-3" : ""
                 }`} onClick={navClose}>
               Our Success Rate
             </Link>
             <Link
               to="ivfteam"
               className={`block mt-0 hover:underline font-semibold lg:inline-block
-                 text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                 text-black md:text-white lg:mt-0  md:mr-4 ${isOpen ? "py-3" : ""
                 }`} onClick={navClose}>
               Our IVF Team
             </Link>
             <Link
               to="gallery"
               className={`block mt-0 hover:underline font-semibold
-                 lg:inline-block text-black md:text-white lg:mt-0  mr-4 ${isOpen ? "py-2" : ""
+                 lg:inline-block text-black md:text-white lg:mt-0 md:mr-4 ${isOpen ? "py-3" : ""
                 }`} onClick={navClose}>
               Gallery
             </Link>
