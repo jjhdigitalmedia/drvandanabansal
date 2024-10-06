@@ -78,7 +78,7 @@ function NavigationB() {
               Home
             </Link>
 
-            <div className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+            <div className={` dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
                 }`}
             // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
             >
@@ -99,7 +99,7 @@ function NavigationB() {
               </div>
             </div>
 
-            <div className={`block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+            <div className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
                 }`}
             // "dropdown text-sm lg:flex-grow p-1 lg:inline-block"
             >
