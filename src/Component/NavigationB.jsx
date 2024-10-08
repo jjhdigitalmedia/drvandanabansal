@@ -218,8 +218,8 @@ function NavigationB() {
           </a>
         </div>
       </div>
-      <nav className="bg-white p-3">
-        <div className="container mx-auto flex justify-between items-center">
+      <nav className="bg-white p-2">
+        <div className="containe flex items-center justify-between">
           {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
             <span
@@ -269,7 +269,7 @@ function NavigationB() {
               >
                 <button
                   onClick={() => toggleNestedDropdown('ivf')}
-                  className="flex justify-between items-center block px-4 py-2 text-gray-800 w-full text-left"
+                  className="flex justify-between items-center px-4 py-2 text-gray-800 w-full text-left"
                 >
                   IVF
                   <PlusIcon className="h-5 w-5 text-gray-600" />
@@ -285,24 +285,24 @@ function NavigationB() {
             )}
             <button className="text-black">Facilities</button>
             <button className="text-black">Patients Guide</button>
-            <button className="text-black">Our Success Rate</button>
+            <button className="text-black">Success Rate</button>
             <button className="text-black">Our IVF Team</button>
             <button className="text-black">Gallery</button>
           </div>
           <button className="hidden md:block text-white bg-red-500 px-4 py-2 rounded">Contact Us</button>
-          <button className="md:hidden text-white focus:outline-none" onClick={toggleMobileMenu}>
+          <button className="md:hidden text-black focus:outline-none" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
           </button>
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-gray-700 p-4">
+          <div className="md:hidden bg-white p-4">
             <div className="flex flex-col space-y-2">
               <button
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 onClick={toggleAboutDropdown}
-                className="text-white focus:outline-none"
+                className="text-black py-3 border-b-2 focus:outline-none"
               >
                 About Us
                 <ChevronDownIcon className="h-5 w-5 inline" />
@@ -321,7 +321,7 @@ function NavigationB() {
                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
                 onClick={toggleServicesDropdown}
-                className="text-white focus:outline-none"
+                className="text-black py-3 border-b-2 focus:outline-none"
               >
                 Services
                 <ChevronDownIcon className="h-5 w-5 inline" />
@@ -334,7 +334,7 @@ function NavigationB() {
                 >
                   <button
                     onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center block px-4 py-2 text-gray-300 w-full text-left"
+                    className="flex justify-between items-center px-4 py-2 text-gray-300 w-full text-left"
                   >
                     IVF
                     <PlusIcon className="h-5 w-5 text-gray-600" />
@@ -348,12 +348,12 @@ function NavigationB() {
                   <button className="block px-4 py-2 text-gray-300">Consultation</button>
                 </div>
               )}
-              <button className="text-white">Facilities</button>
-              <button className="text-white">Patients Guide</button>
-              <button className="text-white">Our Success Rate</button>
-              <button className="text-white">Our IVF Team</button>
-              <button className="text-white">Gallery</button>
-              <button className="text-white bg-blue-500 px-4 py-2 rounded">Contact Us</button>
+              <button className="text-black py-3 border-b-2 font-semibold">Facilities</button>
+              <button className="text-black py-3 border-b-2 font-semibold">Patients Guide</button>
+              <button className="text-black py-3 border-b-2 font-semibold">Success Rate</button>
+              <button className="text-black py-3 border-b-2 font-semibold">Our IVF Team</button>
+              <button className="text-black py-3 border-b-2 font-semibold">Gallery</button>
+              <button className="text-black py-3 border-b-2 bg-red-700 px-2 py-0 rounded">Contact Us</button>
             </div>
           </div>
         )}
