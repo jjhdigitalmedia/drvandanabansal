@@ -313,8 +313,8 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <button className="block px-4 py-2 text-gray-500">Our Team</button>
-                  <button className="block px-4 py-2 text-gray-500">Testimonials</button>
+                  <button className="block px-4 py-2 text-gray-700">Our Team</button>
+                  <button className="block px-4 py-2 text-gray-700">Testimonials</button>
                 </div>
               )}
               <button
@@ -334,7 +334,7 @@ function NavigationB() {
                 >
                   <button
                     onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-500 w-full text-left"
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
                   >
                     IVF
                     <PlusIcon className="h-5 w-5 text-gray-600" />
