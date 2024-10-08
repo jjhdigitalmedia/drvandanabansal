@@ -313,8 +313,8 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <button className="block px-4 py-2 text-gray-300">Our Team</button>
-                  <button className="block px-4 py-2 text-gray-300">Testimonials</button>
+                  <button className="block px-4 py-2 text-gray-500">Our Team</button>
+                  <button className="block px-4 py-2 text-gray-500">Testimonials</button>
                 </div>
               )}
               <button
@@ -334,18 +334,18 @@ function NavigationB() {
                 >
                   <button
                     onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-300 w-full text-left"
+                    className="flex justify-between items-center px-4 py-2 text-gray-500 w-full text-left"
                   >
                     IVF
                     <PlusIcon className="h-5 w-5 text-gray-600" />
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-400">ICSI</button>
-                      <button className="block px-4 py-2 text-gray-400">IUI</button>
+                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
+                      <button className="block px-4 py-2 text-gray-500">IUI</button>
                     </div>
                   )}
-                  <button className="block px-4 py-2 text-gray-300">Consultation</button>
+                  <button className="block px-4 py-2 text-gray-500">Consultation</button>
                 </div>
               )}
               <button className="text-black py-3 border-b-2 font-semibold">Facilities</button>
@@ -353,7 +353,7 @@ function NavigationB() {
               <button className="text-black py-3 border-b-2 font-semibold">Success Rate</button>
               <button className="text-black py-3 border-b-2 font-semibold">Our IVF Team</button>
               <button className="text-black py-3 border-b-2 font-semibold">Gallery</button>
-              <button className="text-black py-3 border-b-2 bg-red-700 px-2 py-0 rounded">Contact Us</button>
+              <button className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">Contact Us</button>
             </div>
           </div>
         )}
