@@ -32,10 +32,10 @@ function NavigationB() {
     }));
   };
 
-  // const [isOpen, setIsOpen] = useState(false);
-  // const navClose = () => {
-  //   setIsOpen(false)
-  // }
+  const [isOpen, setIsOpen] = useState(false);
+  const navClose = () => {
+    setIsOpen(false)
+  }
   return (
     // <>
     // <div className="flex flex-wrap z-50 justify-between py-1 px-3 bg-neutral-800">
@@ -246,7 +246,7 @@ function NavigationB() {
               <div
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
-                className="absolute mt-2 w-48 bg-white rounded-md shadow-lg z-10"
+                className="absolute mt-4 pt-3 w-48 bg-white rounded-md shadow-lg z-10"
               >
                 <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Founder</button>
                 <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Profile</button>
@@ -254,43 +254,85 @@ function NavigationB() {
                 <button className="block px-4 py-2 text-gray-800 w-full text-left">Spiritual Journey</button>
               </div>
             )}
-            <button
+            {/* <button
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
               onMouseLeave={() => setIsServicesDropdownOpen(false)}
               onClick={toggleServicesDropdown}
-              className="text-black focus:outline-none"
-            >
+              className="text-black focus:outline-none">
               Services
-              {/* <ChevronDownIcon className="h-5 w-5 inline" /> */}
-            </button>
-            {isServicesDropdownOpen && (
-              <div
-                onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                className="absolute mt-2 w-48 bg-white rounded-md shadow-lg z-10"
-              >
-                <button
-                  onClick={() => toggleNestedDropdown('ivf')}
-                  className="flex justify-between items-center px-4 py-2 text-gray-800 w-full text-left"
-                >
-                  IVF
-                  <PlusIcon className="h-5 w-5 text-gray-600" />
-                </button>
-                {isNestedDropdownOpen.ivf && (
-                  <div className="ml-4">
-                    <button className="block px-4 py-2 text-gray-500">ICSI</button>
-                    <button className="block px-4 py-2 text-gray-500">IUI</button>
+              <ChevronDownIcon className="h-5 w-5 inline" />
+            </button> */}
+            {/* {isServicesDropdownOpen && (
+              <div> */}
+                 <div className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+                }`}
+            >
+              <button className="dropbtn">Services</button>
+              <div className="dropdown-content font-thin">
+                <a className="dropdownn">
+                  <button className="dropbtnn">Treatments</button>
+                  <div className="dropdown-contentt font-thin">
+                    <Link to="iuitreatment" onClick={navClose}>IUI</Link>
+                    <Link to="ivfet" onClick={navClose}>IVF ET</Link>
+                    <Link to="icsi" onClick={navClose}>ICSI</Link>
+                    <Link to="ivmtreatment" onClick={navClose}>IVM</Link>
+                    <Link to="imsitreatment" onClick={navClose}>IMSI</Link>
+                    <Link to="embryomonitoring" onClick={navClose}>Embryo Monitoring</Link>
+                    <Link to="laserassisted" onClick={navClose}>Laser Assisted Hatching</Link>
                   </div>
-                )}
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Consultation</button>
+                </a>
+                <a className="dropdownn">
+                  <button className="dropbtnn">Test & Evaluation</button>
+                  <div className="dropdown-contentt font-thin">
+                    <Link to="endocrine" onClick={navClose}>Endocrine Profile</Link>
+                    <Link to="sonography" onClick={navClose}>Sonography</Link>
+                    <Link to="hsgsono" onClick={navClose}>HSG / SONO</Link>
+                    <Link to="semenbank" onClick={navClose}>Semen Bank</Link>
+                  </div>
+                </a>
+                <a className="dropdownn">
+                  <button className="dropbtnn">Other Services</button>
+                  <div className="dropdown-contentt font-thin">
+                    <Link to="embryobank" onClick={navClose}>Embryo Bank</Link>
+                    <Link to="blastocyst" onClick={navClose}>Blastocyst Culture</Link>
+                    <Link to="eggdonation" onClick={navClose}>Egg Donation</Link>
+                    <Link to="cryopreservation" onClick={navClose}>Cryopreservation</Link>
+                  </div>
+                </a>
               </div>
-            )}
+            </div>
+                {/* <div
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  className="absolute mt-5 w-48 bg-white rounded-md shadow-lg z-10">
+                  <button
+                    onClick={() => toggleNestedDropdown('ivf')}
+                    className="flex justify-between items-center px-4 py-2 text-gray-800 w-full text-left">
+                    Treatments
+                    <PlusIcon className="h-5 w-5 text-gray-600" />
+                  </button>
+                  {isNestedDropdownOpen.ivf && (
+                    <div className="ml-4">
+                      <button className="block px-4 py-2 text-gray-500">IUI</button>
+                      <button className="block px-4 py-2 text-gray-500">IVF ET</button>
+                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
+                      <button className="block px-4 py-2 text-gray-500">IVM</button>
+                      <button className="block px-4 py-2 text-gray-500">IMSI</button>
+                      <button className="block px-4 py-2 text-gray-500">Embryo Monitoring</button>
+                      <button className="block px-4 py-2 text-gray-500">Laser Assisted Hatching</button>
+                    </div>
+                  )}
+                </div> */}
+              {/* </div>
+            )} */}
+          
             <button className="text-black">Facilities</button>
             <button className="text-black">Patients Guide</button>
             <button className="text-black">Success Rate</button>
             <button className="text-black">Our IVF Team</button>
             <button className="text-black">Gallery</button>
           </div>
+            {/* <button className="block px-4 py-2 text-gray-800 w-full text-left">Consultation</button> */}
           <button className="hidden md:block text-white bg-red-500 px-4 py-2 rounded">Contact Us</button>
           <button className="md:hidden text-black focus:outline-none" onClick={toggleMobileMenu}>
             {isMobileMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
@@ -351,7 +393,6 @@ function NavigationB() {
                       <button className="block px-4 py-2 text-gray-500">Laser Assisted Hatching</button>
                     </div>
                   )}
-                  {/* <button className="block px-4 py-2 text-gray-500">Consultation</button> */}
                 </div>
               )}
               {isServicesDropdownOpen && (
