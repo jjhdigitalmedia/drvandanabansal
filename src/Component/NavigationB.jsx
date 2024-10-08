@@ -248,8 +248,10 @@ function NavigationB() {
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 className="absolute mt-2 w-48 bg-white rounded-md shadow-lg z-10"
               >
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Team</button>
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Testimonials</button>
+                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Founder</button>
+                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Profile</button>
+                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Vision & Mission</button>
+                <button className="block px-4 py-2 text-gray-800 w-full text-left">Spiritual Journey</button>
               </div>
             )}
             <button
@@ -313,16 +315,17 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <button className="block px-4 py-2 text-gray-700">Our Team</button>
-                  <button className="block px-4 py-2 text-gray-700">Testimonials</button>
+                  <button className="block px-4 py-2 text-gray-700">Our Founders</button>
+                  <button className="block px-4 py-2 text-gray-700">Our Profile</button>
+                  <button className="block px-4 py-2 text-gray-700">Our Vision & Mission</button>
+                  <button className="block px-4 py-2 text-gray-700">Spiritual Journey</button>
                 </div>
               )}
               <button
                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
                 onClick={toggleServicesDropdown}
-                className="text-black py-3 border-b-2 focus:outline-none"
-              >
+                className="text-black py-3 border-b-2 focus:outline-none">
                 Services
                 <ChevronDownIcon className="h-5 w-5 inline" />
               </button>
@@ -330,22 +333,67 @@ function NavigationB() {
                 <div
                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  className="ml-4"
-                >
+                  className="ml-4">
                   <button
                     onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
-                  >
-                    IVF
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    Treatment
                     <PlusIcon className="h-5 w-5 text-gray-600" />
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
                       <button className="block px-4 py-2 text-gray-500">IUI</button>
+                      <button className="block px-4 py-2 text-gray-500">IVF ET</button>
+                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
+                      <button className="block px-4 py-2 text-gray-500">IVM</button>
+                      <button className="block px-4 py-2 text-gray-500">IMSI</button>
+                      <button className="block px-4 py-2 text-gray-500">Embryo Monitoring</button>
+                      <button className="block px-4 py-2 text-gray-500">Laser Assisted Hatching</button>
                     </div>
                   )}
-                  <button className="block px-4 py-2 text-gray-500">Consultation</button>
+                  {/* <button className="block px-4 py-2 text-gray-500">Consultation</button> */}
+                </div>
+              )}
+              {isServicesDropdownOpen && (
+                <div
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  className="ml-4">
+                  <button
+                    onClick={() => toggleNestedDropdown('ivf')}
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    Test & Evaluation
+                    <PlusIcon className="h-5 w-5 text-gray-600" />
+                  </button>
+                  {isNestedDropdownOpen.ivf && (
+                    <div className="ml-4">
+                      <button className="block px-4 py-2 text-gray-500">Endocrine Profile</button>
+                      <button className="block px-4 py-2 text-gray-500">Sonography</button>
+                      <button className="block px-4 py-2 text-gray-500">HSG/SNO</button>
+                      <button className="block px-4 py-2 text-gray-500">Semen Bank</button>
+                    </div>
+                  )}
+                </div>
+              )}
+              {isServicesDropdownOpen && (
+                <div
+                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
+                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
+                  className="ml-4">
+                  <button
+                    onClick={() => toggleNestedDropdown('ivf')}
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    Other Services
+                    <PlusIcon className="h-5 w-5 text-gray-600" />
+                  </button>
+                  {isNestedDropdownOpen.ivf && (
+                    <div className="ml-4">
+                      <button className="block px-4 py-2 text-gray-500">Ebmryo Bank</button>
+                      <button className="block px-4 py-2 text-gray-500">Blastocyst culture</button>
+                      <button className="block px-4 py-2 text-gray-500">Egg Donation</button>
+                      <button className="block px-4 py-2 text-gray-500">Cyopreservation</button>
+                    </div>
+                  )}
                 </div>
               )}
               <button className="text-black py-3 border-b-2 font-semibold">Facilities</button>
