@@ -237,8 +237,7 @@ function NavigationB() {
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
               onClick={toggleAboutDropdown}
-              className="text-black focus:outline-none"
-            >
+              className="text-black focus:outline-none font-semibold text-sm">
               About Us
               {/* <ChevronDownIcon className="h-5 w-5 inline" /> */}
             </button>
@@ -264,10 +263,10 @@ function NavigationB() {
             </button> */}
             {/* {isServicesDropdownOpen && (
               <div> */}
-                 <div className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-2 ${isOpen ? "py-3" : ""
+                 <div className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-1 ${isOpen ? "py-3" : ""
                 }`}
             >
-              <button className="dropbtn">Services</button>
+              <button className="dropbtn font-semibold text-sm mr-0">Services</button>
               <div className="dropdown-content font-thin">
                 <a className="dropdownn">
                   <button className="dropbtnn">Treatments</button>
@@ -326,11 +325,11 @@ function NavigationB() {
               {/* </div>
             )} */}
           
-            <button className="text-black">Facilities</button>
-            <button className="text-black">Patients Guide</button>
-            <button className="text-black">Success Rate</button>
-            <button className="text-black">Our IVF Team</button>
-            <button className="text-black">Gallery</button>
+            <button className="text-black text-sm font-semibold">Facilities</button>
+            <button className="text-black text-sm font-semibold">Patients Guide</button>
+            <button className="text-black text-sm font-semibold">Success Rate</button>
+            <button className="text-black text-sm font-semibold">Our IVF Team</button>
+            <button className="text-black text-sm font-semibold">Gallery</button>
           </div>
             {/* <button className="block px-4 py-2 text-gray-800 w-full text-left">Consultation</button> */}
           <button className="hidden md:block text-white bg-red-500 px-4 py-2 rounded">Contact Us</button>
@@ -346,7 +345,7 @@ function NavigationB() {
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 onClick={toggleAboutDropdown}
-                className="text-black py-3 border-b-2 focus:outline-none"
+                className="text-black py-3 font-semibold border-b-2 focus:outline-none"
               >
                 About Us
                 <ChevronDownIcon className="h-5 w-5 inline" />
