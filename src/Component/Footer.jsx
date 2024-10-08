@@ -7,7 +7,6 @@ import {
 } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
-
 const Footer = () => {
   return (
     <>

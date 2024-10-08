@@ -7,6 +7,7 @@ import IMSI1 from "../assets/icons/Treatment/IMSI1.png";
 import laproo1 from "../assets/icons/Treatment/laproo1.png";
 import lasehatching from "../assets/icons/Treatment/lasehatching.png";
 import embryo1 from "../assets/icons/Treatment/embryo1.png";
+import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import '../Style/Style.css'
@@ -19,6 +20,7 @@ const Treatements = () => {
 
   return (<>
     <section className="text-gray-600 body-font">
+    
       <div className="container px-1 md:px-5 py-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Treatments Provided by Dr. Vandana Bansal</h1>
@@ -34,7 +36,7 @@ const Treatements = () => {
                   src={iui1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='ivfet' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -45,7 +47,7 @@ const Treatements = () => {
                   src={IVFet11}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='icsi' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -56,7 +58,7 @@ const Treatements = () => {
                   src={icsi1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='ivmtreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -67,7 +69,7 @@ const Treatements = () => {
                   src={ivm1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='imsitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -78,7 +80,7 @@ const Treatements = () => {
                   src={IMSI1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='embryomonitoring' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -89,7 +91,7 @@ const Treatements = () => {
                   src={embryo1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='laserassisted' className="p-4 md:w-1/4 sm:w-1/2 w-full">
@@ -100,7 +102,7 @@ const Treatements = () => {
                   src={lasehatching}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
             <Link to='laparoscopy' className="p-4 md:w-1/4 sm:w-1/2 w-full ">
@@ -111,12 +113,21 @@ const Treatements = () => {
                   src={laproo1}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Laproscopy</h2>
-                <p className="leading-relaxed text-sm">know more</p>
+                <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
         </div>
       </div>
     </section>
+    <div className="w-full md:px-52 py-10 bg-red-200 my-5">
+        <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
+          <source
+            src={IVFvideo}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
   </>
   );
 };

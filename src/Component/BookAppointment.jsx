@@ -1,6 +1,6 @@
 import React from 'react'
 import newlab2 from "../assets/newlab2.jpg";
-import NavigationB from './NavigationB';
+import Contact from './Contact';
 
 const BookAppointment = () => {
     return (
@@ -24,13 +24,14 @@ const BookAppointment = () => {
                         </span>
                     </div>
                 </div>
-                <div className='m-auto w-4/5 h-ful mb-11'>
+                {/* <div className='m-auto w-4/5 h-ful mb-11'>
                     <img
                         className="border-4 w-full mb-10 border-rose-100 object-cover object-center rounded-2xl md:rounded-3xl"
                         alt="hero"
                         src={newlab2}
                     />
-                </div>
+                </div> */}
+                <Contact/>
                 <div className='mx-40 my-8 flex justify-center'>
                     <div className='ms-5 text-left'>
                         <h1 className='font-bold text-3xl mb-3'>Achievements</h1>

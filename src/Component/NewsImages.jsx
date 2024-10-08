@@ -67,7 +67,7 @@ const NewsImages = () => {
 
     return (
         <>
-            <h1 className='mx-40 text-4xl my-3 font-semibold text-gray-700'>RECOGNITION</h1>
+            <h1 className='mx-40 text-xl md:text-3xl my-3 font-semibold text-gray-700'>RECOGNITION</h1>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mx-auto w-4/5">
                 {data.map(({ imageLink }, index) => (

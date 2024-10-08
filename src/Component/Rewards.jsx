@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
@@ -11,7 +10,7 @@ export const Rewards = () => {
     <>
       <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto mt-10">
 
-        <Link to="guestspeaker" className="bg-whie m-2 h-auto rounded-2xl shadow-lg overflow-hidden max-w-72">
+        <Link to="guestspeaker" className="bg-whie m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
           <img
             src={speaker1}
             alt="Mountain"
@@ -27,7 +26,7 @@ export const Rewards = () => {
           </div>
         </Link>
 
-        <Link to="guestspeaker" className="bg-white m-2 h-auto rounded-2xl shadow-lg overflow-hidden max-w-72">
+        <Link to="guestspeaker" className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
           <img
             src={lab}
             alt="Mountain"
@@ -43,7 +42,7 @@ export const Rewards = () => {
           </div>
         </Link >
 
-        <Link to='patientsreview' className="bg-white m-2 h-auto rounded-2xl shadow-lg overflow-hidden  max-w-72">
+        <Link to='patientsreview' className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden  max-w-72">
           <img
             src={patientweb}
             alt="Mountain"
@@ -60,7 +59,7 @@ export const Rewards = () => {
         </Link>
 
       </div>
-      <div className="w-full md:px-52 py-10 bg-red-100 my-5">
+      {/* <div className="w-full md:px-52 py-10 bg-red-200 my-5">
         <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
           <source
             src={IVFvideo}
@@ -68,7 +67,7 @@ export const Rewards = () => {
           />
           Your browser does not support the video tag.
         </video>
-      </div>
+      </div> */}
     </>
   );
 };

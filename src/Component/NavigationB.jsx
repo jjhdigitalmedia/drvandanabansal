@@ -6,7 +6,12 @@ import "../Style/neonStyle.css";
 import ATTBClogo1 from "../assets/ATTBClogo1.png";
 import { IoLocationOutline } from "react-icons/io5";
 
-import { ChevronDownIcon, PlusIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import {
+  ChevronDownIcon,
+  PlusIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 function NavigationB() {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
@@ -34,8 +39,8 @@ function NavigationB() {
 
   const [isOpen, setIsOpen] = useState(false);
   const navClose = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
   return (
     // <>
     // <div className="flex flex-wrap z-50 justify-between py-1 px-3 bg-neutral-800">
@@ -90,7 +95,7 @@ function NavigationB() {
     //       </button>
     //     </div>
     //     <div
-    //       className={`w-full block text-center h-full md:h-auto 
+    //       className={`w-full block text-center h-full md:h-auto
     //         p-2 flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block pb-20 bg-rose-50" : "hidden"
     //         }`}>
     //       <div className="text-sm lg:flex-grow p-1">
@@ -202,6 +207,8 @@ function NavigationB() {
     //   </nav>
     // </>
 
+
+    
     <>
       <div className="flex flex-wrap z-50 justify-between py-1 px-3 bg-neutral-800">
         <div>
@@ -210,7 +217,10 @@ function NavigationB() {
           </span>
         </div>
         <div className="text-xs text-white md:mt-2 mt-0">
-          <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target="_blank">
+          <a
+            href="https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
             <IoLocationOutline className="inline text-white text-lg text-wrap" />
             <span className="">
               162 Bai Ka Bagh, Lowther Road, (211003), Prayagraj, UP
@@ -222,8 +232,7 @@ function NavigationB() {
         <div className="containe flex items-center justify-between">
           {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-            <span
-              className=" font-bol flex md:font-thin text-roe-400 ">
+            <span className=" font-bol flex md:font-thin text-roe-400 ">
               <img src={ATTBClogo1} className="d-block w-12" alt="..." />
               <span className="text-red-600 font-semibold ml-2">
                 ARPIT TEST TUBE
@@ -233,24 +242,34 @@ function NavigationB() {
             </span>
           </div>
           <div className="hidden md:flex space-x-4 relative">
-            <button
+          <Link to='/' className="text-black text-sm font-semibold">Home</Link>
+            <Link
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
               onClick={toggleAboutDropdown}
-              className="text-black focus:outline-none font-semibold text-sm">
+              className="text-black focus:outline-none font-semibold text-sm"
+            >
               About Us
               {/* <ChevronDownIcon className="h-5 w-5 inline" /> */}
-            </button>
+            </Link>
             {isAboutDropdownOpen && (
               <div
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 className="absolute mt-4 pt-3 w-48 bg-white rounded-md shadow-lg z-10"
               >
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Founder</button>
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Profile</button>
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Our Vision & Mission</button>
-                <button className="block px-4 py-2 text-gray-800 w-full text-left">Spiritual Journey</button>
+                <Link to='ourfounder' className="block px-4 py-2 text-gray-800 w-full text-left">
+                  Our Founder
+                </Link>
+                <Link to='ourprofile' className="block px-4 py-2 text-gray-800 w-full text-left">
+                  Our Profile
+                </Link>
+                <Link to='ourvisionmission' className="block px-4 py-2 text-gray-800 w-full text-left">
+                  Our Vision & Mission
+                </Link>
+                <Link to='spiritualjourney' className="block px-4 py-2 text-gray-800 w-full text-left">
+                  Spiritual Journey
+                </Link>
               </div>
             )}
             {/* <button
@@ -263,44 +282,78 @@ function NavigationB() {
             </button> */}
             {/* {isServicesDropdownOpen && (
               <div> */}
-                 <div className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-1 ${isOpen ? "py-3" : ""
-                }`}
+            <div
+              className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-1 ${
+                isOpen ? "py-3" : ""
+              }`}
             >
-              <button className="dropbtn font-semibold text-sm mr-0">Services</button>
+              <Link className="dropbtn font-semibold text-sm mr-0">
+                Services
+              </Link>
               <div className="dropdown-content font-thin">
                 <a className="dropdownn">
-                  <button className="dropbtnn">Treatments</button>
+                  <Link className="dropbtnn">Treatments</Link>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="iuitreatment" onClick={navClose}>IUI</Link>
-                    <Link to="ivfet" onClick={navClose}>IVF ET</Link>
-                    <Link to="icsi" onClick={navClose}>ICSI</Link>
-                    <Link to="ivmtreatment" onClick={navClose}>IVM</Link>
-                    <Link to="imsitreatment" onClick={navClose}>IMSI</Link>
-                    <Link to="embryomonitoring" onClick={navClose}>Embryo Monitoring</Link>
-                    <Link to="laserassisted" onClick={navClose}>Laser Assisted Hatching</Link>
+                    <Link to="iuitreatment" onClick={navClose}>
+                      IUI
+                    </Link>
+                    <Link to="ivfet" onClick={navClose}>
+                      IVF ET
+                    </Link>
+                    <Link to="icsi" onClick={navClose}>
+                      ICSI
+                    </Link>
+                    <Link to="ivmtreatment" onClick={navClose}>
+                      IVM
+                    </Link>
+                    <Link to="imsitreatment" onClick={navClose}>
+                      IMSI
+                    </Link>
+                    <Link to="embryomonitoring" onClick={navClose}>
+                      Embryo Monitoring
+                    </Link>
+                    <Link to="laserassisted" onClick={navClose}>
+                      Laser Assisted Hatching
+                    </Link>
                   </div>
                 </a>
                 <a className="dropdownn">
                   <button className="dropbtnn">Test & Evaluation</button>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="endocrine" onClick={navClose}>Endocrine Profile</Link>
-                    <Link to="sonography" onClick={navClose}>Sonography</Link>
-                    <Link to="hsgsono" onClick={navClose}>HSG / SONO</Link>
-                    <Link to="semenbank" onClick={navClose}>Semen Bank</Link>
+                    <Link to="endocrine" onClick={navClose}>
+                      Endocrine Profile
+                    </Link>
+                    <Link to="sonography" onClick={navClose}>
+                      Sonography
+                    </Link>
+                    <Link to="hsgsono" onClick={navClose}>
+                      HSG / SONO
+                    </Link>
+                    <Link to="semenbank" onClick={navClose}>
+                      Semen Bank
+                    </Link>
                   </div>
                 </a>
                 <a className="dropdownn">
                   <button className="dropbtnn">Other Services</button>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="embryobank" onClick={navClose}>Embryo Bank</Link>
-                    <Link to="blastocyst" onClick={navClose}>Blastocyst Culture</Link>
-                    <Link to="eggdonation" onClick={navClose}>Egg Donation</Link>
-                    <Link to="cryopreservation" onClick={navClose}>Cryopreservation</Link>
+                    <Link to="embryobank" onClick={navClose}>
+                      Embryo Bank
+                    </Link>
+                    <Link to="blastocyst" onClick={navClose}>
+                      Blastocyst Culture
+                    </Link>
+                    <Link to="eggdonation" onClick={navClose}>
+                      Egg Donation
+                    </Link>
+                    <Link to="cryopreservation" onClick={navClose}>
+                      Cryopreservation
+                    </Link>
                   </div>
                 </a>
               </div>
             </div>
-                {/* <div
+            {/* <div
                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
                   className="absolute mt-5 w-48 bg-white rounded-md shadow-lg z-10">
@@ -322,25 +375,46 @@ function NavigationB() {
                     </div>
                   )}
                 </div> */}
-              {/* </div>
+            {/* </div>
             )} */}
-          
-            <button className="text-black text-sm font-semibold">Facilities</button>
-            <button className="text-black text-sm font-semibold">Patients Guide</button>
-            <button className="text-black text-sm font-semibold">Success Rate</button>
-            <button className="text-black text-sm font-semibold">Our IVF Team</button>
-            <button className="text-black text-sm font-semibold">Gallery</button>
+
+            <Link to='facilities' className="text-black text-sm font-semibold">
+              Facilities
+            </Link>
+            <Link to='patientsguide' className="text-black text-sm font-semibold">
+              Patients Guide
+            </Link>
+            <Link to='achievements' className="text-black text-sm font-semibold">
+              Success Rate
+            </Link>
+            <Link to='ourivfteam' className="text-black text-sm font-semibold">
+              Our IVF Team
+            </Link>
+            <Link to='gallery' className="text-black text-sm font-semibold">
+              Gallery
+            </Link>
           </div>
-            {/* <button className="block px-4 py-2 text-gray-800 w-full text-left">Consultation</button> */}
-          <button className="hidden md:block text-white bg-red-500 px-4 py-2 rounded">Contact Us</button>
-          <button className="md:hidden text-black focus:outline-none" onClick={toggleMobileMenu}>
-            {isMobileMenuOpen ? <XMarkIcon className="h-6 w-6" /> : <Bars3Icon className="h-6 w-6" />}
+          <Link to='bookappointment' className="hidden md:block text-white bg-red-700 px-4 py-2 rounded">
+            Contact Us
+          </Link>
+          <button
+            className="md:hidden text-black focus:outline-none"
+            onClick={toggleMobileMenu}
+          >
+            {isMobileMenuOpen ? (
+              <XMarkIcon className="h-6 w-6" />
+            ) : (
+              <Bars3Icon className="h-6 w-6" />
+            )}
           </button>
         </div>
 
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white p-4">
             <div className="flex flex-col space-y-2">
+              <Link to='/' className="text-black py-3 border-b-2 font-semibold">
+                Home
+              </Link>
               <button
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
@@ -356,17 +430,26 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <button className="block px-4 py-2 text-gray-700">Our Founders</button>
-                  <button className="block px-4 py-2 text-gray-700">Our Profile</button>
-                  <button className="block px-4 py-2 text-gray-700">Our Vision & Mission</button>
-                  <button className="block px-4 py-2 text-gray-700">Spiritual Journey</button>
+                  <Link className="block px-4 py-2 text-gray-700">
+                    Our Founders
+                  </Link>
+                  <Link className="block px-4 py-2 text-gray-700">
+                    Our Profile
+                  </Link>
+                  <Link className="block px-4 py-2 text-gray-700">
+                    Our Vision & Mission
+                  </Link>
+                  <Link className="block px-4 py-2 text-gray-700">
+                    Spiritual Journey
+                  </Link>
                 </div>
               )}
               <button
                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
                 onClick={toggleServicesDropdown}
-                className="text-black py-3 border-b-2 focus:outline-none">
+                className="text-black py-3 border-b-2 focus:outline-none"
+              >
                 Services
                 <ChevronDownIcon className="h-5 w-5 inline" />
               </button>
@@ -374,22 +457,38 @@ function NavigationB() {
                 <div
                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  className="ml-4">
+                  className="ml-4"
+                >
                   <button
-                    onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    onClick={() => toggleNestedDropdown("ivf")}
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
+                  >
                     Treatment
                     <PlusIcon className="h-5 w-5 text-gray-600" />
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-500">IUI</button>
-                      <button className="block px-4 py-2 text-gray-500">IVF ET</button>
-                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
-                      <button className="block px-4 py-2 text-gray-500">IVM</button>
-                      <button className="block px-4 py-2 text-gray-500">IMSI</button>
-                      <button className="block px-4 py-2 text-gray-500">Embryo Monitoring</button>
-                      <button className="block px-4 py-2 text-gray-500">Laser Assisted Hatching</button>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        IUI
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        IVF ET
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        ICSI
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        IVM
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        IMSI
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Embryo Monitoring
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Laser Assisted Hatching
+                      </Link>
                     </div>
                   )}
                 </div>
@@ -398,19 +497,29 @@ function NavigationB() {
                 <div
                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  className="ml-4">
+                  className="ml-4"
+                >
                   <button
-                    onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    onClick={() => toggleNestedDropdown("ivf")}
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
+                  >
                     Test & Evaluation
                     <PlusIcon className="h-5 w-5 text-gray-600" />
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-500">Endocrine Profile</button>
-                      <button className="block px-4 py-2 text-gray-500">Sonography</button>
-                      <button className="block px-4 py-2 text-gray-500">HSG/SNO</button>
-                      <button className="block px-4 py-2 text-gray-500">Semen Bank</button>
+                      <Link to ='endocrineprofile' className="block px-4 py-2 text-gray-500">
+                        Endocrine Profile
+                      </Link>
+                      <Link to ='sonography' className="block px-4 py-2 text-gray-500">
+                        Sonography
+                      </Link>
+                      <Link to ='hsgsno' className="block px-4 py-2 text-gray-500">
+                        HSG/SNO
+                      </Link>
+                      <Link to ='semenbank' className="block px-4 py-2 text-gray-500">
+                        Semen Bank
+                      </Link>
                     </div>
                   )}
                 </div>
@@ -419,29 +528,51 @@ function NavigationB() {
                 <div
                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  className="ml-4">
+                  className="ml-4"
+                >
                   <button
-                    onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left">
+                    onClick={() => toggleNestedDropdown("ivf")}
+                    className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
+                  >
                     Other Services
                     <PlusIcon className="h-5 w-5 text-gray-600" />
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-500">Ebmryo Bank</button>
-                      <button className="block px-4 py-2 text-gray-500">Blastocyst culture</button>
-                      <button className="block px-4 py-2 text-gray-500">Egg Donation</button>
-                      <button className="block px-4 py-2 text-gray-500">Cyopreservation</button>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Ebmryo Bank
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Blastocyst culture
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Egg Donation
+                      </Link>
+                      <Link className="block px-4 py-2 text-gray-500">
+                        Cyopreservation
+                      </Link>
                     </div>
                   )}
                 </div>
               )}
-              <button className="text-black py-3 border-b-2 font-semibold">Facilities</button>
-              <button className="text-black py-3 border-b-2 font-semibold">Patients Guide</button>
-              <button className="text-black py-3 border-b-2 font-semibold">Success Rate</button>
-              <button className="text-black py-3 border-b-2 font-semibold">Our IVF Team</button>
-              <button className="text-black py-3 border-b-2 font-semibold">Gallery</button>
-              <button className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">Contact Us</button>
+              <Link className="text-black py-3 border-b-2 font-semibold">
+                Facilities
+              </Link>
+              <Link className="text-black py-3 border-b-2 font-semibold">
+                Patients Guide
+              </Link>
+              <Link className="text-black py-3 border-b-2 font-semibold">
+                Success Rate
+              </Link>
+              <Link className="text-black py-3 border-b-2 font-semibold">
+                Our IVF Team
+              </Link>
+              <Link className="text-black py-3 border-b-2 font-semibold">
+                Gallery
+              </Link>
+              <Link className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
+                Contact Us
+              </Link>
             </div>
           </div>
         )}

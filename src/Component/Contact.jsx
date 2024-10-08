@@ -1,22 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
-// import { render } from '@react-email/components';
-// import sendgrid from '@sendgrid/mail';
-// import { Email } from './Email.jsx';
 
 const Contact = () => {
-  // sendgrid.setApiKey('');
-  // const emailHtml = render(<Email url="https://example.com" />);
-
-  // const options = {
-  //   from: 'you@example.com',
-  //   to: 'user@gmail.com',
-  //   subject: 'hello world',
-  //   html: emailHtml,
-  // };
-
-  // sendgrid.send(options);
-
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -46,7 +31,7 @@ const Contact = () => {
     <section id='contact' className="text-gray-600 body-font relative">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Book Your Appointment</h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-bold">If you're seeking treatment or have any queries, feel free to submit this form. I'll get back to you as soon as possible.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">

@@ -1,6 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import "aos/dist/aos.css";
 import "../Style/Style.css";
 
@@ -24,6 +21,3 @@ const GoogleReview = () => {
   );
 };
 export default GoogleReview;
-
-{/* <div className="sk-ww-google-reviews bg-blue-300"
-  data-embed-id="25436027"></div> */}

@@ -1,10 +1,8 @@
 import React from 'react'
+import '../Style/neonStyle.css'
 import aboutvandana from '../assets/aboutvandana.jpg'
 import { Link } from 'react-router-dom'
-import '../Style/neonStyle.css'
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import NavigationB from './NavigationB';
-import Footer from './Footer';
 
 const About = () => {
     return (

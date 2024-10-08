@@ -1,12 +1,12 @@
 import React from 'react'
 import Head from './Head'
-import { Rewards } from './Rewards'
+import {Rewards} from './Rewards'
 import Treatements from './Treatements'
 import GoogleReview from './GoogleReview'
 import About from './About'
-import { FAQ } from './FAQ'
+import NewsImages from './NewsImages' 
+import {FAQ} from './FAQ'
 import Contact from './Contact'
-import NewsImages from './NewsImages'
 
 const Home = () => {
   return (
@@ -14,14 +14,12 @@ const Home = () => {
         <Head/>
         <Rewards/>
         <Treatements/>
-        <GoogleReview/>
         <About/>
+        <GoogleReview/>
         <NewsImages/>
-        <FAQ/>
+        <FAQ />
         <Contact/>
-
     </div>
   )
 }
-
 export default Home
