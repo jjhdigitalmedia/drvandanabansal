@@ -430,16 +430,16 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <Link className="block px-4 py-2 text-gray-700">
+                  <Link to='ourfounders' className="block px-4 py-2 text-gray-700">
                     Our Founders
                   </Link>
-                  <Link className="block px-4 py-2 text-gray-700">
+                  <Link to='ourprofile' className="block px-4 py-2 text-gray-700">
                     Our Profile
                   </Link>
-                  <Link className="block px-4 py-2 text-gray-700">
+                  <Link to='ourvisionmission' className="block px-4 py-2 text-gray-700">
                     Our Vision & Mission
                   </Link>
-                  <Link className="block px-4 py-2 text-gray-700">
+                  <Link to='spiritualjourney' className="block px-4 py-2 text-gray-700">
                     Spiritual Journey
                   </Link>
                 </div>
@@ -468,25 +468,25 @@ function NavigationB() {
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='iui' className="block px-4 py-2 text-gray-500">
                         IUI
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='ivfet' className="block px-4 py-2 text-gray-500">
                         IVF ET
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='icsi' className="block px-4 py-2 text-gray-500">
                         ICSI
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='ivm' className="block px-4 py-2 text-gray-500">
                         IVM
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='imsi' className="block px-4 py-2 text-gray-500">
                         IMSI
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='embryomonitorign' className="block px-4 py-2 text-gray-500">
                         Embryo Monitoring
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to='laserassistedhatcing' className="block px-4 py-2 text-gray-500">
                         Laser Assisted Hatching
                       </Link>
                     </div>
@@ -555,22 +555,22 @@ function NavigationB() {
                   )}
                 </div>
               )}
-              <Link className="text-black py-3 border-b-2 font-semibold">
+              <Link to='facilities' className="text-black py-3 border-b-2 font-semibold">
                 Facilities
               </Link>
-              <Link className="text-black py-3 border-b-2 font-semibold">
+              <Link to='patientsguide' className="text-black py-3 border-b-2 font-semibold">
                 Patients Guide
               </Link>
-              <Link className="text-black py-3 border-b-2 font-semibold">
+              <Link to='achievments' className="text-black py-3 border-b-2 font-semibold">
                 Success Rate
               </Link>
-              <Link className="text-black py-3 border-b-2 font-semibold">
+              <Link to='ourivfteam' className="text-black py-3 border-b-2 font-semibold">
                 Our IVF Team
               </Link>
-              <Link className="text-black py-3 border-b-2 font-semibold">
+              <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">
                 Gallery
               </Link>
-              <Link className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
+              <Link to='contact' className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
                 Contact Us
               </Link>
             </div>
