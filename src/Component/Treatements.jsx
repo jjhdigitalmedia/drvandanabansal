@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import IVFet11 from "../assets/icons/Treatment/IVFet11.png";
-import iui1 from "../assets/icons/Treatment/iui1.png";
-import icsi1 from "../assets/icons/Treatment/icsi1.png";
-import ivm1 from "../assets/icons/Treatment/ivm1.png";
-import IMSI1 from "../assets/icons/Treatment/IMSI1.png";
-import laproo1 from "../assets/icons/Treatment/laproo1.png";
+import IVFet from "../assets/icons/Treatment/IVFet.jpg";
+import iui from "../assets/icons/Treatment/iui.png";
+import icsi from "../assets/icons/Treatment/icsi.png";
+import ivm from "../assets/icons/Treatment/ivm.png";
+import IMSI from "../assets/icons/Treatment/IMSI.png";
+import laproo from "../assets/icons/Treatment/laproo.png";
 import lasehatching from "../assets/icons/Treatment/lasehatching.png";
-import embryo1 from "../assets/icons/Treatment/embryo1.png";
+import embryo from "../assets/icons/Treatment/embryo.png";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -33,7 +33,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={iui1}
+                  src={iui}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -44,7 +44,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={IVFet11}
+                  src={IVFet}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -55,7 +55,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={icsi1}
+                  src={icsi}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -66,7 +66,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={ivm1}
+                  src={ivm}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -77,7 +77,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={IMSI1}
+                  src={IMSI}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -88,7 +88,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={embryo1}
+                  src={embryo}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
@@ -110,7 +110,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={laproo1}
+                  src={laproo}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Laproscopy</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>

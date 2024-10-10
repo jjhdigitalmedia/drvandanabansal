@@ -120,88 +120,88 @@ const router = createBrowserRouter([
       },
 
       {
-        path: '/iuitreatment',
+        path: 'iuitreatment',
         element: <Iui />,
         children: []
       },
       {
-        path: '/ivfet',
+        path: 'ivfet',
         element: <Ivfet />,
         children: []
       },
       {
-        path: '/icsi',
+        path: 'icsi',
         element: <Icsi />,
         children: []
       },
       {
-        path: '/ivmtreatment',
+        path: 'ivmtreatment',
         element: <Ivm />,
         children: []
       },
       {
-        path: '/imsitreatment',
+        path: 'imsitreatment',
         element: <Imsi />,
         children: []
       },
       {
-        path: '/embryomonitoring',
+        path: 'embryomonitoring',
         element: <Embryo />,
         children: []
       },
       {
-        path: '/laserassisted',
+        path: 'laserassisted',
         element: <LaserAssisted />,
         children: []
       },
       {
-        path: '/laparoscopy',
+        path: 'laparoscopy',
         element: <Laparoscopy />,
         children: []
       },
       {
-        path: '/endocrine',
+        path: 'endocrine',
         element: <Endocrine />,
         children: []
       },
       {
-        path: '/sonography',
+        path: 'sonography',
         element: <Sonography />,
         children: []
       },
       {
-        path: '/hsgsono',
+        path: 'hsgsono',
         element: <HSGSono />,
         children: []
       },
       {
-        path: '/semenbank',
+        path: 'semenbank',
         element: <SemenBank />,
         children: []
       },
       {
-        path: '/embryobank',
+        path: 'embryobank',
         element: <EmbryoBank />,
         children: []
       },
       {
-        path: '/blastocyst',
+        path: 'blastocyst',
         element: <Blastocyst />,
         children: []
       },
       {
-        path: '/eggdonation',
+        path: 'eggdonation',
         element: <EggDonation />,
         children: []
       },
       {
-        path: '/cryopreservation',
+        path: 'cryopreservation',
         element: <Cryopreservation />,
         children: []
       },
 
       {
-        path: '/guestspeaker',
+        path: 'guestspeaker',
         element: <GuestSpeaker />,
         children: []
       },

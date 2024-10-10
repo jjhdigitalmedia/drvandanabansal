@@ -228,7 +228,7 @@ function NavigationB() {
           </a>
         </div>
       </div>
-      <nav className="bg-white p-2">
+      <nav className="bg-white py-2 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
@@ -387,14 +387,14 @@ function NavigationB() {
             <Link to='achievements' className="text-black text-sm font-semibold">
               Success Rate
             </Link>
-            <Link to='ourivfteam' className="text-black text-sm font-semibold">
+            <Link to='ivfteam' className="text-black text-sm font-semibold">
               Our IVF Team
             </Link>
             <Link to='gallery' className="text-black text-sm font-semibold">
               Gallery
             </Link>
           </div>
-          <Link to='bookappointment' className="hidden md:block text-white bg-red-700 px-4 py-2 rounded">
+          <Link to='bookappointment' className="hidden md:block text-white bg-red-800 px-3 py-1 text-sm rounded-xl">
             Contact Us
           </Link>
           <button
@@ -564,7 +564,7 @@ function NavigationB() {
               <Link to='achievments' className="text-black py-3 border-b-2 font-semibold">
                 Success Rate
               </Link>
-              <Link to='ourivfteam' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='ivfteam' className="text-black py-3 border-b-2 font-semibold">
                 Our IVF Team
               </Link>
               <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">

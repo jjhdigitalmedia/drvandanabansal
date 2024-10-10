@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
-import lab from "../assets/lab.png";
+import lab0 from "../assets/lab0.png";
 import patientweb from "../assets/patientweb.png";
 
 export const Rewards = () => {
@@ -28,7 +28,7 @@ export const Rewards = () => {
 
         <Link to="guestspeaker" className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
           <img
-            src={lab}
+            src={lab0}
             alt="Mountain"
             className="w-full  object-cover border-8 border-white rounded-2xl"
           />
