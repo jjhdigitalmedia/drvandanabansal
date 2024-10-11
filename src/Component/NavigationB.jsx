@@ -234,7 +234,7 @@ function NavigationB() {
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
             <span className=" font-bol flex md:font-thin text-roe-400 ">
               <img src={ATTBClogo1} className="d-block w-12" alt="..." />
-              <span className="text-red-600 font-bold ml-2">
+              <span className="text-pink-600 font-bold ml-2">
                 ARPIT TEST TUBE
                 <br />
                 BABY CENTRE
@@ -394,7 +394,7 @@ function NavigationB() {
               Gallery
             </Link>
           </div>
-          <Link to='bookappointment' className="hidden md:block text-white bg-red-800 px-3 py-1 text-sm rounded-xl">
+          <Link to='bookappointment' className="hidden md:block text-white bg-pink-700 px-3 py-1 text-sm rounded-xl">
             Contact Us
           </Link>
           <button

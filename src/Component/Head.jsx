@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
-import bannerwebfinal from "../assets/bannerwebfinal.png";
+import Banner02Final from "../assets/Banner02Final.png";
 import BannerFinal from "../assets/BannerFinal.png";
 import vandanabgphoto from "../assets/vandanabgphoto.jpg";
 import slide02 from "../assets/slide02.jpg";
 import banner03final from "../assets/banner03final.png";
 import banner05 from "../assets/banner05.png";
+import banner06 from "../assets/banner06.png";
 import slide04 from "../assets/slide04.jpg";
 import slide05 from "../assets/slide05.jpg";
 import "../Style/Style.css";
@@ -14,6 +15,7 @@ import "../Style/Style.css";
 const Head = () => {
   return (
     <>
+    {/* ca377e color theme for website */}
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -54,10 +56,10 @@ const Head = () => {
             <img src={BannerFinal} class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src={bannerwebfinal} class="d-block w-100" alt="..." />
+            <img src={Banner02Final} class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src={banner03final} class="d-block w-100" alt="..." />
+            <img src={banner06} class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
             <img src={slide04} class="d-block w-100" alt="..." />
