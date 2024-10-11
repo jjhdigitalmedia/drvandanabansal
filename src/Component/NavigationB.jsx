@@ -228,7 +228,7 @@ function NavigationB() {
           </a>
         </div>
       </div>
-      <nav className="bg-white py-2 px-4 shadow-sm sticky top-0 z-20">
+      <nav className="bg-gray-50 py-2 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
@@ -419,7 +419,7 @@ function NavigationB() {
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 onClick={toggleAboutDropdown}
-                className="text-black py-3 font-semibold border-b-2 focus:outline-none"
+                className="text-black py-3 font-semibold text-left border-b-2 focus:outline-none"
               >
                 About Us
                 <ChevronDownIcon className="h-5 w-5 inline" />
@@ -448,7 +448,7 @@ function NavigationB() {
                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
                 onClick={toggleServicesDropdown}
-                className="text-black py-3 border-b-2 focus:outline-none"
+                className="text-black py-3 text-left border-b-2 focus:outline-none"
               >
                 Services
                 <ChevronDownIcon className="h-5 w-5 inline" />
