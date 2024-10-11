@@ -570,7 +570,7 @@ function NavigationB() {
               <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">
                 Gallery
               </Link>
-              <Link to='contact' className="text-white border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
+              <Link to='contact' className="text-white text-center border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
                 Contact Us
               </Link>
             </div>
