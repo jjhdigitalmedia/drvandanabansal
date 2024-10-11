@@ -1,8 +1,11 @@
 import React from 'react'
+import About from './About'
 
 const OurFounder = () => {
   return (
-    <div>OurFounder</div>
+    <div>
+      <About/>
+    </div>
   )
 }
 

@@ -20,7 +20,7 @@ export const Rewards = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               Guest Speaker
             </h2>
-            <p className="text-gray-700 text-justify leading-tight mb-4">
+            <p className="text-gray-700 leading-tight mb-4">
             Dr. Vandana Bansal is a distinguished guest speaker at various global conferences,  where she shares her expertise in [your area of expertise] and ignites engaging conversations.
             </p>
           </div>
@@ -36,7 +36,7 @@ export const Rewards = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               IVF Lab
             </h2>
-            <p className="text-gray-700 text-justify leading-tight mb-4">
+            <p className="text-gray-700 leading-tight mb-4">
               Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the women's ovaries and then fertilized by the husband's sperms in a petri dish or a test tube in a controlled laboratory environment.
             </p>
           </div>
@@ -52,7 +52,7 @@ export const Rewards = () => {
             <h2 className="text-xl font-bold text-gray-800 mb-2">
               Patient's Review
             </h2>
-            <p className="text-gray-700 text-justify leading-tight mb-4">
+            <p className="text-gray-700 leading-tight mb-4">
               At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.
             </p>
           </div>

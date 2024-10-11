@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import bannerwebfinal from "../assets/bannerwebfinal.png";
-import bannerweb01final from "../assets/bannerweb01final.png";
+import BannerFinal from "../assets/BannerFinal.png";
 import vandanabgphoto from "../assets/vandanabgphoto.jpg";
 import slide02 from "../assets/slide02.jpg";
 import banner03final from "../assets/banner03final.png";
@@ -51,7 +51,7 @@ const Head = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src={bannerweb01final} class="d-block w-100" alt="..." />
+            <img src={BannerFinal} class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
             <img src={bannerwebfinal} class="d-block w-100" alt="..." />

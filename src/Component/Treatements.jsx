@@ -28,7 +28,7 @@ const Treatements = () => {
         </div>
         <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
 
-            <Link to='iuitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full   ">
+            <Link to='iuitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div className=" shadow-md order-gray-200 px-4 py-6 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -119,7 +119,7 @@ const Treatements = () => {
         </div>
       </div>
     </section>
-    <div className="w-full md:px-52 py-10 bg-red-200 my-5">
+    <div className="w-full md:px-52 py-10 bg-red-50 my-5">
         <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
           <source
             src={IVFvideo}

@@ -234,7 +234,7 @@ function NavigationB() {
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
             <span className=" font-bol flex md:font-thin text-roe-400 ">
               <img src={ATTBClogo1} className="d-block w-12" alt="..." />
-              <span className="text-red-600 font-semibold ml-2">
+              <span className="text-red-600 font-bold ml-2">
                 ARPIT TEST TUBE
                 <br />
                 BABY CENTRE
