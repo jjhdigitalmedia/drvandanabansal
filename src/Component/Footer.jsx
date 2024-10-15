@@ -103,25 +103,25 @@ const Footer = () => {
                       href="https://www.instagram.com/drvandanabansal_gynaecologist/"
                       target="_blank"
                     >
-                      <FaInstagram className="mx-2 text-gray-600 text-xl" />
+                      <FaInstagram className="mx-2 text-rose-700 text-xl" />
                     </a>
                     <a
                       href="https://www.facebook.com/vandana.bansal.33"
                       target="_blank"
                     >
-                      <FaFacebook className="mx-2 text-gray-600 text-xl" />
+                      <FaFacebook className="mx-2 text-rose-700 text-xl" />
                     </a>
                     <a
                       href="https://www.youtube.com/@DrVandanaBansal"
                       target="_blank"
                     >
-                      <FaYoutube className="mx-2 text-gray-600 text-xl" />
+                      <FaYoutube className="mx-2 text-rose-700 text-xl" />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/"
                       target="_blank"
                     >
-                      <FaLinkedinIn className="mx-2 text-gray-600 text-xl" />
+                      <FaLinkedinIn className="mx-2 text-rose-700 text-xl" />
                     </a>
                   </div>
                 </li>
