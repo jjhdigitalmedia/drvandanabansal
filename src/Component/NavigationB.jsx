@@ -212,7 +212,7 @@ function NavigationB() {
 
     
     <>
-      <div className=" hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
+      <div className=" hidden md:flex flex-wrap z-50 justify-between py-1 px-3 bg-pink-800">
         <div>
           <span className="pr-8 text-sm text-white">
           <MdOutlineMail className="inline" /> Phone: +91 6390103002
@@ -228,7 +228,7 @@ function NavigationB() {
           >
             <IoLocationOutline className="inline text-white text-lg text-wrap" />
             <span className=" align-middle">
-              162 Bai Ka Bagh, Lowther Road, (211003), Prayagraj, UP
+              162 Bai Ka Bagh, Lowther Road, 211003, Prayagraj UP
             </span>
           </a>
         </div>
