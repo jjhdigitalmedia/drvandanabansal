@@ -4,10 +4,10 @@ import iui from "../assets/icons/Treatment/iui.png";
 import icsi from "../assets/icons/Treatment/icsi.png";
 import ivm from "../assets/icons/Treatment/ivm.png";
 import IMSI from "../assets/icons/Treatment/IMSI.png";
+import embryo from "../assets/icons/Treatment/embryo.png";
+import lasehatching from "../assets/icons/Treatment/lasehatching.png";
 import laproo from "../assets/icons/Treatment/laproo.png";
 import Sonography from "../assets/icons/Treatment/Sonography.png";
-import lasehatching from "../assets/icons/Treatment/lasehatching.png";
-import embryo from "../assets/icons/Treatment/embryo.png";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -86,7 +86,6 @@ const Treatements = () => {
           <p className="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a highly regarded medical professional known for expertise and compassionate care. With extensive experience, Dr. Bansal specializes in advanced treatments, combining cutting-edge technology with personalized care. Her commitment to excellence and patient well-being has earned him a reputation as a trusted figure in the medical community.</p>
         </div>
         <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
-        
           { TreatmentData && TreatmentData.map((treat) => (
             <Link to='' className="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div className=" shadow-md order-gray-200 px-3 py-5 rounded-lg">
