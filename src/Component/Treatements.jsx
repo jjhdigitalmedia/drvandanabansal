@@ -112,7 +112,7 @@ const Treatements = () => {
                   className="object-cover object-center p-4 w-full h-full block"
                   src={laproo}
                 />
-                <h2 className="title-font font-medium text-md text-gray-900">Laproscopy</h2>
+                <h2 className="title-font font-medium text-md text-gray-900">Sonography</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
               </div>
             </Link>
