@@ -10,7 +10,7 @@ import { IoLocationOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <footer className="text-gray-600 body-font bg-red-100">
+      <footer className="text-gray-600 body-font bg-red-50">
         <div className="container px-5 py-16 mx-auto ">
           <div className="flex flex-wrap md:text-left  order-first">
             <div className="lg:w-1/4 md:w-1/2 w-full px-4">
