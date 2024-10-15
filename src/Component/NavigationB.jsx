@@ -5,6 +5,8 @@ import "../Style/Style.css";
 import "../Style/neonStyle.css";
 import ATTBClogo1 from "../assets/ATTBClogo1.png";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
 
 import {
   ChevronDownIcon,
@@ -210,10 +212,13 @@ function NavigationB() {
 
     
     <>
-      <div className="flex flex-wrap z-50 justify-between py-1 px-3 bg-neutral-800">
+      <div className="flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
         <div>
-          <span className="pr-8 text-xs text-white">
-            Phone: +91 6390103002 | Email: arpitivf@gmail.com
+          <span className="pr-8 text-sm text-white">
+          <MdOutlineMail className="inline" /> Phone: +91 6390103002
+          </span>
+          <span className="pr-8 text-sm text-white">
+          <IoCallOutline className="inline" /> Email: arpitivf@gmail.com
           </span>
         </div>
         <div className="text-xs text-white md:mt-2 mt-0">
@@ -222,7 +227,7 @@ function NavigationB() {
             target="_blank"
           >
             <IoLocationOutline className="inline text-white text-lg text-wrap" />
-            <span className="">
+            <span className=" align-middle">
               162 Bai Ka Bagh, Lowther Road, (211003), Prayagraj, UP
             </span>
           </a>

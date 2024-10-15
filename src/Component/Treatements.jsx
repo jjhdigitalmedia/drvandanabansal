@@ -5,6 +5,7 @@ import icsi from "../assets/icons/Treatment/icsi.png";
 import ivm from "../assets/icons/Treatment/ivm.png";
 import IMSI from "../assets/icons/Treatment/IMSI.png";
 import laproo from "../assets/icons/Treatment/laproo.png";
+import Sonography from "../assets/icons/Treatment/Sonography.png";
 import lasehatching from "../assets/icons/Treatment/lasehatching.png";
 import embryo from "../assets/icons/Treatment/embryo.png";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
@@ -110,7 +111,7 @@ const Treatements = () => {
                 <img
                   alt="ecommerce"
                   className="object-cover object-center p-4 w-full h-full block"
-                  src={laproo}
+                  src={Sonography}
                 />
                 <h2 className="title-font font-medium text-md text-gray-900">Sonography</h2>
                 <p className="leading-relaxed text-sm text-rose-600">know more</p>
