@@ -137,7 +137,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-gray-100 border-t-2">
-          <div className="container px-5 mx-auto w-fit py-6 mx-auto 
+          <div className="container px-5 w-fit py-6 mx-auto 
             sm:flex-row flex-col">
             {/* <a className="text-white flex title-font font-medium items-center md:justify-start justify-center">
               <span className="ml-3 text-xl">Best IVF Centre in Prayagraj</span>
