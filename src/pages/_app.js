@@ -1,9 +1,13 @@
+import Footer from "@/Footer";
+import NavigationB from "@/NavigationB";
 import "@/styles/globals.css";
-import Home from ".";
+// import index from "./Home/index.js";
 
 export default function App({ Component, pageProps }) {
   return <>
-    {/* <Home />*/}
+    {/* <index.js /> */}
+    <NavigationB/>
     <Component {...pageProps} />
+    <Footer/>
   </>
 }
