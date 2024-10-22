@@ -13,9 +13,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image'
-//  import IVFvideo from '/public/videos/IVFvideo.mp4'
 // import IVFvideo from '/public/videos/IVFvideo.mp4';
-// import styles from './ImageCarousel.module.css'; // Custom styles
 
 const HeadTop = () => {
   const settings = {
@@ -41,30 +39,17 @@ const HeadTop = () => {
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index}>
-            {/* <img src={src} alt={`Image ${index + 1}`} className='w-100 h-auto object-cover' /> */}
             <Image
             src={src}
-            // width={1000}
-            // height={1000}
             width={0}
             height={0}
             sizes="100vw"
             style={{ width: '100%', height: 'auto', objectFit:'cover' }} //
             alt={`Image ${index + 1}`}
-            // className='w-100 h-auto object-cover'
             />
           </div>
         ))}
       </Slider>
-      {/* <div className="w-full md:px-52 py-10 bg-red-50 my-5">
-            <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
-                <source
-                    src={IVFvideo}
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-        </div> */}
     </div>
   );
 };
