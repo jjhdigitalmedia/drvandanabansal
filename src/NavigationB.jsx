@@ -56,16 +56,14 @@ const NavigationB = () => {
           </span>
         </div>
       </div>
-      <nav className="bg-gray-50 py-2 px-4 shadow-sm sticky top-0 z-20">
+      <nav className="bg-gray-50 py-4 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
-          <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div>
+          {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
             <span className=" font-bol flex md:font-thin text-roe-400 ">
-              {/* <img src={ATTBClogo1} className="d-block w-12" alt="..." /> */}fhj
+              {/* <img src={ATTBClogo1} className="d-block w-12" alt="..." /> */}
               <span className="text-pink-600 font-bold ml-2">
-                ARPIT TEST TUBE
-                <br />
-                BABY CENTRE
+                Dr Vandana Bansal
               </span>
             </span>
           </div>
@@ -100,6 +98,7 @@ const NavigationB = () => {
                 </Link>
               </div>
             )}
+            
             {/* <div
             className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-1 ${isOpen ? "py-3" : ""
               }`} >

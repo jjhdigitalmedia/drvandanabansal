@@ -1,5 +1,11 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Treatements from "@/HomeComponent/Treatment";
+import { Rewards } from "@/HomeComponent/Reward";
+import Head from "next/head";
+import HeadTop from "@/HomeComponent/HeadTop";
+import Faq from "@/HomeComponent/Faq";
+import Contact from "@/HomeComponent/Contact";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +23,13 @@ export default function Home() {
     <div
       // className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
     >
-    Index page
+    {/* Index page */}
+    {/* <Head/> */}
+    <HeadTop/>
+    <Treatements/>
+    <Rewards/>
+    <Contact/>
+    <Faq/>
     </div>
   );
 }
