@@ -6,6 +6,7 @@ import Head from "next/head";
 import HeadTop from "@/HomeComponent/HeadTop";
 import Faq from "@/HomeComponent/Faq";
 import Contact from "@/HomeComponent/Contact";
+import About from "@/HomeComponent/About";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function Home() {
     {/* <Head/> */}
     <HeadTop/>
     <Treatements/>
+    <About/>
     <Rewards/>
     <Contact/>
     <Faq/>

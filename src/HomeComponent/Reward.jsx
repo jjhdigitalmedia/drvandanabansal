@@ -85,7 +85,7 @@ export const Rewards = () => {
       <div className="w-full md:px-32 py-3 mx-auto">
       <div className="my-8">
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-ad2e5e08-1de5-4fde-8a64-b8282d48abb7" data-elfsight-app-lazy></div>
+        <div className="elfsight-app-ad2e5e08-1de5-4fde-8a64-b8282d48abb7" data-elfsight-app-lazy></div>
       </div>
       </div>
       {/* <div className="w-full md:px-52 py-10 bg-red-200 my-5">
