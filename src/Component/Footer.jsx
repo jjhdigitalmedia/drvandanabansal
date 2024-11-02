@@ -143,7 +143,7 @@ const Footer = () => {
               <span className="ml-3 text-xl">Best IVF Centre in Prayagraj</span>
             </a> */}
             <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0">
-              © 2024 All rights reserved by Arpit Test Tube Baby Centre
+              © 2024 Dr Vandana Bansal All rights reserved
             </p>
           </div>
         </div>

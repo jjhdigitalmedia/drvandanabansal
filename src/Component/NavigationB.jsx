@@ -210,15 +210,15 @@ function NavigationB() {
     // </>
 
 
-    
+
     <>
       <div className=" hidden md:flex flex-wrap z-50 justify-between py-1 px-3 bg-pink-800">
         <div>
           <span className="pr-8 text-sm text-white">
-          <MdOutlineMail className="inline" /> Phone: +91 6390103002
+            <MdOutlineMail className="inline" /> Phone: +91 6390103002
           </span>
           <span className="pr-8 text-sm text-white">
-          <IoCallOutline className="inline" /> Email: arpitivf@gmail.com
+            <IoCallOutline className="inline" /> Email: arpitivf@gmail.com
           </span>
         </div>
         {/* <div className="text-xs text-white md:mt-2 mt-0">
@@ -232,27 +232,24 @@ function NavigationB() {
             </span>
           </a>
         </div> */}
-         <div>
+        <div>
           <span className="pr-8 text-sm text-white">
-          <IoLocationOutline className="inline " />162 Bai Ka Bagh, Lowther Road, 211003, Prayagraj UP
+            <IoLocationOutline className="inline " />162 Bai Ka Bagh, Lowther Road, 211003, Prayagraj UP
           </span>
         </div>
       </div>
-      <nav className="bg-gray-50 py-2 px-4 shadow-sm sticky top-0 z-20">
+      <nav className="bg-gray-50 py-3 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           {/* <div className="text-white text-lg font-bold">ARPIT TEST TUBE BABY CENTRE</div> */}
           <div className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
             <span className=" font-bol flex md:font-thin text-roe-400 ">
-              <img src={ATTBClogo1} className="d-block w-12" alt="..." />
-              <span className="text-pink-600 font-bold ml-2">
-                ARPIT TEST TUBE
-                <br />
-                BABY CENTRE
+              <span className="text-pink-600 text-2xl font-bold ml-2">
+                Dr Vandana Bansal
               </span>
             </span>
           </div>
           <div className="hidden md:flex space-x-4 relative">
-          <Link to='/' className="text-black text-sm font-semibold">Home</Link>
+            <Link to='/' className="text-black text-sm font-semibold">Home</Link>
             <Link
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
@@ -293,13 +290,10 @@ function NavigationB() {
             {/* {isServicesDropdownOpen && (
               <div> */}
             <div
-              className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white md:mr-1 ${
-                isOpen ? "py-3" : ""
-              }`}
+              className={`dropdown block mt-0 hover:underline transition duration-300 font-semibold text-sm lg:inline-block lg:mt-0 hover:text-red-600 text-black md:text-white  ${isOpen ? "py-3" : ""
+                }`}
             >
-              <Link className="dropbtn font-semibold text-sm mr-0">
-                Services
-              </Link>
+              Services
               <div className="dropdown-content font-thin">
                 <a className="dropdownn">
                   <Link className="dropbtnn">Treatments</Link>
@@ -419,6 +413,7 @@ function NavigationB() {
           </button>
         </div>
 
+
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white p-4">
             <div className="flex flex-col space-y-2">
@@ -518,16 +513,16 @@ function NavigationB() {
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <Link to ='endocrineprofile' className="block px-4 py-2 text-gray-500">
+                      <Link to='endocrineprofile' className="block px-4 py-2 text-gray-500">
                         Endocrine Profile
                       </Link>
-                      <Link to ='sonography' className="block px-4 py-2 text-gray-500">
+                      <Link to='sonography' className="block px-4 py-2 text-gray-500">
                         Sonography
                       </Link>
-                      <Link to ='hsgsno' className="block px-4 py-2 text-gray-500">
+                      <Link to='hsgsno' className="block px-4 py-2 text-gray-500">
                         HSG/SNO
                       </Link>
-                      <Link to ='semenbank' className="block px-4 py-2 text-gray-500">
+                      <Link to='semenbank' className="block px-4 py-2 text-gray-500">
                         Semen Bank
                       </Link>
                     </div>

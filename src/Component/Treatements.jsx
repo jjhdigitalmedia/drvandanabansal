@@ -6,8 +6,8 @@ import ivm from "../assets/icons/Treatment/ivm.png";
 import IMSI from "../assets/icons/Treatment/IMSI.png";
 import embryo from "../assets/icons/Treatment/embryo.png";
 import lasehatching from "../assets/icons/Treatment/lasehatching.png";
-import laproo from "../assets/icons/Treatment/laproo.png";
 import Sonography from "../assets/icons/Treatment/Sonography.png";
+// import laproo from "../assets/icons/Treatment/laproo.png";
 import IVFvideo from '../assets/videos/IVFvideo.mp4';
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -87,7 +87,7 @@ const Treatements = () => {
         </div>
         <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
           { TreatmentData && TreatmentData.map((treat) => (
-            <Link to='' className="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <Link to={treat.link} className="p-4 md:w-1/4 sm:w-1/2 w-full">
               <div className=" shadow-md order-gray-200 px-3 py-5 rounded-lg">
                 <img
                   alt="ecommerce"
@@ -100,94 +100,6 @@ const Treatements = () => {
             </Link>
           ))
           }
-          {/* <Link to='iuitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className=" shadow-md order-gray-200 px-4 py-6 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={iui}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">IUI Treatment</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='ivfet' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md py-6 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={IVFet}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">IVF-ET Treatment</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='icsi' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md px-4 py-8 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={icsi}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">ICSI Treatment</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='ivmtreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md px-4 py-8 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={ivm}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">IVM Treatment</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='imsitreatment' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md px-4 py-8 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={IMSI}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">IMSI Treatment</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='embryomonitoring' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md px-4 py-6 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={embryo}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">Embryo Monitoring</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='laserassisted' className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="shadow-md px-4 py-6 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={lasehatching}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">Laser Assisted Hatching</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link>
-            <Link to='laparoscopy' className="p-4 md:w-1/4 sm:w-1/2 w-full ">
-              <div className="shadow-md px-4 py-6 rounded-lg">
-                <img
-                  alt="ecommerce"
-                  className="object-cover object-center p-4 w-full h-full block"
-                  src={Sonography}
-                />
-                <h2 className="title-font font-medium text-md text-gray-900">Sonography</h2>
-                <p className="leading-relaxed text-sm text-rose-600">know more</p>
-              </div>
-            </Link> */}
         </div>
       </div>
     </section>
