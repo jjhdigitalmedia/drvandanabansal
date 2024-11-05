@@ -70,7 +70,7 @@ export function FAQ() {
         },
         {
             i: 9,
-            q: 'Can the IVF cycle be cancelled during a treatment cycle?',
+            q: 'Can the IVF cycle be cancelled during a treatment cycle ?',
             ana: 'The aim of incentive monitoring program is to obtain a good number of healthy mature eggs. Thus if the cycle is unsatisfactory, it may be cancelled at any stage.'
         },
         {
