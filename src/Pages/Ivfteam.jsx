@@ -122,4 +122,4 @@ const IVFteam = () => {
     )
 }
 
-export default IVFteam
+export default IVFteam;

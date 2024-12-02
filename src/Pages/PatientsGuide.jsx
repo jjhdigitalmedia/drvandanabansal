@@ -13,4 +13,4 @@ const PatientsGuide = () => {
   )
 }
 
-export default PatientsGuide
+export default PatientsGuide;

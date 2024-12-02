@@ -1,6 +1,6 @@
 import React from "react";
 
-const Iui = () => {
+const IuiTreatment = () => {
   return (
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">IUI Treatment</h1>
@@ -53,4 +53,4 @@ const Iui = () => {
   );
 };
 
-export default Iui;
+export default IuiTreatment;

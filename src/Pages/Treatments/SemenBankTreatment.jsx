@@ -1,6 +1,6 @@
 import React from "react";
 
-const SemenBank = () => {
+const SemenBankTreatment = () => {
   return (
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3"> SemenBank</h1>
@@ -27,4 +27,4 @@ const SemenBank = () => {
   );
 };
 
-export default SemenBank;
+export default SemenBankTreatment;

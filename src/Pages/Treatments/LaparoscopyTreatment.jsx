@@ -1,6 +1,6 @@
 import React from "react";
 
-const Laparoscopy = () => {
+const LaparoscopyTreatment = () => {
   return (
     <div className="w-11/12 md:w-1/2 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">Sonography</h1>
@@ -34,4 +34,4 @@ const Laparoscopy = () => {
   );
 };
 
-export default Laparoscopy;
+export default LaparoscopyTreatment;

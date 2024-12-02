@@ -1,8 +1,8 @@
 import React from 'react'
-import newlab2 from "../assets/newlab2.jpg";
-import Contact from './Contact';
+// import newlab2 from "../assets/newlab2.jpg";
+import Contact from '../Component/Contact';
 
-const BookAppointment = () => {
+const BookYourAppointment = () => {
     return (
         <>
             <div className='text-center pt-12'>
@@ -59,4 +59,4 @@ const BookAppointment = () => {
     )
 }
 
-export default BookAppointment
+export default BookYourAppointment;

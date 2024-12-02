@@ -5,42 +5,45 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import About from './Component/About.jsx'
 import Contact from './Component/Contact.jsx'
-import Achievements from './Component/Achievements.jsx'
-import NavigationB from './Component/NavigationB.jsx'
-import Footer from './Component/Footer.jsx'
+// import NavigationB from './Component/NavigationB.jsx'
+// import Footer from './Component/Footer.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
-import { PatientReviewVideo } from './Component/Reviews/PatientReviewVideo.jsx'
+// import Layout from './Layout.jsx'
 
-import BookAppointment from './Component/BookAppointment.jsx'
-import GuestSpeaker from './Component/GuestSpeaker/GuestSpeaker.jsx'
-
-import Iui from './Pages/Iui.jsx'
-import Ivfet from './Pages/Ivfet.jsx'
-import Icsi from './Pages/Icsi.jsx'
-import Ivm from './Pages/Ivm.jsx'
-import Imsi from './Pages/Imsi.jsx'
-import Embryo from './Pages/Embryo.jsx'
-import LaserAssisted from './Pages/LaserAssisted.jsx'
-import Laparoscopy from './Pages/Laparoscopy.jsx'
 import Home from './Component/Home.jsx'
-import Layout from './Layout.jsx'
-import Facilities from './Component/Facilities.jsx'
-import IVFteam from './Component/IVFteam.jsx'
-import PatientsGuide from './Component/PatientsGuide.jsx'
-import Gallery from './Component/Gallery.jsx'
-import Endocrine from './Pages/Endocrine.jsx'
-import Sonography from './Pages/Sonography.jsx'
-import HSGSono from './Pages/HSGSono.jsx'
-import SemenBank from './Pages/SemenBank.jsx'
-import Blastocyst from './Pages/Blastocyst.jsx'
-import EggDonation from './Pages/EggDonation.jsx'
-import Cryopreservation from './Pages/Cryopreservation.jsx'
-import EmbryoBank from './Pages/EmbryoBank.jsx'
-import OurFounder from './Component/OurFounder.jsx'
-import OurProfile from './Component/OurProfile.jsx'
-import OurVisionMission from './Component/OurVisionMission.jsx'
-import Spiritual from './Component/Spiritual.jsx'
+// import Gallery from './Component/Gallery.jsx'
+
 import NewsImages from './Component/NewsImages.jsx'
+import IuiTreatment from './Pages/Treatments/IuiTreatment.jsx'
+import IcsiTreatment from './Pages/Treatments/IcsiTreatment.jsx'
+import IvfEtTreatment from './Pages/Treatments/IvfEtTreatment.jsx'
+import ImsiTreatment from './Pages/Treatments/ImsiTreatment.jsx'
+import IvmTreatment from './Pages/Treatments/IvmTreatment.jsx'
+import EmbryoTreatment from './Pages/Treatments/EmbryoTreatment.jsx'
+import SonographyTreatment from './Pages/Treatments/SonographyTreatment.jsx'
+import LaserAssistedTreatment from './Pages/Treatments/LaserAssistedTreatment.jsx'
+import EmbryoBankTreatment from './Pages/Treatments/EmbryoBankTreatment.jsx'
+import EggDonationTreatment from './Pages/Treatments/EggDonationTreatment.jsx'
+import SemenBankTreatment from './Pages/Treatments/SemenBankTreatment.jsx'
+import HSGSonoTreatment from './Pages/Treatments/HSGSonoTreatment.jsx'
+import EndocrineTreatment from './Pages/Treatments/EndocrineTreatment.jsx'
+import BlastocystTreatment from './Pages/Treatments/BlastocystTreatment.jsx'
+import CryopreservationTreatment from './Pages/Treatments/CryopreservationTreatment.jsx'
+import LaparoscopyTreatment from './Pages/Treatments/LaparoscopyTreatment.jsx'
+import OurFounders from './Pages/AboutUs/OurFounders.jsx'
+import SpiritualJourney from './Pages/AboutUs/SpiritualJourney.jsx'
+import OurVisionMissions from './Pages/AboutUs/OurVisionMissions.jsx'
+import OurProfiles from './Pages/AboutUs/OurProfiles.jsx'
+import Facilities from './Pages/Facilities.jsx'
+import IVFteam from './Pages/Ivfteam.jsx'
+import PatientsGuide from './Pages/PatientsGuide.jsx'
+import SuccessRate from './Pages/SuccessRate.jsx'
+// import BookYourAppointment from './Pages/BookYourAppointment.jsx'
+// import BookAppointment from './Component/BookAppointment.jsx'
+import Gallery from './Pages/Gallery.jsx'
+import BookYourAppointment from './Pages/BookYourAppointment.jsx'
+import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
+import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
 
 
 const router = createBrowserRouter([
@@ -58,7 +61,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'bookappointment',
-        element: <BookAppointment />,
+        element: <BookYourAppointment />,
       },
       {
         path: 'ivfteam',
@@ -80,7 +83,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'achievements',
-        element: <Achievements />,
+        element: <SuccessRate />,
         children: []
       },
       {
@@ -95,22 +98,22 @@ const router = createBrowserRouter([
       },
       {
         path: 'ourfounder',
-        element: <OurFounder />,
+        element: <OurFounders />,
         children: []
       },
       {
         path: 'ourprofile',
-        element: <OurProfile />,
+        element: <OurProfiles />,
         children: []
       },
       {
         path: 'ourvisionmission',
-        element: <OurVisionMission />,
+        element: <OurVisionMissions />,
         children: []
       },
       {
         path: 'spiritualjourney',
-        element: <Spiritual />,
+        element: <SpiritualJourney />,
         children: []
       },
       {
@@ -121,82 +124,82 @@ const router = createBrowserRouter([
 
       {
         path: 'iuitreatment',
-        element: <Iui />,
+        element: <IuiTreatment />,
         children: []
       },
       {
         path: 'ivfet',
-        element: <Ivfet />,
+        element: <IvfEtTreatment />,
         children: []
       },
       {
         path: 'icsi',
-        element: <Icsi />,
+        element: <IcsiTreatment />,
         children: []
       },
       {
         path: 'ivmtreatment',
-        element: <Ivm />,
+        element: <IvmTreatment />,
         children: []
       },
       {
         path: 'imsitreatment',
-        element: <Imsi />,
+        element: <ImsiTreatment />,
         children: []
       },
       {
         path: 'embryomonitoring',
-        element: <Embryo />,
+        element: <EmbryoTreatment />,
         children: []
       },
       {
         path: 'laserassisted',
-        element: <LaserAssisted />,
+        element: <LaserAssistedTreatment />,
         children: []
       },
       {
         path: 'laparoscopy',
-        element: <Laparoscopy />,
+        element: <LaparoscopyTreatment />,
         children: []
       },
       {
         path: 'endocrine',
-        element: <Endocrine />,
+        element: <EndocrineTreatment />,
         children: []
       },
       {
         path: 'sonography',
-        element: <Sonography />,
+        element: <SonographyTreatment />,
         children: []
       },
       {
         path: 'hsgsono',
-        element: <HSGSono />,
+        element: <HSGSonoTreatment />,
         children: []
       },
       {
         path: 'semenbank',
-        element: <SemenBank />,
+        element: <SemenBankTreatment />,
         children: []
       },
       {
         path: 'embryobank',
-        element: <EmbryoBank />,
+        element: <EmbryoBankTreatment />,
         children: []
       },
       {
         path: 'blastocyst',
-        element: <Blastocyst />,
+        element: <BlastocystTreatment />,
         children: []
       },
       {
         path: 'eggdonation',
-        element: <EggDonation />,
+        element: <EggDonationTreatment />,
         children: []
       },
       {
         path: 'cryopreservation',
-        element: <Cryopreservation />,
+        element: <CryopreservationTreatment />,
         children: []
       },
 

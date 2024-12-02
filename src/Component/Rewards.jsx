@@ -3,22 +3,25 @@ import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import lab0 from "../assets/lab0.png";
 import patientweb from "../assets/patientweb.png";
-import IVFvideo from '../assets/videos/IVFvideo.mp4';
+// import IVFvideo from '../assets/videos/IVFvideo.mp4';
 
 export const Rewards = () => {
 
   const RewarComponent = [
     {
+      link: '',
       img: lab0,
       heading: 'IVF Lab',
       contn: ' Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the womens ovaries and then fertilized by the husbands sperms in a petri dish or a test tube in a controlled laboratory environment.'
     },
     {
+      link: 'patientsreview',
       img: patientweb,
       heading: 'Testimonials',
       contn: ' At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.'
     },
     {
+      link: 'guestspeaker',
       img: speaker1,
       heading: ' Guest Speaker',
       contn: ' Dr. Vandana Bansal is a distinguished guest speaker at various global conferences,  where she shares her expertise in [your area of expertise] and ignites engaging conversations.'
@@ -28,7 +31,7 @@ export const Rewards = () => {
     <>
       <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto mt-10">
         {RewarComponent.map((ind, k) => (
-          <Link key={k} to="guestspeaker" className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
+          <Link key={k} to={ind.link} className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
             <img
               src={ind.img}
               alt="Mountain"

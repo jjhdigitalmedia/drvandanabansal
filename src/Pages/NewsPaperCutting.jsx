@@ -14,7 +14,7 @@ import L from '../assets/NewsPapers/L.jpg'
 import M from '../assets/NewsPapers/M.jpg'
 import N from '../assets/NewsPapers/N.jpg'
 import O from '../assets/NewsPapers/O.jpg'
-const NewsImages = () => {
+const NewsPaperCutting = () => {
     const data = [
         {
             imageLink: A,
@@ -84,4 +84,4 @@ const NewsImages = () => {
     );
 }
 
-export default NewsImages
+export default NewsPaperCutting

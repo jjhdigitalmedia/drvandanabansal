@@ -1,6 +1,6 @@
 import React from "react";
 
-const HSGSono = () => {
+const HSGSonoTreatment = () => {
   return (
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">Hysterosalpingogram (HSG)</h1>
@@ -69,4 +69,4 @@ const HSGSono = () => {
   );
 };
 
-export default HSGSono;
+export default HSGSonoTreatment;

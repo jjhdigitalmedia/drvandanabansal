@@ -126,4 +126,4 @@ const GuestSpeaker = () => {
   )
 }
 
-export default GuestSpeaker
+export default GuestSpeaker;

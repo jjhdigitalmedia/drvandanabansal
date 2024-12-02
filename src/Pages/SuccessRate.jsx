@@ -2,7 +2,7 @@ import React from "react";
 import newlab2 from "../assets/newlab2.jpg";
 import { Link } from "react-router-dom";
 
-const Achievements = () => {
+const SuccessRate = () => {
   return (
     <section className="text-gray-600 z-1 mt-14 body-font">
       <div className="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
@@ -91,4 +91,4 @@ const Achievements = () => {
   );
 };
 
-export default Achievements;
+export default SuccessRate;
