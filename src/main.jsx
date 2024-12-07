@@ -13,7 +13,6 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import Home from './Component/Home.jsx'
 // import Gallery from './Component/Gallery.jsx'
 
-import NewsImages from './Component/NewsImages.jsx'
 import IuiTreatment from './Pages/Treatments/IuiTreatment.jsx'
 import IcsiTreatment from './Pages/Treatments/IcsiTreatment.jsx'
 import IvfEtTreatment from './Pages/Treatments/IvfEtTreatment.jsx'
@@ -44,6 +43,7 @@ import Gallery from './Pages/Gallery.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
 import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
 import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
+import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
 
 
 const router = createBrowserRouter([
@@ -118,7 +118,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'newsimages',
-        element: <NewsImages />,
+        element: <NewsPaperCutting />,
         children: []
       },
 

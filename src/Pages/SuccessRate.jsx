@@ -3,6 +3,53 @@ import newlab2 from "../assets/newlab2.jpg";
 import { Link } from "react-router-dom";
 
 const SuccessRate = () => {
+
+  const successes = [
+    {
+      ind: '1. Age:',
+      data: 'Age is one of the most significant factors  affecting IVF success. Generally, the younger the woman, the higher the chances of success, as fertility declines with age.'
+    },
+    {
+      ind: '2. Cause of Infertility:',
+      data: 'The underlying cause of infertility, whether its related to issues with the womans reproductive system, the mans reproductive system, or both, can impact IVF success rates.'
+    },
+    {
+      ind: '3. Ovarian Reserve:',
+      data: ' The quality and quantity of a womans eggs, known as ovarian reserve, can affect the success of IVF. Women with a higher ovarian reserve typically have better outcomes.'
+    },
+    {
+      ind: '4. Response to Ovarian Stimulation:',
+      data: 'The womans response to ovarian stimulation medications, which are used to induce the development of multiple eggs, can influence IVF success. A poor response may result in fewer eggs retrieved, affecting the chances of success.'
+    },
+    {
+      ind: '5. Semen Quality:',
+      data: 'The quality of the mans sperm, including parameters such as sperm count, motility, and morphology, plays a crucial role in IVF success. Poor semen quality can decrease the chances of fertilization and embryo development.'
+    },
+    {
+      ind: '1. Age:',
+      data: 'Age is one of the most significant factors    affecting IVF success. Generally, the younger the woman, the higher the chances of success, as fertility declines with age.'
+    },
+    {
+      ind: '6. Embryo Quality: ',
+      data: 'The quality of embryos transferred during IVF, as determined by their morphology and developmental stage, is a significant predictor of success. Higher-quality embryos have a better chance of implanting and resulting in a successful pregnancy.'
+    },
+    {
+      ind: '7.	Previous IVF Attempts:',
+      data: 'The quality of embryos transferred during IVF, as determined by their morphology and developmental stage, is a significant predictor of success. Higher-quality embryos have a better chance of implanting and resulting in a successful pregnancy.'
+    },
+    {
+      ind: '8.	Lifestyle Factors:',
+      data: ' Certain lifestyle factors, such as smoking, alcohol consumption, obesity, and stress, can affect IVF success rates. Adopting healthy lifestyle habits may improve outcomes.'
+    },
+    {
+      ind: '9.	Reproductive Health Conditions: ',
+      data: '9.	Reproductive Health Conditions: Pre-existing reproductive health conditions, such as endometriosis, polycystic ovary syndrome (PCOS), and uterine abnormalities, can affect IVF success rates.'
+    },
+    {
+      ind: '10.	Clinic and Laboratory Factors:',
+      data: 'The fertility clinics expertise, the medical teams experience, and the laboratory facilities quality can influence IVF success rates.'
+    }
+  ]
   return (
     <section className="text-gray-600 z-1 mt-14 body-font">
       <div className="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
@@ -38,49 +85,16 @@ const SuccessRate = () => {
             Several factors influence the success rate of in vitro fertilization
             (IVF) treatment. These factors include:
           </div>
-          <div className='text-justify' >
-            <span className="font-semibold">1. Age: </span> Age is one of the most significant factors
-            affecting IVF success. Generally, the younger the woman, the higher
-            the chances of success, as fertility declines with age.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">2. Cause of Infertility: </span> The underlying cause of infertility, whether it's related to issues with the woman's reproductive system, the man's reproductive system, or both, can impact IVF success rates.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">3. Ovarian Reserve: </span>  The quality and quantity of a woman's eggs, known as ovarian reserve, can affect the success of IVF. Women with a higher ovarian reserve typically have better outcomes.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">4. Response to Ovarian Stimulation:</span> The woman's response to ovarian stimulation medications, which are used to induce the development of multiple eggs, can influence IVF success. A poor response may result in fewer eggs retrieved, affecting the chances of success.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">5. Semen Quality: </span> The quality of the man's sperm, including parameters such as sperm count, motility, and morphology, plays a crucial role in IVF success. Poor semen quality can decrease the chances of fertilization and embryo development.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">1. Age: </span> Age is one of the most significant factors
-            affecting IVF success. Generally, the younger the woman, the higher
-            the chances of success, as fertility declines with age.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">6. Embryo Quality: </span> The quality of embryos transferred during IVF, as determined by their morphology and developmental stage, is a significant predictor of success. Higher-quality embryos have a better chance of implanting and resulting in a successful pregnancy.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">6. Embryo Quality: </span> The quality of embryos transferred during IVF, as determined by their morphology and developmental stage, is a significant predictor of success. Higher-quality embryos have a better chance of implanting and resulting in a successful pregnancy.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold"> 7.	Previous IVF Attempts:</span> The number of previous IVF attempts can impact success rates. Women who have undergone multiple unsuccessful cycles may have lower chances of success in subsequent attempts.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">8.	Lifestyle Factors: </span>  Certain lifestyle factors, such as smoking, alcohol consumption, obesity, and stress, can affect IVF success rates. Adopting healthy lifestyle habits may improve outcomes.
-          </div>
-          <div className='text-justify' >
-            <span className="font-semibold">9.	Reproductive Health Conditions:  </span> 9.	Reproductive Health Conditions: Pre-existing reproductive health conditions, such as endometriosis, polycystic ovary syndrome (PCOS), and uterine abnormalities, can affect IVF success rates.
-          </div>
-          <div className="text-justify">
-            <span className="font-semibold">10.	Clinic and Laboratory Factors: </span>The fertility clinic's expertise, the medical team's experience, and the laboratory facilities' quality can influence IVF success rates.
-          </div>
+          {
+            successes.map((index) => (
+              <div className='text-justify' >
+                <span className="font-semibold">{index.ind} </span>{index.data}
+              </div>
+            ))
+          }
           <div className="flex justify-center">
             <Link to="bookappointment">
-              <button className="inline-flex text-white bg-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
+              <button className="inline-flex text-white bg-rose-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
                 Book Appoinment
               </button>
             </Link>
