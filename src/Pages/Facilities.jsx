@@ -110,7 +110,7 @@ const Facilities = () => {
           </p>
         </li>
         <li>
-        <h3 className="font-semibold text-xl my-3">9. IVM (In Vitro Maturation) - </h3> New ART Procedure: In vitro egg
+          <h3 className="font-semibold text-xl my-3">9. IVM (In Vitro Maturation) - </h3> New ART Procedure: In vitro egg
           maturation or IVM - Instead of removing fully mature eggs from the
           ovaries and then fertilizing them, IVF Specialists remove immature
           eggs, ripen them in a lab dish, and then add sperm. The rest of the
