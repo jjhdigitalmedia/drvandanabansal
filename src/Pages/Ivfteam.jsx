@@ -93,6 +93,20 @@ const IVFteam = () => {
                             </div>
                         ))
                     }
+                    <div className="flex justify-center space-x-4 p-8">
+                        {pics.map((card, index) => (
+                            <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white transform transition-all hover:scale-105 hover:shadow-2xl">
+                            <img src={card.photo} alt={card.name} className="w-full h-48 object-cover" />
+                            <div className="p-4">
+                              <h3 className="text-xl font-semibold text-gray-800 mb-2">{card.name}</h3>
+                              <p className="text-gray-600 mb-4">{card.desg}</p>
+                              <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none">
+                                Learn More
+                              </button>
+                            </div>
+                          </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

@@ -82,7 +82,7 @@ const Head = () => {
           {images.map((_, index) => (
             <button
               key={index}
-              className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-rose-700' : 'bg-white'}`}
+              className={`w-2 h-2 rounded-full ${currentIndex === index ? 'bg-rose-700' : 'bg-white'}`}
               onClick={() => setCurrentIndex(index)}
             />
           ))}
