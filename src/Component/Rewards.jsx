@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import speaker1 from "../assets/speaker1.jpg";
 import lab0 from "../assets/lab0.png";
 import patientweb from "../assets/patientweb.png";
-// import IVFvideo from '../assets/videos/IVFvideo.mp4';
+import qqq1 from '../assets/Banners/qqq1.jpg';
 
 export const Rewards = () => {
 
@@ -29,6 +29,10 @@ export const Rewards = () => {
   ]
   return (
     <>
+    <div className="-mb-16 md:-mb-80">
+        <img src={qqq1} alt="" />
+      </div>
+      <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto lg:mt-10"></div>
       <div className="flex text-xs justify-center flex-wrap bg-transparent lg:w-11/12 mx-auto mt-10">
         {RewarComponent.map((ind, k) => (
           <Link key={k} to={ind.link} className="bg-white m-2 h-auto rounded-2xl shadow-xl overflow-hidden max-w-72">
@@ -49,15 +53,6 @@ export const Rewards = () => {
         ))
         }
       </div>
-      {/* <div className="w-full md:px-52 py-10 bg-red-200 my-5">
-        <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
-          <source
-            src={IVFvideo}
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
     </>
   );
 };

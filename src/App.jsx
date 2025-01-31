@@ -8,6 +8,7 @@ function App() {
   return (
     <>
     {/* ca377e color theme for website */}
+    {/* font-family: Asap Condensed, sans-serif */}
       <NavigationB />
       <div className=" fixed top-52 -rotate-90 -ml-16 z-50">
         <a href="bookappointment">

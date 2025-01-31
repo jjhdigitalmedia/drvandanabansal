@@ -103,7 +103,7 @@ const Treatements = () => {
         </div>
       </div>
     </section>
-    <div className="w-full md:px-52 py-10 bg-red-50 my-5">
+    {/* <div className="w-full md:px-52 py-10 bg-red-50 my-5">
       <video className="h-11/12 m-auto w-screen border-rose-50 " controls>
         <source
           src={IVFvideo}
@@ -111,7 +111,7 @@ const Treatements = () => {
         />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> */}
   </>
   );
 };

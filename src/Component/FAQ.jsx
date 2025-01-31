@@ -82,11 +82,11 @@ export function FAQ() {
 
     return (
         <>
-            <h1 className="text-left ml-32 font-bold text-5xl text-slate-700">FAQs</h1>
+            <h1 className="text-center font-bold my-10 text-5xl text-slate-700">Frequently Asked Questions</h1>
             <div className=" text-center m-auto rounded-3xl faq" >
                 {qna.map((ind, k) => (
-                    <Accordion key={k} className="border-2 text-justify px-4 hover:bg-rose-50 border-none my-1 rounded-xl border-b-slate-600 bg-gradient-to-r from-rose-100" data-aos='fade-up' open={open === ind.i} icon={<Icon id={ind.i} open={open} />}>
-                        <AccordionHeader className="text-xs md:text-sm py-3" onClick={() => handleOpen(ind.i)}>{ind.q}</AccordionHeader>
+                    <Accordion key={k} className="text-justify px-4 hover:bg-gray-50 border-b-2 border-separate border-b-slate-100" data-aos='fade-up' open={open === ind.i} icon={<Icon id={ind.i} open={open} />}>
+                        <AccordionHeader className="text-sm md:text-md py-3" onClick={() => handleOpen(ind.i)}>{ind.q}</AccordionHeader>
                         <AccordionBody >
                             {ind.ana}
                         </AccordionBody>

@@ -1,12 +1,26 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import DrBANSAL from '../assets//DrBANSAL.jpg';
 import aboutvandana from '../assets/aboutvandana.jpg';
-import ArpitPic from '../assets/ArpitPic.png';
-import Anjula from '../assets/Anjula.jpg';
-import SaugatBose from '../assets//SaugatBose.png';
+import DrBansalPic from '../assets/IVFTeamPic/DrBansalPic.jpg';
+import DrVandanaPic from '../assets/IVFTeamPic/DrVandanaPic.jpg';
+import DrArpitPic from '../assets/IVFTeamPic/DrArpitPic.png';
+import DrAnjulaPic from '../assets/IVFTeamPic/DrAnjulaPic.png';
+import DrHarshitPic from '../assets/IVFTeamPic/DrHarshitPic.jpg';
+import DrSakshiPic from '../assets/IVFTeamPic/DrSakshiPic.jpg';
+import DrMoolNarayanPic from '../assets/IVFTeamPic/DrMoolNarayanPic.jpg';
+import BosePic from '../assets/IVFTeamPic/BosePic.png';
+// import Anjula from '../assets/Anjula.jpg';
+// import SaugatBose from '../assets//SaugatBose.png';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import gallery02 from '../assets/Gallery/gallery02.jpg';
 import gallery04 from '../assets/Gallery/gallery04.jpg';
+import embryo from "../assets/icons/Treatment/embryo.png";
+import lasehatching from "../assets/icons/Treatment/lasehatching.png";
+// import DoctorsBG1 from "../assets/DoctorsBG1.jpg";
+import qqq1 from '../assets/Banners/qqq1.jpg';
+import BgBanner1 from '../assets/BgBanner1.jpg';
+
 
 const pics = [
     {
@@ -24,14 +38,14 @@ const pics = [
 
     },
     {
-        photo: ArpitPic,
+        photo: DrArpitPic,
         name: 'Dr Arpit Bansal',
         qualification: 'MBBS, MS, FMAS, FCS',
         desg: 'Director',
 
     },
     {
-        photo: Anjula,
+        photo: DrAnjulaPic,
         name: 'Dr Anjula Sahay',
         qualification: 'MBBS, DGO, FCPS',
         desg: 'IVF Counselor',
@@ -45,7 +59,7 @@ const pics = [
 
     },
     {
-        photo: SaugatBose,
+        photo: BosePic,
         name: 'Mr Saugat Bose',
         qualification: 'M.Sc. (Biochemistry)',
         desg: 'Embryologist',
@@ -77,40 +91,113 @@ const pics = [
 const IVFteam = () => {
     return (
         <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4 ">
-                    {
-                        pics.map((ind) => (
-                            <div class="p-2 md:w-1/3">
-                                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src={ind.photo} alt="blog" />
-                                    <div class="p-2">
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{ind.name}</h1>
-                                        <p class="leading-relaxed mb-3">{ind.qualification}</p>
-                                        <p class="leading-relaxed mb-3">{ind.desg}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                    <div className="flex justify-center space-x-4 p-8">
-                        {pics.map((card, index) => (
-                            <div className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-white transform transition-all hover:scale-105 hover:shadow-2xl">
-                            <img src={card.photo} alt={card.name} className="w-full h-48 object-cover" />
-                            <div className="p-4">
-                              <h3 className="text-xl font-semibold text-gray-800 mb-2">{card.name}</h3>
-                              <p className="text-gray-600 mb-4">{card.desg}</p>
-                              <button className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none">
-                                Learn More
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+            <CardDemo />
         </section>
     )
 }
 
 export default IVFteam;
+
+// App.js
+// import React, { useState } from 'react';
+
+const CardDemo = () => {
+    // Example card data
+    const cardData = [
+        { id: 6, photo: DrBansalPic, title: 'Late Dr. Ashwini Kumar Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 1, photo: DrVandanaPic, title: 'Dr. Vandana Bansal', description: 'This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 3, photo: DrArpitPic, title: 'Dr. Arpit Bansal', description: 'This is card 3This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 2, photo: DrArpitPic, title: 'Mrs. Mamta Tiwari', description: 'This is card 2This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 4, photo: DrAnjulaPic, title: 'Dr. Anjula Sahay', description: 'This is card 4This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 5, photo: BosePic, title: 'Mr. Saugat Bose', description: 'This is card 5This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 5, photo: DrMoolNarayanPic, title: 'Dr. Mool Narayan Verma', description: 'This is card 5This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrHarshitPic, title: 'Dr Harshit Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrSakshiPic, title: 'Dr Sakshi Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrArpitPic, title: 'Dr Shipra', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrArpitPic, title: 'Dr Zainab', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrArpitPic, title: 'Ms. Jyoti', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+    ];
+
+    // State to control the current index of the cards
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const slideLeft = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? cardData.length - 3 : prevIndex - 1));
+    };
+
+    const slideRight = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === cardData.length - 3 ? 0 : prevIndex + 1));
+    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            slideRight(); // Automatically slide to the right
+        }, 5000); // 3000ms = 3 seconds
+
+        // Clear interval on component unmount
+        return () => clearInterval(interval);
+    }, []); // Empty dependency array ensures this runs only once when the component mounts
+
+
+
+    return (
+        <>
+            <img
+                src={qqq1}
+                alt='ghfhfg'
+                className="w-full h-auto object-cover rounded-lg sm:-mb-72"
+            />
+            <div className="container mx-auto -mt-20 py-8">
+                <div className="flex overflow-hidden">
+                    {/* Cards */}
+                    <div
+                        className="flex transition-transform duration-500 mb-20"
+
+                        style={{
+                            transform: `translateX(-${currentIndex * 100 / Math.min(cardData.length, 3)}%)`, // Adjust based on card count or max 3 cards
+                            width: `${Math.min(cardData.length, 3) * 100}%`, // Ensure max 3 cards displayed on large screens
+                        }}
+                    >
+                        {cardData.map((card) => (
+                            <div className="relative w-80 bg-white mx-2 shadow-md rounded-2xl p-6 flex justify-center items-center z-50 min-h-fit mt-28">
+                                {/* Circle Image */}
+                                <div className="absolute -top-28 left-1/2 transform -translate-x-1/2">
+                                    <div className="w-48 h-48 rounded-full border-4 border-white overflow-hidden shadow-md">
+                                        <img
+                                            src={card.photo}
+                                            alt="Profile"
+                                            className="object-cover w-full h-full"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="mt-20 text-center">
+                                    <h3 className="text-lg font-bold text-gray-800">{card.title}</h3>
+                                    <p className="text-gray-600 mt-2">
+                                        This is a description for the card. You can use this space to provide details.
+                                    </p>
+                                    <button className="mt-4 px-4 py-2 bg-pink-700 text-white rounded-lg hover:bg-pink-600 transition">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Left and Right Buttons */}
+                    <button
+                        onClick={slideLeft}
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full sm:hidden"
+                    >
+                        &lt;
+                    </button>
+                    <button
+                        onClick={slideRight}
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full sm:hidden"
+                    >
+                        &gt;
+                    </button>
+                </div>
+            </div>
+        </>
+    );
+}
+// export default CardDemo;

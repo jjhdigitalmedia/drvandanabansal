@@ -6,6 +6,9 @@ import GoogleReview from './GoogleReview'
 import About from './About'
 import {FAQ} from './FAQ'
 import Contact from './Contact'
+import VideoOfCentre from './VideoOfCentre'
+import Stats from './Stats'
+import Appointment from './Appointment'
 
 const Home = () => {
   return (
@@ -13,10 +16,13 @@ const Home = () => {
         <Head/>
         <Rewards/>
         <Treatements/>
+        <VideoOfCentre/>
         <About/>
         <GoogleReview/>
+        <Stats/>
         <Contact/>
         <FAQ />
+        <Appointment/>
     </div>
   )
 }

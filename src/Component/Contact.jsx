@@ -31,8 +31,8 @@ const Contact = () => {
     <section id='contact' className="text-gray-600 body-font relative">
       <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Book Your Appointment</h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base font-bold">If you're seeking treatment or have any queries, feel free to submit this form. I'll get back to you as soon as possible.</p>
+          <h1 className="text-center font-bold text-5xl my-10 text-slate-700">Book Your Appointment</h1>
+          <p className="lg:w-2/3 mx-auto mt-2 leading-relaxed text-base font-semibold">If you're seeking treatment or have any queries, feel free to submit this form. I'll get back to you as soon as possible.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form onSubmit={onSubmit} className="flex flex-wrap -m-2">
