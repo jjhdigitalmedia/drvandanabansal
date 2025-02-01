@@ -10,6 +10,7 @@ import DrHarshitPic from '../assets/IVFTeamPic/DrHarshitPic.jpg';
 import DrSakshiPic from '../assets/IVFTeamPic/DrSakshiPic.jpg';
 import DrMoolNarayanPic from '../assets/IVFTeamPic/DrMoolNarayanPic.jpg';
 import BosePic from '../assets/IVFTeamPic/BosePic.png';
+import DrShipraPic from '../assets/IVFTeamPic/DrShipraPic.jpg';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import qqq1 from '../assets/Banners/qqq1.jpg';
 
@@ -101,7 +102,7 @@ const CardDemo = () => {
         { id: 5, photo: DrMoolNarayanPic, title: 'Dr. Mool Narayan Verma', description: 'This is card 5This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 6, photo: DrHarshitPic, title: 'Dr Harshit Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 6, photo: DrSakshiPic, title: 'Dr Sakshi Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
-        { id: 6, photo: DrArpitPic, title: 'Dr Shipra', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 6, photo: DrShipraPic, title: 'Dr Shipra', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 6, photo: DrArpitPic, title: 'Dr Zainab', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 6, photo: DrArpitPic, title: 'Ms. Jyoti', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
     ];
