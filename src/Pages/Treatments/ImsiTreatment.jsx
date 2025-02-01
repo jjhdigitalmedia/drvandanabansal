@@ -1,7 +1,10 @@
 import React from "react";
+import PageBanner from "../PageBanner";
 
 const ImsiTreatment = () => {
   return (
+    <>
+    <PageBanner/>
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">IMSI Treatment</h1>
       <p>
@@ -67,6 +70,7 @@ const ImsiTreatment = () => {
         there are concerns about sperm quality or DNA integrity.{" "}
       </p>
     </div>
+    </>
   );
 };
 

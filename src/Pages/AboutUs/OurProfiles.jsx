@@ -1,7 +1,10 @@
 import React from 'react'
+import PageBanner from '../PageBanner'
 
 const OurProfiles = () => {
   return (
+    <>
+    <PageBanner/>
     <div className='w-11/12 md:w-4/5 m-auto pt-10 pb-24'>
       <h1 className='font-bold text-3xl my-3'>ARPIT IVF - Best IVF Centre in Prayagraj</h1>
 
@@ -18,6 +21,7 @@ const OurProfiles = () => {
       <p>Being pioneers in infertility and IVF treatment, for the last 25 years we are at the forefront of helping couples achieve their dreams of parenthood. It's not just about providing medical assistance but also offering hope and support to those who are struggling with fertility issues. Our contributions at both the state and national levels have been appreciated, and extending our expertise internationally further solidifies our reputation as a leader in the field.</p>
 
     </div>
+    </>
   )
 }
 

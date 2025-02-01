@@ -1,6 +1,6 @@
 import React from "react";
-import newlab2 from "../assets/newlab2.jpg";
 import { Link } from "react-router-dom";
+import PageBanner from "./PageBanner";
 
 const SuccessRate = () => {
 
@@ -51,57 +51,60 @@ const SuccessRate = () => {
     }
   ]
   return (
-    <section className="text-gray-600 z-1 mt-14 body-font">
-      <div className="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
-        {/* <div className="lg:max-w-lg lg:w-full align-top md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+    <>
+     <PageBanner/>
+      <section className="text-gray-600 z-1 mt-14 body-font">
+        <div className="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
+          {/* <div className="lg:max-w-lg lg:w-full align-top md:w-1/2 w-5/6 mb-10 md:mb-0 ">
           <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src={newlab2}
+          className="object-cover object-center rounded"
+          alt="hero"
+          src={newlab2}
           />
-        </div> */}
-        <div className="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:item zs-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-            Arpit Test Tube Baby Centre
-          </h1>
-          <div className="p-2 text-justify">
-            The success rate of Arpit Test Tube Baby Centre is over 65% due to
-            the long experience of the medical team, being pioneers in
-            infertility and IVF treatment, for the last 25 years we have been at
-            the forefront of helping couples achieve their dreams of parenthood
-            with regular upgradation of newer technologies. It's not just about
-            providing medical assistance but also offering hope and support to
-            those who are struggling with fertility issues.
-          </div>
-          <div className="p-2 text-justify">
-            Our IVF centre is known for its high success rate and for managing
-            multiple failed IVF cases. We follow a patient-friendly approach to
-            make infertile couples or pregnant women feel comfortable throughout
-            their treatment and care process. Arpit Test Tube Baby Centre has a
-            policy to maintain transparency, confidential patient data,
-            affordable pricing, and provide utmost care and support.
-          </div>
-          <div className="p-2 text-justify">
-            Several factors influence the success rate of in vitro fertilization
-            (IVF) treatment. These factors include:
-          </div>
-          {
-            successes.map((index) => (
-              <div className='text-justify' >
-                <span className="font-semibold">{index.ind} </span>{index.data}
-              </div>
-            ))
-          }
-          <div className="flex justify-center">
-            <Link to="bookappointment">
-              <button className="inline-flex text-white bg-rose-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
-                Book Appoinment
-              </button>
-            </Link>
+          </div> */}
+          <div className="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-8 flex flex-col md:item zs-start md:text-left items-center text-center">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+              Arpit Test Tube Baby Centre
+            </h1>
+            <div className="p-2 text-justify">
+              The success rate of Arpit Test Tube Baby Centre is over 65% due to
+              the long experience of the medical team, being pioneers in
+              infertility and IVF treatment, for the last 25 years we have been at
+              the forefront of helping couples achieve their dreams of parenthood
+              with regular upgradation of newer technologies. It's not just about
+              providing medical assistance but also offering hope and support to
+              those who are struggling with fertility issues.
+            </div>
+            <div className="p-2 text-justify">
+              Our IVF centre is known for its high success rate and for managing
+              multiple failed IVF cases. We follow a patient-friendly approach to
+              make infertile couples or pregnant women feel comfortable throughout
+              their treatment and care process. Arpit Test Tube Baby Centre has a
+              policy to maintain transparency, confidential patient data,
+              affordable pricing, and provide utmost care and support.
+            </div>
+            <div className="p-2 text-justify">
+              Several factors influence the success rate of in vitro fertilization
+              (IVF) treatment. These factors include:
+            </div>
+            {
+              successes.map((index) => (
+                <div className='text-justify' >
+                  <span className="font-semibold">{index.ind} </span>{index.data}
+                </div>
+              ))
+            }
+            <div className="flex justify-center">
+              <Link to="bookappointment">
+                <button className="inline-flex text-white bg-rose-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
+                  Book Appoinment
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

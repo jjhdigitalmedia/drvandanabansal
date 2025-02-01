@@ -1,7 +1,10 @@
 import React from "react";
+import PageBanner from "./PageBanner";
 
 const Facilities = () => {
   return (
+    <>
+     <PageBanner/>
     <div className="w-11/12 md:w-4/5 m-auto pt-10 pb-24">
       <h1 className="font-bold text-3xl my-3">
         Facilities available at our IVF centre
@@ -121,6 +124,7 @@ const Facilities = () => {
         </li>
       </ul>
     </div>
+    </>
   );
 };
 

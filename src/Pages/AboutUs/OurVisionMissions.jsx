@@ -1,7 +1,10 @@
 import React from 'react'
+import PageBanner from '../PageBanner'
 
 const OurVisionMissions = () => {
   return (
+    <>
+    <PageBanner/>
     <div className='w-11/12 md:w-4/5 m-auto pt-10 pb-24'>
       <h1 className='font-bold text-3xl my-3'> Our Vision and Mission </h1>
 
@@ -23,6 +26,7 @@ const OurVisionMissions = () => {
       <p>By adhering to these principles, we endeavour to be a beacon of hope and a trusted partner on the journey to parenthood.</p>
 
     </div>
+    </>
   )
 }
 

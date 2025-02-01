@@ -1,7 +1,10 @@
 import React from "react";
+import PageBanner from "../PageBanner";
 
 const HSGSonoTreatment = () => {
   return (
+    <>
+    <PageBanner/>
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">Hysterosalpingogram (HSG)</h1>
       <p>
@@ -66,6 +69,7 @@ const HSGSonoTreatment = () => {
         special dye through the cervix and into the uterus.
       </p>
     </div>
+    </>
   );
 };
 

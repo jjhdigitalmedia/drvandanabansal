@@ -9,9 +9,16 @@ import gallery07 from '../assets/Gallery/gallery07.jpg';
 import gallery09 from '../assets/Gallery/gallery09.png';
 import gallery10 from '../assets/Gallery/gallery10.png';
 import gallery11 from '../assets/Gallery/gallery11.png';
+import qqq1 from '../assets/Banners/qqq1.jpg';
 
 const Gallery = () => {
     return (
+        <>
+      <img
+        src={qqq1}
+        alt='ghfhfg'
+        className="w-full h-auto object-cover rounded-lg sm:-mb-72"
+      />
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto flex flex-wrap">
                 <div class="flex w-full mb-20 flex-wrap">
@@ -57,6 +64,7 @@ const Gallery = () => {
                 </div>
             </div>
         </section>
+        </>
     )
 }
 

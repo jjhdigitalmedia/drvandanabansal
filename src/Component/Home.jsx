@@ -9,10 +9,14 @@ import Contact from './Contact'
 import VideoOfCentre from './VideoOfCentre'
 import Stats from './Stats'
 import Appointment from './Appointment'
+import Arrow from './Arrow'
+import ContactButton from './ContactButton'
 
 const Home = () => {
   return (
     <div>
+      <ContactButton/>
+      <Arrow/>
         <Head/>
         <Rewards/>
         <Treatements/>

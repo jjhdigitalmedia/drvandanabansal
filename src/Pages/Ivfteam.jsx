@@ -10,17 +10,8 @@ import DrHarshitPic from '../assets/IVFTeamPic/DrHarshitPic.jpg';
 import DrSakshiPic from '../assets/IVFTeamPic/DrSakshiPic.jpg';
 import DrMoolNarayanPic from '../assets/IVFTeamPic/DrMoolNarayanPic.jpg';
 import BosePic from '../assets/IVFTeamPic/BosePic.png';
-// import Anjula from '../assets/Anjula.jpg';
-// import SaugatBose from '../assets//SaugatBose.png';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
-import gallery02 from '../assets/Gallery/gallery02.jpg';
-import gallery04 from '../assets/Gallery/gallery04.jpg';
-import embryo from "../assets/icons/Treatment/embryo.png";
-import lasehatching from "../assets/icons/Treatment/lasehatching.png";
-// import DoctorsBG1 from "../assets/DoctorsBG1.jpg";
 import qqq1 from '../assets/Banners/qqq1.jpg';
-import BgBanner1 from '../assets/BgBanner1.jpg';
-
 
 const pics = [
     {
@@ -97,9 +88,6 @@ const IVFteam = () => {
 }
 
 export default IVFteam;
-
-// App.js
-// import React, { useState } from 'react';
 
 const CardDemo = () => {
     // Example card data

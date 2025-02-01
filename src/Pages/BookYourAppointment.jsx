@@ -1,11 +1,12 @@
 import React from 'react'
 import Contact from '../Component/Contact';
+import PageBanner from './PageBanner';
 
 const BookYourAppointment = () => {
     return (
         <>
+        <PageBanner/>
             <div className='text-center pt-12'>
-
                 {/* <div className="lg:flex-grow mt-3 text-center m-auto md:w-4/5 lg:pl-8 md:pl-8 flex flex-col md:items-start md:text-left items-center">
                     <h1 className="title-font text-center m-auto sm:text-4xl text-3xl mb-4 font-medium text-gray-900"> Dr. Vandana Bansal
                     </h1>

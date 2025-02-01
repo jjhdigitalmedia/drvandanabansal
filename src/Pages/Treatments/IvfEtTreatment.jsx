@@ -1,7 +1,10 @@
 import React from "react";
+import PageBanner from "../PageBanner";
 
 const IvfEtTreatment = () => {
   return (
+    <>
+    <PageBanner/>
     <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
       <h1 className="font-bold text-3xl my-3">IVF-ET Treatment</h1>
       <p className="my-8">
@@ -66,6 +69,7 @@ const IvfEtTreatment = () => {
         may be required to achieve a successful pregnancy.
       </p>
     </div>
+    </>
   );
 };
 
