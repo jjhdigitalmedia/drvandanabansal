@@ -25,7 +25,7 @@ const ContactButton = () => {
           </div>
         )}
         <button
-          className="bg-rose-400 text-white p-3 rounded-full shadow-xl hover:bg-rose-800 transition-all"
+          className="bg-rose-400 text-white p-3 rounded-full shadow-lg hover:bg-rose-800 transition-all"
         >
           <FaBars size={20} />
         </button>

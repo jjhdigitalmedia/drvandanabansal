@@ -13,7 +13,7 @@ const Head = () => {
   const images = [
     BannerMain,
     BannerFinal,
-    slide051,
+    // slide051,
     slide0411,
     // Banner02Final,
   ];

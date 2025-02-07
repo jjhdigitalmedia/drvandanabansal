@@ -1,14 +1,10 @@
 import React from 'react'
-import qqq1 from '../assets/Banners/qqq1.jpg';
+import PageBanner from './PageBanner';
 
 const PatientsGuide = () => {
   return (
     <>
-      <img
-        src={qqq1}
-        alt='ghfhfg'
-        className="w-full h-auto object-cover rounded-lg sm:-mb-72"
-      />
+     <PageBanner/>
       <div className='w-11/12 md:w-4/5 m-auto pt-10 pb-24'>
         <h1 className='font-bold text-3xl my-3'> PatientsGuide</h1>
         <div className="my-8">

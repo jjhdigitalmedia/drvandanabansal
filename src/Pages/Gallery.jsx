@@ -1,5 +1,5 @@
 import React from 'react'
-import gallery01 from '../assets/Gallery/gallery01.jpg';
+// import gallery01 from '../assets/Gallery/gallery01.jpg';
 import gallery02 from '../assets/Gallery/gallery02.jpg';
 import gallery03 from '../assets/Gallery/gallery03.jpg';
 import gallery04 from '../assets/Gallery/gallery04.jpg';
@@ -9,16 +9,14 @@ import gallery07 from '../assets/Gallery/gallery07.jpg';
 import gallery09 from '../assets/Gallery/gallery09.png';
 import gallery10 from '../assets/Gallery/gallery10.png';
 import gallery11 from '../assets/Gallery/gallery11.png';
-import qqq1 from '../assets/Banners/qqq1.jpg';
+import A01 from '../assets/Gallery/A01.jpg';
+import B02 from '../assets/Gallery/B02.jpg';
+import PageBanner from './PageBanner';
 
 const Gallery = () => {
     return (
         <>
-      <img
-        src={qqq1}
-        alt='ghfhfg'
-        className="w-full h-auto object-cover rounded-lg sm:-mb-72"
-      />
+     <PageBanner/>
         <section class="text-gray-600 body-font">
             <div class="container px-5 py-24 mx-auto flex flex-wrap">
                 <div class="flex w-full mb-20 flex-wrap">
@@ -29,18 +27,18 @@ const Gallery = () => {
                 <div class="flex flex-wrap md:-m-2 -m-1">
                     <div class="flex flex-wrap w-1/2">
                         <div class="md:p-2 p-1 w-1/2">
-                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery07} />
+                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={B02} />
                         </div>
                         <div class="md:p-2 p-1 w-1/2">
-                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery02} />
+                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery06} />
                         </div>
                         <div class="md:p-2 p-1 w-full">
-                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={gallery03} />
+                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={gallery02} />
                         </div>
                     </div>
                     <div class="flex flex-wrap w-1/2">
                         <div class="md:p-2 p-1 w-full">
-                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={gallery06} />
+                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={A01} />
                         </div>
                         <div class="md:p-2 p-1 w-1/2">
                             <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery05} />
@@ -49,7 +47,7 @@ const Gallery = () => {
                             <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery04} />
                         </div>
                         <div class="md:p-2 p-1 w-1/2">
-                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery01} />
+                            <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery03} />
                         </div>
                         <div class="md:p-2 p-1 w-1/2">
                             <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery09} />
