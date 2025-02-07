@@ -20,30 +20,30 @@ const Footer = () => {
             <h1 className="font-bold text-2xl my-10">Arpi Test Tube Baby Centre</h1>
             <p>Arpit Test Tube Baby Centre is situasacrifice after creating thh falls once every 12 years, is always held in Prayagraj. An entire sea of humanity descends upon the riverside town during this time. </p>
             <div className="flex m-auto my-4">
-                  <Link
+                  <a
                     href="https://www.instagram.com/drvandanabansal_gynaecologist/"
                     target="_blank"
                   >
                     <FaInstagram className="mx-2 text-rose-700 text-xl" />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.facebook.com/vandana.bansal.33"
                     target="_blank"
                   >
                     <FaFacebook className="mx-2 text-rose-700 text-xl" />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.youtube.com/@DrVandanaBansal"
                     target="_blank"
                   >
                     <FaYoutube className="mx-2 text-rose-700 text-xl" />
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/"
                     target="_blank"
                   >
                     <FaLinkedinIn className="mx-2 text-rose-700 text-xl" />
-                  </Link>
+                  </a>
                 </div>
           </div>
 
@@ -53,42 +53,42 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='iuitreatment'className="text-black hover:text-white">
                   IUI
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='icsi'className="text-black hover:text-white">
                   ICSI
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='imsitreatment'className="text-black hover:text-white">
                   IMSI
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='ivfet'className="text-black hover:text-white">
                   IVF-ET
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='ivmtreatment'className="text-black hover:text-white">
                   IVM
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='embryomonitoring'className="text-black hover:text-white">
                   Embryo Monitoring
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='sonography'className="text-black hover:text-white">
                   Sonography
                 </Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-white">
+                <Link to='laserassisted' className="text-black hover:text-white">
                   Laser Assisted Hatching
                 </Link>
               </li>
@@ -103,7 +103,7 @@ const Footer = () => {
                 <Link to='/' className="text-black hover:text-red-600">Home</Link>
               </li>
               <li>
-                <Link to=''className="text-black hover:text-red-600">Patients Guide</Link>
+                <Link to='patientsguide'className="text-black hover:text-red-600">Patients Guide</Link>
               </li>
               <li>
                 <Link to='facilities'className="text-black hover:text-red-600">
@@ -114,7 +114,7 @@ const Footer = () => {
                 <Link to='ivfteam' className="text-black hover:tewhite">Our IVF Team</Link>
               </li>
               <li>
-                <Link to='achievementa'className="text-black hover:tewhite">Our Success Rate</Link>
+                <Link to='achievements'className="text-black hover:tewhite">Our Success Rate</Link>
               </li>
               <li>
                 <Link to='gallery'className="text-black hover:tewhite">Gallery</Link>
@@ -153,7 +153,7 @@ const Footer = () => {
               <span className="ml-3 text-xl">Best IVF Centre in Prayagraj</span>
             </Link> */}
             <p className="text-sm text-gray-700 sm:ml-6 sm:mt-0">
-              © 2024 All rights reserved by Arpit Test Tube Baby Centre
+              © 2024 All rights reserved Dr. Vandana Bansal
             </p>
           </div>
         </div>

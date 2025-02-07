@@ -20,7 +20,7 @@ const ContactButton = () => {
               <FaWhatsapp size={20} />
             </button>
             <button className="bg-rose-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-700 transition-all">
-              <FaPhone size={20} />
+              <FaPhone href="tel:+918564073613" size={20} />
             </button>
           </div>
         )}

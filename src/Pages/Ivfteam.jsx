@@ -10,6 +10,7 @@ import DrHarshitPic from '../assets/IVFTeamPic/DrHarshitPic.jpg';
 import DrSakshiPic from '../assets/IVFTeamPic/DrSakshiPic.jpg';
 import DrMoolNarayanPic from '../assets/IVFTeamPic/DrMoolNarayanPic.jpg';
 import BosePic from '../assets/IVFTeamPic/BosePic.png';
+import MrsMamtaPic from '../assets/IVFTeamPic/MrsMamtaPic.jpg';
 import DrShipraPic from '../assets/IVFTeamPic/DrShipraPic.jpg';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import qqq1 from '../assets/Banners/qqq1.jpg';
@@ -96,7 +97,7 @@ const CardDemo = () => {
         { id: 6, photo: DrBansalPic, title: 'Late Dr. Ashwini Kumar Bansal', description: 'This is card 6This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 1, photo: DrVandanaPic, title: 'Dr. Vandana Bansal', description: 'This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 3, photo: DrArpitPic, title: 'Dr. Arpit Bansal', description: 'This is card 3This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
-        { id: 2, photo: DrArpitPic, title: 'Mrs. Mamta Tiwari', description: 'This is card 2This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
+        { id: 2, photo: MrsMamtaPic, title: 'Mrs. Mamta Tiwari', description: 'This is card 2This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 4, photo: DrAnjulaPic, title: 'Dr. Anjula Sahay', description: 'This is card 4This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 5, photo: BosePic, title: 'Mr. Saugat Bose', description: 'This is card 5This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
         { id: 5, photo: DrMoolNarayanPic, title: 'Dr. Mool Narayan Verma', description: 'This is card 5This lorem is card 1This lorem is card 1This lorem is card 1This lorem isThis lorem is card 1This lorem is card 1Th card 1', Knowmore: 'Know more...' },
