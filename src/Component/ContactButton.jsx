@@ -14,13 +14,13 @@ const ContactButton = () => {
         {hover && (
           <div className="absolute bottom-0 right-12 px-4 flex gap-2 transition-all duration-300 ease-in-out">
             <button className="bg-rose-500 text-white p-2 rounded-full shadow-lg hover:bg-red-700 transition-all">
-              <FaEnvelope size={20} />
+            <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." target="_blank"> <FaEnvelope size={20} /></a>
             </button>
             <button className="bg-rose-500 text-white p-2 rounded-full shadow-lg hover:bg-green-700 transition-all">
-              <FaWhatsapp size={20} />
+            <a href="https://wa.me/message/JG2WQ7ZXYWU6B1" target="_blank"><FaWhatsapp size={20} /></a>
             </button>
             <button className="bg-rose-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-700 transition-all">
-              <FaPhone href="tel:+918564073613" size={20} />
+             <a href="tel:9151037784"> <FaPhone  size={20} /></a>
             </button>
           </div>
         )}

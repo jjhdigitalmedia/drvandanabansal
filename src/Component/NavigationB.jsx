@@ -190,32 +190,8 @@ function NavigationB() {
                 </a>
               </div>
             </div>
-            {/* <div
-                  onMouseEnter={() => setIsServicesDropdownOpen(true)}
-                  onMouseLeave={() => setIsServicesDropdownOpen(false)}
-                  className="absolute mt-5 w-48 bg-white rounded-md shadow-lg z-10">
-                  <button
-                    onClick={() => toggleNestedDropdown('ivf')}
-                    className="flex justify-between items-center px-4 py-2 text-gray-800 w-full text-left">
-                    Treatments
-                    <PlusIcon className="h-5 w-5 text-gray-600" />
-                  </button>
-                  {isNestedDropdownOpen.ivf && (
-                    <div className="ml-4">
-                      <button className="block px-4 py-2 text-gray-500">IUI</button>
-                      <button className="block px-4 py-2 text-gray-500">IVF ET</button>
-                      <button className="block px-4 py-2 text-gray-500">ICSI</button>
-                      <button className="block px-4 py-2 text-gray-500">IVM</button>
-                      <button className="block px-4 py-2 text-gray-500">IMSI</button>
-                      <button className="block px-4 py-2 text-gray-500">Embryo Monitoring</button>
-                      <button className="block px-4 py-2 text-gray-500">Laser Assisted Hatching</button>
-                    </div>
-                  )}
-                </div> */}
-            {/* </div>
-            )} */}
 
-            <Link to='facilities' className="text-black text-sm font-semibold">
+            <Link to='facilities' className="text-black  hover:border-b-2 hover:border-rose-600 transition-all ease-out duration-400 border-transparent text-sm font-semibold">
               Facilities
             </Link>
             <Link to='patientsguide' className="text-black text-sm font-semibold">
