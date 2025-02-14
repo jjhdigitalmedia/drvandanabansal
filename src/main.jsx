@@ -44,6 +44,8 @@ import BookYourAppointment from './Pages/BookYourAppointment.jsx'
 import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
 import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
+import VideoOfCentre from './Component/VideoOfCentre.jsx'
+import NotFound from './Pages/NotFound.jsx'
 
 
 const router = createBrowserRouter([
@@ -206,6 +208,11 @@ const router = createBrowserRouter([
       {
         path: 'guestspeaker',
         element: <GuestSpeaker />,
+        children: []
+      },
+      {
+        path: '*',
+        element: <NotFound/>,
         children: []
       },
     ]

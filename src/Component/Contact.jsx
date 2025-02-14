@@ -64,7 +64,8 @@ const Contact = () => {
               <button className="flex mx-auto text-white bg-rose-700 border-0 py-2 px-8 focus:outline-none hover:bg-rose-800 rounded text-lg">Submit</button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a className="text-rose-500 text-wrap">bansal.drvandana@gmail.com</a>
+              {/* <a className="text-rose-500 text-wrap">bansal.drvandana@gmail.com</a> */}
+              <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." className='text-rose-700' target="_blank">drvandanabansal921@gmail.com</a>
               <p className="leading-normal my-5">162, Jeevan Jyoti Hospital, Lowther Rd, Himmat Ganj, Bai Ka Bagh, Prayagraj, Uttar Pradesh 211003
               </p>
               <div className='flex m-auto w-fit'>
