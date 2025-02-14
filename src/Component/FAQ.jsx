@@ -82,7 +82,7 @@ export function FAQ() {
 
     return (
         <>
-            <h1 className="text-center font-bold my-10 text-5xl text-slate-700">Frequently Asked Questions</h1>
+            <h1 className="text-center font-bold my-10 text-5xl text-slate-700">Frequently Asked Questions ?</h1>
             <div className=" text-center m-auto rounded-3xl faq" >
                 {qna.map((ind, k) => (
                     <Accordion key={k} className="text-justify px-4 hover:bg-gray-50 border-b-2 border-separate border-b-slate-100" data-aos='fade-up' open={open === ind.i} icon={<Icon id={ind.i} open={open} />}>
