@@ -97,7 +97,7 @@ const SuccessRate = () => {
             <div className="flex justify-center">
               <Link to="bookappointment">
                 <button className="inline-flex text-white bg-rose-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
-                  Book Appoinment
+                  Book Appoinment!
                 </button>
               </Link>
             </div>
