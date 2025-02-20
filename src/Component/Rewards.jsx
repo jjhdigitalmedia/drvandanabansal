@@ -17,7 +17,7 @@ export const Rewards = () => {
     {
       link: 'patientsreview',
       img: patientweb,
-      heading: 'Testimonials',
+      heading: 'Testimonials...',
       contn: ' At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.'
     },
     {
