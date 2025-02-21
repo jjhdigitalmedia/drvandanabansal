@@ -11,13 +11,13 @@ export const Rewards = () => {
     {
       link: '',
       img: lab0,
-      heading: 'IVF Lab...',
+      heading: 'IVF Lab',
       contn: ' Dr. Vandana Bansal In simple terms IVF means fertilisation outside the body. After ovarian stimulation, eggs are collected from the womens ovaries and then fertilized by the husbands sperms in a petri dish or a test tube in a controlled laboratory environment.'
     },
     {
       link: 'patientsreview',
       img: patientweb,
-      heading: 'Testimonials.',
+      heading: 'Testimonials',
       contn: ' At our healthcare facility, patient satisfaction is at the core of everything we do. We believe that providing high-quality care goes beyond medical treatments and extends to ensuring a positive, and supportive experience for every patient.'
     },
     {
