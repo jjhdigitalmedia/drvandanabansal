@@ -5,11 +5,11 @@ import gallery03 from '../assets/Gallery/gallery03.jpg';
 import gallery04 from '../assets/Gallery/gallery04.jpg';
 import gallery05 from '../assets/Gallery/gallery05.jpg';
 import gallery06 from '../assets/Gallery/gallery06.jpg';
-import gallery07 from '../assets/Gallery/gallery07.jpg';
+// import gallery07 from '../assets/Gallery/gallery07.jpg';
 import gallery09 from '../assets/Gallery/gallery09.png';
 import gallery10 from '../assets/Gallery/gallery10.png';
 import gallery11 from '../assets/Gallery/gallery11.png';
-import A01 from '../assets/Gallery/A01.jpg';
+import A01s from '../assets/Gallery/A01s.jpg';
 import B02 from '../assets/Gallery/B02.jpg';
 import PageBanner from './PageBanner';
 
@@ -38,7 +38,7 @@ const Gallery = () => {
                     </div>
                     <div class="flex flex-wrap w-1/2">
                         <div class="md:p-2 p-1 w-full">
-                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={A01} />
+                            <img alt="gallery" class="w-full h-full object-cover object-center block" src={A01s} />
                         </div>
                         <div class="md:p-2 p-1 w-1/2">
                             <img alt="gallery" class="w-full object-cover h-full object-center block" src={gallery05} />
