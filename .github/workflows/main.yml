@@ -30,6 +30,6 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: build/  # Ensure this is the correct build output folder
+          local-dir: dist/  # Ensure this is the correct build output folder
           server-dir: public_html/
           dangerous-clean-slate: true  # Delete old files before uploading new ones
