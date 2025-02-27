@@ -1,4 +1,4 @@
-name: Deploy React to Hostinger  # This name appears in GitHub Actions
+name: Deploy React to Hostinger
 
 on:
   push:
@@ -30,5 +30,6 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: dist/
+          local-dir: dist/  # Ensure this is the correct build output folder
           server-dir: public_html/
+          dangerous-clean-slate: true  # Delete old files before uploading new ones
