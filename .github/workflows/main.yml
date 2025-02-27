@@ -36,5 +36,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: dist/  # Ensure this is the correct build output folder
-          server-dir: public_html/
+          server-dir: domains/drvandanabansal.in/public_html/
           dangerous-clean-slate: true  # Delete old files before uploading new ones
