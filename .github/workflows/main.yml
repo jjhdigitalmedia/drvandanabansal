@@ -24,6 +24,11 @@ jobs:
       - name: 🏗️ Build React App
         run: npm run build
 
+      - name: 🔍 Check Build Output
+        run: ls -l dist  # This will list the files inside the dist/ folder
+
+
+
       - name: 📤 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.1
         with:
