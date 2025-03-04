@@ -74,7 +74,7 @@ function NavigationB() {
           </div>
           <div className="hidden md:flex space-x-4 relative">
             <Link to='/' className="text-black text-sm font-semibold">Home</Link>
-            <Link
+            <Link to='/about'
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
               onMouseLeave={() => setIsAboutDropdownOpen(false)}
               onClick={toggleAboutDropdown}
@@ -89,16 +89,16 @@ function NavigationB() {
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 className="absolute mt-4 pt-3 w-48 bg-white rounded-md shadow-lg z-10"
               >
-                <Link to='about/founders' className="block px-4 py-2 text-gray-800 w-full text-left">
+                <Link to='/about/founders' className="block px-4 py-2 text-gray-800 w-full text-left">
                   Our Founder
                 </Link>
-                <Link to='about/profile' className="block px-4 py-2 text-gray-800 w-full text-left">
+                <Link to='/about/profile' className="block px-4 py-2 text-gray-800 w-full text-left">
                   Our Profile
                 </Link>
-                <Link to='about/vision-mission' className="block px-4 py-2 text-gray-800 w-full text-left">
+                <Link to='/about/vision-mission' className="block px-4 py-2 text-gray-800 w-full text-left">
                   Our Vision & Mission
                 </Link>
-                <Link to='about/spiritual-journey' className="block px-4 py-2 text-gray-800 w-full text-left">
+                <Link to='/about/spiritual-journey' className="block px-4 py-2 text-gray-800 w-full text-left">
                   Spiritual Journey
                 </Link>
               </div>
@@ -113,25 +113,25 @@ function NavigationB() {
                 <a className="dropdownn">
                   <Link to='treatments' className="dropbtnn">Treatments</Link>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="treatments/iui" onClick={navClose}>
+                    <Link to="/treatments/iui" onClick={navClose}>
                       IUI
                     </Link>
-                    <Link to="treatments/ivf-et" onClick={navClose}>
+                    <Link to="/treatments/ivf-et" onClick={navClose}>
                       IVF ET
                     </Link>
-                    <Link to="treatments/icsi" onClick={navClose}>
+                    <Link to="/treatments/icsi" onClick={navClose}>
                       ICSI
                     </Link>
-                    <Link to="treatments/ivm" onClick={navClose}>
+                    <Link to="/treatments/ivm" onClick={navClose}>
                       IVM
                     </Link>
-                    <Link to="treatments/imsi" onClick={navClose}>
+                    <Link to="/treatments/imsi" onClick={navClose}>
                       IMSI
                     </Link>
-                    <Link to="treatments/embryo-monitoring" onClick={navClose}>
+                    <Link to="/treatments/embryo-monitoring" onClick={navClose}>
                       Embryo Monitoring
                     </Link>
-                    <Link to="treatments/laser-assisted-hatching" onClick={navClose}>
+                    <Link to="/treatments/laser-assisted-hatching" onClick={navClose}>
                       Laser Assisted Hatching
                     </Link>
                   </div>
@@ -139,16 +139,16 @@ function NavigationB() {
                 <a className="dropdownn">
                   <button className="dropbtnn">Test & Evaluation</button>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="treatments/endocrine" onClick={navClose}>
+                    <Link to="/treatments/endocrine" onClick={navClose}>
                       Endocrine Profile
                     </Link>
-                    <Link to="treatments/sonography" onClick={navClose}>
+                    <Link to="/treatments/sonography" onClick={navClose}>
                       Sonography
                     </Link>
-                    <Link to="treatments/hsg-sono" onClick={navClose}>
+                    <Link to="/treatments/hsg-sono" onClick={navClose}>
                       HSG / SONO
                     </Link>
-                    <Link to="treatments/semen-bank" onClick={navClose}>
+                    <Link to="/treatments/semen-bank" onClick={navClose}>
                       Semen Bank
                     </Link>
                   </div>
@@ -156,16 +156,16 @@ function NavigationB() {
                 <a className="dropdownn">
                   <button className="dropbtnn">Other Services</button>
                   <div className="dropdown-contentt font-thin">
-                    <Link to="treatments/embryo-bank" onClick={navClose}>
+                    <Link to="/treatments/embryo-bank" onClick={navClose}>
                       Embryo Bank
                     </Link>
-                    <Link to="blastocyst" onClick={navClose}>
+                    <Link to="/treatments/blastocyst" onClick={navClose}>
                       Blastocyst Culture
                     </Link>
-                    <Link to="treatments/egg-donation" onClick={navClose}>
+                    <Link to="/treatments/egg-donation" onClick={navClose}>
                       Egg Donation
                     </Link>
-                    <Link to="treatments/cryopreservation" onClick={navClose}>
+                    <Link to="/treatments/cryopreservation" onClick={navClose}>
                       Cryopreservation
                     </Link>
                   </div>
@@ -173,23 +173,23 @@ function NavigationB() {
               </div>
             </div>
 
-            <Link to='facilities' className="text-black  hover:border-b-2 hover:border-rose-600 transition-all ease-out duration-400 border-transparent text-sm font-semibold">
+            <Link to='/facilities' className="text-black  hover:border-b-2 hover:border-rose-600 transition-all ease-out duration-400 border-transparent text-sm font-semibold">
               Facilities
             </Link>
-            <Link to='patients-guide' className="text-black text-sm font-semibold">
+            <Link to='/patients-guide' className="text-black text-sm font-semibold">
               Patients Guide
             </Link>
-            <Link to='achievements' className="text-black text-sm font-semibold">
+            <Link to='/achievements' className="text-black text-sm font-semibold">
               Success Rate
             </Link>
-            <Link to='ivf-team' className="text-black text-sm font-semibold">
+            <Link to='/ivf-team' className="text-black text-sm font-semibold">
               Our IVF Team
             </Link>
-            <Link to='gallery' className="text-black text-sm font-semibold">
+            <Link to='/gallery' className="text-black text-sm font-semibold">
               Gallery
             </Link>
           </div>
-          <Link to='book-appointment' className="hidden md:block text-white bg-pink-700 px-3 py-1 text-sm rounded-xl">
+          <Link to='/book-appointment' className="hidden md:block text-white bg-pink-700 px-3 py-1 text-sm rounded-xl">
             Contact Us
           </Link>
           <button
@@ -226,16 +226,16 @@ function NavigationB() {
                   onMouseLeave={() => setIsAboutDropdownOpen(false)}
                   className="ml-4"
                 >
-                  <Link to='about/founders' className="block px-4 py-2 text-gray-700">
+                  <Link to='/about/founders' className="block px-4 py-2 text-gray-700">
                     Our Founders
                   </Link>
-                  <Link to='about/profile' className="block px-4 py-2 text-gray-700">
+                  <Link to='/about/profile' className="block px-4 py-2 text-gray-700">
                     Our Profile
                   </Link>
-                  <Link to='about/vision-mission' className="block px-4 py-2 text-gray-700">
+                  <Link to='/about/vision-mission' className="block px-4 py-2 text-gray-700">
                     Our Vision & Mission
                   </Link>
-                  <Link to='about/spiritual-journey' className="block px-4 py-2 text-gray-700">
+                  <Link to='/about/spiritual-journey' className="block px-4 py-2 text-gray-700">
                     Spiritual Journey
                   </Link>
                 </div>
@@ -264,25 +264,25 @@ function NavigationB() {
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <Link to='treatments/iui' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/iui' className="block px-4 py-2 text-gray-500">
                         IUI
                       </Link>
-                      <Link to='treatments/ivf-et' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/ivf-et' className="block px-4 py-2 text-gray-500">
                         IVF ET
                       </Link>
-                      <Link to='treatments/icsi' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/icsi' className="block px-4 py-2 text-gray-500">
                         ICSI
                       </Link>
-                      <Link to='treatments/ivm' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/ivm' className="block px-4 py-2 text-gray-500">
                         IVM
                       </Link>
-                      <Link to='treatments/imsi' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/imsi' className="block px-4 py-2 text-gray-500">
                         IMSI
                       </Link>
-                      <Link to='treatments/embryo-monitoring' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/embryo-monitoring' className="block px-4 py-2 text-gray-500">
                         Embryo Monitoring
                       </Link>
-                      <Link to='treatments/laser-assisted-hatching' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/laser-assisted-hatching' className="block px-4 py-2 text-gray-500">
                         Laser Assisted Hatching
                       </Link>
                     </div>
@@ -304,16 +304,16 @@ function NavigationB() {
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <Link to='treatments/endocrineprofile' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/endocrineprofile' className="block px-4 py-2 text-gray-500">
                         Endocrine Profile
                       </Link>
-                      <Link to='treatments/sonography' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/sonography' className="block px-4 py-2 text-gray-500">
                         Sonography
                       </Link>
-                      <Link to='treatments/hsg-sno' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/hsg-sno' className="block px-4 py-2 text-gray-500">
                         HSG/SNO
                       </Link>
-                      <Link to='treatments/semen-bank' className="block px-4 py-2 text-gray-500">
+                      <Link to='/treatments/semen-bank' className="block px-4 py-2 text-gray-500">
                         Semen Bank
                       </Link>
                     </div>
@@ -335,38 +335,38 @@ function NavigationB() {
                   </button>
                   {isNestedDropdownOpen.ivf && (
                     <div className="ml-4">
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to="/treatments/embryo-bank" className="block px-4 py-2 text-gray-500">
                         Ebmryo Bank
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to="/treatments/blastocyst" className="block px-4 py-2 text-gray-500">
                         Blastocyst culture
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to="/treatments/egg-donation" className="block px-4 py-2 text-gray-500">
                         Egg Donation
                       </Link>
-                      <Link className="block px-4 py-2 text-gray-500">
+                      <Link to="/treatments/cryopreservation" className="block px-4 py-2 text-gray-500">
                         Cyopreservation
                       </Link>
                     </div>
                   )}
                 </div>
               )}
-              <Link to='facilities' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='/facilities' className="text-black py-3 border-b-2 font-semibold">
                 Facilities
               </Link>
-              <Link to='patients-guide' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='/patients-guide' className="text-black py-3 border-b-2 font-semibold">
                 Patients Guide
               </Link>
-              <Link to='achievments' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='/achievments' className="text-black py-3 border-b-2 font-semibold">
                 Success Rate
               </Link>
-              <Link to='ivf-team' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='/ivf-team' className="text-black py-3 border-b-2 font-semibold">
                 Our IVF Team
               </Link>
-              <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">
+              <Link to='/gallery' className="text-black py-3 border-b-2 font-semibold">
                 Gallery
               </Link>
-              <Link to='book-appointment' className="text-white text-center border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
+              <Link to='/book-appointment' className="text-white text-center border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
                 Contact Us
               </Link>
             </div>
