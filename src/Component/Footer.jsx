@@ -52,42 +52,42 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10">
               <li>
-                <Link to='iuitreatment' className="text-black hover:text-white">
+                <Link to='treatments/iui' className="text-black hover:text-white">
                   IUI
                 </Link>
               </li>
               <li>
-                <Link to='icsi' className="text-black hover:text-white">
+                <Link to='treatments/icsi' className="text-black hover:text-white">
                   ICSI
                 </Link>
               </li>
               <li>
-                <Link to='imsitreatment' className="text-black hover:text-white">
+                <Link to='treatments/imsi' className="text-black hover:text-white">
                   IMSI
                 </Link>
               </li>
               <li>
-                <Link to='ivfet' className="text-black hover:text-white">
+                <Link to='treatments/ivf-et' className="text-black hover:text-white">
                   IVF-ET
                 </Link>
               </li>
               <li>
-                <Link to='ivmtreatment' className="text-black hover:text-white">
+                <Link to='treatments/ivm' className="text-black hover:text-white">
                   IVM
                 </Link>
               </li>
               <li>
-                <Link to='embryomonitoring' className="text-black hover:text-white">
+                <Link to='treatments/embryo-monitoring' className="text-black hover:text-white">
                   Embryo Monitoring
                 </Link>
               </li>
               <li>
-                <Link to='sonography' className="text-black hover:text-white">
+                <Link to='treatments/sonography' className="text-black hover:text-white">
                   Sonography
                 </Link>
               </li>
               <li>
-                <Link to='laserassisted' className="text-black hover:text-white">
+                <Link to='treatments/lasera-ssisted-hatching' className="text-black hover:text-white">
                   Laser Assisted Hatching
                 </Link>
               </li>
@@ -102,7 +102,7 @@ const Footer = () => {
                 <Link to='/' className="text-black hover:text-red-600">Home</Link>
               </li>
               <li>
-                <Link to='patientsguide' className="text-black hover:text-red-600">Patients Guide</Link>
+                <Link to='patients-guide' className="text-black hover:text-red-600">Patients Guide</Link>
               </li>
               <li>
                 <Link to='facilities' className="text-black hover:text-red-600">
@@ -110,7 +110,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to='ivfteam' className="text-black hover:tewhite">Our IVF Team</Link>
+                <Link to='ivf-team' className="text-black hover:tewhite">Our IVF Team</Link>
               </li>
               <li>
                 <Link to='achievements' className="text-black hover:tewhite">Our Success Rate</Link>
@@ -121,7 +121,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full md:px-1">
-            <Link to='contact' className="font-bold text-2xl my-10">
+            <Link to='book-appointment' className="font-bold text-2xl my-10">
               Contact Info
             </Link>
             <nav className="list-none mb-10">
@@ -136,7 +136,7 @@ const Footer = () => {
             </a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0597529168485!2d81.84401430943906!3d25.43626577746421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb4375248d9b%3A0x385a6afccbc59834!2sDr.%20Vandana%20Bansal%20-%20Best%7CGynaecologist%20Doctors%7CHigh%20Risk%20Pregnancy%20Doctor%7CLaproscopy%20Doctor%7CInfertility%20Doctor%20in%20Allahabad!5e0!3m2!1sen!2sin!4v1720863709269!5m2!1sen!2sin" style={{ border: 0, width: '100%', marginTop: 10, borderRadius: 17 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <button className="bg-rose-700 mt-4 text-white py-2 px-6 rounded-3xl">
-              <Link to='bookappointment'>
+              <Link to='book-appointment'>
                 Book Appointment
               </Link>
             </button>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PageBanner from "./PageBanner";
+import { Helmet } from "react-helmet";
 
 const SuccessRate = () => {
 
@@ -52,7 +53,14 @@ const SuccessRate = () => {
   ]
   return (
     <>
-     <PageBanner/>
+      <Helmet>
+        <title>Our Success Rate</title>
+        <meta name="description" content="At Arpit Test Tube Baby Centre, we take pride in our outstanding success rate for IVF, IUI, and other fertility treatments. Led by Dr. Vandana Bansal, a renowned IVF expert, our clinic offers personalized care and advanced fertility solutions tailored to each patient’s needs. With cutting-edge technology and compassionate care, we have helped countless couples achieve their dreams of parenthood. Discover more about our proven success and how we can assist you in your fertility journey." />
+        <meta name="keywords" content="gynecologist, women's health, pregnancy care, PCOS treatment" />
+        <meta property="og:title" content="Best Gynecology Services" />
+        <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
+      </Helmet>
+      <PageBanner />
       <section className="text-gray-600 z-1 mt-14 body-font">
         <div className="container mx-auto  flex px-5 py-10 md:flex-row flex-col items-center">
           {/* <div className="lg:max-w-lg lg:w-full align-top md:w-1/2 w-5/6 mb-10 md:mb-0 ">
@@ -95,8 +103,8 @@ const SuccessRate = () => {
               ))
             }
             <div className="flex justify-center">
-              <Link to="bookappointment">
-                <button className="inline-flex text-white bg-rose-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
+              <Link to="/book-appointment">
+                <button className="inline-flex text-white bg-rose-600 border-0 py-2 px-6 focus:outline-none hover:bg-blue-900 rounded text-lg">
                   Book Appoinment!
                 </button>
               </Link>

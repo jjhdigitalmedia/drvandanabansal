@@ -1,9 +1,16 @@
 import React from 'react'
 import PageBanner from '../PageBanner'
-
+import { Helmet } from 'react-helmet'
 const OurProfiles = () => {
   return (
     <>
+     <Helmet>
+                <title>Our Profile | Arpit Test Tube Baby Centre </title>
+                <meta name="description" content="Book your appointment at Arpit Test Tube Baby Centre with Dr. Vandana Bansal, a leading IVF expert and gynaecologist. With extensive experience in treating infertility and offering advanced fertility solutions, Dr. Bansal provides compassionate care tailored to each patient’s needs. Whether you're looking for IVF, IUI, or advice on general women's health, Dr. Bansal ensures you receive the best care for your family-building goals. Schedule your consultation today and take the first step toward achieving parenthood." />
+                <meta name="keywords" content="gynecologist, women's health, pregnancy care, PCOS treatment, doctors for pregnancy" />
+                <meta property="og:title" content="Best Gynecology Services" />
+                <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
+            </Helmet>
     <PageBanner/>
     <div className='w-11/12 md:w-4/5 m-auto pt-10 pb-24'>
       <h1 className='font-bold text-3xl my-3'>ARPIT IVF - Best IVF Centre in Prayagraj</h1>

@@ -14,6 +14,7 @@ import MrsMamtaPic from '../assets/IVFTeamPic/MrsMamtaPic.jpg';
 import DrShipraPic from '../assets/IVFTeamPic/DrShipraPic.jpg';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import qqq1 from '../assets/Banners/qqq1.jpg';
+import { Helmet } from 'react-helmet';
 
 const pics = [
     {
@@ -131,6 +132,13 @@ const CardDemo = () => {
 
     return (
         <>
+            <Helmet>
+                <title>IVF team of Dr. Vandana Bansal</title>
+                <meta name="description" content="At Arpit Test Tube Baby Centre, our dedicated IVF team works under the expert leadership of Dr. Vandana Bansal, a renowned IVF specialist and gynaecologist. The IVF team includes highly skilled embryologists, fertility specialists, nurses, and support staff, all committed to providing compassionate care and the most advanced fertility treatments. Together, they ensure a personalized approach to every patient's needs, offering treatments such as IVF, IUI, egg freezing, and male infertility treatments. With years of experience and a focus on the latest technologies, our team works tirelessly to help couples achieve their dream of parenthood." />
+                <meta name="keywords" content="gynecologist, women's health, pregnancy care, PCOS treatment" />
+                <meta property="og:title" content="Best Gynecology Services" />
+                <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
+            </Helmet>
             <img
                 src={qqq1}
                 alt='ghfhfg'

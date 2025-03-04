@@ -9,7 +9,7 @@ const Appointment = () => {
         <span className='text-xl md:text-left text-white'>Don't Wait, Consult with Dr. Vandana Bansal Today!</span>
       </div>
 
-      <Link to='bookappointment' className='bg-white text-center h-fit align-middle my-10 py-3 md:w-72 w-48 mx-auto rounded-3xl text-2xl px-10'>Book Now</Link>
+      <Link to='book-appointment' className='bg-white text-center h-fit align-middle my-10 py-3 md:w-72 w-48 mx-auto rounded-3xl text-2xl px-10'>Book Now</Link>
 
     </div>
   )

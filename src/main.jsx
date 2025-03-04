@@ -46,6 +46,8 @@ import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
 import VideoOfCentre from './Component/VideoOfCentre.jsx'
 import NotFound from './Pages/NotFound.jsx'
+import { HelmetProvider } from 'react-helmet-async'
+import Treatements from './Component/Treatements.jsx'
 
 
 const router = createBrowserRouter([
@@ -62,11 +64,11 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: 'bookappointment',
+        path: 'book-appointment',
         element: <BookYourAppointment />,
       },
       {
-        path: 'ivfteam',
+        path: 'ivf-team',
         element: <IVFteam />,
       },
       {
@@ -79,7 +81,7 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'patientsguide',
+        path: 'patients-guide',
         element: <PatientsGuide />,
         children: []
       },
@@ -94,125 +96,130 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'patientsreview',
+        path: 'patients-review',
         element: <PatientReviewVideo />,
         children: []
       },
       {
-        path: 'ourfounder',
+        path: 'about/founders',
         element: <OurFounders />,
         children: []
       },
       {
-        path: 'ourprofile',
+        path: 'about/profile',
         element: <OurProfiles />,
         children: []
       },
       {
-        path: 'ourvisionmission',
+        path: 'about/vision-mission',
         element: <OurVisionMissions />,
         children: []
       },
       {
-        path: 'spiritualjourney',
+        path: 'about/spiritual-journey',
         element: <SpiritualJourney />,
         children: []
       },
       {
-        path: 'newsimages',
+        path: 'in-news',
         element: <NewsPaperCutting />,
         children: []
       },
 
       {
-        path: 'iuitreatment',
+        path: 'treatments',
+        element: <Treatements />,
+        children: []
+      },
+      {
+        path: 'treatments/iui',
         element: <IuiTreatment />,
         children: []
       },
       {
-        path: 'ivfet',
+        path: 'treatments/ivf-et',
         element: <IvfEtTreatment />,
         children: []
       },
       {
-        path: 'icsi',
+        path: 'treatments/icsi',
         element: <IcsiTreatment />,
         children: []
       },
       {
-        path: 'ivmtreatment',
+        path: 'treatments/ivm',
         element: <IvmTreatment />,
         children: []
       },
       {
-        path: 'imsitreatment',
+        path: 'treatments/imsi',
         element: <ImsiTreatment />,
         children: []
       },
       {
-        path: 'embryomonitoring',
+        path: 'treatments/embryo-monitoring',
         element: <EmbryoTreatment />,
         children: []
       },
       {
-        path: 'laserassisted',
+        path: 'treatments/laser-assisted-hatching',
         element: <LaserAssistedTreatment />,
         children: []
       },
       {
-        path: 'laparoscopy',
+        path: 'treatments/laparoscopy',
         element: <LaparoscopyTreatment />,
         children: []
       },
       {
-        path: 'endocrine',
+        path: 'treatments/endocrine',
         element: <EndocrineTreatment />,
         children: []
       },
       {
-        path: 'sonography',
+        path: 'treatments/sonography',
         element: <SonographyTreatment />,
         children: []
       },
       {
-        path: 'hsgsono',
+        path: 'treatments/hsg-sono',
         element: <HSGSonoTreatment />,
         children: []
       },
       {
-        path: 'semenbank',
+        path: 'treatments/semen-bank',
         element: <SemenBankTreatment />,
         children: []
       },
       {
-        path: 'embryobank',
+        path: 'treatments/embryo-bank',
         element: <EmbryoBankTreatment />,
         children: []
       },
       {
-        path: 'blastocyst',
+        path: 'treatments/blastocyst',
         element: <BlastocystTreatment />,
         children: []
       },
       {
-        path: 'eggdonation',
+        path: 'treatments/egg-donation',
         element: <EggDonationTreatment />,
         children: []
       },
       {
-        path: 'cryopreservation',
+        path: 'treatments/cryopreservation',
         element: <CryopreservationTreatment />,
         children: []
       },
 
       {
-        path: 'guestspeaker',
+        path: 'guest-speaker',
         element: <GuestSpeaker />,
         children: []
       },
       {
         path: '*',
-        element: <NotFound/>,
+        element: <NotFound />,
         children: []
       },
     ]
@@ -220,11 +227,14 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+
   <React.StrictMode>
-    <ParallaxProvider>
 
-      <RouterProvider router={router} />
+    <HelmetProvider>
+      <ParallaxProvider>
+        <RouterProvider router={router} />
+      </ParallaxProvider>
+    </HelmetProvider>
 
-    </ParallaxProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
