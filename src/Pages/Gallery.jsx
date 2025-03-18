@@ -19,7 +19,7 @@ const Gallery = () => {
         <>
             <Helmet>
                 <title>Gallery | Dr. Vandana Bansal</title>
-                <meta name="description" content="Get expert gynecology consultations and women's health care services." />
+                <meta name="description" content="Gallery of Arpit test tube baby centre own by Dr. Vandana Bansal. Get expert gynecology consultations and women's health care services." />
                 <meta name="keywords" content="gynecologist, women's health, pregnancy care, PCOS treatment" />
                 <meta property="og:title" content="Best Gynecology Services" />
                 <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
