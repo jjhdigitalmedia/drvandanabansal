@@ -1,8 +1,6 @@
 import React from 'react'
 import '../Style/neonStyle.css'
-import aboutvandana from '../assets/aboutvandana.jpg'
-import akBansal from '../assets/akBansal.jpg'
-import { Link } from 'react-router-dom'
+import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.jpg';
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const About = () => {
@@ -11,7 +9,7 @@ const About = () => {
             <section id='about' className="text-gray-600 w-11/12 mx-auto mt-14 body-font">
                 <div className="container mx-auto flex px-3 py- md:flex-row flex-col items-center">
                     <div className="pt-5 pb-0 md:w-96 w-5/6 ">
-                        <img className=" object-cover object-center roundedxl w-96" alt="hero" src={aboutvandana} />
+                        <img className=" object-cover object-center roundedxl w-96" alt="hero" src={DrVandanaBansalPhoto} />
                     </div>
                     <div className="lg:flex-grow md:rounded-r-2xl my-2 md:w-1/2 py-3 pr-1 md:bg-rose-50 lg:pl-8 md:pl-8 flex flex-col md:items-start text-center md:text-left items-center ">
                         <h1 className="title-font sm:text-3xl text-2xl md:mb-2 font-medium text-black"> Dr. Vandana Bansal

@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import BannerMain from "../assets/Banners/BannerMain.jpg";
 import BannerFinal from "../assets/BannerFinal.png";
 import slide0411 from "../assets/Banners/slide041.jpg";
-import slide051 from "../assets/Banners/slide051.jpg";
+// import slide051 from "../assets/Banners/slide051.jpg";
 import "../Style/Style.css";
 
 const Head = () => {
@@ -23,7 +23,7 @@ const Head = () => {
 
   // Function to go to the next image
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);  return nextIndex;
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);  return;
   };
 
   useEffect(() => {
