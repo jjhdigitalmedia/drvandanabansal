@@ -48,6 +48,7 @@ import VideoOfCentre from './Component/VideoOfCentre.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import { HelmetProvider } from 'react-helmet-async'
 import Treatements from './Component/Treatements.jsx'
+import Linktree from './Pages/LinkTree.jsx'
 
 
 const router = createBrowserRouter([
@@ -220,6 +221,11 @@ const router = createBrowserRouter([
       {
         path: '*',
         element: <NotFound />,
+        children: []
+      },
+      {
+        path: 'all-links',
+        element: <Linktree />,
         children: []
       },
     ]
