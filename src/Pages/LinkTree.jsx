@@ -1,4 +1,4 @@
-import { Mail, Instagram, Facebook, Youtube, Globe, Linkedin, Calendar } from "lucide-react";
+import { Mail, Instagram, Facebook, Youtube, Globe, Linkedin, Calendar, Phone } from "lucide-react";
 import { FcGoogle } from "react-icons/fc"; // Colored Google icon
 
 import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.jpg';
@@ -17,7 +17,7 @@ const links = [
   {
     name: "YouTube",
     icon: <Youtube className="mr-2 h-5 w-5" />,
-    url: "https://youtube.com/yourchannel",
+    url: "https://www.youtube.com/@DrVandanaBansal",
   },
   {
     name: "LinkedIn",
@@ -37,12 +37,12 @@ const links = [
   {
     name: "Feedback",
     icon: <FcGoogle size={25} className="mr-2 text-black h-5 w-5" />,
-    url: "mailto:bansal.drvandana@example.com",
+    url: "https://g.page/r/CTSYxcv8alo4EBM/review",
   },
   {
     name: "Book Appointment",
-    icon: <Calendar className="mr-2 text-black h-5 w-5" />,
-    url: "mailto:bansal.drvandana@example.com",
+    icon: <Phone className="mr-2 text-black h-5 w-5" />,
+    url: "tel:6390103002",
   },
 
 ];
