@@ -49,6 +49,7 @@ import NotFound from './Pages/NotFound.jsx'
 import { HelmetProvider } from 'react-helmet-async'
 import Treatements from './Component/Treatements.jsx'
 import Linktree from './Pages/LinkTree.jsx'
+import NavigationB from './Component/NavigationB.jsx'
 
 
 const router = createBrowserRouter([
@@ -223,13 +224,13 @@ const router = createBrowserRouter([
         element: <NotFound />,
         children: []
       },
-      {
-        path: 'all-links',
-        element: <Linktree />,
-        children: []
-      },
     ]
   },
+    {
+      path: 'all-links',
+      element:<> <NavigationB/> <Linktree /></>,
+      children: []
+    },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
