@@ -32,7 +32,12 @@ const links = [
   {
     name: "Email Me",
     icon: <Mail className="mr-2 h-5 w-5" />,
-    url: "mailto:bansal.drvandana@example.com",
+    url: "mailto:bansal.drvandana@gmail.com",
+  },
+  {
+    name: "Call Me",
+    icon: <Phone className="mr-2 text-black h-5 w-5" />,
+    url: "tel:6390103002",
   },
   {
     name: "Feedback",
@@ -41,7 +46,7 @@ const links = [
   },
   {
     name: "Book Appointment",
-    icon: <Phone className="mr-2 text-black h-5 w-5" />,
+    icon: <Calendar className="mr-2 text-black h-5 w-5" />,
     url: "tel:6390103002",
   },
 
