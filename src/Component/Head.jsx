@@ -1,27 +1,18 @@
 import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
-// import banner06 from "../assets/banner06.png";
-// import Banner02Final from "../assets/Banner02Final.png";
 import BannerMain from "../assets/Banners/BannerMain.jpg";
-import BannerFinal from "../assets/BannerFinal.png";
-import slide0411 from "../assets/Banners/slide041.jpg";
-// import slide051 from "../assets/Banners/slide051.jpg";
+import qwq from "../assets/Banners/qwq.jpg";
+import FirstBanner from "../assets/Banners/FirstBanner.png";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
+    qwq,
     BannerMain,
-    BannerFinal,
-    // slide051,
-    slide0411,
-    // Banner02Final,
+    FirstBanner
   ];
-  
-  // banner06,
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to go to the next image
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);  return;
   };

@@ -1,4 +1,3 @@
-import React from 'react'
 import PageBanner from '../PageBanner'
 import { Helmet } from 'react-helmet'
 const OurVisionMissions = () => {

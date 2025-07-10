@@ -103,7 +103,7 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'about/founders',
+        path: 'about/our-founders',
         element: <OurFounders />,
         children: []
       },
