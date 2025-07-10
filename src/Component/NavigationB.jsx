@@ -114,7 +114,7 @@ function NavigationB() {
                   <Link to='treatments' className="dropbtnn">Treatments</Link>
                   <div className="dropdown-contentt font-thin">
                     <Link to="/treatments/iui" onClick={navClose}>
-                      IUI
+                      IUIiiiii
                     </Link>
                     <Link to="/treatments/ivf-et" onClick={navClose}>
                       IVF ET
