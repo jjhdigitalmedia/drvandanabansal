@@ -53,6 +53,7 @@ function NavigationB() {
             {/* Phone: +91 6390103002, +91 9151037783 */}
             <a className="pr-3 text-sm text-white" href="tel:9151037784">Phone: +91 9151037784,</a>
             <a className="pr-6 text-sm text-white" href="tel:9151037783">+91 7705910037</a>
+            <a className="pr-6 text-sm text-white" href="tel:5322417248">+91 532 241 7248</a>
           </span>
           <span className="pr-8 text-sm text-white">
             <MdOutlineMail className="inline mr-2" /> 
