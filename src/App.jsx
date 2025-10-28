@@ -46,7 +46,9 @@ function App() {
           </button>
         </Link>
       </div>
+      <main id='main-content'>
       <Outlet />
+      </main>
       <Footer />
     </>
   )
