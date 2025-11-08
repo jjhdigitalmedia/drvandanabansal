@@ -99,13 +99,13 @@ const Footer = () => {
                   <span>Embryo Banking</span>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/treatments/mesa-microepididymal-sperm-aspiration">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
                     <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                   <span>MESA (Microedpididymal Sperm Aspiration)</span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="lg:w-1/6 md:w-1/3 w-full md:px-4">
