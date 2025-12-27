@@ -7,8 +7,9 @@ const About = () => {
     return (
         <>
             <Helmet>
-                <title>Dr. Vandana Bansal Allahabad</title>
-                <meta name="description" content="DR. VANDANA BANSAL – MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP is one of the renowned and Senior Gynaecologists,   High Risk Pregnancy Care, Infertility & IVF and Obstetricians of the state of Uttar Pradesh. She is specialized in Laparoscopy and Hysteroscopic Surgery – since 18 years. Besided, she is Director of 200-bedded, multi-speciality Jeevan Jyoti Hospital, Arpit Test Tube Baby Centre Allahabad. Jeevan Jyoti Hospital has completed 25th years in Oct-2013 Silver Jubilee celebration. Obstetric & Gynecology" />
+                <title>Dr Vandana Bansal Best Gynecologist in Prayagraj</title>
+                <meta name="description" content="Dr. Vandana Bansal – MBBS, DGO, MS, D.Phil (Gold Medalist), FCGP is a renowned and senior gynecologist and obstetrician in Uttar Pradesh, with extensive experience in high-risk pregnancy care, infertility management, and IVF. She has been specializing in advanced laparoscopic and hysteroscopic surgeries for over 18 years, offering minimally invasive solutions with excellent clinical outcomes. She is the Director of Jeevan Jyoti Hospital, a 200-bedded multi-specialty healthcare institution, and Arpit Test Tube Baby Centre, Allahabad (Prayagraj). Jeevan Jyoti Hospital proudly completed its Silver Jubilee (25 years) in October 2013, reflecting a long-standing commitment to quality patient care in obstetrics and gynecology." />
+                
                 <meta name="keywords" content="gynecologist, women's health, pregnancy care, IVF expert in allahabad, High risk pregnancy, Infertility treatment, senior gynaecologist, Laparoscopic surgeon, Hysteroscopic surgeon,  PCOS treatment, doctors for pregnancy" />
                 <meta property="og:title" content="Best Gynecology Services" />
                 <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
