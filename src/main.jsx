@@ -50,6 +50,12 @@ import { HelmetProvider } from 'react-helmet-async'
 import Treatements from './Component/Treatements.jsx'
 import Linktree from './Pages/LinkTree.jsx'
 import NavigationB from './Component/NavigationB.jsx'
+import MESA from './Pages/Treatments/MESA.jsx'
+import TESA from './Pages/Treatments/TESA.jsx'
+import OocyteCryopreservation from './Pages/Treatments/OocyteCryopreservation.jsx'
+import SemenCryopreservation from './Pages/Treatments/SemenCryopreservation.jsx'
+import EmbryoDonation from './Pages/Treatments/EmbryoDonation.jsx'
+import OocyteDonation from './Pages/Treatments/OocyteDonation.jsx'
 
 
 const router = createBrowserRouter([
@@ -194,12 +200,22 @@ const router = createBrowserRouter([
         children: []
       },
       {
+        path: 'treatments/oocyte-donation',
+        element: <OocyteDonation />,
+        children: []
+      },
+      {
+        path: 'treatments/embryo-donation',
+        element: <EmbryoDonation />,
+        children: []
+      },
+      {
         path: 'treatments/embryo-bank',
         element: <EmbryoBankTreatment />,
         children: []
       },
       {
-        path: 'treatments/blastocyst',
+        path: 'treatments/blastocyst-transfer',
         element: <BlastocystTreatment />,
         children: []
       },
@@ -211,6 +227,26 @@ const router = createBrowserRouter([
       {
         path: 'treatments/cryopreservation',
         element: <CryopreservationTreatment />,
+        children: []
+      },
+      {
+        path: 'treatments/semen-cryopreservation',
+        element: <SemenCryopreservation />,
+        children: []
+      },
+      {
+        path: 'treatments/oocyte-cryopreservation',
+        element: <OocyteCryopreservation />,
+        children: []
+      },
+      {
+        path: 'treatments/mesa-microepididymal-sperm-aspiration',
+        element: <MESA />,
+        children: []
+      },
+      {
+        path: 'treatments/tesa-testicular-sperm-aspiration-cryopreservation',
+        element: <TESA />,
         children: []
       },
 
@@ -226,11 +262,11 @@ const router = createBrowserRouter([
       },
     ]
   },
-    {
-      path: 'all-links',
-      element:<> <NavigationB/> <Linktree /></>,
-      children: []
-    },
+  {
+    path: 'all-links',
+    element: <> <NavigationB /> <Linktree /></>,
+    children: []
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
