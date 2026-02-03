@@ -73,7 +73,7 @@ function NavigationB() {
           </Link>
           <div className="hidden md:flex space-x-4 relative">
             <Link to='/' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Home</Link>
-            <Link
+            <Link to='about'
               className="text-black focus:outline-none font-semibold text-sm relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 "
             >
               About Dr. Vandana
