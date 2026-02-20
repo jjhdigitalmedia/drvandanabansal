@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Dr Vandana Bansal Best Gynecologist in Prayagraj</title>
+        <title>Dr Vandana Bansal | Best Gynecologist in Prayagraj</title>
         <meta name="description" content="Dr Vandana Bansal is a best gynecologist in Prayagraj and IVF expert, offering advanced fertility treatments, IVF, infertility care, and high-risk pregnancy management." />
         <meta name="keywords" content="gynecologist, jeevan jyoti hospital, women's health, pregnancy care, PCOS treatment, fertility treatment, best gyanecologist in prayagraj, IVF expert, infertility specialist, gynaecologist in Prayagraj, IVF doctor in Allahabad, best fertility clinic, egg freezing, PCOS treatment, IUI specialist, pregnancy care, women's reproductive health" />
         <meta property="og:title" content="Dr. Vandana Bansal: IVF Expert | Gynaecologist" />
