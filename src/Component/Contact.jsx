@@ -31,7 +31,7 @@ const Contact = () => {
     <section id='contact' className="text-gray-600 body-font relative">
       <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="text-center font-bold text-5xl my-10 text-slate-700">Book Your Appointment</h1>
+          <h1 className="text-center font-bold text-5xl my-10 text-pink-800">Book Your Appointment</h1>
           <p className="lg:w-2/3 mx-auto mt-2 leading-relaxed text-base font-semibold">If you're seeking treatment or have any queries, feel free to submit this form. I'll get back to you as soon as possible.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -61,25 +61,25 @@ const Contact = () => {
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-rose-700 border-0 py-2 px-8 focus:outline-none hover:bg-rose-800 rounded text-lg">Submit</button>
+              <button className="flex mx-auto text-white bg-pink-800 border-0 py-2 px-8 focus:outline-none hover:bg-pink-800 rounded text-lg">Submit</button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
               {/* <a className="text-rose-500 text-wrap">bansal.drvandana@gmail.com</a> */}
-              <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." className='text-rose-700' target="_blank">drvandanabansal921@gmail.com</a>
+              <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." className='text-pink-800' target="_blank">drvandanabansal921@gmail.com</a>
               <p className="leading-normal my-5">162, Jeevan Jyoti Hospital, Lowther Rd, Himmat Ganj, Bai Ka Bagh, Prayagraj, Uttar Pradesh 211003
               </p>
               <div className='flex m-auto w-fit'>
                 <a href="https://www.instagram.com/drvandanabansal_gynaecologist/" target='_blank'>
-                  <FaInstagram className='mx-2 text-rose-600 text-xl' />
+                  <FaInstagram className='mx-2 text-pink-800 text-xl' />
                 </a>
                 <a href="https://www.facebook.com/vandana.bansal.33" target='_blank'>
-                  <FaFacebook className='mx-2 text-rose-600 text-xl' />
+                  <FaFacebook className='mx-2 text-pink-800 text-xl' />
                 </a>
                 <a href="https://www.youtube.com/@DrVandanaBansal" target='_blank'>
-                  <FaYoutube className='mx-2 text-rose-600 text-xl' />
+                  <FaYoutube className='mx-2 text-pink-800 text-xl' />
                 </a>
                 <a href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/" target='_blank'>
-                  <FaLinkedinIn className='mx-2 text-rose-600 text-xl' />
+                  <FaLinkedinIn className='mx-2 text-pink-800 text-xl' />
                 </a>
               </div>
 

@@ -45,13 +45,13 @@ function NavigationB() {
   };
   return (
     <>
-      <div className=" hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-rose-700">
+      <div className=" hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
         <div>
           <span className="pr-8 text-sm text-white">
             <IoCallOutline className="inline mr-2" />
             <a className="pr-3 text-sm text-white" href="tel:9151037784">Phone: +91 9151037784,</a>
             {/* <a className="pr-6 text-sm text-white" href="tel:9151037783">+91 7705910037</a> */}
-            <a className="pr-6 text-sm text-white" href="tel:5322417248">+91 532 241 7248</a>
+            <a className="pr-6 text-sm text-white" href="tel:5322417248">+91 5322417248</a>
           </span>
           <span className="pr-8 text-sm text-white">
             <MdOutlineMail className="inline mr-2" />
@@ -68,7 +68,7 @@ function NavigationB() {
       <nav className="bg-white py-3 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           <Link to='/' className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap text-rose-600 "> Dr Vandana Bansal
+            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap text-pink-800 "> Dr Vandana Bansal
             </span>
           </Link>
           <div className="hidden md:flex space-x-4 relative">
@@ -136,7 +136,7 @@ function NavigationB() {
               Gallery
             </Link>
           </div>
-          <Link to='book-appointment' className="hidden md:block text-white bg-rose-700 px-3 py-1 text-sm rounded-xl">
+          <Link to='book-appointment' className="hidden md:block text-white bg-pink-800 px-3 py-1 text-sm rounded-xl">
             Contact Us
           </Link>
           <button
@@ -248,7 +248,7 @@ function NavigationB() {
               <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">
                 Gallery
               </Link>
-              <Link to='book-appointment' className="text-white text-center border-b-2 bg-red-700 px-2 py-2 my-5 rounded">
+              <Link to='book-appointment' className="text-white text-center border-b-2 bg-pink-800 px-2 py-2 my-5 rounded">
                 Contact Us
               </Link>
             </div>

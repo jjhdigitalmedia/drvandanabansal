@@ -11,7 +11,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <footer className="text-gray-600 bg-rose-800 body-font">
+      <footer className="text-gray-600 bg-pink-800 body-font">
         {/* <hr className="text-gray-300" /> */}
         <div className="container flex flex-wrap px-5 py-12 mx-auto ">
           {/* <div className="flex flex-wrap md:text-left order-first"> */}
