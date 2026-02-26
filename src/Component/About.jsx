@@ -16,10 +16,10 @@ const About = () => {
             </Helmet>
             <section id='about' className="text-gray-600 w-11/12 mx-auto mt-14 body-font">
                 <div className="container mx-auto flex px-3 py- md:flex-row flex-col items-center">
-                    <div className="pt-5 pb-0 md:w-96 w-5/6 ">
-                        <img className=" object-cover object-center roundedxl w-96" alt="hero" src={DrVandanaBansalPhoto} />
+                    <div className="pt- pb-0 md:w-96 w-5/6 ">
+                        <img className=" object-cover object-center rounded-3xl w-96" alt="hero" src={DrVandanaBansalPhoto} />
                     </div>
-                    <div className="lg:flex-grow md:rounded-r-2xl my-2 md:w-1/2 text-white py-3 pr-1 md:bg-pink-800 lg:pl-8 md:pl-8 flex flex-col md:items-start text-center md:text-left items-center ">
+                    <div className="lg:flex-grow md:rounded-3xl my-2 md:w-1/2 text-white py-3 pr-1 md:bg-pink-800 lg:pl-8 md:pl-8 flex flex-col md:items-start text-center md:text-left items-center ">
                         <h1 className="title-font sm:text-3xl text-2xl md:mb-2 font-medium text-white"> Dr. Vandana Bansal
                         </h1>
 

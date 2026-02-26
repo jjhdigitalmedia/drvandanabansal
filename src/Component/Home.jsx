@@ -41,7 +41,7 @@ const Home = () => {
       <ContactButton />
       <Arrow />
       <Head />
-      <Rewards />
+      {/* <Rewards /> */}
       <Treatements />
       <VideoOfCentre />
       <About />
