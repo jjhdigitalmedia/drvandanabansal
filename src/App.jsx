@@ -54,3 +54,42 @@ function App() {
   )
 }
 export default App
+
+// name: Deploy React to Hostinger
+
+// on:
+//   push:
+//     branches:
+//       - master
+
+// jobs:
+//   build-and-deploy:
+//     runs-on: ubuntu-latest
+
+//     steps:
+//       - name: 🚀 Checkout Repository
+//         uses: actions/checkout@v3
+
+//       - name: 🔧 Set up Node.js
+//         uses: actions/setup-node@v3
+//         with:
+//           node-version: 18
+
+//       - name: 📦 Install Dependencies
+//         run: npm install
+
+//       - name: 🏗️ Build React App
+//         run: npm run build
+
+//       - name: 🔍 Check Build Output
+//         run: ls -l dist  
+
+
+//       - name: 📤 Deploy via FTP
+//         uses: SamKirkland/FTP-Deploy-Action@4.3.1 
+//         with:
+//           server: ${{ secrets.FTP_HOST }}
+//           username: ${{ secrets.FTP_USER }}
+//           password: ${{ secrets.FTP_PASS }}
+//           local-dir: dist/
+//           server-dir: /domains/drvandanabansal.in/public_html/

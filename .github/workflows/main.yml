@@ -1,39 +1,25 @@
-name: Deploy React to Hostinger
+name: Auto Deploy to VPS
 
 on:
   push:
     branches:
-      - master
+      - main   # agar aapki branch master hai to master likho
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🚀 Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@v0.1.10
         with:
-          node-version: 18
-
-      - name: 📦 Install Dependencies
-        run: npm install
-
-      - name: 🏗️ Build React App
-        run: npm run build
-
-      - name: 🔍 Check Build Output
-        run: ls -l dist  # This will list the files inside the dist/ folder
-
-
-
-      - name: 📤 Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.1 
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: dist/  # Ensure this is the correct build output folder
-          server-dir: /domains/drvandanabansal.in/public_html/
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd /var/www/drvandanabansal
+            git pull origin main
+            npm install
+            npm run build
+            rm -rf /var/www/html/*
+            cp -r dist/* /var/www/html/
