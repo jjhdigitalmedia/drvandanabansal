@@ -3,7 +3,7 @@ name: Auto Deploy to VPS
 on:
   push:
     branches:
-      - main   # agar aapki branch master hai to master likho
+      - master   # agar aapki branch master hai to master likho
 
 jobs:
   deploy:
