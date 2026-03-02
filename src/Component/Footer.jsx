@@ -99,55 +99,9 @@ const Footer = () => {
                   <span>Embryo Banking</span>
                 </Link>
               </li>
-              {/* <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/treatments/mesa-microepididymal-sperm-aspiration">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
-                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  <span>MESA (Microedpididymal Sperm Aspiration)</span>
-                </Link>
-              </li> */}
             </ul>
           </div>
-          <div className="lg:w-1/6 md:w-1/3 w-full md:px-4">
-            <h2 className="text-white font-asap font-bold text-2xl mt-10 relative inline-block after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 ">
-              Test & Evaluation
-            </h2>
-            <ul class="text-gray-200 flex flex-col mt-2 space-y-2 text-base">
-              <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/test-evaluation/hormonal-analysis">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
-                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  <span>Hormonal Analysis</span>
-                </Link>
-              </li>
-              <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/test-evaluation/ai-semen-analysis">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
-                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  <span>AI Assisted Semen Analysis</span>
-                </Link>
-              </li>
-              <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/test-evaluation/surgery-for-male-infertility">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right">
-                    <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                  <span>Surgery for Male Infertility</span>
-                </Link>
-              </li>
-              <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/test-evaluation/prp-treatment">
-                  <FaArrowRight />
-                  <span>PRP Treatment of Endometrium & Ovary</span>
-                </Link>
-              </li>
-              <li>
-                <Link class="flex hover:text-white items-center hover:text-primary gap-1 hover:ml-1 duration-200" to="/test-evaluation/stemcell-therapy">
-                  <FaArrowRight />
-                  <span>Stem Cell Therapy</span>
-                </Link>
-              </li>
-            </ul>
-          </div>
+          {/* </div> */}
           <div className="lg:w-1/6 md:w-1/3 w-full md:px-4">
             <h2 className="text-white font-asap font-bold text-2xl mt-10 relative inline-block after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
               Important Links
@@ -237,9 +191,9 @@ const Footer = () => {
           <div className="container px-5 w-fit py-6 mx-auto 
             sm:flex-row flex-col">
             <p className="text-sm text-gray-700 sm:ml-6 sm:mt-0">
-              © 2025 Arpit Test Tube Baby Centre | All rights reserved
+              © 2026 Dr Vandana Bansal | All rights reserved
             </p>
-            <div className="text-center">
+            {/* <div className="text-center">
               <Link to='terms-and-condition'>
                 Term & Condition
               </Link>
@@ -247,7 +201,7 @@ const Footer = () => {
               <Link to="privacy-policy texy">
                 Privacy Policy
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
