@@ -22,6 +22,8 @@ const Home = () => {
         <meta name="keywords" content="gynecologist, jeevan jyoti hospital, women's health, pregnancy care, PCOS treatment, fertility treatment, best gyanecologist in prayagraj, IVF expert, infertility specialist, gynaecologist in Prayagraj, IVF doctor in Allahabad, best fertility clinic, egg freezing, PCOS treatment, IUI specialist, pregnancy care, women's reproductive health" />
         <meta property="og:title" content="Dr. Vandana Bansal: IVF Expert | Gynaecologist" />
         <meta property="og:description" content="Dr. Vandana Bansal is a leading IVF expert and gynaecologist, offering advanced fertility treatments and compassionate care to help couples achieve their dreams of parenthood." />
+        <meta property="og:site_name" content="Dr Vandana Bansal"></meta>
+        <meta name="application-name" content="Dr Vandana Bansal"></meta>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "http://schema.org",
