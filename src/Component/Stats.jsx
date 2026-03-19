@@ -102,7 +102,7 @@ function Stats() {
     <section ref={ref} className="bg-white py-16">
       <div className="bg-pink-800 text-white py-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <Counter label="Successful Pregnancies" value={10000} visible={visible} />
+          <Counter label="Successful Pregnancies" value={20000} visible={visible} />
           <Counter label="Years of Dedication" value={38} visible={visible} />
           <Counter label="High Risk Cases Managed" value={5000} visible={visible} />
           <Counter label="Trusted by Families" value={20000} visible={visible} />
