@@ -50,7 +50,7 @@ function NavigationB() {
           <span className="pr-8 text-sm text-white">
             <IoCallOutline className="inline mr-2" />
             <a className="pr-3 text-sm text-white" href="tel:9151037784">+91 9151037784,</a>
-            <a className="pr-6 text-sm text-white" href="tel:6390103002">+91 +91 6390103002</a>
+            <a className="pr-6 text-sm text-white" href="tel:6390103002">+91 6390103002</a>
           </span>
           <span className="pr-8 text-sm text-white">
             <MdOutlineMail className="inline mr-2" />
