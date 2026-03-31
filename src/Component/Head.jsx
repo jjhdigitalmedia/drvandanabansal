@@ -3,13 +3,15 @@ import "aos/dist/aos.css";
 import BannerMain from "../assets/Banners/BannerMain.jpg";
 import qwq from "../assets/Banners/qwq.jpg";
 import FirstBanner from "../assets/Banners/FirstBanner.png";
+import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
-    qwq,
+    DrVandanaIntro,
+    FirstBanner,
     BannerMain,
-    FirstBanner
+    qwq
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

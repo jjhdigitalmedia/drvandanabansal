@@ -67,7 +67,7 @@ function NavigationB() {
       <nav className="bg-white py-3 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           <Link to='/' className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap text-pink-800 "> Dr Vandana Bansal
+            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap font-[league-gothic] text-pink-800 "> Dr Vandana Bansal
             </span>
           </Link>
           <div className="hidden md:flex space-x-4 relative">

@@ -42,7 +42,7 @@ function App() {
       <div className=" fixed top-52 -rotate-90 -ml-16 z-50">
         <Link to="book-appointment">
           <button className="bg-pink-800 hover:bg-red-800 text-white py-2 mb-3 bg-opacity-90 px-6 rounded-b-2xl">
-            Book Appointmentt
+            Book Appointment
           </button>
         </Link>
       </div>
