@@ -100,7 +100,7 @@ function Stats() {
   
   return (
     <section ref={ref} className="bg-white py-16">
-      <div className="bg-pink-800 text-white py-10">
+      <div className="bg-pink-800 text-white py-5">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <Counter label="Successful Pregnancies" value={40000} visible={visible} />
           <Counter label="Years of Dedication" value={38} visible={visible} />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../Style/Style.css";
 import "../Style/neonStyle.css";
-// import LogoAB from '../assets/LogoAB.png'
+import DrVandanaLogo from '../assets/DrVandanaLogo.png'
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
@@ -64,10 +64,11 @@ function NavigationB() {
           </a>
         </div>
       </div>
-      <nav className="bg-white py-3 px-4 shadow-sm sticky top-0 z-20">
+      <nav className="bg-white py-1 px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
           <Link to='/' className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap font-[league-gothic] text-pink-800 "> Dr Vandana Bansal
+            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap font-[league-gothic] text-pink-800 ">
+              <img src={DrVandanaLogo} className="w-44 md:w-80" alt="" />
             </span>
           </Link>
           <div className="hidden md:flex space-x-4 relative">

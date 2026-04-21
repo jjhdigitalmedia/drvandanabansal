@@ -4,13 +4,17 @@ import BannerMain from "../assets/Banners/BannerMain.jpg";
 import qwq from "../assets/Banners/qwq.jpg";
 import FirstBanner from "../assets/Banners/FirstBanner.png";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
+import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
+import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
     DrVandanaIntro,
+    // DrVandanaIntroo,
     FirstBanner,
     BannerMain,
+    LaproscopyBanner,
     qwq
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

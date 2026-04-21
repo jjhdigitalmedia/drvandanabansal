@@ -82,7 +82,7 @@ const Treatements = () => {
 
       <div className="container px-1 md:px-5 py-16 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-pink-800">Treatments</h1>
+          <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-pink-800 font-serif">Treatments</h1>
           <p className="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a highly regarded medical professional known for expertise and compassionate care. With extensive experience, Dr. Bansal specializes in advanced treatments, combining cutting-edge technology with personalized care. Her commitment to excellence and patient well-being has earned him a reputation as a trusted figure in the medical community.</p>
         </div>
         <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
