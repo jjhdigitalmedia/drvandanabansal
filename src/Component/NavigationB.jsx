@@ -72,18 +72,18 @@ function NavigationB() {
             </span>
           </Link>
           <div className="hidden md:flex space-x-4 relative">
-            <Link to='/' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Home</Link>
+            <Link to='/' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Home</Link>
             <Link to='about'
-              className="text-black focus:outline-none font-semibold text-sm relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 "
+              className="text-black focus:outline-none font-semibold text-sm relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 "
             >
               About Dr. Vandana
             </Link>
             <div
-              className={`dropdown mt-0 font-semibold text-sm lg:inline-block lg:mt-0 text-black md:text-whi focus:outline-none relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 ${isOpen ? "py-3" : ""
+              className={`dropdown mt-0 font-semibold text-sm lg:inline-block lg:mt-0 text-black md:text-whi focus:outline-none relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 ${isOpen ? "py-3" : ""
                 }`}
             >
               Specialities
-              <div className="dropdown-content font-thin mt- bg-ros-800 w-72">
+              <div className="dropdown-content font-thin mt-1 rounded-lg bg-ros-800 w-72">
                 <Link to="treatments/iui" onClick={navClose} className="px-6 hover:text-black">
                   IUI
                 </Link>
@@ -126,13 +126,13 @@ function NavigationB() {
               </div>
             </div>
 
-            <Link to='news-paper-images' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+            <Link to='news-paper-images' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
               In News
             </Link>
-            <Link to='patients-guide' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+            <Link to='patients-guide' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
               Patients Guide
             </Link>
-            <Link to='gallery' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-400 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+            <Link to='gallery' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
               Gallery
             </Link>
           </div>
