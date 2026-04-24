@@ -64,12 +64,12 @@ function NavigationB() {
           </a>
         </div>
       </div>
-      <nav className="bg-white py-1 px-4 shadow-sm sticky top-0 z-20">
+      <nav className="bg-white py-2 md:py-1 px-1 md:px-4 shadow-sm sticky top-0 z-20">
         <div className="containe flex items-center justify-between">
-          <Link to='/' className="flex items-center flex-shrink-0 ml-6 lg:ml-10 lg:mr-32">
-            <span className="font-bold flex text-xl md:text-2xl md:font- font-asap font-[league-gothic] text-pink-800 ">
-              <img src={DrVandanaLogo} className="w-44 md:w-80" alt="" />
-            </span>
+          <Link to='/' className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32">
+            {/* <span className="font-bold flex text-xl md:text-2xl font-asap font-[league-gothic] text-pink-800 "> */}
+              <img src={DrVandanaLogo} className="w-52 md:w-80" alt="Dr Vandana Logo" />
+            {/* </span> */}
           </Link>
           <div className="hidden md:flex space-x-4 relative">
             <Link to='/' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Home</Link>
