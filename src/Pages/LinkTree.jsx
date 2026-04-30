@@ -1,7 +1,7 @@
 import { Mail, Instagram, Facebook, Youtube, Globe, Linkedin, Calendar, Phone } from "lucide-react";
 import { FcGoogle } from "react-icons/fc"; // Colored Google icon
 
-import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.jpg';
+import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.png';
 
 const links = [
   {

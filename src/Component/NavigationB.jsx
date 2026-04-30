@@ -49,7 +49,7 @@ function NavigationB() {
         <div>
           <span className="pr-8 text-sm text-white">
             <IoCallOutline className="inline mr-2" />
-            <a className="pr-3 text-sm text-white" href="tel:9151037784">+91 9151037784,</a>
+            <a className="pr-3 text-sm text-white" href="tel:9151037784">+91 9151037784</a>
             <a className="pr-6 text-sm text-white" href="tel:6390103002">+91 6390103002</a>
           </span>
           <span className="pr-8 text-sm text-white">
@@ -135,9 +135,12 @@ function NavigationB() {
             <Link to='gallery' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
               Gallery
             </Link>
+            <Link to='https://www.youtube.com/@DrVandanaBansal' target="_blank" className="text-sm bg-rose-700 text-white px-2 rounded-md font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+              Youtube Channel
+            </Link>
           </div>
-          <Link to='book-appointment' className="hidden md:block text-white bg-pink-800 px-3 py-1 text-sm rounded-xl">
-            Contact Us
+          <Link to='book-appointment' className="hidden md:block text-white bg-pink-800 px-3 py-2 text-sm rounded-xl">
+            Make an Appointment
           </Link>
           <button
             className="md:hidden text-black focus:outline-none"
@@ -153,7 +156,7 @@ function NavigationB() {
 
 
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white p-4">
+          <div className="lg:hidden bg-white p-4">
             <div className="flex flex-col space-y-2">
               <Link to='/' className="text-black py-3 border-b-2 font-semibold">
                 Home

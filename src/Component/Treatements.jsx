@@ -111,6 +111,12 @@
 
 import { useState } from "react";
 import LaparoPhoto from '../assets/LaparoPhoto.jpg'
+import Hysteroscopy from '../assets/Treatments/Hysteroscopy.jpeg'
+import VaginalLaserTreatment from '../assets/Treatments/VaginalLaserTreatment.jpeg'
+import LaserTreatment from '../assets/Treatments/LaserTreatment.jpeg'
+import UterineSeptumResection from '../assets/Treatments/UterineSeptumResection.jpeg'
+import DiagnosticHysteroscopy from '../assets/Treatments/DiagnosticHysteroscopy.jpg'
+import AdhesionRemoval from '../assets/Treatments/AdhesionRemoval.png'
 
 function Treatments() {
 
@@ -222,7 +228,7 @@ function Treatments() {
         {
           title: "Uterine polyp Removal",
           description: "Early detection of cervical cancer",
-          image: LaparoPhoto,
+          image: Hysteroscopy,
         },
         {
           title: "Pre IVF Hysterocopy Evaluation",
@@ -232,7 +238,7 @@ function Treatments() {
         {
           title: "Ahdesion Removal",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: AdhesionRemoval,
         },
         {
           title: "Abnormal Uterine Bleeding",
@@ -242,12 +248,12 @@ function Treatments() {
         {
           title: "Diagnostic Hysteroscopy",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: DiagnosticHysteroscopy,
         },
         {
           title: "Uterine Septum Resection",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: UterineSeptumResection,
         },
 
       ],
@@ -259,7 +265,7 @@ function Treatments() {
         {
           title: "Urine Leakage Treatment",
           description: "Early detection of cervical cancer",
-          image: LaparoPhoto,
+          image: LaserTreatment,
         },
         {
           title: "Vaginal Dryness",
@@ -269,7 +275,7 @@ function Treatments() {
         {
           title: "Vaginal Tightening",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: VaginalLaserTreatment,
         },
       ],
     },
@@ -279,17 +285,22 @@ function Treatments() {
       treatments: [
         {
           title: "Breast Health Checkup",
-          description: "Early detection of cervical cancer",
+          description: "Early detection of breast cancer and breast-related problems",
           image: LaparoPhoto,
         },
         {
           title: "Pap Smear Screening",
-          description: "Regular screening for breast health",
+          description: "Screening test for early detection of cervical cancer",
+          image: LaparoPhoto,
+        },
+        {
+          title: "Mammography",
+          description: "Advanced imaging test for early detection of breast cancer",
           image: LaparoPhoto,
         },
         {
           title: "HPV Vaccination",
-          description: "Regular screening for breast health",
+          description: "Prevention of cervical cancer caused by HPV infection",
           image: LaparoPhoto,
         },
       ],

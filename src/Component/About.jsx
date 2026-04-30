@@ -1,5 +1,6 @@
 import '../Style/neonStyle.css'
-import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.png';
+// import DrVandanaBansalPhoto from '../assets/DrVandanaBansalPhoto.png';
+import PhotoDrVandana from '../assets/PhotoDrVandana.jpeg';
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Helmet } from 'react-helmet'
 
@@ -17,7 +18,7 @@ const About = () => {
             <section id='about' className="text-gray-600 w-11/12 mx-auto mt-14 body-font">
                 <div className="container mx-auto flex px-3 py- md:flex-row flex-col items-center">
                     <div className="pt- pb-0 md:w-96 w-5/6 ">
-                        <img className=" object-cover object-center rounded-3xl w-96" alt="hero" src={DrVandanaBansalPhoto} />
+                        <img className=" object-cover object-center rounded-3xl w-96" alt="hero" src={PhotoDrVandana} />
                     </div>
                     <div className="lg:flex-grow md:rounded-3xl my-2 md:w-1/2 text-white py-3 pr-1 md:bg-pink-800 lg:pl-8 md:pl-8 flex flex-col md:items-start text-center md:text-left items-center ">
                         <h1 className="title-font sm:text-3xl text-2xl md:mb-2 font-medium text-white"> Dr. Vandana Bansal
