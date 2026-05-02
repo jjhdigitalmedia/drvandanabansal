@@ -112,26 +112,45 @@
 import { useState } from "react";
 import LaparoPhoto from '../assets/LaparoPhoto.jpg'
 import Hysteroscopy from '../assets/Treatments/Hysteroscopy.jpeg'
-import VaginalLaserTreatment from '../assets/Treatments/VaginalLaserTreatment.jpeg'
+import VaginalDryness from '../assets/Treatments/VaginalDryness.jpeg'
 import LaserTreatment from '../assets/Treatments/LaserTreatment.jpeg'
 import UterineSeptumResection from '../assets/Treatments/UterineSeptumResection.jpeg'
 import DiagnosticHysteroscopy from '../assets/Treatments/DiagnosticHysteroscopy.jpg'
 import AdhesionRemoval from '../assets/Treatments/AdhesionRemoval.png'
+import AbnormalUterineBleeding from '../assets/Treatments/AbnormalUterineBleeding.jpg'
+import VaginalTightening from '../assets/Treatments/VaginalTightening.jpeg'
+import HysteroscopyForIVF from '../assets/Treatments/HysteroscopyForIVF.png'
+import CesareanDelivery from '../assets/Treatments/CesareanDelivery.jpg'
+import RecurrentPregnancyLoss from '../assets/Treatments/RecurrentPregnancyLoss.png'
+import HighBPAndDiabetesInPregnancy from '../assets/Treatments/HighBPAndDiabetesInPregnancy.png'
+import NormalDelivery from '../assets/Treatments/NormalDelivery.png'
+import PretemLabour from '../assets/Treatments/PretemLabour.png'
+import Mammography from '../assets/Treatments/Mammography.png'
+import BreastHealthCheckup from '../assets/Treatments/BreastHealthCheckup.png'
+import HPVVaccination from '../assets/Treatments/HPVVaccination.png'
+
+
+// import FibroidRemovalSurgery from '../assets/Treatments/FibroidRemovalSurgery.jpeg'
 
 function Treatments() {
 
   const treatmentsData = [
     {
-      category: "Infertility & IVF",
+      category: "Infertility & IVF Treatment",
       key: "ivf",
       treatments: [
         {
-          title: "IVF Treatment",
+          title: "IVF",
           description: "Advanced fertility solutions to help you conceive",
           image: LaparoPhoto,
         },
         {
-          title: "IUI Treatment",
+          title: "IUI",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+        },
+        {
+          title: "ICSI",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
         },
@@ -171,32 +190,27 @@ function Treatments() {
         {
           title: "Cesarean (C-section Delivery",
           description: "Complete hormonal and cycle management",
-          image: LaparoPhoto,
+          image: CesareanDelivery,
         },
         {
           title: "High BP and Diabetes in Pregnancy",
           description: "Diagnosis and treatment of cycle issues",
-          image: LaparoPhoto,
+          image: HighBPAndDiabetesInPregnancy,
         },
         {
           title: "Pretem Labour",
           description: "Diagnosis and treatment of cycle issues",
-          image: LaparoPhoto,
+          image: PretemLabour,
         },
         {
           title: "Recurrent Pregnancy Loss",
           description: "Diagnosis and treatment of cycle issues",
-          image: LaparoPhoto,
-        },
-        {
-          title: "Twins & Multiple Pregnancy",
-          description: "Diagnosis and treatment of cycle issues",
-          image: LaparoPhoto,
+          image: RecurrentPregnancyLoss,
         },
         {
           title: "Normal Delivery",
           description: "Diagnosis and treatment of cycle issues",
-          image: LaparoPhoto,
+          image: NormalDelivery,
         },
       ],
     },
@@ -233,7 +247,7 @@ function Treatments() {
         {
           title: "Pre IVF Hysterocopy Evaluation",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: HysteroscopyForIVF,
         },
         {
           title: "Ahdesion Removal",
@@ -243,7 +257,7 @@ function Treatments() {
         {
           title: "Abnormal Uterine Bleeding",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: AbnormalUterineBleeding,
         },
         {
           title: "Diagnostic Hysteroscopy",
@@ -270,12 +284,12 @@ function Treatments() {
         {
           title: "Vaginal Dryness",
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: VaginalDryness,
         },
         {
           title: "Vaginal Tightening",
           description: "Regular screening for breast health",
-          image: VaginalLaserTreatment,
+          image: VaginalTightening,
         },
       ],
     },
@@ -286,7 +300,7 @@ function Treatments() {
         {
           title: "Breast Health Checkup",
           description: "Early detection of breast cancer and breast-related problems",
-          image: LaparoPhoto,
+          image: BreastHealthCheckup,
         },
         {
           title: "Pap Smear Screening",
@@ -296,12 +310,12 @@ function Treatments() {
         {
           title: "Mammography",
           description: "Advanced imaging test for early detection of breast cancer",
-          image: LaparoPhoto,
+          image: Mammography,
         },
         {
           title: "HPV Vaccination",
           description: "Prevention of cervical cancer caused by HPV infection",
-          image: LaparoPhoto,
+          image: HPVVaccination,
         },
       ],
     },
@@ -332,8 +346,8 @@ function Treatments() {
     <section className="bg-[#f2f2f2] py-14 px-4">
 
       {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-pink-800">
+      <div className="text-center mb-20">
+        <h2 className="text-3xl md:text-4xl font-serif text-pink-800">
           Our Treatments & Services
         </h2>
         <p className="text-gray-600 mt-3">

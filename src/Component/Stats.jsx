@@ -105,7 +105,7 @@ function Stats() {
           <Counter label="Successful Pregnancies" value={40000} visible={visible} />
           <Counter label="Years of Dedication" value={38} visible={visible} />
           <Counter label="High Risk Cases Managed" value={5000} visible={visible} />
-          <Counter label="Trusted by Families" value={40000} visible={visible} />
+          <Counter label="Successfull IVF Pregnancies" value={40000} visible={visible} />
         </div>
       </div>
 
