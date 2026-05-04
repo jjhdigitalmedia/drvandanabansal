@@ -128,6 +128,11 @@ import PretemLabour from '../assets/Treatments/PretemLabour.png'
 import Mammography from '../assets/Treatments/Mammography.png'
 import BreastHealthCheckup from '../assets/Treatments/BreastHealthCheckup.png'
 import HPVVaccination from '../assets/Treatments/HPVVaccination.png'
+import PapSmear from '../assets/Treatments/PapSmear.png'
+import OvarianCancer from '../assets/Treatments/OvarianCancer.png'
+import CervicalCancer from '../assets/Treatments/CervicalCancer.png'
+import UterusCancer from '../assets/Treatments/UterusCancer.png'
+import { Link } from "react-router-dom";
 
 
 // import FibroidRemovalSurgery from '../assets/Treatments/FibroidRemovalSurgery.jpeg'
@@ -305,7 +310,7 @@ function Treatments() {
         {
           title: "Pap Smear Screening",
           description: "Screening test for early detection of cervical cancer",
-          image: LaparoPhoto,
+          image: PapSmear,
         },
         {
           title: "Mammography",
@@ -325,18 +330,21 @@ function Treatments() {
       treatments: [
         {
           title: "Ovarian Cancer",
+          link: 'treatmetn/ovarian-cancer',
           description: "Early detection of cervical cancer",
-          image: LaparoPhoto,
+          image: OvarianCancer,
         },
         {
           title: "Cervial Cancer",
+          link: 'treatmetn/cervical-cancer',
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: CervicalCancer,
         },
         {
           title: "Uterus Cancer",
+          link: 'treatmetn/uterus-cancer',
           description: "Regular screening for breast health",
-          image: LaparoPhoto,
+          image: UterusCancer,
         },
       ],
     },
@@ -391,9 +399,9 @@ function Treatments() {
                   </p>
 
                   {/* Button */}
-                  <button className="mt-4 text-pink-800 font-medium hover:underline">
+                  <Link to='treatments/irregular-periods' className="mt-4 text-pink-800 font-medium hover:underline">
                     View More →
-                  </button>
+                  </Link>
                 </div>
 
               </div>

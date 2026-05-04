@@ -24,7 +24,7 @@ const Gallery = () => {
                 <meta property="og:title" content="Best Gynecology Services" />
                 <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
             </Helmet>
-            <PageBanner />
+            {/* <PageBanner /> */}
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-24 mx-auto flex flex-wrap">
                     <div class="flex w-full mb-20 flex-wrap">

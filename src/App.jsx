@@ -3,6 +3,7 @@ import { Link, Outlet }
   from 'react-router-dom'
 import NavigationB from './Component/NavigationB.jsx'
 import Footer from './Component/Footer.jsx'
+import CurrentRoute from './Component/CurrentRoute.jsx'
 // import Logo from "./assets/ArpitPic.png";
 // import ArpitPic from "./assets/ArpitPic.png";
 // import DesktopMenu from "./component/DesktopMenu.jsx";
@@ -39,6 +40,10 @@ function App() {
           </div>
         </nav>
       </header> */}
+       <div className="">
+        <CurrentRoute />
+        {/* <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' /> */}
+      </div>
       <div className=" fixed top-52 -rotate-90 -ml-16 z-50">
         <Link to="book-appointment">
           <button className="bg-pink-800 hover:bg-red-800 text-white py-2 mb-3 bg-opacity-90 px-6 rounded-b-2xl">

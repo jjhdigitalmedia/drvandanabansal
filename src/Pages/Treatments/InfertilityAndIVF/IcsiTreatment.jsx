@@ -1,5 +1,5 @@
 import React from "react";
-import PageBanner from "../../PageBanner";
+// import PageBanner from "../../PageBanner";
 import { Helmet } from "react-helmet";
 const IcsiTreatment = () => {
   return (
@@ -11,7 +11,7 @@ const IcsiTreatment = () => {
         <meta property="og:title" content="Best Gynecology Services" />
         <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
       </Helmet>
-      <PageBanner />
+      {/* <PageBanner /> */}
       <div className="w-11/12 md:w-4/5 m-auto pt-40 pb-24">
         <h1 className="font-bold text-3xl my-3">
           ICSI Treatment for Male Infertility

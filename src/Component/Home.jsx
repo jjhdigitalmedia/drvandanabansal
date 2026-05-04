@@ -12,6 +12,7 @@ import Appointment from './Appointment'
 import Arrow from './Arrow'
 import ContactButton from './ContactButton'
 import { Helmet } from "react-helmet-async";
+import CurrentRoute from './CurrentRoute'
 
 const Home = () => {
   return (
@@ -43,6 +44,10 @@ const Home = () => {
       <ContactButton />
       <Arrow />
       <Head />
+       {/* <div className="">
+        <CurrentRoute />
+        <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' />
+      </div> */}
       {/* <Rewards /> */}
       <Treatements />
       {/* <VideoOfCentre /> */}

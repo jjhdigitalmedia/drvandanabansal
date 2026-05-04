@@ -79,7 +79,7 @@ function About () {
         <img
           src={Stetho}
           alt="stethoscope"
-          className="absolute right-[-35px] bottom-[30px] w-96 opacity-20 pointer-events-none"
+          className="absolute right-[-30px] bottom-[30px] w-96 opacity-20 pointer-events-none"
         />
 
         {/* Left Image Section */}
@@ -113,7 +113,7 @@ function About () {
           </p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-start gap-1 md:gap-4 mt-3">
+          {/* <div className="flex justify-center md:justify-start gap-1 md:gap-4 mt-3">
             {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
               (Icon, index) => (
                 <div
@@ -124,7 +124,7 @@ function About () {
                 </div>
               )
             )}
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed">
