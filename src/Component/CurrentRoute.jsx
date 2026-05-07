@@ -31,7 +31,7 @@ const CurrentRoute = () => {
                 <span className="">{name}</span>
 
               ) : (
-                <Link to={path} className="text-rose-600 hover:underline">
+                <Link to={path} className="text-pink-700 hover:underline">
                   {name}
                 </Link>
               )}

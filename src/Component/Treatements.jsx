@@ -132,6 +132,9 @@ import PapSmear from '../assets/Treatments/PapSmear.png'
 import OvarianCancer from '../assets/Treatments/OvarianCancer.png'
 import CervicalCancer from '../assets/Treatments/CervicalCancer.png'
 import UterusCancer from '../assets/Treatments/UterusCancer.png'
+import IrregularPeriods from '../assets/Treatments/IrregularPeriods.png'
+import PCOSAdnPCOD from '../assets/Treatments/PCOSAdnPCOD.png'
+import LaparoscopicEndometriosis from '../assets/Treatments/LaparoscopicEndometriosis.jpg'
 import { Link } from "react-router-dom";
 
 
@@ -148,16 +151,19 @@ function Treatments() {
           title: "IVF",
           description: "Advanced fertility solutions to help you conceive",
           image: LaparoPhoto,
+          link:'treatments/cervical-cancer',
         },
         {
           title: "IUI",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
+          link:'treatments/cervical-cancer',
         },
         {
           title: "ICSI",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
+          link:'treatments/cervical-cancer',
         },
       ],
     },
@@ -168,22 +174,26 @@ function Treatments() {
         {
           title: "Irregular Periods",
           description: "Expert care for complicated pregnancies",
-          image: LaparoPhoto,
+          image: IrregularPeriods,
+          link: 'treatments/irregular-periods'
         },
         {
           title: "PCOS & PCOD",
           description: "Safe and comfortable vaginal delivery",
-          image: LaparoPhoto,
+          image: PCOSAdnPCOD,
+          link: 'treatments/pcos-pcod'
         },
         {
           title: "Menopause Management",
           description: "Safe and comfortable vaginal delivery",
           image: LaparoPhoto,
+          link: 'treatments/menopause-management'
         },
         {
-          title: "Heavy Bleeding",
+          title: "Heavy Menstrual Bleeding",
           description: "Safe and comfortable vaginal delivery",
           image: LaparoPhoto,
+          link: 'treatments/heavy-menstrual-bleeding'
         },
 
       ],
@@ -196,26 +206,31 @@ function Treatments() {
           title: "Cesarean (C-section Delivery",
           description: "Complete hormonal and cycle management",
           image: CesareanDelivery,
+          link: 'treatments/cesarean-section-delivery'
         },
         {
           title: "High BP and Diabetes in Pregnancy",
           description: "Diagnosis and treatment of cycle issues",
           image: HighBPAndDiabetesInPregnancy,
+          link: 'treatments/high-bp-and-diabetes-in-pregnancy'
         },
         {
           title: "Pretem Labour",
           description: "Diagnosis and treatment of cycle issues",
           image: PretemLabour,
+          link: 'treatments/pretem-labour'
         },
         {
           title: "Recurrent Pregnancy Loss",
           description: "Diagnosis and treatment of cycle issues",
           image: RecurrentPregnancyLoss,
+          link: 'treatments/recurrent-pregnancy-loss'
         },
         {
           title: "Normal Delivery",
           description: "Diagnosis and treatment of cycle issues",
           image: NormalDelivery,
+          link: 'treatments/normal-delivery'
         },
       ],
     },
@@ -227,16 +242,19 @@ function Treatments() {
           title: "Ovarian Cyst Surgery",
           description: "Minimally invasive keyhole surgery",
           image: LaparoPhoto,
+          link: 'treatments/ovarian-cyst-laparoscopic-surgery'
         },
         {
           title: "Fibroid Removal Surgeries",
           description: "Uterus procedures without cuts",
           image: LaparoPhoto,
+          link: 'treatments/fibroid-removal-laparoscopic-surgery'
         },
         {
           title: "Endometriosis",
           description: "Uterus procedures without cuts",
-          image: LaparoPhoto,
+          image: LaparoscopicEndometriosis,
+          link: 'treatments/endometriosis-treatment'
         },
       ],
     },
@@ -248,31 +266,37 @@ function Treatments() {
           title: "Uterine polyp Removal",
           description: "Early detection of cervical cancer",
           image: Hysteroscopy,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Pre IVF Hysterocopy Evaluation",
           description: "Regular screening for breast health",
           image: HysteroscopyForIVF,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Ahdesion Removal",
           description: "Regular screening for breast health",
           image: AdhesionRemoval,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Abnormal Uterine Bleeding",
           description: "Regular screening for breast health",
           image: AbnormalUterineBleeding,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Diagnostic Hysteroscopy",
           description: "Regular screening for breast health",
           image: DiagnosticHysteroscopy,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Uterine Septum Resection",
           description: "Regular screening for breast health",
           image: UterineSeptumResection,
+          link: 'treatments/cervical-cancer'
         },
 
       ],
@@ -285,16 +309,19 @@ function Treatments() {
           title: "Urine Leakage Treatment",
           description: "Early detection of cervical cancer",
           image: LaserTreatment,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Vaginal Dryness",
           description: "Regular screening for breast health",
           image: VaginalDryness,
+          link: 'treatments/cervical-cancer'
         },
         {
           title: "Vaginal Tightening",
           description: "Regular screening for breast health",
           image: VaginalTightening,
+          link: 'treatments/cervical-cancer'
         },
       ],
     },
@@ -306,21 +333,25 @@ function Treatments() {
           title: "Breast Health Checkup",
           description: "Early detection of breast cancer and breast-related problems",
           image: BreastHealthCheckup,
+          link: 'treatments/breast-health-checkup'
         },
         {
           title: "Pap Smear Screening",
           description: "Screening test for early detection of cervical cancer",
           image: PapSmear,
+          link: 'treatments/pap-smear-screening'
         },
         {
           title: "Mammography",
           description: "Advanced imaging test for early detection of breast cancer",
           image: Mammography,
+          link: 'treatments/mammography'
         },
         {
           title: "HPV Vaccination",
           description: "Prevention of cervical cancer caused by HPV infection",
           image: HPVVaccination,
+          link: 'treatments/hpv-vaccination'
         },
       ],
     },
@@ -330,19 +361,19 @@ function Treatments() {
       treatments: [
         {
           title: "Ovarian Cancer",
-          link: 'treatmetn/ovarian-cancer',
+          link: 'treatments/ovarian-cancer',
           description: "Early detection of cervical cancer",
           image: OvarianCancer,
         },
         {
           title: "Cervial Cancer",
-          link: 'treatmetn/cervical-cancer',
+          link: 'treatments/cervical-cancer',
           description: "Regular screening for breast health",
           image: CervicalCancer,
         },
         {
           title: "Uterus Cancer",
-          link: 'treatmetn/uterus-cancer',
+          link: 'treatments/uterus-cancer',
           description: "Regular screening for breast health",
           image: UterusCancer,
         },
@@ -399,7 +430,7 @@ function Treatments() {
                   </p>
 
                   {/* Button */}
-                  <Link to='treatments/irregular-periods' className="mt-4 text-pink-800 font-medium hover:underline">
+                  <Link to={item.link} className="mt-4 text-pink-800 font-medium hover:underline">
                     View More →
                   </Link>
                 </div>

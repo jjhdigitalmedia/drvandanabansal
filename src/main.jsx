@@ -74,6 +74,14 @@ import PretemLabourCare from './Pages/Treatments/HighRiskPregnancyAndMaternityCa
 import RecurrentPregnancyLoss from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/RecurrentPregnancyLoss.jsx'
 import TwinAndMultiplePregnancy from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/TwinAndMultiplePregnancy.jsx'
 
+import FibroidRemoval from './Pages/Treatments/LaparoscopicSurgery/FibroidRemoval.jsx'
+import EndometriosisTreatment from './Pages/Treatments/LaparoscopicSurgery/EndometriosisTreatment.jsx'
+import OvarianCystSurgery from './Pages/Treatments/LaparoscopicSurgery/OvarianCystSurgery.jsx'
+
+import BreastHealthCheckup from './Pages/Treatments/PreventiveWomensCare/BreastHealthCheckup.jsx'
+import HPVVaccination from './Pages/Treatments/PreventiveWomensCare/HPVVaccination.jsx'
+import PapSmearScreening from './Pages/Treatments/PreventiveWomensCare/PapSmearScreening.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -308,7 +316,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: 'treatments/cesarean-delivery',
+        path: 'treatments/cesarean-section-delivery',
         element: <CesareanDelivery/>,
         children: []
       },
@@ -333,10 +341,55 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'treatments/twin-and-multiple-pregnancy',
-        element: <TwinAndMultiplePregnancy/>,
+        path: 'treatments/ovarian-cyst-laparoscopic-surgery',
+        element: <OvarianCystSurgery/>,
         children: []
       },
+      {
+        path: 'treatments/fibroid-removal-laparoscopic-surgery',
+        element: <FibroidRemoval/>,
+        children: []
+      },
+      {
+        path: 'treatments/endometriosis-treatment',
+        element: <EndometriosisTreatment/>,
+        children: []
+      },
+      {
+        path: 'treatments/pap-smear-screening',
+        element: <PapSmearScreening/>,
+        children: []
+      },
+      {
+        path: 'treatments/breast-health-checkup',
+        element: <BreastHealthCheckup/>,
+        children: []
+      },
+      {
+        path: 'treatments/hpv-vaccination',
+        element: <HPVVaccination/>,
+        children: []
+      },
+      {
+        path: 'treatments/mammography',
+        element: <HPVVaccination/>,
+        children: []
+      },
+      // {
+      //   path: 'treatments/ovarian-cancer',
+      //   element: <OvarianCancer/>,
+      //   children: []
+      // },
+      // {
+      //   path: 'treatments/cervical-cancer',
+      //   element: <CervicalCancer/>,
+      //   children: []
+      // },
+      // {
+      //   path: 'treatments/uterus-cancer',
+      //   element: <UterusCancer/>,
+      //   children: []
+      // },
       // {
       //   path: 'treatments/',
       //   element: ,
