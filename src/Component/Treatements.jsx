@@ -132,7 +132,7 @@ import PapSmear from '../assets/Treatments/PapSmear.png'
 import OvarianCancer from '../assets/Treatments/OvarianCancer.png'
 import CervicalCancer from '../assets/Treatments/CervicalCancer.png'
 import UterusCancer from '../assets/Treatments/UterusCancer.png'
-import IrregularPeriods from '../assets/Treatments/IrregularPeriods.png'
+import IrregularPeriodsImage from '../assets/Treatments/IrregularPeriodsImage.png'
 import PCOSAdnPCOD from '../assets/Treatments/PCOSAdnPCOD.png'
 import LaparoscopicEndometriosis from '../assets/Treatments/LaparoscopicEndometriosis.jpg'
 import { Link } from "react-router-dom";
@@ -174,7 +174,7 @@ function Treatments() {
         {
           title: "Irregular Periods",
           description: "Expert care for complicated pregnancies",
-          image: IrregularPeriods,
+          image: IrregularPeriodsImage,
           link: 'treatments/irregular-periods'
         },
         {
