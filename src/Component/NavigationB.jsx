@@ -13,6 +13,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { CiMenuFries } from "react-icons/ci";
 // import { Button } from "@material-tailwind/react";
 function NavigationB() {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
@@ -67,7 +68,7 @@ function NavigationB() {
         <div className="containe flex items-center justify-between">
           <Link to='/' className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32">
             {/* <span className="font-bold flex text-xl md:text-2xl font-asap font-[league-gothic] text-pink-800 "> */}
-              <img src={DrVandanaLogo} className="w-52 md:w-80" alt="Dr Vandana Logo" />
+            <img src={DrVandanaLogo} className="w-52 md:w-80" alt="Dr Vandana Logo" />
             {/* </span> */}
           </Link>
           <div className="hidden md:flex space-x-4 relative">
@@ -148,7 +149,7 @@ function NavigationB() {
             {isMobileMenuOpen ? (
               <XMarkIcon className="h-6 w-6" />
             ) : (
-              <Bars3Icon className="h-6 w-6" />
+              <CiMenuFries className="h-6 w-6" />
             )}
           </button>
         </div>

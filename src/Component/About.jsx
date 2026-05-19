@@ -71,9 +71,9 @@ import { Link } from "react-router-dom";
 
 function About () {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[f2f2f2] md:p-6">
+    <div className="min-h-xsvh flex items-center justify-center bg-[f2f2f2] md:p-6 pb-0">
       
-      <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row items-center gap-20 overflow-hidden">
+      <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row items-center gap-20 overflow-hidden pb-0">
         
         {/* 🩺 Stethoscope Background Image */}
         <img
@@ -113,7 +113,7 @@ function About () {
           </p>
 
           {/* Social Icons */}
-          {/* <div className="flex justify-center md:justify-start gap-1 md:gap-4 mt-3">
+          <div className="flex justify-center md:justify-start gap-2 md:gap-4 mt-3">
             {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
               (Icon, index) => (
                 <div
@@ -124,7 +124,7 @@ function About () {
                 </div>
               )
             )}
-          </div> */}
+          </div>
 
           {/* Description */}
           <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed">

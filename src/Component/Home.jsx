@@ -52,7 +52,7 @@ const Home = () => {
       <Treatements />
       {/* <VideoOfCentre /> */}
       <About />
-      <GoogleReview />
+      {/* <GoogleReview /> */}
       <Stats />
       <Contact />
       <FAQ />

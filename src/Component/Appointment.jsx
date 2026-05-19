@@ -17,7 +17,7 @@ const Appointment = () => {
 
           <div className="rounded-3xl bg-[#f2f2f2] p-10 shadow-xl">
             <h3 className="mb-3 text-3xl font-bold text-pink-800">
-              Vandana Clinic
+              Dr. Vandana Bansal
             </h3>
             <p className="mb-6 text-lg text-gray-700">
               Expert Care for Women’s Health & Hormonal Wellness
