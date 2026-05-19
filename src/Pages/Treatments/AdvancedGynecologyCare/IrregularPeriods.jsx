@@ -1,9 +1,19 @@
 import IrregularPeriodsImage from '../../../assets/Treatments/IrregularPeriodsImage.png'
 import PeriodsImgae from '../../../assets/TreatmentPages/IrregularPeriods/PeriodsImgae.png'
 import IrregularCycle from '../../../assets/TreatmentPages/IrregularPeriods/IrregularCycle.jpg'
+import { Helmet } from 'react-helmet';
+
 
 function IrregularPeriods() {
   return (
+    <>
+    <Helmet>
+                <title>Irregular Periods Treatment in Prayagraj | Dr. Vandana Bansal Best Gynecologist in Prayagraj</title>
+                <meta name="description" content="Get expert treatment for irregular periods in Prayagraj with Dr. Vandana Bansal. Treatment available for PCOS, hormonal imbalance, missed periods, heavy bleeding, menstrual pain, and other women’s health problems." />
+                <meta name="keywords" content="irregular periods, irregular periods causes, irregular periods medical term, irregular periods symptoms, irregular periods treatment, irregular periods means, irregular periods ayurvedic medicine, irregular periods doctor in Prayagraj, irregular periods treatment in Prayagraj, PCOS treatment Prayagraj, hormonal imbalance treatment, periods problem specialist, menstrual disorder treatment, missed periods treatment, heavy periods treatment, best gynecologist in Prayagraj, Dr Vandana Bansal, women health specialist Prayagraj" />
+                <meta property="og:title" content="Best Gynecology Services" />
+                <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
+            </Helmet>
     <div className="bg-pin-50 text-gray-800">
       {/* Hero Section */}
       <section className="relative h-[85vh] overflow-hidden">
@@ -38,7 +48,7 @@ function IrregularPeriods() {
           </p>
 
           <p className="mb-10 leading-8 text-gray-700">
-            At Vandana Clinic, we provide comprehensive diagnosis and personalized treatment plans to help restore menstrual regularity, improve hormonal health, and enhance overall well-being.
+            At Vandana Bansal, we provide comprehensive diagnosis and personalized treatment plans to help restore menstrual regularity, improve hormonal health, and enhance overall well-being.
           </p>
 
           <img
@@ -362,10 +372,10 @@ function IrregularPeriods() {
           </div>
 
           <h2 className="mt-16 mb-8 text-4xl font-bold text-pink-800">
-            Why Choose Vandana Clinic?
+            Why Choose Vandana Bansal?
           </h2>
 
-          <div className="rounded-3xl bg-gradient-to-r from-pink-800 to-rose-100 p-10 text-white shadow-xl">
+          <div className="rounded-3xl bg-gradient-to-r from-pink-800 to-gray-100 p-10 text-white shadow-xl">
             <ul className="space-y-4 text-lg leading-8">
               <li>• Comprehensive evaluation of menstrual disorders</li>
               <li>• Advanced diagnostic facilities</li>
@@ -390,7 +400,7 @@ function IrregularPeriods() {
 
           <div className="rounded-3xl bg-rose-50 p-10 text-center shadow-xl">
             <h3 className="mb-4 text-3xl font-bold text-pink-800">
-              Vandana Clinic
+              Vandana Bansal
             </h3>
             <p className="text-xl text-gray-700">
               Expert Care for Women’s Health & Hormonal Wellness
@@ -399,6 +409,7 @@ function IrregularPeriods() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 export default IrregularPeriods;
