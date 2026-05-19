@@ -136,6 +136,7 @@ import IrregularPeriodsImage from '../assets/Treatments/IrregularPeriodsImage.pn
 import PCOSAdnPCOD from '../assets/Treatments/PCOSAdnPCOD.png'
 import LaparoscopicEndometriosis from '../assets/Treatments/LaparoscopicEndometriosis.jpg'
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 
 // import FibroidRemovalSurgery from '../assets/Treatments/FibroidRemovalSurgery.jpeg'
@@ -151,19 +152,19 @@ function Treatments() {
           title: "IVF",
           description: "Advanced fertility solutions to help you conceive",
           image: LaparoPhoto,
-          link:'treatments/cervical-cancer',
+          link: 'treatments/cervical-cancer',
         },
         {
           title: "IUI",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
-          link:'treatments/cervical-cancer',
+          link: 'treatments/cervical-cancer',
         },
         {
           title: "ICSI",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
-          link:'treatments/cervical-cancer',
+          link: 'treatments/cervical-cancer',
         },
       ],
     },
@@ -382,74 +383,83 @@ function Treatments() {
   ];
 
   return (
-    <section className="bg-[#f2f2f2] py-14 px-4">
+    <>
+      <Helmet>
+        <title>Gynecology, IVF & Infertility Treatments in Prayagraj | Dr. Vandana Bansal</title>
+        <meta name="description" content="Discover advanced gynecology, IVF, infertility, pregnancy, laparoscopy, hysteroscopy, PCOS, and women’s health treatments by Dr. Vandana Bansal in Prayagraj with personalized and compassionate care." />
+        <meta name="keywords" content="gynecology treatments in Prayagraj, IVF treatment Prayagraj, infertility specialist Prayagraj, gynecologist in Prayagraj, women health specialist, pregnancy care doctor, PCOS treatment, irregular periods treatment, laparoscopy surgeon Prayagraj, hysteroscopy treatment, fertility specialist Prayagraj, best gynecologist in Prayagraj, infertility treatment near me, female infertility doctor, high risk pregnancy specialist, ovarian cyst treatment, fibroid treatment, normal delivery doctor, Dr Vandana Bansal, IVF specialist Prayagraj" />
+        <meta property="og:title" content="Best Gynecology Services" />
+        <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
+      </Helmet>
+      <section className="bg-[#f2f2f2] py-14 px-4">
 
-      {/* Header */}
-      <div className="text-center mb-20">
-        <h2 className="text-3xl md:text-4xl font-serif text-pink-800">
-          Our Treatments & Services
-        </h2>
-        <p className="text-gray-600 mt-3">
-          Comprehensive care for every stage of a woman’s health journey
-        </p>
-      </div>
+        {/* Header */}
+        <div className="text-center mb-20">
+          <h2 className="text-3xl md:text-4xl font-serif text-pink-800">
+            Our Treatments & Services
+          </h2>
+          <p className="text-gray-600 mt-3">
+            Comprehensive care for every stage of a woman’s health journey
+          </p>
+        </div>
 
-      {/* All Categories */}
-      {treatmentsData.map((category) => (
-        <div key={category.key} className="mb-14">
+        {/* All Categories */}
+        {treatmentsData.map((category) => (
+          <div key={category.key} className="mb-14">
 
-          {/* Category Title */}
-          <h3 className="text-2xl font-semibold text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
-            {category.category}
-          </h3>
+            {/* Category Title */}
+            <h3 className="text-2xl font-semibold text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
+              {category.category}
+            </h3>
 
-          {/* Treatments Grid */}
-          <div className="flex flex-wrap gap-6">
-            {category.treatments.map((item, index) => (
+            {/* Treatments Grid */}
+            <div className="flex flex-wrap gap-6">
+              {category.treatments.map((item, index) => (
 
-              <div
-                key={index}
-                className="w-full sm:w-[48%] md:w-[31%] bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-              >
+                <div
+                  key={index}
+                  className="w-full sm:w-[48%] md:w-[31%] bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                >
 
-                {/* Image */}
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-48 w-full object-cover hover:scale-105 transition duration-300"
-                />
+                  {/* Image */}
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-48 w-full object-cover hover:scale-105 transition duration-300"
+                  />
 
-                {/* Content */}
-                <div className="p-4">
-                  <h4 className="text-lg font-semibold text-pink-800">
-                    {item.title}
-                  </h4>
+                  {/* Content */}
+                  <div className="p-4">
+                    <h4 className="text-lg font-semibold text-pink-800">
+                      {item.title}
+                    </h4>
 
-                  <p className="text-gray-600 text-sm mt-2">
-                    {item.description}
-                  </p>
+                    <p className="text-gray-600 text-sm mt-2">
+                      {item.description}
+                    </p>
 
-                  {/* Button */}
-                  <Link to={item.link} className="mt-4 text-pink-800 font-medium hover:underline">
-                    View More →
-                  </Link>
+                    {/* Button */}
+                    <Link to={item.link} className="mt-4 text-pink-800 font-medium hover:underline">
+                      View More →
+                    </Link>
+                  </div>
+
                 </div>
 
-              </div>
-
-            ))}
+              ))}
+            </div>
           </div>
+        ))}
+
+        {/* Bottom Line */}
+        <div className="text-center mt-10">
+          <p className="text-gray-600 italic">
+            Trusted by thousands of women for safe & advanced care
+          </p>
         </div>
-      ))}
 
-      {/* Bottom Line */}
-      <div className="text-center mt-10">
-        <p className="text-gray-600 italic">
-          Trusted by thousands of women for safe & advanced care
-        </p>
-      </div>
-
-    </section>
+      </section>
+    </>
   );
 }
 export default Treatments;
