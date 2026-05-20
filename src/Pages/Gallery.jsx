@@ -12,7 +12,7 @@ import gallery11 from '../assets/Gallery/gallery11.png';
 import A013 from '../assets/Gallery/A013.jpg';
 import B02 from '../assets/Gallery/B02.jpg';
 import PageBanner from './PageBanner';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Gallery = () => {
     return (

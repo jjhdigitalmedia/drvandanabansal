@@ -135,6 +135,8 @@ import UterusCancer from '../assets/Treatments/UterusCancer.png'
 import IrregularPeriodsImage from '../assets/Treatments/IrregularPeriodsImage.png'
 import PCOSAdnPCOD from '../assets/Treatments/PCOSAdnPCOD.png'
 import LaparoscopicEndometriosis from '../assets/Treatments/LaparoscopicEndometriosis.jpg'
+import EmbryoBanking from '../assets/Treatments/EmbryoBanking.jpg'
+import OocyteCryopreservation from '../assets/Treatments/OocyteCryopreservation.jpg'
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
@@ -149,7 +151,7 @@ function Treatments() {
       key: "ivf",
       treatments: [
         {
-          title: "IVF",
+          title: "IVF ET",
           description: "Advanced fertility solutions to help you conceive",
           image: LaparoPhoto,
           link: 'treatments/cervical-cancer',
@@ -162,6 +164,66 @@ function Treatments() {
         },
         {
           title: "ICSI",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "IMSI",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Blastocyst Transfer",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Semen Cryopreservation",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Oocyte Cryopreservation",
+          description: "Simple and effective fertility treatment",
+          image: OocyteCryopreservation,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Laser Assisted Hatching",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "MESA",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "TESA",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Embryo Banking",
+          description: "Simple and effective fertility treatment",
+          image: EmbryoBanking,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Embryo Donation",
+          description: "Simple and effective fertility treatment",
+          image: LaparoPhoto,
+          link: 'treatments/cervical-cancer',
+        },
+        {
+          title: "Oocyte Donation",
           description: "Simple and effective fertility treatment",
           image: LaparoPhoto,
           link: 'treatments/cervical-cancer',
@@ -439,7 +501,7 @@ function Treatments() {
                     </p>
 
                     {/* Button */}
-                    <Link to={item.link} className="mt-4 text-pink-800 font-medium hover:underline">
+                    <Link to={item.link} className="mt-4 text-pink-800 opacity-65 font-medium hover:underline">
                       View More →
                     </Link>
                   </div>

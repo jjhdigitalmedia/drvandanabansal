@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import PageBanner from "./PageBanner";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const SuccessRate = () => {
 

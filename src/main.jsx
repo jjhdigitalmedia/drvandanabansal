@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import About from './Component/About.jsx'
 import Contact from './Component/Contact.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { HelmetProvider } from 'react-helmet-async'
 // import NavigationB from './Component/NavigationB.jsx'
 // import Footer from './Component/Footer.jsx'
 // import Layout from './Layout.jsx'
@@ -29,10 +30,12 @@ import EndocrineTreatment from './Pages/Treatments/InfertilityAndIVF/EndocrineTr
 import BlastocystTreatment from './Pages/Treatments/InfertilityAndIVF/BlastocystTreatment.jsx'
 import CryopreservationTreatment from './Pages/Treatments/InfertilityAndIVF/CryopreservationTreatment.jsx'
 import LaparoscopyTreatment from './Pages/Treatments/InfertilityAndIVF/LaparoscopyTreatment.jsx'
-import OurFounders from './Pages/AboutUs/OurFounders.jsx'
-import SpiritualJourney from './Pages/AboutUs/SpiritualJourney.jsx'
-import OurVisionMissions from './Pages/AboutUs/OurVisionMissions.jsx'
-import OurProfiles from './Pages/AboutUs/OurProfiles.jsx'
+// import OurFounders from './Pages/AboutUs/OurFounders.jsx'
+// import SpiritualJourney from './Pages/AboutUs/SpiritualJourney.jsx'
+// import OurVisionMissions from './Pages/AboutUs/OurVisionMissions.jsx'
+// import OurProfiles from './Pages/AboutUs/OurProfiles.jsx'
+// import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
+// import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
 import Facilities from './Pages/Facilities.jsx'
 import IVFteam from './Pages/Ivfteam.jsx'
 import PatientsGuide from './Pages/PatientsGuide.jsx'
@@ -41,12 +44,9 @@ import SuccessRate from './Pages/SuccessRate.jsx'
 // import BookAppointment from './Component/BookAppointment.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
-import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
-import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
 import VideoOfCentre from './Component/VideoOfCentre.jsx'
 import NotFound from './Pages/NotFound.jsx'
-import { HelmetProvider } from 'react-helmet-async'
 import Treatements from './Component/Treatements.jsx'
 import Linktree from './Pages/LinkTree.jsx'
 import NavigationB from './Component/NavigationB.jsx'
@@ -92,6 +92,36 @@ const router = createBrowserRouter([
         path: '',
         element: <Home />,
       },
+      // {
+      //   path: 'patients-review',
+      //   element: <PatientReviewVideo />,
+      //   children: []
+      // },
+      // {
+      //   path: 'about/our-founders',
+      //   element: <OurFounders />,
+      //   children: []
+      // },
+      // {
+      //   path: 'about/profile',
+      //   element: <OurProfiles />,
+      //   children: []
+      // },
+      // {
+      //   path: 'about/vision-mission',
+      //   element: <OurVisionMissions />,
+      //   children: []
+      // },
+      // {
+      //   path: 'about/spiritual-journey',
+      //   element: <SpiritualJourney />,
+      //   children: []
+      // },
+      // {
+      //   path: 'guest-speaker',
+      //   element: <GuestSpeaker />,
+      //   children: []
+      // },
       {
         path: 'about',
         element: <About />,
@@ -129,38 +159,8 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'patients-review',
-        element: <PatientReviewVideo />,
-        children: []
-      },
-      {
-        path: 'about/our-founders',
-        element: <OurFounders />,
-        children: []
-      },
-      {
-        path: 'about/profile',
-        element: <OurProfiles />,
-        children: []
-      },
-      {
-        path: 'about/vision-mission',
-        element: <OurVisionMissions />,
-        children: []
-      },
-      {
-        path: 'about/spiritual-journey',
-        element: <SpiritualJourney />,
-        children: []
-      },
-      {
         path: 'in-news',
         element: <NewsPaperCutting />,
-        children: []
-      },
-      {
-        path: 'guest-speaker',
-        element: <GuestSpeaker />,
         children: []
       },
       

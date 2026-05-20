@@ -61,7 +61,7 @@ function Counter({ label, value, visible }) {
     if (!visible) return;
 
     let start = 0;
-    const duration = 1500;
+    const duration = 2500;
     const increment = value / (duration / 20);
 
     const timer = setInterval(() => {
@@ -79,7 +79,7 @@ function Counter({ label, value, visible }) {
   }, [visible, value]);
 
   return (
-    <div className="w-full md:w-1/4 text-center py-6 md:border-b md:border-b-0 md:border-r border-gray-300 last:border-b-0 md:last:border-r-0">
+    <div className="w-full md:w-1/4 text-center py-6 md:border-r border-gray-300 last:border-b-0 md:last:border-r-0">
       
       <h4 className="text-3xl md:text-4xl text-pink-600 font-bold font-serif">
         {count}+

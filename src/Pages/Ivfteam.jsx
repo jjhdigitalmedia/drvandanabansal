@@ -15,7 +15,7 @@ import MrsMamtaPic from '../assets/IVFTeamPic/MrsMamtaPic.jpg';
 import DrShipraPic from '../assets/IVFTeamPic/DrShipraPic.jpg';
 import gallery01 from '../assets/Gallery/gallery01.jpg';
 import qqq1 from '../assets/Banners/qqq1.jpg';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const pics = [
     {
