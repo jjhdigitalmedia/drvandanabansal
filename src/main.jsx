@@ -1,18 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import About from './Component/About.jsx'
-import Contact from './Component/Contact.jsx'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { HelmetProvider } from 'react-helmet-async'
-// import NavigationB from './Component/NavigationB.jsx'
-// import Footer from './Component/Footer.jsx'
-// import Layout from './Layout.jsx'
-// import Gallery from './Component/Gallery.jsx'
 
+import App from './App.jsx'
+import './index.css'
 import Home from './Component/Home.jsx'
+import About from './Component/About.jsx'
+import Contact from './Component/Contact.jsx'
 
 import IuiTreatment from './Pages/Treatments/InfertilityAndIVF/IuiTreatment.jsx'
 import IcsiTreatment from './Pages/Treatments/InfertilityAndIVF/IcsiTreatment.jsx'
@@ -30,18 +27,12 @@ import EndocrineTreatment from './Pages/Treatments/InfertilityAndIVF/EndocrineTr
 import BlastocystTreatment from './Pages/Treatments/InfertilityAndIVF/BlastocystTreatment.jsx'
 import CryopreservationTreatment from './Pages/Treatments/InfertilityAndIVF/CryopreservationTreatment.jsx'
 import LaparoscopyTreatment from './Pages/Treatments/InfertilityAndIVF/LaparoscopyTreatment.jsx'
-// import OurFounders from './Pages/AboutUs/OurFounders.jsx'
-// import SpiritualJourney from './Pages/AboutUs/SpiritualJourney.jsx'
-// import OurVisionMissions from './Pages/AboutUs/OurVisionMissions.jsx'
-// import OurProfiles from './Pages/AboutUs/OurProfiles.jsx'
-// import PatientReviewVideo from './Pages/Rewards/PatientReviewVideo.jsx'
-// import GuestSpeaker from './Pages/Rewards/GuestSpeaker.jsx'
+
 import Facilities from './Pages/Facilities.jsx'
 import IVFteam from './Pages/Ivfteam.jsx'
 import PatientsGuide from './Pages/PatientsGuide.jsx'
 import SuccessRate from './Pages/SuccessRate.jsx'
-// import BookYourAppointment from './Pages/BookYourAppointment.jsx'
-// import BookAppointment from './Component/BookAppointment.jsx'
+
 import Gallery from './Pages/Gallery.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
@@ -92,36 +83,6 @@ const router = createBrowserRouter([
         path: '',
         element: <Home />,
       },
-      // {
-      //   path: 'patients-review',
-      //   element: <PatientReviewVideo />,
-      //   children: []
-      // },
-      // {
-      //   path: 'about/our-founders',
-      //   element: <OurFounders />,
-      //   children: []
-      // },
-      // {
-      //   path: 'about/profile',
-      //   element: <OurProfiles />,
-      //   children: []
-      // },
-      // {
-      //   path: 'about/vision-mission',
-      //   element: <OurVisionMissions />,
-      //   children: []
-      // },
-      // {
-      //   path: 'about/spiritual-journey',
-      //   element: <SpiritualJourney />,
-      //   children: []
-      // },
-      // {
-      //   path: 'guest-speaker',
-      //   element: <GuestSpeaker />,
-      //   children: []
-      // },
       {
         path: 'about',
         element: <About />,
@@ -375,27 +336,6 @@ const router = createBrowserRouter([
         element: <HPVVaccination/>,
         children: []
       },
-      // {
-      //   path: 'treatments/ovarian-cancer',
-      //   element: <OvarianCancer/>,
-      //   children: []
-      // },
-      // {
-      //   path: 'treatments/cervical-cancer',
-      //   element: <CervicalCancer/>,
-      //   children: []
-      // },
-      // {
-      //   path: 'treatments/uterus-cancer',
-      //   element: <UterusCancer/>,
-      //   children: []
-      // },
-      // {
-      //   path: 'treatments/',
-      //   element: ,
-      //   children: []
-      // },
-
       {
         path: '*',
         element: <NotFound />,
@@ -410,7 +350,7 @@ const router = createBrowserRouter([
   },
 ])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.hydrateRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
 
