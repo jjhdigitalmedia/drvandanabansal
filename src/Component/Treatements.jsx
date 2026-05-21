@@ -461,7 +461,7 @@ function Treatments() {
             Treatments and Services
           </h2>
           <p className="text-gray-600 mt-3">
-            Comprehensive care for every stage of a woman’s health journey
+            Comprehensive care for every stage of a woman’s health journey.
           </p>
         </div>
 
