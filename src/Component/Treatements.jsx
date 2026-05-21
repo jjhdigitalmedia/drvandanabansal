@@ -458,7 +458,7 @@ function Treatments() {
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-serif text-pink-800">
-            Treatments & Services Provide
+            Treatments & Services.
           </h2>
           <p className="text-gray-600 mt-3">
             Comprehensive care for every stage of a woman’s health journey
