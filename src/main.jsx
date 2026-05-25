@@ -350,8 +350,8 @@ const router = createBrowserRouter([
   },
 ])
 
-ReactDOM.hydrateRoot(document.getElementById('root')).render(
-
+// ReactDOM.hydrateRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <HelmetProvider>
