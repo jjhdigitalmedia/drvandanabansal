@@ -137,6 +137,11 @@ import PCOSAdnPCOD from '../assets/Treatments/PCOSAdnPCOD.png'
 import LaparoscopicEndometriosis from '../assets/Treatments/LaparoscopicEndometriosis.jpg'
 import EmbryoBanking from '../assets/Treatments/EmbryoBanking.jpg'
 import OocyteCryopreservation from '../assets/Treatments/OocyteCryopreservation.jpg'
+import SemenCryopreservationPhoto from '../assets/Treatments/SemenCryopreservationPhoto.png'
+import IVFETPic from '../assets/Treatments/IVFETPic.jpg'
+import IUIPic from '../assets/Treatments/IUIPic.jpg'
+import ICSI from '../assets/Treatments/ICSI.png'
+import BlastocystTransferPic from '../assets/Treatments/BlastocystTransferPic.png'
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
@@ -153,19 +158,19 @@ function Treatments() {
         {
           title: "IVF ET",
           description: "Advanced fertility solutions to help you conceive",
-          image: LaparoPhoto,
+          image: IVFETPic,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "IUI",
           description: "Simple and effective fertility treatment",
-          image: LaparoPhoto,
+          image: IUIPic,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "ICSI",
           description: "Simple and effective fertility treatment",
-          image: LaparoPhoto,
+          image: ICSI,
           link: 'treatments/cervical-cancer',
         },
         {
@@ -177,13 +182,13 @@ function Treatments() {
         {
           title: "Blastocyst Transfer",
           description: "Simple and effective fertility treatment",
-          image: LaparoPhoto,
+          image: BlastocystTransferPic,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "Semen Cryopreservation",
           description: "Simple and effective fertility treatment",
-          image: LaparoPhoto,
+          image: SemenCryopreservationPhoto,
           link: 'treatments/cervical-cancer',
         },
         {
