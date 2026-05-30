@@ -14,7 +14,7 @@ const Head = () => {
     // DrVandanaIntroo,
     FirstBanner,
     BannerMain,
-    LaproscopyBanner,
+    // LaproscopyBanner,
     qwq
   ];
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -17,6 +17,10 @@ const GoogleReview = () => {
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
         <div class="elfsight-app-28ba9dd6-7b92-4ca4-a0f0-1ab3553f6130" data-elfsight-app-lazy></div>
       </div> */}
+      {/* Elfsight Google Reviews | Untitled Google Reviews */}
+    {/* <!-- Elfsight Google Reviews | Untitled Google Reviews --> */}
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-0ce23360-d148-4bef-a663-2d2ad2f1ea61" data-elfsight-app-lazy></div>
     </div>
   );
 };

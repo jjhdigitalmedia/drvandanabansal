@@ -142,6 +142,14 @@ import IVFETPic from '../assets/Treatments/IVFETPic.jpg'
 import IUIPic from '../assets/Treatments/IUIPic.jpg'
 import ICSI from '../assets/Treatments/ICSI.png'
 import BlastocystTransferPic from '../assets/Treatments/BlastocystTransferPic.png'
+import InfertilitIVFIcon from '../assets/Treatments/InfertilitIVFIcon.png'
+import AdvancedGynecologicalCareIcon from '../assets/Treatments/AdvancedGynecologicalCareIcon.png'
+import HighRiskPregnancyIcon from '../assets/Treatments/HighRiskPregnancyIcon.png'
+import LaparoscopicIcon from '../assets/Treatments/LaparoscopicIcon.png'
+import HysteroscopicIcon from '../assets/Treatments/HysteroscopicIcon.png'
+import VaginalLaserIcon from '../assets/Treatments/VaginalLaserIcon.png'
+import GynaecCancerIcon from '../assets/Treatments/GynaecCancerIcon.png'
+import PreventiveWomensIcon from '../assets/Treatments/PreventiveWomensIcon.png'
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
@@ -449,6 +457,57 @@ function Treatments() {
     },
   ];
 
+  const SpecializationSection = [
+    {
+      icon: "",
+      Cardtitle: "Infertility and IVf",
+      CardDesc: "Advanced IVF treatments with personalized care and global success rates.",
+      Cardimg: InfertilitIVFIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Advanced Gynecological care",
+      CardDesc: "Expert care for high-risk pregnancies and fetal interventions.",
+      Cardimg: AdvancedGynecologicalCareIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "High Risk Pregnancy and Maternity Care",
+      CardDesc: "Complete care through pregnancy, delivery and postnatal journey.",
+      Cardimg: HighRiskPregnancyIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Laparoscopic Surgery",
+      CardDesc: "Comprehensive women healthcare from teenage to menopause.",
+      Cardimg: LaparoscopicIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Hysteroscopic Surgery",
+      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      Cardimg: HysteroscopicIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Vaginal Laser Treatment",
+      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      Cardimg: VaginalLaserIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Preventive Womens Care",
+      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      Cardimg: PreventiveWomensIcon,
+    },
+    {
+      icon: "",
+      Cardtitle: "Gynaec Cancer Care",
+      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      Cardimg: GynaecCancerIcon,
+    },
+  ]
+
   return (
     <>
       <Helmet>
@@ -458,17 +517,49 @@ function Treatments() {
         <meta property="og:title" content="Best Gynecology Services" />
         <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
       </Helmet>
-      <section className="bg-[#f2f2f2] py-14 px-4">
+      <section className="w-full bg-5] py-20 px-6 md:px-16">
+        <div className="max-w-full mx-auto text-center">
 
-        {/* Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-serif text-pink-800">
-            Treatments and Services
-          </h2>
-          <p className="text-gray-600 mt-3">
-            Comprehensive care for every stage of a woman’s health journey.
+          {/* Heading */}
+          <p className="text-pink-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
+            Specializations
           </p>
+
+          <h2 className="text-4xl md:text-5xl font-serif text-pink-700 mb-5">
+            Comprehensive Care for Every <br />
+            Stage of Womanhood
+          </h2>
+
+          <div className="w-24 h-[2px] bg-pink-700 mx-auto mb-14"></div>
+
+          {/* Cards */}
+          <div className="flex flex-wrap justify-center w-full mx-auto gap-6">
+
+{/* <marquee behavior="" direction=""> */}
+            {SpecializationSection.map((item) => (
+              <div className="bg-white border flex border-pink-100 w-96 h-32 rounded-3xl p-4 hover:shadow-2xl transition duration-300">
+                {/* <div className="text-5xl mb-6"> */}
+                <img className="w-20 h-20 mx-auto" src={item.Cardimg} alt="" />
+                {/* </div> */}
+                <div className="ml-6">
+
+                  <h3 className="text-lg font-serif text-left text-[#3d1d46] mb-">
+                    {item.Cardtitle}
+                  </h3>
+
+                  <p className="text-gray-600 text-left leading-relaxed text-sm">
+                    {item.CardDesc}
+                  </p>
+                </div>
+              </div>
+            ))}
+            {/* </marquee> */}
+
+          </div>
         </div>
+      </section>
+
+      <section className="bg-[#f2f2f2] py-14 px-4">
 
         {/* All Categories */}
         {treatmentsData.map((category) => (

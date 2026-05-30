@@ -207,20 +207,27 @@ import {
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import DrVandanaLogo from '../assets/DrVandanaLogo.png'
+import DrVandanaLogoWhite from '../assets/DrVandanaLogoWhite.png'
 
 const Footer = () => {
   return (
     <footer className="bg-pink-800 text-white pt-16 pb-6">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-wxl mx-auto px-6">
 
         {/* TOP SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-gray-700 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 border-b border-gray-700 pb-10">
 
           {/* ABOUT */}
           <div>
-            <h2 className="text-lg font-bold uppercase mb-5">
+            {/* <h2 className="text-lg font-bold uppercase mb-5">
               DR VANDANA BANSAL
-            </h2>
+            </h2> */}
+             <img
+              src={DrVandanaLogoWhite}
+              alt="logo"
+              className="h-20 w-full"
+            />
+            
             {/* <Link to='/' className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32">
               <img src={DrVandanaLogo} className="w-52 md:w-96" alt="Dr Vandana Logo" />
             </Link> */}
@@ -255,6 +262,68 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* QUICK LINKS */}
+          <div>
+            <h2 className="text-lg font-bold uppercase mb-5">
+              Quick Links
+            </h2>
+
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li>
+                <Link
+                  to="/"
+                  className="hover:text-pink-400 transition"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-pink-400 transition"
+                >
+                  About Us
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/treatments/ivf-et"
+                  className="hover:text-pink-600 transition"
+                >
+                  IVF Treatment
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/patients-guide"
+                  className="hover:text-pink-600 transition"
+                >
+                  Patient Guide
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/gallery"
+                  className="hover:text-pink-600 transition"
+                >
+                  Gallery
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-pink-600 transition"
+                >
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
           {/* QUICK LINKS */}
           <div>
             <h2 className="text-lg font-bold uppercase mb-5">
@@ -458,11 +527,11 @@ const Footer = () => {
 
           {/* LOGO */}
           <div className="flex items-center gap-2 mb-4 md:mb-0">
-            <img
-              src="/logo.png"
+            {/* <img
+              src={DrVandanaLogoWhite}
               alt="logo"
               className="h-10"
-            />
+            /> */}
 
             <span className="font-semibold text-white text-lg">
               Dr Vandana Bansal

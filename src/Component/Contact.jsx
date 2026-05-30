@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+// import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa'
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import { CiMedicalCross } from "react-icons/ci";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -31,7 +38,7 @@ const Contact = () => {
     <section id='contact' className="text-gray-600 body-font relative">
       <div className="container px-5 py-12 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="text-center font-bold text-3xl md:text-5xl my-10 text-pink-800">Book Your Appointment</h1>
+          <h1 className="text-center font-serif text-3xl md:text-5xl my-10 text-pink-700">Book Your Appointment</h1>
           <p className="lg:w-2/3 mx-auto mt-2 leading-relaxed text-base font-semibold">If you're seeking treatment or have any queries, feel free to submit this form. I'll get back to you as soon as possible.</p>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -65,10 +72,10 @@ const Contact = () => {
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
               {/* <a className="text-rose-500 text-wrap">bansal.drvandana@gmail.com</a> */}
-              <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." className='text-pink-800' target="_blank">drvandanabansal921@gmail.com</a>
+              <a href="mailto:bansal.drvandana@gmail.com?subject=Inquiry&body=Hello, I have a question about..." className='text-pink-700' target="_blank">bansal.drvandana@gmail.com</a>
               <p className="leading-normal my-5">162, Jeevan Jyoti Hospital, Lowther Rd, Himmat Ganj, Bai Ka Bagh, Prayagraj, Uttar Pradesh 211003
               </p>
-              <div className='flex m-auto w-fit'>
+              {/* <div className='flex m-auto w-fit'>
                 <a href="https://www.instagram.com/drvandanabansal_gynaecologist/" target='_blank'>
                   <FaInstagram className='mx-2 text-pink-800 text-xl' />
                 </a>
@@ -81,6 +88,18 @@ const Contact = () => {
                 <a href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/" target='_blank'>
                   <FaLinkedinIn className='mx-2 text-pink-800 text-xl' />
                 </a>
+              </div> */}
+              <div className="flex justify-center gap-2 md:gap-4 mt-3">
+                {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
+                  (Icon, index) => (
+                    <div
+                      key={index}
+                      className="bg--100 shadow-md p-3 rounded-full text-pink-600 hover:bg-pink-800 hover:text-white transition duration-300 cursor-pointer"
+                    >
+                      <Icon size={18} />
+                    </div>
+                  )
+                )}
               </div>
 
             </div>

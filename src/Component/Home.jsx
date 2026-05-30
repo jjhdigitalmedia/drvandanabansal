@@ -48,15 +48,16 @@ const Home = () => {
         <CurrentRoute />
         <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' />
       </div> */}
+      {/* <VideoOfCentre /> */}
       {/* <Rewards /> */}
       <Treatements />
-      {/* <VideoOfCentre /> */}
       <About />
-      {/* <GoogleReview /> */}
       <Stats />
-      <Contact />
+      <GoogleReview />
       <FAQ />
       <Appointment />
+      {/* <Contact /> */}
+      
     </div>
   )
 }

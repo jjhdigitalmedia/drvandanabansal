@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-
+// import Stetho from "../assets/Stetho.png";
 function Stats() {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -47,6 +47,11 @@ function Stats() {
           />
 
         </div>
+        {/* <img
+          src={Stetho}
+          alt="stethoscope"
+          className="absolute righ-[-30px] bottom-[30px] bg-rose-300 w-96 opacity-20 pointer-events-none"
+        /> */}
       </div>
     </section>
   );
@@ -89,6 +94,7 @@ function Counter({ label, value, visible }) {
         {label}
       </p>
 
+  
     </div>
   );
 }
