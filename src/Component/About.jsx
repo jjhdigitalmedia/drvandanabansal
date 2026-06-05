@@ -84,7 +84,7 @@ function About () {
 
         {/* Left Image Section */}
         <div className="relative">
-          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-1 p-3 border-pink-800 overflow-hidden shado-md">
+          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
             <img
               src={DrVandanaa} // 👈 dummy image
               alt="Doctor"

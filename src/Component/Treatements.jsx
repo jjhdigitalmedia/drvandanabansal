@@ -1,115 +1,4 @@
-// import React, { useEffect } from "react";
-// import IVFet from "../assets/icons/Treatment/IVFet.jpg";
-// import iui from "../assets/icons/Treatment/iui.png";
-// import icsi from "../assets/icons/Treatment/icsi.png";
-// import ivm from "../assets/icons/Treatment/ivm.png";
-// import IMSI from "../assets/icons/Treatment/IMSI.png";
-// import embryo from "../assets/icons/Treatment/embryo.png";
-// import lasehatching from "../assets/icons/Treatment/lasehatching.png";
-// import Sonography from "../assets/icons/Treatment/Sonography.png";
-// import IVFvideo from '../assets/videos/IVFvideo.mp4';
-// import Aos from "aos";
-// import 'aos/dist/aos.css'
-// import '../Style/Style.css'
-// import { Link } from "react-router-dom";
-
-// const Treatements = () => {
-//   useEffect(() => {
-//     Aos.init({ duration: 2000 })
-//   })
-
-//   const TreatmentData = [
-//     {
-//       img: iui,
-//       link: '/treatments/iui',
-//       heading: "IUI Treatment",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: IVFet,
-//       link: '/treatments/ivf-et',
-//       heading: "IVF-ET",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: icsi,
-//       link: '/treatments/icsi',
-//       heading: "ICSI Treatment",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: ivm,
-//       link: '/treatments/ivm',
-//       heading: "IVM Treatment",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: IMSI,
-//       link: '/treatments/imsi',
-//       heading: "IMSI Treatment",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: embryo,
-//       link: '/treatments/laser-assisted-hatching',
-//       heading: "Embryo Monitoring",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: lasehatching,
-//       link: '/treatments/embryo-monitoring',
-//       heading: "Laser Assisted Hatching",
-//       more: 'view more'
-
-//     },
-//     {
-//       img: Sonography,
-//       link: '/treatments/sonography',
-//       heading: "Sonography",
-//       more: 'view more'
-//     }
-//   ]
-
-//   return (<>
-//     <section className="text-gray-600 body-font">
-
-//       <div className="container px-1 md:px-5 py-16 mx-auto">
-//         <div className="flex flex-col text-center w-full mb-10">
-//           <h1 className="sm:text-5xl text-2xl font-medium title-font mb-4 text-pink-800 font-serif">Fertility Treatments</h1>
-//           <p className="lg:w-2/3 mx-auto text-sm leading-relaxed">Dr. Vandana Bansal is a highly regarded medical professional known for expertise and compassionate care. With extensive experience, Dr. Bansal specializes in advanced treatments, combining cutting-edge technology with personalized care. Her commitment to excellence and patient well-being has earned him a reputation as a trusted figure in the medical community.</p>
-//         </div>
-//         <div className="flex flex-wrap text-center mx-auto m-0 md:m-4 lg:w-4/5 ">
-//           { TreatmentData && TreatmentData.map((treat) => (
-//             <Link to={treat.link} className="p-4 md:w-1/4 sm:w-1/2 w-full">
-//               <div className=" shadow-md order-gray-200 px-3 py-5 rounded-lg">
-//                 <img
-//                   alt="ecommerce"
-//                   className="object-cover object-center p-4 w-full h-full block"
-//                   src={treat.img}
-//                 />
-//                 <h2 className="title-font font-medium text-md text-gray-900">{treat.heading}</h2>
-//                 <p className="leading-relaxed text-sm text-rose-600">{treat.more}</p>
-//               </div>
-//             </Link>
-//           ))
-//           }
-//         </div>
-//       </div>
-//     </section>
-//   </>
-//   );
-// };
-
-// export default Treatements;
-
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LaparoPhoto from '../assets/LaparoPhoto.jpg'
 import Hysteroscopy from '../assets/Treatments/Hysteroscopy.jpeg'
 import VaginalDryness from '../assets/Treatments/VaginalDryness.jpeg'
@@ -153,10 +42,31 @@ import PreventiveWomensIcon from '../assets/Treatments/PreventiveWomensIcon.png'
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
 
-
-// import FibroidRemovalSurgery from '../assets/Treatments/FibroidRemovalSurgery.jpeg'
-
 function Treatments() {
+  const [data, setData] = useState("ivf")
+  const HandleSpecialization = (key, i) => {
+
+    setData(key)
+
+  }
+
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     for (let index = 0; ; index++) {
+        
+  //       if(SpecializationSection[index].key === data){
+          
+  //         if(index===SpecializationSection.length){
+  //           let b=0;
+  //           indext=b
+  //         }
+  //         let a = SpecializationSection[index+1].key;
+  //         setData(a)
+
+  //       }
+  //     }
+  //   }, 5000)
+  // }, [data])
 
   const treatmentsData = [
     {
@@ -245,7 +155,7 @@ function Treatments() {
     },
     {
       category: "Advanced Gynecological Care",
-      key: "pregnancy",
+      key: "gynae",
       treatments: [
         {
           title: "Irregular Periods",
@@ -276,7 +186,7 @@ function Treatments() {
     },
     {
       category: "High-Risk Pregnancy and Maternity Care",
-      key: "gynae",
+      key: "pregnancy",
       treatments: [
         {
           title: "Cesarean (C-section Delivery",
@@ -312,7 +222,7 @@ function Treatments() {
     },
     {
       category: "Laparoscopic Surgery",
-      key: "surgery",
+      key: "laparoscopy",
       treatments: [
         {
           title: "Ovarian Cyst Surgery",
@@ -336,7 +246,7 @@ function Treatments() {
     },
     {
       category: "Hysterocopic Surgery",
-      key: "preventive",
+      key: "hysteroscopy",
       treatments: [
         {
           title: "Uterine polyp Removal",
@@ -379,7 +289,7 @@ function Treatments() {
     },
     {
       category: "Vaginal Laser Treatment",
-      key: "preventive",
+      key: "laser",
       treatments: [
         {
           title: "Urine Leakage Treatment",
@@ -403,7 +313,7 @@ function Treatments() {
     },
     {
       category: "Preventive Womens Care",
-      key: "preventive",
+      key: "womens",
       treatments: [
         {
           title: "Breast Health Checkup",
@@ -433,7 +343,7 @@ function Treatments() {
     },
     {
       category: "Gynec Cancer Care",
-      key: "preventive",
+      key: "gynaecancer",
       treatments: [
         {
           title: "Ovarian Cancer",
@@ -459,52 +369,52 @@ function Treatments() {
 
   const SpecializationSection = [
     {
-      icon: "",
+      key: 'ivf',
       Cardtitle: "Infertility and IVf",
       CardDesc: "Advanced IVF treatments with personalized care and global success rates.",
-      Cardimg: InfertilitIVFIcon,
+      CardIcon: InfertilitIVFIcon,
     },
     {
-      icon: "",
+      key: 'gynae',
       Cardtitle: "Advanced Gynecological care",
       CardDesc: "Expert care for high-risk pregnancies and fetal interventions.",
-      Cardimg: AdvancedGynecologicalCareIcon,
+      CardIcon: AdvancedGynecologicalCareIcon,
     },
     {
-      icon: "",
+      key: 'pregnancy',
       Cardtitle: "High Risk Pregnancy and Maternity Care",
       CardDesc: "Complete care through pregnancy, delivery and postnatal journey.",
-      Cardimg: HighRiskPregnancyIcon,
+      CardIcon: HighRiskPregnancyIcon,
     },
     {
-      icon: "",
+      key: 'laparoscopy',
       Cardtitle: "Laparoscopic Surgery",
       CardDesc: "Comprehensive women healthcare from teenage to menopause.",
-      Cardimg: LaparoscopicIcon,
+      CardIcon: LaparoscopicIcon,
     },
     {
-      icon: "",
+      key: 'hysteroscopy',
       Cardtitle: "Hysteroscopic Surgery",
       CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
-      Cardimg: HysteroscopicIcon,
+      CardIcon: HysteroscopicIcon,
     },
     {
-      icon: "",
+      key: 'laser',
       Cardtitle: "Vaginal Laser Treatment",
       CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
-      Cardimg: VaginalLaserIcon,
+      CardIcon: VaginalLaserIcon,
     },
     {
-      icon: "",
+      key: 'womens',
       Cardtitle: "Preventive Womens Care",
       CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
-      Cardimg: PreventiveWomensIcon,
+      CardIcon: PreventiveWomensIcon,
     },
     {
-      icon: "",
+      key: 'gynaecancer',
       Cardtitle: "Gynaec Cancer Care",
       CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
-      Cardimg: GynaecCancerIcon,
+      CardIcon: GynaecCancerIcon,
     },
   ]
 
@@ -517,41 +427,39 @@ function Treatments() {
         <meta property="og:title" content="Best Gynecology Services" />
         <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
       </Helmet>
+
       <section className="w-full bg-5] py-20 px-6 md:px-16">
         <div className="max-w-full mx-auto text-center">
-
           {/* Heading */}
           <p className="text-pink-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
             Specializations
           </p>
-
           <h2 className="text-4xl md:text-5xl font-serif text-pink-700 mb-5">
             Comprehensive Care for Every <br />
             Stage of Womanhood
           </h2>
-
           <div className="w-24 h-[2px] bg-pink-700 mx-auto mb-14"></div>
 
           {/* Cards */}
           <div className="flex flex-wrap justify-center w-full mx-auto gap-6">
 
-{/* <marquee behavior="" direction=""> */}
-            {SpecializationSection.map((item) => (
-              <div className="bg-white border flex border-pink-100 w-96 h-32 rounded-3xl p-4 hover:shadow-2xl transition duration-300">
-                {/* <div className="text-5xl mb-6"> */}
-                <img className="w-20 h-20 mx-auto" src={item.Cardimg} alt="" />
-                {/* </div> */}
-                <div className="ml-6">
-
-                  <h3 className="text-lg font-serif text-left text-[#3d1d46] mb-">
-                    {item.Cardtitle}
-                  </h3>
-
-                  <p className="text-gray-600 text-left leading-relaxed text-sm">
-                    {item.CardDesc}
-                  </p>
+            {/* <marquee behavior="" direction=""> */}
+            {SpecializationSection.map((item, i) => (
+              <>
+                {/* {data === 'ghfg' ? ( */}
+                <div className={`bg-whit border cursor-pointer flex border-pink-100 w-96 h-32 rounded-3xl p-4 hover:shadow-xl transition duration-300 ${item.key === data ? "bg-pink-800 shadow-md border-white text-white" : ''}`} onClick={() => { HandleSpecialization(item.key, item.i) }}>
+                  <img className="w-20 h-20 mx-auto" src={item.CardIcon} alt="" />
+                  <div className="ml-6">
+                    <h3 className={`text-lg font-serif text-left text-[#3d1d46] ${item.key === data ? "text-white" : ''} `}>
+                      {item.Cardtitle}
+                    </h3>
+                    <p className={`text-gray-600 text-left leading-relaxed text-sm ${item.key === data ? "text-white" : ''} `}>
+                      {item.CardDesc}
+                    </p>
+                  </div>
                 </div>
-              </div>
+                {/* ) : ''} */}
+              </>
             ))}
             {/* </marquee> */}
 
@@ -562,51 +470,50 @@ function Treatments() {
       <section className="bg-[#f2f2f2] py-14 px-4">
 
         {/* All Categories */}
-        {treatmentsData.map((category) => (
-          <div key={category.key} className="mb-14">
+        {treatmentsData.map((category, k) => (
+          <>
+            {data === category.key ? (
+              <div key={category.key} className="mb-14">
 
-            {/* Category Title */}
-            <h3 className="text-2xl font-semibold text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
-              {category.category}
-            </h3>
+                {/* Category Title */}
+                <h3 className="text-2xl font-semibold text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
+                  {category.category}
+                </h3>
 
-            {/* Treatments Grid */}
-            <div className="flex flex-wrap gap-6">
-              {category.treatments.map((item, index) => (
+                {/* Treatments Grid */}
+                <div className="flex flex-wrap gap-6">
+                  {category.treatments.map((item, index) => (
 
-                <div
-                  key={index}
-                  className="w-full sm:w-[48%] md:w-[31%] bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
-                >
+                    <div
+                      key={index}
+                      className="w-full sm:w-[48%] md:w-[31%] bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden"
+                    >
+                      {/* Image */}
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="h-48 w-full object-cover hover:scale-105 transition duration-300"
+                      />
+                      {/* Content */}
+                      <div className="p-4">
+                        <h4 className="text-lg font-semibold text-pink-800">
+                          {item.title}
+                        </h4>
+                        <p className="text-gray-600 text-sm mt-2">
+                          {item.description}
+                        </p>
+                        {/* Button */}
+                        <Link to={item.link} className="mt-4 text-pink-800 opacity-65 font-medium hover:underline">
+                          View More →
+                        </Link>
+                      </div>
+                    </div>
 
-                  {/* Image */}
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="h-48 w-full object-cover hover:scale-105 transition duration-300"
-                  />
-
-                  {/* Content */}
-                  <div className="p-4">
-                    <h4 className="text-lg font-semibold text-pink-800">
-                      {item.title}
-                    </h4>
-
-                    <p className="text-gray-600 text-sm mt-2">
-                      {item.description}
-                    </p>
-
-                    {/* Button */}
-                    <Link to={item.link} className="mt-4 text-pink-800 opacity-65 font-medium hover:underline">
-                      View More →
-                    </Link>
-                  </div>
-
+                  ))}
                 </div>
-
-              ))}
-            </div>
-          </div>
+              </div>
+            ) : ''}
+          </>
         ))}
 
         {/* Bottom Line */}
