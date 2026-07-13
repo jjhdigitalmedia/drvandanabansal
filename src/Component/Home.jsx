@@ -1,18 +1,19 @@
 import React from 'react'
-import Head from './Head'
 import { Rewards } from './Rewards'
-import Treatements from './Treatements'
-import GoogleReview from './GoogleReview'
-import About from './About'
+import { Helmet } from "react-helmet-async";
 import { FAQ } from './FAQ'
 import Contact from './Contact'
-import VideoOfCentre from './VideoOfCentre'
-import Stats from './Stats'
-import Appointment from './Appointment'
+import About from './About'
 import Arrow from './Arrow'
+import Stats from './Stats'
+import Head from './Head'
+import Treatements from './Treatements'
+import GoogleReview from './GoogleReview'
+import VideoOfCentre from './VideoOfCentre'
+import Appointment from './Appointment'
 import ContactButton from './ContactButton'
-import { Helmet } from "react-helmet-async";
 import CurrentRoute from './CurrentRoute'
+import Conferences from '../Pages/Conferences';
 
 const Home = () => {
   return (
@@ -40,24 +41,35 @@ const Home = () => {
         </script>
 
       </Helmet>
+
       {/* <Navv /> */}
+
       <ContactButton />
       <Arrow />
       <Head />
-       {/* <div className="">
+
+      {/* <div className="">
         <CurrentRoute />
         <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' />
       </div> */}
       {/* <VideoOfCentre /> */}
       {/* <Rewards /> */}
+
       <Treatements />
       <About />
       <Stats />
+      <Conferences />
       <GoogleReview />
+      {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
+      <div className='w-11/12 mx-auto'>
+
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
+      </div>
       <FAQ />
       <Appointment />
       {/* <Contact /> */}
-      
+
     </div>
   )
 }
