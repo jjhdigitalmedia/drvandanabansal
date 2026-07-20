@@ -131,7 +131,7 @@ export default function LegacySection() {
                 <div className="text-center text-white">
 
                   <h3 className="text-5xl font-black leading-none sm:text-6xl lg:text-7xl">
-                    27+
+                    38+
                   </h3>
 
                   <p className="mt-2 text-xs font-medium uppercase tracking-[4px] text-pink-100 sm:text-sm lg:mt-4 lg:text-lg">

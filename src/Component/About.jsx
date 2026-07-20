@@ -73,32 +73,17 @@ function About () {
   return (
     <div className="min-h-xsvh flex items-center justify-center bg-[f2f2f2] md:p-6 pb-0">
       
-      <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row items-center gap-20 overflow-hidden pb-0">
+      <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row-reverse items-center gap-20 overflow-hidden pb-0">
         
         {/* 🩺 Stethoscope Background Image */}
         <img
           src={Stetho}
           alt="stethoscope"
-          className="absolute right-[-30px] bottom-[30px] w-96 opacity-20 pointer-events-none"
+          className="absolute left-[-220px] bottom-[0px] w-96 opacity-20 pointer-events-none"
         />
 
-        {/* Left Image Section */}
-        <div className="relative">
-          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
-            <img
-              src={DrVandanaa} // 👈 dummy image
-              alt="Doctor"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* Decorative Icon */}
-          <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
-            <CiMedicalCross className=" text-pink-800" />
-          </div>
-        </div>
-
-        {/* Right Content Section */}
+      
+        {/* Left Content Section */}
         <div className="flex-1 text-cente">
           <h1 className="text-4xl md:text-5xl text-ceter lg:text-left font-serif text-pink-700">
             Dr. Vandana Bansal
@@ -141,6 +126,21 @@ function About () {
           <p className="mt-4 md:pr-20 text-gray-600 text-pin-700 opacity-60 italic leading-relaxed">
            My mission is to deliver personalized, safe, and high-quality care in a compassionate environment where every patient feels heard, respected, and confident.
           </p>
+        </div>
+         {/* Right Image Section */}
+        <div className="relative">
+          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
+            <img
+              src={DrVandanaa} // 👈 dummy image
+              alt="Doctor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Decorative Icon */}
+          <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
+            <CiMedicalCross className=" text-pink-800" />
+          </div>
         </div>
       </div>
     </div>

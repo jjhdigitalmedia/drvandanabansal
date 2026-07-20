@@ -1,36 +1,47 @@
 import React from "react";
 import speaker1 from '../assets/speaker1.jpg'
+import Eshre from '../assets/ConferencesActivity/Eshre.jpg'
+// import Fogsi from '../assets/Fogsi.jpg'
+import Fogsi from '../assets/ConferencesActivity/Fogsi.jpg'
+import ISOPARBJuly from '../assets/ConferencesActivity/ISOPARBJuly.jpg'
+import ISOPPARBJune from '../assets/ConferencesActivity/ISOPPARBJune.jpg'
+import ISOPARBApr from '../assets/ConferencesActivity/ISOPARBApr.jpg'
 
 const conferencesData = [
     {
-        image: speaker1,
+        image: ISOPARBJuly,
         title: "A Successful CME on Fertility-Preserving Management of Fibroids",
         description:
             "It was a privilege to serve as the President of ISOPARB Prayagraj and be part of a successful CME on Fertility-Preserving Management of Fibroids: Where Does Relugolix Combination Therapy Fit?",
+            date:'19-07-2026'
     },
     {
-        image: speaker1,
+        image: Fogsi,
         title: "Delivering a Talk on Hormone Replacement Therapy at Dr. Reddy's CME",
         description:
             "Honoured to have been invited as a Speaker at the Dr. Reddy's Continued Medical Education (CME), organized in association with the Allahabad Obstetric & Gynaecological Society (AOGS).",
+            date:'18-07-2026'
     },
     {
-        image: speaker1,
-        title: "Medical Workshop",
+        image: Eshre,
+        title: "ESHRE Conference | Advancing Fertility Care Through Global Learning",
         description:
-            "Hands-on learning with leading specialists and healthcare experts.",
+            "Honoured to be a part of ESHRE (European Society of Human Reproduction and Embryology), one of the world’s leading platforms for reproductive medicine and fertility research.",
+            date:'05-07-2026'
     },
     {
-        image: speaker1,
+        image: ISOPPARBJune,
         title: "International Fertility Summit",
         description:
             "Collaborating with global experts in reproductive medicine.",
+            date:'01-01-2026'
     },
     {
-        image: speaker1,
+        image: ISOPARBApr,
         title: "Scientific Session",
         description:
             "Discussing evidence-based practices in obstetrics & gynecology.",
+            date:'25-04-2026'
     },
 ];
 
@@ -53,8 +64,8 @@ export default function conferences() {
             <div className="max-w-7x mx-auto px-6">
 
                 {/* Heading */}
-                 
-                 
+
+
 
                 <div className="text-center max-w-3xl mx-auto mb-16">
 
@@ -104,8 +115,8 @@ export default function conferences() {
 
                                     <h3 className="text-xl font-semibold text-gray-800 mb-3">
 
-                                        {item.title}
-
+                                        {item.title} -
+                                        <span className="font-thin px-3 text-sm">{item.date}</span>
                                     </h3>
 
                                     <p className="text-gray-600 text-sm leading-7">
