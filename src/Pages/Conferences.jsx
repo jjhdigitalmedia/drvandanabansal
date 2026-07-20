@@ -4,15 +4,15 @@ import speaker1 from '../assets/speaker1.jpg'
 const conferencesData = [
     {
         image: speaker1,
-        title: "ISOPARB CME",
+        title: "A Successful CME on Fertility-Preserving Management of Fibroids",
         description:
-            "Sharing knowledge and the latest advancements in fertility treatments.",
+            "It was a privilege to serve as the President of ISOPARB Prayagraj and be part of a successful CME on Fertility-Preserving Management of Fibroids: Where Does Relugolix Combination Therapy Fit?",
     },
     {
         image: speaker1,
-        title: "UPCON 2025",
+        title: "Delivering a Talk on Hormone Replacement Therapy at Dr. Reddy's CME",
         description:
-            "Focused on modern approaches to women's healthcare and awareness.",
+            "Honoured to have been invited as a Speaker at the Dr. Reddy's Continued Medical Education (CME), organized in association with the Allahabad Obstetric & Gynaecological Society (AOGS).",
     },
     {
         image: speaker1,

@@ -22,7 +22,7 @@
     "aos": "^2.3.4",
     "carousel": "^0.0.3",
     "font-awesome": "^4.7.0",
-    "framer-motion": "^12.4.7",
+    "framer-motion": "^12.42.2",
     "lucide-react": "^0.477.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

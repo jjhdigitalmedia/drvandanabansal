@@ -14,6 +14,7 @@ import Appointment from './Appointment'
 import ContactButton from './ContactButton'
 import CurrentRoute from './CurrentRoute'
 import Conferences from '../Pages/Conferences';
+import Features from './Features';
 
 const Home = () => {
   return (
@@ -58,6 +59,7 @@ const Home = () => {
       <Treatements />
       <About />
       <Stats />
+      <Features/>
       <Conferences />
       <GoogleReview />
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
