@@ -6,16 +6,20 @@ import FirstBanner from "../assets/Banners/FirstBanner.png";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
 import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
 import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
+import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
+import BannerUpdated from "../assets/Banners/BannerUpdated.png";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
     DrVandanaIntro,
     // DrVandanaIntroo,
+    UpdatedBanner,
+    BannerUpdated,
     FirstBanner,
-    BannerMain,
+    // BannerMain,
     // LaproscopyBanner,
-    qwq
+    // qwq
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
