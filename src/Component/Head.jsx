@@ -13,10 +13,10 @@ import "../Style/Style.css";
 const Head = () => {
   const images = [
     DrVandanaIntro,
-    // DrVandanaIntroo,
+    FirstBanner,
     UpdatedBanner,
     BannerUpdated,
-    FirstBanner,
+    // DrVandanaIntroo,
     // BannerMain,
     // LaproscopyBanner,
     // qwq
