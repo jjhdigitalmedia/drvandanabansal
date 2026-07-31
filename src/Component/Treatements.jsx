@@ -434,7 +434,7 @@ function Treatments() {
           <p className="text-pink-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
             Specializations
           </p>
-          <h2 className="text-4xl md:text-5xl font-serif text-pink-700 mb-5">
+          <h2 className="text-4xl md:text-5xl font-cambria text-pink-700 mb-5">
             Comprehensive Care for Every <br />
             Stage of Womanhood
           </h2>
@@ -450,7 +450,7 @@ function Treatments() {
                 <div className={`bg-whit border cursor-pointer flex border-pink-100 w-96 h-32 rounded-3xl p-4 hover:shadow-xl transition duration-300 ${item.key === data ? "bg-pink-800 shadow-md border-white text-white" : ''}`} onClick={() => { HandleSpecialization(item.key, item.i) }}>
                   <img className="w-20 h-20 mx-auto" src={item.CardIcon} alt="" />
                   <div className="ml-6">
-                    <h3 className={`text-lg font-serif text-left text-[#3d1d46] ${item.key === data ? "text-white" : ''} `}>
+                    <h3 className={`text-lg font-cambria text-left text-[#3d1d46] ${item.key === data ? "text-white" : ''} `}>
                       {item.Cardtitle}
                     </h3>
                     <p className={`text-gray-600 text-left leading-relaxed text-sm ${item.key === data ? "text-white" : ''} `}>
@@ -476,7 +476,7 @@ function Treatments() {
               <div key={category.key} className="mb-14">
 
                 {/* Category Title */}
-                <h3 className="text-2xl font-semibold text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
+                <h3 className="text-2xl font-cambria text-pink-800 mb-6 border-l-4 border-pink-800 pl-3">
                   {category.category}
                 </h3>
 

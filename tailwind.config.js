@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        cambria:['Cambria', 'Georgia', 'Times New Roman', 'serif']
+      }
+    },
     // colors:{
     //   salman:'#e8cccc'
     // }

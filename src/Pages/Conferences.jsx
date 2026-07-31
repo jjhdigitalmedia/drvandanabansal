@@ -69,14 +69,14 @@ export default function conferences() {
 
                 <div className="text-center max-w-3xl mx-auto mb-16">
 
-                    <span className="inline-block px-5 py-2 rounded-full bg-pink-100 text-pink-700 font-serif mb-4">
+                    <span className="inline-block px-5 py-2 rounded-full bg-pink-100 text-pink-700 mb-4">
                         Conferences & Seminars
                     </span>
 
-                    <h2 className="text-4xl lg:text-5xl text-white leading-tight">
+                    <h2 className="text-4xl lg:text-5xl font-cambria text-white leading-tigh">
 
                         Learning, Sharing &
-                        <span className="text-white font-serif"> Advancing Women's Healthcare</span>
+                        <span className="text-white font-cambria"> Advancing Women's Healthcare</span>
 
                     </h2>
 

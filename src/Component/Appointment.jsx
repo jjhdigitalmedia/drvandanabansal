@@ -6,7 +6,7 @@ const Appointment = () => {
     <>
     <section className="bg-white py-20 text-center">
         <div className="mx-auto max-w-4xl px-6">
-          <h2 className="mb-6 text-4xl font-serif text-pink-700">
+          <h2 className="mb-6 text-4xl font-cambria text-pink-700">
             Book a Consultation
           </h2>
           <p className="mb-8 text-lg leading-8 text-gray-700">
@@ -16,7 +16,7 @@ const Appointment = () => {
           </p>
 
           <div className="rounded-3xl bg-[#f2f2f2] p-10 shadow-xl">
-            <h3 className="mb-3 text-3xl text-pink-800">
+            <h3 className="mb-3 font-cambria text-3xl text-pink-800">
               Dr. Vandana Bansal
             </h3>
             <p className="mb-6 text-lg text-gray-700">
