@@ -434,9 +434,8 @@ function Treatments() {
           <p className="text-pink-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
             Specializations
           </p>
-          <h2 className="text-4xl md:text-5xl font-cambria text-pink-700 mb-5">
-            Comprehensive Care for Every <br />
-            Stage of Womanhood
+          <h2 className="text-4xl md:text-6xl font-cambria text-pink-700 mb-5">
+           Women’s Care at Every Stage
           </h2>
           <div className="w-24 h-[2px] bg-pink-700 mx-auto mb-14"></div>
 

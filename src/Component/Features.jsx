@@ -9,6 +9,7 @@ import {
   Crown,
   Sparkles,
 } from "lucide-react";
+import speaker1 from '../assets/speaker1.jpg'
 
 const achievements = [
   {
@@ -16,36 +17,42 @@ const achievements = [
     title: "40,000+",
     subtitle: "Successful Pregnancies",
     desc: "Helping thousands of families experience the joy of parenthood.",
+    image: speaker1,
   },
   {
     icon: Award,
     title: "Gold Medalist",
     subtitle: "IVF Specialist",
     desc: "Recognized for academic excellence in reproductive medicine.",
+    image: 'slkgh',
   },
   {
     icon: Users,
     title: "50,000+",
     subtitle: "Women Cared For",
     desc: "Trusted by generations of women for compassionate care.",
+    image: 'slkgh',
   },
   {
     icon: Mic2,
     title: "National Speaker",
     subtitle: "CME Faculty",
     desc: "Invited speaker at conferences and medical education programs.",
+    image: 'slkgh',
   },
   {
     icon: Crown,
     title: "Former President",
     subtitle: "ISOPARB Prayagraj",
     desc: "Recognized leadership in reproductive medicine.",
+    image: 'slkgh',
   },
   {
     icon: Sparkles,
     title: "Professional Leadership",
     subtitle: "FOGSI & Medical Societies",
     desc: "Actively contributing to women's healthcare initiatives.",
+    image: 'slkgh',
   },
 ];
 
@@ -82,9 +89,9 @@ export default function LegacySection() {
             Legacy of Excellence
           </span>
 
-          <h2 className="mt-6 text-3xl font-black tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="mt-6 text-3xl tracking-tight font-cambria  text-gray-700 sm:text-4xl md:text-5xl lg:text-6xl">
             Excellence Built
-            <span className="block bg-gradient-to-r from-pink-700 via-pink-800 to-rose-700 bg-clip-text text-transparent">
+            <span className="block text-pink-800">
               Over Decades
             </span>
           </h2>
@@ -174,6 +181,7 @@ function FeatureCard({
   subtitle,
   desc,
   delay,
+  image
 }) {
   return (
     <motion.div
@@ -201,7 +209,7 @@ function FeatureCard({
       <div className="relative flex items-start gap-4">
 
         {/* Icon */}
-        <motion.div
+        {/* <motion.div
           whileHover={{
             rotate: 8,
             scale: 1.08,
@@ -213,15 +221,16 @@ function FeatureCard({
           className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-700 to-pink-900 text-white shadow-lg shadow-pink-700/20 sm:h-16 sm:w-16"
         >
           <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
-        </motion.div>
+        </motion.div> */}
 
         {/* Content */}
         <div className="flex-1">
-
+          <div>
+            <img src={speaker1} className="rounded-2xl h-40" alt="" />
+          </div>
           <h3 className="text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl">
             {title}
           </h3>
-
           <p className="mt-1 font-semibold text-pink-800">
             {subtitle}
           </p>
@@ -231,13 +240,13 @@ function FeatureCard({
           </p>
 
           {/* Bottom Link */}
-          <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-pink-800">
+          {/* <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-pink-800"> */}
 
-            <span className="transition duration-300 group-hover:tracking-wide">
+            {/* <span className="transition duration-300 group-hover:tracking-wide">
               Learn More
-            </span>
+            </span> */}
 
-            <svg
+            {/* <svg
               className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
               fill="none"
               stroke="currentColor"
@@ -249,9 +258,9 @@ function FeatureCard({
                 strokeLinejoin="round"
                 d="M5 12h14M13 5l7 7-7 7"
               />
-            </svg>
+            </svg> */}
 
-          </div>
+          {/* </div> */}
 
         </div>
 
