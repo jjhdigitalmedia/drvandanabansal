@@ -58,7 +58,7 @@ const achievements = [
 
 export default function LegacySection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white via-rose-50 to-pink-50 py-16 sm:py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-gradient-to-br  from-white via-[#f2f2f2] to-pink-50 py-16 sm:py-20 lg:py-28">
 
       {/* Background Glow */}
       <div className="absolute -left-32 top-0 h-72 w-72 rounded-full bg-pink-300/30 blur-[120px]" />
@@ -66,14 +66,14 @@ export default function LegacySection() {
       <div className="absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-pink-200/30 blur-[120px]" />
 
       {/* Grid Pattern */}
-      <div
+      {/* <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
             "linear-gradient(#9d174d 1px,transparent 1px),linear-gradient(90deg,#9d174d 1px,transparent 1px)",
           backgroundSize: "60px 60px",
         }}
-      />
+      /> */}
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 

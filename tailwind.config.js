@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        cambria:['Cambria', 'Georgia', 'Times New Roman', 'serif']
+        cambria:['Cambria', 'Georgia', 'Times New Roman', 'serif'],
+        //  cormorant: ['"Cormorant Garamond"', "serif"],
       }
     },
     // colors:{

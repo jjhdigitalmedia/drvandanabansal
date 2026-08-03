@@ -73,10 +73,10 @@ export default function conferences() {
                         Conferences & Seminars
                     </span>
 
-                    <h2 className="text-4xl lg:text-5xl font-cambria text-white leading-tigh">
+                    <h2 className="text-4xl lg:text-5xl font-cambria font-cormorant font-semibold text-white leading-tigh">
 
                         Learning, Sharing &
-                        <span className="text-white font-cambria"> Advancing Women's Healthcare</span>
+                        <span className="text-white font-cambria font-cormorant font-semibold"> Advancing Women's Healthcare</span>
 
                     </h2>
 
