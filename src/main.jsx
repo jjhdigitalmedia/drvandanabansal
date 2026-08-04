@@ -72,6 +72,7 @@ import OvarianCystSurgery from './Pages/Treatments/LaparoscopicSurgery/OvarianCy
 import BreastHealthCheckup from './Pages/Treatments/PreventiveWomensCare/BreastHealthCheckup.jsx'
 import HPVVaccination from './Pages/Treatments/PreventiveWomensCare/HPVVaccination.jsx'
 import PapSmearScreening from './Pages/Treatments/PreventiveWomensCare/PapSmearScreening.jsx'
+import Mammography from './Pages/Treatments/PreventiveWomensCare/Mammography.jsx'
 
 
 const router = createBrowserRouter([
@@ -333,7 +334,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'treatments/mammography',
-        element: <HPVVaccination/>,
+        element: <Mammography/>,
         children: []
       },
       {
