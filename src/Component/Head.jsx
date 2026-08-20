@@ -15,7 +15,7 @@ const Head = () => {
     DrVandanaIntro,
     FirstBanner,
     UpdatedBanner,
-    BannerUpdatedA,
+    // BannerUpdatedA,
     // DrVandanaIntroo,
     // BannerMain,
     // LaproscopyBanner,
