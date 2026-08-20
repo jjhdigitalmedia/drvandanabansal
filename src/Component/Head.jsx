@@ -8,11 +8,13 @@ import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
 import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
 import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
 import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
+import BannerAll from "../assets/Banners/BannerAll.png";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
-    DrVandanaIntro,
+    BannerAll,
+    // DrVandanaIntro,
     FirstBanner,
     UpdatedBanner,
     // BannerUpdatedA,

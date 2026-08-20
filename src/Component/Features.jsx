@@ -10,6 +10,12 @@ import {
   Sparkles,
 } from "lucide-react";
 import speaker1 from '../assets/speaker1.jpg'
+import ISOPARBPresident from '../assets/Features/ISOPARBPresident.jpg'
+import Pregnancy from '../assets/Features/Pregnancy.png'
+import Leadership from '../assets/Features/Leadership.jpeg'
+import GoldMedalist from '../assets/Features/GoldMedalist.jpg'
+import WomensCared from '../assets/Features/WomensCared.png'
+
 
 const achievements = [
   {
@@ -17,42 +23,42 @@ const achievements = [
     title: "40,000+",
     subtitle: "Successful Pregnancies",
     desc: "Helping thousands of families experience the joy of parenthood.",
-    image: speaker1,
+    image: Pregnancy,
   },
   {
     icon: Award,
     title: "Gold Medalist",
     subtitle: "IVF Specialist",
     desc: "Recognized for academic excellence in reproductive medicine.",
-    image: 'slkgh',
+    image: GoldMedalist,
   },
   {
     icon: Users,
     title: "50,000+",
     subtitle: "Women Cared For",
     desc: "Trusted by generations of women for compassionate care.",
-    image: 'slkgh',
+    image: WomensCared,
   },
   {
     icon: Mic2,
     title: "National Speaker",
     subtitle: "CME Faculty",
     desc: "Invited speaker at conferences and medical education programs.",
-    image: 'slkgh',
+    image: speaker1,
   },
   {
     icon: Crown,
-    title: "Former President",
+    title: "President",
     subtitle: "ISOPARB Prayagraj",
     desc: "Recognized leadership in reproductive medicine.",
-    image: 'slkgh',
+    image: ISOPARBPresident,
   },
   {
     icon: Sparkles,
     title: "Professional Leadership",
     subtitle: "FOGSI & Medical Societies",
     desc: "Actively contributing to women's healthcare initiatives.",
-    image: 'slkgh',
+    image: Leadership,
   },
 ];
 
@@ -164,6 +170,7 @@ export default function LegacySection() {
                 key={index}
                 {...item}
                 delay={index * 0.15}
+                image={item.image}
               />
             ))}
           </div>
@@ -226,7 +233,7 @@ function FeatureCard({
         {/* Content */}
         <div className="flex-1">
           <div>
-            <img src={speaker1} className="rounded-2xl h-40" alt="" />
+            <img src={image} className="rounded-2xl h-40" alt="" />
           </div>
           <h3 className="text-xl font-extrabold tracking-tight text-gray-900 sm:text-2xl">
             {title}
