@@ -56,9 +56,9 @@ const Home = () => {
       {/* <VideoOfCentre /> */}
       {/* <Rewards /> */}
 
-      <Treatements />
       <About />
       <Stats />
+      <Treatements />
       <Features/>
       <Conferences />
       <GoogleReview />

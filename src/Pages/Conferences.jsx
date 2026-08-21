@@ -6,6 +6,7 @@ import Fogsi from '../assets/ConferencesActivity/Fogsi.jpg'
 import ISOPARBJuly from '../assets/ConferencesActivity/ISOPARBJuly.jpg'
 import ISOPPARBJune from '../assets/ConferencesActivity/ISOPPARBJune.jpg'
 import ISOPARBApr from '../assets/ConferencesActivity/ISOPARBApr.jpg'
+import LongevitySummit from '../assets/ConferencesActivity/LongevitySummit.png'
 
 const conferencesData = [
     {
@@ -19,12 +20,19 @@ const conferencesData = [
         image: Fogsi,
         title: "Delivering a Talk on Hormone Replacement Therapy at Dr. Reddy's CME",
         description:
-            "Honoured to have been invited as a Speaker at the Dr. Reddy's Continued Medical Education (CME), organized in association with the Allahabad Obstetric & Gynaecological Society (AOGS).",
+        "Honoured to have been invited as a Speaker at the Dr. Reddy's Continued Medical Education (CME), organized in association with the Allahabad Obstetric & Gynaecological Society (AOGS).",
+        date:'18-07-2026'
+    },
+    {
+        image: LongevitySummit,
+        title: "Exploring the Future of Health & Longevity 2026",
+        description:
+            "An enriching experience at Longevity Summit India 2026, exploring emerging ideas in longevity, preventive health, and healthcare innovation. Participated in the panel “What Are You Burning For? Fuel, Family, Fertility & The Energy That Outlives Us”, sharing perspectives on fertility, family, and longevity.",
             date:'18-07-2026'
     },
     {
         image: Eshre,
-        title: "ESHRE Conference | Advancing Fertility Care Through Global Learning",
+        title: "ESHRE Annual Conference | Advancing Fertility Care Through Global Learning",
         description:
             "Honoured to be a part of ESHRE (European Society of Human Reproduction and Embryology), one of the world’s leading platforms for reproductive medicine and fertility research.",
             date:'05-07-2026'
