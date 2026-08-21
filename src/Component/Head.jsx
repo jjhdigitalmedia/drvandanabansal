@@ -9,12 +9,16 @@ import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
 import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
 import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
 import BannerAll from "../assets/Banners/BannerAll.png";
+import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
+import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
     BannerAll,
     // DrVandanaIntro,
+    HysteroscopySurgery,
+    LaparoscopicSurgery,
     FirstBanner,
     UpdatedBanner,
     // BannerUpdatedA,
