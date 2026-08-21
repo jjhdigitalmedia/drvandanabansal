@@ -11,16 +11,18 @@ import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
 import BannerAll from "../assets/Banners/BannerAll.png";
 import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
+import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
-    BannerAll,
     // DrVandanaIntro,
+    BannerAll,
+    VaginalLaserTreatment,
     HysteroscopySurgery,
     LaparoscopicSurgery,
-    FirstBanner,
     UpdatedBanner,
+    // FirstBanner,
     // BannerUpdatedA,
     // DrVandanaIntroo,
     // BannerMain,
@@ -36,7 +38,7 @@ const Head = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage(); // Call the nextImage function to move to the next slide
-    }, 6000); // 2 seconds interval
+    }, 10000); // 2 seconds interval
 
     // Clean up interval on component unmount
     return () => clearInterval(interval);

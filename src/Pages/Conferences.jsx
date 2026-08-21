@@ -59,7 +59,7 @@ export default function conferences() {
         <section className="relative py-32 mb-16 overflow-hidden bg-pink-800">
 
             <div
-                className="absolute top-0 left-0 w-full h-24 bg-white"
+                className="absolute top-0 left-0 w-full h-24 bg-[#f1f1f1]"
                 style={{
                     clipPath: "ellipse(75% 100% at 50% 0%)",
                 }}
