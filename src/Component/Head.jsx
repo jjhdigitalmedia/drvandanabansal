@@ -17,9 +17,9 @@ import "../Style/Style.css";
 const Head = () => {
   const images = [
     // DrVandanaIntro,
-    BannerAll,
-    VaginalLaserTreatment,
+    // BannerAll,
     HysteroscopySurgery,
+    VaginalLaserTreatment,
     LaparoscopicSurgery,
     UpdatedBanner,
     // FirstBanner,
