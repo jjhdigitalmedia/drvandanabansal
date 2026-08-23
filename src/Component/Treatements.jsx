@@ -159,25 +159,25 @@ function Treatments() {
       treatments: [
         {
           title: "Irregular Periods",
-          description: "Expert care for complicated pregnancies",
+          description: "Diagnosis and treatment for irregular and abnormal menstrual cycles.",
           image: IrregularPeriodsImage,
           link: 'treatments/irregular-periods'
         },
         {
           title: "PCOS & PCOD",
-          description: "Safe and comfortable vaginal delivery",
+          description: "Personalized care to manage PCOS, PCOD and related hormonal concerns.",
           image: PCOSAdnPCOD,
           link: 'treatments/pcos-pcod'
         },
         {
           title: "Menopause Management",
-          description: "Safe and comfortable vaginal delivery",
+          description: "Comprehensive care to manage menopause symptoms and support healthy ageing.",
           image: LaparoPhoto,
           link: 'treatments/menopause-management'
         },
         {
           title: "Heavy Menstrual Bleeding",
-          description: "Safe and comfortable vaginal delivery",
+          description: "Evaluation and treatment for heavy or prolonged menstrual bleeding.",
           image: LaparoPhoto,
           link: 'treatments/heavy-menstrual-bleeding'
         },
@@ -389,31 +389,31 @@ function Treatments() {
     {
       key: 'laparoscopy',
       Cardtitle: "Laparoscopic Surgery",
-      CardDesc: "Comprehensive women healthcare from teenage to menopause.",
+      CardDesc: "Minimally invasive surgery for gynecological conditions, offering smaller incisions and faster recovery.",
       CardIcon: LaparoscopicIcon,
     },
     {
       key: 'hysteroscopy',
       Cardtitle: "Hysteroscopic Surgery",
-      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      CardDesc: "Minimally invasive treatment for uterine conditions such as fibroids, polyps, adhesions and abnormal bleeding.",
       CardIcon: HysteroscopicIcon,
     },
     {
       key: 'laser',
       Cardtitle: "Vaginal Laser Treatment",
-      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      CardDesc: "Advanced laser-based care for selected vaginal and intimate health concerns, including dryness and tissue changes.",
       CardIcon: VaginalLaserIcon,
     },
     {
       key: 'womens',
       Cardtitle: "Preventive Womens Care",
-      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      CardDesc: "Regular screening and preventive care to support women’s health through every stage of life.",
       CardIcon: PreventiveWomensIcon,
     },
     {
       key: 'gynaecancer',
       Cardtitle: "Gynaec Cancer Care",
-      CardDesc: "PCOS, endometriosis, fibroids and other complex conditions.",
+      CardDesc: "Screening, evaluation and comprehensive care for common gynaecological cancers and related conditions.",
       CardIcon: GynaecCancerIcon,
     },
   ]
