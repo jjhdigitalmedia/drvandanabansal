@@ -30,38 +30,38 @@ export function FAQ() {
     const qna = [
         {
             i: 1,
-            q: 'What is infertility?',
-            ana: 'Infertility is defined as the inability to conceive a child despite trying for one year.'
+            q: 'What treatments does Dr. Vandana Bansal offer?',
+            ana: 'Dr. Vandana Bansal provides comprehensive women’s healthcare including IVF & infertility treatment, laparoscopic and hysteroscopic surgery, high-risk pregnancy care, menopause management and preventive women’s health.'
         },
         {
             i: 2,
-            q: 'Is infertility a womans problem?',
-            ana: 'It is a myth that infertility is always a "womans problem." In 50% of all infertility case male is directly or indirectly responsible (referred to as male factors).'
+            q: 'When should I consult an infertility specialist?',
+            ana: 'If you have been trying to conceive without success, have irregular periods, PCOS, endometriosis, low ovarian reserve, recurrent pregnancy loss or previous IVF failure, a fertility consultation may be helpful.'
         },
         {
             i: 3,
-            q: 'What causes infertility in men?',
-            ana: 'Lifestyle can influence the number and quality of a mans sperm. Alcohol and drugs--including marijuana, nicotine, and certain medications--can temporarily reduce sperm quality. Also, environmental toxins, including pesticides and lead, may be to blame for some cases of infertility. The causes of sperm production problems can exist from birth or develop later as a result of severe medical illnesses, including mumps and some sexually transmitted diseases, or from a severe testicle injury, tumor, or other problem. Inability to ejaculate normally can prevent conception, too, and can be caused by many factors, including diabetes, surgery of the prostate gland or urethra, blood pressure medication, or impotence.'
+            q: 'What is the difference between IVF and ICSI?',
+            ana: 'oth are assisted reproductive treatments. In ICSI, a single sperm is directly injected into the egg and may be recommended in certain cases of male-factor infertility or previous fertilisation problems.'
         },
         {
             i: 4,
-            q: 'What causes infertility in women?',
-            ana: 'The other half of explained infertility cases are linked to female problems (called female factors), most commonly ovulation disorders. Without ovulation, eggs are not available for fertilization. Problems with ovulation are signaled by irregular menstrual periods or a lack of periods altogether (called amenorrhea)      Simple lifestyle factors--including stress, diet, or athletic training--can affect a womans hormonal balance.'
+            q: 'What conditions can be treated with laparoscopic surgery?',
+            ana: 'Laparoscopic surgery may be used for conditions such as fibroids, endometriosis, ovarian cysts, pelvic adhesions, tubal disease and selected gynaecological procedures.'
         },
         {
             i: 5,
-            q: 'What is endometriosis?',
-            ana: 'Endometriosis is a condition in which tissue similar to that normally lining the uterus is found outside of the uterus, usually in the ovaries, fallopian tubes, and other pelvic structures. Endometriosis has no single symptom that is diagnostic. Patients with endometriosis may have painful periods, pelvic pain and backache during menses, painful intercourse and infertility.'
+            q: 'What is hysteroscopy used for?',
+            ana: 'steroscopy allows evaluation and treatment of problems inside the uterus, including polyps, submucous fibroids, adhesions and certain uterine abnormalities.'
         },
         {
             i: 6,
-            q: 'What are uterine fibroids?',
-            ana: 'Uterine fibroids are growth that develop from the cells that make up the muscle of the uterus. Thay are also called leiomyomas or myomas. Uterine fibroids are common, benign growths that occur quite often in women. About one in every four or five women has them. Fibroids are most common in women aged 30 - 40, but can occur at any age. Many women who have fibroids are not aware of them because the growth can remain small and not cause a problem. Some symptoms that may occur include bleeding, irregular periods, menstrual pain, abdominal pain, painful intercourse, constipation, miscarriage and infertility.'
+            q: 'When is a pregnancy considered high-risk?',
+            ana: 'Pregnancy may require specialised monitoring in situations such as advanced maternal age, hypertension, diabetes, multiple pregnancy, previous pregnancy complications or pregnancy following IVF.'
         },
         {
             i: 7,
-            q: 'What is artificial insemination or IUI?',
-            ana: 'IUI or intra uterine insemination is an in-office procedure that is used to treat a variety of fertility conditions that may include cervical mucus problems, diminished sperm motility and ovulation dysfunction. The procedure involves ovulation monitoring by ultrasound examination, sperm washing and insemination. Sperm washing is done by using protein enhanced mediums and centrifuging - procedures to obtain the best possible motile sperms. The washed sperms are then placed in the uterine cavity for fertilization to occur within the body.'
+            q: 'What happens during a menopause consultation?',
+            ana: 'Menopause care may include assessment of symptoms, bone health, cardiovascular and metabolic risk, sleep, mood, vaginal health and overall long-term wellbeing.'
         },
         {
             i: 8,
@@ -70,13 +70,13 @@ export function FAQ() {
         },
         {
             i: 9,
-            q: 'Can the IVF cycle be cancelled during a treatment cycle ?',
-            ana: 'The aim of incentive monitoring program is to obtain a good number of healthy mature eggs. Thus if the cycle is unsatisfactory, it may be cancelled at any stage.'
+            q: 'How can I book an appointment with Dr. Vandana Bansal?',
+            ana: 'You can book an appointment by contacting the clinic or using the appointment option on the website.'
         },
         {
             i: 10,
-            q: 'What is the time required for IUI/IVF treatment?',
-            ana: 'IUI treatment is short and requires 2-5 visits during the follicular monitoring prior to IUI, after IUI patient can go home and take a 14 days general rest before a pregnancy test is done.'
+            q: 'Where can I consult Dr. Vandana Bansal?',
+            ana: 'Consultations are available at Jeevan Jyoti Hospital, Prayagraj, with appointments available for fertility, gynaecological surgery, high-risk pregnancy and menopause care.'
         },
     ]
 

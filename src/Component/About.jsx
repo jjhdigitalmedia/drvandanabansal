@@ -101,7 +101,7 @@ function About () {
         {/* Left Content Section */}
         <div className="flex-1 text-cente">
           <h1 className="text-4xl md:text-5xl text-ceter lg:text-left font-serif text-pink-700">
-            Dr. Vandana Bansal
+            About Dr. Vandana Bansal
           </h1>
 
           <p className="mt-2 text-gray-700 font-medium">
@@ -109,7 +109,7 @@ function About () {
           </p>
 
           <p className="text-pink-800 font-semibold mt-1">
-            Infertility & IVF Expert
+            Infertility & IVF Expert, Laparoscopic & Hysteroscopic Surgeon
           </p>
 
           {/* Social Icons */}

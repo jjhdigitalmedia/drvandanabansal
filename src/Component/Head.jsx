@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import BannerMain from "../assets/Banners/BannerMain.jpg";
 import qwq from "../assets/Banners/qwq.jpg";
 import FirstBanner from "../assets/Banners/FirstBanner.png";
-import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
+// import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
 import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
 import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
 import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
@@ -12,12 +12,14 @@ import BannerAll from "../assets/Banners/BannerAll.png";
 import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
+import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
 import "../Style/Style.css";
 
 const Head = () => {
   const images = [
     // DrVandanaIntro,
     // BannerAll,
+    DrVandanaIntro,
     HysteroscopySurgery,
     VaginalLaserTreatment,
     LaparoscopicSurgery,
@@ -38,7 +40,7 @@ const Head = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage(); // Call the nextImage function to move to the next slide
-    }, 10000); // 2 seconds interval
+    }, 20000); // 2 seconds interval
 
     // Clean up interval on component unmount
     return () => clearInterval(interval);
