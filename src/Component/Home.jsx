@@ -43,30 +43,19 @@ const Home = () => {
 
       </Helmet>
 
-      {/* <Navv /> */}
-
       <ContactButton />
       <Arrow />
       <Head />
-
-      {/* <div className="">
-        <CurrentRoute />
-        <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' />
-      </div> */}
-      {/* <VideoOfCentre /> */}
-      {/* <Rewards /> */}
-
       <About />
       <Stats />
       <Treatements />
       <Conferences />
-      <Features/>
+      <Features />
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
       <div className='w-11/12 mx-auto'>
-
-      <script src="https://elfsightcdn.com/platform.js" async></script>
-      <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
       </div>
       <FAQ />
       <Appointment />

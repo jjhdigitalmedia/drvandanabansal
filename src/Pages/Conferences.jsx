@@ -18,7 +18,7 @@ const conferencesData = [
     },
     {
         image: Fogsi,
-        title: "Delivering a Talk on Hormone Replacement Therapy at Dr. Reddy's CME",
+        title: "Delivered a Talk on Hormone Replacement Therapy at Dr. Reddy's CME",
         description:
         "Honoured to have been invited as a Speaker at the Dr. Reddy's Continued Medical Education (CME), organized in association with the Allahabad Obstetric & Gynaecological Society (AOGS).",
         date:'18-07-2026'
@@ -39,16 +39,16 @@ const conferencesData = [
     },
     {
         image: ISOPPARBJune,
-        title: "International Fertility Summit",
+        title: "Leading the ISOPARB Prayagraj Scientific Program",
         description:
-            "Collaborating with global experts in reproductive medicine.",
-            date:'01-01-2026'
+            "As President of ISOPARB Prayagraj, I had the privilege of leading the Scientific Program, fostering academic discussions and advancing evidence-based practices in reproductive medicine and gynecology.",
+            date:'23-06-2026'
     },
     {
         image: ISOPARBApr,
-        title: "Scientific Session",
+        title: "Delivered a Lecture at the ISOPARB CME on Medical Management of Uterine Fibroids",
         description:
-            "Discussing evidence-based practices in obstetrics & gynecology.",
+            "As President of ISOPARB Prayagraj, I delivered a Scientific Session on Medical Management of Uterine Fibroids, sharing evidence-based approaches and the latest advances in uterine fibroid management.",
             date:'25-04-2026'
     },
 ];

@@ -13,6 +13,7 @@ import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
+import InfertilityIVF from "../assets/Banners/InfertilityIVF.jpg";
 import "../Style/Style.css";
 
 const Head = () => {
@@ -20,10 +21,11 @@ const Head = () => {
     // DrVandanaIntro,
     // BannerAll,
     DrVandanaIntro,
+    InfertilityIVF,
     HysteroscopySurgery,
     VaginalLaserTreatment,
     LaparoscopicSurgery,
-    UpdatedBanner,
+    // UpdatedBanner,
     // FirstBanner,
     // BannerUpdatedA,
     // DrVandanaIntroo,
