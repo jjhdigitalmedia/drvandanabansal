@@ -10,8 +10,8 @@ import { IoCallOutline } from "react-icons/io5";
 import {
   ChevronDownIcon,
   PlusIcon,
-  Bars3Icon,
   XMarkIcon,
+  Bars3Icon,
 } from "@heroicons/react/24/solid";
 import { CiMenuFries } from "react-icons/ci";
 // import { Button } from "@material-tailwind/react";

@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import BannerMain from "../assets/Banners/BannerMain.jpg";
-import qwq from "../assets/Banners/qwq.jpg";
-import FirstBanner from "../assets/Banners/FirstBanner.png";
+import "../Style/Style.css";
 // import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
-import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
-import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
-import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
-import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
-import BannerAll from "../assets/Banners/BannerAll.png";
+// import qwq from "../assets/Banners/qwq.jpg";
+// import FirstBanner from "../assets/Banners/FirstBanner.png";
+// import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
+// import BannerMain from "../assets/Banners/BannerMain.jpg";
+// import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
+// import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
+// import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
+// import BannerAll from "../assets/Banners/BannerAll.png";
+import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
-import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
 import InfertilityIVF from "../assets/Banners/InfertilityIVF.jpg";
 import AestheticGynae from "../assets/Banners/AestheticGynae.png";
-import "../Style/Style.css";
 
 const Head = () => {
   const images = [
-    // DrVandanaIntro,
-    // BannerAll,
     DrVandanaIntro,
     InfertilityIVF,
     AestheticGynae,
     HysteroscopySurgery,
     VaginalLaserTreatment,
     LaparoscopicSurgery,
+    // DrVandanaIntro,
+    // BannerAll,
     // UpdatedBanner,
     // FirstBanner,
     // BannerUpdatedA,
