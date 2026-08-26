@@ -52,6 +52,7 @@ const Home = () => {
       <Treatements />
       <Conferences />
       <Memberships/>
+      
       <Features />
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
