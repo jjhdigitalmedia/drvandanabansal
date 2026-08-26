@@ -47,6 +47,11 @@ import BreastCancer from '../assets/Treatments/BreastCancer.png'
 import MenopauseManagement from '../assets/Treatments/MenopauseManagement.png'
 import HeavyMenstrualBleeding from '../assets/Treatments/HeavyMenstrualBleeding.png'
 import PainlessEpidural from '../assets/Treatments/PainlessEpidural.png'
+import EmbryoDonation from '../assets/Treatments/EmbryoDonation.png'
+import OocyteDonation from '../assets/Treatments/OocyteDonation.png'
+import MESA from '../assets/Treatments/MESA.png'
+import TESA from '../assets/Treatments/TESA.png'
+import LaserAssistedHatching from '../assets/Treatments/LaserAssistedHatching.png'
 
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
@@ -103,7 +108,7 @@ function Treatments() {
         {
           title: "IMSI",
           description: "Advanced sperm selection technique used in selected IVF treatments.",
-          image: LaparoPhoto,
+          image: IUIPic,
           link: 'treatments/cervical-cancer',
         },
         {
@@ -127,19 +132,19 @@ function Treatments() {
         {
           title: "Laser Assisted Hatching",
           description: "A technique that may help the embryo implant during selected IVF treatments.",
-          image: LaparoPhoto,
+          image: LaserAssistedHatching,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "MESA",
           description: "A surgical technique to retrieve sperm from the epididymis for fertility treatment.",
-          image: LaparoPhoto,
+          image: MESA,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "TESA",
           description: "A minimally invasive technique to retrieve sperm directly from the testis.",
-          image: LaparoPhoto,
+          image: TESA,
           link: 'treatments/cervical-cancer',
         },
         {
@@ -151,13 +156,13 @@ function Treatments() {
         {
           title: "Embryo Donation",
           description: "Using donated embryos to help eligible patients achieve pregnancy.",
-          image: LaparoPhoto,
+          image: EmbryoDonation,
           link: 'treatments/cervical-cancer',
         },
         {
           title: "Oocyte Donation",
           description: "Using donated eggs as part of fertility treatment to help achieve pregnancy.",
-          image: LaparoPhoto,
+          image: OocyteDonation,
           link: 'treatments/cervical-cancer',
         },
       ],
