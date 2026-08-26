@@ -52,8 +52,8 @@ const Home = () => {
       <Treatements />
       <Conferences />
       <Memberships/>
-      
-      <Features />
+
+      {/* <Features /> */}
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
       <div className='w-11/12 mx-auto'>
