@@ -209,6 +209,12 @@ function Treatments() {
           link: "treatments/stress-urinary-incontinence"
         },
         {
+          title: "Hymenoplasty",
+          description: "Confidential surgical restoration of the hymen performed with a personalized approach, ensuring privacy, safety, and compassionate care.",
+          image: AestheticGynaecology,
+          link: "treatments/hymenoplasty"
+        },
+        {
           title: "Pelvic Floor Treatment",
           description: "Comprehensive therapies to strengthen pelvic floor muscles and improve bladder control and pelvic health.",
           image: AestheticGynaecology,

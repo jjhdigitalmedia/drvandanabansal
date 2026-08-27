@@ -27,7 +27,7 @@ const Footer = () => {
 
         <p className="text-gray-500 leading-8 text-base">
           Advanced IVF, fertility and women's healthcare with over
-          38 years of experience. Providing ethical and personalized
+          39 years of experience. Providing ethical and personalized
           treatment for every patient.
         </p>
 

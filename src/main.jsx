@@ -73,6 +73,9 @@ import BreastHealthCheckup from './Pages/Treatments/PreventiveWomensCare/BreastH
 import HPVVaccination from './Pages/Treatments/PreventiveWomensCare/HPVVaccination.jsx'
 import PapSmearScreening from './Pages/Treatments/PreventiveWomensCare/PapSmearScreening.jsx'
 import Mammography from './Pages/Treatments/PreventiveWomensCare/Mammography.jsx'
+import BreastCancer from './Pages/Treatments/GynecCancerCare/BreastCancer.jsx'
+import PainlessDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PainlessDelivery.jsx'
+import BoneHealthScreening from './Pages/Treatments/PreventiveWomensCare/BoneHealthScreening.jsx'
 
 
 const router = createBrowserRouter([
@@ -241,6 +244,7 @@ const router = createBrowserRouter([
         element: <TESA />,
         children: []
       },
+      // ........................................................................................
       {
         path: 'treatments/heavy-menstrual-bleeding',
         element: <HeavyBleeding/>,
@@ -261,6 +265,7 @@ const router = createBrowserRouter([
         element: <PCOSAndPCOD/>,
         children: []
       },
+      // ...............................................................................................
       {
         path: 'treatments/cervical-cancer',
         element: <CervicalCancer/>,
@@ -272,11 +277,16 @@ const router = createBrowserRouter([
         children: []
       },
       {
-        path: 'treatments/uterus-cancer',
+        path: 'treatments/uterine-cancer',
         element: <UterusCancer/>,
         children: []
       },
-
+      {
+        path: 'treatments/breast-cancer',
+        element: <BreastCancer/>,
+        children: []
+      },
+      // .....................................................................................................
       {
         path: 'treatments/cesarean-section-delivery',
         element: <CesareanDelivery/>,
@@ -293,6 +303,11 @@ const router = createBrowserRouter([
         children: []
       },
       {
+        path: 'treatments/painless-delivery',
+        element: <PainlessDelivery/>,
+        children: []
+      },
+      {
         path: 'treatments/pretem-labour',
         element: <PretemLabourCare/>,
         children: []
@@ -302,6 +317,7 @@ const router = createBrowserRouter([
         element: <RecurrentPregnancyLoss/>,
         children: []
       },
+      // ................................................................................
       {
         path: 'treatments/ovarian-cyst-laparoscopic-surgery',
         element: <OvarianCystSurgery/>,
@@ -317,6 +333,7 @@ const router = createBrowserRouter([
         element: <EndometriosisTreatment/>,
         children: []
       },
+      // ..................................................................................
       {
         path: 'treatments/pap-smear-screening',
         element: <PapSmearScreening/>,
@@ -333,7 +350,18 @@ const router = createBrowserRouter([
         children: []
       },
       {
+        path: 'treatments/bone-health-screening',
+        element: <BoneHealthScreening/>,
+        children: []
+      },
+      {
         path: 'treatments/mammography',
+        element: <Mammography/>,
+        children: []
+      },
+      // ......................................................................................
+      {
+        path: 'treatments/vaginal-laser-treatment',
         element: <Mammography/>,
         children: []
       },
