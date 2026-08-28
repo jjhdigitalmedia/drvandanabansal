@@ -120,10 +120,16 @@ const Footer = () => {
         <div className="space-y-5">
 
           <a
-            href="tel:+919999999999"
+            href="tel:+916390103002"
             className="block hover:text-pink-600"
           >
             +91 6390103002
+          </a>
+          <a
+            href="tel:+916390103004"
+            className="block hover:text-pink-600"
+          >
+            +91 6390103004
           </a>
 
           <a
