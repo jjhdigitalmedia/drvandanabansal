@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 const TESA = () => {
   return (
     <>
@@ -45,11 +45,11 @@ const TESA = () => {
           <p>TESA has a sperm retrieval success rate of around 40-50%. When combined with ICSI, the overall pregnancy rate is approximately 30-50% per cycle.</p>
         </div>
         <div>
-          <img
+          {/* <img
             src={lab0}
             alt="Mountain"
             className="w-full  object-cover border-8 border-white rounded-2xl"
-          />
+          /> */}
         </div>
       </div>
     </>

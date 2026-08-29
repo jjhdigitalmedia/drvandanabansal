@@ -8,13 +8,10 @@ import Head from './Head'
 import Treatements from './Treatements'
 import Appointment from './Appointment'
 import ContactButton from './ContactButton'
-import Conferences from '../Pages/Conferences';
+import Conferences from './Conferences';
 import Features from './Features';
-import Contact from './Contact'
-import CurrentRoute from './CurrentRoute'
-import GoogleReview from './GoogleReview'
-import VideoOfCentre from './VideoOfCentre'
-import Memberships from './Memberships';
+// import GoogleReview from './GoogleReview'
+// import Memberships from './Memberships';
 
 const Home = () => {
   return (
@@ -53,10 +50,10 @@ const Home = () => {
       <Features />
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
-      <div className='w-11/12 mx-auto'>
+      {/* <div className='w-11/12 mx-auto'>
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
-      </div>
+      </div> */}
       <FAQ />
       <Appointment />
       {/* <Contact /> */}

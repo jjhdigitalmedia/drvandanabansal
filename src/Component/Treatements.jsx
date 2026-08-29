@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import LaparoPhoto from '../assets/LaparoPhoto.jpg'
 import Hysteroscopy from '../assets/Treatments/Hysteroscopy.jpeg'
 import VaginalDryness from '../assets/Treatments/VaginalDryness.jpeg'
 import LaserTreatment from '../assets/Treatments/LaserTreatment.jpeg'
@@ -36,7 +35,6 @@ import AdvancedGynecologicalCareIcon from '../assets/Treatments/AdvancedGynecolo
 import HighRiskPregnancyIcon from '../assets/Treatments/HighRiskPregnancyIcon.png'
 import LaparoscopicIcon from '../assets/Treatments/LaparoscopicIcon.png'
 import HysteroscopicIcon from '../assets/Treatments/HysteroscopicIcon.png'
-import VaginalLaserIcon from '../assets/Treatments/VaginalLaserIcon.png'
 import GynaecCancerIcon from '../assets/Treatments/GynaecCancerIcon.png'
 import PreventiveWomensIcon from '../assets/Treatments/PreventiveWomensIcon.png'
 import AestheticGynae from '../assets/Treatments/AestheticGynae.png'
@@ -93,79 +91,79 @@ function Treatments() {
           title: "IVF ET",
           description: "Advanced fertility treatment to help achieve a successful pregnancy.",
           image: IVFETPic,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/ivf-et',
         },
         {
           title: "IUI",
           description: "A simple fertility treatment to improve the chances of conception.",
           image: IUIPic,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/iui',
         },
         {
           title: "ICSI",
           description: "Advanced fertilization technique for selected male and female infertility cases.",
           image: ICSI,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/icsi',
         },
         {
           title: "IMSI",
           description: "Advanced sperm selection technique used in selected IVF treatments.",
           image: IUIPic,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/imsi',
         },
         {
           title: "Blastocyst Transfer",
           description: "Transfer of a developed embryo to improve the chances of implantation.",
           image: BlastocystTransferPic,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/blastocyst-transfer',
         },
         {
           title: "Semen Cryopreservation",
           description: "Safe freezing and storage of sperm for future fertility treatment.",
           image: SemenCryopreservationPhoto,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/semen-cryopreservation',
         },
         {
           title: "Oocyte Cryopreservation",
           description: "Freezing and preserving eggs for future fertility treatment.",
           image: OocyteCryopreservation,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/oocyte-cryopreservation',
         },
         {
           title: "Laser Assisted Hatching",
           description: "A technique that may help the embryo implant during selected IVF treatments.",
           image: LaserAssistedHatching,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/laser-assisted-hatching',
         },
         {
           title: "MESA",
           description: "A surgical technique to retrieve sperm from the epididymis for fertility treatment.",
           image: MESA,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/mesa',
         },
         {
           title: "TESA",
           description: "A minimally invasive technique to retrieve sperm directly from the testis.",
           image: TESA,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/tesa',
         },
         {
           title: "Embryo Banking",
           description: "Freezing and storing embryos for future fertility treatment or transfer.",
           image: EmbryoBanking,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/embryo-banking',
         },
         {
           title: "Embryo Donation",
           description: "Using donated embryos to help eligible patients achieve pregnancy.",
           image: EmbryoDonation,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/embryo-donation',
         },
         {
           title: "Oocyte Donation",
           description: "Using donated eggs as part of fertility treatment to help achieve pregnancy.",
           image: OocyteDonation,
-          link: 'treatments/cervical-cancer',
+          link: 'treatments/oocyte-donation',
         },
       ],
     },
@@ -228,30 +226,6 @@ function Treatments() {
           image: VaginalTightening,
           link: 'treatments/cervical-cancer'
         },
-        // {
-        //   title: "Vaginal Rejuvenation",
-        //   description: "Non-surgical treatments designed to improve vaginal health, comfort, elasticity, and overall intimate wellness.",
-        //   image: LaserTreatment,
-        //   link: "treatments/vaginal-rejuvenation"
-        // },
-        // {
-        //   title: "Vaginal Dryness",
-        //   description: "Laser-based care to help relieve vaginal dryness and related discomfort.",
-        //   image: VaginalDryness,
-        //   link: 'treatments/cervical-cancer'
-        // },
-        // {
-        //   title: "Genitourinary Syndrome of Menopause (GSM)",
-        //   description: "Personalized treatment for vaginal dryness, irritation, and urinary symptoms associated with menopause.",
-        //   image: AestheticGynaecology,
-        //   link: "treatments/genitourinary-syndrome-of-menopause"
-        // },
-        // {
-        //   title: "Vaginismus Treatment",
-        //   description: "Personalized care to help overcome painful intercourse and pelvic floor muscle spasm.",
-        //   image: AestheticGynaecology,
-        //   link: "treatments/vaginismus-treatment"
-        // },
         {
           title: "Labiaplasty",
           description: "Surgical reshaping of the labia to improve comfort, function, and appearance.",
@@ -270,12 +244,6 @@ function Treatments() {
           image: AestheticGynaecology,
           link: "treatments/sexual-wellness"
         },
-        // {
-        //   title: "Functional Medicine for Women's Health",
-        //   description: "A holistic approach to optimize hormonal balance, metabolism, gut health, and overall well-being through personalized care.",
-        //   image: AestheticGynaecology,
-        //   link: "treatments/functional-medicine"
-        // }
       ]
     },
     {
@@ -564,12 +532,6 @@ function Treatments() {
       CardDesc: "Minimally invasive treatment for uterine conditions.",
       CardIcon: HysteroscopicIcon,
     },
-    // {
-    //   key: 'laser',
-    //   Cardtitle: "Vaginal Laser Treatment",
-    //   CardDesc: "Advanced laser care for selected vaginal health concerns.",
-    //   CardIcon: VaginalLaserIcon,
-    // },
     {
       key: 'womens',
       Cardtitle: "Preventive Womens Care",

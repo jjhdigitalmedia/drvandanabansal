@@ -1,6 +1,4 @@
-import React from 'react'
 import Contact from '../Component/Contact';
-import PageBanner from './PageBanner';
 import { Helmet } from 'react-helmet';
 const BookYourAppointment = () => {
     return (

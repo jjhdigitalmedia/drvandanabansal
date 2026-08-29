@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 
 const MESA = () => {
   return (
@@ -44,11 +44,11 @@ const MESA = () => {
           <p>MESA has a high sperm retrieval success rate of 80-90%, and the pregnancy success rate using ICSI with MESA sperm is approximately 50-60% per cycle.</p>
         </div>
         <div>
-          <img
+          {/* <img
             src={lab0}
             alt="Mountain"
             className="w-full  object-cover border-8 border-white rounded-2xl"
-          />
+          /> */}
         </div>
       </div>
     </>

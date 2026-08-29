@@ -7,45 +7,29 @@ import { HelmetProvider } from 'react-helmet-async'
 
 import App from './App.jsx'
 import './index.css'
+
 import Home from './Component/Home.jsx'
 import About from './Component/About.jsx'
 import Contact from './Component/Contact.jsx'
+import NavigationB from './Component/NavigationB.jsx'
+import Gallery from './Pages/Gallery.jsx'
+import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
+import Treatements from './Component/Treatements.jsx'
+import NotFound from './Pages/NotFound.jsx'
+import BookYourAppointment from './Pages/BookYourAppointment.jsx'
+import Linktree from './Pages/LinkTree.jsx'
 
 import IuiTreatment from './Pages/Treatments/InfertilityAndIVF/IuiTreatment.jsx'
 import IcsiTreatment from './Pages/Treatments/InfertilityAndIVF/IcsiTreatment.jsx'
 import IvfEtTreatment from './Pages/Treatments/InfertilityAndIVF/IvfEtTreatment.jsx'
 import ImsiTreatment from './Pages/Treatments/InfertilityAndIVF/ImsiTreatment.jsx'
-import IvmTreatment from './Pages/Treatments/InfertilityAndIVF/IvmTreatment.jsx'
-import EmbryoTreatment from './Pages/Treatments/InfertilityAndIVF/EmbryoTreatment.jsx'
-import SonographyTreatment from './Pages/Treatments/InfertilityAndIVF/SonographyTreatment.jsx'
 import LaserAssistedTreatment from './Pages/Treatments/InfertilityAndIVF/LaserAssistedTreatment.jsx'
 import EmbryoBankTreatment from './Pages/Treatments/InfertilityAndIVF/EmbryoBankTreatment.jsx'
-import EggDonationTreatment from './Pages/Treatments/InfertilityAndIVF/EggDonationTreatment.jsx'
-import SemenBankTreatment from './Pages/Treatments/InfertilityAndIVF/SemenBankTreatment.jsx'
-import HSGSonoTreatment from './Pages/Treatments/InfertilityAndIVF/HSGSonoTreatment.jsx'
-import EndocrineTreatment from './Pages/Treatments/InfertilityAndIVF/EndocrineTreatment.jsx'
 import BlastocystTreatment from './Pages/Treatments/InfertilityAndIVF/BlastocystTreatment.jsx'
-import CryopreservationTreatment from './Pages/Treatments/InfertilityAndIVF/CryopreservationTreatment.jsx'
-import LaparoscopyTreatment from './Pages/Treatments/InfertilityAndIVF/LaparoscopyTreatment.jsx'
-
-import Facilities from './Pages/Facilities.jsx'
-import IVFteam from './Pages/Ivfteam.jsx'
-import PatientsGuide from './Pages/PatientsGuide.jsx'
-import SuccessRate from './Pages/SuccessRate.jsx'
-
-import Gallery from './Pages/Gallery.jsx'
-import BookYourAppointment from './Pages/BookYourAppointment.jsx'
-import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
-import VideoOfCentre from './Component/VideoOfCentre.jsx'
-import NotFound from './Pages/NotFound.jsx'
-import Treatements from './Component/Treatements.jsx'
-import Linktree from './Pages/LinkTree.jsx'
-import NavigationB from './Component/NavigationB.jsx'
 import MESA from './Pages/Treatments/InfertilityAndIVF/MESA.jsx'
 import TESA from './Pages/Treatments/InfertilityAndIVF/TESA.jsx'
 import OocyteCryopreservation from './Pages/Treatments/InfertilityAndIVF/OocyteCryopreservation.jsx'
 import SemenCryopreservation from './Pages/Treatments/InfertilityAndIVF/SemenCryopreservation.jsx'
-import EmbryoDonation from './Pages/Treatments/InfertilityAndIVF/EmbryoDonation.jsx'
 import OocyteDonation from './Pages/Treatments/InfertilityAndIVF/OocyteDonation.jsx'
 
 
@@ -57,25 +41,46 @@ import PCOSAndPCOD from './Pages/Treatments/AdvancedGynecologyCare/PCOSAndPCOD.j
 import CervicalCancer from './Pages/Treatments/GynecCancerCare/CervicalCancer.jsx'
 import OvarianCancer from './Pages/Treatments/GynecCancerCare/OvarianCancer.jsx'
 import UterusCancer from './Pages/Treatments/GynecCancerCare/UterusCancer.jsx'
+import BreastCancer from './Pages/Treatments/GynecCancerCare/BreastCancer.jsx'
+
+import BreastHealthCheckup from './Pages/Treatments/PreventiveWomensCare/BreastHealthCheckup.jsx'
+import HPVVaccination from './Pages/Treatments/PreventiveWomensCare/HPVVaccination.jsx'
+import Mammography from './Pages/Treatments/PreventiveWomensCare/Mammography.jsx'
+import PapSmearScreening from './Pages/Treatments/PreventiveWomensCare/PapSmearScreening.jsx'
+import BoneHealthScreening from './Pages/Treatments/PreventiveWomensCare/BoneHealthScreening.jsx'
 
 import CesareanDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/CesareanDelivery.jsx'
 import HighBPAndDiabetesInPregnancy from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/HighBPAndDiabetesInPregnancy.jsx'
 import NormalDeliveryCare from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/NormalDeliveryCare.jsx'
 import PretemLabourCare from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PretemLabourCare.jsx'
 import RecurrentPregnancyLoss from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/RecurrentPregnancyLoss.jsx'
-import TwinAndMultiplePregnancy from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/TwinAndMultiplePregnancy.jsx'
 
 import FibroidRemoval from './Pages/Treatments/LaparoscopicSurgery/FibroidRemoval.jsx'
 import EndometriosisTreatment from './Pages/Treatments/LaparoscopicSurgery/EndometriosisTreatment.jsx'
 import OvarianCystSurgery from './Pages/Treatments/LaparoscopicSurgery/OvarianCystSurgery.jsx'
 
-import BreastHealthCheckup from './Pages/Treatments/PreventiveWomensCare/BreastHealthCheckup.jsx'
-import HPVVaccination from './Pages/Treatments/PreventiveWomensCare/HPVVaccination.jsx'
-import PapSmearScreening from './Pages/Treatments/PreventiveWomensCare/PapSmearScreening.jsx'
-import Mammography from './Pages/Treatments/PreventiveWomensCare/Mammography.jsx'
-import BreastCancer from './Pages/Treatments/GynecCancerCare/BreastCancer.jsx'
 import PainlessDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PainlessDelivery.jsx'
-import BoneHealthScreening from './Pages/Treatments/PreventiveWomensCare/BoneHealthScreening.jsx'
+
+import Hymenoplasty from './Pages/Treatments/AestheticGynae/Hymenoplasty.jsx'
+import Labiaplasty from './Pages/Treatments/AestheticGynae/Labiaplasty.jsx'
+import PelvicFloorTreatment from './Pages/Treatments/AestheticGynae/PelvicFloorTreatment.jsx'
+import SexualWellness from './Pages/Treatments/AestheticGynae/SexualWellness.jsx'
+import StressUrinaryIncontinence from './Pages/Treatments/AestheticGynae/StressUrinaryIncontinence.jsx'
+import Vaginismus from './Pages/Treatments/AestheticGynae/Vaginismus.jsx'
+import VaginalRejuvination from './Pages/Treatments/AestheticGynae/VaginalRejuvination.jsx'
+
+import BoneAndOsteoporosis from './Pages/Treatments/MenopuaseAndLongevity/BoneAndOsteoporosis.jsx'
+import CardiovascularAndMetabolicHealth from './Pages/Treatments/MenopuaseAndLongevity/CardiovascularAndMetabolicHealth.jsx'
+import LifestyleNutritionAndExercise from './Pages/Treatments/MenopuaseAndLongevity/LifestyleNutritionAndExercise.jsx'
+import PerimenopauseAndMenopause from './Pages/Treatments/MenopuaseAndLongevity/PerimenopauseAndMenopause.jsx'
+import SleepMoodAndCognition from './Pages/Treatments/MenopuaseAndLongevity/SleepMoodAndCognition.jsx'
+
+import AbnormalUterineBleeding from './Pages/Treatments/HysteroscopicSurgery.jsx/AbnormalUterineBleeding.jsx'
+import AdhesionsRemoval from './Pages/Treatments/HysteroscopicSurgery.jsx/AdhesionsRemoval.jsx'
+import DiagnosticHysteroscopyEvaluation from './Pages/Treatments/HysteroscopicSurgery.jsx/DiagnosticHysteroscopyEvaluation.jsx'
+import PreIVFHysteroscopyEvaluation from './Pages/Treatments/HysteroscopicSurgery.jsx/PreIVFHysteroscopyEvaluation.jsx'
+import UterinePolypRemoval from './Pages/Treatments/HysteroscopicSurgery.jsx/UterinePolypRemoval.jsx'
+import UterineSeptumResection from './Pages/Treatments/HysteroscopicSurgery.jsx/UterineSeptumResection.jsx'
 
 
 const router = createBrowserRouter([
@@ -96,286 +101,315 @@ const router = createBrowserRouter([
         element: <BookYourAppointment />,
       },
       {
-        path: 'ivf-team',
-        element: <IVFteam />,
-      },
-      {
         path: 'contact',
         element: <Contact />,
       },
       {
-        path: 'facilities',
-        element: <Facilities />,
-        children: []
-      },
-      {
-        path: 'patients-guide',
-        element: <PatientsGuide />,
-        children: []
-      },
-      {
-        path: 'achievements',
-        element: <SuccessRate />,
-        children: []
-      },
-      {
         path: 'gallery',
         element: <Gallery />,
-        children: []
+        
       },
       {
         path: 'in-news',
         element: <NewsPaperCutting />,
-        children: []
+        
       },
       
       {
         path: 'treatments',
         element: <Treatements />,
-        children: []
+        
       },
       {
         path: 'treatments/iui',
         element: <IuiTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/ivf-et',
         element: <IvfEtTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/icsi',
         element: <IcsiTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/ivm',
-        element: <IvmTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/imsi',
         element: <ImsiTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/embryo-monitoring',
-        element: <EmbryoTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/laser-assisted-hatching',
         element: <LaserAssistedTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/laparoscopy',
-        element: <LaparoscopyTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/endocrine',
-        element: <EndocrineTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/sonography',
-        element: <SonographyTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/hsg-sono',
-        element: <HSGSonoTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/semen-bank',
-        element: <SemenBankTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/oocyte-donation',
         element: <OocyteDonation />,
-        children: []
+        
       },
       {
-        path: 'treatments/embryo-donation',
-        element: <EmbryoDonation />,
-        children: []
-      },
-      {
-        path: 'treatments/embryo-bank',
+        path: 'treatments/embryo-banking',
         element: <EmbryoBankTreatment />,
-        children: []
+        
       },
       {
         path: 'treatments/blastocyst-transfer',
         element: <BlastocystTreatment />,
-        children: []
+        
       },
       {
-        path: 'treatments/egg-donation',
-        element: <EggDonationTreatment />,
-        children: []
-      },
-      {
-        path: 'treatments/cryopreservation',
-        element: <CryopreservationTreatment />,
-        children: []
+        path: 'treatments/mesa ',
+        element: <MESA />,
+        
       },
       {
         path: 'treatments/semen-cryopreservation',
         element: <SemenCryopreservation />,
-        children: []
+        
       },
       {
         path: 'treatments/oocyte-cryopreservation',
         element: <OocyteCryopreservation />,
-        children: []
+        
       },
       {
         path: 'treatments/mesa-microepididymal-sperm-aspiration',
         element: <MESA />,
-        children: []
+        
       },
       {
         path: 'treatments/tesa-testicular-sperm-aspiration-cryopreservation',
         element: <TESA />,
-        children: []
+        
       },
       // ........................................................................................
       {
         path: 'treatments/heavy-menstrual-bleeding',
         element: <HeavyBleeding/>,
-        children: []
+        
       },
       {
         path: 'treatments/irregular-periods',
         element: <IrregularPeriods/>,
-        children: []
+        
       },
       {
         path: 'treatments/menopause-management',
         element: <MenopauseManagement/>,
-        children: []
+        
       },
       {
         path: 'treatments/pcos-pcod',
         element: <PCOSAndPCOD/>,
-        children: []
+        
       },
       // ...............................................................................................
       {
+        path: 'treatments/hymenoplasty',
+        element: <Hymenoplasty/>,
+        
+      },
+      {
+        path: 'treatments/labiaplasty',
+        element: <Labiaplasty/>,
+        
+      },
+      {
+        path: 'treatments/pelvic-floor-treatment',
+        element: <PelvicFloorTreatment/>,
+        
+      },
+      {
+        path: 'treatments/sexual-wellness',
+        element: <SexualWellness/>,
+        
+      },
+      {
+        path: 'treatments/stress-urinary-incontinence',
+        element: <StressUrinaryIncontinence/>,
+        
+      },
+      {
+        path: 'treatments/vaginismus',
+        element: <Vaginismus/>,
+        
+      },
+      {
+        path: 'treatments/vaginal-rejuvination',
+        element: <VaginalRejuvination/>,
+        
+      },
+      // ..................................................................................................
+      {
+        path: 'treatments/bone-and-osteoporosis',
+        element: <BoneAndOsteoporosis/>,
+        
+      },
+      {
+        path: 'treatments/cardiovascular-and-metabolic-health',
+        element: <CardiovascularAndMetabolicHealth/>,
+        
+      },
+      {
+        path: 'treatments/lifestyle-nutrition-and-exercise',
+        element: <LifestyleNutritionAndExercise/>,
+        
+      },
+      {
+        path: 'treatments/menopause-management',
+        element: <MenopauseManagement/>,
+        
+      },
+      {
+        path: 'treatments/perimenopause-and-menopause',
+        element: <PerimenopauseAndMenopause/>,
+        
+      },
+      {
+        path: 'treatments/sleepMood-and-cognition',
+        element: <SleepMoodAndCognition/>,
+        
+      },
+      // .......................................................................................................
+      {
         path: 'treatments/cervical-cancer',
         element: <CervicalCancer/>,
-        children: []
+        
       },
       {
         path: 'treatments/ovarian-cancer',
         element: <OvarianCancer/>,
-        children: []
+        
       },
       {
         path: 'treatments/uterine-cancer',
         element: <UterusCancer/>,
-        children: []
+        
       },
       {
         path: 'treatments/breast-cancer',
         element: <BreastCancer/>,
-        children: []
+        
       },
       // .....................................................................................................
       {
         path: 'treatments/cesarean-section-delivery',
         element: <CesareanDelivery/>,
-        children: []
+        
       },
       {
         path: 'treatments/high-bp-and-diabetes-in-pregnancy',
         element: <HighBPAndDiabetesInPregnancy/>,
-        children: []
+        
       },
       {
         path: 'treatments/normal-delivery',
         element: <NormalDeliveryCare/>,
-        children: []
+        
       },
       {
         path: 'treatments/painless-delivery',
         element: <PainlessDelivery/>,
-        children: []
+        
       },
       {
         path: 'treatments/pretem-labour',
         element: <PretemLabourCare/>,
-        children: []
+        
       },
       {
         path: 'treatments/recurrent-pregnancy-loss',
         element: <RecurrentPregnancyLoss/>,
-        children: []
+        
       },
       // ................................................................................
       {
         path: 'treatments/ovarian-cyst-laparoscopic-surgery',
         element: <OvarianCystSurgery/>,
-        children: []
+        
       },
       {
         path: 'treatments/fibroid-removal-laparoscopic-surgery',
         element: <FibroidRemoval/>,
-        children: []
+        
       },
       {
         path: 'treatments/endometriosis-treatment',
         element: <EndometriosisTreatment/>,
-        children: []
+        
       },
       // ..................................................................................
       {
+        path: 'treatments/abnormal-uterine-bleeding',
+        element: <AbnormalUterineBleeding/>,
+        
+      },
+      {
+        path: 'treatments/adhesions-removal',
+        element: <AdhesionsRemoval/>,
+        
+      },
+      {
+        path: 'treatments/',
+        element: <DiagnosticHysteroscopyEvaluation/>,
+        
+      },
+      {
+        path: 'treatments/pre-ivf-hysteroscopy-evaluation',
+        element: <PreIVFHysteroscopyEvaluation/>,
+        
+      },
+      {
+        path: 'treatments/uterine-polyp-removal',
+        element: <UterinePolypRemoval/>,
+        
+      },
+      {
+        path: 'treatments/uterine-septum-resection',
+        element: <UterineSeptumResection/>,
+        
+      },
+      // ...................................................................................
+      {
         path: 'treatments/pap-smear-screening',
         element: <PapSmearScreening/>,
-        children: []
+        
       },
       {
         path: 'treatments/breast-health-checkup',
         element: <BreastHealthCheckup/>,
-        children: []
+        
       },
       {
         path: 'treatments/hpv-vaccination',
         element: <HPVVaccination/>,
-        children: []
+        
       },
       {
         path: 'treatments/bone-health-screening',
         element: <BoneHealthScreening/>,
-        children: []
+        
       },
       {
         path: 'treatments/mammography',
         element: <Mammography/>,
-        children: []
+        
       },
       // ......................................................................................
       {
-        path: 'treatments/vaginal-laser-treatment',
-        element: <Mammography/>,
-        children: []
-      },
-      {
         path: '*',
         element: <NotFound />,
-        children: []
+        
       },
     ]
   },
   {
     path: 'all-links',
     element: <> <NavigationB /> <Linktree /></>,
-    children: []
+    
   },
 ])
 

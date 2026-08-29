@@ -1,5 +1,5 @@
 import React from 'react'
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 import { Helmet } from "react-helmet";
 
 const EmbryoDonation = () => {
@@ -44,11 +44,11 @@ const EmbryoDonation = () => {
         <p>The success rate of embryo donation is approximately 40-50% per transfer.</p>
       </div>
       <div>
-        <img
+        {/* <img
           src={lab0}
           alt="Mountain"
           className="w-full  object-cover border-8 border-white rounded-2xl"
-        />
+        /> */}
       </div>
     </div>
     </>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 
 const OocyteCryopreservation = () => {
   return (
@@ -45,11 +45,11 @@ const OocyteCryopreservation = () => {
             <p>Egg freezing success rates vary, with a 60-80% survival rate upon thawing. The overall chance of pregnancy using frozen eggs is around 30-60%, depending on age and egg quality.</p>
           </div>
           <div>
-            <img
+            {/* <img
               src={lab0}
               alt="Mountain"
               className="w-full  object-cover border-8 border-white rounded-2xl"
-            />
+            /> */}
           </div>
         </div>
     </>

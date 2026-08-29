@@ -5,8 +5,8 @@ import "../Style/Style.css";
 import "../Style/neonStyle.css";
 import DrVandanaLogo from '../assets/DrVandanaLogo.png'
 import { IoLocationOutline } from "react-icons/io5";
-import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline } from "react-icons/io5";
+import { MdOutlineMail } from "react-icons/md";
 import {
   ChevronDownIcon,
   PlusIcon,

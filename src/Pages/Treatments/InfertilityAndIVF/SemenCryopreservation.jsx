@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 
 const SemenCryopreservation = () => {
   return (
@@ -46,11 +46,11 @@ const SemenCryopreservation = () => {
             <p>Semen cryopreservation has a high success rate, with sperm remaining viable for up to 20 years. The success of achieving pregnancy using frozen sperm through IUI or IVF is around 30-50%.</p>
           </div>
           <div>
-            <img
+            {/* <img
               src={lab0}
               alt="Mountain"
               className="w-full  object-cover border-8 border-white rounded-2xl"
-            />
+            /> */}
           </div>
         </div>
     </>

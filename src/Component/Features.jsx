@@ -9,7 +9,7 @@ import {
   Crown,
   Sparkles,
 } from "lucide-react";
-import speaker1 from '../assets/speaker1.jpg'
+import speaker from '../assets/Features/speaker.jpg'
 import ISOPARBPresident from '../assets/Features/ISOPARBPresident.jpg'
 import Pregnancy from '../assets/Features/Pregnancy.png'
 import Leadership from '../assets/Features/Leadership.jpeg'
@@ -44,7 +44,7 @@ const achievements = [
     title: "National Speaker",
     subtitle: "CME Faculty",
     desc: "Invited speaker at conferences and medical education programs.",
-    image: speaker1,
+    image: speaker,
   },
   {
     icon: Crown,
@@ -181,7 +181,6 @@ export default function LegacySection() {
     </section>
   );
 }
-
 function FeatureCard({
   icon: Icon,
   title,

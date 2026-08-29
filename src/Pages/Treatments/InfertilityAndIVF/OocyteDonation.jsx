@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from "react-helmet";
-import lab0 from '../../../assets/lab0.png'
+// import lab0 from '../../../assets/lab0.png'
 
 const OocyteDonation = () => {
   return (
@@ -44,11 +44,11 @@ const OocyteDonation = () => {
           <p>Oocyte donation has a success rate of around 50-60% per cycle.</p>
         </div>
         <div>
-          <img
+          {/* <img
             src={lab0}
             alt="Mountain"
             className="w-full  object-cover border-8 border-white rounded-2xl"
-          />
+          /> */}
         </div>
       </div>
     </>

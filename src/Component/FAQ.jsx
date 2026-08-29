@@ -1,7 +1,6 @@
 import React from "react";
 import '../Style/Style.css'
 import 'aos/dist/aos.css'
-import '../Style/Style.css'
 import {
     Accordion,
     AccordionHeader,

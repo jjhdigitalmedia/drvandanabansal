@@ -12,7 +12,6 @@ function App() {
       <NavigationB />
        <div className="">
         <CurrentRoute />
-        {/* <img src={BreadCrumb} alt="" className='bg-black/50 h-auto' /> */}
       </div>
       <div className=" fixed top-80 -rotate-90 -ml-16 z-50">
         <Link to="book-appointment">
