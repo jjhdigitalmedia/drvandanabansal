@@ -10,26 +10,11 @@ const memberships = [
     type: "Life Member",
     number: "UP/2611/1/34/44396/95-96/CL",
   },
-  // {
-  //   organization: "Indian Medical Association",
-  //   type: "Life Member",
-  //   number: "BHR/4405/80/154/81330/2000-01/L",
-  // },
-  // {
-  //   organization: "Royal Society of Health, London",
-  //   type: "Associate Member (AMRSH)",
-  //   number: "Since March 1991",
-  // },
   {
     organization: "Indian Society for Prenatal Diagnosis & Therapy",
     type: "Member",
     number: null,
   },
-  // {
-  //   organization: "International Integration & Growth Society (IIGS)",
-  //   type: "Member",
-  //   number: "2005-2006",
-  // },
   {
     organization: "FOGSI",
     type: "Life Member",
@@ -50,11 +35,6 @@ const memberships = [
     type: "Member",
     number: null,
   },
-  // {
-  //   organization: "Bombay Endoscopy Academy & Centre for Minimally Invasive Surgery",
-  //   type: "Member",
-  //   number: null,
-  // },
   {
     organization: "IMA College of General Practitioners",
     type: "Fellow",
@@ -97,19 +77,9 @@ const memberships = [
     number: null,
   },
   {
-    organization: "FOGSI Social Security Scheme",
-    type: "Member",
-    number: "851",
-  },
-  {
     organization: "PCOS Society India",
     type: "Member",
     number: "September-2016",
-  },
-  {
-    organization: "ISAR Mumbai",
-    type: "Life Member",
-    number: "ISAR/000163 | Reg ID: ISAR2500031",
   },
   {
     organization: "Rotary Allahabad Midtown",

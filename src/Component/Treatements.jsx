@@ -52,7 +52,8 @@ import OocyteDonation from '../assets/Treatments/OocyteDonation.png'
 import MESA from '../assets/Treatments/MESA.png'
 import TESA from '../assets/Treatments/TESA.png'
 import LaserAssistedHatching from '../assets/Treatments/LaserAssistedHatching.png'
-import MenopauseAndLongevity from '../assets/Treatments/MenopauseAndLongevity.png'
+import MenopauseAndLongevityIcon from '../assets/Treatments/MenopauseAndLongevityIcon.png'
+import MenopauseLongevity from '../assets/Treatments/MenopauseLongevity.png'
 
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
@@ -269,12 +270,12 @@ function Treatments() {
           image: AestheticGynaecology,
           link: "treatments/sexual-wellness"
         },
-        {
-          title: "Functional Medicine for Women's Health",
-          description: "A holistic approach to optimize hormonal balance, metabolism, gut health, and overall well-being through personalized care.",
-          image: AestheticGynaecology,
-          link: "treatments/functional-medicine"
-        }
+        // {
+        //   title: "Functional Medicine for Women's Health",
+        //   description: "A holistic approach to optimize hormonal balance, metabolism, gut health, and overall well-being through personalized care.",
+        //   image: AestheticGynaecology,
+        //   link: "treatments/functional-medicine"
+        // }
       ]
     },
     {
@@ -316,6 +317,48 @@ function Treatments() {
           description: "Personalized maternity care to support a safe and healthy vaginal delivery.",
           image: NormalDelivery,
           link: 'treatments/normal-delivery'
+        },
+      ],
+    },
+    {
+      category: "Menopause, Healthy Aging & Longevity",
+      key: "menopuaseLongevity",
+      treatments: [
+        {
+          title: "Perimenopause & Menopause Assessment",
+          description: "Comprehensive evaluation of menopausal health.",
+          image: MenopauseLongevity,
+          link: "treatments/perimenopause-menopause-assessment",
+        },
+        {
+          title: "Menopausal Hormone Therapy (MHT)",
+          description: "Personalized hormone therapy for menopause.",
+          image: MenopauseLongevity,
+          link: "treatments/menopausal-hormone-therapy",
+        },
+        {
+          title: "Bone & Osteoporosis Risk Assessment",
+          description: "Screening to assess bone strength and risk.",
+          image: MenopauseLongevity,
+          link: "treatments/bone-osteoporosis-risk-assessment",
+        },
+        {
+          title: "Cardiovascular & Metabolic Health",
+          description: "Heart and metabolic health assessment.",
+          image: MenopauseLongevity,
+          link: "treatments/cardiovascular-metabolic-health",
+        },
+        {
+          title: "Sleep, Mood & Cognition",
+          description: "Support for sleep, mood, and memory.",
+          image: MenopauseLongevity,
+          link: "treatments/sleep-mood-cognition",
+        },
+        {
+          title: "Lifestyle, Nutrition & Exercise",
+          description: "Healthy lifestyle and nutrition guidance.",
+          image: MenopauseLongevity,
+          link: "treatments/lifestyle-nutrition-exercise",
         },
       ],
     },
@@ -498,10 +541,10 @@ function Treatments() {
       CardIcon: AestheticGynae,
     },
     {
-      key: 'menopause',
+      key: 'menopuaseLongevity',
       Cardtitle: "Menopause, Healthy Aging & Longevity",
-      CardDesc: "Personalized care to support menopause, hormonal balance, and longevity.",
-      CardIcon: MenopauseAndLongevity,
+      CardDesc: "Personalized menopause care for hormonal balance and healthy aging.",
+      CardIcon: MenopauseAndLongevityIcon,
     },
     {
       key: 'pregnancy',

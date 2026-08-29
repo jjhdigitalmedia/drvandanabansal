@@ -1,33 +1,104 @@
 import { useState } from "react";
-import { FaBars, FaEnvelope, FaWhatsapp, FaPhone } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaEnvelope,
+  FaWhatsapp,
+  FaPhone,
+} from "react-icons/fa";
 
 const ContactButton = () => {
-  const [hover, setHover] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const buttons = [
+    {
+      icon: <FaEnvelope size={18} />,
+      label: "Email",
+      href: "mailto:drvandanabansal921@gmail.com?subject=Inquiry",
+      bg: "bg-white",
+      x: -0,
+      y: -80,
+    },
+    {
+      icon: <FaWhatsapp size={20} />,
+      label: "WhatsApp",
+      href: "https://wa.me/message/JG2WQ7ZXYWU6B1",
+      bg: "bg-white",
+      x: -70,
+      y: -75,
+    },
+    {
+      icon: <FaPhone size={18} />,
+      label: "Call",
+      href: "tel:+919151037784",
+      bg: "bg-white",
+      x: -80,
+      y: -0,
+    },
+  ];
 
   return (
-    <div className="fixed bottom-6 right-6 z-20 flex items-end">
-      <div 
-        onMouseEnter={() => setHover(true)} 
-        onMouseLeave={() => setHover(false)}
-        className="relative"
-      >
-        {hover && (
-          <div className="absolute bottom-0 right-12 px-4 flex gap-2 transition-all duration-300 ease-in-out">
-            <button className="bg-pin-800 text-pink-700 p-2 rounded-full shadow-lg transition-all">
-            <a href="mailto:drvandanabansal921@gmail.com?subject=Inquiry&body=Hello, I have a question about..." target="_blank"> <FaEnvelope size={20} /></a>
-            </button>
-            <button className="bg-pink800 text-pink-700 p-2 rounded-full shadow-lg transition-all">
-            <a href="https://wa.me/message/JG2WQ7ZXYWU6B1" target="_blank"><FaWhatsapp size={20} /></a>
-            </button>
-            <button className="bg-pnk-800 text-pink-700 p-2 rounded-full shadow-lg transition-all">
-             <a href="tel:9151037784"> <FaPhone  size={20} /></a>
-            </button>
-          </div>
-        )}
+    <div
+      className="fixed bottom-6 right-6 z-[999]"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <div className="relative w-16 h-16">
+        {/* Pulse Ring */}
+        <div
+          className={`absolute bottom-0 right-0 h-14 w-14 rounded-full bg-pink-400 transition-opacity duration-300 ${
+            open ? "animate-ping opacity-30" : "opacity-0"
+          }`}
+        />
+
+        {/* Floating Buttons */}
+        {buttons.map((btn, index) => (
+          <a
+            key={index}
+            href={btn.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`absolute bottom-1 right-1 flex h-12 w-12 items-center justify-center rounded-full text-pink-800 shadow-xl
+            ${btn.bg}
+            transition-all duration-500 ease-out hover:scale-110 active:scale-95
+            ${
+              open
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-0 pointer-events-none"
+            }`}
+            style={{
+              transform: open
+                ? `translate(${btn.x}px, ${btn.y}px)`
+                : "translate(0px,0px)",
+              transitionDelay: `${index * 80}ms`,
+            }}
+          >
+            {btn.icon}
+
+            {/* Tooltip */}
+            {/* <span
+              className={`absolute right-14 whitespace-nowrap rounded-full bg-gray-900 px-3 py-1 text-xs text-white shadow-md transition-all duration-300
+              ${
+                open
+                  ? "opacity-100 translate-x-0"
+                  : "opacity-0 translate-x-2"
+              }`}
+            >
+              {btn.label}
+            </span> */}
+          </a>
+        ))}
+
+        {/* Main FAB */}
         <button
-          className="bg-pink-800 text-white p-3 rounded-full shadow-lg hover:bg-pink-800 transition-all"
+          onClick={() => setOpen(!open)}
+          className={`absolute bottom-0 right-0 flex h-14 w-14 items-center justify-center rounded-full border- border-white
+          bg-gradient-to-br from-pink-700 to-pink-800
+          text-white shadow-2xl transition-all duration-500
+          hover:scale-110 active:scale-95
+          ${open ? "rotate-90" : "rotate-0"}`}
         >
-          <FaBars size={20} />
+          {open ? <FaTimes size={18} /> : <FaBars size={18} />}
         </button>
       </div>
     </div>
