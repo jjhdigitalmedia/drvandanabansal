@@ -1,13 +1,13 @@
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
+  // FaYoutube,
   FaXTwitter,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import DrVandanaLogo from '../assets/DrVandanaLogo.png'
-import DrVandanaLogoWhite from '../assets/DrVandanaLogoWhite.png'
+// import DrVandanaLogoWhite from '../assets/DrVandanaLogoWhite.png'
 
 const Footer = () => {
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
 
         <p className="text-gray-500 leading-8 text-base">
           Advanced IVF, fertility and women's healthcare with over
-          39 years of experience. Providing ethical and personalized
+          38+ years of experience. Providing ethical and personalized
           treatment for every patient.
         </p>
 

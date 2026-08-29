@@ -2,6 +2,7 @@ import { Link, Outlet } from 'react-router-dom'
 import NavigationB from './Component/NavigationB.jsx'
 import Footer from './Component/Footer.jsx'
 import CurrentRoute from './Component/CurrentRoute.jsx'
+import Toolbar from './Component/Toolbar.jsx'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       </div>
       <main id='main-content'>
       <Outlet />
+      <Toolbar/>
       </main>
       <Footer />
     </>

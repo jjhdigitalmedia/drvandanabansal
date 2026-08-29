@@ -52,6 +52,7 @@ import OocyteDonation from '../assets/Treatments/OocyteDonation.png'
 import MESA from '../assets/Treatments/MESA.png'
 import TESA from '../assets/Treatments/TESA.png'
 import LaserAssistedHatching from '../assets/Treatments/LaserAssistedHatching.png'
+import MenopauseAndLongevity from '../assets/Treatments/MenopauseAndLongevity.png'
 
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
@@ -495,6 +496,12 @@ function Treatments() {
       Cardtitle: "Aesthetic Gynae & Functional Medicine",
       CardDesc: "Advanced care for women's intimate health.",
       CardIcon: AestheticGynae,
+    },
+    {
+      key: 'menopause',
+      Cardtitle: "Menopause, Healthy Aging & Longevity",
+      CardDesc: "Personalized care to support menopause, hormonal balance, and longevity.",
+      CardIcon: MenopauseAndLongevity,
     },
     {
       key: 'pregnancy',

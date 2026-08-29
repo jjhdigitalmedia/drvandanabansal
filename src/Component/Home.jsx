@@ -1,20 +1,19 @@
 import React from 'react'
-import { Rewards } from './Rewards'
 import { Helmet } from "react-helmet-async";
 import { FAQ } from './FAQ'
-import Contact from './Contact'
 import About from './About'
 import Arrow from './Arrow'
 import Stats from './Stats'
 import Head from './Head'
 import Treatements from './Treatements'
-import GoogleReview from './GoogleReview'
-import VideoOfCentre from './VideoOfCentre'
 import Appointment from './Appointment'
 import ContactButton from './ContactButton'
-import CurrentRoute from './CurrentRoute'
 import Conferences from '../Pages/Conferences';
 import Features from './Features';
+import Contact from './Contact'
+import CurrentRoute from './CurrentRoute'
+import GoogleReview from './GoogleReview'
+import VideoOfCentre from './VideoOfCentre'
 import Memberships from './Memberships';
 
 const Home = () => {
@@ -41,7 +40,6 @@ const Home = () => {
             ]
           })}
         </script>
-
       </Helmet>
 
       <ContactButton />
@@ -51,8 +49,7 @@ const Home = () => {
       <Stats />
       <Treatements />
       <Conferences />
-      <Memberships/>
-
+      {/* <Memberships/> */}
       <Features />
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}

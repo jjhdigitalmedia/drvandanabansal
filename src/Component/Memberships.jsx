@@ -10,29 +10,29 @@ const memberships = [
     type: "Life Member",
     number: "UP/2611/1/34/44396/95-96/CL",
   },
-  {
-    organization: "Indian Medical Association (Patna)",
-    type: "Life Member",
-    number: "BHR/4405/80/154/81330/2000-01/L",
-  },
-  {
-    organization: "Royal Society of Health, London",
-    type: "Associate Member (AMRSH)",
-    number: "Since March 1991",
-  },
+  // {
+  //   organization: "Indian Medical Association",
+  //   type: "Life Member",
+  //   number: "BHR/4405/80/154/81330/2000-01/L",
+  // },
+  // {
+  //   organization: "Royal Society of Health, London",
+  //   type: "Associate Member (AMRSH)",
+  //   number: "Since March 1991",
+  // },
   {
     organization: "Indian Society for Prenatal Diagnosis & Therapy",
     type: "Member",
     number: null,
   },
-  {
-    organization: "International Integration & Growth Society (IIGS)",
-    type: "Member",
-    number: "2005-2006",
-  },
+  // {
+  //   organization: "International Integration & Growth Society (IIGS)",
+  //   type: "Member",
+  //   number: "2005-2006",
+  // },
   {
     organization: "FOGSI",
-    type: "Active Member",
+    type: "Life Member",
     number: "ALL0094",
   },
   {
@@ -42,7 +42,7 @@ const memberships = [
   },
   {
     organization: "Rotary Club of Allahabad-East",
-    type: "Member",
+    type: "",
     number: null,
   },
   {
@@ -50,11 +50,11 @@ const memberships = [
     type: "Member",
     number: null,
   },
-  {
-    organization: "Bombay Endoscopy Academy & Centre for Minimally Invasive Surgery",
-    type: "Member",
-    number: null,
-  },
+  // {
+  //   organization: "Bombay Endoscopy Academy & Centre for Minimally Invasive Surgery",
+  //   type: "Member",
+  //   number: null,
+  // },
   {
     organization: "IMA College of General Practitioners",
     type: "Fellow",
