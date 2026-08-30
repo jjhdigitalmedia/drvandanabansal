@@ -19,18 +19,18 @@ import NotFound from './Pages/NotFound.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
 import Linktree from './Pages/LinkTree.jsx'
 
+import IvfEtTreatment from './Pages/Treatments/InfertilityAndIVF/IvfEtTreatment.jsx'
 import IuiTreatment from './Pages/Treatments/InfertilityAndIVF/IuiTreatment.jsx'
 import IcsiTreatment from './Pages/Treatments/InfertilityAndIVF/IcsiTreatment.jsx'
-import IvfEtTreatment from './Pages/Treatments/InfertilityAndIVF/IvfEtTreatment.jsx'
 import ImsiTreatment from './Pages/Treatments/InfertilityAndIVF/ImsiTreatment.jsx'
 import LaserAssistedTreatment from './Pages/Treatments/InfertilityAndIVF/LaserAssistedTreatment.jsx'
 import EmbryoBankTreatment from './Pages/Treatments/InfertilityAndIVF/EmbryoBankTreatment.jsx'
 import BlastocystTreatment from './Pages/Treatments/InfertilityAndIVF/BlastocystTreatment.jsx'
-import MESA from './Pages/Treatments/InfertilityAndIVF/MESA.jsx'
-import TESA from './Pages/Treatments/InfertilityAndIVF/TESA.jsx'
 import OocyteCryopreservation from './Pages/Treatments/InfertilityAndIVF/OocyteCryopreservation.jsx'
-import SemenCryopreservation from './Pages/Treatments/InfertilityAndIVF/SemenCryopreservation.jsx'
+import MESA from './Pages/Treatments/InfertilityAndIVF/MESA.jsx'
 import OocyteDonation from './Pages/Treatments/InfertilityAndIVF/OocyteDonation.jsx'
+import SemenCryopreservation from './Pages/Treatments/InfertilityAndIVF/SemenCryopreservation.jsx'
+import TESA from './Pages/Treatments/InfertilityAndIVF/TESA.jsx'
 
 
 import HeavyBleeding from './Pages/Treatments/AdvancedGynecologyCare/HeavyBleeding.jsx'
@@ -51,6 +51,7 @@ import BoneHealthScreening from './Pages/Treatments/PreventiveWomensCare/BoneHea
 
 import CesareanDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/CesareanDelivery.jsx'
 import HighBPAndDiabetesInPregnancy from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/HighBPAndDiabetesInPregnancy.jsx'
+import PainlessDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PainlessDelivery.jsx'
 import NormalDeliveryCare from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/NormalDeliveryCare.jsx'
 import PretemLabourCare from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PretemLabourCare.jsx'
 import RecurrentPregnancyLoss from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/RecurrentPregnancyLoss.jsx'
@@ -59,7 +60,6 @@ import FibroidRemoval from './Pages/Treatments/LaparoscopicSurgery/FibroidRemova
 import EndometriosisTreatment from './Pages/Treatments/LaparoscopicSurgery/EndometriosisTreatment.jsx'
 import OvarianCystSurgery from './Pages/Treatments/LaparoscopicSurgery/OvarianCystSurgery.jsx'
 
-import PainlessDelivery from './Pages/Treatments/HighRiskPregnancyAndMaternityCare/PainlessDelivery.jsx'
 
 import Hymenoplasty from './Pages/Treatments/AestheticGynae/Hymenoplasty.jsx'
 import Labiaplasty from './Pages/Treatments/AestheticGynae/Labiaplasty.jsx'

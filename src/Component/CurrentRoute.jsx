@@ -1,6 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
 import { IoMdHome } from "react-icons/io";
-// import BackCover1 from '../assets/BackCover1.png'
 import BreadCrumb1 from '../assets/BreadCrumb1.jpg'
 const CurrentRoute = () => {
   const location = useLocation();
