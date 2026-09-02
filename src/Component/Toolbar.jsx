@@ -36,7 +36,7 @@ export default function MobileBottomBar() {
     <div className="fixed bottom-2 left-1/2 z-50 w-[95%] max-w-md -translate-x-1/2 lg:hidden">
 
       {/* Background */}
-      <div className="relative flex h-20 items-center justify-around rounded-full border border-pink-200 backdrop-blur-xl shadow-[0_15px_40px_rgba(0,0,0,.18)]">
+      <div className="relative flex h-20 items-center justify-around rounded-full border border-pink-200 backdrop-blur-3xl bg-pink-800 shadow-[0_15px_40px_rgba(0,0,0,.18)]">
 
         {menu.slice(0, 2).map((item) => {
           const Icon = item.icon;
@@ -47,8 +47,8 @@ export default function MobileBottomBar() {
               href={item.path}
               className="flex flex-col items-center gap-1 text-pink-900"
             >
-              <Icon size={22} />
-              <span className="text-[11px] font-medium">
+              <Icon size={22} className="text-white"/>
+              <span className="text-[11px] text-white font-medium">
                 {item.name}
               </span>
             </a>
@@ -58,12 +58,12 @@ export default function MobileBottomBar() {
               to={item.path}
               className={({ isActive }) =>
                 `flex flex-col items-center gap-1 ${
-                  isActive ? "text-pink-800" : "text-gray-500"
+                  isActive ? "text-white" : "text-white"
                 }`
               }
             >
-              <Icon size={22} />
-              <span className="text-[11px] font-medium">
+              <Icon size={22} className="text-white"/>
+              <span className="text-[11px] text-white font-medium">
                 {item.name}
               </span>
             </NavLink>
@@ -94,8 +94,8 @@ export default function MobileBottomBar() {
                 }`
               }
             >
-              <Icon size={22} />
-              <span className="text-[11px] font-medium">
+              <Icon size={22} className="text-white"/>
+              <span className="text-[11px] text-white font-medium">
                 {item.name}
               </span>
             </NavLink>

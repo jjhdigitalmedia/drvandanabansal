@@ -81,6 +81,7 @@ import DiagnosticHysteroscopyEvaluation from './Pages/Treatments/HysteroscopicSu
 import PreIVFHysteroscopyEvaluation from './Pages/Treatments/HysteroscopicSurgery.jsx/PreIVFHysteroscopyEvaluation.jsx'
 import UterinePolypRemoval from './Pages/Treatments/HysteroscopicSurgery.jsx/UterinePolypRemoval.jsx'
 import UterineSeptumResection from './Pages/Treatments/HysteroscopicSurgery.jsx/UterineSeptumResection.jsx'
+import EmbryoDonation from './Pages/Treatments/InfertilityAndIVF/EmbryoDonation.jsx'
 
 
 const router = createBrowserRouter([
@@ -114,12 +115,12 @@ const router = createBrowserRouter([
         element: <NewsPaperCutting />,
         
       },
-      
       {
         path: 'treatments',
         element: <Treatements />,
         
       },
+      // ..............................................................................................
       {
         path: 'treatments/iui',
         element: <IuiTreatment />,
@@ -156,13 +157,13 @@ const router = createBrowserRouter([
         
       },
       {
-        path: 'treatments/blastocyst-transfer',
-        element: <BlastocystTreatment />,
+        path: 'treatments/embryo-donation',
+        element: <EmbryoDonation />,
         
       },
       {
-        path: 'treatments/mesa ',
-        element: <MESA />,
+        path: 'treatments/blastocyst-transfer',
+        element: <BlastocystTreatment />,
         
       },
       {

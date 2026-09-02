@@ -54,8 +54,6 @@
 
 
 
-
-import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -67,6 +65,7 @@ import { CiMedicalCross } from "react-icons/ci";
 // 👇 Stethoscope PNG import (tum apni file path set karna)
 import Stetho from "../assets/Stetho.png";
 import DrVandanaa from "../assets/DrVandanaa.png";
+// import CheckDr from "../assets/CheckDr.png";
 import { Link } from "react-router-dom";
 
 function About() {
@@ -79,16 +78,17 @@ function About() {
         <img
           src={Stetho}
           alt="stethoscope"
-          className="absolute left-[-220px] bottom-[0px] w-96 opacity-20 pointer-events-none"
+          className="hidden md:absolute left-[-220px] bottom-[0px] w-96 opacity-20 pointer-events-none"
         />
 
         {/* Right Image Section */}
         <div className="relative">
           <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
             <img
+              // src={CheckDr} // 👈 dummy image
               src={DrVandanaa} // 👈 dummy image
               alt="Doctor"
-              className="w-full h-full object-cover"
+              className="w-96 h-full object-cover"
             />
           </div>
 
@@ -127,14 +127,14 @@ function About() {
           </div>
 
           {/* Description */}
-          <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed">
+          <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed text-justify">
             Dr. Vandana Bansal is a highly experienced and compassionate Obstetrician & Gynaecologist in Prayagraj, dedicated to providing comprehensive women’s healthcare, including pregnancy care, infertility treatment, high-risk pregnancy, Menopause management, Aesthetic Gynecology and Functional Medicine. With a patient-first approach and strong clinical expertise, she has successfully supported numerous women through normal delivery, IVF treatments, and various reproductive health concerns with confidence and care. Known as a trusted <Link to='about' className='fontbold text-pink-800'>gynecologist and infertility specialist in Prayagraj</Link>, she focuses on accurate diagnosis, modern treatment solutions, and personalized care, ensuring the best outcomes for both mother and baby while promoting women’s health, and overall well-being.
           </p>
 
-          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed">
+          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed text-justify">
             she a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with more than three decades of experience caring for women at every stage of life.
           </p>
-          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed">
+          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed text-justify">
             Committed to delivering result-oriented care with a focus on accurate diagnosis, modern treatment techniques, and continuous support to improve long-term women’s health and quality of life in Prayagraj.
           </p>
 

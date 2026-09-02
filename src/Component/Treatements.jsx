@@ -139,13 +139,13 @@ function Treatments() {
           title: "MESA",
           description: "A surgical technique to retrieve sperm from the epididymis for fertility treatment.",
           image: MESA,
-          link: 'treatments/mesa',
+          link: 'treatments/mesa-microepididymal-sperm-aspiration',
         },
         {
           title: "TESA",
           description: "A minimally invasive technique to retrieve sperm directly from the testis.",
           image: TESA,
-          link: 'treatments/tesa',
+          link: 'treatments/tesa-testicular-sperm-aspiration-cryopreservation',
         },
         {
           title: "Embryo Banking",
@@ -218,13 +218,13 @@ function Treatments() {
           title: "Pelvic Floor Treatment",
           description: "Comprehensive therapies to strengthen pelvic floor muscles and improve bladder control and pelvic health.",
           image: AestheticGynaecology,
-          link: "treatments/pelvic-floor-rehabilitation"
+          link: "treatments/pelvic-floor-treatment"
         },
         {
           title: "Intimate Wellness & Vaginal Rejuvenation",
           description: "Personalized laser-based treatments to improve vaginal health, elasticity, lubrication, comfort, and confidence.",
           image: VaginalTightening,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/vaginal-rejuvination'
         },
         {
           title: "Labiaplasty",
@@ -236,7 +236,7 @@ function Treatments() {
           title: "Vaginismus Treatment",
           description: "Personalized care to help overcome painful intercourse and pelvic floor muscle spasm.",
           image: AestheticGynaecology,
-          link: "treatments/vaginismus-treatment"
+          link: "treatments/vaginismus"
         },
         {
           title: "Sexual Wellness & Intimate Health",
