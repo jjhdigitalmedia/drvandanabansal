@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Main Pages -->
 
     <url>
         <loc>https://drvandanabansal.in/</loc>
@@ -21,25 +22,7 @@
     </url>
 
     <url>
-        <loc>https://drvandanabansal.in/ivf-team</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <url>
         <loc>https://drvandanabansal.in/contact</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://drvandanabansal.in/patients-guide</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://drvandanabansal.in/achievements</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -62,66 +45,373 @@
         <priority>0.9</priority>
     </url>
 
+
+    <!-- ============================= -->
     <!-- Infertility & IVF -->
+    <!-- ============================= -->
 
-    <url><loc>https://drvandanabansal.in/treatments/iui</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/ivf-et</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/icsi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/ivm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/imsi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/embryo-monitoring</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/laser-assisted-hatching</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/laparoscopy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/endocrine</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/sonography</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/hsg-sono</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/semen-bank</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/oocyte-donation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/embryo-donation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/embryo-bank</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/blastocyst-transfer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/egg-donation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/cryopreservation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/semen-cryopreservation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/oocyte-cryopreservation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/mesa-microepididymal-sperm-aspiration</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/tesa-testicular-sperm-aspiration-cryopreservation</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/iui</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <!-- Advanced Gynecology -->
+    <url>
+        <loc>https://drvandanabansal.in/treatments/ivf-et</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <url><loc>https://drvandanabansal.in/treatments/heavy-menstrual-bleeding</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/irregular-periods</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/menopause-management</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/pcos-pcod</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/icsi</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <!-- Gynecological Cancer -->
+    <url>
+        <loc>https://drvandanabansal.in/treatments/imsi</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <url><loc>https://drvandanabansal.in/treatments/cervical-cancer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/ovarian-cancer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/uterus-cancer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/laser-assisted-hatching</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <!-- Pregnancy -->
+    <url>
+        <loc>https://drvandanabansal.in/treatments/oocyte-donation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-    <url><loc>https://drvandanabansal.in/treatments/cesarean-section-delivery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/high-bp-and-diabetes-in-pregnancy</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/normal-delivery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/pretem-labour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/recurrent-pregnancy-loss</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/embryo-banking</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
+    <url>
+        <loc>https://drvandanabansal.in/treatments/embryo-donation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/blastocyst-transfer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/semen-cryopreservation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/oocyte-cryopreservation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/mesa-microepididymal-sperm-aspiration</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/tesa-testicular-sperm-aspiration-cryopreservation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- Advanced Gynecology Care -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/heavy-menstrual-bleeding</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/irregular-periods</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/menopause-management</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/pcos-pcod</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- Aesthetic Gynaecology -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/hymenoplasty</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/labiaplasty</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/pelvic-floor-treatment</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/sexual-wellness</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/stress-urinary-incontinence</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/vaginismus</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/vaginal-rejuvination</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- Menopause & Longevity -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/bone-and-osteoporosis</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/cardiovascular-and-metabolic-health</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/lifestyle-nutrition-and-exercise</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/perimenopause-and-menopause</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/sleepMood-and-cognition</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- Gynecological Cancer Care -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/cervical-cancer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/ovarian-cancer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/uterine-cancer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/breast-cancer</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- High Risk Pregnancy & Maternity -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/cesarean-section-delivery</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/high-bp-and-diabetes-in-pregnancy</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/normal-delivery</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/painless-delivery</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/pretem-labour</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/recurrent-pregnancy-loss</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
     <!-- Laparoscopic Surgery -->
+    <!-- ============================= -->
 
-    <url><loc>https://drvandanabansal.in/treatments/ovarian-cyst-laparoscopic-surgery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/fibroid-removal-laparoscopic-surgery</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/endometriosis-treatment</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/ovarian-cyst-laparoscopic-surgery</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
+    <url>
+        <loc>https://drvandanabansal.in/treatments/fibroid-removal-laparoscopic-surgery</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/endometriosis-treatment</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
+    <!-- Hysteroscopic Surgery -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/abnormal-uterine-bleeding</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/adhesions-removal</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/diagnostic-hysteroscopy-evaluation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/pre-ivf-hysteroscopy-evaluation</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/uterine-polyp-removal</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/uterine-septum-resection</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
     <!-- Preventive Women's Care -->
+    <!-- ============================= -->
 
-    <url><loc>https://drvandanabansal.in/treatments/pap-smear-screening</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/breast-health-checkup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/hpv-vaccination</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://drvandanabansal.in/treatments/mammography</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url>
+        <loc>https://drvandanabansal.in/treatments/pap-smear-screening</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
+    <url>
+        <loc>https://drvandanabansal.in/treatments/breast-health-checkup</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/hpv-vaccination</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/bone-health-screening</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://drvandanabansal.in/treatments/mammography</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- ============================= -->
     <!-- Linktree -->
+    <!-- ============================= -->
 
     <url>
         <loc>https://drvandanabansal.in/all-links</loc>

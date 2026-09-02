@@ -362,19 +362,19 @@ function Treatments() {
           title: "Uterine polyp Removal",
           description: "Minimally invasive removal of uterine polyps to improve uterine health and symptoms.",
           image: Hysteroscopy,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/uterine-polyp-removal'
         },
         {
           title: "Pre IVF Hysterocopy Evaluation",
           description: "Hysteroscopic evaluation of the uterus before IVF to identify possible abnormalities.",
           image: HysteroscopyForIVF,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/pre-ivf-hysteroscopy-evaluation'
         },
         {
           title: "Ahdesion Removal",
           description: "Minimally invasive removal of uterine adhesions to restore the normal uterine cavity.",
           image: AdhesionRemoval,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/adhesions-removal'
         },
         {
           title: "Abnormal Uterine Bleeding",
@@ -386,13 +386,13 @@ function Treatments() {
           title: "Diagnostic Hysteroscopy",
           description: "A minimally invasive procedure to examine the inside of the uterus and identify abnormalities.",
           image: DiagnosticHysteroscopy,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/diagnostic-hysteroscopy-evaluation'
         },
         {
           title: "Uterine Septum Resection",
           description: "Hysteroscopic removal of a uterine septum to improve the uterine cavity and reproductive outcomes.",
           image: UterineSeptumResection,
-          link: 'treatments/cervical-cancer'
+          link: 'treatments/uterine-septum-resection'
         },
 
       ],

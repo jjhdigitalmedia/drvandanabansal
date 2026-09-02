@@ -354,7 +354,7 @@ const router = createBrowserRouter([
         
       },
       {
-        path: 'treatments/',
+        path: 'treatments/diagnostic-hysteroscopy-evaluation',
         element: <DiagnosticHysteroscopyEvaluation/>,
         
       },
