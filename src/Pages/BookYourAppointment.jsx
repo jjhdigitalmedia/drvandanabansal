@@ -33,6 +33,12 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
+import IrregularPeriodsImage from '../assets/Treatments/IrregularPeriodsImage.png'
+import OPD from '../assets/Treatments/OPD.png'
+import Consultation from '../assets/Treatments/Consultation.png'
+import patientweb from '../assets/patientweb.png'
+import HospitalPhoto from '../assets/HospitalPhoto.jpg'
+
 // List of problems / services treated by Dr. Vandana Bansal.
 // Update / reorder freely — "Other" is always kept last.
 const problemOptions = [
@@ -54,10 +60,10 @@ const profilePhoto = "/images/dr-vandana-bansal.jpg";
 
 // Small gallery of clinic / work photos — replace src with real images
 const galleryPhotos = [
-  { src: "/images/clinic-1.jpg", alt: "Clinic reception" },
-  { src: "/images/clinic-2.jpg", alt: "Consultation room" },
-  { src: "/images/clinic-3.jpg", alt: "With a happy patient" },
-  { src: "/images/clinic-4.jpg", alt: "Hospital building" },
+  { src: OPD, alt: "Clinic reception" },
+  { src: Consultation, alt: "Consultation room" },
+  { src: patientweb, alt: "With a happy patient" },
+  { src: HospitalPhoto, alt: "Hospital building" },
 ];
 
 // Quick stats / achievements shown as badges under the photo
@@ -127,7 +133,7 @@ const BookYourAppointment = () => {
             {/* Main profile photo */}
             <div className="relative rounded-2xl overflow-hidden shadow-md mb-6">
               <img
-                src={profilePhoto}
+                src={IrregularPeriodsImage}
                 alt="Dr. Vandana Bansal"
                 className="w-full h-72 md:h-80 object-cover object-top"
               />

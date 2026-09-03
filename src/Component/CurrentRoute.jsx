@@ -97,13 +97,13 @@ const CurrentRoute = () => {
                 <li key={path} className="flex shrink-0 items-center gap-2">
                   <span className="text-pink-700/70">/</span>
                   {isLast ? (
-                    <span className="font-semibold text-[#f1f1f1]" aria-current="page">
+                    <span className="font-semibold font-cormorant text-[#f1f1f1]" aria-current="page">
                       {name}
                     </span>
                   ) : (
                     <Link
                       to={path}
-                      className="rounded-sm font-medium text-[#f1f1f1]/80 transition-colors hover:text-pink-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-300 focus-visible:ring-offset-2 focus-visible:ring-offset-pink-950"
+                      className="rounded-sm font-medium text-[#f1f1f1]/80 transition-colors font-cormorant hover:text-pink-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pink-300 focus-visible:ring-offset-2 focus-visible:ring-offset-pink-950"
                     >
                       {name}
                     </Link>

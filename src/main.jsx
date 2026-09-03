@@ -408,7 +408,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: 'all-links',
+    path: 'link-tree',
     element: <> <NavigationB /> <Linktree /></>,
     
   },

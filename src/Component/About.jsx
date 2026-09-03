@@ -113,7 +113,7 @@ function About() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-start gap-2 md:gap-4 mt-3">
+          {/* <div className="flex justify-center md:justify-start gap-2 md:gap-4 mt-3">
             {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
               (Icon, index) => (
                 <div
@@ -124,7 +124,7 @@ function About() {
                 </div>
               )
             )}
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed text-justify">
