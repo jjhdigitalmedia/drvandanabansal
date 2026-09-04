@@ -7,11 +7,12 @@ import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
 import InfertilityIVF from "../assets/Banners/InfertilityIVF.png";
 import AestheticGynae from "../assets/Banners/AestheticGynae.png";
-import MainBanner from "../assets/Banners/MainBanner.png";
+// import MainBanner from "../assets/Banners/MainBanner.png";
+import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
 
 const Head = () => {
   const images = [
-    MainBanner,
+    BannerMainWebsite1,
     DrVandanaIntro,
     InfertilityIVF,
     AestheticGynae,

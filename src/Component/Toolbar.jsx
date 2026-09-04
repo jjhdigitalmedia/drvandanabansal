@@ -23,7 +23,7 @@ export default function MobileBottomBar() {
     {
       name: "Chat",
       icon: MessageCircle,
-      path: "/chat",
+      path: "/tel:+916390103004",
     },
     {
       name: "Profile",
@@ -73,7 +73,7 @@ export default function MobileBottomBar() {
         {/* Floating Appointment Button */}
 
         <NavLink
-          to="/appointment"
+          to="/book-appointment"
           className="absolute -top-8 flex h-19 w-19 items-center justify-center rounded-full bg-pink-900 shadow-2xl ring-4 ring-[#f1f1f1] transition-all duration-300 hover:scale-105 active:scale-95"
         >
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-pink-800">
