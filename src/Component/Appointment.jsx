@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Appointment = () => {
@@ -29,15 +28,6 @@ const Appointment = () => {
           </div>
         </div>
       </section>
-    {/* <div className="bg-[#f2f2f2] flex flex-wrap md:px-16 md:py-10 w-full m-auto ">
-      <div className=" text-left md:w-1/2 w-full py-10 px-10">
-        <h1 className=' text-2xl text-centre md:text-4xl mb-2 text-pink-800 font-bold'>Request an Appointment</h1>
-        <span className='text-xl md:text-left'>Don't Wait, Consult with Dr. Vandana Bansal Today!</span>
-      </div>
-
-      <Link to='book-appointment' className='bg-pink-800 text-white shadow-md text-center h-fit align-middle my-10 py-3 md:w-72 w-48 mx-auto rounded-3xl text-2xl px-10'>Book Now</Link>
-
-    </div> */}
     </>
   )
 }

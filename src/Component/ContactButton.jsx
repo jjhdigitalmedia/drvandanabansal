@@ -74,18 +74,6 @@ const ContactButton = () => {
             }}
           >
             {btn.icon}
-
-            {/* Tooltip */}
-            {/* <span
-              className={`absolute right-14 whitespace-nowrap rounded-full bg-gray-900 px-3 py-1 text-xs text-white shadow-md transition-all duration-300
-              ${
-                open
-                  ? "opacity-100 translate-x-0"
-                  : "opacity-0 translate-x-2"
-              }`}
-            >
-              {btn.label}
-            </span> */}
           </a>
         ))}
 

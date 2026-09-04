@@ -1,39 +1,23 @@
 import React, { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import "../Style/Style.css";
-// import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.jpg";
-// import qwq from "../assets/Banners/qwq.jpg";
-// import FirstBanner from "../assets/Banners/FirstBanner.png";
-// import DrVandanaIntroo from "../assets/Banners/DrVandanaIntroo.jpg";
-// import BannerMain from "../assets/Banners/BannerMain.jpg";
-// import LaproscopyBanner from "../assets/Banners/LaproscopyBanner.png";
-// import UpdatedBanner from "../assets/Banners/UpdatedBanner.png";
-// import BannerUpdatedA from "../assets/Banners/BannerUpdatedA.png";
-// import BannerAll from "../assets/Banners/BannerAll.png";
 import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
-import InfertilityIVF from "../assets/Banners/InfertilityIVF.jpg";
+import InfertilityIVF from "../assets/Banners/InfertilityIVF.png";
 import AestheticGynae from "../assets/Banners/AestheticGynae.png";
+import MainBanner from "../assets/Banners/MainBanner.png";
 
 const Head = () => {
   const images = [
+    MainBanner,
     DrVandanaIntro,
     InfertilityIVF,
     AestheticGynae,
     HysteroscopySurgery,
     VaginalLaserTreatment,
     LaparoscopicSurgery,
-    // DrVandanaIntro,
-    // BannerAll,
-    // UpdatedBanner,
-    // FirstBanner,
-    // BannerUpdatedA,
-    // DrVandanaIntroo,
-    // BannerMain,
-    // LaproscopyBanner,
-    // qwq
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

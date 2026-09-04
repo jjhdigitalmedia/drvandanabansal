@@ -26,6 +26,7 @@ import {
   FaWhatsapp,
   FaBaby,
   FaHeartbeat,
+  FaGoogle,
   FaUserMd,
   FaCalendarCheck,
   FaMapMarkerAlt,
@@ -69,16 +70,16 @@ const galleryPhotos = [
 // Quick stats / achievements shown as badges under the photo
 const stats = [
   { icon: FaCalendarCheck, value: "38+", label: "Years Experience" },
-  { icon: FaBaby, value: "40000+", label: "Successful Deliveries" },
+  { icon: FaBaby, value: "50000+", label: "Successful Deliveries" },
   { icon: FaUserMd, value: "100000+", label: "Patients Treated" },
-  { icon: FaHeartbeat, value: "MBBS, MS", label: "Obs & Gynae" },
+  { icon: FaGoogle, value: "4.9*", label: "Google Rating" },
 ];
 
 const socialLinks = [
-  { Icon: FaFacebookF, href: "https://facebook.com", label: "Facebook" },
-  { Icon: FaInstagram, href: "https://instagram.com", label: "Instagram" },
-  { Icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-  { Icon: FaYoutube, href: "https://youtube.com", label: "YouTube" },
+  { Icon: FaFacebookF, href: "https://www.facebook.com/vandana.bansal.33/", label: "Facebook" },
+  { Icon: FaInstagram, href: "https://www.instagram.com/dr.vandanabansal/?hl=en", label: "Instagram" },
+  { Icon: FaLinkedinIn, href: "https://www.linkedin.com/in/dr-vandana-bansal-5916279b/", label: "LinkedIn" },
+  { Icon: FaYoutube, href: "https://www.youtube.com/@DrVandanaBansal", label: "YouTube" },
   {
     Icon: FaWhatsapp,
     href: "https://wa.me/916390103004",
@@ -198,7 +199,7 @@ const BookYourAppointment = () => {
                   href="mailto:bansal.drvandana@gmail.com?subject=Inquiry&body=Hello, I have a question about..."
                   className="hover:text-pink-800"
                 >
-                  bansal.drvandana@gmail.com
+                  drvandanabansal921@gmail.com@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -310,7 +311,7 @@ const BookYourAppointment = () => {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={label}
-                      className="bg-[#f1f1f1] shadow-md p-3 rounded-full text-pink-800 hover:bg-pink-800 hover:text-white transition duration-300 cursor-pointer"
+                      className="shadow-md p-3 rounded-full text-pink-800 hover:bg-pink-800 hover:text-white transition duration-300 cursor-pointer"
                     >
                       <Icon size={18} />
                     </a>

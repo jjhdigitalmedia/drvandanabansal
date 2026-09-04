@@ -3,7 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
 
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
 /* body {
   font-family: "Cormorant Garamond", serif;
 } */

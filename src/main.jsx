@@ -14,7 +14,7 @@ import Contact from './Component/Contact.jsx'
 import NavigationB from './Component/NavigationB.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
-import Treatements from './Component/Treatements.jsx'
+import Treatements from './Pages/Treatements.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
 import Linktree from './Pages/LinkTree.jsx'
@@ -115,8 +115,13 @@ const router = createBrowserRouter([
         element: <NewsPaperCutting />,
         
       },
+      // {
+      //   path: 'treatments',
+      //   element: <Treatements />,
+        
+      // },
       {
-        path: 'treatments',
+        path: 'specialities',
         element: <Treatements />,
         
       },

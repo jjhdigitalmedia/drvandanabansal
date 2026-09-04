@@ -24,7 +24,7 @@ function Stats() {
           
           <Counter
             label="Successful Pregnancies"
-            value={40000}
+            value={50000}
             visible={visible}
           />
 

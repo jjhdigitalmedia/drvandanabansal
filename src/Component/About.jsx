@@ -52,35 +52,23 @@
 
 
 
-
-
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
+// import CheckDr from "../assets/CheckDr.png";
+// import { Link } from "react-router-dom";
 import { CiMedicalCross } from "react-icons/ci";
-
-// 👇 Stethoscope PNG import (tum apni file path set karna)
 import Stetho from "../assets/Stetho.png";
 import DrVandanaa from "../assets/DrVandanaa.png";
-// import CheckDr from "../assets/CheckDr.png";
-import { Link } from "react-router-dom";
 
 function About() {
   return (
     <div className="min-h-xsvh flex items-center justify-center bg-[f2f2f2] md:p-6 pb-0">
 
       <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row-reverse items-center gap-20 overflow-hidden pb-0">
-
         {/* 🩺 Stethoscope Background Image */}
         <img
           src={Stetho}
           alt="stethoscope"
           className="hidden md:absolute left-[-220px] bottom-[0px] w-96 opacity-20 pointer-events-none"
         />
-
         {/* Right Image Section */}
         <div className="relative">
           <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
@@ -91,7 +79,6 @@ function About() {
               className="w-96 h-full object-cover"
             />
           </div>
-
           {/* Decorative Icon */}
           <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
             <CiMedicalCross className=" text-pink-800" />
@@ -103,43 +90,24 @@ function About() {
           <h1 className="text-4xl md:text-5xl text-ceter lg:text-left font-serif text-pink-700">
             About Dr. Vandana Bansal
           </h1>
-
           <p className="mt-2 text-gray-700 font-medium">
             MBBS, MS, DGO, FCGP
           </p>
-
           <p className="text-pink-800 font-semibold mt-1">
             Infertility & IVF Expert, Laparoscopic & Hysteroscopic Surgeon
           </p>
-
-          {/* Social Icons */}
-          {/* <div className="flex justify-center md:justify-start gap-2 md:gap-4 mt-3">
-            {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
-              (Icon, index) => (
-                <div
-                  key={index}
-                  className="bg--100 shadow-md p-3 rounded-full text-pink-600 hover:bg-pink-800 hover:text-white transition duration-300 cursor-pointer"
-                >
-                  <Icon size={18} />
-                </div>
-              )
-            )}
-          </div> */}
-
           {/* Description */}
           <p className="mt-6 md:pr-10 text-gray-600 leading-relaxed text-justify">
-            Dr. Vandana Bansal is a highly experienced and compassionate Obstetrician & Gynaecologist in Prayagraj, dedicated to providing comprehensive women’s healthcare, including pregnancy care, infertility treatment, high-risk pregnancy, Menopause management, Aesthetic Gynecology and Functional Medicine. With a patient-first approach and strong clinical expertise, she has successfully supported numerous women through normal delivery, IVF treatments, and various reproductive health concerns with confidence and care. Known as a trusted <Link to='about' className='fontbold text-pink-800'>gynecologist and infertility specialist in Prayagraj</Link>, she focuses on accurate diagnosis, modern treatment solutions, and personalized care, ensuring the best outcomes for both mother and baby while promoting women’s health, and overall well-being.
-          </p>
-
-          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed text-justify">
-            she a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with more than three decades of experience caring for women at every stage of life.
+            Dr. Vandana Bansal is a senior Gynaecologist, Obstetrician, Fertility & IVF Specialist, Aesthetic Gynaecologist, and Minimally Invasive Gynaecological Surgeon in Prayagraj, with more than three decades of experience in women’s healthcare.
           </p>
           <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed text-justify">
-            Committed to delivering result-oriented care with a focus on accurate diagnosis, modern treatment techniques, and continuous support to improve long-term women’s health and quality of life in Prayagraj.
+            Her expertise encompasses IVF and infertility treatment, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management, and comprehensive gynaecological care. She combines extensive clinical experience with an individualized, evidence-based approach to ensure that every woman receives the right care at the right stage of life.
           </p>
-
+          <p className="mt-4 md:pr-20 text-gray-600 leading-relaxed text-justify">
+            With a special focus on fertility and reproductive health, Dr. Bansal is committed to helping couples navigate their fertility journey with clarity, confidence, and personalized treatment. Her minimally invasive surgical expertise enables effective treatment with a focus on patient comfort and recovery. From fertility and pregnancy to menopause and healthy ageing, she looks beyond individual symptoms to promote long-term reproductive, metabolic, sexual, and overall wellbeing, while building a trusted doctor-patient relationship where women feel comfortable discussing their concerns and actively participate in their healthcare decisions.
+          </p>
           <p className="mt-4 md:pr-20 text-gray-600 text-pin-700 opacity-60 italic leading-relaxed">
-            My mission is to deliver personalized, safe, and high-quality care in a compassionate environment where every patient feels heard, respected, and confident.
+            My mission is to provide personalized, safe, and high-quality care in a compassionate environment where every woman feels heard, respected, and confident.
           </p>
         </div>
       </div>

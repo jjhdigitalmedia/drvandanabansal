@@ -5,13 +5,13 @@ import About from './About'
 import Arrow from './Arrow'
 import Stats from './Stats'
 import Head from './Head'
-import Treatements from './Treatements'
+import Treatements from '../Pages/Treatements'
 import Appointment from './Appointment'
 import ContactButton from './ContactButton'
 import Conferences from './Conferences';
 import Features from './Features';
 // import GoogleReview from './GoogleReview'
-// import Memberships from './Memberships';
+import Memberships from './Memberships';
 
 const Home = () => {
   return (
@@ -44,9 +44,9 @@ const Home = () => {
       <Head />
       <About />
       <Stats />
+      <Memberships/>
       <Treatements />
       <Conferences />
-      {/* <Memberships/> */}
       <Features />
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}

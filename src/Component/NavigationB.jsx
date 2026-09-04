@@ -256,7 +256,7 @@
 
 
 
-    import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 
 import "aos/dist/aos.css";
@@ -403,35 +403,31 @@ function NavigationB() {
     after:transition-transform
     after:duration-300
     after:origin-left
-    ${
-      isActive
-        ? "text-rose-800 after:scale-x-100"
-        : "after:scale-x-0 hover:after:scale-x-100"
+    ${isActive
+      ? "text-rose-800 after:scale-x-100"
+      : "after:scale-x-0 hover:after:scale-x-100"
     }`;
 
   return (
     <>
-          {/* =================== TOP HEADER =================== */}
+      {/* =================== TOP HEADER =================== */}
 
       <div className="hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
         <div>
           <span className="pr-8 text-sm text-white">
             <IoCallOutline className="inline mr-2" />
-
             <a
               className="pr-3 text-sm text-white"
               href="tel:9151037784"
             >
               +91 9151037784
             </a>
-
             <a
               className="pr-6 text-sm text-white"
               href="tel:6390103002"
             >
               +91 6390103002
             </a>
-
             <a
               className="pr-6 text-sm text-white"
               href="tel:6390103004"
@@ -496,23 +492,19 @@ function NavigationB() {
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
               onMouseLeave={() => setIsServicesDropdownOpen(false)}
             >
-
               <button
                 className={`text-sm font-semibold relative inline-flex items-center gap-1
                 after:block after:absolute after:left-0 after:-bottom-1
                 after:h-[2px] after:bg-rose-800 after:transition-transform after:duration-300
-                ${
-                  isTreatmentPage
+                ${isTreatmentPage
                     ? "text-rose-800 after:scale-x-100"
                     : "after:scale-x-0 hover:after:scale-x-100"
-                }`}
+                  }`}
               >
                 Specialities
-
                 <ChevronDownIcon
-                  className={`h-4 w-4 transition-transform duration-300 ${
-                    isServicesDropdownOpen ? "rotate-180" : ""
-                  }`}
+                  className={`h-4 w-4 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
@@ -528,10 +520,9 @@ function NavigationB() {
                       onClick={closeAllMenus}
                       className={({ isActive }) =>
                         `block px-6 py-2 text-sm transition
-                        ${
-                          isActive
-                            ? "bg-rose-100 text-rose-800 font-semibold"
-                            : "hover:bg-gray-100"
+                        ${isActive
+                          ? "bg-rose-100 text-rose-800 font-semibold"
+                          : "hover:bg-gray-100"
                         }`
                       }
                     >
@@ -541,7 +532,6 @@ function NavigationB() {
                   ))}
 
                 </div>
-
               )}
 
             </div>
@@ -552,7 +542,6 @@ function NavigationB() {
             >
               In News
             </NavLink>
-
             <NavLink
               to="/patients-guide"
               className={navLinkClass}
@@ -566,7 +555,6 @@ function NavigationB() {
             >
               Gallery
             </NavLink>
-
             <a
               href="https://www.youtube.com/@DrVandanaBansal"
               target="_blank"
@@ -579,15 +567,13 @@ function NavigationB() {
           </div>
 
           {/* APPOINTMENT */}
-
           <NavLink
             to="/book-appointment"
             className={({ isActive }) =>
               `hidden md:block px-3 py-2 text-sm rounded-xl transition
-              ${
-                isActive
-                  ? "bg-rose-900 text-white"
-                  : "bg-pink-800 text-white hover:bg-pink-900"
+              ${isActive
+                ? "bg-rose-900 text-white"
+                : "bg-pink-800 text-white hover:bg-pink-900"
               }`
             }
           >
@@ -609,7 +595,7 @@ function NavigationB() {
           </button>
 
         </div>
-                {/* ================= MOBILE MENU ================= */}
+        {/* ================= MOBILE MENU ================= */}
 
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white p-4 border-t">
@@ -621,10 +607,9 @@ function NavigationB() {
                 end
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -635,10 +620,9 @@ function NavigationB() {
                 to="/about"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -646,21 +630,18 @@ function NavigationB() {
               </NavLink>
 
               {/* MOBILE SPECIALITIES */}
-
               <button
                 onClick={toggleServicesDropdown}
-                className={`flex justify-between items-center py-3 border-b font-semibold ${
-                  isTreatmentPage
+                className={`flex justify-between items-center py-3 border-b font-semibold ${isTreatmentPage
                     ? "text-rose-800"
                     : "text-black"
-                }`}
+                  }`}
               >
                 <span>Specialities</span>
 
                 <ChevronDownIcon
-                  className={`h-5 w-5 transition-transform duration-300 ${
-                    isServicesDropdownOpen ? "rotate-180" : ""
-                  }`}
+                  className={`h-5 w-5 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
 
@@ -675,11 +656,10 @@ function NavigationB() {
                     Treatment
 
                     <PlusIcon
-                      className={`h-5 w-5 transition-transform ${
-                        isNestedDropdownOpen.treatment
+                      className={`h-5 w-5 transition-transform ${isNestedDropdownOpen.treatment
                           ? "rotate-45"
                           : ""
-                      }`}
+                        }`}
                     />
                   </button>
 
@@ -694,10 +674,9 @@ function NavigationB() {
                           to={item.path}
                           onClick={closeAllMenus}
                           className={({ isActive }) =>
-                            `block py-2 text-sm ${
-                              isActive
-                                ? "text-rose-800 font-semibold"
-                                : "text-gray-700"
+                            `block py-2 text-sm ${isActive
+                              ? "text-rose-800 font-semibold"
+                              : "text-gray-700"
                             }`
                           }
                         >
@@ -707,9 +686,7 @@ function NavigationB() {
                       ))}
 
                     </div>
-
                   )}
-
                 </div>
 
               )}
@@ -718,10 +695,9 @@ function NavigationB() {
                 to="/patients-guide"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -732,10 +708,9 @@ function NavigationB() {
                 to="/achievments"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -746,10 +721,9 @@ function NavigationB() {
                 to="/ivf-team"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -760,10 +734,9 @@ function NavigationB() {
                 to="/news-paper-images"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -774,10 +747,9 @@ function NavigationB() {
                 to="/gallery"
                 onClick={closeAllMenus}
                 className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${
-                    isActive
-                      ? "text-rose-800"
-                      : "text-black"
+                  `py-3 border-b font-semibold ${isActive
+                    ? "text-rose-800"
+                    : "text-black"
                   }`
                 }
               >
@@ -791,9 +763,7 @@ function NavigationB() {
               >
                 Make an Appointment
               </NavLink>
-
             </div>
-
           </div>
         )}
 
