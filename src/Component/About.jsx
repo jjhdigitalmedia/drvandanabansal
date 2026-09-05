@@ -51,10 +51,6 @@
 // export default About
 
 
-
-// import CheckDr from "../assets/CheckDr.png";
-// import { Link } from "react-router-dom";
-import { CiMedicalCross } from "react-icons/ci";
 import Stetho from "../assets/Stetho.png";
 import DrVandanaa from "../assets/DrVandanaa.png";
 
@@ -62,8 +58,7 @@ function About() {
   return (
     <div className="min-h-xsvh flex items-center justify-center bg-[f2f2f2] md:p-6 pb-0">
 
-      <div className="relative bg-white/70 backdrop-blur-lg bg-50 rounded-3xl shadw-xl py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row-reverse items-center gap-20 overflow-hidden pb-0">
-        {/* 🩺 Stethoscope Background Image */}
+      <div className="relative bg-white/70 backdrop-blur-lg rounded-3xl pb-0 py-8 px-1 md:p-12 max-w-[80%] w-full flex flex-col md:flex-row-reverse items-center md:gap-20 overflow-hidden">
         <img
           src={Stetho}
           alt="stethoscope"
@@ -72,12 +67,12 @@ function About() {
         {/* Right Image Section */}
         <div className="relative">
           {/* <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md"> */}
-            <img
-              // src={CheckDr} // 👈 dummy image
-              src={DrVandanaa} // 👈 dummy image
-              alt="Doctor"
-              className="w-96 h-full object-cover"
-            />
+          <img
+            // src={CheckDr} // 👈 dummy image
+            src={DrVandanaa} // 👈 dummy image
+            alt="Doctor"
+            className="w-80 h-full object-cover"
+          />
           {/* </div> */}
           {/* Decorative Icon */}
           {/* <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">

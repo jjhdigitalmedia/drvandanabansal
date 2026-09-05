@@ -14,7 +14,7 @@ const memberships = [
 const Membership = () => {
   return (
     <section className="bg-white py-10 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 text-center mb-14">
+      {/* <div className="max-w-7xl mx-auto px-6 text-center mb-14">
         <p className="uppercase tracking-[4px] text-gray-500 font-semibold mb-3">
           Professional Excellence
         </p>
@@ -29,7 +29,7 @@ const Membership = () => {
           excellence in women's healthcare, research, education, and clinical
           leadership.
         </p>
-      </div>
+      </div> */}
 
       <div className="relative overflow-hidden border-y border-pik-400  bg-pink-800 text-white py-5">
         {/* Left Fade */}
