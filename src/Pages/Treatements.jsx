@@ -559,7 +559,7 @@ function Treatments() {
       <section className="w-full bg-5] py-20 px-6 md:px-16">
         <div className="max-w-full mx-auto text-center">
           {/* Heading */}
-          <p className="text-pink-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
+          <p className="text-gray-500 uppercase tracking-[4px] text-sm font-semibold mb-3">
             Specializations
           </p>
           <h2 className="text-4xl md:text-6xl font-cormorant font-semibold text-pink-700 mb-5">

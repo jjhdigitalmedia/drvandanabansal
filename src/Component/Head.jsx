@@ -10,6 +10,7 @@ import AestheticGynae from "../assets/Banners/AestheticGynae.png";
 // import MainBanner from "../assets/Banners/MainBanner.png";
 import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
 
+
 const Head = () => {
   const images = [
     BannerMainWebsite1,
