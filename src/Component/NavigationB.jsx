@@ -598,7 +598,7 @@ function NavigationB() {
         {/* ================= MOBILE MENU ================= */}
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white p-4 border-t">
+          <div className="xl:hidden bg-white p-4 border-t">
 
             <div className="flex flex-col space-y-1">
 

@@ -116,3 +116,171 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* =========================================
+   HERO SWIPER
+========================================= */
+
+.mySwiper {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.mySwiper:active {
+  cursor: grabbing;
+}
+
+.mySwiper .swiper-slide {
+  width: 100%;
+}
+
+.mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+/* =========================================
+   CUSTOM PAGINATION
+========================================= */
+
+.custom-pagination {
+  position: absolute;
+  z-index: 50;
+
+  left: 50%;
+  bottom: 15px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  height: 20px;
+}
+
+
+/* =========================================
+   ALL DOT BUTTONS
+========================================= */
+
+.custom-pagination button {
+  display: block;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  outline: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* =========================================
+   OUTER DOTS
+========================================= */
+
+.custom-pagination .small-dot {
+  width: 7px;
+  height: 7px;
+}
+
+
+/* =========================================
+   SIDE DOTS
+========================================= */
+
+.custom-pagination .medium-dot {
+  width: 11px;
+  height: 11px;
+}
+
+
+/* =========================================
+   ACTIVE CENTER DOT
+========================================= */
+
+.custom-pagination .active-dot {
+  width: 16px;
+  height: 16px;
+
+  background: #ca377e;
+
+  transform: scale(1);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+  .custom-pagination {
+    bottom: 10px;
+    gap: 6px;
+  }
+
+  .custom-pagination .small-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-pagination .medium-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .custom-pagination .active-dot {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  .custom-pagination {
+    bottom: 12px;
+    gap: 7px;
+  }
+
+  .custom-pagination .small-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .custom-pagination .medium-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .custom-pagination .active-dot {
+    width: 15px;
+    height: 15px;
+  }
+}
