@@ -61,7 +61,7 @@ export default function Conferences() {
         }}
       ></div>
 
-      <div className="max-w-[1920px] mx-auto px-4">
+      <div className="max-w-[1920px] mx-auto">
         {/* Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-5 py-2 rounded-full bg-pink-100 text-pink-700 mb-4">

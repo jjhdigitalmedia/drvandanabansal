@@ -33,9 +33,9 @@ const Membership = () => {
 
       <div className="relative overflow-hidden border-y border-pik-400  bg-pink-800 text-white py-5">
         {/* Left Fade */}
-        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
+        {/* <div className="hidden md:absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"></div> */}
         {/* Right Fade */}
-        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
+        {/* <div className="hidden md:absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"></div> */}
         <div className="marquee group">
           <div className="marquee-content">
 
