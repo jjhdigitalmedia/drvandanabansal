@@ -71,18 +71,18 @@ function About() {
         />
         {/* Right Image Section */}
         <div className="relative">
-          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
+          {/* <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md"> */}
             <img
               // src={CheckDr} // 👈 dummy image
               src={DrVandanaa} // 👈 dummy image
               alt="Doctor"
               className="w-96 h-full object-cover"
             />
-          </div>
+          {/* </div> */}
           {/* Decorative Icon */}
-          <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
+          {/* <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
             <CiMedicalCross className=" text-pink-800" />
-          </div>
+          </div> */}
         </div>
 
         {/* Left Content Section */}

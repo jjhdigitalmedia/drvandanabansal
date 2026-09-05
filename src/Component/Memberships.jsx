@@ -45,7 +45,7 @@ const Membership = () => {
                   {item}
                 </span>
 
-                <span className="mx-8 text-pink-200 text-4xl leading-none">
+                <span className="mx-8 text-gray-200 text-3xl leading-none">
                   ●
                 </span>
               </React.Fragment>

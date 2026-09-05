@@ -18,8 +18,8 @@ function Stats() {
   }, []);
 
   return (
-    <section ref={ref} className="bg-white pt-10 pb-2 px-4">
-      <div className="bg-pink rounded-2xl py-8">
+    <section ref={ref} className="bg-white pt-0 pb-2 px-4">
+      <div className="bg-pink rounded-2xl py-2">
         <div className="max-w-6xl mx-auto flex flex-wrap">
           
           <Counter
