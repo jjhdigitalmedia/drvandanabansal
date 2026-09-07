@@ -543,26 +543,26 @@ function NavigationB() {
               In News
             </NavLink>
             <NavLink
-              to="/patients-guide"
-              className={navLinkClass}
-            >
-              Patients Guide
-            </NavLink>
-
-            <NavLink
               to="/gallery"
               className={navLinkClass}
             >
               Gallery
             </NavLink>
-            <a
+            <NavLink
+              to="/patients-education"
+              className={navLinkClass}
+            >
+              Patients Guide
+            </NavLink>
+
+            {/* <a
               href="https://www.youtube.com/@DrVandanaBansal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm bg-rose-700 text-white px-2 py-2 rounded-md font-semibold"
             >
               Youtube Channel
-            </a>
+            </a> */}
 
           </div>
 

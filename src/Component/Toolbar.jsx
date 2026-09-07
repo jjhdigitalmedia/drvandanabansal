@@ -17,18 +17,18 @@ export default function MobileBottomBar() {
     {
       name: "Call",
       icon: Phone,
-      path: "tel:+919999999999",
+      path: "tel:+916390103004",
       external: true,
     },
     {
       name: "Chat",
       icon: MessageCircle,
-      path: "/tel:+916390103004",
+      path: "tel:+916390103004",
     },
     {
       name: "Profile",
       icon: UserRound,
-      path: "/profile",
+      path: "/about",
     },
   ];
 

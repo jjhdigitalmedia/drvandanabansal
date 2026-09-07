@@ -82,6 +82,8 @@ import PreIVFHysteroscopyEvaluation from './Pages/Treatments/HysteroscopicSurger
 import UterinePolypRemoval from './Pages/Treatments/HysteroscopicSurgery.jsx/UterinePolypRemoval.jsx'
 import UterineSeptumResection from './Pages/Treatments/HysteroscopicSurgery.jsx/UterineSeptumResection.jsx'
 import EmbryoDonation from './Pages/Treatments/InfertilityAndIVF/EmbryoDonation.jsx'
+import PatientEducation from './Pages/PatientsEducation/PatientsEducation.jsx'
+import PCOSSymptoms from './Pages/PatientsEducation/Articles/PCOSSymptoms.jsx'
 
 
 const router = createBrowserRouter([
@@ -115,14 +117,19 @@ const router = createBrowserRouter([
         element: <NewsPaperCutting />,
         
       },
-      // {
-      //   path: 'treatments',
-      //   element: <Treatements />,
-        
-      // },
       {
         path: 'specialities',
         element: <Treatements />,
+        
+      },
+      {
+        path: 'patients-education',
+        element: <PatientEducation/>,
+        
+      },
+      {
+        path: 'patients-education/pcos-symptoms',
+        element: <PCOSSymptoms/>,
         
       },
       // ..............................................................................................

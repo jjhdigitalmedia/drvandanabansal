@@ -72,7 +72,7 @@ const CurrentRoute = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
 
       <div className="relative mx-auto px-6 pb-8 pt-16 sm:px-10 md:px-16 md:pb-12 md:pt-24 lg:px-24 lg:pb-14 lg:pt-28">
-        <h1 className="mb-3 text-2xl font-semibold text-[#f1f1f1] sm:text-3xl md:text-4xl">
+        <h1 className="mb-3 text-2xl font-serif text-[#f1f1f1] sm:text-3xl md:text-4xl">
           {currentLabel}
         </h1>
 

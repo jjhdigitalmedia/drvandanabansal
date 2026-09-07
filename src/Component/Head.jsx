@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/autoplay";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "../Style/Style.css";
 
@@ -27,10 +25,15 @@ const Head = () => {
     LaparoscopicSurgery,
   ];
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div className="relative">
+
+      {/* ================= SLIDER ================= */}
+
       <Swiper
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         loop={true}
         speed={700}
         slidesPerView={1}
@@ -39,10 +42,8 @@ const Head = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-          dynamicMainBullets: 5,
+        onSlideChange={(swiper) => {
+          setActiveIndex(swiper.realIndex);
         }}
         className="mySwiper"
       >
@@ -57,6 +58,39 @@ const Head = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* ================= CUSTOM DOTS ================= */}
+
+      <div className="custom-pagination">
+
+        {[-2, -1, 0, 1, 2].map((offset) => {
+          const total = images.length;
+
+          const dotIndex =
+            (activeIndex + offset + total) % total;
+
+          let dotClass = "small-dot";
+
+          if (offset === 0) {
+            dotClass = "active-dot";
+          } else if (Math.abs(offset) === 1) {
+            dotClass = "medium-dot";
+          }
+
+          return (
+            <button
+              key={offset}
+              type="button"
+              className={dotClass}
+              onClick={() => {
+                // Dot click intentionally kept simple
+              }}
+              aria-label={`Slide ${dotIndex + 1}`}
+            />
+          );
+        })}
+
+      </div>
     </div>
   );
 };
