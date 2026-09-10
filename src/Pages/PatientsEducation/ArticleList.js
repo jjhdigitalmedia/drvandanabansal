@@ -1,3 +1,13 @@
+import BreastFeedingTips from "./Articles/BreastFeedingTips";
+import ExerciseDuringPregnancy from "./Articles/ExerciseDuringPregnancy";
+import GynecologicalCheckups from "./Articles/GynecologicalCheckups";
+import HealthPregnancy from "./Articles/HealthPregnancy";
+import InfertilityMyths from "./Articles/InfertilityMyths";
+import MenstrualHealth from "./Articles/MenstrualHealth";
+import NormalDeliver from "./Articles/NormalDeliver";
+import PCOSSymptoms from "./Articles/PCOSSymptoms";
+import PostPregnancyCare from "./Articles/PostPregnancyCare";
+
 export const Articles = [
     {
         id: 1,
@@ -8,7 +18,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900",
         category: "Pregnancy",
         date: "12 Mar 2026",
-        link: 'patients-education'
+        slug: 'healthy-pregnancy',
+        component: HealthPregnancy
     },
     {
         id: 2,
@@ -19,7 +30,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900",
         category: "Women's Health",
         date: "18 Mar 2026",
-        link: 'pcos-symptoms'
+        slug: 'pcos-symptoms',
+        component: PCOSSymptoms
     },
     {
         id: 3,
@@ -30,7 +42,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=900",
         category: "Delivery",
         date: "22 Mar 2026",
-        link: 'patients-education'
+        slug: 'normal-delivery',
+        component: NormalDeliver
     },
     {
         id: 4,
@@ -41,7 +54,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1584515933487-779824d29309?w=900",
         category: "Gynecology",
         date: "26 Mar 2026",
-        link: 'patients-education'
+        slug: 'gynecological-checkup',
+        component: GynecologicalCheckups
     },
     {
         id: 5,
@@ -52,7 +66,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=900",
         category: "IVF",
         date: "30 Mar 2026",
-        link: 'patients-education'
+        slug: 'infertility-myths',
+        component: InfertilityMyths
     },
     {
         id: 6,
@@ -63,7 +78,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=900",
         category: "Mother Care",
         date: "05 Apr 2026",
-        link: 'patients-education'
+        slug: 'post-pregnancy-care',
+        component: PostPregnancyCare
     },
     {
         id: 7,
@@ -74,7 +90,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900",
         category: "Fitness",
         date: "08 Apr 2026",
-        link: 'patients-education'
+        slug: 'exercise-during-pregnancy',
+        component: ExerciseDuringPregnancy
     },
     {
         id: 8,
@@ -85,7 +102,8 @@ export const Articles = [
             "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=900",
         category: "Mother Care",
         date: "12 Apr 2026",
-        link: 'patients-education'
+        slug: 'breastfeeding-tips',
+        component: BreastFeedingTips
     },
     {
         id: 9,
@@ -96,6 +114,7 @@ export const Articles = [
             "https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=900",
         category: "Women's Health",
         date: "16 Apr 2026",
-        link: 'patients-education'
+        slug: 'menstrual-health',
+        component: MenstrualHealth
     },
 ];

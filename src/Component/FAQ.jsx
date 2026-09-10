@@ -40,7 +40,7 @@ export function FAQ() {
         {
             i: 3,
             q: 'What is the difference between IVF and ICSI?',
-            ana: 'oth are assisted reproductive treatments. In ICSI, a single sperm is directly injected into the egg and may be recommended in certain cases of male-factor infertility or previous fertilisation problems.'
+            ana: 'Both are assisted reproductive treatments. In ICSI, a single sperm is directly injected into the egg and may be recommended in certain cases of male-factor infertility or previous fertilisation problems.'
         },
         {
             i: 4,

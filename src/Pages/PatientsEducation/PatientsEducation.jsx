@@ -97,7 +97,7 @@ export default function PatientEducation() {
 
                                 {/* Continue in Part 2 */}
 
-                                <Link to={article.link} className="flex items-center gap-2 font-semibold text-pink-800 transition-all duration-300 group-hover:gap-4">
+                                <Link to={article.slug} className="flex items-center gap-2 font-semibold text-pink-800 transition-all duration-300 group-hover:gap-4">
                                     Read Article
                                     {/* <ArrowRight size={18} /> */}
                                 </Link>

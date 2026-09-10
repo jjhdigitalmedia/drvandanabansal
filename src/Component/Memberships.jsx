@@ -3,12 +3,18 @@ import React from "react";
 const memberships = [
   "President of ISOPARB Society",
   "President Elect AOGS",
-  "Executive Member FOGSI",
-  "Member of RCOG (UK)",
-  "Life Member IMA",
+  "Life Member FOGSI",
   "Life Member ISAR",
-  "Life Member NARCHI",
+  "Life Member ISPAT",
+  "Life Member IAGE",
+  "Life Member IMA",
+  "Member of ESHRE",
+  "Life Member IFS",
+  "Life Member ISARM",
   "Member of AICOG",
+  "Member RCOG (UK)",
+  "Life Member NARCHI",
+  "Life Member IMA College of General Practitioners",
 ];
 
 const Membership = () => {
@@ -31,7 +37,7 @@ const Membership = () => {
         </p>
       </div> */}
 
-      <div className="relative overflow-hidden border-y border-pik-400  bg-pink-800 text-white py-5">
+      <div className="relative overflow-hidden border-y border-pik-400 bg-pink-800 text-white py-5">
         {/* Left Fade */}
         {/* <div className="hidden md:absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"></div> */}
         {/* Right Fade */}

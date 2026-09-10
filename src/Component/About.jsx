@@ -89,7 +89,7 @@ function About() {
             MBBS, MS, DGO, FCGP
           </p>
           <p className="text-pink-800 font-semibold lg:text-left text-center mt-1">
-            Infertility & IVF Expert, Laparoscopic & Hysteroscopic Surgeon
+            Senior Gynecologist, IVF & Women's Longevity Specialist
           </p>
           {/* Description */}
           <p className="mt-6 md:pr-5 text-gray-600 leading-relaxed text-justify">

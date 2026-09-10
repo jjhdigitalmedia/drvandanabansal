@@ -1,23 +1,3 @@
-// import Contact from '../Component/Contact';
-// import { Helmet } from 'react-helmet';
-// const BookYourAppointment = () => {
-//     return (
-//         <>
-//             <Helmet>
-//                 <title>Book your appointment with Dr. Vandana Bansal</title>
-//                 <meta name="description" content="Book your appointment at Arpit Test Tube Baby Centre with Dr. Vandana Bansal, a leading IVF expert and gynaecologist. With extensive experience in treating infertility and offering advanced fertility solutions, Dr. Bansal provides compassionate care tailored to each patient’s needs. Whether you're looking for IVF, IUI, or advice on general women's health, Dr. Bansal ensures you receive the best care for your family-building goals. Schedule your consultation today and take the first step toward achieving parenthood." />
-//                 <meta name="keywords" content="gynecologist, women's health, pregnancy care, PCOS treatment, doctors for pregnancy" />
-//                 <meta property="og:title" content="Best Gynecology Services" />
-//                 <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
-//             </Helmet>
-          
-//                 <Contact />
-//         </>
-//     )
-// }
-
-// export default BookYourAppointment;
-
 import {
   FaFacebookF,
   FaInstagram,
@@ -199,7 +179,7 @@ const BookYourAppointment = () => {
                   href="mailto:bansal.drvandana@gmail.com?subject=Inquiry&body=Hello, I have a question about..."
                   className="hover:text-pink-800"
                 >
-                  drvandanabansal921@gmail.com@gmail.com
+                  drvandanabansal921@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
