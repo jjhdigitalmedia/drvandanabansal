@@ -1,58 +1,7 @@
-// import '../Style/neonStyle.css'
-// import PhotoDrVandana from '../assets/PhotoDrVandana.jpeg';
-// import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-// import { Helmet } from 'react-helmet'
-
-// const About = () => {
-//     return (
-//         <>
-//             <Helmet>
-//                 <title>Dr Vandana Bansal Best Gynecologist in Prayagraj</title>
-//                 <meta name="description" content="Dr. Vandana Bansal – MBBS, DGO, MS, D.Phil (Gold Medalist), FCGP is a renowned and senior gynecologist and obstetrician in Uttar Pradesh, with extensive experience in high-risk pregnancy care, infertility management, and IVF. She has been specializing in advanced laparoscopic and hysteroscopic surgeries for over 18 years, offering minimally invasive solutions with excellent clinical outcomes. She is the Director of Jeevan Jyoti Hospital, a 200-bedded multi-specialty healthcare institution, and Arpit Test Tube Baby Centre, Allahabad (Prayagraj). Jeevan Jyoti Hospital proudly completed its Silver Jubilee (25 years) in October 2013, reflecting a long-standing commitment to quality patient care in obstetrics and gynecology." />
-
-//                 <meta name="keywords" content="gynecologist, women's health, pregnancy care, IVF expert in allahabad, High risk pregnancy, Infertility treatment, senior gynaecologist, Laparoscopic surgeon, Hysteroscopic surgeon,  PCOS treatment, doctors for pregnancy" />
-//                 <meta property="og:title" content="Best Gynecology Services" />
-//                 <meta property="og:description" content="Expert women's healthcare with trusted gynecologists." />
-//             </Helmet>
-//             <section id='about' className="text-gray-600 w-11/12 mx-auto mt-14 body-font">
-//                 <div className="container mx-auto flex px-3 py- md:flex-row flex-col items-center">
-//                     <div className="pt- pb-0 md:w-96 w-5/6 ">
-//                         <img className=" object-cover object-center rounded-3xl w-96" alt="hero" src={PhotoDrVandana} />
-//                     </div>
-//                     <div className="lg:flex-grow md:rounded-3xl my-2 md:w-1/2 text-white py-3 pr-1 md:bg-pink-800 lg:pl-8 md:pl-8 flex flex-col md:items-start text-center md:text-left items-center ">
-//                         <h1 className="title-font sm:text-3xl text-2xl md:mb-2 font-medium text-white"> Dr. Vandana Bansal
-//                         </h1>
-
-//                         <div className='flex'>
-//                             <a href="https://www.instagram.com/drvandanabansal_gynaecologist/" target='_blank'>
-//                                 <FaInstagram className='m-2 md:text-whit text-xl' />
-//                             </a>
-//                             <a href="https://www.facebook.com/vandana.bansal.33" target='_blank'>
-//                                 <FaFacebook className='m-2 md:text-whie text-xl' />
-//                             </a>
-//                             <a href="https://www.youtube.com/@DrVandanaBansal" target='_blank'>
-//                                 <FaYoutube className='m-2 md:text-whie text-xl' />
-//                             </a>
-//                             <a href="https://www.linkedin.com/in/dr-vandana-bansal-5916279b/" target='_blank'>
-//                                 <FaLinkedinIn className='m-2 md:text-wite text-xl' />
-//                             </a>
-//                         </div>
-
-//                         <p className="mb-8 md:text-left text-sm leading-relaxed font-semibold text-justify"> DR. VANDANA BANSAL – MBBS, DGO, MS, D.Phil (Gold Medalist) FCGP is one of the renowned and Senior Gynaecologists, High Risk Pregnancy Care, Infertility & IVF and Obstetricians of the state of Uttar Pradesh. She is specialized in Laparoscopy and Hysteroscopic Surgery. Besided, she is Director of 200-bedded, multi-speciality Jeevan Jyoti Hospital, Arpit Test Tube Baby Centre Allahabad.
-//                             </p>
-//                             <p className="mb-8 md:text-left text-sm leading-relaxed font-semibold text-justify">Dr. Vandana Bansal is a trusted gynecologist, IVF specialist, and dedicated to women's health. With 38+ years of experience and a compassionate approach, she offers advanced care in infertility, laparoscopy, menopause, and high-risk pregnancies. Patients value her for ethical practice, clear communication, and personalized treatment plans. Book your appointment today for expert care and guidance on your reproductive health journey.</p>
-//                     </div>
-//                 </div>
-//             </section>
-//         </>
-//     )
-// }
-
-// export default About
 
 
 import Stetho from "../assets/Stetho.png";
-import DrVandanaa from "../assets/DrVandanaa.png";
+import DrVandanaas from "../assets/DrVandanaas.png";
 
 function About() {
   return (
@@ -66,18 +15,17 @@ function About() {
         />
         {/* Right Image Section */}
         <div className="relative">
-          {/* <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md"> */}
+          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
           <img
-            // src={CheckDr} // 👈 dummy image
-            src={DrVandanaa} // 👈 dummy image
+            src={DrVandanaas} // 👈 dummy image
             alt="Doctor"
             className="w-80 mb-10 h-full object-cover"
           />
-          {/* </div> */}
+          </div>
           {/* Decorative Icon */}
-          {/* <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
-            <CiMedicalCross className=" text-pink-800" />
-          </div> */}
+          <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
+            {/* <CiMedicalCross className=" text-pink-800" /> */}
+          </div>
         </div>
 
         {/* Left Content Section */}
@@ -85,9 +33,9 @@ function About() {
           <h1 className="text-4xl md:text-5xl text-center lg:text-left font-serif text-pink-700">
             About Dr. Vandana Bansal
           </h1>
-          <p className="mt-2 text-gray-700 text-center lg:text-left font-medium">
+          {/* <p className="mt-2 text-gray-700 text-center lg:text-left font-medium">
             MBBS, MS, DGO, FCGP
-          </p>
+          </p> */}
           <p className="text-pink-800 font-semibold lg:text-left text-center mt-1">
             Senior Gynecologist, IVF & Women's Longevity Specialist
           </p>

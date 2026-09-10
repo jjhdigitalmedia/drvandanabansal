@@ -13,29 +13,13 @@ const memberships = [
   "Life Member ISARM",
   "Member of AICOG",
   "Member RCOG (UK)",
-  "Life Member NARCHI",
   "Life Member IMA College of General Practitioners",
 ];
 
 const Membership = () => {
   return (
     <section className="bg-white py-10 overflow-hidden">
-      {/* <div className="max-w-7xl mx-auto px-6 text-center mb-14">
-        <p className="uppercase tracking-[4px] text-gray-500 font-semibold mb-3">
-          Professional Excellence
-        </p>
-
-        <h2 className="text-4xl md:text-5xl font-bold text-pink-800">
-          Society & Memberships
-        </h2>
-
-        <p className="text-gray-500 mt-5 max-w-3xl mx-auto leading-8">
-          Dr. Vandana Bansal actively contributes to leading national and
-          international medical organizations, demonstrating her commitment to
-          excellence in women's healthcare, research, education, and clinical
-          leadership.
-        </p>
-      </div> */}
+  
 
       <div className="relative overflow-hidden border-y border-pik-400 bg-pink-800 text-white py-5">
         {/* Left Fade */}

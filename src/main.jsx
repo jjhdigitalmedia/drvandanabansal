@@ -85,6 +85,7 @@ import EmbryoDonation from './Pages/Treatments/InfertilityAndIVF/EmbryoDonation.
 import PatientEducation from './Pages/PatientsEducation/PatientsEducation.jsx'
 import ArticleLayout from './Pages/PatientsEducation/ArticleLayout.jsx'
 import PCOSSymptoms from './Pages/PatientsEducation/Articles/PCOSSymptoms.jsx'
+import AboutPage from './Pages/AboutPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -96,9 +97,13 @@ const router = createBrowserRouter([
         path: '',
         element: <Home />,
       },
+      // {
+      //   path: 'about',
+      //   element: <About />,
+      // },
       {
         path: 'about',
-        element: <About />,
+        element: <AboutPage />,
       },
       {
         path: 'book-appointment',

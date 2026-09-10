@@ -412,7 +412,7 @@ function NavigationB() {
     <>
       {/* =================== TOP HEADER =================== */}
 
-      <div className="hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
+      <div className="hidden xl:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
         <div>
           <span className="pr-8 text-sm text-white">
             <IoCallOutline className="inline mr-2" />
@@ -471,7 +471,7 @@ function NavigationB() {
 
           {/* DESKTOP NAV */}
 
-          <div className="hidden md:flex items-center space-x-4 relative">
+          <div className="hidden xl:flex items-center space-x-4 relative">
 
             <NavLink to="/" end className={navLinkClass}>
               Home
