@@ -537,6 +537,12 @@ function NavigationB() {
             </div>
 
             <NavLink
+              to="/achievements"
+              className={navLinkClass}
+            >
+              Achievements
+            </NavLink>
+            <NavLink
               to="/news-paper-images"
               className={navLinkClass}
             >

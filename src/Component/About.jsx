@@ -19,7 +19,7 @@ function About() {
           <img
             src={DrVandanaas} // 👈 dummy image
             alt="Doctor"
-            className="w-80 mb-10 h-full object-cover"
+            className="w-96 mb-10 h-full object-cover"
           />
           </div>
           {/* Decorative Icon */}
@@ -37,7 +37,7 @@ function About() {
             MBBS, MS, DGO, FCGP
           </p> */}
           <p className="text-pink-800 font-semibold lg:text-left text-center mt-1">
-            Senior Gynecologist, IVF & Women's Longevity Specialist
+            Senior Gynecologist, Infertility & IVF Expert
           </p>
           {/* Description */}
           <p className="mt-6 md:pr-5 text-gray-600 leading-relaxed text-justify">

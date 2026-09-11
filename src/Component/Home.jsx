@@ -43,7 +43,7 @@ const Home = () => {
       <Arrow />
       <Head />
       <About />
-      <Stats />
+      {/* <Stats /> */}
       {/* <Memberships/> */}
       <Treatements />
       <Conferences />

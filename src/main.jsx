@@ -86,6 +86,7 @@ import PatientEducation from './Pages/PatientsEducation/PatientsEducation.jsx'
 import ArticleLayout from './Pages/PatientsEducation/ArticleLayout.jsx'
 import PCOSSymptoms from './Pages/PatientsEducation/Articles/PCOSSymptoms.jsx'
 import AboutPage from './Pages/AboutPage.jsx'
+import Achievements from './Pages/Achievements.jsx'
 
 
 const router = createBrowserRouter([
@@ -122,6 +123,11 @@ const router = createBrowserRouter([
       {
         path: 'specialities',
         element: <Treatements />,
+
+      },
+      {
+        path: 'achievements',
+        element: <Achievements />,
 
       },
       {

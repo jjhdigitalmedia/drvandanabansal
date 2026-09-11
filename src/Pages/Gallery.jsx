@@ -1,31 +1,26 @@
 import React, { useMemo, useState } from "react";
-
-// Images — replace/add imports here whenever your gallery changes.
-import gallery02 from "../assets/Gallery/gallery02.jpg";
-import gallery03 from "../assets/Gallery/gallery03.jpg";
-import gallery04 from "../assets/Gallery/gallery04.jpg";
-import gallery05 from "../assets/Gallery/gallery05.jpg";
-import gallery06 from "../assets/Gallery/gallery06.jpg";
-import gallery09 from "../assets/Gallery/gallery09.png";
-import gallery10 from "../assets/Gallery/gallery10.png";
+// import gallery02 from "../assets/Gallery/gallery02.jpg";
 import gallery11 from "../assets/Gallery/gallery11.png";
-import A013 from "../assets/Gallery/A013.jpg";
-import B02 from "../assets/Gallery/B02.jpg";
+import A from "../assets/Gallery/AwardsPhotos/A.jpg";
+import B from "../assets/Gallery/AwardsPhotos/B.jpg";
+import C from "../assets/Gallery/AwardsPhotos/C.jpg";
+import D from "../assets/Gallery/AwardsPhotos/D.jpg";
+import E from "../assets/Gallery/AwardsPhotos/E.jpg";
+import F from "../assets/Gallery/AwardsPhotos/F.jpg";
+
 
 const galleryItems = [
-  { id: 1, src: gallery02, category: "Clinic & Hospital", title: "Clinic & Hospital" },
-  { id: 2, src: gallery03, category: "Clinic & Hospital", title: "Patient Care" },
-  { id: 3, src: gallery04, category: "Events & Conferences", title: "Medical Conference" },
-  { id: 4, src: gallery05, category: "Events & Conferences", title: "Professional Event" },
-  { id: 5, src: gallery06, category: "Clinic & Hospital", title: "Healthcare Environment" },
-  { id: 6, src: gallery09, category: "Awards & Achievements", title: "Recognition & Achievement" },
-  { id: 7, src: gallery10, category: "Awards & Achievements", title: "Professional Recognition" },
-  { id: 8, src: gallery11, category: "Events & Conferences", title: "Conference Moments" },
-  { id: 9, src: A013, category: "Clinic & Hospital", title: "Clinical Care" },
-  { id: 10, src: B02, category: "Events & Conferences", title: "Medical Event" },
+  { id: 1, src: A, category: "Awards & Felicitations", title: "" },
+  { id: 2, src: B, category: "Awards & Felicitations", title: "" },
+  { id: 3, src: C, category: "Awards & Felicitations", title: "" },
+  { id: 4, src: D, category: "Awards & Felicitations", title: "" },
+  { id: 5, src: E, category: "Awards & Felicitations", title: "" },
+  { id: 6, src: F, category: "Awards & Felicitations", title: "" },
+  // { id: 1, src: gallery02, category: "Clinic & Hospital", title: "Clinic & Hospital" },
+  { id: 7, src: gallery11, category: "Clinic & Hospital", title: "Conference Moments" },
 ];
 
-const categories = ["All", "Clinic & Hospital", "Events & Conferences", "Awards & Achievements"];
+const categories = ["All", "Clinic & Hospital", "Events & Conferences", "Awards & Felicitations"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -50,41 +45,23 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen bg-[#f1f1f1] text-slate-900">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-pink-950">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(244,114,182,0.22),transparent_32%),radial-gradient(circle_at_10%_90%,rgba(255,255,255,0.08),transparent_30%)]" />
-
+      <section className="relative overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-          <div className="max-w-3xl">
-            <p className="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-200">
-              <span className="h-px w-10 bg-pink-300" />
+          <div className="mx-w-3xl">
+            <p className="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-950">
+              <span className="h-px w-10 bg-pink-800" />
               Dr. Vandana Bansal
+              <span className="h-px w-10 bg-pink-800" />
             </p>
-
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl text-center font-semibold leading-tight tracking-tight text-gray-800 sm:text-5xl lg:text-6xl">
               A glimpse into our
-              <span className="block text-pink-200">journey of care</span>
+              <span className="block text-pink-800">journey of care</span>
             </h1>
-
-            <p className="mt-6 max-w-2xl text-base leading-7 text-pink-100/80 sm:text-lg">
+            <p className="mt-6 text-center text-base leading-7 text-pink-900 sm:text-lg">
               Explore moments from clinical practice, professional events,
               conferences and achievements.
             </p>
           </div>
-
-          {/* <div className="mt-12 grid max-w-xl grid-cols-3 gap-3 border-t border-white/15 pt-6 text-white">
-            <div>
-              <p className="text-2xl font-semibold">{galleryItems.length}+</p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-pink-100/60">Moments</p>
-            </div>
-            <div>
-              <p className="text-2xl font-semibold">3</p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-pink-100/60">Categories</p>
-            </div>
-            <div>
-              <p className="text-2xl font-semibold">Care</p>
-              <p className="mt-1 text-xs uppercase tracking-wider text-pink-100/60">At heart</p>
-            </div>
-          </div> */}
         </div>
       </section>
 
@@ -99,7 +76,7 @@ export default function GalleryPage() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${
+                className={`rounded-full border-2 border-pink-800 px-5 py-2.5 text-sm font-medium transition-all duration-300 ${
                   active
                     ? "border-pink-800 bg-pink-800 text-white shadow-lg shadow-pink-900/15"
                     : "border-slate-300 bg-white text-slate-600 hover:border-pink-300 hover:text-pink-800"
@@ -117,7 +94,7 @@ export default function GalleryPage() {
             <button
               key={item.id}
               onClick={() => setSelected(item)}
-              className="group relative mb-5 block w-full overflow-hidden rounded-2xl bg-white text-left shadow-sm ring-1 ring-slate-200/70 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
+              className="group relative mb-5 block w-full overflow-hidden border-[1px] border-gray-500 rounded-2xl bg-white text-left shadow-md ring-1 ring-slate-200/70 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
               style={{ animationDelay: `${index * 70}ms` }}
             >
               <img

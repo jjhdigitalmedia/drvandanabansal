@@ -563,7 +563,7 @@ function Treatments() {
             Specializations
           </p>
           <h2 className="text-4xl md:text-6xl font-cormorant font-semibold text-pink-700 mb-5">
-            Womens Care at Every Stage
+            Womens Care at Every Stage of Life
           </h2>
           <div className="w-24 h-[2px] bg-pink-700 mx-auto mb-14"></div>
 

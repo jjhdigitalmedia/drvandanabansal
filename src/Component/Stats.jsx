@@ -23,8 +23,8 @@ function Stats() {
         <div className="max-w-6xl mx-auto flex flex-wrap">
           
           <Counter
-            label="Successful Pregnancies"
-            value={50000}
+            label="Patients Treated"
+            value={100000}
             visible={visible}
           />
 
@@ -41,8 +41,8 @@ function Stats() {
           />
 
           <Counter
-            label="Successful IVF Pregnancies"
-            value={40000}
+            label="Google Rating"
+            value={4.9}
             visible={visible}
           />
 

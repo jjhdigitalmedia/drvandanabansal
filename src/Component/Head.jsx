@@ -17,7 +17,7 @@ import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
 const Head = () => {
   const images = [
     BannerMainWebsite1,
-    DrVandanaIntro,
+    // DrVandanaIntro,
     InfertilityIVF,
     AestheticGynae,
     HysteroscopySurgery,
