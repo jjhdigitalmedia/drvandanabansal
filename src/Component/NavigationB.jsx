@@ -543,7 +543,7 @@ function NavigationB() {
               Achievements
             </NavLink>
             <NavLink
-              to="/news-paper-images"
+              to="/in-news"
               className={navLinkClass}
             >
               In News
