@@ -16,8 +16,8 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
-  // { id: 1, src: gallery02, category: "Clinic & Hospital", title: "Clinic & Hospital" },
   { id: 7, src: gallery11, category: "Clinic & Hospital", title: "Conference Moments" },
+  // { id: 1, src: gallery02, category: "Clinic & Hospital", title: "Clinic & Hospital" },
 ];
 
 const categories = ["All", "Clinic & Hospital", "Events & Conferences", "Awards & Felicitations"];
