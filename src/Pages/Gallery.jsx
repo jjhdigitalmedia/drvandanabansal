@@ -1,12 +1,16 @@
 import React, { useMemo, useState } from "react";
-// import gallery02 from "../assets/Gallery/gallery02.jpg";
-import gallery11 from "../assets/Gallery/gallery11.png";
+
 import A from "../assets/Gallery/AwardsPhotos/A.jpg";
 import B from "../assets/Gallery/AwardsPhotos/B.jpg";
 import C from "../assets/Gallery/AwardsPhotos/C.jpg";
 import D from "../assets/Gallery/AwardsPhotos/D.jpg";
 import E from "../assets/Gallery/AwardsPhotos/E.jpg";
 import F from "../assets/Gallery/AwardsPhotos/F.jpg";
+// import H from "../assets/Gallery/AwardsPhotos/H.jpg";
+
+import OTA from "../assets/Gallery/OT/OTA.jpg";
+import OTB from "../assets/Gallery/OT/OTB.png";
+import OTC from "../assets/Gallery/OT/OTC.jpeg";
 
 
 const galleryItems = [
@@ -16,11 +20,13 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
-  { id: 7, src: gallery11, category: "Clinic & Hospital", title: "Conference Moments" },
-  // { id: 1, src: gallery02, category: "Clinic & Hospital", title: "Clinic & Hospital" },
+  { id: 7, src: OTA, category: "OT", title: "" },
+  { id: 8, src: OTB, category: "OT", title: "" },
+  { id: 9, src: OTC, category: "OT", title: "" },
+  // { id: 11, src: H, category: "Awards & Felicitations", title: "" },
 ];
 
-const categories = ["All", "Clinic & Hospital", "Events & Conferences", "Awards & Felicitations"];
+const categories = ["All", "Clinic & Hospital", "OT", "Events & Conferences", "Awards & Felicitations"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");

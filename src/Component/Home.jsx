@@ -12,6 +12,8 @@ import Conferences from './Conferences';
 import Features from './Features';
 // import GoogleReview from './GoogleReview'
 import Memberships from './Memberships';
+// import InstagramVideos from './InstagramVideos';
+import InstagramReels from './InstagramReels';
 
 const Home = () => {
   return (
@@ -47,7 +49,8 @@ const Home = () => {
       {/* <Memberships/> */}
       <Treatements />
       <Conferences />
-      <Features />
+      <InstagramReels/>
+      {/* <Features /> */}
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
       {/* <div className='w-11/12 mx-auto'>

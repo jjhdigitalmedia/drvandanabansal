@@ -41,13 +41,13 @@ function About() {
           </p>
           {/* Description */}
           <p className="mt-6 md:pr-5 text-gray-600 leading-relaxed text-justify">
-            Dr. Vandana Bansal is a senior Gynaecologist, Obstetrician, Fertility & IVF Specialist, Aesthetic Gynaecologist, and Minimally Invasive Gynaecological Surgeon in Prayagraj, with more than three decades of experience in women’s healthcare.
+          Dr. Vandana Bansal is a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with more than three decades of experience caring for women at every stage of life.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 leading-relaxed text-justify">
-            Her expertise encompasses IVF and infertility treatment, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management, and comprehensive gynaecological care. She combines extensive clinical experience with an individualized, evidence-based approach to ensure that every woman receives the right care at the right stage of life.
+          Her clinical practice brings together fertility and IVF, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management and preventive women’s health.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 leading-relaxed text-justify">
-            With a special focus on fertility and reproductive health, Dr. Bansal is committed to helping couples navigate their fertility journey with clarity, confidence, and personalized treatment. Her minimally invasive surgical expertise enables effective treatment with a focus on patient comfort and recovery. From fertility and pregnancy to menopause and healthy ageing, she looks beyond individual symptoms to promote long-term reproductive, metabolic, sexual, and overall wellbeing, while building a trusted doctor-patient relationship where women feel comfortable discussing their concerns and actively participate in their healthcare decisions.
+            Her philosophy is to look beyond an individual symptom or diagnosis and help women achieve better reproductive health, metabolic and bone health, sexual wellbeing and healthy ageing.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 text-pin-700 opacity-60 italic leading-relaxed">
             My mission is to provide personalized, safe, and high-quality care in a compassionate environment where every woman feels heard, respected, and confident.

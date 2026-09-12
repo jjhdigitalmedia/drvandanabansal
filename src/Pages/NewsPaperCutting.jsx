@@ -175,7 +175,7 @@ const NewsPaperCutting = () => {
                     IMAGE GRID
                 ========================== */}
 
-                <div className="mx-auto grid max-w-7xl grid-cols-1 gap-5 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:px-10">
+                <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:px-10">
 
                     {data.map(({ imageLink }, index) => (
 
@@ -191,7 +191,7 @@ const NewsPaperCutting = () => {
                                     src={imageLink}
                                     alt={`Dr. Vandana Bansal newspaper recognition ${index + 1}`}
                                     loading="lazy"
-                                    className="h-64 w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                                    className="h-72 w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
 
 
