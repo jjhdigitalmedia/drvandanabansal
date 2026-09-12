@@ -169,13 +169,13 @@ const GynecologistPrayagraj = () => {
                                 Book a Consultation
                             </a>
 
-                            <a
-                                href="#gynecology-services"
+                            <Link
+                                to="/specialities"
                                 className="inline-flex items-center justify-center gap-2 rounded-full border border-pink-800 px-7 py-3.5 font-semibold text-pink-800 transition hover:bg-pink-800 hover:text-white"
                             >
                                 Explore Services
                                 <ArrowRight size={18} />
-                            </a>
+                            </Link>
 
                         </div>
 

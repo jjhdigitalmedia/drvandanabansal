@@ -11,7 +11,8 @@ import "swiper/css/navigation";
 export default function ArticleLayout() {
     const { slug } = useParams();
 
-    // console.log(slug+"skgh")
+    console.log(Articles[1].slug)
+    console.log(slug)
     const blog = Articles.find((item) => `${item.slug}` === slug);
 
     console.log(blog)
