@@ -11,11 +11,11 @@ import "swiper/css/navigation";
 export default function ArticleLayout() {
     const { slug } = useParams();
 
-    console.log(Articles[1].slug)
-    console.log(slug)
+    // console.log(Articles[1].slug)
+    // console.log(slug)
     const blog = Articles.find((item) => `${item.slug}` === slug);
 
-    console.log(blog)
+    // console.log(blog)
     const [search, setSearch] = useState("");
 
 
