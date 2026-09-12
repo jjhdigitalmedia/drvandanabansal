@@ -41,7 +41,7 @@ function About() {
           </p>
           {/* Description */}
           <p className="mt-6 md:pr-5 text-gray-600 leading-relaxed text-justify">
-          Dr. Vandana Bansal is a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with more than three decades of experience caring for women at every stage of life.
+          Dr. Vandana Bansal is a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with 38+ years of experience caring for women at every stage of life.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 leading-relaxed text-justify">
           Her clinical practice brings together fertility and IVF, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management and preventive women’s health.
