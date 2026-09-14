@@ -10,56 +10,32 @@ import {
 } from "lucide-react";
 
 import IVFSuccessInsta from "../assets/InstaCover/IVFSuccessInsta.png";
+import PreparePregnancy from "../assets/InstaCover/PreparePregnancy.png";
+import LongevitySummit from "../assets/InstaCover/LongevitySummit.png";
 
 const reels = [
   {
     id: 1,
     image: IVFSuccessInsta,
     title: "Understanding Women's Health",
-    description:
-      "Important women's health tips and expert guidance by Dr. Vandana Bansal.",
+    // description:      "Important women's health tips and expert guidance by Dr. Vandana Bansal.",
     link: "https://www.instagram.com/",
   },
   {
     id: 2,
-    image: IVFSuccessInsta,
+    image: PreparePregnancy,
     title: "IVF & Fertility Care",
-    description:
-      "Know more about fertility, IVF and advanced reproductive care.",
+    // description:      "Know more about fertility, IVF and advanced reproductive care.",
     link: "https://www.instagram.com/",
   },
   {
     id: 3,
-    image: IVFSuccessInsta,
+    image: LongevitySummit,
     title: "Pregnancy & Maternity Care",
-    description:
-      "Helpful pregnancy guidance for a healthier and safer journey.",
+    // description:      "Helpful pregnancy guidance for a healthier and safer journey.",
     link: "https://www.instagram.com/",
   },
-  {
-    id: 4,
-    image: IVFSuccessInsta,
-    title: "Menopause & Healthy Aging",
-    description:
-      "Expert insights for better hormonal health and healthy aging.",
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 5,
-    image: IVFSuccessInsta,
-    title: "Gynecological Care",
-    description:
-      "Know the importance of regular gynecological health checkups.",
-    link: "https://www.instagram.com/",
-  },
-  {
-    id: 6,
-    image: IVFSuccessInsta,
-    title: "Advanced Laparoscopic Surgery",
-    description:
-      "Learn about advanced minimally invasive gynecological procedures.",
-    link: "https://www.instagram.com/",
-  },
+
 ];
 
 export default function InstagramReels() {
@@ -106,19 +82,8 @@ export default function InstagramReels() {
           {/* Heading */}
           <div className="mx-auto max-w-3xl text-center">
 
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-pink-800/10 bg-white px-5 py-2 shadow-sm">
-              <Instagram
-                size={16}
-                className="text-pink-800"
-              />
-
-              <span className="text-sm font-medium tracking-wide text-pink-800">
-                From Our Instagram
-              </span>
-            </div>
-
             <h2
-              className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl"
+              className="text-3xl font-bold leading-tight text-gray-700 sm:text-4xl lg:text-5xl"
               style={{ fontFamily: "Cambria, serif" }}
             >
               Instagram{" "}
@@ -139,23 +104,13 @@ export default function InstagramReels() {
             <button
               onClick={prevSlide}
               aria-label="Previous reels"
-              className="
-                absolute left-0 top-1/2 z-20 hidden
-                h-12 w-12 -translate-x-1/2 -translate-y-1/2
-                items-center justify-center
-                rounded-full border border-pink-800/10
-                bg-white text-pink-800
-                shadow-lg
-                transition-all duration-300
-                hover:bg-pink-800 hover:text-white
-                lg:flex
-              "
+              className="absolute left-0 top-1/2 z-20 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-pink-800/10 bg-white text-pink-800 shadow-lg transition-all duration-300 hover:bg-pink-800 hover:text-white lg:flex"
             >
               <ChevronLeft size={22} />
             </button>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 h-full gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
               {visibleReels.map((reel, index) => (
                 <div
@@ -173,18 +128,13 @@ export default function InstagramReels() {
                   {/* Image */}
                   <div
                     onClick={() => setSelectedReel(reel)}
-                    className="relative aspect-[9/13] cursor-pointer overflow-hidden"
+                    className="relative aspect-[9/16] cursor-pointer overflow-hidden"
                   >
 
                     <img
                       src={reel.image}
                       alt={reel.title}
-                      className="
-                        absolute inset-0 h-full w-full
-                        object-cover
-                        transition-transform duration-700
-                        group-hover:scale-105
-                      "
+                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
                     {/* Dark gradient */}
@@ -247,12 +197,12 @@ export default function InstagramReels() {
                         {reel.title}
                       </h3>
 
-                      <p className="
+                      {/* <p className="
                         mt-2 line-clamp-2
                         text-xs leading-5 text-white/80
                       ">
                         {reel.description}
-                      </p>
+                      </p> */}
 
                       <div className="mt-4 flex items-center gap-2 text-xs text-white/85">
                         <Heart size={13} fill="currentColor" />
@@ -270,17 +220,7 @@ export default function InstagramReels() {
             <button
               onClick={nextSlide}
               aria-label="Next reels"
-              className="
-                absolute right-0 top-1/2 z-20 hidden
-                h-12 w-12 translate-x-1/2 -translate-y-1/2
-                items-center justify-center
-                rounded-full border border-pink-800/10
-                bg-white text-pink-800
-                shadow-lg
-                transition-all duration-300
-                hover:bg-pink-800 hover:text-white
-                lg:flex
-              "
+              className="absolute -right-8 top-1/2 z-20 hidden h-12 w-12 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-pink-800/10    bg-white text-pink-800 shadow-lg transition-all duration-300 hover:bg-pink-800 hover:text-white lg:flex"
             >
               <ChevronRight size={22} />
             </button>
@@ -308,10 +248,9 @@ export default function InstagramReels() {
                   onClick={() => setCurrentIndex(index)}
                   className={`
                     h-1.5 rounded-full transition-all duration-300
-                    ${
-                      index === currentIndex
-                        ? "w-7 bg-pink-800"
-                        : "w-1.5 bg-pink-800/20"
+                    ${index === currentIndex
+                      ? "w-7 bg-pink-800"
+                      : "w-1.5 bg-pink-800/20"
                     }
                   `}
                 />
@@ -338,20 +277,7 @@ export default function InstagramReels() {
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                group inline-flex items-center gap-2
-                rounded-full
-                border border-pink-800
-                bg-white
-                px-7 py-3
-                text-sm font-semibold
-                text-pink-800
-                shadow-sm
-                transition-all duration-300
-                hover:bg-pink-800
-                hover:text-white
-                hover:shadow-lg
-              "
+              className="group inline-flex items-center gap-2 rounded-full border border-pink-800bg-white px-7 py-3 text-sm font-semibold text-pink-800 shadow-sm       transition-all duration-300hover:bg-pink-800 hover:text-white hover:shadow-lg"
             >
               <Instagram size={17} />
 
@@ -382,29 +308,14 @@ export default function InstagramReels() {
         >
 
           <div
-            className="
-              relative max-h-[92vh]
-              w-full max-w-md
-              overflow-hidden
-              rounded-3xl
-              bg-white shadow-2xl
-            "
+            className="relative max-h-[92vh] w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
 
             {/* Close */}
             <button
               onClick={() => setSelectedReel(null)}
-              className="
-                absolute right-4 top-4 z-10
-                flex h-10 w-10
-                items-center justify-center
-                rounded-full
-                bg-black/60
-                text-white
-                backdrop-blur-md
-                transition hover:bg-black
-              "
+              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center  rounded-full bg-black/60 text-white backdrop-blur-md transition hover:bg-black"
             >
               <X size={20} />
             </button>
@@ -412,13 +323,7 @@ export default function InstagramReels() {
             {/* Large Image */}
             <div className="bg-black">
               <img
-                src={selectedReel.image}
-                alt={selectedReel.title}
-                className="
-                  max-h-[72vh]
-                  w-full
-                  object-contain
-                "
+                src={selectedReel.image} alt={selectedReel.title} className="max-h-[72vh] w-full object-contain"
               />
             </div>
 
@@ -442,20 +347,8 @@ export default function InstagramReels() {
               </p>
 
               <a
-                href={selectedReel.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  mt-5 flex w-full
-                  items-center justify-center gap-2
-                  rounded-xl
-                  bg-pink-800
-                  px-5 py-3
-                  text-sm font-semibold
-                  text-white
-                  transition
-                  hover:bg-pink-900
-                "
+                href={selectedReel.link} target="_blank" rel="noopener noreferrer"
+                className="mt-5 flex w-full items-center justify-center gap-2  rounded-xl bg-pink-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-pink-900"
               >
                 <Instagram size={17} />
                 Watch on Instagram

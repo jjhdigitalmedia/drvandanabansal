@@ -12,6 +12,21 @@ import OTA from "../assets/Gallery/OT/OTA.jpg";
 import OTB from "../assets/Gallery/OT/OTB.png";
 import OTC from "../assets/Gallery/OT/OTC.jpeg";
 
+import ConferenceA from "../assets/Gallery/EventsConferences/ConferenceA.jpg";
+import ConferenceB from "../assets/Gallery/EventsConferences/ConferenceB.jpg";
+import ConferenceC from "../assets/Gallery/EventsConferences/ConferenceC.jpg";
+import ConferenceD from "../assets/Gallery/EventsConferences/ConferenceD.jpg";
+import ConferenceE from "../assets/Gallery/EventsConferences/ConferenceE.png";
+
+import IVFLabA from "../assets/Gallery/IVFLab/IVFLabA.jpg";
+import IVFLabB from "../assets/Gallery/IVFLab/IVFLabB.jpg";
+import IVFLabC from "../assets/Gallery/IVFLab/IVFLabC.png";
+import IVFLabD from "../assets/Gallery/IVFLab/IVFLabD.jpg";
+import IVFLabE from "../assets/Gallery/IVFLab/IVFLabE.jpg";
+import IVFLabF from "../assets/Gallery/IVFLab/IVFLabF.jpg";
+import IVFLabG from "../assets/Gallery/IVFLab/IVFLabG.jpg";
+import IVFLabH from "../assets/Gallery/IVFLab/IVFLabH.png";
+
 
 const galleryItems = [
   { id: 1, src: A, category: "Awards & Felicitations", title: "" },
@@ -23,10 +38,23 @@ const galleryItems = [
   { id: 7, src: OTA, category: "OT", title: "" },
   { id: 8, src: OTB, category: "OT", title: "" },
   { id: 9, src: OTC, category: "OT", title: "" },
-  // { id: 11, src: H, category: "Awards & Felicitations", title: "" },
+  { id: 10, src: ConferenceA, category: "Events & Conferences", title: "" },
+  { id: 11, src: ConferenceB, category: "Events & Conferences", title: "" },
+  { id: 12, src: ConferenceC, category: "Events & Conferences", title: "" },
+  { id: 13, src: ConferenceD, category: "Events & Conferences", title: "" },
+  { id: 14, src: ConferenceE, category: "Events & Conferences", title: "" },
+  { id: 15, src: IVFLabA, category: "IVF Lab", title: "" },
+  { id: 16, src: IVFLabB, category: "IVF Lab", title: "" },
+  { id: 17, src: IVFLabC, category: "IVF Lab", title: "" },
+  { id: 18, src: IVFLabD, category: "IVF Lab", title: "" },
+  { id: 19, src: IVFLabE, category: "IVF Lab", title: "" },
+  { id: 20, src: IVFLabF, category: "IVF Lab", title: "" },
+  { id: 20, src: IVFLabG, category: "IVF Lab", title: "" },
+  { id: 20, src: IVFLabH, category: "IVF Lab", title: "" },
+  
 ];
 
-const categories = ["All", "Clinic & Hospital", "OT", "Events & Conferences", "Awards & Felicitations"];
+const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Events & Conferences", "Awards & Felicitations"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
