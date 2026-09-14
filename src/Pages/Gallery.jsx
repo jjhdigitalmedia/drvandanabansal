@@ -49,8 +49,8 @@ const galleryItems = [
   { id: 18, src: IVFLabD, category: "IVF Lab", title: "" },
   { id: 19, src: IVFLabE, category: "IVF Lab", title: "" },
   { id: 20, src: IVFLabF, category: "IVF Lab", title: "" },
-  { id: 20, src: IVFLabG, category: "IVF Lab", title: "" },
-  { id: 20, src: IVFLabH, category: "IVF Lab", title: "" },
+  { id: 21, src: IVFLabG, category: "IVF Lab", title: "" },
+  { id: 22, src: IVFLabH, category: "IVF Lab", title: "" },
   
 ];
 
