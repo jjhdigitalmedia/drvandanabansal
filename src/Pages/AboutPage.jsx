@@ -1,206 +1,1008 @@
-import React from "react";
+import { Helmet } from "react-helmet-async";
+import {
+  Award,
+  BookOpen,
+  BriefcaseMedical,
+  CheckCircle2,
+  GraduationCap,
+  HeartPulse,
+  Hospital,
+  Microscope,
+  Stethoscope,
+  Users,
+} from "lucide-react";
 
-// Replace this image with Dr. Vandana Bansal's professional portrait when available.
-// import doctorImage from "../assets/doctor-vandana-bansal.jpg";
-import PhotoDrVandana from "../assets/PhotoDrVandana.jpeg";
+const AboutPage = () => {
+  const qualifications = [
+    "MBBS",
+    "DGO",
+    "MS",
+    "FCGP",
+    "FICGP",
+    "CIMP",
+    "D.Phil in IVF from Allahabad University – Gold Medalist",
+    "Diploma in Endoscopic Surgery, Germany",
+  ];
 
-const highlights = [
-  {
-    number: "01",
-    title: "Patient-Centred Care",
-    text: "A personalised approach focused on understanding each patient's concerns and treatment needs.",
-  },
-  {
-    number: "02",
-    title: "Clinical Experience",
-    text: "A professional medical practice built around clinical knowledge, careful evaluation and patient trust.",
-  },
-  {
-    number: "03",
-    title: "Compassionate Approach",
-    text: "Clear communication and a reassuring environment throughout the patient's healthcare journey.",
-  },
-];
+  const interests = [
+    "Infertility & IVF",
+    "ICSI",
+    "Pregnancy & Maternity Care",
+    "High-Risk Pregnancy",
+    "PCOS / PCOD",
+    "Menstrual Disorders",
+    "Laparoscopic Surgery",
+    "Hysteroscopic Surgery",
+    "Fibroid Management",
+    "Abnormal Uterine Bleeding",
+    "Reproductive Health",
+    "Aesthetic Gynaecology",
+    "Menopause Management",
+    "Healthy Aging & Longevity",
+  ];
 
-const values = [
-  ["01", "Listen", "Understanding the patient is the first step towards meaningful care."],
-  ["02", "Evaluate", "Every case deserves a careful and individual clinical assessment."],
-  ["03", "Guide", "Patients should understand their options and feel confident about their care."],
-];
+  const memberships = [
+    "Indian Medical Association (IMA)",
+    "FOGSI",
+    "Indian Society for Assisted Reproduction (ISAR)",
+    "Indian Fertility Society (IFS)",
+    "Indian Menopause Society (IMS)",
+    "AAGL",
+    "IAGE",
+    "Society of Fetal Medicine",
+    "PCOS Society India",
+    "FICMCH & ICMCH",
+    "ISPAT",
+    "ISARM",
+    "FIGO & AOFOG",
+    "ESHRE",
+    "Rotary Club of Allahabad-East",
+    "Rotary Allahabad Midtown",
+    "International Integration & Growth Society (IIGS)",
+  ];
 
-export default function AboutPage() {
+  const carePrinciples = [
+    {
+      title: "Compassion",
+      text: "Understanding the emotional and individual needs of every patient.",
+    },
+    {
+      title: "Communication",
+      text: "Making medical information easier for patients to understand.",
+    },
+    {
+      title: "Personalized Care",
+      text: "Treatment planning based on individual clinical requirements.",
+    },
+    {
+      title: "Evidence-Based Practice",
+      text: "Using appropriate medical knowledge and modern treatment approaches.",
+    },
+    {
+      title: "Continuity of Care",
+      text: "Supporting patients through important stages of their healthcare journey.",
+    },
+  ];
+
+  const stats = [
+    {
+      number: "38+",
+      label: "Years of Experience",
+      icon: <BriefcaseMedical size={24} />,
+    },
+    {
+      number: "40,000+",
+      label: "Successful Pregnancies",
+      icon: <HeartPulse size={24} />,
+    },
+    {
+      number: "50,000+",
+      label: "Women Cared For",
+      icon: <Users size={24} />,
+    },
+    {
+      number: "640+",
+      label: "Successful IVF Pregnancies",
+      icon: <Microscope size={24} />,
+    },
+  ];
+
   return (
-    <main className="min-h-screen bg-[#f1f1f1] text-slate-900">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-pink-950">
-        <div className="absolute -right-28 -top-32 h-96 w-96 rounded-full bg-pink-500/10 blur-3xl" />
-        <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-white/5 blur-3xl" />
+    <>
+      <Helmet>
+        <title>
+          About Dr. Vandana Bansal | Gynaecologist & IVF Specialist in Prayagraj
+        </title>
 
-        <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-          <p className="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-200">
-            <span className="h-px w-10 bg-pink-300" />
-            About Dr. Vandana Bansal
-          </p>
+        <meta
+          name="description"
+          content="Learn about Dr. Vandana Bansal, Senior Gynaecologist, Obstetrician, Infertility & IVF Specialist and Laparoscopic & Hysteroscopic Surgeon in Prayagraj."
+        />
+      </Helmet>
 
-          <div className="grid items-end gap-10 lg:grid-cols-[1fr_auto]">
-            <div>
-              <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Medicine with
-                <span className="block text-pink-200">knowledge, care & trust.</span>
+      <main className="bg-white text-gray-800">
+
+        {/* =====================================================
+            HERO
+        ====================================================== */}
+        <section className="bg-[#f1f1f1]">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+
+            <div className="max-w-4xl">
+              <p className="text-pink-800 font-semibold tracking-wide uppercase text-sm mb-5">
+                About Dr. Vandana Bansal
+              </p>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-gray-900">
+                Expertise. Experience.
+                <span className="block text-pink-800">
+                  Compassionate Women's Healthcare.
+                </span>
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-pink-100/80 sm:text-lg">
-                Get to know Dr. Vandana Bansal, her approach to patient care,
-                and the values that shape her medical practice.
+
+              <div className="w-20 h-1 bg-pink-800 my-8" />
+
+              <p className="text-lg lg:text-xl leading-8 text-gray-600 max-w-3xl">
+                With over 38 years of experience in Obstetrics, Gynaecology
+                and Infertility care, Dr. Vandana Bansal is a senior
+                Gynaecologist, Infertility & IVF Specialist and Advanced
+                Laparoscopic & Hysteroscopic Surgeon in Prayagraj.
+              </p>
+
+              <p className="mt-5 text-lg leading-8 text-gray-600 max-w-3xl">
+                As the Director of Jeevan Jyoti Hospital and Arpit Test Tube
+                Baby Centre, she is committed to providing comprehensive
+                women's healthcare with modern medical expertise and
+                individualized patient care.
               </p>
             </div>
 
-            <div className="hidden border-l border-white/15 pl-8 lg:block">
-              <p className="text-4xl font-semibold text-white">Care</p>
-              <p className="mt-1 text-sm text-pink-100/60">Beyond consultation</p>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Doctor intro */}
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12 lg:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:gap-20">
-          <div className="group relative mx-auto w-full max-w-md">
-            <div className="absolute -inset-3 rounded-[2rem] border border-pink-800/10 transition duration-500 group-hover:rotate-1" />
-            <div className="absolute -bottom-5 -left-5 h-28 w-28 rounded-2xl bg-pink-800/10" />
 
-            <div className="relative overflow-hidden rounded-[1.75rem] bg-white shadow-xl ring-1 ring-slate-200">
-              <img
-                src={PhotoDrVandana}
-                alt="Dr. Vandana Bansal"
-                className="aspect-[4/5] w-full object-cover transition duration-700 group-hover:scale-[1.025]"
-              />
-            </div>
-          </div>
+        {/* =====================================================
+            INTRODUCTION
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-pink-800">
-              Meet the Doctor
-            </p>
+            <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20 items-start">
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Dr. Vandana Bansal
-            </h2>
-
-            <div className="mt-6 h-px w-16 bg-pink-800" />
-
-            <p className="mt-7 text-lg leading-8 text-slate-700">
-              Dr. Vandana Bansal believes that good healthcare begins with
-              listening. Her approach combines clinical expertise with
-              individual attention, helping patients feel informed,
-              comfortable and cared for.
-            </p>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              From the first consultation through ongoing care, the focus is
-              on understanding the patient's needs, explaining the available
-              options clearly and building a relationship based on trust.
-            </p>
-
-            <div className="mt-9 grid grid-cols-2 gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                <p className="text-2xl font-semibold text-pink-900">Care</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">Patient First</p>
-              </div>
-              <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200">
-                <p className="text-2xl font-semibold text-pink-900">Trust</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">At the Core</p>
-              </div>
-              <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:block">
-                <p className="text-2xl font-semibold text-pink-900">Focus</p>
-                <p className="mt-1 text-xs uppercase tracking-wider text-slate-500">Individual Care</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Philosophy */}
-      <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-          <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-pink-800">
-              Philosophy
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Healthcare should feel personal.
-            </h2>
-            <p className="mt-5 leading-7 text-slate-600">
-              Every patient has a different story. The goal is not simply to
-              treat a condition, but to understand the person behind it and
-              provide care that is thoughtful, transparent and appropriate.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            {highlights.map((item) => (
-              <article
-                key={item.number}
-                className="group rounded-3xl bg-[#f1f1f1] p-7 transition duration-500 hover:-translate-y-1 hover:bg-pink-950 hover:text-white"
-              >
-                <span className="text-sm font-semibold text-pink-800 group-hover:text-pink-200">
-                  {item.number}
-                </span>
-                <h3 className="mt-8 text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600 group-hover:text-pink-100/75">
-                  {item.text}
+              <div>
+                <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                  Meet Dr. Vandana Bansal
                 </p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Approach */}
-      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-12 lg:py-24">
-        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-pink-800">
-              The Approach
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Three principles behind every consultation.
-            </h2>
-          </div>
-
-          <div className="divide-y divide-slate-300 rounded-3xl bg-white px-6 shadow-sm ring-1 ring-slate-200">
-            {values.map(([number, title, text]) => (
-              <div key={number} className="grid gap-4 py-7 sm:grid-cols-[70px_150px_1fr] sm:items-start">
-                <span className="text-sm font-semibold text-pink-800">{number}</span>
-                <h3 className="font-semibold text-slate-950">{title}</h3>
-                <p className="text-sm leading-6 text-slate-600">{text}</p>
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 leading-tight">
+                  A Journey Dedicated to
+                  <span className="block text-pink-800">
+                    Women's Healthcare
+                  </span>
+                </h2>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className="px-5 pb-14 sm:px-8 lg:px-12 lg:pb-20">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-pink-950 px-6 py-12 text-center sm:px-10 lg:py-16">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-pink-200">
-            Your health matters
-          </p>
-          <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold text-white sm:text-4xl">
-            Take the next step towards better care.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-pink-100/70">
-            Connect with Dr. Vandana Bansal for a consultation and discuss
-            your healthcare needs.
-          </p>
-          <a
-            href="/contact"
-            className="mt-8 inline-flex rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-pink-950 transition hover:bg-pink-100"
-          >
-            Book a Consultation
-          </a>
-        </div>
-      </section>
-    </main>
+              <div className="space-y-5 text-gray-600 leading-8 text-lg">
+                <p>
+                  Dr. Vandana Bansal is a renowned Senior Gynaecologist and
+                  Obstetrician with 38+ years of experience in women's
+                  healthcare, infertility, pregnancy care and advanced
+                  gynecological surgery.
+                </p>
+
+                <p>
+                  She is the Director of Jeevan Jyoti Hospital, Prayagraj,
+                  and Arpit Test Tube Baby Centre, where she provides
+                  specialized care in infertility and IVF, pregnancy and
+                  maternity care, high-risk pregnancy, PCOS, gynecological
+                  disorders, laparoscopic and hysteroscopic surgery,
+                  aesthetic gynaecology and menopause management.
+                </p>
+
+                <p>
+                  Her professional journey has been guided by a simple
+                  principle — to combine medical expertise with compassionate
+                  and personalized care.
+                </p>
+
+                <p>
+                  Over the years, she has remained closely involved in patient
+                  care as well as the development of specialized healthcare
+                  services, with the aim of making advanced medical treatment
+                  accessible to patients in Prayagraj and surrounding regions.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            EXPERIENCE STATS
+        ====================================================== */}
+        <section className="bg-[#f1f1f1] py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-2xl mb-12">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                38+ Years of Experience
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                A Long-Standing Commitment to Women's Health
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-gray-300">
+
+              {stats.map((item, index) => (
+                <div
+                  key={index}
+                  className={`
+                    py-8 pr-6
+                    ${index !== 3 ? "lg:border-r border-gray-300" : ""}
+                    ${index % 2 === 0 ? "border-r border-gray-300 lg:border-r" : ""}
+                  `}
+                >
+                  <div className="text-pink-800 mb-4">
+                    {item.icon}
+                  </div>
+
+                  <div className="text-3xl lg:text-4xl font-semibold text-gray-900">
+                    {item.number}
+                  </div>
+
+                  <p className="mt-2 text-gray-600">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+
+            </div>
+
+            <div className="mt-10 max-w-4xl text-gray-600 leading-8 text-lg space-y-4">
+              <p>
+                With more than three decades of clinical experience, Dr.
+                Vandana Bansal has cared for women across different stages of
+                life — from reproductive health and fertility to pregnancy,
+                gynecological surgery and menopause.
+              </p>
+
+              <p>
+                Her experience includes the management of routine as well as
+                complex gynecological and obstetric conditions, along with
+                advanced fertility and minimally invasive surgical care.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            QUALIFICATIONS
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="grid lg:grid-cols-2 gap-14 lg:gap-24">
+
+              <div>
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="w-12 h-12 bg-pink-800 text-white flex items-center justify-center rounded-full">
+                    <GraduationCap size={24} />
+                  </div>
+
+                  <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm">
+                    Medical Education
+                  </p>
+                </div>
+
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                  Strong Academic Foundation.
+                  <span className="block text-pink-800">
+                    Advanced Medical Training.
+                  </span>
+                </h2>
+
+                <p className="mt-6 text-gray-600 leading-8 text-lg">
+                  Dr. Vandana Bansal's academic achievements and specialized
+                  training have helped her develop expertise in modern
+                  infertility treatment, reproductive medicine and minimally
+                  invasive gynecological surgery.
+                </p>
+              </div>
+
+              <div className="border-t border-gray-300">
+                {qualifications.map((qualification, index) => (
+                  <div
+                    key={index}
+                    className="flex gap-4 py-4 border-b border-gray-300"
+                  >
+                    <CheckCircle2
+                      size={20}
+                      className="text-pink-800 mt-1 shrink-0"
+                    />
+
+                    <span className="text-gray-700 leading-7">
+                      {qualification}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            PROFESSIONAL JOURNEY
+        ====================================================== */}
+        <section className="bg-[#f1f1f1] py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-4">
+                Professional Journey
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                From a Small Beginning to
+                <span className="block text-pink-800">
+                  Advanced Women's Healthcare
+                </span>
+              </h2>
+
+              <div className="mt-10 space-y-6 text-lg leading-8 text-gray-600">
+
+                <p>
+                  Dr. Vandana Bansal's professional journey is closely
+                  connected with the development of specialized healthcare
+                  services in Prayagraj.
+                </p>
+
+                <p>
+                  In 1988, Dr. Vandana Bansal and Dr. A.K. Bansal began their
+                  healthcare journey with a small clinic in Allahabad. Their
+                  vision was to build a healthcare institution that could
+                  provide modern medical facilities and specialized treatment
+                  while remaining accessible to the common man.
+                </p>
+
+                <p>
+                  Over the years, this vision developed into Jeevan Jyoti
+                  Hospital and later into Arpit Test Tube Baby Centre,
+                  creating dedicated facilities for women's healthcare,
+                  fertility and reproductive medicine.
+                </p>
+
+                <p>
+                  Dr. Vandana Bansal has continued to remain actively involved
+                  in clinical practice, patient care and the development of
+                  advanced women's healthcare services.
+                </p>
+
+                <p>
+                  Her journey reflects a long-standing commitment to bringing
+                  together experience, technology, medical expertise and
+                  compassionate care.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            AREAS OF INTEREST
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl mb-12">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                Areas of Special Interest
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                Specialized Care for Every Stage
+                <span className="block text-pink-800">
+                  of a Woman's Life
+                </span>
+              </h2>
+
+              <p className="mt-5 text-lg text-gray-600 leading-8">
+                Her approach focuses on understanding the individual needs of
+                every patient and providing appropriate treatment based on
+                clinical requirements.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-0 border-t border-gray-300">
+
+              {interests.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 py-4 border-b border-gray-300"
+                >
+                  <span className="w-2 h-2 rounded-full bg-pink-800 shrink-0" />
+                  <span className="text-gray-700">{item}</span>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            SPECIALIZED CARE
+        ====================================================== */}
+        <section className="bg-[#f1f1f1] py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl mb-14">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                Specialized Care
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                Comprehensive Women's Healthcare
+              </h2>
+            </div>
+
+
+            <div className="space-y-0">
+
+              {/* IVF */}
+              <div className="grid lg:grid-cols-[260px_1fr] gap-8 py-10 border-t border-gray-300">
+
+                <div>
+                  <h3 className="text-2xl font-semibold text-pink-800">
+                    Infertility & IVF Care
+                  </h3>
+
+                  <p className="mt-2 text-gray-500">
+                    Helping Couples Move Forward
+                  </p>
+                </div>
+
+                <div className="text-gray-600 leading-8 text-lg space-y-4">
+                  <p>
+                    Infertility treatment requires careful evaluation,
+                    accurate diagnosis and individualized planning.
+                  </p>
+
+                  <p>
+                    Dr. Vandana Bansal specializes in infertility management
+                    and assisted reproductive care, helping couples understand
+                    their fertility concerns and available treatment options.
+                  </p>
+
+                  <p>
+                    At Arpit Test Tube Baby Centre, fertility care is
+                    supported by specialized reproductive medicine services
+                    and modern treatment approaches.
+                  </p>
+
+                  <p>
+                    Her focus is not only on providing treatment, but also on
+                    educating and guiding couples so they can make informed
+                    decisions throughout their fertility journey.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Pregnancy */}
+              <div className="grid lg:grid-cols-[260px_1fr] gap-8 py-10 border-t border-gray-300">
+
+                <div>
+                  <h3 className="text-2xl font-semibold text-pink-800">
+                    Pregnancy & Women's Healthcare
+                  </h3>
+
+                  <p className="mt-2 text-gray-500">
+                    Complete Care Through Pregnancy
+                  </p>
+                </div>
+
+                <div className="text-gray-600 leading-8 text-lg">
+                  <p>
+                    Pregnancy is a unique journey for every woman. Dr. Vandana
+                    Bansal provides comprehensive antenatal and maternity care
+                    tailored to the individual needs of each pregnancy.
+                  </p>
+
+                  <p className="mt-4">
+                    Her goal is to provide women with appropriate medical
+                    guidance and continuous support throughout pregnancy and
+                    maternity care.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Surgery */}
+              <div className="grid lg:grid-cols-[260px_1fr] gap-8 py-10 border-t border-gray-300">
+
+                <div>
+                  <h3 className="text-2xl font-semibold text-pink-800">
+                    Laparoscopic & Hysteroscopic Surgery
+                  </h3>
+
+                  <p className="mt-2 text-gray-500">
+                    Minimally Invasive Gynaecological Surgery
+                  </p>
+                </div>
+
+                <div className="text-gray-600 leading-8 text-lg space-y-4">
+                  <p>
+                    Dr. Vandana Bansal has extensive experience in
+                    Laparoscopic and Hysteroscopic Surgery, providing
+                    minimally invasive treatment for a range of gynecological
+                    conditions.
+                  </p>
+
+                  <p>
+                    Hysteroscopy can also be used for pre-IVF uterine
+                    evaluation, while laparoscopy may be recommended for
+                    appropriate gynecological and fertility-related conditions.
+                  </p>
+
+                  <p>
+                    The focus is on selecting the right surgical approach
+                    according to the patient's condition and clinical
+                    requirements.
+                  </p>
+                </div>
+
+              </div>
+
+
+              {/* Menopause */}
+              <div className="grid lg:grid-cols-[260px_1fr] gap-8 py-10 border-t border-gray-300">
+
+                <div>
+                  <h3 className="text-2xl font-semibold text-pink-800">
+                    Menopause, Healthy Aging & Longevity
+                  </h3>
+
+                  <p className="mt-2 text-gray-500">
+                    Women's Health Beyond Reproductive Years
+                  </p>
+                </div>
+
+                <div className="text-gray-600 leading-8 text-lg">
+                  <p>
+                    Women's healthcare continues throughout life. Dr. Vandana
+                    Bansal provides specialized care for women during
+                    perimenopause, menopause and healthy aging.
+                  </p>
+
+                  <p className="mt-4">
+                    The approach focuses on helping women understand hormonal
+                    changes, manage symptoms appropriately and pay attention to
+                    long-term health.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            LEADERSHIP + CME
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="grid lg:grid-cols-2 gap-16">
+
+              {/* Leadership */}
+              <div>
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="w-12 h-12 bg-pink-800 text-white flex items-center justify-center rounded-full">
+                    <Stethoscope size={23} />
+                  </div>
+
+                  <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm">
+                    Leadership & Professional Roles
+                  </p>
+                </div>
+
+                <h2 className="text-3xl font-semibold text-gray-900">
+                  Clinical Expertise Beyond
+                  <span className="block text-pink-800">
+                    the Consultation Room
+                  </span>
+                </h2>
+
+                <p className="mt-6 text-gray-600 leading-8">
+                  Alongside her clinical practice, Dr. Vandana Bansal has
+                  remained actively involved in professional organizations,
+                  medical education and healthcare leadership.
+                </p>
+
+                <div className="mt-8 space-y-4">
+
+                  {[
+                    "Director – Jeevan Jyoti Hospital, Prayagraj",
+                    "Director – Arpit Test Tube Baby Centre, Prayagraj",
+                    "President – ISOPARB Society",
+                    "President Elect – AOGS",
+                  ].map((role, index) => (
+                    <div key={index} className="flex gap-3">
+                      <CheckCircle2
+                        size={20}
+                        className="text-pink-800 mt-1 shrink-0"
+                      />
+
+                      <span className="text-gray-700">{role}</span>
+                    </div>
+                  ))}
+
+                </div>
+              </div>
+
+
+              {/* CME */}
+              <div>
+                <div className="flex items-center gap-4 mb-5">
+                  <div className="w-12 h-12 bg-pink-800 text-white flex items-center justify-center rounded-full">
+                    <BookOpen size={23} />
+                  </div>
+
+                  <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm">
+                    Academic & CME Activities
+                  </p>
+                </div>
+
+                <h2 className="text-3xl font-semibold text-gray-900">
+                  Continuing Medical Education &
+                  <span className="block text-pink-800">
+                    Professional Development
+                  </span>
+                </h2>
+
+                <div className="mt-6 text-gray-600 leading-8 space-y-4">
+                  <p>
+                    Dr. Vandana Bansal actively participates in CME programmes,
+                    medical conferences, academic meetings and professional
+                    discussions to remain connected with developments in
+                    modern women's healthcare.
+                  </p>
+
+                  <p>
+                    Her academic and professional activities include
+                    discussions around infertility, gynecology, menopause,
+                    reproductive medicine and advanced treatment approaches.
+                  </p>
+
+                  <p>
+                    A recent example includes the ISOPARB CME on
+                    Fertility-Preserving Management of Fibroids, held on 19
+                    July 2026, where Dr. Vandana Bansal served as President of
+                    ISOPARB Prayagraj.
+                  </p>
+
+                  <p>
+                    She has also participated in CME activities related to
+                    Hormone Replacement Therapy (HRT).
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            AWARDS
+        ====================================================== */}
+        <section className="bg-[#f1f1f1] py-20">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl">
+
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-12 h-12 bg-pink-800 text-white flex items-center justify-center rounded-full">
+                  <Award size={23} />
+                </div>
+
+                <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm">
+                  Awards & Felicitations
+                </p>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                Recognition for Professional
+                <span className="block text-pink-800">
+                  Contribution
+                </span>
+              </h2>
+
+              <p className="mt-6 text-lg text-gray-600 leading-8">
+                Dr. Vandana Bansal has been recognized through various awards,
+                felicitations and professional honours during her medical
+                career.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-x-10 mt-8">
+
+                {[
+                  "Obstetrics",
+                  "Gynaecology",
+                  "Infertility & IVF",
+                  "Women's healthcare",
+                  "Medical education",
+                  "Professional healthcare initiatives",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="py-3 border-b border-gray-300 flex items-center gap-3"
+                  >
+                    <span className="w-2 h-2 rounded-full bg-pink-800" />
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            PROFESSIONAL MEMBERSHIPS
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl mb-12">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                Professional Memberships
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                Professional Associations &
+                <span className="block text-pink-800">
+                  Medical Organizations
+                </span>
+              </h2>
+
+              <p className="mt-5 text-lg text-gray-600 leading-8">
+              
+
+              </p>
+            </div>
+
+            <div className="flex border-t border-gray-300">
+
+              <p className="py-4">Dr. Vandana Bansal is associated with several national and international medical and professional organizations, including the Indian Medical Association (IMA), Federation of Obstetric and Gynaecological Societies of India (FOGSI), Indian Society for Assisted Reproduction (ISAR), Indian Fertility Society (IFS), Indian Menopause Society (IMS), AAGL, IAGE, Society of Fetal Medicine, PCOS Society India, FICMCH & ICMCH, ISPAT, ISARM, FIGO & AOFOG, European Society of Human Reproduction and Embryology (ESHRE), Rotary Club of Allahabad-East, Rotary Allahabad Midtown, and International Integration & Growth Society (IIGS).
+                Her professional associations reflect her continued engagement with medical education, reproductive medicine, women's health, professional development and community-oriented initiatives.
+              </p>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            PATIENT CARE PHILOSOPHY
+        ====================================================== */}
+        <section className="bg-[#f1f1f1] py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-14">
+
+              <div>
+                <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                  Patient Care Philosophy
+                </p>
+
+                <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900 leading-tight">
+                  More Than Treatment —
+                  <span className="block text-pink-800">
+                    Understanding, Guiding & Supporting
+                  </span>
+                </h2>
+              </div>
+
+              <div>
+
+                <p className="text-lg text-gray-600 leading-8">
+                  For Dr. Vandana Bansal, healthcare goes beyond simply
+                  diagnosing and treating a medical condition.
+                </p>
+
+                <p className="mt-5 text-lg text-gray-600 leading-8">
+                  She believes in listening to patients, explaining their
+                  condition, discussing appropriate treatment options and
+                  helping them make informed decisions about their healthcare.
+                </p>
+
+                <div className="mt-10 border-t border-gray-300">
+
+                  {carePrinciples.map((item, index) => (
+                    <div
+                      key={index}
+                      className="py-5 border-b border-gray-300"
+                    >
+                      <h3 className="font-semibold text-gray-900">
+                        <span className="text-pink-800">
+                          {item.title}
+                        </span>
+                      </h3>
+
+                      <p className="mt-2 text-gray-600 leading-7">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            JEEVAN JYOTI + ARPIT
+        ====================================================== */}
+        <section className="py-20 lg:py-24">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div className="max-w-3xl mb-14">
+              <p className="text-pink-800 font-semibold uppercase tracking-wide text-sm mb-3">
+                Healthcare Institutions
+              </p>
+
+              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
+                Jeevan Jyoti Hospital &
+                <span className="block text-pink-800">
+                  Arpit Test Tube Baby Centre
+                </span>
+              </h2>
+            </div>
+
+
+            <div className="grid md:grid-cols-2 gap-8">
+
+              <div className="border-t-4 border-pink-800 pt-7">
+
+                <div className="flex items-center gap-4">
+                  <Hospital className="text-pink-800" size={28} />
+
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    Jeevan Jyoti Hospital
+                  </h3>
+                </div>
+
+                <div className="mt-5 text-gray-600 leading-8 space-y-4">
+                  <p>
+                    Jeevan Jyoti Hospital, Prayagraj is a multi-specialty
+                    healthcare institution associated with Dr. Vandana Bansal
+                    and Dr. A.K. Bansal.
+                  </p>
+
+                  <p>
+                    The hospital was developed with a vision of bringing
+                    modern medical facilities and specialized healthcare
+                    services to people in Prayagraj and surrounding regions.
+                  </p>
+
+                  <p>
+                    As its Director, Dr. Vandana Bansal continues to
+                    contribute to the hospital's women's healthcare services,
+                    with a special focus on Obstetrics, Gynaecology,
+                    Infertility and reproductive health.
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="border-t-4 border-pink-800 pt-7">
+
+                <div className="flex items-center gap-4">
+                  <Microscope className="text-pink-800" size={28} />
+
+                  <h3 className="text-2xl font-semibold text-gray-900">
+                    Arpit Test Tube Baby Centre
+                  </h3>
+                </div>
+
+                <div className="mt-5 text-gray-600 leading-8 space-y-4">
+                  <p>
+                    Arpit Test Tube Baby Centre, Prayagraj is dedicated to
+                    infertility and reproductive healthcare.
+                  </p>
+
+                  <p>
+                    The centre provides specialized fertility services
+                    including IVF and ICSI, infertility evaluation and
+                    individualized fertility treatment planning.
+                  </p>
+
+                  <p>
+                    Together, Jeevan Jyoti Hospital and Arpit Test Tube Baby
+                    Centre provide an integrated healthcare environment where
+                    women and couples can access gynecological, maternity and
+                    fertility-related care.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        {/* =====================================================
+            CLOSING
+        ====================================================== */}
+        <section className="bg-pink-800 text-white py-20 lg:py-24">
+
+          <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+
+            <p className="text-sm uppercase tracking-[0.2em] mb-5 text-white/80">
+              Comprehensive Women's Healthcare in Prayagraj
+            </p>
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+              Experience You Can Trust.
+              <span className="block">
+                Care Designed Around You.
+              </span>
+            </h2>
+
+            <p className="mt-7 text-lg leading-8 text-white/90 max-w-3xl mx-auto">
+              Dr. Vandana Bansal provides comprehensive care for infertility,
+              IVF, pregnancy, PCOS, gynecological conditions, advanced
+              gynecological surgery and menopause-related concerns.
+            </p>
+
+            <div className="mt-9">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-pink-800 font-semibold rounded-md hover:bg-[#f1f1f1] transition-colors duration-300"
+              >
+                Book an Appointment
+              </a>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+    </>
   );
-}
+};
+
+export default AboutPage;

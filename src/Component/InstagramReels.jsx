@@ -12,6 +12,8 @@ import {
 import IVFSuccessInsta from "../assets/InstaCover/IVFSuccessInsta.png";
 import PreparePregnancy from "../assets/InstaCover/PreparePregnancy.png";
 import LongevitySummit from "../assets/InstaCover/LongevitySummit.png";
+import PCOSUnderstand from "../assets/InstaCover/PCOSUnderstand.png";
+import ChancesConcieving from "../assets/InstaCover/ChancesConcieving.png";
 
 const reels = [
   {
@@ -32,6 +34,20 @@ const reels = [
     id: 3,
     image: LongevitySummit,
     title: "Pregnancy & Maternity Care",
+    // description:      "Helpful pregnancy guidance for a healthier and safer journey.",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: 4,
+    image: ChancesConcieving,
+    title: "Improve your chances of Conceiving",
+    // description:      "Helpful pregnancy guidance for a healthier and safer journey.",
+    link: "https://www.instagram.com/",
+  },
+  {
+    id: 5,
+    image: PCOSUnderstand,
+    title: "PCOS: What should you know",
     // description:      "Helpful pregnancy guidance for a healthier and safer journey.",
     link: "https://www.instagram.com/",
   },
@@ -104,7 +120,7 @@ export default function InstagramReels() {
             <button
               onClick={prevSlide}
               aria-label="Previous reels"
-              className="absolute left-0 top-1/2 z-20 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-pink-800/10 bg-white text-pink-800 shadow-lg transition-all duration-300 hover:bg-pink-800 hover:text-white lg:flex"
+              className="absolute -left-8 top-1/2 z-20 hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-pink-800/10 bg-white text-pink-800 shadow-lg transition-all duration-300 hover:bg-pink-800 hover:text-white lg:flex"
             >
               <ChevronLeft size={22} />
             </button>

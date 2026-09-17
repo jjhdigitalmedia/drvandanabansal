@@ -13,20 +13,19 @@ function About() {
           alt="stethoscope"
           className="hidden md:absolute left-[-220px] bottom-[0px] w-96 opacity-20 pointer-events-none"
         />
-        {/* Right Image Section */}
-        <div className="relative">
-          <div className="w-72 h-72  md:w-96 md:h-96 rounded-full border-2 p-3 border-pink-600 overflow-hidden shado-md">
+        
+        {/* <div className="relative"> */}
+        <div className="w-72 h-72 md:w-96 md:h-96 rounded-md border-1 p-3 border-pink-700 overflow-hidden shado-md">
           <img
-            src={DrVandanaas} // 👈 dummy image
+            src={DrVandanaas}
             alt="Doctor"
             className="w-96 mb-10 h-full object-cover"
           />
-          </div>
-          {/* Decorative Icon */}
-          <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
-            {/* <CiMedicalCross className=" text-pink-800" /> */}
-          </div>
         </div>
+        {/* <div className="absolute bottom-2 w-16 h-16 left-10 bg-pink-800 text-white p-3 rounded-full shadow-md">
+          </div> */}
+        {/* <CiMedicalCross className=" text-pink-800" /> */}
+        {/* </div> */}
 
         {/* Left Content Section */}
         <div className="flex-1 text-cente">
@@ -41,10 +40,10 @@ function About() {
           </p>
           {/* Description */}
           <p className="mt-6 md:pr-5 text-gray-600 leading-relaxed text-justify">
-          Dr. Vandana Bansal is a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with 38+ years of experience caring for women at every stage of life.
+            Dr. Vandana Bansal is a senior gynaecologist, fertility specialist and minimally invasive gynaecological surgeon with 38+ years of experience caring for women at every stage of life.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 leading-relaxed text-justify">
-          Her clinical practice brings together fertility and IVF, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management and preventive women’s health.
+            Her clinical practice brings together fertility and IVF, advanced laparoscopy and hysteroscopy, high-risk obstetrics, menopause management and preventive women’s health.
           </p>
           <p className="mt-4 md:pr-5 text-gray-600 leading-relaxed text-justify">
             Her philosophy is to look beyond an individual symptom or diagnosis and help women achieve better reproductive health, metabolic and bone health, sexual wellbeing and healthy ageing.

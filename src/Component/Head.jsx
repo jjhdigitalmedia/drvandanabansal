@@ -13,10 +13,12 @@ import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
 import InfertilityIVF from "../assets/Banners/InfertilityIVF.png";
 import AestheticGynae from "../assets/Banners/AestheticGynae.png";
 import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
+import BannerMainWebsite1a from "../assets/Banners/BannerMainWebsite1a.png";
 
 const Head = () => {
   const images = [
     BannerMainWebsite1,
+    // BannerMainWebsite1a,
     // DrVandanaIntro,
     InfertilityIVF,
     AestheticGynae,
