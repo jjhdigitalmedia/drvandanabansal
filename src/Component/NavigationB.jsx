@@ -420,12 +420,6 @@ function NavigationB() {
               className="pr-3 text-sm text-white"
               href="tel:9151037784"
             >
-              +91 9151037784
-            </a>
-            <a
-              className="pr-6 text-sm text-white"
-              href="tel:6390103002"
-            >
               +91 6390103002
             </a>
             <a
@@ -433,6 +427,13 @@ function NavigationB() {
               href="tel:6390103004"
             >
               +91 6390103004
+            </a>
+            <a
+              className="pr-6 text-sm text-white"
+              href="tel:6390103002"
+            >
+
+              +91 9151037784
             </a>
           </span>
         </div>
@@ -639,8 +640,8 @@ function NavigationB() {
               <button
                 onClick={toggleServicesDropdown}
                 className={`flex justify-between items-center py-3 border-b font-semibold ${isTreatmentPage
-                    ? "text-rose-800"
-                    : "text-black"
+                  ? "text-rose-800"
+                  : "text-black"
                   }`}
               >
                 <span>Specialities</span>
@@ -663,8 +664,8 @@ function NavigationB() {
 
                     <PlusIcon
                       className={`h-5 w-5 transition-transform ${isNestedDropdownOpen.treatment
-                          ? "rotate-45"
-                          : ""
+                        ? "rotate-45"
+                        : ""
                         }`}
                     />
                   </button>

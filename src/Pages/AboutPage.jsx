@@ -1028,7 +1028,7 @@ const AboutPage = () => {
             <div className="max-w-3xl mb-14">
 
               <p className="text-pink-800 font-semibold uppercase tracking-[0.15em] text-sm mb-3">
-                Healthcare Institutions
+                Advanced Healthcare
               </p>
 
               <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">

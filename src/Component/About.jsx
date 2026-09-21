@@ -1,7 +1,7 @@
 
 
 import Stetho from "../assets/Stetho.png";
-import DrVandanaas from "../assets/DrVandanaas.png";
+import PhotoDrVandana from "../assets/PhotoDrVandana.jpeg";
 
 function About() {
   return (
@@ -17,7 +17,7 @@ function About() {
         {/* <div className="relative"> */}
         <div className="w-72 h-72 md:w-96 md:h-96 rounded-md border-1 p-3 border-pink-700 overflow-hidden shado-md">
           <img
-            src={DrVandanaas}
+            src={PhotoDrVandana}
             alt="Doctor"
             className="w-96 mb-10 h-full object-cover"
           />
