@@ -742,7 +742,7 @@ const Navbar = ({ logoSrc }) => {
              <img
                 src={DrVandanaLogo}
                 alt="Dr. Vandana Bansal"
-                className="h-[62px] w-auto object-contain"
+                className="h-[80px] w-auto object-contain"
               />
           </Link>
 
@@ -928,11 +928,11 @@ const Navbar = ({ logoSrc }) => {
                                       {treatment.title}
                                     </h4>
 
-                                    {treatment.description && (
+                                    {/* {treatment.description && (
                                       <p className="mt-1 line-clamp-1 text-[11px] text-gray-400">
                                         {treatment.description}
                                       </p>
-                                    )}
+                                    )} */}
                                   </div>
 
                                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-400 transition-all duration-200 group-hover:bg-pink-800 group-hover:text-white">
