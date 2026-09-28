@@ -1010,13 +1010,13 @@ const Navbar = ({ logoSrc }) => {
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="relative z-[130] flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gray-200 text-pink-800 transition-all duration-300 hover:border-pink-800 hover:bg-pink-50 lg:hidden"
+            className="relative z-[130] flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-gray-200 text-pink-800 transition-all duration-300 lg:hidden"
           >
             <span className="relative flex h-6 w-6 items-center justify-center">
               {/* HAMBURGER */}
               <Menu
                 size={25}
-                strokeWidth={1.8}
+                strokeWidth={1.2}
                 className={`absolute transition-all duration-300 ${
                   mobileMenuOpen
                     ? "rotate-90 scale-0 opacity-0"
