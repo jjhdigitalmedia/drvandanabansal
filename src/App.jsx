@@ -3,12 +3,14 @@ import NavigationB from './Component/NavigationB.jsx'
 import Footer from './Component/Footer.jsx'
 import CurrentRoute from './Component/CurrentRoute.jsx'
 import Toolbar from './Component/Toolbar.jsx'
+import PageLoader from './Component/PageLoader.jsx'
 
 
 function App() {
 
   return (
     <>
+    <PageLoader />
       <NavigationB />
        <div className="">
         <CurrentRoute />
