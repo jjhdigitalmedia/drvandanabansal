@@ -63,34 +63,7 @@ import UterusCancer from '../assets/Treatments/UterusCancer.png'
 
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-
-function Treatments() {
-  const [data, setData] = useState("ivf")
-  const HandleSpecialization = (key, i) => {
-
-    setData(key)
-
-  }
-
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     for (let index = 0; ; index++) {
-
-  //       if(SpecializationSection[index].key === data){
-
-  //         if(index===SpecializationSection.length){
-  //           let b=0;
-  //           indext=b
-  //         }
-  //         let a = SpecializationSection[index+1].key;
-  //         setData(a)
-
-  //       }
-  //     }
-  //   }, 5000)
-  // }, [data])
-
-  const treatmentsData = [
+const treatmentsData = [
     {
       category: "Infertility & IVF Treatment",
       key: "ivf",
@@ -496,6 +469,34 @@ function Treatments() {
       ],
     },
   ];
+function Treatments() {
+  const [data, setData] = useState("ivf")
+  const HandleSpecialization = (key, i) => {
+
+    setData(key)
+
+  }
+
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     for (let index = 0; ; index++) {
+
+  //       if(SpecializationSection[index].key === data){
+
+  //         if(index===SpecializationSection.length){
+  //           let b=0;
+  //           indext=b
+  //         }
+  //         let a = SpecializationSection[index+1].key;
+  //         setData(a)
+
+  //       }
+  //     }
+  //   }, 5000)
+  // }, [data])
+
+  
+
 
   const SpecializationSection = [
     {
@@ -663,3 +664,4 @@ function Treatments() {
   );
 }
 export default Treatments;
+export { treatmentsData };

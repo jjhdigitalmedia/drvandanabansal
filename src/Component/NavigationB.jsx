@@ -1,34 +1,89 @@
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+// import React, { useEffect, useRef, useState } from "react";
+// import { NavLink, Link, useLocation } from "react-router-dom";
+
 // import "aos/dist/aos.css";
 // import "../Style/Style.css";
 // import "../Style/neonStyle.css";
-// import DrVandanaLogo from '../assets/DrVandanaLogo.png'
-// import { IoLocationOutline } from "react-icons/io5";
-// import { IoCallOutline } from "react-icons/io5";
-// import {
-//   ChevronDownIcon,
-//   PlusIcon,
-//   XMarkIcon,
-//   Bars3Icon,
-// } from "@heroicons/react/24/solid";
+
+// import DrVandanaLogo from "../assets/DrVandanaLogo.png";
+
+// import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
+// import { ChevronDownIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/solid";
 // import { CiMenuFries } from "react-icons/ci";
+
 // function NavigationB() {
-//   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+
+//   const location = useLocation();
+
+//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 //   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 //   const [isNestedDropdownOpen, setIsNestedDropdownOpen] = useState({});
-//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-//   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+//   const dropdownRef = useRef(null);
 
-//   const toggleAboutDropdown = () => {
-//     setIsAboutDropdownOpen((prev) => !prev);
-//     setIsServicesDropdownOpen(false); // Close Services dropdown if About is opened
+//   const treatments = [
+//     {
+//       name: "IUI",
+//       path: "/treatments/iui",
+//     },
+//     {
+//       name: "IVF ET",
+//       path: "/treatments/ivf-et",
+//     },
+//     {
+//       name: "ICSI",
+//       path: "/treatments/icsi",
+//     },
+//     {
+//       name: "Laser Assisted Hatching (LAH)",
+//       path: "/treatments/laser-assisted-hatching",
+//     },
+//     {
+//       name: "IMSI",
+//       path: "/treatments/imsi",
+//     },
+//     {
+//       name: "Embryo Donation (ED)",
+//       path: "/treatments/embryo-donation",
+//     },
+//     {
+//       name: "Oocyte Donation (OD)",
+//       path: "/treatments/oocyte-donation",
+//     },
+//     {
+//       name: "Blastocyst Transfer",
+//       path: "/treatments/blastocyst-transfer",
+//     },
+//     {
+//       name: "Semen Cryopreservation",
+//       path: "/treatments/semen-cryopreservation",
+//     },
+//     {
+//       name: "Oocyte Cryopreservation",
+//       path: "/treatments/oocyte-cryopreservation",
+//     },
+//     {
+//       name: "Embryo Banking (Cryopreservation)",
+//       path: "/treatments/embryo-bank",
+//     },
+//     {
+//       name: "MESA (Microepididymal Sperm Aspiration)",
+//       path: "/treatments/mesa-microepididymal-sperm-aspiration",
+//     },
+//     {
+//       name: "TESA (Testicular Sperm Aspiration and Cryopreservation)",
+//       path: "/treatments/tesa-testicular-sperm-aspiration-cryopreservation",
+//     },
+//   ];
+
+//   const isTreatmentPage = location.pathname.startsWith("/treatments");
+
+//   const toggleMobileMenu = () => {
+//     setIsMobileMenuOpen((prev) => !prev);
 //   };
 
 //   const toggleServicesDropdown = () => {
 //     setIsServicesDropdownOpen((prev) => !prev);
-//     setIsAboutDropdownOpen(false); // Close About dropdown if Services is opened
 //   };
 
 //   const toggleNestedDropdown = (menu) => {
@@ -38,106 +93,233 @@
 //     }));
 //   };
 
-//   const [isOpen, setIsOpen] = useState(false);
-//   const navClose = () => {
-//     setIsOpen(false);
+//   const closeAllMenus = () => {
+//     setIsMobileMenuOpen(false);
+//     setIsServicesDropdownOpen(false);
+//     setIsNestedDropdownOpen({});
 //   };
+
+//   useEffect(() => {
+//     closeAllMenus();
+//   }, [location.pathname]);
+
+//   useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (
+//         dropdownRef.current &&
+//         !dropdownRef.current.contains(event.target)
+//       ) {
+//         setIsServicesDropdownOpen(false);
+//       }
+//     };
+
+//     document.addEventListener("mousedown", handleClickOutside);
+
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
+//   }, []);
+
+//   useEffect(() => {
+//     const handleEscape = (e) => {
+//       if (e.key === "Escape") {
+//         closeAllMenus();
+//       }
+//     };
+
+//     document.addEventListener("keydown", handleEscape);
+
+//     return () => {
+//       document.removeEventListener("keydown", handleEscape);
+//     };
+//   }, []);
+
+
+//   const navLinkClass = ({ isActive }) =>
+//     `text-black text-sm font-semibold relative inline-block
+//     after:block after:h-[2px]
+//     after:bg-rose-800
+//     after:transition-transform
+//     after:duration-300
+//     after:origin-left
+//     ${isActive
+//       ? "text-rose-800 after:scale-x-100"
+//       : "after:scale-x-0 hover:after:scale-x-100"
+//     }`;
+
 //   return (
 //     <>
-//       <div className=" hidden md:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
+
+//       <div className="hidden xl:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
 //         <div>
 //           <span className="pr-8 text-sm text-white">
 //             <IoCallOutline className="inline mr-2" />
-//             <a className="pr-3 text-sm text-white" href="tel:9151037784">+91 9151037784</a>
-//             <a className="pr-6 text-sm text-white" href="tel:6390103002">+91 6390103002</a>
-//             <a className="pr-6 text-sm text-white" href="tel:6390103004">+91 6390103004</a>
+//             <a
+//               className="pr-3 text-sm text-white"
+//               href="tel:9151037784"
+//             >
+//               +91 6390103002
+//             </a>
+//             <a
+//               className="pr-6 text-sm text-white"
+//               href="tel:6390103004"
+//             >
+//               +91 6390103004
+//             </a>
+//             <a
+//               className="pr-6 text-sm text-white"
+//               href="tel:6390103002"
+//             >
+
+//               +91 9151037784
+//             </a>
 //           </span>
 //         </div>
+
 //         <div>
-//           <a href='https://www.google.com/maps/place/%F0%9D%97%94%F0%9D%97%BF%F0%9D%97%BD%F0%9D%97%B6%F0%9D%98%81+%F0%9D%97%A7%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81+%F0%9D%97%A7%F0%9D%98%82%F0%9D%97%AF%F0%9D%97%B2+%F0%9D%97%95%F0%9D%97%AE%F0%9D%97%AF%F0%9D%98%86+%F0%9D%97%96%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%B2+-+Best+IVF+Centre+Allahabad%2F+Best+Test+Tube+Baby+Centre%2F+IVF+Centre+And+Hospital%2F+IVF+Specialist/@25.4362706,81.844079,612m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3985354ad3d262eb:0xab072cc57813c85!8m2!3d25.4362706!4d81.8466593!16s%2Fg%2F1tf9lnwq?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D' target='_blank' className="pr-8 text-sm text-white">
-//             <IoLocationOutline className="inline " />Jeevan Jyoti Hospital, Prayagraj - 211003
+//           <a
+//             href="https://www.google.com/maps/place/..."
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="pr-8 text-sm text-white"
+//           >
+//             <IoLocationOutline className="inline" />
+//             Jeevan Jyoti Hospital, Prayagraj - 211003
 //           </a>
 //         </div>
 //       </div>
+
+
 //       <nav className="bg-white py-2 md:py-1 px-1 md:px-4 shadow-sm sticky top-0 z-20">
+
 //         <div className="containe flex items-center justify-between">
-//           <Link to='/' className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32">
-//             <img src={DrVandanaLogo} className="w-52 md:w-80" alt="Dr Vandana Logo" />
+
+
+//           <Link
+//             to="/"
+//             className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32"
+//           >
+//             <img
+//               src={DrVandanaLogo}
+//               className="w-52 md:w-80"
+//               alt="Dr Vandana Logo"
+//             />
 //           </Link>
-//           <div className="hidden md:flex space-x-4 relative">
-//             <Link to='/' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Home</Link>
-//             <Link to='about'
-//               className="text-black focus:outline-none font-semibold text-sm relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 "
+
+
+//           <div className="hidden xl:flex items-center space-x-4 relative">
+
+//             <NavLink to="/" end className={navLinkClass}>
+//               Home
+//             </NavLink>
+
+//             <NavLink
+//               to="/about"
+//               className={navLinkClass}
 //             >
 //               About Dr. Vandana
-//             </Link>
+//             </NavLink>
+
+
 //             <div
-//               className={`dropdown mt-0 font-semibold text-sm lg:inline-block lg:mt-0 text-black md:text-whi focus:outline-none relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 ${isOpen ? "py-3" : ""
-//                 }`}
+//               ref={dropdownRef}
+//               className="relative"
+//               onMouseEnter={() => setIsServicesDropdownOpen(true)}
+//               onMouseLeave={() => setIsServicesDropdownOpen(false)}
 //             >
-//               Specialities
-//               <div className="dropdown-content font-thin mt-1 rounded-lg bg-ros-800 w-72">
-//                 <Link to="treatments/iui" onClick={navClose} className="px-6 hover:text-black">
-//                   IUI
-//                 </Link>
-//                 <Link to="treatments/ivf-et" onClick={navClose} className="px-6 my-2">
-//                   IVF ET
-//                 </Link>
-//                 <Link to="treatments/icsi" onClick={navClose} className="my-2 px-6">
-//                   ICSI
-//                 </Link>
-//                 <Link to="treatments/laser-assisted-hatching" onClick={navClose} className="my-2 px-6">
-//                   Laser Assisted Hatching (LAH)
-//                 </Link>
-//                 <Link to="treatments/imsi" onClick={navClose} className="my-2 px-6">
-//                   IMSI
-//                 </Link>
-//                 <Link to="treatments/embryo-donation" onClick={navClose} className="my-2 px-6">
-//                   Embryo Donation (ED)
-//                 </Link>
-//                 <Link to="treatments/oocyte-donation" onClick={navClose} className="my-2 px-6">
-//                   Occyte Donation (OD)
-//                 </Link>
-//                 <Link to="treatments/blastocyst-transfer" onClick={navClose} className="my-2 px-6">
-//                   Blastocyst Transfer
-//                 </Link>
-//                 <Link to="treatments/semen-cryopreservation" onClick={navClose} className="my-2 px-6">
-//                   Semen Cryopreservation
-//                 </Link>
-//                 <Link to="treatments/oocyte-cryopreservation" onClick={navClose} className="my-2 px-6">
-//                   Oocyte Cryopreservation
-//                 </Link>
-//                 <Link to="treatments/embryo-bank" onClick={navClose} className="my-2 px-6">
-//                   Embryo Banking (Cryopreservation)
-//                 </Link>
-//                 <Link to="treatments/mesa-microepididymal-sperm-aspiration" onClick={navClose} className="my-2 px-6 border-zinc-300">
-//                   MESA (Microepididymal Sperm Aspiration)
-//                 </Link>
-//                 <Link to="treatments/tesa-testicular-sperm-aspiration-cryopreservation" onClick={navClose} className="my-2 px-6">
-//                   TESA (Testicular Sperm Aspiration and Cryopreservation)
-//                 </Link>
-//               </div>
+//               <button
+//                 className={`text-sm font-semibold relative inline-flex items-center gap-1
+//                 after:block after:absolute after:left-0 after:-bottom-1
+//                 after:h-[2px] after:bg-rose-800 after:transition-transform after:duration-300
+//                 ${isTreatmentPage
+//                     ? "text-rose-800 after:scale-x-100"
+//                     : "after:scale-x-0 hover:after:scale-x-100"
+//                   }`}
+//               >
+//                 Specialities
+//                 <ChevronDownIcon
+//                   className={`h-4 w-4 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
+//                     }`}
+//                 />
+//               </button>
+
+//               {isServicesDropdownOpen && (
+
+//                 <div className="absolute left-0 mt-2 w-72 rounded-lg bg-white shadow-xl border border-gray-200 py-2 z-50">
+
+//                   {treatments.map((item) => (
+
+//                     <NavLink
+//                       key={item.path}
+//                       to={item.path}
+//                       onClick={closeAllMenus}
+//                       className={({ isActive }) =>
+//                         `block px-6 py-2 text-sm transition
+//                         ${isActive
+//                           ? "bg-rose-100 text-rose-800 font-semibold"
+//                           : "hover:bg-gray-100"
+//                         }`
+//                       }
+//                     >
+//                       {item.name}
+//                     </NavLink>
+
+//                   ))}
+
+//                 </div>
+//               )}
+
 //             </div>
 
-//             <Link to='news-paper-images' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+//             <NavLink
+//               to="/achievements"
+//               className={navLinkClass}
+//             >
+//               Achievements
+//             </NavLink>
+//             <NavLink
+//               to="/in-news"
+//               className={navLinkClass}
+//             >
 //               In News
-//             </Link>
-//             <Link to='patients-guide' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
-//               Patients Guide
-//             </Link>
-//             <Link to='gallery' className="text-black text-sm font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
+//             </NavLink>
+//             <NavLink
+//               to="/gallery"
+//               className={navLinkClass}
+//             >
 //               Gallery
-//             </Link>
-//             <Link to='https://www.youtube.com/@DrVandanaBansal' target="_blank" className="text-sm bg-rose-700 text-white px-2 rounded-md font-semibold relative inline-block after:block after:h-[2px] after:bg-rose-800 after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">
-//               Youtube Channel
-//             </Link>
+//             </NavLink>
+//             <NavLink
+//               to="/patients-education"
+//               className={navLinkClass}
+//             >
+//               Patients Guide
+//             </NavLink>
+
+
+
 //           </div>
-//           <Link to='book-appointment' className="hidden md:block text-white bg-pink-800 px-3 py-2 text-sm rounded-xl">
+
+
+//           <NavLink
+//             to="/book-appointment"
+//             className={({ isActive }) =>
+//               `hidden md:block px-3 py-2 text-sm rounded-xl transition
+//               ${isActive
+//                 ? "bg-rose-900 text-white"
+//                 : "bg-pink-800 text-white hover:bg-pink-900"
+//               }`
+//             }
+//           >
 //             Make an Appointment
-//           </Link>
+//           </NavLink>
+
+
+
 //           <button
-//             className="md:hidden text-black focus:outline-none"
+//             className="md:hidden text-black"
 //             onClick={toggleMobileMenu}
+//             aria-label="Toggle Menu"
 //           >
 //             {isMobileMenuOpen ? (
 //               <XMarkIcon className="h-6 w-6" />
@@ -145,639 +327,1014 @@
 //               <CiMenuFries className="h-6 w-6" />
 //             )}
 //           </button>
+
 //         </div>
 
 
 //         {isMobileMenuOpen && (
-//           <div className="lg:hidden bg-white p-4">
-//             <div className="flex flex-col space-y-2">
-//               <Link to='/' className="text-black py-3 border-b-2 font-semibold">
+//           <div className="xl:hidden bg-white p-4 border-t">
+
+//             <div className="flex flex-col space-y-1">
+
+//               <NavLink
+//                 to="/"
+//                 end
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 Home
-//               </Link>
-//               <button
-//                 className="text-black py-3 font-semibold text-left border-b-2 focus:outline-none"
+//               </NavLink>
+
+//               <NavLink
+//                 to="/about"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
 //               >
-//                 About Us
-//                 <ChevronDownIcon className="h-5 w-5 inline" />
-//               </button>
+//                 About Dr. Vandana
+//               </NavLink>
+
 //               <button
-//                 onMouseEnter={() => setIsServicesDropdownOpen(true)}
-//                 onMouseLeave={() => setIsServicesDropdownOpen(false)}
 //                 onClick={toggleServicesDropdown}
-//                 className="text-black py-3 text-left border-b-2 focus:outline-none"
+//                 className={`flex justify-between items-center py-3 border-b font-semibold ${isTreatmentPage
+//                   ? "text-rose-800"
+//                   : "text-black"
+//                   }`}
 //               >
-//                 Services
-//                 <ChevronDownIcon className="h-5 w-5 inline" />
+//                 <span>Specialities</span>
+
+//                 <ChevronDownIcon
+//                   className={`h-5 w-5 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
+//                     }`}
+//                 />
 //               </button>
+
 //               {isServicesDropdownOpen && (
-//                 <div
-//                   onMouseEnter={() => setIsServicesDropdownOpen(true)}
-//                   onMouseLeave={() => setIsServicesDropdownOpen(false)}
-//                   className="ml-4"
-//                 >
+
+//                 <div className="ml-3 border-l pl-3">
+
 //                   <button
-//                     onClick={() => toggleNestedDropdown("ivf")}
-//                     className="flex justify-between items-center px-4 py-2 text-gray-700 w-full text-left"
+//                     onClick={() => toggleNestedDropdown("treatment")}
+//                     className="flex justify-between items-center w-full py-2 font-semibold"
 //                   >
 //                     Treatment
-//                     <PlusIcon className="h-5 w-5 text-gray-600" />
+
+//                     <PlusIcon
+//                       className={`h-5 w-5 transition-transform ${isNestedDropdownOpen.treatment
+//                         ? "rotate-45"
+//                         : ""
+//                         }`}
+//                     />
 //                   </button>
-//                   {isNestedDropdownOpen.ivf && (
-//                     <div className="ml-4">
-//                       <Link to='treatments/iui' className="block px-4 py-2 text-gray-500">
-//                         IUI
-//                       </Link>
-//                       <Link to='treatments/ivf-et' className="block px-4 py-2 text-gray-500">
-//                         IVF ET
-//                       </Link>
-//                       <Link to='treatments/icsi' className="block px-4 py-2 text-gray-500">
-//                         ICSI
-//                       </Link>
-//                       <Link to='treatments/laserassistedhatcing' className="block px-4 py-2 text-gray-500">
-//                         Laser Assisted Hatching (LAH)
-//                       </Link>
-//                       <Link to='treatments/imsi' className="block px-4 py-2 text-gray-500">
-//                         IMSI
-//                       </Link>
-//                       <Link to='treatments/embryo-donation' className="block px-4 py-2 text-gray-500">
-//                         Embryo Donation (ED)
-//                       </Link>
-//                       <Link to='treatments/oocyte-donation' className="block px-4 py-2 text-gray-500">
-//                         Oocyte Donation (OD)
-//                       </Link>
-//                       <Link to='treatments/blastocyst-transfer' className="block px-4 py-2 text-gray-500">
-//                         Blastocyst Transfer
-//                       </Link>
-//                       <Link to='treatments/semen-cryopreservation' className="block px-4 py-2 text-gray-500">
-//                         Semen Cryopreservation
-//                       </Link>
-//                       <Link to='treatments/oocyte-cryopreservation' className="block px-4 py-2 text-gray-500">
-//                         Oocyte Cryopreservation
-//                       </Link>
-//                       <Link to='treatments/embryobank' className="block px-4 py-2 text-gray-500">
-//                         Embryo Banking
-//                       </Link>
-//                       <Link to='treatments/mesa-microepididymal-sperm-aspiration' className="block px-4 py-2 text-gray-500">
-//                         MESA (Microepididymal Sperm Aspiration)
-//                       </Link>
-//                       <Link to='treatments/tesa-testicular-sperm-aspiration-cryopreservation' className="block px-4 py-2 text-gray-500">
-//                         TESA (Testicular Sperm Aspiration and Cryopreservation)
-//                       </Link>
+
+//                   {isNestedDropdownOpen.treatment && (
+
+//                     <div className="ml-3">
+
+//                       {treatments.map((item) => (
+
+//                         <NavLink
+//                           key={item.path}
+//                           to={item.path}
+//                           onClick={closeAllMenus}
+//                           className={({ isActive }) =>
+//                             `block py-2 text-sm ${isActive
+//                               ? "text-rose-800 font-semibold"
+//                               : "text-gray-700"
+//                             }`
+//                           }
+//                         >
+//                           {item.name}
+//                         </NavLink>
+
+//                       ))}
+
 //                     </div>
 //                   )}
 //                 </div>
+
 //               )}
-//               <Link to='patients-guide' className="text-black py-3 border-b-2 font-semibold">
+
+//               <NavLink
+//                 to="/patients-guide"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 Patients Guide
-//               </Link>
-//               <Link to='achievments' className="text-black py-3 border-b-2 font-semibold">
+//               </NavLink>
+
+//               <NavLink
+//                 to="/achievments"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 Success Rate
-//               </Link>
-//               <Link to='ivf-team' className="text-black py-3 border-b-2 font-semibold">
+//               </NavLink>
+
+//               <NavLink
+//                 to="/ivf-team"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 Our IVF Team
-//               </Link>
-//               <Link to='news-paper-images' className="text-black py-3 border-b-2 font-semibold">
+//               </NavLink>
+
+//               <NavLink
+//                 to="/news-paper-images"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 In News
-//               </Link>
-//               <Link to='gallery' className="text-black py-3 border-b-2 font-semibold">
+//               </NavLink>
+
+//               <NavLink
+//                 to="/gallery"
+//                 onClick={closeAllMenus}
+//                 className={({ isActive }) =>
+//                   `py-3 border-b font-semibold ${isActive
+//                     ? "text-rose-800"
+//                     : "text-black"
+//                   }`
+//                 }
+//               >
 //                 Gallery
-//               </Link>
-//               <Link to='book-appointment' className="text-white text-center border-b-2 bg-pink-800 px-2 py-2 my-5 rounded">
-//                 Contact Us
-//               </Link>
+//               </NavLink>
+
+//               <NavLink
+//                 to="/book-appointment"
+//                 onClick={closeAllMenus}
+//                 className="mt-4 text-center bg-pink-800 text-white py-3 rounded-lg font-semibold hover:bg-pink-900 transition"
+//               >
+//                 Make an Appointment
+//               </NavLink>
 //             </div>
 //           </div>
 //         )}
+
 //       </nav>
+
 //     </>
 //   );
 // }
+
 // export default NavigationB;
 
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  ChevronDown,
+  ChevronRight,
+  MapPin,
+  Phone,
+  X,
+  Menu,
+  CalendarDays,
+  ArrowUpRight,
+} from "lucide-react";
+
+// IMPORTANT:
+// Apne actual logo ka path yahan lagao
+// Example:
+// import logo from "../assets/Logo.png";
+
+// Agar treatmentsData kisi separate file me hai:
+import { treatmentsData } from "../Pages/Treatements.jsx";
 
 
-import React, { useEffect, useRef, useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
-
-import "aos/dist/aos.css";
-import "../Style/Style.css";
-import "../Style/neonStyle.css";
-
-import DrVandanaLogo from "../assets/DrVandanaLogo.png";
-
-import { IoLocationOutline, IoCallOutline } from "react-icons/io5";
-import { ChevronDownIcon, PlusIcon, XMarkIcon } from "@heroicons/react/24/solid";
-import { CiMenuFries } from "react-icons/ci";
-
-function NavigationB() {
-
+const NavigationB = ({ logoSrc }) => {
   const location = useLocation();
 
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-  const [isNestedDropdownOpen, setIsNestedDropdownOpen] = useState({});
+  const [desktopSpecialityOpen, setDesktopSpecialityOpen] =
+    useState(false);
 
-  const dropdownRef = useRef(null);
+  const [activeCategory, setActiveCategory] = useState(
+    treatmentsData?.[0]?.key || null
+  );
 
-  const treatments = [
-    {
-      name: "IUI",
-      path: "/treatments/iui",
-    },
-    {
-      name: "IVF ET",
-      path: "/treatments/ivf-et",
-    },
-    {
-      name: "ICSI",
-      path: "/treatments/icsi",
-    },
-    {
-      name: "Laser Assisted Hatching (LAH)",
-      path: "/treatments/laser-assisted-hatching",
-    },
-    {
-      name: "IMSI",
-      path: "/treatments/imsi",
-    },
-    {
-      name: "Embryo Donation (ED)",
-      path: "/treatments/embryo-donation",
-    },
-    {
-      name: "Oocyte Donation (OD)",
-      path: "/treatments/oocyte-donation",
-    },
-    {
-      name: "Blastocyst Transfer",
-      path: "/treatments/blastocyst-transfer",
-    },
-    {
-      name: "Semen Cryopreservation",
-      path: "/treatments/semen-cryopreservation",
-    },
-    {
-      name: "Oocyte Cryopreservation",
-      path: "/treatments/oocyte-cryopreservation",
-    },
-    {
-      name: "Embryo Banking (Cryopreservation)",
-      path: "/treatments/embryo-bank",
-    },
-    {
-      name: "MESA (Microepididymal Sperm Aspiration)",
-      path: "/treatments/mesa-microepididymal-sperm-aspiration",
-    },
-    {
-      name: "TESA (Testicular Sperm Aspiration and Cryopreservation)",
-      path: "/treatments/tesa-testicular-sperm-aspiration-cryopreservation",
-    },
-  ];
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const isTreatmentPage = location.pathname.startsWith("/treatments");
+  const [mobileOpenCategory, setMobileOpenCategory] = useState(null);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
-  };
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleServicesDropdown = () => {
-    setIsServicesDropdownOpen((prev) => !prev);
-  };
-
-  const toggleNestedDropdown = (menu) => {
-    setIsNestedDropdownOpen((prev) => ({
-      ...prev,
-      [menu]: !prev[menu],
-    }));
-  };
-
-  const closeAllMenus = () => {
-    setIsMobileMenuOpen(false);
-    setIsServicesDropdownOpen(false);
-    setIsNestedDropdownOpen({});
-  };
-
-  // Close menus whenever route changes
+  // ---------------------------------------------
+  // Scroll Effect
+  // ---------------------------------------------
   useEffect(() => {
-    closeAllMenus();
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // ---------------------------------------------
+  // Close Mobile Menu on Route Change
+  // ---------------------------------------------
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setMobileOpenCategory(null);
+    setDesktopSpecialityOpen(false);
   }, [location.pathname]);
 
-  // Close dropdown when clicking outside
+  // ---------------------------------------------
+  // Prevent body scroll when mobile menu open
+  // ---------------------------------------------
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
-        setIsServicesDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.body.style.overflow = "";
     };
-  }, []);
+  }, [mobileMenuOpen]);
 
-  // Close dropdown with ESC key
+  // ---------------------------------------------
+  // ESC Key
+  // ---------------------------------------------
   useEffect(() => {
-    const handleEscape = (e) => {
+    const handleKeyDown = (e) => {
       if (e.key === "Escape") {
-        closeAllMenus();
+        setDesktopSpecialityOpen(false);
+        setMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener("keydown", handleEscape);
+    window.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      document.removeEventListener("keydown", handleEscape);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
-  // Common NavLink Style
-  const navLinkClass = ({ isActive }) =>
-    `text-black text-sm font-semibold relative inline-block
-    after:block after:h-[2px]
-    after:bg-rose-800
-    after:transition-transform
-    after:duration-300
-    after:origin-left
-    ${isActive
-      ? "text-rose-800 after:scale-x-100"
-      : "after:scale-x-0 hover:after:scale-x-100"
-    }`;
+  // ---------------------------------------------
+  // Active Category
+  // ---------------------------------------------
+  const selectedCategory = treatmentsData?.find(
+    (category) => category.key === activeCategory
+  );
+
+  // ---------------------------------------------
+  // Mobile Accordion
+  // ---------------------------------------------
+  const toggleMobileCategory = (key) => {
+    setMobileOpenCategory((prev) => (prev === key ? null : key));
+  };
+
+  // ---------------------------------------------
+  // Close Mobile Menu
+  // ---------------------------------------------
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setMobileOpenCategory(null);
+  };
 
   return (
     <>
-      {/* =================== TOP HEADER =================== */}
-
-      <div className="hidden xl:flex flex-wrap z-50 justify-between py-2 px-3 bg-pink-800">
-        <div>
-          <span className="pr-8 text-sm text-white">
-            <IoCallOutline className="inline mr-2" />
+      {/* =========================================================
+          TOP CONTACT BAR
+      ========================================================= */}
+      <div
+        className={`hidden lg:block bg-pink-800 text-white transition-all duration-300 ${
+          scrolled ? "h-0 overflow-hidden opacity-0" : "h-[41px] opacity-100"
+        }`}
+      >
+        <div className="mx-auto flex h-full max-w-[1920px] items-center justify-between px-6 xl:px-10">
+          
+          {/* Phone Numbers */}
+          <div className="flex items-center gap-5 text-[13px] font-medium">
             <a
-              className="pr-3 text-sm text-white"
-              href="tel:9151037784"
+              href="tel:+916390103002"
+              className="transition-opacity hover:opacity-75"
             >
               +91 6390103002
             </a>
+
             <a
-              className="pr-6 text-sm text-white"
-              href="tel:6390103004"
+              href="tel:+916390103004"
+              className="transition-opacity hover:opacity-75"
             >
               +91 6390103004
             </a>
-            <a
-              className="pr-6 text-sm text-white"
-              href="tel:6390103002"
-            >
 
+            <a
+              href="tel:+919151037784"
+              className="transition-opacity hover:opacity-75"
+            >
               +91 9151037784
             </a>
-          </span>
-        </div>
+          </div>
 
-        <div>
-          <a
-            href="https://www.google.com/maps/place/..."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pr-8 text-sm text-white"
-          >
-            <IoLocationOutline className="inline" />
-            Jeevan Jyoti Hospital, Prayagraj - 211003
-          </a>
+          {/* Address */}
+          <div className="flex items-center gap-1.5 text-[13px]">
+            <MapPin size={14} strokeWidth={2} />
+            <span>Jeevan Jyoti Hospital, Prayagraj - 211003</span>
+          </div>
         </div>
       </div>
 
-      {/* =================== NAVBAR =================== */}
+      {/* =========================================================
+          MAIN NAVBAR
+      ========================================================= */}
+      <header
+        className={`sticky top-0 z-[100] w-full border-b border-gray-100 bg-white transition-all duration-300 ${
+          scrolled ? "shadow-md" : "shadow-none"
+        }`}
+      >
+        <div className="mx-auto flex h-[88px] max-w-[1920px] items-center justify-between px-5 sm:px-8 lg:px-12 xl:px-16">
 
-      <nav className="bg-white py-2 md:py-1 px-1 md:px-4 shadow-sm sticky top-0 z-20">
-
-        <div className="containe flex items-center justify-between">
-
-          {/* LOGO */}
-
+          {/* =====================================================
+              LOGO
+          ===================================================== */}
           <Link
             to="/"
-            className="flex items-center flex-shrink-0 ml-1 md:ml-6 lg:ml-10 lg:mr-32"
+            className="relative z-[120] flex shrink-0 items-center"
+            onClick={closeMobileMenu}
           >
-            <img
-              src={DrVandanaLogo}
-              className="w-52 md:w-80"
-              alt="Dr Vandana Logo"
-            />
+            {logoSrc ? (
+              <img
+                src={logoSrc}
+                alt="Dr. Vandana Bansal"
+                className="h-[62px] w-auto object-contain"
+              />
+            ) : (
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-pink-800 text-pink-800">
+                  <span className="text-xl font-bold">VB</span>
+                </div>
+
+                <div className="leading-none">
+                  <div className="font-serif text-xl font-bold tracking-tight text-pink-800">
+                    DR. VANDANA BANSAL
+                  </div>
+
+                  <div className="mt-1 text-[8px] tracking-[0.25em] text-gray-500">
+                    GYNAECOLOGIST & IVF SPECIALIST
+                  </div>
+                </div>
+              </div>
+            )}
           </Link>
 
-          {/* DESKTOP NAV */}
+          {/* =====================================================
+              DESKTOP NAVIGATION
+          ===================================================== */}
+          <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
 
-          <div className="hidden xl:flex items-center space-x-4 relative">
-
-            <NavLink to="/" end className={navLinkClass}>
+            {/* HOME */}
+            <Link
+              to="/"
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname === "/"
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
+            >
               Home
-            </NavLink>
 
-            <NavLink
+              {location.pathname === "/" && (
+                <span className="absolute bottom-[19px] left-0 h-[2px] w-full origin-left animate-[scaleX_.25s_ease-out] bg-pink-800" />
+              )}
+            </Link>
+
+            {/* ABOUT */}
+            <Link
               to="/about"
-              className={navLinkClass}
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname.startsWith("/about")
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
             >
               About Dr. Vandana
-            </NavLink>
 
-            {/* SPECIALITIES */}
-
-            <div
-              ref={dropdownRef}
-              className="relative"
-              onMouseEnter={() => setIsServicesDropdownOpen(true)}
-              onMouseLeave={() => setIsServicesDropdownOpen(false)}
-            >
-              <button
-                className={`text-sm font-semibold relative inline-flex items-center gap-1
-                after:block after:absolute after:left-0 after:-bottom-1
-                after:h-[2px] after:bg-rose-800 after:transition-transform after:duration-300
-                ${isTreatmentPage
-                    ? "text-rose-800 after:scale-x-100"
-                    : "after:scale-x-0 hover:after:scale-x-100"
-                  }`}
-              >
-                Specialities
-                <ChevronDownIcon
-                  className={`h-4 w-4 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
-                    }`}
-                />
-              </button>
-
-              {isServicesDropdownOpen && (
-
-                <div className="absolute left-0 mt-2 w-72 rounded-lg bg-white shadow-xl border border-gray-200 py-2 z-50">
-
-                  {treatments.map((item) => (
-
-                    <NavLink
-                      key={item.path}
-                      to={item.path}
-                      onClick={closeAllMenus}
-                      className={({ isActive }) =>
-                        `block px-6 py-2 text-sm transition
-                        ${isActive
-                          ? "bg-rose-100 text-rose-800 font-semibold"
-                          : "hover:bg-gray-100"
-                        }`
-                      }
-                    >
-                      {item.name}
-                    </NavLink>
-
-                  ))}
-
-                </div>
+              {location.pathname.startsWith("/about") && (
+                <span className="absolute bottom-[19px] left-0 h-[2px] w-full bg-pink-800" />
               )}
+            </Link>
 
-            </div>
+            {/* =================================================
+                SPECIALITIES MEGA MENU
+            ================================================= */}
+            <div
+              className="relative h-[88px] flex items-center"
+              onMouseEnter={() => {
+                setDesktopSpecialityOpen(true);
 
-            <NavLink
-              to="/achievements"
-              className={navLinkClass}
-            >
-              Achievements
-            </NavLink>
-            <NavLink
-              to="/in-news"
-              className={navLinkClass}
-            >
-              In News
-            </NavLink>
-            <NavLink
-              to="/gallery"
-              className={navLinkClass}
-            >
-              Gallery
-            </NavLink>
-            <NavLink
-              to="/patients-education"
-              className={navLinkClass}
-            >
-              Patients Guide
-            </NavLink>
-
-            {/* <a
-              href="https://www.youtube.com/@DrVandanaBansal"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm bg-rose-700 text-white px-2 py-2 rounded-md font-semibold"
-            >
-              Youtube Channel
-            </a> */}
-
-          </div>
-
-          {/* APPOINTMENT */}
-          <NavLink
-            to="/book-appointment"
-            className={({ isActive }) =>
-              `hidden md:block px-3 py-2 text-sm rounded-xl transition
-              ${isActive
-                ? "bg-rose-900 text-white"
-                : "bg-pink-800 text-white hover:bg-pink-900"
-              }`
-            }
-          >
-            Make an Appointment
-          </NavLink>
-
-          {/* MOBILE MENU BUTTON */}
-
-          <button
-            className="md:hidden text-black"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle Menu"
-          >
-            {isMobileMenuOpen ? (
-              <XMarkIcon className="h-6 w-6" />
-            ) : (
-              <CiMenuFries className="h-6 w-6" />
-            )}
-          </button>
-
-        </div>
-        {/* ================= MOBILE MENU ================= */}
-
-        {isMobileMenuOpen && (
-          <div className="xl:hidden bg-white p-4 border-t">
-
-            <div className="flex flex-col space-y-1">
-
-              <NavLink
-                to="/"
-                end
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
+                if (!activeCategory && treatmentsData.length > 0) {
+                  setActiveCategory(treatmentsData[0].key);
                 }
-              >
-                Home
-              </NavLink>
-
-              <NavLink
-                to="/about"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
-              >
-                About Dr. Vandana
-              </NavLink>
-
-              {/* MOBILE SPECIALITIES */}
+              }}
+              onMouseLeave={() => {
+                setDesktopSpecialityOpen(false);
+              }}
+            >
               <button
-                onClick={toggleServicesDropdown}
-                className={`flex justify-between items-center py-3 border-b font-semibold ${isTreatmentPage
-                  ? "text-rose-800"
-                  : "text-black"
-                  }`}
+                type="button"
+                className={`group flex items-center gap-1.5 py-8 text-[14px] font-medium transition-colors duration-200 ${
+                  desktopSpecialityOpen
+                    ? "text-pink-800"
+                    : "text-gray-900 hover:text-pink-800"
+                }`}
               >
                 <span>Specialities</span>
 
-                <ChevronDownIcon
-                  className={`h-5 w-5 transition-transform duration-300 ${isServicesDropdownOpen ? "rotate-180" : ""
-                    }`}
+                <ChevronDown
+                  size={15}
+                  strokeWidth={1.8}
+                  className={`transition-transform duration-300 ${
+                    desktopSpecialityOpen ? "rotate-180" : ""
+                  }`}
                 />
               </button>
 
-              {isServicesDropdownOpen && (
+              {/* =============================================
+                  DESKTOP MEGA MENU
+              ============================================= */}
+              <div
+                className={`absolute right-1/2 top-[88px] z-[200] w-[min(1120px,calc(100vw-40px))] translate-x-1/2 transform-gpu transition-all duration-300 ${
+                  desktopSpecialityOpen
+                    ? "visible translate-y-0 opacity-100"
+                    : "invisible -translate-y-2 opacity-0"
+                }`}
+              >
+                <div className="overflow-hidden rounded-b-2xl border border-gray-100 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
-                <div className="ml-3 border-l pl-3">
+                  {/* Top Accent */}
+                  <div className="h-1 w-full bg-pink-800" />
 
-                  <button
-                    onClick={() => toggleNestedDropdown("treatment")}
-                    className="flex justify-between items-center w-full py-2 font-semibold"
-                  >
-                    Treatment
+                  <div className="grid grid-cols-[330px_1fr]">
 
-                    <PlusIcon
-                      className={`h-5 w-5 transition-transform ${isNestedDropdownOpen.treatment
-                        ? "rotate-45"
-                        : ""
-                        }`}
-                    />
-                  </button>
+                    {/* ==========================================
+                        CATEGORY COLUMN
+                    ========================================== */}
+                    <div className="border-r border-gray-100 bg-[#fafafa] p-5">
 
-                  {isNestedDropdownOpen.treatment && (
+                      <div className="mb-4 px-3">
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
+                          Specialities
+                        </p>
 
-                    <div className="ml-3">
+                        <p className="mt-1 text-sm text-gray-500">
+                          Explore women's healthcare services
+                        </p>
+                      </div>
 
-                      {treatments.map((item) => (
+                      <div className="space-y-1">
+                        {treatmentsData.map((category) => {
+                          const isActive =
+                            activeCategory === category.key;
 
-                        <NavLink
-                          key={item.path}
-                          to={item.path}
-                          onClick={closeAllMenus}
-                          className={({ isActive }) =>
-                            `block py-2 text-sm ${isActive
-                              ? "text-rose-800 font-semibold"
-                              : "text-gray-700"
-                            }`
-                          }
-                        >
-                          {item.name}
-                        </NavLink>
+                          return (
+                            <button
+                              key={category.key}
+                              type="button"
+                              onMouseEnter={() =>
+                                setActiveCategory(category.key)
+                              }
+                              onFocus={() =>
+                                setActiveCategory(category.key)
+                              }
+                              className={`group flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left transition-all duration-200 ${
+                                isActive
+                                  ? "bg-pink-800 text-white shadow-sm"
+                                  : "text-gray-700 hover:bg-pink-50 hover:text-pink-800"
+                              }`}
+                            >
+                              <span className="pr-3 text-[13px] font-medium leading-snug">
+                                {category.category}
+                              </span>
 
-                      ))}
-
+                              <ChevronRight
+                                size={16}
+                                className={`shrink-0 transition-transform duration-200 ${
+                                  isActive
+                                    ? "translate-x-0.5 text-white"
+                                    : "text-gray-400 group-hover:translate-x-0.5 group-hover:text-pink-800"
+                                }`}
+                              />
+                            </button>
+                          );
+                        })}
+                      </div>
                     </div>
-                  )}
+
+                    {/* ==========================================
+                        TREATMENTS COLUMN
+                    ========================================== */}
+                    <div className="min-h-[455px] bg-white p-7">
+
+                      {selectedCategory && (
+                        <div
+                          key={selectedCategory.key}
+                          className="animate-[fadeSlide_.25s_ease-out]"
+                        >
+                          {/* Heading */}
+                          <div className="mb-6 flex items-end justify-between border-b border-gray-100 pb-4">
+                            <div>
+                              <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
+                                Treatments
+                              </p>
+
+                              <h3 className="text-xl font-semibold text-gray-900">
+                                {selectedCategory.category}
+                              </h3>
+                            </div>
+
+                            <span className="rounded-full bg-pink-50 px-3 py-1 text-[11px] font-medium text-pink-800">
+                              {selectedCategory.treatments.length} Services
+                            </span>
+                          </div>
+
+                          {/* Treatment Grid */}
+                          <div className="grid grid-cols-2 gap-3">
+                            {selectedCategory.treatments.map(
+                              (treatment, index) => (
+                                <Link
+                                  key={treatment.title}
+                                  to={`/${treatment.link}`}
+                                  className="group flex items-center justify-between rounded-xl border border-gray-100 bg-white px-4 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:border-pink-100 hover:bg-pink-50/50 hover:shadow-sm"
+                                  style={{
+                                    animationDelay: `${index * 25}ms`,
+                                  }}
+                                >
+                                  <div className="min-w-0 pr-3">
+                                    <h4 className="truncate text-[13px] font-semibold text-gray-800 transition-colors duration-200 group-hover:text-pink-800">
+                                      {treatment.title}
+                                    </h4>
+
+                                    <p className="mt-1 line-clamp-1 text-[11px] text-gray-400">
+                                      {treatment.description}
+                                    </p>
+                                  </div>
+
+                                  <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-400 transition-all duration-200 group-hover:bg-pink-800 group-hover:text-white">
+                                    <ArrowUpRight size={14} />
+                                  </div>
+                                </Link>
+                              )
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
 
-              )}
+            {/* ACHIEVEMENTS */}
+            <Link
+              to="/achievements"
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname.startsWith("/achievements")
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
+            >
+              Achievements
+            </Link>
 
-              <NavLink
-                to="/patients-guide"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
+            {/* IN NEWS */}
+            <Link
+              to="/news"
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname.startsWith("/news")
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
+            >
+              In News
+            </Link>
+
+            {/* GALLERY */}
+            <Link
+              to="/gallery"
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname.startsWith("/gallery")
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
+            >
+              Gallery
+            </Link>
+
+            {/* PATIENT GUIDE */}
+            <Link
+              to="/patients-education"
+              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+                location.pathname.startsWith("/patients-education")
+                  ? "text-pink-800"
+                  : "text-gray-900 hover:text-pink-800"
+              }`}
+            >
+              Patients Guide
+            </Link>
+          </nav>
+
+          {/* =====================================================
+              DESKTOP APPOINTMENT BUTTON
+          ===================================================== */}
+          <Link
+            to="/book-your-appointment"
+            className="hidden shrink-0 items-center gap-2 rounded-xl bg-pink-800 px-5 py-3 text-[13px] font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-900 hover:shadow-lg lg:flex"
+          >
+            <CalendarDays size={15} />
+            <span>Make an Appointment</span>
+          </Link>
+
+          {/* =====================================================
+              MOBILE MENU BUTTON
+          ===================================================== */}
+          <button
+            type="button"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            className="relative z-[120] flex h-11 w-11 items-center justify-center rounded-xl border border-gray-200 text-pink-800 transition-all duration-300 hover:border-pink-800 hover:bg-pink-50 lg:hidden"
+          >
+            <span className="relative flex h-5 w-5 items-center justify-center">
+
+              {/* Hamburger */}
+              <Menu
+                size={25}
+                strokeWidth={1.8}
+                className={`absolute transition-all duration-300 ${
+                  mobileMenuOpen
+                    ? "rotate-90 scale-0 opacity-0"
+                    : "rotate-0 scale-100 opacity-100"
+                }`}
+              />
+
+              {/* X */}
+              <X
+                size={25}
+                strokeWidth={1.8}
+                className={`absolute transition-all duration-300 ${
+                  mobileMenuOpen
+                    ? "rotate-0 scale-100 opacity-100"
+                    : "-rotate-90 scale-0 opacity-0"
+                }`}
+              />
+            </span>
+          </button>
+        </div>
+      </header>
+
+      {/* =========================================================
+          MOBILE FULL SCREEN MENU
+      ========================================================= */}
+      <div
+        className={`fixed inset-0 z-[110] bg-white lg:hidden ${
+          mobileMenuOpen
+            ? "pointer-events-auto visible"
+            : "pointer-events-none invisible"
+        }`}
+      >
+        <div
+          className={`h-full overflow-y-auto px-5 pb-10 pt-[110px] transition-all duration-500 ${
+            mobileMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-6 opacity-0"
+          }`}
+        >
+          <div className="mx-auto max-w-xl">
+
+            {/* Mobile Navigation */}
+            <nav className="space-y-1">
+
+              {/* HOME */}
+              <Link
+                to="/"
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname === "/"
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
-                Patients Guide
-              </NavLink>
+                Home
+                <ChevronRight size={18} />
+              </Link>
 
-              <NavLink
-                to="/achievments"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
+              {/* ABOUT */}
+              <Link
+                to="/about"
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname.startsWith("/about")
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
-                Success Rate
-              </NavLink>
+                About Dr. Vandana
+                <ChevronRight size={18} />
+              </Link>
 
-              <NavLink
-                to="/ivf-team"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
+              {/* =================================================
+                  MOBILE SPECIALITIES
+              ================================================= */}
+              <div className="overflow-hidden rounded-xl border border-gray-100">
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    setMobileOpenCategory(
+                      mobileOpenCategory === "specialities"
+                        ? null
+                        : "specialities"
+                    )
+                  }
+                  className={`flex w-full items-center justify-between px-4 py-4 text-left text-base font-medium transition-colors ${
+                    mobileOpenCategory === "specialities"
+                      ? "bg-pink-800 text-white"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                  }`}
+                >
+                  <span>Specialities</span>
+
+                  <ChevronDown
+                    size={19}
+                    className={`transition-transform duration-300 ${
+                      mobileOpenCategory === "specialities"
+                        ? "rotate-180"
+                        : ""
+                    }`}
+                  />
+                </button>
+
+                {/* Specialities Accordion */}
+                <div
+                  className={`grid transition-[grid-template-rows] duration-400 ${
+                    mobileOpenCategory === "specialities"
+                      ? "grid-rows-[1fr]"
+                      : "grid-rows-[0fr]"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="space-y-2 bg-gray-50 p-3">
+
+                      {treatmentsData.map((category) => {
+                        const isOpen =
+                          mobileOpenCategory === category.key;
+
+                        return (
+                          <div
+                            key={category.key}
+                            className="overflow-hidden rounded-xl border border-gray-100 bg-white"
+                          >
+                            {/* Category */}
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setMobileOpenCategory(
+                                  isOpen ? "specialities" : category.key
+                                )
+                              }
+                              className={`flex w-full items-center justify-between px-4 py-3.5 text-left transition-all duration-200 ${
+                                isOpen
+                                  ? "text-pink-800"
+                                  : "text-gray-700"
+                              }`}
+                            >
+                              <span className="pr-3 text-sm font-semibold">
+                                {category.category}
+                              </span>
+
+                              <ChevronDown
+                                size={17}
+                                className={`shrink-0 transition-transform duration-300 ${
+                                  isOpen ? "rotate-180" : ""
+                                }`}
+                              />
+                            </button>
+
+                            {/* Treatments */}
+                            <div
+                              className={`grid transition-[grid-template-rows] duration-300 ${
+                                isOpen
+                                  ? "grid-rows-[1fr]"
+                                  : "grid-rows-[0fr]"
+                              }`}
+                            >
+                              <div className="overflow-hidden">
+                                <div className="border-t border-gray-100 bg-gray-50 px-3 py-2">
+
+                                  {category.treatments.map(
+                                    (treatment) => (
+                                      <Link
+                                        key={treatment.title}
+                                        to={`/${treatment.link}`}
+                                        onClick={closeMobileMenu}
+                                        className="group flex items-center justify-between border-b border-gray-100 px-2 py-3 last:border-0"
+                                      >
+                                        <span className="pr-3 text-[13px] text-gray-600 transition-colors group-hover:text-pink-800">
+                                          {treatment.title}
+                                        </span>
+
+                                        <ChevronRight
+                                          size={15}
+                                          className="shrink-0 text-gray-300 transition-all duration-200 group-hover:translate-x-1 group-hover:text-pink-800"
+                                        />
+                                      </Link>
+                                    )
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* ACHIEVEMENTS */}
+              <Link
+                to="/achievements"
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname.startsWith("/achievements")
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
-                Our IVF Team
-              </NavLink>
+                Achievements
+                <ChevronRight size={18} />
+              </Link>
 
-              <NavLink
-                to="/news-paper-images"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
+              {/* IN NEWS */}
+              <Link
+                to="/news"
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname.startsWith("/news")
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
                 In News
-              </NavLink>
+                <ChevronRight size={18} />
+              </Link>
 
-              <NavLink
+              {/* GALLERY */}
+              <Link
                 to="/gallery"
-                onClick={closeAllMenus}
-                className={({ isActive }) =>
-                  `py-3 border-b font-semibold ${isActive
-                    ? "text-rose-800"
-                    : "text-black"
-                  }`
-                }
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname.startsWith("/gallery")
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
                 Gallery
-              </NavLink>
+                <ChevronRight size={18} />
+              </Link>
 
-              <NavLink
-                to="/book-appointment"
-                onClick={closeAllMenus}
-                className="mt-4 text-center bg-pink-800 text-white py-3 rounded-lg font-semibold hover:bg-pink-900 transition"
+              {/* PATIENT GUIDE */}
+              <Link
+                to="/patients-education"
+                onClick={closeMobileMenu}
+                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                  location.pathname.startsWith("/patients-education")
+                    ? "bg-pink-50 text-pink-800"
+                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                }`}
               >
+                Patients Guide
+                <ChevronRight size={18} />
+              </Link>
+
+              {/* =================================================
+                  MOBILE APPOINTMENT
+              ================================================= */}
+              <Link
+                to="/book-your-appointment"
+                onClick={closeMobileMenu}
+                className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-pink-800 px-5 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-pink-900"
+              >
+                <CalendarDays size={18} />
                 Make an Appointment
-              </NavLink>
+              </Link>
+            </nav>
+
+            {/* =================================================
+                MOBILE CONTACT
+            ================================================= */}
+            <div className="mt-8 border-t border-gray-100 pt-6">
+
+              <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
+                Contact
+              </p>
+
+              <div className="space-y-3">
+
+                <a
+                  href="tel:+916390103002"
+                  className="flex items-center gap-3 text-sm text-gray-600"
+                >
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                    <Phone size={16} />
+                  </span>
+
+                  +91 6390103002
+                </a>
+
+                <a
+                  href="tel:+916390103004"
+                  className="flex items-center gap-3 text-sm text-gray-600"
+                >
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                    <Phone size={16} />
+                  </span>
+
+                  +91 6390103004
+                </a>
+
+                <a
+                  href="tel:+919151037784"
+                  className="flex items-center gap-3 text-sm text-gray-600"
+                >
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                    <Phone size={16} />
+                  </span>
+
+                  +91 9151037784
+                </a>
+              </div>
+
+              <div className="mt-5 flex items-start gap-3 rounded-xl bg-gray-50 p-4 text-sm text-gray-600">
+                <MapPin
+                  size={18}
+                  className="mt-0.5 shrink-0 text-pink-800"
+                />
+
+                <span>
+                  Jeevan Jyoti Hospital,
+                  <br />
+                  Prayagraj - 211003
+                </span>
+              </div>
             </div>
           </div>
-        )}
+        </div>
+      </div>
 
-      </nav>
+      {/* =========================================================
+          CUSTOM ANIMATIONS
+      ========================================================= */}
+      <style>{`
+        @keyframes fadeSlide {
+          from {
+            opacity: 0;
+            transform: translateY(5px);
+          }
 
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </>
   );
-}
+};
 
 export default NavigationB;
