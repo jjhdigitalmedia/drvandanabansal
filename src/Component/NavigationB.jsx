@@ -508,6 +508,7 @@
 
 // export default NavigationB;
 
+
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
@@ -521,20 +522,13 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-// IMPORTANT:
-// Apne actual logo ka path yahan lagao
-// Example:
-// import logo from "../assets/Logo.png";
-
-// Agar treatmentsData kisi separate file me hai:
 import { treatmentsData } from "../Pages/Treatements.jsx";
+import DrVandanaLogo from "../assets/DrVandanaLogo.png";
 
-
-const NavigationB = ({ logoSrc }) => {
+const Navbar = ({ logoSrc }) => {
   const location = useLocation();
 
-  const [desktopSpecialityOpen, setDesktopSpecialityOpen] =
-    useState(false);
+  const [desktopSpecialityOpen, setDesktopSpecialityOpen] = useState(false);
 
   const [activeCategory, setActiveCategory] = useState(
     treatmentsData?.[0]?.key || null
@@ -542,17 +536,23 @@ const NavigationB = ({ logoSrc }) => {
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Mobile Specialities main accordion
+  const [mobileSpecialitiesOpen, setMobileSpecialitiesOpen] = useState(false);
+
+  // Mobile individual category accordion
   const [mobileOpenCategory, setMobileOpenCategory] = useState(null);
 
   const [scrolled, setScrolled] = useState(false);
 
-  // ---------------------------------------------
-  // Scroll Effect
-  // ---------------------------------------------
+  // =========================================================
+  // SCROLL EFFECT
+  // =========================================================
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -561,18 +561,19 @@ const NavigationB = ({ logoSrc }) => {
     };
   }, []);
 
-  // ---------------------------------------------
-  // Close Mobile Menu on Route Change
-  // ---------------------------------------------
+  // =========================================================
+  // CLOSE MENUS ON ROUTE CHANGE
+  // =========================================================
   useEffect(() => {
     setMobileMenuOpen(false);
+    setMobileSpecialitiesOpen(false);
     setMobileOpenCategory(null);
     setDesktopSpecialityOpen(false);
   }, [location.pathname]);
 
-  // ---------------------------------------------
-  // Prevent body scroll when mobile menu open
-  // ---------------------------------------------
+  // =========================================================
+  // PREVENT BODY SCROLL WHEN MOBILE MENU IS OPEN
+  // =========================================================
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -585,14 +586,16 @@ const NavigationB = ({ logoSrc }) => {
     };
   }, [mobileMenuOpen]);
 
-  // ---------------------------------------------
-  // ESC Key
-  // ---------------------------------------------
+  // =========================================================
+  // ESC KEY
+  // =========================================================
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") {
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
         setDesktopSpecialityOpen(false);
         setMobileMenuOpen(false);
+        setMobileSpecialitiesOpen(false);
+        setMobileOpenCategory(null);
       }
     };
 
@@ -603,27 +606,50 @@ const NavigationB = ({ logoSrc }) => {
     };
   }, []);
 
-  // ---------------------------------------------
-  // Active Category
-  // ---------------------------------------------
+  // =========================================================
+  // SELECTED DESKTOP CATEGORY
+  // =========================================================
   const selectedCategory = treatmentsData?.find(
     (category) => category.key === activeCategory
   );
 
-  // ---------------------------------------------
-  // Mobile Accordion
-  // ---------------------------------------------
+  // =========================================================
+  // CLOSE MOBILE MENU
+  // =========================================================
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setMobileSpecialitiesOpen(false);
+    setMobileOpenCategory(null);
+  };
+
+  // =========================================================
+  // MOBILE SPECIALITIES TOGGLE
+  // =========================================================
+  const toggleMobileSpecialities = () => {
+    setMobileSpecialitiesOpen((prev) => !prev);
+
+    // If closing Specialities, also close category
+    if (mobileSpecialitiesOpen) {
+      setMobileOpenCategory(null);
+    }
+  };
+
+  // =========================================================
+  // MOBILE CATEGORY TOGGLE
+  // =========================================================
   const toggleMobileCategory = (key) => {
     setMobileOpenCategory((prev) => (prev === key ? null : key));
   };
 
-  // ---------------------------------------------
-  // Close Mobile Menu
-  // ---------------------------------------------
-  const closeMobileMenu = () => {
-    setMobileMenuOpen(false);
-    setMobileOpenCategory(null);
-  };
+  // =========================================================
+  // COMMON DESKTOP NAV LINK CLASS
+  // =========================================================
+  const desktopLinkClass = (active) =>
+    `relative flex h-full items-center text-[14px] font-medium transition-colors duration-200 ${
+      active
+        ? "text-pink-800"
+        : "text-gray-900 hover:text-pink-800"
+    }`;
 
   return (
     <>
@@ -632,12 +658,13 @@ const NavigationB = ({ logoSrc }) => {
       ========================================================= */}
       <div
         className={`hidden lg:block bg-pink-800 text-white transition-all duration-300 ${
-          scrolled ? "h-0 overflow-hidden opacity-0" : "h-[41px] opacity-100"
+          scrolled
+            ? "h-0 overflow-hidden opacity-0"
+            : "h-[41px] opacity-100"
         }`}
       >
         <div className="mx-auto flex h-full max-w-[1920px] items-center justify-between px-6 xl:px-10">
-          
-          {/* Phone Numbers */}
+          {/* PHONE NUMBERS */}
           <div className="flex items-center gap-5 text-[13px] font-medium">
             <a
               href="tel:+916390103002"
@@ -661,10 +688,12 @@ const NavigationB = ({ logoSrc }) => {
             </a>
           </div>
 
-          {/* Address */}
+          {/* ADDRESS */}
           <div className="flex items-center gap-1.5 text-[13px]">
             <MapPin size={14} strokeWidth={2} />
-            <span>Jeevan Jyoti Hospital, Prayagraj - 211003</span>
+            <span>
+              Jeevan Jyoti Hospital, Prayagraj - 211003
+            </span>
           </div>
         </div>
       </div>
@@ -684,10 +713,10 @@ const NavigationB = ({ logoSrc }) => {
           ===================================================== */}
           <Link
             to="/"
-            className="relative z-[120] flex shrink-0 items-center"
             onClick={closeMobileMenu}
+            className="relative z-[130] flex shrink-0 items-center"
           >
-            {logoSrc ? (
+            {/* {logoSrc ? (
               <img
                 src={logoSrc}
                 alt="Dr. Vandana Bansal"
@@ -709,38 +738,37 @@ const NavigationB = ({ logoSrc }) => {
                   </div>
                 </div>
               </div>
-            )}
+            )} */}
+             <img
+                src={DrVandanaLogo}
+                alt="Dr. Vandana Bansal"
+                className="h-[62px] w-auto object-contain"
+              />
           </Link>
 
           {/* =====================================================
               DESKTOP NAVIGATION
           ===================================================== */}
-          <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
+          <nav className="hidden h-full items-center gap-7 lg:flex xl:gap-8">
 
             {/* HOME */}
             <Link
               to="/"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
-                location.pathname === "/"
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              className={desktopLinkClass(location.pathname === "/")}
             >
               Home
 
               {location.pathname === "/" && (
-                <span className="absolute bottom-[19px] left-0 h-[2px] w-full origin-left animate-[scaleX_.25s_ease-out] bg-pink-800" />
+                <span className="absolute bottom-[19px] left-0 h-[2px] w-full bg-pink-800" />
               )}
             </Link>
 
             {/* ABOUT */}
             <Link
               to="/about"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+              className={desktopLinkClass(
                 location.pathname.startsWith("/about")
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              )}
             >
               About Dr. Vandana
 
@@ -750,14 +778,14 @@ const NavigationB = ({ logoSrc }) => {
             </Link>
 
             {/* =================================================
-                SPECIALITIES MEGA MENU
+                SPECIALITIES
             ================================================= */}
             <div
-              className="relative h-[88px] flex items-center"
+              className="relative flex h-full items-center"
               onMouseEnter={() => {
                 setDesktopSpecialityOpen(true);
 
-                if (!activeCategory && treatmentsData.length > 0) {
+                if (!activeCategory && treatmentsData?.length) {
                   setActiveCategory(treatmentsData[0].key);
                 }
               }}
@@ -767,7 +795,9 @@ const NavigationB = ({ logoSrc }) => {
             >
               <button
                 type="button"
-                className={`group flex items-center gap-1.5 py-8 text-[14px] font-medium transition-colors duration-200 ${
+                aria-haspopup="true"
+                aria-expanded={desktopSpecialityOpen}
+                className={`group flex items-center gap-1.5 text-[14px] font-medium transition-colors duration-200 ${
                   desktopSpecialityOpen
                     ? "text-pink-800"
                     : "text-gray-900 hover:text-pink-800"
@@ -784,9 +814,9 @@ const NavigationB = ({ logoSrc }) => {
                 />
               </button>
 
-              {/* =============================================
+              {/* =================================================
                   DESKTOP MEGA MENU
-              ============================================= */}
+              ================================================= */}
               <div
                 className={`absolute right-1/2 top-[88px] z-[200] w-[min(1120px,calc(100vw-40px))] translate-x-1/2 transform-gpu transition-all duration-300 ${
                   desktopSpecialityOpen
@@ -796,16 +826,15 @@ const NavigationB = ({ logoSrc }) => {
               >
                 <div className="overflow-hidden rounded-b-2xl border border-gray-100 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
-                  {/* Top Accent */}
+                  {/* TOP ACCENT */}
                   <div className="h-1 w-full bg-pink-800" />
 
                   <div className="grid grid-cols-[330px_1fr]">
 
-                    {/* ==========================================
+                    {/* =================================================
                         CATEGORY COLUMN
-                    ========================================== */}
+                    ================================================= */}
                     <div className="border-r border-gray-100 bg-[#fafafa] p-5">
-
                       <div className="mb-4 px-3">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
                           Specialities
@@ -817,7 +846,7 @@ const NavigationB = ({ logoSrc }) => {
                       </div>
 
                       <div className="space-y-1">
-                        {treatmentsData.map((category) => {
+                        {treatmentsData?.map((category) => {
                           const isActive =
                             activeCategory === category.key;
 
@@ -855,17 +884,16 @@ const NavigationB = ({ logoSrc }) => {
                       </div>
                     </div>
 
-                    {/* ==========================================
+                    {/* =================================================
                         TREATMENTS COLUMN
-                    ========================================== */}
+                    ================================================= */}
                     <div className="min-h-[455px] bg-white p-7">
-
                       {selectedCategory && (
                         <div
                           key={selectedCategory.key}
                           className="animate-[fadeSlide_.25s_ease-out]"
                         >
-                          {/* Heading */}
+                          {/* HEADING */}
                           <div className="mb-6 flex items-end justify-between border-b border-gray-100 pb-4">
                             <div>
                               <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
@@ -878,13 +906,14 @@ const NavigationB = ({ logoSrc }) => {
                             </div>
 
                             <span className="rounded-full bg-pink-50 px-3 py-1 text-[11px] font-medium text-pink-800">
-                              {selectedCategory.treatments.length} Services
+                              {selectedCategory.treatments?.length || 0}{" "}
+                              Services
                             </span>
                           </div>
 
-                          {/* Treatment Grid */}
+                          {/* TREATMENT GRID */}
                           <div className="grid grid-cols-2 gap-3">
-                            {selectedCategory.treatments.map(
+                            {selectedCategory.treatments?.map(
                               (treatment, index) => (
                                 <Link
                                   key={treatment.title}
@@ -899,9 +928,11 @@ const NavigationB = ({ logoSrc }) => {
                                       {treatment.title}
                                     </h4>
 
-                                    <p className="mt-1 line-clamp-1 text-[11px] text-gray-400">
-                                      {treatment.description}
-                                    </p>
+                                    {treatment.description && (
+                                      <p className="mt-1 line-clamp-1 text-[11px] text-gray-400">
+                                        {treatment.description}
+                                      </p>
+                                    )}
                                   </div>
 
                                   <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-50 text-gray-400 transition-all duration-200 group-hover:bg-pink-800 group-hover:text-white">
@@ -922,11 +953,9 @@ const NavigationB = ({ logoSrc }) => {
             {/* ACHIEVEMENTS */}
             <Link
               to="/achievements"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+              className={desktopLinkClass(
                 location.pathname.startsWith("/achievements")
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              )}
             >
               Achievements
             </Link>
@@ -934,11 +963,9 @@ const NavigationB = ({ logoSrc }) => {
             {/* IN NEWS */}
             <Link
               to="/news"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+              className={desktopLinkClass(
                 location.pathname.startsWith("/news")
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              )}
             >
               In News
             </Link>
@@ -946,11 +973,9 @@ const NavigationB = ({ logoSrc }) => {
             {/* GALLERY */}
             <Link
               to="/gallery"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+              className={desktopLinkClass(
                 location.pathname.startsWith("/gallery")
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              )}
             >
               Gallery
             </Link>
@@ -958,18 +983,16 @@ const NavigationB = ({ logoSrc }) => {
             {/* PATIENT GUIDE */}
             <Link
               to="/patients-education"
-              className={`relative py-8 text-[14px] font-medium transition-colors duration-200 ${
+              className={desktopLinkClass(
                 location.pathname.startsWith("/patients-education")
-                  ? "text-pink-800"
-                  : "text-gray-900 hover:text-pink-800"
-              }`}
+              )}
             >
               Patients Guide
             </Link>
           </nav>
 
           {/* =====================================================
-              DESKTOP APPOINTMENT BUTTON
+              DESKTOP APPOINTMENT
           ===================================================== */}
           <Link
             to="/book-your-appointment"
@@ -987,11 +1010,10 @@ const NavigationB = ({ logoSrc }) => {
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="relative z-[120] flex h-11 w-11 items-center justify-center rounded-xl border border-gray-200 text-pink-800 transition-all duration-300 hover:border-pink-800 hover:bg-pink-50 lg:hidden"
+            className="relative z-[130] flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gray-200 text-pink-800 transition-all duration-300 hover:border-pink-800 hover:bg-pink-50 lg:hidden"
           >
-            <span className="relative flex h-5 w-5 items-center justify-center">
-
-              {/* Hamburger */}
+            <span className="relative flex h-6 w-6 items-center justify-center">
+              {/* HAMBURGER */}
               <Menu
                 size={25}
                 strokeWidth={1.8}
@@ -1002,7 +1024,7 @@ const NavigationB = ({ logoSrc }) => {
                 }`}
               />
 
-              {/* X */}
+              {/* CROSS */}
               <X
                 size={25}
                 strokeWidth={1.8}
@@ -1018,307 +1040,330 @@ const NavigationB = ({ logoSrc }) => {
       </header>
 
       {/* =========================================================
-          MOBILE FULL SCREEN MENU
+          MOBILE MENU
+          Navbar ke neeche se start hoga.
+          Navbar visible rahega.
       ========================================================= */}
       <div
-        className={`fixed inset-0 z-[110] bg-white lg:hidden ${
+        className={`fixed left-0 right-0 top-[88px] z-[90] lg:hidden ${
           mobileMenuOpen
             ? "pointer-events-auto visible"
             : "pointer-events-none invisible"
         }`}
+        style={{
+          height: "calc(100dvh - 88px)",
+        }}
       >
+        {/* BACKDROP */}
         <div
-          className={`h-full overflow-y-auto px-5 pb-10 pt-[110px] transition-all duration-500 ${
+          className={`absolute inset-0 bg-black/10 transition-opacity duration-300 ${
+            mobileMenuOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={closeMobileMenu}
+        />
+
+        {/* MENU PANEL */}
+        <div
+          className={`relative h-full w-full overflow-hidden bg-white shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-400 ${
             mobileMenuOpen
               ? "translate-y-0 opacity-100"
-              : "-translate-y-6 opacity-0"
+              : "-translate-y-4 opacity-0"
           }`}
         >
-          <div className="mx-auto max-w-xl">
-
-            {/* Mobile Navigation */}
-            <nav className="space-y-1">
-
-              {/* HOME */}
-              <Link
-                to="/"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname === "/"
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                Home
-                <ChevronRight size={18} />
-              </Link>
-
-              {/* ABOUT */}
-              <Link
-                to="/about"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname.startsWith("/about")
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                About Dr. Vandana
-                <ChevronRight size={18} />
-              </Link>
+          {/* SCROLLABLE CONTENT */}
+          <div className="h-full overflow-y-auto overscroll-contain px-5 pb-10 pt-5 sm:px-8">
+            <div className="mx-auto max-w-xl">
 
               {/* =================================================
-                  MOBILE SPECIALITIES
+                  MOBILE NAVIGATION
               ================================================= */}
-              <div className="overflow-hidden rounded-xl border border-gray-100">
+              <nav className="space-y-1.5">
 
-                <button
-                  type="button"
-                  onClick={() =>
-                    setMobileOpenCategory(
-                      mobileOpenCategory === "specialities"
-                        ? null
-                        : "specialities"
-                    )
-                  }
-                  className={`flex w-full items-center justify-between px-4 py-4 text-left text-base font-medium transition-colors ${
-                    mobileOpenCategory === "specialities"
-                      ? "bg-pink-800 text-white"
+                {/* HOME */}
+                <Link
+                  to="/"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname === "/"
+                      ? "bg-pink-50 text-pink-800"
                       : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
                   }`}
                 >
-                  <span>Specialities</span>
+                  <span>Home</span>
+                  <ChevronRight size={18} />
+                </Link>
 
-                  <ChevronDown
-                    size={19}
-                    className={`transition-transform duration-300 ${
-                      mobileOpenCategory === "specialities"
-                        ? "rotate-180"
-                        : ""
-                    }`}
-                  />
-                </button>
-
-                {/* Specialities Accordion */}
-                <div
-                  className={`grid transition-[grid-template-rows] duration-400 ${
-                    mobileOpenCategory === "specialities"
-                      ? "grid-rows-[1fr]"
-                      : "grid-rows-[0fr]"
+                {/* ABOUT */}
+                <Link
+                  to="/about"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname.startsWith("/about")
+                      ? "bg-pink-50 text-pink-800"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
                   }`}
                 >
-                  <div className="overflow-hidden">
-                    <div className="space-y-2 bg-gray-50 p-3">
+                  <span>About Dr. Vandana</span>
+                  <ChevronRight size={18} />
+                </Link>
 
-                      {treatmentsData.map((category) => {
-                        const isOpen =
-                          mobileOpenCategory === category.key;
+                {/* =================================================
+                    MOBILE SPECIALITIES
+                ================================================= */}
+                <div className="overflow-hidden rounded-xl border border-gray-100">
 
-                        return (
-                          <div
-                            key={category.key}
-                            className="overflow-hidden rounded-xl border border-gray-100 bg-white"
-                          >
-                            {/* Category */}
-                            <button
-                              type="button"
-                              onClick={() =>
-                                setMobileOpenCategory(
-                                  isOpen ? "specialities" : category.key
-                                )
-                              }
-                              className={`flex w-full items-center justify-between px-4 py-3.5 text-left transition-all duration-200 ${
-                                isOpen
-                                  ? "text-pink-800"
-                                  : "text-gray-700"
-                              }`}
-                            >
-                              <span className="pr-3 text-sm font-semibold">
-                                {category.category}
-                              </span>
+                  {/* SPECIALITIES HEADER */}
+                  <button
+                    type="button"
+                    aria-expanded={mobileSpecialitiesOpen}
+                    onClick={toggleMobileSpecialities}
+                    className={`flex w-full items-center justify-between px-4 py-4 text-left text-base font-medium transition-colors ${
+                      mobileSpecialitiesOpen
+                        ? "bg-pink-800 text-white"
+                        : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                    }`}
+                  >
+                    <span>Specialities</span>
 
-                              <ChevronDown
-                                size={17}
-                                className={`shrink-0 transition-transform duration-300 ${
-                                  isOpen ? "rotate-180" : ""
-                                }`}
-                              />
-                            </button>
+                    <ChevronDown
+                      size={19}
+                      className={`transition-transform duration-300 ${
+                        mobileSpecialitiesOpen
+                          ? "rotate-180"
+                          : "rotate-0"
+                      }`}
+                    />
+                  </button>
 
-                            {/* Treatments */}
+                  {/* SPECIALITIES CONTENT */}
+                  <div
+                    className={`grid transition-[grid-template-rows] duration-300 ${
+                      mobileSpecialitiesOpen
+                        ? "grid-rows-[1fr]"
+                        : "grid-rows-[0fr]"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <div className="space-y-2 bg-gray-50 p-3">
+
+                        {treatmentsData?.map((category) => {
+                          const isOpen =
+                            mobileOpenCategory === category.key;
+
+                          return (
                             <div
-                              className={`grid transition-[grid-template-rows] duration-300 ${
-                                isOpen
-                                  ? "grid-rows-[1fr]"
-                                  : "grid-rows-[0fr]"
-                              }`}
+                              key={category.key}
+                              className="overflow-hidden rounded-xl border border-gray-100 bg-white"
                             >
-                              <div className="overflow-hidden">
-                                <div className="border-t border-gray-100 bg-gray-50 px-3 py-2">
+                              {/* CATEGORY */}
+                              <button
+                                type="button"
+                                aria-expanded={isOpen}
+                                onClick={() =>
+                                  toggleMobileCategory(category.key)
+                                }
+                                className={`flex w-full items-center justify-between px-4 py-3.5 text-left transition-all duration-200 ${
+                                  isOpen
+                                    ? "bg-pink-50 text-pink-800"
+                                    : "text-gray-700"
+                                }`}
+                              >
+                                <span className="pr-3 text-sm font-semibold">
+                                  {category.category}
+                                </span>
 
-                                  {category.treatments.map(
-                                    (treatment) => (
-                                      <Link
-                                        key={treatment.title}
-                                        to={`/${treatment.link}`}
-                                        onClick={closeMobileMenu}
-                                        className="group flex items-center justify-between border-b border-gray-100 px-2 py-3 last:border-0"
-                                      >
-                                        <span className="pr-3 text-[13px] text-gray-600 transition-colors group-hover:text-pink-800">
-                                          {treatment.title}
-                                        </span>
+                                <ChevronDown
+                                  size={17}
+                                  className={`shrink-0 transition-transform duration-300 ${
+                                    isOpen
+                                      ? "rotate-180"
+                                      : "rotate-0"
+                                  }`}
+                                />
+                              </button>
 
-                                        <ChevronRight
-                                          size={15}
-                                          className="shrink-0 text-gray-300 transition-all duration-200 group-hover:translate-x-1 group-hover:text-pink-800"
-                                        />
-                                      </Link>
-                                    )
-                                  )}
+                              {/* TREATMENTS */}
+                              <div
+                                className={`grid transition-[grid-template-rows] duration-300 ${
+                                  isOpen
+                                    ? "grid-rows-[1fr]"
+                                    : "grid-rows-[0fr]"
+                                }`}
+                              >
+                                <div className="overflow-hidden">
+                                  <div className="border-t border-gray-100 bg-gray-50 px-3 py-2">
+
+                                    {category.treatments?.map(
+                                      (treatment) => (
+                                        <Link
+                                          key={treatment.title}
+                                          to={`/${treatment.link}`}
+                                          onClick={closeMobileMenu}
+                                          className="group flex items-center justify-between border-b border-gray-100 px-2 py-3 last:border-0"
+                                        >
+                                          <span className="pr-3 text-[13px] text-gray-600 transition-colors group-hover:text-pink-800">
+                                            {treatment.title}
+                                          </span>
+
+                                          <ChevronRight
+                                            size={15}
+                                            className="shrink-0 text-gray-300 transition-all duration-200 group-hover:translate-x-1 group-hover:text-pink-800"
+                                          />
+                                        </Link>
+                                      )
+                                    )}
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        );
-                      })}
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* ACHIEVEMENTS */}
-              <Link
-                to="/achievements"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname.startsWith("/achievements")
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                Achievements
-                <ChevronRight size={18} />
-              </Link>
+                {/* ACHIEVEMENTS */}
+                <Link
+                  to="/achievements"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname.startsWith("/achievements")
+                      ? "bg-pink-50 text-pink-800"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                  }`}
+                >
+                  <span>Achievements</span>
+                  <ChevronRight size={18} />
+                </Link>
 
-              {/* IN NEWS */}
-              <Link
-                to="/news"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname.startsWith("/news")
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                In News
-                <ChevronRight size={18} />
-              </Link>
+                {/* IN NEWS */}
+                <Link
+                  to="/news"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname.startsWith("/news")
+                      ? "bg-pink-50 text-pink-800"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                  }`}
+                >
+                  <span>In News</span>
+                  <ChevronRight size={18} />
+                </Link>
 
-              {/* GALLERY */}
-              <Link
-                to="/gallery"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname.startsWith("/gallery")
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                Gallery
-                <ChevronRight size={18} />
-              </Link>
+                {/* GALLERY */}
+                <Link
+                  to="/gallery"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname.startsWith("/gallery")
+                      ? "bg-pink-50 text-pink-800"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                  }`}
+                >
+                  <span>Gallery</span>
+                  <ChevronRight size={18} />
+                </Link>
 
-              {/* PATIENT GUIDE */}
-              <Link
-                to="/patients-education"
-                onClick={closeMobileMenu}
-                className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
-                  location.pathname.startsWith("/patients-education")
-                    ? "bg-pink-50 text-pink-800"
-                    : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
-                }`}
-              >
-                Patients Guide
-                <ChevronRight size={18} />
-              </Link>
+                {/* PATIENT GUIDE */}
+                <Link
+                  to="/patients-education"
+                  onClick={closeMobileMenu}
+                  className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
+                    location.pathname.startsWith("/patients-education")
+                      ? "bg-pink-50 text-pink-800"
+                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                  }`}
+                >
+                  <span>Patients Guide</span>
+                  <ChevronRight size={18} />
+                </Link>
+
+                {/* =================================================
+                    APPOINTMENT
+                ================================================= */}
+                <Link
+                  to="/book-your-appointment"
+                  onClick={closeMobileMenu}
+                  className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-pink-800 px-5 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-pink-900"
+                >
+                  <CalendarDays size={18} />
+                  <span>Make an Appointment</span>
+                </Link>
+              </nav>
 
               {/* =================================================
-                  MOBILE APPOINTMENT
+                  MOBILE CONTACT
               ================================================= */}
-              <Link
-                to="/book-your-appointment"
-                onClick={closeMobileMenu}
-                className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-pink-800 px-5 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-pink-900"
-              >
-                <CalendarDays size={18} />
-                Make an Appointment
-              </Link>
-            </nav>
+              <div className="mt-8 border-t border-gray-100 pt-6">
 
-            {/* =================================================
-                MOBILE CONTACT
-            ================================================= */}
-            <div className="mt-8 border-t border-gray-100 pt-6">
+                <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
+                  Contact
+                </p>
 
-              <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
-                Contact
-              </p>
+                <div className="space-y-3">
 
-              <div className="space-y-3">
+                  {/* PHONE 1 */}
+                  <a
+                    href="tel:+916390103002"
+                    className="flex items-center gap-3 text-sm text-gray-600"
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                      <Phone size={16} />
+                    </span>
 
-                <a
-                  href="tel:+916390103002"
-                  className="flex items-center gap-3 text-sm text-gray-600"
-                >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
-                    <Phone size={16} />
+                    +91 6390103002
+                  </a>
+
+                  {/* PHONE 2 */}
+                  <a
+                    href="tel:+916390103004"
+                    className="flex items-center gap-3 text-sm text-gray-600"
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                      <Phone size={16} />
+                    </span>
+
+                    +91 6390103004
+                  </a>
+
+                  {/* PHONE 3 */}
+                  <a
+                    href="tel:+919151037784"
+                    className="flex items-center gap-3 text-sm text-gray-600"
+                  >
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                      <Phone size={16} />
+                    </span>
+
+                    +91 9151037784
+                  </a>
+                </div>
+
+                {/* ADDRESS */}
+                <div className="mt-5 flex items-start gap-3 rounded-xl bg-gray-50 p-4 text-sm text-gray-600">
+                  <MapPin
+                    size={18}
+                    className="mt-0.5 shrink-0 text-pink-800"
+                  />
+
+                  <span>
+                    Jeevan Jyoti Hospital,
+                    <br />
+                    Prayagraj - 211003
                   </span>
-
-                  +91 6390103002
-                </a>
-
-                <a
-                  href="tel:+916390103004"
-                  className="flex items-center gap-3 text-sm text-gray-600"
-                >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
-                    <Phone size={16} />
-                  </span>
-
-                  +91 6390103004
-                </a>
-
-                <a
-                  href="tel:+919151037784"
-                  className="flex items-center gap-3 text-sm text-gray-600"
-                >
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-50 text-pink-800">
-                    <Phone size={16} />
-                  </span>
-
-                  +91 9151037784
-                </a>
+                </div>
               </div>
 
-              <div className="mt-5 flex items-start gap-3 rounded-xl bg-gray-50 p-4 text-sm text-gray-600">
-                <MapPin
-                  size={18}
-                  className="mt-0.5 shrink-0 text-pink-800"
-                />
-
-                <span>
-                  Jeevan Jyoti Hospital,
-                  <br />
-                  Prayagraj - 211003
-                </span>
-              </div>
+              {/* BOTTOM SPACE */}
+              <div className="h-4" />
             </div>
           </div>
         </div>
       </div>
 
       {/* =========================================================
-          CUSTOM ANIMATIONS
+          ANIMATIONS
       ========================================================= */}
       <style>{`
         @keyframes fadeSlide {
@@ -1332,9 +1377,14 @@ const NavigationB = ({ logoSrc }) => {
             transform: translateY(0);
           }
         }
+
+        /* Better mobile scrollbar */
+        .overflow-y-auto {
+          scrollbar-width: thin;
+        }
       `}</style>
     </>
   );
 };
 
-export default NavigationB;
+export default Navbar;
