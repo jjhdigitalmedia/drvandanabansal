@@ -962,7 +962,7 @@ const Navbar = ({ logoSrc }) => {
 
             {/* IN NEWS */}
             <Link
-              to="/news"
+              to="/in-news"
               className={desktopLinkClass(
                 location.pathname.startsWith("/news")
               )}

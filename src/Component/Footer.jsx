@@ -339,7 +339,7 @@ const Footer = ({ logoSrc }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="group flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
+                className="group flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
               >
                 <Instagram
                   size={16}
@@ -352,7 +352,7 @@ const Footer = ({ logoSrc }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="group flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
+                className="group flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
               >
                 <Facebook
                   size={16}
@@ -365,7 +365,7 @@ const Footer = ({ logoSrc }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="group flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
+                className="group flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
               >
                 <Youtube
                   size={16}
@@ -435,7 +435,7 @@ const Footer = ({ logoSrc }) => {
                 href="tel:+916390103002"
                 className="group flex items-start gap-3"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-pink-50 text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
                   <Phone size={16} />
                 </span>
 
@@ -455,7 +455,7 @@ const Footer = ({ logoSrc }) => {
                 href="tel:+916390103004"
                 className="group flex items-start gap-3"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-pink-50 text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
                   <Phone size={16} />
                 </span>
 
@@ -475,7 +475,7 @@ const Footer = ({ logoSrc }) => {
                 href="tel:+919151037784"
                 className="group flex items-start gap-3"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-pink-50 text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
                   <Phone size={16} />
                 </span>
 
@@ -495,7 +495,7 @@ const Footer = ({ logoSrc }) => {
                 href="mailto:info@drvandanabansal.in"
                 className="group flex items-start gap-3"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-pink-50 text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
                   <Mail size={16} />
                 </span>
 
