@@ -964,7 +964,7 @@ const Navbar = ({ logoSrc }) => {
             <Link
               to="/in-news"
               className={desktopLinkClass(
-                location.pathname.startsWith("/news")
+                location.pathname.startsWith("/in-news")
               )}
             >
               In News
@@ -995,7 +995,7 @@ const Navbar = ({ logoSrc }) => {
               DESKTOP APPOINTMENT
           ===================================================== */}
           <Link
-            to="/book-your-appointment"
+            to="/book-appointment"
             className="hidden shrink-0 items-center gap-2 rounded-xl bg-pink-800 px-5 py-3 text-[13px] font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-pink-900 hover:shadow-lg lg:flex"
           >
             <CalendarDays size={15} />
@@ -1099,8 +1099,8 @@ const Navbar = ({ logoSrc }) => {
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname.startsWith("/about")
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>About Dr. Vandana</span>
@@ -1229,8 +1229,8 @@ const Navbar = ({ logoSrc }) => {
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname.startsWith("/achievements")
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>Achievements</span>
@@ -1239,12 +1239,12 @@ const Navbar = ({ logoSrc }) => {
 
                 {/* IN NEWS */}
                 <Link
-                  to="/news"
+                  to="/in-news"
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname.startsWith("/news")
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>In News</span>
@@ -1257,8 +1257,8 @@ const Navbar = ({ logoSrc }) => {
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname.startsWith("/gallery")
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>Gallery</span>
@@ -1271,8 +1271,8 @@ const Navbar = ({ logoSrc }) => {
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname.startsWith("/patients-education")
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>Patients Guide</span>
@@ -1283,7 +1283,7 @@ const Navbar = ({ logoSrc }) => {
                     APPOINTMENT
                 ================================================= */}
                 <Link
-                  to="/book-your-appointment"
+                  to="/book-appointment"
                   onClick={closeMobileMenu}
                   className="mt-5 flex items-center justify-center gap-2 rounded-xl bg-pink-800 px-5 py-4 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-pink-900"
                 >
@@ -1308,7 +1308,7 @@ const Navbar = ({ logoSrc }) => {
                     href="tel:+916390103002"
                     className="flex items-center gap-3 text-sm text-gray-600"
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-pink-800">
                       <Phone size={16} />
                     </span>
 
@@ -1320,7 +1320,7 @@ const Navbar = ({ logoSrc }) => {
                     href="tel:+916390103004"
                     className="flex items-center gap-3 text-sm text-gray-600"
                   >
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-pink-50 text-pink-800">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-pink-800">
                       <Phone size={16} />
                     </span>
 
@@ -1328,7 +1328,7 @@ const Navbar = ({ logoSrc }) => {
                   </a>
 
                   {/* PHONE 3 */}
-                  <a
+                  {/* <a
                     href="tel:+919151037784"
                     className="flex items-center gap-3 text-sm text-gray-600"
                   >
@@ -1337,7 +1337,7 @@ const Navbar = ({ logoSrc }) => {
                     </span>
 
                     +91 9151037784
-                  </a>
+                  </a> */}
                 </div>
 
                 {/* ADDRESS */}
