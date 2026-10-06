@@ -505,7 +505,7 @@ const Footer = ({ logoSrc }) => {
                   </p>
 
                   <p className="mt-0.5 break-all text-[13px] font-medium text-gray-700 transition-colors group-hover:text-pink-800">
-                    info@drvandanabansal.in
+                    drvandanabansal921.@gmail.com
                   </p>
                 </div>
               </a>

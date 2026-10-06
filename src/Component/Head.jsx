@@ -6,12 +6,12 @@ import { Autoplay } from "swiper/modules";
 
 import "../Style/Style.css";
 
+import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
 import VaginalLaserTreatment from "../assets/Banners/VaginalLaserTreatment.jpg";
 import LaparoscopicSurgery from "../assets/Banners/LaparoscopicSurgery.jpg";
 import HysteroscopySurgery from "../assets/Banners/HysteroscopySurgery.jpg";
 import InfertilityIVF from "../assets/Banners/InfertilityIVF.png";
 import AestheticGynae from "../assets/Banners/AestheticGynae.png";
-import BannerMainWebsite1 from "../assets/Banners/BannerMainWebsite1.png";
 import DrVandanaIntro from "../assets/Banners/DrVandanaIntro.png";
 import BannerMainWebsite1a from "../assets/Banners/BannerMainWebsite1a.png";
 

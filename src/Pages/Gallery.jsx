@@ -35,14 +35,17 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
+  
   { id: 7, src: OTA, category: "OT", title: "" },
   { id: 8, src: OTB, category: "OT", title: "" },
   { id: 9, src: OTC, category: "OT", title: "" },
+
   { id: 10, src: ConferenceA, category: "Events & Conferences", title: "" },
   { id: 11, src: ConferenceB, category: "Events & Conferences", title: "" },
   { id: 12, src: ConferenceC, category: "Events & Conferences", title: "" },
   { id: 13, src: ConferenceD, category: "Events & Conferences", title: "" },
   { id: 14, src: ConferenceE, category: "Events & Conferences", title: "" },
+
   { id: 15, src: IVFLabA, category: "IVF Lab", title: "" },
   { id: 16, src: IVFLabB, category: "IVF Lab", title: "" },
   { id: 17, src: IVFLabC, category: "IVF Lab", title: "" },

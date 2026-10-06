@@ -74,18 +74,6 @@ export const Articles = [
         slug: 'gynecological-checkup',
         component: GynecologicalCheckups
     },
-    {
-        id: 6,
-        title: "Common Infertility Myths You Should Stop Believing",
-        description:
-            "Separate myths from facts and understand the real causes of infertility.",
-        image:
-            IUIPic,
-        category: "IVF",
-        date: "30 Mar 2026",
-        slug: 'infertility-myths',
-        component: InfertilityMyths
-    },
 
   
 ];

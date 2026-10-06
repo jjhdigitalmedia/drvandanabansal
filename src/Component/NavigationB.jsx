@@ -835,7 +835,7 @@ const Navbar = ({ logoSrc }) => {
                         CATEGORY COLUMN
                     ================================================= */}
                     <div className="border-r border-gray-100 bg-[#fafafa] p-5">
-                      <div className="mb-4 px-3">
+                      {/* <div className="mb-4 px-3">
                         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-pink-800">
                           Specialities
                         </p>
@@ -843,7 +843,7 @@ const Navbar = ({ logoSrc }) => {
                         <p className="mt-1 text-sm text-gray-500">
                           Explore women's healthcare services
                         </p>
-                      </div>
+                      </div> */}
 
                       <div className="space-y-1">
                         {treatmentsData?.map((category) => {
@@ -905,7 +905,7 @@ const Navbar = ({ logoSrc }) => {
                               </h3>
                             </div>
 
-                            <span className="rounded-full bg-pink-50 px-3 py-1 text-[11px] font-medium text-pink-800">
+                            <span className="rounded-full bg-gray-50 px-3 py-1 text-[11px] font-medium text-pink-800">
                               {selectedCategory.treatments?.length || 0}{" "}
                               Services
                             </span>
@@ -918,7 +918,7 @@ const Navbar = ({ logoSrc }) => {
                                 <Link
                                   key={treatment.title}
                                   to={`/${treatment.link}`}
-                                  className="group flex items-center justify-between rounded-xl border border-gray-100 bg-white px-4 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:border-pink-100 hover:bg-pink-50/50 hover:shadow-sm"
+                                  className="group flex items-center justify-between rounded-xl border border-gray-100 bg-white px-4 py-3.5 transition-all duration-200 hover:-translate-y-0.5 hover:border-pink-100 hover:bg-gray-50/50 hover:shadow-sm"
                                   style={{
                                     animationDelay: `${index * 25}ms`,
                                   }}
@@ -1164,7 +1164,7 @@ const Navbar = ({ logoSrc }) => {
                                 }
                                 className={`flex w-full items-center justify-between px-4 py-3.5 text-left transition-all duration-200 ${
                                   isOpen
-                                    ? "bg-pink-50 text-pink-800"
+                                    ? "bg-gray-50 text-pink-800"
                                     : "text-gray-700"
                                 }`}
                               >
