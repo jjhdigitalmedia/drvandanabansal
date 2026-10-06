@@ -558,7 +558,7 @@ function Treatments() {
   return (
     <>
       <Helmet>
-        <title>Gynecology, IVF & Infertility Treatments in Prayagraj | Dr. Vandana Bansal</title>
+        <title>Gynecologys & Infertility Treatment by Dr. Vandana Bansal</title>
         <meta name="description" content="Discover advanced gynecology, IVF, infertility, pregnancy, laparoscopy, hysteroscopy, PCOS, and women’s health treatments by Dr. Vandana Bansal in Prayagraj with personalized and compassionate care." />
         <meta name="keywords" content="gynecology treatments in Prayagraj, IVF treatment Prayagraj, infertility specialist Prayagraj, gynecologist in Prayagraj, women health specialist, pregnancy care doctor, PCOS treatment, irregular periods treatment, laparoscopy surgeon Prayagraj, hysteroscopy treatment, fertility specialist Prayagraj, best gynecologist in Prayagraj, infertility treatment near me, female infertility doctor, high risk pregnancy specialist, ovarian cyst treatment, fibroid treatment, normal delivery doctor, Dr Vandana Bansal, IVF specialist Prayagraj" />
         <meta property="og:title" content="Best Gynecology Services" />
