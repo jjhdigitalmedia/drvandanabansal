@@ -7,6 +7,13 @@ import C from "../assets/Gallery/AwardsPhotos/C.jpg";
 import D from "../assets/Gallery/AwardsPhotos/D.jpg";
 import E from "../assets/Gallery/AwardsPhotos/E.jpg";
 import F from "../assets/Gallery/AwardsPhotos/F.jpg";
+
+import OldA from "../assets/Gallery/Old/OldA.jpg";
+import OldB from "../assets/Gallery/Old/OldB.jpg";
+import OldC from "../assets/Gallery/Old/OldC.jpg";
+import OldD from "../assets/Gallery/Old/OldD.jpg";
+import OldE from "../assets/Gallery/Old/OldE.jpg";
+import OldF from "../assets/Gallery/Old/OldF.jpg";
 // import H from "../assets/Gallery/AwardsPhotos/H.jpg";
 
 import OTA from "../assets/Gallery/OT/OTA.jpg";
@@ -36,17 +43,17 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
-
+  
   { id: 7, src: OTA, category: "OT", title: "" },
   { id: 8, src: OTB, category: "OT", title: "" },
   { id: 9, src: OTC, category: "OT", title: "" },
-
+  
   { id: 10, src: ConferenceA, category: "Events & Conferences", title: "" },
   { id: 11, src: ConferenceB, category: "Events & Conferences", title: "" },
   { id: 12, src: ConferenceC, category: "Events & Conferences", title: "" },
   { id: 13, src: ConferenceD, category: "Events & Conferences", title: "" },
   { id: 14, src: ConferenceE, category: "Events & Conferences", title: "" },
-
+  
   { id: 15, src: IVFLabA, category: "IVF Lab", title: "" },
   { id: 16, src: IVFLabB, category: "IVF Lab", title: "" },
   { id: 17, src: IVFLabC, category: "IVF Lab", title: "" },
@@ -55,19 +62,25 @@ const galleryItems = [
   { id: 20, src: IVFLabF, category: "IVF Lab", title: "" },
   { id: 21, src: IVFLabG, category: "IVF Lab", title: "" },
   { id: 22, src: IVFLabH, category: "IVF Lab", title: "" },
-
+  
+  { id: 23, src: OldA, category: "Old", title: "" },
+  { id: 24, src: OldB, category: "Old", title: "" },
+  { id: 25, src: OldC, category: "Old", title: "" },
+  { id: 26, src: OldD, category: "Old", title: "" },
+  { id: 27, src: OldE, category: "Old", title: "" },
+  { id: 28, src: OldF, category: "Old", title: "" },
 ];
 
-const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Events & Conferences", "Awards & Felicitations"];
+const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selected, setSelected] = useState(null);
-
+  
   const filteredItems = useMemo(
     () =>
       activeCategory === "All"
-        ? galleryItems
-        : galleryItems.filter((item) => item.category === activeCategory),
+    ? galleryItems
+    : galleryItems.filter((item) => item.category === activeCategory),
     [activeCategory]
   );
 
