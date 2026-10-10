@@ -54,12 +54,12 @@ export default function Conferences() {
   return (
     <section className="relative py-28 mb-16 overflow-hidden bg-pink-800">
       {/* Top Curve */}
-      <div
+      {/* <div
         className="absolute top-0 left-0 w-full h-24 bg-[#f1f1f1]"
         style={{
           clipPath: "ellipse(75% 100% at 50% 0%)",
         }}
-      ></div>
+      ></div> */}
 
       <div className="max-w-[1920px] mx-auto">
         {/* Heading */}
