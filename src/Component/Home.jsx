@@ -1,19 +1,18 @@
-import React from 'react'
 import { Helmet } from "react-helmet-async";
 import { FAQ } from './FAQ'
 import About from './About'
 import Arrow from './Arrow'
-import Stats from './Stats'
 import Head from './Head'
 import Treatements from '../Pages/Treatements'
 import Appointment from './Appointment'
 import ContactButton from './ContactButton'
 import Conferences from './Conferences';
+import InstagramReels from './InstagramReels';
 import Features from './Features';
+import Stats from './Stats' 
 // import GoogleReview from './GoogleReview'
 import Memberships from './Memberships';
 // import InstagramVideos from './InstagramVideos';
-import InstagramReels from './InstagramReels';
 
 const Home = () => {
   return (
