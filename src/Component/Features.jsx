@@ -55,8 +55,8 @@ const achievements = [
   },
   {
     icon: Sparkles,
-    title: "Professional Leadership",
-    subtitle: "FOGSI & Medical Societies",
+    title: "President Elect",
+    subtitle: "FOGSI (AOGS) Prayagraj",
     desc: "Actively contributing to women's healthcare initiatives.",
     image: Leadership,
   },
