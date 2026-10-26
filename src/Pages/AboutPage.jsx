@@ -18,18 +18,20 @@ import {
 // Apne actual image paths yahan set kar dena
 // =====================================================
 
-import DoctorHero from "../assets/DoctorHero.png";
+// import DoctorHero from "../assets/DoctorHero.png";
+import Vandana from "../assets/Vandana.png";
 import OPD from '../assets/Treatments/OPD.png'
 import OTSurgery from '../assets/Treatments/OTSurgery.jpeg'
+import JagranAward from '../assets/JagranAward.jpg'
 // import doctorIntro from "../assets/About/dr-vandana-intro.jpg";
 // import hospitalImage from "../assets/About/jeevan-jyoti-hospital.jpg";
 // import awardImage from "../assets/About/dr-vandana-award.jpg";
 
 const imagePaths = {
-  hero: DoctorHero,
+  hero: Vandana,
   intro: OTSurgery,
   hospital: OPD,
-  award: DoctorHero,
+  award: JagranAward,
 };
 
 const AboutPage = () => {
@@ -1134,46 +1136,7 @@ const AboutPage = () => {
         </section>
 
 
-        {/* =====================================================
-            FINAL CTA
-        ====================================================== */}
-
-        <section className="bg-pink-800 text-white py-20 lg:py-24">
-
-          <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
-
-            <p className="text-sm uppercase tracking-[0.2em] text-white/80 mb-5">
-              Comprehensive Women's Healthcare in Prayagraj
-            </p>
-
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
-              Experience You Can Trust.
-              <span className="block mt-2">
-                Care Designed Around You.
-              </span>
-            </h2>
-
-            <p className="mt-7 text-lg leading-8 text-white/90 max-w-3xl mx-auto">
-              Dr. Vandana Bansal provides comprehensive care for infertility,
-              IVF, pregnancy, PCOS, gynecological conditions, advanced
-              gynecological surgery and menopause-related concerns.
-            </p>
-
-            <div className="mt-9">
-
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-7 py-3.5 bg-white text-pink-800 font-semibold rounded-md hover:bg-[#f1f1f1] transition-colors duration-300"
-              >
-                Book an Appointment
-              </a>
-
-            </div>
-
-          </div>
-
-        </section>
-
+     
       </main>
     </>
   );

@@ -664,7 +664,6 @@ const Navbar = ({ logoSrc }) => {
         }`}
       >
         <div className="mx-auto flex h-full max-w-[1920px] items-center justify-between px-6 xl:px-10">
-          {/* PHONE NUMBERS */}
           <div className="flex items-center gap-5 text-[13px] font-medium">
             <a
               href="tel:+916390103002"
@@ -688,7 +687,6 @@ const Navbar = ({ logoSrc }) => {
             </a>
           </div>
 
-          {/* ADDRESS */}
           <div className="flex items-center gap-1.5 text-[13px]">
             <MapPin size={14} strokeWidth={2} />
             <span>

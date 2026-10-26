@@ -10,10 +10,10 @@ import F from "../assets/Gallery/AwardsPhotos/F.jpg";
 
 import OldA from "../assets/Gallery/Old/OldA.jpg";
 import OldB from "../assets/Gallery/Old/OldB.jpg";
-import OldC from "../assets/Gallery/Old/OldC.jpg";
-import OldD from "../assets/Gallery/Old/OldD.jpg";
-import OldE from "../assets/Gallery/Old/OldE.jpg";
-import OldF from "../assets/Gallery/Old/OldF.jpg";
+// import OldC from "../assets/Gallery/Old/OldC.jpg";
+// import OldD from "../assets/Gallery/Old/OldD.jpg";
+// import OldE from "../assets/Gallery/Old/OldE.jpg";
+// import OldF from "../assets/Gallery/Old/OldF.jpg";
 // import H from "../assets/Gallery/AwardsPhotos/H.jpg";
 
 import OTA from "../assets/Gallery/OT/OTA.jpg";
@@ -65,10 +65,10 @@ const galleryItems = [
   
   { id: 23, src: OldA, category: "Old", title: "" },
   { id: 24, src: OldB, category: "Old", title: "" },
-  { id: 25, src: OldC, category: "Old", title: "" },
-  { id: 26, src: OldD, category: "Old", title: "" },
-  { id: 27, src: OldE, category: "Old", title: "" },
-  { id: 28, src: OldF, category: "Old", title: "" },
+  // { id: 25, src: OldC, category: "Old", title: "" },
+  // { id: 26, src: OldD, category: "Old", title: "" },
+  // { id: 27, src: OldE, category: "Old", title: "" },
+  // { id: 28, src: OldF, category: "Old", title: "" },
 ];
 
 const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];
@@ -96,52 +96,42 @@ export default function GalleryPage() {
     <>
       <Helmet>
         <title>Gallery | Dr. Vandana Bansal | Gynaecologist in Prayagraj</title>
-
         <meta
           name="description"
           content="Explore the photo gallery of Dr. Vandana Bansal, Senior Gynaecologist and Infertility & IVF Specialist in Prayagraj, featuring medical conferences, professional events, awards, achievements, and moments from her medical journey."
         />
-
         <meta
           name="keywords"
           content="Dr Vandana Bansal gallery, Dr Vandana Bansal photos, Dr Vandana Bansal images, Dr Vandana Bansal Prayagraj, Dr Vandana Bansal awards photos, Dr Vandana Bansal conference photos, Dr Vandana Bansal achievements, gynecologist Prayagraj, senior gynecologist Prayagraj, IVF specialist Prayagraj, infertility specialist Prayagraj, Dr Vandana Bansal medical events, Dr Vandana Bansal professional events, Dr Vandana Bansal hospital photos, women healthcare specialist Prayagraj"
         />
-
         <meta
           property="og:title"
           content="Gallery | Dr. Vandana Bansal | Gynaecologist in Prayagraj"
         />
-
         <meta
           property="og:description"
           content="View photos from Dr. Vandana Bansal's medical conferences, professional events, awards, achievements, and journey as a Senior Gynaecologist and Infertility & IVF Specialist in Prayagraj."
         />
-
         <meta
           property="og:type"
           content="website"
         />
-
         <meta
           property="og:url"
           content="https://drvandanabansal.in/gallery"
         />
-
         <meta
           property="og:site_name"
           content="Dr. Vandana Bansal"
         />
-
         <meta
           name="twitter:card"
           content="summary_large_image"
         />
-
         <meta
           name="twitter:title"
           content="Gallery | Dr. Vandana Bansal | Gynaecologist in Prayagraj"
         />
-
         <meta
           name="twitter:description"
           content="Explore photos of Dr. Vandana Bansal from medical conferences, professional events, awards, achievements, and important moments from her medical journey in women's healthcare."

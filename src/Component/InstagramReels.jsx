@@ -102,8 +102,8 @@ export default function InstagramReels() {
               className="text-3xl font-bold leading-tight text-gray-700 sm:text-4xl lg:text-5xl"
               style={{ fontFamily: "Cambria, serif" }}
             >
-              Instagram{" "}
-              <span className="text-pink-800">in Action</span>
+              Patients{" "}
+              <span className="text-pink-800">Eucation</span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">

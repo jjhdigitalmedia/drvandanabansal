@@ -57,7 +57,7 @@ const Home = () => {
         <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
       </div> */}
       <FAQ />
-      <Appointment />
+      {/* <Appointment /> */}
       {/* <Contact /> */}
 
     </div>

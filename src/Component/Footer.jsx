@@ -167,6 +167,7 @@ import {
   Clock3,
   ChevronRight,
 } from "lucide-react";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import { treatmentsData } from "../Pages/Treatements";
 import DrVandanaLogo from "../assets/DrVandanaLogo.png";
@@ -178,7 +179,7 @@ const Footer = ({ logoSrc }) => {
   const specialities = treatmentsData || [];
 
   return (
-    <footer className="relative overflow-hidden bg-[#f8f7f7] text-gray-700">
+    <footer className="relative overflow-hidden mt-20 bg-[#f8f7f7] text-gray-700">
 
       {/* =========================================================
           TOP DECORATIVE ELEMENT
@@ -202,13 +203,13 @@ const Footer = ({ logoSrc }) => {
 
               {/* CTA CONTENT */}
               <div className="max-w-2xl">
-                <div className="mb-3 flex items-center gap-2">
+                {/* <div className="mb-3 flex items-center gap-2">
                   <span className="h-px w-7 bg-white/60" />
 
                   <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-white/80">
                     Women's Healthcare
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="font-serif text-2xl font-semibold leading-tight text-white sm:text-3xl">
                   Your Health. Your Journey.
@@ -372,6 +373,18 @@ const Footer = ({ logoSrc }) => {
                   className="transition-transform duration-300 group-hover:scale-110"
                 />
               </a>
+              <a
+                href="https://www.youtube.com/@DrVandanaBansal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="group flex h-9 w-9 items-center justify-center rounded-full bg-white text-gray-500 transition-all duration-300 hover:border-pink-800 hover:bg-pink-800 hover:text-white"
+              >
+                <FaLinkedin
+                  size={16}
+                  className="transition-transform duration-300 group-hover:scale-110"
+                />
+              </a>
             </div>
           </div>
 
@@ -385,7 +398,7 @@ const Footer = ({ logoSrc }) => {
               <FooterLink to="/" label="Home" />
               <FooterLink to="/about" label="About Dr. Vandana" />
               <FooterLink to="/achievements" label="Achievements" />
-              <FooterLink to="/news" label="In News" />
+              <FooterLink to="/in-news" label="In News" />
               <FooterLink to="/gallery" label="Gallery" />
               <FooterLink
                 to="/patients-education"
@@ -431,7 +444,7 @@ const Footer = ({ logoSrc }) => {
             <div className="space-y-4">
 
               {/* PHONE 1 */}
-              <a
+              {/* <a
                 href="tel:+916390103002"
                 className="group flex items-start gap-3"
               >
@@ -448,11 +461,11 @@ const Footer = ({ logoSrc }) => {
                     +91 6390103002
                   </p>
                 </div>
-              </a>
+              </a> */}
 
               {/* PHONE 2 */}
               <a
-                href="tel:+916390103004"
+                href="tel:+916390103002"
                 className="group flex items-start gap-3"
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
@@ -461,11 +474,11 @@ const Footer = ({ logoSrc }) => {
 
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-400">
-                    Appointment Line
+                    Call for Appointment
                   </p>
 
                   <p className="mt-0.5 text-sm font-medium text-gray-700 transition-colors group-hover:text-pink-800">
-                    +91 6390103004
+                    +91 6390103002
                   </p>
                 </div>
               </a>
@@ -476,16 +489,16 @@ const Footer = ({ logoSrc }) => {
                 className="group flex items-start gap-3"
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
-                  <Phone size={16} />
+                  <FaWhatsapp size={16} />
                 </span>
 
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-400">
-                    Contact
+                    Whatsapp
                   </p>
 
                   <p className="mt-0.5 text-sm font-medium text-gray-700 transition-colors group-hover:text-pink-800">
-                    +91 9151037784
+                    +91 6390103004
                   </p>
                 </div>
               </a>
@@ -505,7 +518,7 @@ const Footer = ({ logoSrc }) => {
                   </p>
 
                   <p className="mt-0.5 break-all text-[13px] font-medium text-gray-700 transition-colors group-hover:text-pink-800">
-                    drvandanabansal921.@gmail.com
+                    contact.drvandanabansal@gmail.com
                   </p>
                 </div>
               </a>
