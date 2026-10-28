@@ -390,7 +390,6 @@ const AboutPage = () => {
                     Advanced Medical Training.
                   </span>
                 </h2>
-
                 <p className="mt-6 text-lg text-gray-600 leading-8">
                   Her academic achievements and specialized training have
                   helped her develop expertise in modern infertility
@@ -399,8 +398,6 @@ const AboutPage = () => {
                 </p>
 
               </div>
-
-
               <div className="border-t border-gray-300">
 
                 {qualifications.map((item, index) => (
@@ -426,7 +423,6 @@ const AboutPage = () => {
           </div>
         </section>
 
-
         {/* =====================================================
             PROFESSIONAL JOURNEY + IMAGE
         ====================================================== */}
@@ -448,8 +444,6 @@ const AboutPage = () => {
 
               </div>
 
-
-              {/* TEXT */}
 
               <div className="order-1 lg:order-2">
 
@@ -492,13 +486,9 @@ const AboutPage = () => {
                     involved in clinical practice, patient care and the
                     development of advanced women's healthcare services.
                   </p>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
         </section>
 
@@ -531,7 +521,6 @@ const AboutPage = () => {
 
             </div>
 
-
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-gray-300">
 
               {interests.map((item, index) => (
@@ -552,7 +541,6 @@ const AboutPage = () => {
           </div>
         </section>
 
-
         {/* =====================================================
             SPECIALIZED CARE
         ====================================================== */}
@@ -571,7 +559,6 @@ const AboutPage = () => {
               </h2>
 
             </div>
-
 
             <div className="space-y-0">
 
@@ -611,7 +598,6 @@ const AboutPage = () => {
                 </div>
 
               </div>
-
 
               {/* Pregnancy */}
 
@@ -851,8 +837,6 @@ const AboutPage = () => {
                 />
 
               </div>
-
-
               <div>
 
                 <div className="w-12 h-12 bg-pink-800 text-white flex items-center justify-center rounded-full mb-6">
@@ -926,13 +910,6 @@ const AboutPage = () => {
                   Medical Organizations
                 </span>
               </h2>
-
-              {/* <p className="mt-5 text-lg text-gray-600 leading-8">
-                Dr. Vandana Bansal is associated with several national and
-                international medical and professional organizations,
-                reflecting her continued engagement with medical education,
-                reproductive medicine and women's healthcare.
-              </p> */}
 
             </div>
 
@@ -1136,7 +1113,7 @@ const AboutPage = () => {
         </section>
 
 
-     
+
       </main>
     </>
   );

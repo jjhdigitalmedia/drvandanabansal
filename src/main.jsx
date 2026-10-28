@@ -427,7 +427,7 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: 'linktree',
+    path: 'all-links',
     element: <> <NavigationB /> <Linktree /></>,
 
   },

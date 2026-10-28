@@ -4,15 +4,9 @@ import About from './About'
 import Arrow from './Arrow'
 import Head from './Head'
 import Treatements from '../Pages/Treatements'
-import Appointment from './Appointment'
 import ContactButton from './ContactButton'
 import Conferences from './Conferences';
 import InstagramReels from './InstagramReels';
-import Features from './Features';
-import Stats from './Stats' 
-// import GoogleReview from './GoogleReview'
-import Memberships from './Memberships';
-// import InstagramVideos from './InstagramVideos';
 
 const Home = () => {
   return (
@@ -44,11 +38,14 @@ const Home = () => {
       <Arrow />
       <Head />
       <About />
-      {/* <Stats /> */}
-      {/* <Memberships/> */}
       <Treatements />
       <Conferences />
-      <InstagramReels/>
+      <InstagramReels />
+      <FAQ />
+      {/* <Stats /> */}
+      {/* <Memberships/> */}
+      {/* <Appointment /> */}
+      {/* <Contact /> */}
       {/* <Features /> */}
       {/* <GoogleReview /> */}
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
@@ -56,9 +53,6 @@ const Home = () => {
         <script src="https://elfsightcdn.com/platform.js" async></script>
         <div class="elfsight-app-09e858a6-5228-44ea-a1ec-2bd24b2c4aff" data-elfsight-app-lazy></div>
       </div> */}
-      <FAQ />
-      {/* <Appointment /> */}
-      {/* <Contact /> */}
 
     </div>
   )
