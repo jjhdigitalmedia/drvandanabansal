@@ -54,13 +54,13 @@ const links = [
 
 function LinkTree() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-200 to-blue-200 px-4 py-10">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-rose-50 to-gray-200 px-4 py-10">
       <div className="w-full max-w-md p-6 rounded-2xl shadow-2xl bg-white/80 backdrop-blur-md border border-gray-200">
         <div className="text-center mb-6">
           <img
             src={DrVandanaBansalPhoto}
             alt="Profile"
-            className="w-24 h-24 mx-auto rounded-full border-4 border-pink-300 shadow-md"
+            className="w-24 h-24 mx-auto rounded-full border-2 border-gray-800 shadow-md"
           />
           <h2 className="text-2xl font-bold mt-4">Dr. Vandana Bansal</h2>
           <p className="text-sm text-gray-600">Gynecologist | IVF Expert | Laparoscopic & Hysteroscopic Surgeon</p>
@@ -75,7 +75,7 @@ function LinkTree() {
               className="block"
             >
               <button
-                className="w-full flex items-center px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg hover:bg-pink-100 transition-all"
+                className="w-full flex items-center px-4 py-2 bg-white text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100 transition-all"
               >
                 {link.icon} {link.name}
               </button>
