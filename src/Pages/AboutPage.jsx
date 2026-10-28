@@ -895,7 +895,7 @@ const AboutPage = () => {
             MEMBERSHIPS
         ====================================================== */}
 
-        <section className="py-20 lg:py-24">
+        {/* <section className="py-20 lg:py-24">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
             <div className="max-w-3xl mb-12">
@@ -924,7 +924,7 @@ const AboutPage = () => {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
 
         {/* =====================================================
