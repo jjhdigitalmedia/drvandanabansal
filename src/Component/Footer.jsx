@@ -488,7 +488,7 @@ const Footer = ({ logoSrc }) => {
                 href="tel:+919151037784"
                 className="group flex items-start gap-3"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-pink-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-green-800 transition-all duration-300 group-hover:bg-pink-800 group-hover:text-white">
                   <FaWhatsapp size={16} />
                 </span>
 

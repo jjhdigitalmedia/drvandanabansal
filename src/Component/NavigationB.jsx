@@ -704,7 +704,7 @@ const Navbar = ({ logoSrc }) => {
           scrolled ? "shadow-md" : "shadow-none"
         }`}
       >
-        <div className="mx-auto flex h-[88px] max-w-[1920px] items-center justify-between px-5 sm:px-8 lg:px-12 xl:px-16">
+        <div className="mx-auto flex h-[88px] max-w-[2000px] items-center justify-between px- sm:px-8 lg:px-12 xl:px-16">
 
           {/* =====================================================
               LOGO
@@ -714,29 +714,6 @@ const Navbar = ({ logoSrc }) => {
             onClick={closeMobileMenu}
             className="relative z-[130] flex shrink-0 items-center"
           >
-            {/* {logoSrc ? (
-              <img
-                src={logoSrc}
-                alt="Dr. Vandana Bansal"
-                className="h-[62px] w-auto object-contain"
-              />
-            ) : (
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-pink-800 text-pink-800">
-                  <span className="text-xl font-bold">VB</span>
-                </div>
-
-                <div className="leading-none">
-                  <div className="font-serif text-xl font-bold tracking-tight text-pink-800">
-                    DR. VANDANA BANSAL
-                  </div>
-
-                  <div className="mt-1 text-[8px] tracking-[0.25em] text-gray-500">
-                    GYNAECOLOGIST & IVF SPECIALIST
-                  </div>
-                </div>
-              </div>
-            )} */}
              <img
                 src={DrVandanaLogo}
                 alt="Dr. Vandana Bansal"

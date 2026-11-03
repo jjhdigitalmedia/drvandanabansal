@@ -50,8 +50,8 @@ const galleryPhotos = [
 // Quick stats / achievements shown as badges under the photo
 const stats = [
   { icon: FaCalendarCheck, value: "38+", label: "Years Experience" },
-  { icon: FaBaby, value: "50000+", label: "Successful Deliveries" },
-  { icon: FaUserMd, value: "100000+", label: "Patients Treated" },
+  { icon: FaBaby, value: "Better", label: "Advanced Technology" },
+  { icon: FaUserMd, value: "", label: "Expert Care" },
   { icon: FaGoogle, value: "4.9*", label: "Google Rating" },
 ];
 
@@ -169,7 +169,7 @@ const BookYourAppointment = () => {
               <div className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-pink-800 shrink-0" />
                 <span>
-                  162, Jeevan Jyoti Hospital, Lowther Rd, Himmat Ganj, Bai Ka
+                  162, Jeevan Jyoti Hospital, Lowther Rd, Bai Ka
                   Bagh, Prayagraj, Uttar Pradesh 211003
                 </span>
               </div>
@@ -179,7 +179,7 @@ const BookYourAppointment = () => {
                   href="mailto:bansal.drvandana@gmail.com?subject=Inquiry&body=Hello, I have a question about..."
                   className="hover:text-pink-800"
                 >
-                  drvandanabansal921@gmail.com
+                  contact.drvandanabansal@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
