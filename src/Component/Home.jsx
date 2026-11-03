@@ -3,9 +3,9 @@ import { FAQ } from './FAQ'
 import About from './About'
 import Arrow from './Arrow'
 import Head from './Head'
-import Treatements from '../Pages/Treatements'
-import ContactButton from './ContactButton'
 import Conferences from './Conferences';
+import ContactButton from './ContactButton'
+import Treatements from '../Pages/Treatements'
 import InstagramReels from './InstagramReels';
 
 const Home = () => {
@@ -42,12 +42,14 @@ const Home = () => {
       <Conferences />
       <InstagramReels />
       <FAQ />
+
       {/* <Stats /> */}
       {/* <Memberships/> */}
       {/* <Appointment /> */}
       {/* <Contact /> */}
       {/* <Features /> */}
       {/* <GoogleReview /> */}
+
       {/* <!-- Elfsight Instagram Feed | Untitled Instagram Feed --> */}
       {/* <div className='w-11/12 mx-auto'>
         <script src="https://elfsightcdn.com/platform.js" async></script>

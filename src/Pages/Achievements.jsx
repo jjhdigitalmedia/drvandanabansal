@@ -1,6 +1,5 @@
 import Features from '../Component/Features'
 import Conferences from '../Component/Conferences'
-import Membership from '../Component/Memberships'
 import { Helmet } from 'react-helmet'
 
 const Achievements = () => {

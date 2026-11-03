@@ -1,4 +1,3 @@
-import React from "react";
 import { Helmet } from "react-helmet-async";
 import {
   Award,
@@ -13,16 +12,13 @@ import {
   Users,
 } from "lucide-react";
 
-// =====================================================
 // IMAGE PATHS
-// Apne actual image paths yahan set kar dena
-// =====================================================
 
-// import DoctorHero from "../assets/DoctorHero.png";
 import Vandana from "../assets/Vandana.png";
 import OPD from '../assets/Treatments/OPD.png'
 import OTSurgery from '../assets/Treatments/OTSurgery.jpeg'
 import JagranAward from '../assets/JagranAward.jpg'
+// import DoctorHero from "../assets/DoctorHero.png";s
 // import doctorIntro from "../assets/About/dr-vandana-intro.jpg";
 // import hospitalImage from "../assets/About/jeevan-jyoti-hospital.jpg";
 // import awardImage from "../assets/About/dr-vandana-award.jpg";
@@ -316,30 +312,6 @@ const AboutPage = () => {
 
             <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-gray-300">
 
-              {/* {stats.map((item, index) => (
-                <div
-                  key={index}
-                  className={`
-                    py-8 pr-6
-                    ${index < 3 ? "lg:border-r border-gray-300" : ""}
-                    ${index % 2 === 0 ? "border-r border-gray-300 lg:border-r" : ""}
-                  `}
-                >
-
-                  <div className="text-pink-800 mb-4">
-                    {item.icon}
-                  </div>
-
-                  <div className="text-3xl lg:text-4xl font-semibold text-gray-900">
-                    {item.number}
-                  </div>
-
-                  <p className="mt-2 text-gray-600">
-                    {item.label}
-                  </p>
-
-                </div>
-              ))} */}
 
             </div>
 
@@ -890,43 +862,6 @@ const AboutPage = () => {
           </div>
         </section>
 
-
-        {/* =====================================================
-            MEMBERSHIPS
-        ====================================================== */}
-
-        {/* <section className="py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-
-            <div className="max-w-3xl mb-12">
-
-              <p className="text-pink-800 font-semibold uppercase tracking-[0.15em] text-sm mb-3">
-                Professional Memberships
-              </p>
-
-              <h2 className="text-3xl sm:text-4xl font-semibold text-gray-900">
-                Professional Associations &
-                <span className="block text-pink-800">
-                  Medical Organizations
-                </span>
-              </h2>
-
-            </div>
-
-
-            <div className="">
-
-              <p className="py-4">Dr. Vandana Bansal is associated with several national and international medical and professional organizations, including the Indian Medical Association (IMA), Federation of Obstetric and Gynaecological Societies of India (FOGSI), Indian Society for Assisted Reproduction (ISAR), Indian Fertility Society (IFS), Indian Menopause Society (IMS), AAGL, IAGE, Society of Fetal Medicine, PCOS Society India, FICMCH & ICMCH, ISPAT, ISARM, FIGO & AOFOG, European Society of Human Reproduction and Embryology (ESHRE), Rotary Club of Allahabad-East, Rotary Allahabad Midtown, and International Integration & Growth Society (IIGS).
-
-              </p>
-              <p> Her professional associations reflect her continued engagement with medical education, reproductive medicine, women's health, professional development and community-oriented initiatives.</p>
-
-            </div>
-
-          </div>
-        </section> */}
-
-
         {/* =====================================================
             PATIENT CARE
         ====================================================== */}
@@ -950,7 +885,6 @@ const AboutPage = () => {
                 </h2>
 
               </div>
-
 
               <div>
 
@@ -1111,8 +1045,6 @@ const AboutPage = () => {
 
           </div>
         </section>
-
-
 
       </main>
     </>

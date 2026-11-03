@@ -10,11 +10,6 @@ import F from "../assets/Gallery/AwardsPhotos/F.jpg";
 
 import OldA from "../assets/Gallery/Old/OldA.jpg";
 import OldB from "../assets/Gallery/Old/OldB.jpg";
-// import OldC from "../assets/Gallery/Old/OldC.jpg";
-// import OldD from "../assets/Gallery/Old/OldD.jpg";
-// import OldE from "../assets/Gallery/Old/OldE.jpg";
-// import OldF from "../assets/Gallery/Old/OldF.jpg";
-// import H from "../assets/Gallery/AwardsPhotos/H.jpg";
 
 import OTA from "../assets/Gallery/OT/OTA.jpg";
 import OTB from "../assets/Gallery/OT/OTB.png";
@@ -65,10 +60,6 @@ const galleryItems = [
   
   { id: 23, src: OldA, category: "Old", title: "" },
   { id: 24, src: OldB, category: "Old", title: "" },
-  // { id: 25, src: OldC, category: "Old", title: "" },
-  // { id: 26, src: OldD, category: "Old", title: "" },
-  // { id: 27, src: OldE, category: "Old", title: "" },
-  // { id: 28, src: OldF, category: "Old", title: "" },
 ];
 
 const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];

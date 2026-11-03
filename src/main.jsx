@@ -9,14 +9,14 @@ import App from './App.jsx'
 import './index.css'
 
 import Home from './Component/Home.jsx'
-import About from './Component/About.jsx'
-import Contact from './Component/Contact.jsx'
 import NavigationB from './Component/NavigationB.jsx'
+import AboutPage from './Pages/AboutPage.jsx'
+import Treatements from './Pages/Treatements.jsx'
+import Achievements from './Pages/Achievements.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import NewsPaperCutting from './Pages/NewsPaperCutting.jsx'
-import Treatements from './Pages/Treatements.jsx'
-import NotFound from './Pages/NotFound.jsx'
 import BookYourAppointment from './Pages/BookYourAppointment.jsx'
+import NotFound from './Pages/NotFound.jsx'
 import Linktree from './Pages/LinkTree.jsx'
 
 import IvfEtTreatment from './Pages/Treatments/InfertilityAndIVF/IvfEtTreatment.jsx'
@@ -84,9 +84,6 @@ import UterineSeptumResection from './Pages/Treatments/HysteroscopicSurgery.jsx/
 import EmbryoDonation from './Pages/Treatments/InfertilityAndIVF/EmbryoDonation.jsx'
 import PatientEducation from './Pages/PatientsEducation/PatientsEducation.jsx'
 import ArticleLayout from './Pages/PatientsEducation/ArticleLayout.jsx'
-import PCOSSymptoms from './Pages/PatientsEducation/Articles/PCOSSymptoms.jsx'
-import AboutPage from './Pages/AboutPage.jsx'
-import Achievements from './Pages/Achievements.jsx'
 
 
 const router = createBrowserRouter([
@@ -98,10 +95,6 @@ const router = createBrowserRouter([
         path: '',
         element: <Home />,
       },
-      // {
-      //   path: 'about',
-      //   element: <About />,
-      // },
       {
         path: 'about',
         element: <AboutPage />,
@@ -113,326 +106,264 @@ const router = createBrowserRouter([
       {
         path: 'gallery',
         element: <Gallery />,
-
       },
       {
         path: 'in-news',
         element: <NewsPaperCutting />,
-
       },
       {
         path: 'specialities',
         element: <Treatements />,
-
       },
       {
         path: 'achievements',
         element: <Achievements />,
-
       },
       {
         path: 'patients-education',
         element: <PatientEducation />,
-
       },
       {
         path: '/patients-education/:slug',
         element: <ArticleLayout />,
       },
-      // ..............................................................................................
+      // ........................................
       {
         path: 'treatments/iui',
         element: <IuiTreatment />,
-
       },
       {
         path: 'treatments/ivf-et',
         element: <IvfEtTreatment />,
-
       },
       {
         path: 'treatments/icsi',
         element: <IcsiTreatment />,
-
       },
       {
         path: 'treatments/imsi',
         element: <ImsiTreatment />,
-
       },
       {
         path: 'treatments/laser-assisted-hatching',
         element: <LaserAssistedTreatment />,
-
       },
       {
         path: 'treatments/oocyte-donation',
         element: <OocyteDonation />,
-
       },
       {
         path: 'treatments/embryo-banking',
         element: <EmbryoBankTreatment />,
-
       },
       {
         path: 'treatments/embryo-donation',
         element: <EmbryoDonation />,
-
       },
       {
         path: 'treatments/blastocyst-transfer',
         element: <BlastocystTreatment />,
-
       },
       {
         path: 'treatments/semen-cryopreservation',
         element: <SemenCryopreservation />,
-
       },
       {
         path: 'treatments/oocyte-cryopreservation',
         element: <OocyteCryopreservation />,
-
       },
       {
         path: 'treatments/mesa-microepididymal-sperm-aspiration',
         element: <MESA />,
-
       },
       {
         path: 'treatments/tesa-testicular-sperm-aspiration-cryopreservation',
         element: <TESA />,
-
       },
-      // ........................................................................................
+      // ...........................................
       {
         path: 'treatments/heavy-menstrual-bleeding',
         element: <HeavyBleeding />,
-
       },
       {
         path: 'treatments/irregular-periods',
         element: <IrregularPeriods />,
-
       },
       {
         path: 'treatments/menopause-management',
         element: <MenopauseManagement />,
-
       },
       {
         path: 'treatments/pcos-pcod',
         element: <PCOSAndPCOD />,
-
       },
-      // ...............................................................................................
+      // ....................................
       {
         path: 'treatments/hymenoplasty',
         element: <Hymenoplasty />,
-
       },
       {
         path: 'treatments/labiaplasty',
         element: <Labiaplasty />,
-
       },
       {
         path: 'treatments/pelvic-floor-treatment',
         element: <PelvicFloorTreatment />,
-
       },
       {
         path: 'treatments/sexual-wellness',
         element: <SexualWellness />,
-
       },
       {
         path: 'treatments/stress-urinary-incontinence',
         element: <StressUrinaryIncontinence />,
-
       },
       {
         path: 'treatments/vaginismus',
         element: <Vaginismus />,
-
       },
       {
         path: 'treatments/vaginal-rejuvination',
         element: <VaginalRejuvination />,
-
       },
-      // ..................................................................................................
+      // ............................................
       {
         path: 'treatments/bone-and-osteoporosis',
         element: <BoneAndOsteoporosis />,
-
       },
       {
         path: 'treatments/cardiovascular-and-metabolic-health',
         element: <CardiovascularAndMetabolicHealth />,
-
       },
       {
         path: 'treatments/lifestyle-nutrition-and-exercise',
         element: <LifestyleNutritionAndExercise />,
-
       },
       {
         path: 'treatments/menopause-management',
         element: <MenopauseManagement />,
-
       },
       {
         path: 'treatments/perimenopause-and-menopause',
         element: <PerimenopauseAndMenopause />,
-
       },
       {
         path: 'treatments/sleepMood-and-cognition',
         element: <SleepMoodAndCognition />,
-
       },
-      // .......................................................................................................
+      // ................................................
       {
         path: 'treatments/cervical-cancer',
         element: <CervicalCancer />,
-
       },
       {
         path: 'treatments/ovarian-cancer',
         element: <OvarianCancer />,
-
       },
       {
         path: 'treatments/uterine-cancer',
         element: <UterusCancer />,
-
       },
       {
         path: 'treatments/breast-cancer',
         element: <BreastCancer />,
-
       },
-      // .....................................................................................................
+      // ...............................................
       {
         path: 'treatments/cesarean-section-delivery',
         element: <CesareanDelivery />,
-
       },
       {
         path: 'treatments/high-bp-and-diabetes-in-pregnancy',
         element: <HighBPAndDiabetesInPregnancy />,
-
       },
       {
         path: 'treatments/normal-delivery',
         element: <NormalDeliveryCare />,
-
       },
       {
         path: 'treatments/painless-delivery',
         element: <PainlessDelivery />,
-
       },
       {
         path: 'treatments/pretem-labour',
         element: <PretemLabourCare />,
-
       },
       {
         path: 'treatments/recurrent-pregnancy-loss',
         element: <RecurrentPregnancyLoss />,
-
       },
-      // ................................................................................
+      // ................................................
       {
         path: 'treatments/ovarian-cyst-laparoscopic-surgery',
         element: <OvarianCystSurgery />,
-
       },
       {
         path: 'treatments/fibroid-removal-laparoscopic-surgery',
         element: <FibroidRemoval />,
-
       },
       {
         path: 'treatments/endometriosis-treatment',
         element: <EndometriosisTreatment />,
-
       },
-      // ..................................................................................
+      // ...............................................
       {
         path: 'treatments/abnormal-uterine-bleeding',
         element: <AbnormalUterineBleeding />,
-
       },
       {
         path: 'treatments/adhesions-removal',
         element: <AdhesionsRemoval />,
-
       },
       {
         path: 'treatments/diagnostic-hysteroscopy-evaluation',
         element: <DiagnosticHysteroscopyEvaluation />,
-
       },
       {
         path: 'treatments/pre-ivf-hysteroscopy-evaluation',
         element: <PreIVFHysteroscopyEvaluation />,
-
       },
       {
         path: 'treatments/uterine-polyp-removal',
         element: <UterinePolypRemoval />,
-
       },
       {
         path: 'treatments/uterine-septum-resection',
         element: <UterineSeptumResection />,
-
       },
-      // ...................................................................................
+      // ................................................
       {
         path: 'treatments/pap-smear-screening',
         element: <PapSmearScreening />,
-
       },
       {
         path: 'treatments/breast-health-checkup',
         element: <BreastHealthCheckup />,
-
       },
       {
         path: 'treatments/hpv-vaccination',
         element: <HPVVaccination />,
-
       },
       {
         path: 'treatments/bone-health-screening',
         element: <BoneHealthScreening />,
-
       },
       {
         path: 'treatments/mammography',
         element: <Mammography />,
-
       },
-      // ......................................................................................
+      // .................................................
       {
         path: '*',
         element: <NotFound />,
-
       },
     ]
   },
   {
     path: 'all-links',
     element: <> <NavigationB /> <Linktree /></>,
-
   },
 ])
-
 // ReactDOM.hydrateRoot(document.getElementById('root')).render(
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
