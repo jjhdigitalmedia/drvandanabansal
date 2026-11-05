@@ -30,6 +30,8 @@ import IVFLabF from "../assets/Gallery/IVFLab/IVFLabF.jpg";
 import IVFLabG from "../assets/Gallery/IVFLab/IVFLabG.jpg";
 import IVFLabH from "../assets/Gallery/IVFLab/IVFLabH.png";
 
+import DrVandanaCollage from '../assets/DrVandanaCollage.png'
+
 
 const galleryItems = [
   { id: 1, src: A, category: "Awards & Felicitations", title: "" },
@@ -38,17 +40,17 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
-  
+
   { id: 7, src: OTA, category: "OT", title: "" },
   { id: 8, src: OTB, category: "OT", title: "" },
   { id: 9, src: OTC, category: "OT", title: "" },
-  
+
   { id: 10, src: ConferenceA, category: "Events & Conferences", title: "" },
   { id: 11, src: ConferenceB, category: "Events & Conferences", title: "" },
   { id: 12, src: ConferenceC, category: "Events & Conferences", title: "" },
   { id: 13, src: ConferenceD, category: "Events & Conferences", title: "" },
   { id: 14, src: ConferenceE, category: "Events & Conferences", title: "" },
-  
+
   { id: 15, src: IVFLabA, category: "IVF Lab", title: "" },
   { id: 16, src: IVFLabB, category: "IVF Lab", title: "" },
   { id: 17, src: IVFLabC, category: "IVF Lab", title: "" },
@@ -57,7 +59,7 @@ const galleryItems = [
   { id: 20, src: IVFLabF, category: "IVF Lab", title: "" },
   { id: 21, src: IVFLabG, category: "IVF Lab", title: "" },
   { id: 22, src: IVFLabH, category: "IVF Lab", title: "" },
-  
+
   { id: 23, src: OldA, category: "Old", title: "" },
   { id: 24, src: OldB, category: "Old", title: "" },
 ];
@@ -66,12 +68,12 @@ const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selected, setSelected] = useState(null);
-  
+
   const filteredItems = useMemo(
     () =>
       activeCategory === "All"
-    ? galleryItems
-    : galleryItems.filter((item) => item.category === activeCategory),
+        ? galleryItems
+        : galleryItems.filter((item) => item.category === activeCategory),
     [activeCategory]
   );
 
@@ -136,12 +138,12 @@ export default function GalleryPage() {
       <main className="min-h-screen bg-[#f1f1f1] text-slate-900">
         {/* Hero */}
         <section className="relative overflow-hidden bg-white">
-          <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-            <div className="mx-w-3xl">
-              <p className="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-950">
-                <span className="h-px w-10 bg-pink-800" />
+          <div className="flex mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+            <div className="mx-w-3xl my-40 mr-20">
+              <p className="mb-3 flex items-center w-fit mx-auto gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-950">
+                {/* <span className="h-px w-10 bg-pink-800" /> */}
                 Dr. Vandana Bansal
-                <span className="h-px w-10 bg-pink-800" />
+                {/* <span className="h-px w-10 bg-pink-800" /> */}
               </p>
               <h1 className="text-4xl text-center font-semibold leading-tight tracking-tight text-gray-800 sm:text-5xl lg:text-6xl">
                 A glimpse into our
@@ -151,6 +153,9 @@ export default function GalleryPage() {
                 Explore moments from clinical practice, professional events,
                 conferences and achievements.
               </p>
+            </div>
+            <div>
+              <img src={DrVandanaCollage} className="w-96 rounded-xl" alt="" />
             </div>
           </div>
         </section>
@@ -176,7 +181,6 @@ export default function GalleryPage() {
               );
             })}
           </div>
-
           {/* Responsive masonry-style grid */}
           <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
             {filteredItems.map((item, index) => (
@@ -201,7 +205,6 @@ export default function GalleryPage() {
                   </span>
                   <h2 className="mt-1 text-lg font-medium text-white">{item.title}</h2>
                 </div>
-
                 <span className="absolute right-4 top-4 flex h-10 w-10 translate-y-2 items-center justify-center rounded-full bg-white/90 text-pink-900 opacity-0 shadow-lg transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
                     <path d="m15 3 6 6m0-6-6 6M21 3l-9 9" />
