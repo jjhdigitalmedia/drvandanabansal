@@ -20,8 +20,8 @@ import WomensCared from '../assets/Features/WomensCared.png'
 const achievements = [
   {
     icon: Baby,
-    title: "40,000+",
-    subtitle: "Successful Pregnancies",
+    title: "",
+    subtitle: "",
     desc: "Helping thousands of families experience the joy of parenthood.",
     image: Pregnancy,
   },
@@ -34,7 +34,7 @@ const achievements = [
   },
   {
     icon: Users,
-    title: "50,000+",
+    title: "Advanced",
     subtitle: "Women Cared For",
     desc: "Trusted by generations of women for compassionate care.",
     image: WomensCared,
