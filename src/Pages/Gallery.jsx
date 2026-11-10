@@ -7,6 +7,9 @@ import C from "../assets/Gallery/AwardsPhotos/C.jpg";
 import D from "../assets/Gallery/AwardsPhotos/D.jpg";
 import E from "../assets/Gallery/AwardsPhotos/E.jpg";
 import F from "../assets/Gallery/AwardsPhotos/F.jpg";
+// import G from "../assets/Gallery/AwardsPhotos/G.jpg";
+import H from "../assets/Gallery/AwardsPhotos/H.jpeg";
+import I from "../assets/Gallery/AwardsPhotos/I.jpeg";
 
 import OldA from "../assets/Gallery/Old/OldA.jpg";
 import OldB from "../assets/Gallery/Old/OldB.jpg";
@@ -40,6 +43,9 @@ const galleryItems = [
   { id: 4, src: D, category: "Awards & Felicitations", title: "" },
   { id: 5, src: E, category: "Awards & Felicitations", title: "" },
   { id: 6, src: F, category: "Awards & Felicitations", title: "" },
+  // { id: 7, src: G, category: "Awards & Felicitations", title: "" },
+  { id: 8, src: H, category: "Awards & Felicitations", title: "" },
+  { id: 9, src: I, category: "Awards & Felicitations", title: "" },
 
   { id: 7, src: OTA, category: "OT", title: "" },
   { id: 8, src: OTB, category: "OT", title: "" },
@@ -138,8 +144,8 @@ export default function GalleryPage() {
       <main className="min-h-screen bg-[#f1f1f1] text-slate-900">
         {/* Hero */}
         <section className="relative overflow-hidden bg-white">
-          <div className="flex mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-            <div className="mx-w-3xl my-40 mr-20">
+          <div className="flex flex-wrap mx-auto w-11/12 md:w-4/5 px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+            <div className="mx-w text-center md:my-40 my-10 md:mr-20">
               <p className="mb-3 flex items-center w-fit mx-auto gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-pink-950">
                 {/* <span className="h-px w-10 bg-pink-800" /> */}
                 Dr. Vandana Bansal
@@ -154,7 +160,7 @@ export default function GalleryPage() {
                 conferences and achievements.
               </p>
             </div>
-            <div>
+            <div className="mx-auto">
               <img src={DrVandanaCollage} className="w-96 rounded-xl" alt="" />
             </div>
           </div>

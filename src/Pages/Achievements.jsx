@@ -55,7 +55,6 @@ const Achievements = () => {
             <div>
                 <Features />
                 <Conferences />
-                {/* <Membership /> */}
 
             </div>
         </>
