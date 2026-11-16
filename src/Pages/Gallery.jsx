@@ -13,6 +13,8 @@ import I from "../assets/Gallery/AwardsPhotos/I.jpeg";
 
 import OldA from "../assets/Gallery/Old/OldA.jpg";
 import OldB from "../assets/Gallery/Old/OldB.jpg";
+import OldC from "../assets/Gallery/Old/OldC.jpeg";
+import OldD from "../assets/Gallery/Old/OldD.jpeg";
 
 import OTA from "../assets/Gallery/OT/OTA.jpg";
 import OTB from "../assets/Gallery/OT/OTB.png";
@@ -68,6 +70,8 @@ const galleryItems = [
 
   { id: 23, src: OldA, category: "Old", title: "" },
   { id: 24, src: OldB, category: "Old", title: "" },
+  { id: 25, src: OldC, category: "Old", title: "" },
+  { id: 24, src: OldD, category: "Old", title: "" },
 ];
 
 const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];
