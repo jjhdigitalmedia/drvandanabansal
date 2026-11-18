@@ -10,6 +10,8 @@ import F from "../assets/Gallery/AwardsPhotos/F.jpg";
 // import G from "../assets/Gallery/AwardsPhotos/G.jpg";
 import H from "../assets/Gallery/AwardsPhotos/H.jpeg";
 import I from "../assets/Gallery/AwardsPhotos/I.jpeg";
+import J from "../assets/Gallery/AwardsPhotos/J.jpg";
+import K from "../assets/Gallery/AwardsPhotos/K.jpg";
 
 import OldA from "../assets/Gallery/Old/OldA.jpg";
 import OldB from "../assets/Gallery/Old/OldB.jpg";
@@ -25,6 +27,11 @@ import ConferenceB from "../assets/Gallery/EventsConferences/ConferenceB.jpg";
 import ConferenceC from "../assets/Gallery/EventsConferences/ConferenceC.jpg";
 import ConferenceD from "../assets/Gallery/EventsConferences/ConferenceD.jpg";
 import ConferenceE from "../assets/Gallery/EventsConferences/ConferenceE.png";
+import ConferenceF from "../assets/Gallery/EventsConferences/ConferenceF.jpg";
+import ConferenceG from "../assets/Gallery/EventsConferences/ConferenceG.jpg";
+import ConferenceH from "../assets/Gallery/EventsConferences/ConferenceH.jpeg";
+import ConferenceI from "../assets/Gallery/EventsConferences/ConferenceI.jpeg";
+import ConferenceJ from "../assets/Gallery/EventsConferences/ConferenceJ.jpg";
 
 import IVFLabA from "../assets/Gallery/IVFLab/IVFLabA.jpg";
 import IVFLabB from "../assets/Gallery/IVFLab/IVFLabB.jpg";
@@ -34,6 +41,10 @@ import IVFLabE from "../assets/Gallery/IVFLab/IVFLabE.jpg";
 import IVFLabF from "../assets/Gallery/IVFLab/IVFLabF.jpg";
 import IVFLabG from "../assets/Gallery/IVFLab/IVFLabG.jpg";
 import IVFLabH from "../assets/Gallery/IVFLab/IVFLabH.png";
+import IVFLabI from "../assets/Gallery/IVFLab/IVFLabI.jpg";
+
+import HospitalA from "../assets/Gallery/HospitalClinic/HospitalA.jpeg";
+import HospitalB from "../assets/Gallery/HospitalClinic/HospitalB.jpeg";
 
 import DrVandanaCollage from '../assets/DrVandanaCollage.png'
 
@@ -48,30 +59,41 @@ const galleryItems = [
   // { id: 7, src: G, category: "Awards & Felicitations", title: "" },
   { id: 8, src: H, category: "Awards & Felicitations", title: "" },
   { id: 9, src: I, category: "Awards & Felicitations", title: "" },
+  { id: 10, src: J, category: "Awards & Felicitations", title: "" },
+  { id: 11, src: K, category: "Awards & Felicitations", title: "" },
 
-  { id: 7, src: OTA, category: "OT", title: "" },
-  { id: 8, src: OTB, category: "OT", title: "" },
-  { id: 9, src: OTC, category: "OT", title: "" },
+  { id: 12, src: IVFLabA, category: "IVF Lab", title: "" },
+  { id: 13, src: IVFLabB, category: "IVF Lab", title: "" },
+  { id: 14, src: IVFLabC, category: "IVF Lab", title: "" },
+  { id: 15, src: IVFLabD, category: "IVF Lab", title: "" },
+  { id: 16, src: IVFLabE, category: "IVF Lab", title: "" },
+  { id: 17, src: IVFLabF, category: "IVF Lab", title: "" },
+  { id: 18, src: IVFLabG, category: "IVF Lab", title: "" },
+  { id: 19, src: IVFLabH, category: "IVF Lab", title: "" },
+  { id: 20, src: IVFLabI, category: "IVF Lab", title: "" },
 
-  { id: 10, src: ConferenceA, category: "Events & Conferences", title: "" },
-  { id: 11, src: ConferenceB, category: "Events & Conferences", title: "" },
-  { id: 12, src: ConferenceC, category: "Events & Conferences", title: "" },
-  { id: 13, src: ConferenceD, category: "Events & Conferences", title: "" },
-  { id: 14, src: ConferenceE, category: "Events & Conferences", title: "" },
+  { id: 21, src: OTA, category: "OT", title: "" },
+  { id: 22, src: OTB, category: "OT", title: "" },
+  { id: 23, src: OTC, category: "OT", title: "" },
 
-  { id: 15, src: IVFLabA, category: "IVF Lab", title: "" },
-  { id: 16, src: IVFLabB, category: "IVF Lab", title: "" },
-  { id: 17, src: IVFLabC, category: "IVF Lab", title: "" },
-  { id: 18, src: IVFLabD, category: "IVF Lab", title: "" },
-  { id: 19, src: IVFLabE, category: "IVF Lab", title: "" },
-  { id: 20, src: IVFLabF, category: "IVF Lab", title: "" },
-  { id: 21, src: IVFLabG, category: "IVF Lab", title: "" },
-  { id: 22, src: IVFLabH, category: "IVF Lab", title: "" },
+  { id: 24, src: ConferenceA, category: "Events & Conferences", title: "" },
+  { id: 25, src: ConferenceB, category: "Events & Conferences", title: "" },
+  { id: 26, src: ConferenceC, category: "Events & Conferences", title: "" },
+  { id: 27, src: ConferenceD, category: "Events & Conferences", title: "" },
+  { id: 28, src: ConferenceE, category: "Events & Conferences", title: "" },
+  { id: 29, src: ConferenceF, category: "Events & Conferences", title: "" },
+  { id: 30, src: ConferenceG, category: "Events & Conferences", title: "" },
+  { id: 31, src: ConferenceH, category: "Events & Conferences", title: "" },
+  { id: 32, src: ConferenceI, category: "Events & Conferences", title: "" },
+  { id: 33, src: ConferenceJ, category: "Events & Conferences", title: "" },
 
-  { id: 23, src: OldA, category: "Old", title: "" },
-  { id: 24, src: OldB, category: "Old", title: "" },
-  { id: 25, src: OldC, category: "Old", title: "" },
-  { id: 24, src: OldD, category: "Old", title: "" },
+  { id: 34, src: HospitalA, category: "Clinic & Hospital", title: "" },
+  { id: 35, src: HospitalB, category: "Clinic & Hospital", title: "" },
+
+  { id: 36, src: OldA, category: "Old", title: "" },
+  { id: 37, src: OldB, category: "Old", title: "" },
+  { id: 38, src: OldC, category: "Old", title: "" },
+  { id: 39, src: OldD, category: "Old", title: "" },
 ];
 
 const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];
