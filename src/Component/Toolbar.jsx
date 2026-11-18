@@ -36,7 +36,7 @@ export default function MobileBottomBar() {
     <div className="fixed bottom-2 left-1/2 z-50 w-[95%] max-w-md -translate-x-1/2 lg:hidden">
 
       {/* Background */}
-      <div className="relative flex h-20 items-center justify-around rounded-full border border-pink-200 backdrop-blur-3xl bg-pink-800 shadow-[0_15px_40px_rgba(0,0,0,.18)]">
+      <div className="relative flex h-16 items-center justify-around rounded-full border border-pink-200 backdrop-blur-3xl bg-pink-800 shadow-[0_15px_40px_rgba(0,0,0,.18)]">
 
         {menu.slice(0, 2).map((item) => {
           const Icon = item.icon;
