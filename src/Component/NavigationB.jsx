@@ -206,7 +206,7 @@ const Navbar = ({ logoSrc }) => {
              <img
                 src={DrVandanaLogo}
                 alt="Dr. Vandana Bansal"
-                className="h-[80px] w-auto object-contain"
+                className="h-[80px] w-80 object-contain"
               />
           </Link>
 
