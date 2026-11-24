@@ -336,7 +336,7 @@ const Footer = ({ logoSrc }) => {
               </p>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Jeevan+Jyoti+Hospital+Prayagraj"
+                href="https://maps.app.goo.gl/EXr5APGggatswmat7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 inline-flex items-center gap-1 text-[12px] font-semibold text-pink-800 transition-colors hover:text-pink-900"

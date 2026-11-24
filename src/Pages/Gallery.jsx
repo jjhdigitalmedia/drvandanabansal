@@ -45,6 +45,12 @@ import IVFLabI from "../assets/Gallery/IVFLab/IVFLabI.jpg";
 
 import HospitalA from "../assets/Gallery/HospitalClinic/HospitalA.jpeg";
 import HospitalB from "../assets/Gallery/HospitalClinic/HospitalB.jpeg";
+import HospitalC from "../assets/Gallery/HospitalClinic/HospitalC.jpg";
+import HospitalD from "../assets/Gallery/HospitalClinic/HospitalD.jpg";
+import HospitalE from "../assets/Gallery/HospitalClinic/HospitalE.jpg";
+
+import SocialActA from "../assets/Gallery/SocialActivities/SocialActA.jpg";
+import SocialActB from "../assets/Gallery/SocialActivities/SocialActB.jpg";
 
 import DrVandanaCollage from '../assets/DrVandanaCollage.png'
 
@@ -89,14 +95,20 @@ const galleryItems = [
 
   { id: 34, src: HospitalA, category: "Clinic & Hospital", title: "" },
   { id: 35, src: HospitalB, category: "Clinic & Hospital", title: "" },
+  { id: 36, src: HospitalC, category: "Clinic & Hospital", title: "" },
+  { id: 37, src: HospitalD, category: "Clinic & Hospital", title: "" },
+  { id: 38, src: HospitalE, category: "Clinic & Hospital", title: "" },
 
-  { id: 36, src: OldA, category: "Old", title: "" },
-  { id: 37, src: OldB, category: "Old", title: "" },
-  { id: 38, src: OldC, category: "Old", title: "" },
-  { id: 39, src: OldD, category: "Old", title: "" },
+  { id: 39, src: OldA, category: "Old", title: "" },
+  { id: 40, src: OldB, category: "Old", title: "" },
+  { id: 41, src: OldC, category: "Old", title: "" },
+  { id: 42, src: OldD, category: "Old", title: "" },
+
+  { id: 43, src: SocialActB, category: "Social Activities", title: "" },
+  { id: 44, src: SocialActA, category: "Social Activities", title: "" },
 ];
 
-const categories = ["All", "Clinic & Hospital", "OT", "IVF Lab", "Old", "Events & Conferences", "Awards & Felicitations"];
+const categories = ["All", "Clinic & Hospital", "Awards & Felicitations", "OT", "IVF Lab", "Old", "Events & Conferences", "Social Activities"];
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selected, setSelected] = useState(null);

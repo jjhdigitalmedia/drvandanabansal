@@ -36,7 +36,7 @@ export default function MobileBottomBar() {
     <div className="fixed bottom-4 left-1/2 z-50 w-[95%] max-w-md -translate-x-1/2 lg:hidden">
 
       {/* Background */}
-      <div className="relative flex h-16 items-center justify-around rounded-full border border-pink-200 backdrop-blur-3xl bg-pink-800 shadow-[0_15px_40px_rgba(0,0,0,.18)]">
+      <div className="relative flex h-16 items-center justify-around w-4/5 rounded-full border border-pink-200 backdrop-blur-3xl bg-pink-800 shadow-[0_15px_40px_rgba(0,0,0,.18)]">
 
         {menu.slice(0, 2).map((item) => {
           const Icon = item.icon;
@@ -74,7 +74,7 @@ export default function MobileBottomBar() {
 
         <NavLink
           to="/book-appointment"
-          className="absolute -top-8 flex h-19 w-19 items-center justify-center rounded-full bg-pink-900 shadow-2xl ring-4 ring-[#f1f1f1] transition-all duration-300 hover:scale-105 active:scale-95"
+          className="absolute -top-8 flex h-16 w-16 items-center justify-center rounded-full bg-pink-900 shadow-2xl ring-2 ring-[#f1f1f1] transition-all duration-300 hover:scale-105 active:scale-95"
         >
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-pink-800">
             <CalendarPlus2 className="text-white" size={30} />
