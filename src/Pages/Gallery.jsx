@@ -120,7 +120,9 @@ export default function GalleryPage() {
         : galleryItems.filter((item) => item.category === activeCategory),
     [activeCategory]
   );
-
+const sortedItems = [...filteredItems].sort(
+  (a, b) => b.id - a.id
+);
   const openNext = (direction) => {
     if (!selected) return;
     const currentIndex = filteredItems.findIndex((item) => item.id === selected.id);
@@ -215,9 +217,9 @@ export default function GalleryPage() {
                 <button
                   key={category}
                   onClick={() => setActiveCategory(category)}
-                  className={`rounded-full border-2 border-pink-800 px-5 py-2.5 text-sm font-medium transition-all duration-300 ${active
+                  className={`rounded-full border-[1px] border-pink-800 px-5 py-2.5 text-sm font-medium transition-all duration-300 ${active
                     ? "border-pink-800 bg-pink-800 text-white shadow-lg shadow-pink-900/15"
-                    : "border-slate-300 bg-white text-slate-600 hover:border-pink-300 hover:text-pink-800"
+                    : "border-slate-300 bg-white text-slate-600 hover:border-pink-200 hover:text-pink-800"
                     }`}
                 >
                   {category}
@@ -226,19 +228,19 @@ export default function GalleryPage() {
             })}
           </div>
           {/* Responsive masonry-style grid */}
-          <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
+          <div className="gap-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {filteredItems.map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => setSelected(item)}
-                className="group relative mb-5 block w-full overflow-hidden border-[1px] border-gray-500 rounded-2xl bg-white text-left shadow-md ring-1 ring-slate-200/70 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
+                className="group relative mb-5 block w-full overflow-hidden border-[1px] border-gray-300 rounded-2xl bg-white text-left shadow-md ring-1 ring-slate-200/70 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
                 style={{ animationDelay: `${index * 70}ms` }}
               >
                 <img
                   src={item.src}
                   alt={item.title}
                   loading="lazy"
-                  className="h-auto w-full object-cover transition duration-700 ease-out group-hover:scale-[1.035]"
+                  className="h-auto w-full object-contain transition duration-700 ease-out group-hover:scale-[1.035]"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-pink-950/85 via-pink-950/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
