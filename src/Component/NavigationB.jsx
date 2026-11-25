@@ -318,7 +318,7 @@ const Navbar = ({ logoSrc }) => {
                               className={`group flex w-full items-center justify-between rounded-xl px-4 py-3.5 text-left transition-all duration-200 ${
                                 isActive
                                   ? "bg-pink-800 text-white shadow-sm"
-                                  : "text-gray-700 hover:bg-pink-50 hover:text-pink-800"
+                                  : "text-gray-700 hover:bg-gray-50 hover:text-pink-800"
                               }`}
                             >
                               <span className="pr-3 text-[13px] font-medium leading-snug">
@@ -529,8 +529,8 @@ const Navbar = ({ logoSrc }) => {
                   onClick={closeMobileMenu}
                   className={`flex items-center justify-between rounded-xl px-4 py-4 text-base font-medium transition-colors ${
                     location.pathname === "/"
-                      ? "bg-pink-50 text-pink-800"
-                      : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                      ? "bg-gray-50 text-pink-800"
+                      : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                   }`}
                 >
                   <span>Home</span>
@@ -564,7 +564,7 @@ const Navbar = ({ logoSrc }) => {
                     className={`flex w-full items-center justify-between px-4 py-4 text-left text-base font-medium transition-colors ${
                       mobileSpecialitiesOpen
                         ? "bg-pink-800 text-white"
-                        : "text-gray-800 hover:bg-pink-50 hover:text-pink-800"
+                        : "text-gray-800 hover:bg-gray-50 hover:text-pink-800"
                     }`}
                   >
                     <span>Specialities</span>
